@@ -1017,3 +1017,49 @@ th {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+.card-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--grey1);
+  transition: transform 0.3s ease;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+
+}
+
+.card-1:hover {
+  transform: scale(1.1);
+}
+
+.card-1 img {
+  width: 500px;
+  height: fill;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.card-1-content {
+  flex: 1;
+  min-width: 260px;
+}
+
+.card-1-content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--secondary);
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.4;
+}
+
+.card-1-content p {
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: var(--grey3);
+  line-height: 1.4;
+}
