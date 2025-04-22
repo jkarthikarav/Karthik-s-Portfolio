@@ -162,7 +162,6 @@ p {
   width: fill;
   height: fill;
   border-radius: 10px;
-  flex-shrink: 0;
 }
 
 .card-content {
@@ -1020,8 +1019,7 @@ th {
 
 .card-1 {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex: 1 1 20%;
   padding: 2rem;
   border-radius: 12px;
   background: var(--white);
@@ -1029,24 +1027,14 @@ th {
   transition: transform 0.3s ease;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
-
-}
-
-.card-1:hover {
-  transform: scale(1.1);
 }
 
 .card-1 img {
-  width: 500px;
+  width: 450px;
   height: fill;
   border-radius: 10px;
-  flex-shrink: 0;
 }
 
-.card-1-content {
-  flex: 1;
-  min-width: 260px;
-}
 
 .card-1-content h3 {
   font-size: 32px;
@@ -1062,4 +1050,11 @@ th {
   margin-bottom: 0.5rem;
   color: var(--grey3);
   line-height: 1.4;
+}
+
+.project-gd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
