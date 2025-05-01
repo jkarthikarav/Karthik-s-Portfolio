@@ -1078,3 +1078,27 @@ th {
   gap: 2rem;
 }
 
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin: 1rem 1rem;
+}
+
+.column-image {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Optional: Responsive fallback */
+@media (max-width: 768px) {
+  .two-column-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
