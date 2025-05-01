@@ -330,6 +330,9 @@ footer {
   height: auto;
 }
 
+
+/*     */
+
 @media (max-width: 768px) {
   .software-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1074,3 +1077,4 @@ th {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
+
