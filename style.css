@@ -84,7 +84,7 @@ p {
 
 .hero {
   background: linear-gradient(to bottom, #F4ECE6, #FFFFFF);
-  padding: 6rem 4rem;
+  padding: 4rem;
   text-align: center;
   font-family: 'Rubik', sans-serif;
 }
@@ -104,18 +104,15 @@ p {
 }
 
 .hero-text h2 {
-  font-size: 24px;
+  font-size:24px;
   font-weight: 700;
-  color: #161616;
   font-family: 'Rubik', sans-serif;
   margin-top: 1rem;
   line-height: 1.4;
 }
 
 .hero-text .description {
-  font-size: 20px;
   font-family: 'Karla', sans-serif;
-  color: #505050;
   margin: 4rem 2rem;
   max-width: 500px;
   line-height: 1.4;
@@ -133,11 +130,11 @@ p {
 }
 
 .projects {
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 1000px;
-  margin: 3rem auto;
+  margin: auto;
 }
 
 .card {
@@ -155,7 +152,7 @@ p {
 
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card img {
