@@ -40,3 +40,30 @@ textElements.forEach(el => {
     cursorCircle.style.opacity = '1';
   });
 });
+
+
+
+document.getElementById('toggleButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default anchor link behavior
+    var hiddenSection = document.getElementById('hiddenSection');
+    
+    // Toggle the display of the hidden section
+    if (hiddenSection.style.display === "none" || hiddenSection.style.display === "") {
+        hiddenSection.style.display = "block"; // Show the section
+    } else {
+        hiddenSection.style.display = "none"; // Hide the section
+    }
+});
+
+
+document.getElementById('toggleButton2').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default anchor link behavior
+    var hiddenSection2 = document.getElementById('hiddenSection2');
+    
+    // Toggle the display of the hidden section
+    if (hiddenSection2.style.display === "none" || hiddenSection2.style.display === "") {
+        hiddenSection2.style.display = "block"; // Show the section
+    } else {
+        hiddenSection2.style.display = "none"; // Hide the section
+    }
+});
