@@ -1,0 +1,13 @@
+		<a href="#" class="case-button" id="toggleButton3" style="display: inline-flex; align-items: center; justify-content: center; min-height: 60px;">View Non-UX Projects I've worked on</a>
+
+		<div class="hidden-section3" style="display: none;" id="hiddenSection3">
+
+				<div class="project-card" style="overflow: hidden;">
+					<p>Digitization and Remediation - Course Project (INF2228)</p>
+					<h6>Web Audit Critique and Analysis (Presentation)</h6>
+					<img src="images/DIGITIZATION CRITIQUE.png" alt="Web Audit Critique" style="max-width: 100%; height: auto; object-fit: cover;"><br>
+					<a href="https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" class="case-button-new" target="_blank">View Slides</a>
+        			</div>
+
+    			</div>
+		</div>
