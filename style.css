@@ -333,6 +333,7 @@ p {
   border-radius: 12px;
   background: var(--white);
   border: 1px solid var(--grey1);
+  transition: transform 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -348,6 +349,10 @@ p {
   font-family: 'Rubik', sans-serif;
   margin-bottom: 1rem;
   line-height: 1.4;
+}
+
+.card-new:hover {
+  transform: scale(1.05);
 }
 
 .tags-new {
