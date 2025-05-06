@@ -67,3 +67,16 @@ document.getElementById('toggleButton2').addEventListener('click', function(even
         hiddenSection2.style.display = "none"; // Hide the section
     }
 });
+
+
+document.getElementById('toggleButton3').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default anchor link behavior
+    var hiddenSection3 = document.getElementById('hiddenSection3');
+    
+    // Toggle the display of the hidden section
+    if (hiddenSection3.style.display === "none" || hiddenSection3.style.display === "") {
+        hiddenSection3.style.display = "block"; // Show the section
+    } else {
+        hiddenSection3.style.display = "none"; // Hide the section
+    }
+});
