@@ -80,3 +80,6 @@ document.getElementById('toggleButton3').addEventListener('click', function(even
         hiddenSection3.style.display = "none"; // Hide the section
     }
 });
+
+
+
