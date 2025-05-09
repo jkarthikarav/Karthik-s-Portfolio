@@ -69,7 +69,7 @@ document.getElementById('toggleButton2').addEventListener('click', function(even
 });
 
 
-document.getElementById('toggleButton3').addEventListener('click', function(event) {
+document.getElementById('service').addEventListener('click', function(event) {
     event.preventDefault(); // Prevents the default anchor link behavior
     var hiddenSection3 = document.getElementById('hiddenSection3');
     
