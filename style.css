@@ -8,6 +8,71 @@
   --secondary: #00464F;
 }
 
+
+.case-study-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.case-study-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.case-study-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.case-study-card-content {
+  padding: 1.25rem;
+}
+
+.case-study-card-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.case-study-card-content a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+}
+
+.case-study-card-content a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.case-study-card-content .role {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.case-study-card-content .summary {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.case-study-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+
 .user-journey-image-mrs {
   width: 50%;
   height: auto;
@@ -335,12 +400,20 @@ p {
   margin-bottom: 0.6rem;
 }
 
+
+.card-content-new a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+
 .card-content-new h3 {
   font-size: 28px;
   font-weight: 500;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 1rem;
   line-height: 1.4;
+  color:var(--secondary);
 }
 
 .card-new:hover {
@@ -1172,9 +1245,16 @@ th {
   transform: translateY(-5px);
 }
 
+.project-card a{
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
 .project-card h6 {
   font-size: 1.2rem;
   margin-bottom: 15px;
+  
+  color:var(--secondary);
   font-weight: 600;
 }
 
