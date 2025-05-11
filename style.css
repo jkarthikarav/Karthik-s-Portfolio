@@ -8,12 +8,93 @@
   --secondary: #00464F;
 }
 
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  margin: 0.2em 0;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  margin: 0.2em 0;
+  line-height: 1.4;
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 57px;
+  font-weight: 700;
+  margin: 0.3em 0;
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h5 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h6 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 18px;
+  color: var(--grey3);
+  line-height: 1.4;
+}
+
+
+
+
+
 
 .case-study-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .case-study-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .case-study-card {
@@ -189,63 +270,6 @@
 
 
 
-body {
-  font-family: 'Karla', sans-serif;
-  margin: 0;
-  background: var(--white);
-  color: var(--black);
-}
-
-h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 100px;
-  font-weight: 700;
-  margin: 0.2em 0;
-  line-height: 1.6;
-}
-
-h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 76px;
-  font-weight: 700;
-  margin: 0.2em 0;
-  line-height: 1.4;
-}
-
-h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 57px;
-  font-weight: 700;
-  margin: 0.3em 0;
-  line-height: 1.4;
-}
-
-h4 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-h5 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-h6 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-p {
-  font-size: 18px;
-  color: var(--grey3);
-  line-height: 1.4;
-}
 
 .li2 {
   font-size: 20px;
@@ -257,8 +281,8 @@ p {
 
 .hero {
   background: linear-gradient(to bottom, #F4ECE6, #FFFFFF);
-  padding: 4rem;
   text-align: center;
+  padding-top:2rem;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -271,24 +295,21 @@ p {
 .hero-text h1 {
   font-size: 42px;
   font-weight: 800;
-  margin: 0;
   color: var(--secondary); /* #00464F */
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .hero-text h2 {
   font-size:20px;
   font-weight: 700;
   font-family: 'Rubik', sans-serif;
-  margin-top: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .hero-text .description {
   font-family: 'Karla', sans-serif;
-  margin: 4rem 2rem;
   max-width: 500px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 
@@ -303,7 +324,6 @@ p {
 }
 
 .projects {
-  padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -325,7 +345,7 @@ p {
 
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .card img {
@@ -417,8 +437,21 @@ p {
 }
 
 .card-new:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
+
+.card-new:hover .card-content-new h3 {
+  filter: saturate(2); /* Increase saturation by 10% */
+}
+
+.card-new:hover .case-button-new {
+  filter: saturate(2); /* Increase saturation by 10% */
+}
+
+.project-card:hover .case-button-new {
+  filter: saturate(2); /* Increase saturation by 10% */
+}
+
 
 .tags-new {
   margin-bottom: 1rem;
@@ -482,6 +515,11 @@ p {
   font-size: 14px;
   font-weight: bold;
   margin-top: 0.5rem;
+}
+
+.scroll-button:hover {
+  transform: scale(1.01);
+  text-decoration:underline;
 }
 
 
