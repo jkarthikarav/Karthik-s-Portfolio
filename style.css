@@ -1,6 +1,7 @@
 :root {
   --white: #FFFFFF;
   --black: #161616;
+  --grey0:#f0f0f0;
   --grey1: #C5C5C5;
   --grey2: #8B8B8B;
   --grey3: #505050;
@@ -1412,4 +1413,78 @@ th {
   }
 }
 
+/*New Hero */
+.project-banner-section-newhero {
+  background: linear-gradient(to bottom, #F4ECE6, #FFFFFF);
+}
 
+.project-banner-newhero {
+  background:rgba(240,240,240,0.2);
+  display: grid;
+  grid-template-columns: 500px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo-container-newhero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+.logo-img-newhero {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.spacer-newhero {
+  width: 100%;
+  height: 500px;
+}
+
+.mockup-container-newhero {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.mockup-img-newhero {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-details-section-newhero {
+  padding: 2rem;
+}
+
+.project-details-grid-newhero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.detail-item-newhero {
+  padding: 1rem;
+}
+
+.detail-heading-newhero {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.detail-placeholder-newhero {
+  min-height: 1.5rem;
+}
+
+.two-column-grid-challenges-ece {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: transparent;
+  color: var(--black);
+}
