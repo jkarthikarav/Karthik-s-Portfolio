@@ -80,9 +80,8 @@ p {
 
 .case-study-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap:20px;
 }
 
 @media (max-width: 1200px) {
@@ -103,6 +102,7 @@ p {
   overflow: hidden;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
+  padding-bottom:0;
 }
 
 .case-study-card:hover {
@@ -441,17 +441,20 @@ p {
 }
 
 .card-new:hover .card-content-new h3 {
-  filter: saturate(2); /* Increase saturation by 10% */
+  filter: saturate(5); /* Increase saturation by 10% */
 }
 
 .card-new:hover .case-button-new {
-  filter: saturate(2); /* Increase saturation by 10% */
+  filter: saturate(5); /* Increase saturation by 10% */
 }
 
 .project-card:hover .case-button-new {
-  filter: saturate(2); /* Increase saturation by 10% */
+  filter: saturate(5); /* Increase saturation by 10% */
 }
 
+.project-card:hover h6 {
+  filter: saturate(5); /* Increase saturation by 10% */
+}
 
 .tags-new {
   margin-bottom: 1rem;
@@ -503,7 +506,7 @@ p {
 }
 
 
-
+.case-button-new:hover
 
 
 .scroll-button {
@@ -659,7 +662,7 @@ footer {
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
