@@ -9,6 +9,10 @@
   --secondary: #00464F;
 }
 
+
+
+
+
 body {
   font-family: 'Karla', sans-serif;
   margin: 0;
@@ -1487,4 +1491,42 @@ th {
   padding: 2rem;
   background: transparent;
   color: var(--black);
+}
+
+.row-fancy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.circle-container-fancy {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.circle-fancy span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:var(--black);
+}
+
+.circle-fancy {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #00464F;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.text-column-fancy {
+  flex: 1;
 }
