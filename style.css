@@ -288,35 +288,7 @@ p {
   background: linear-gradient(to bottom, #F4ECE6, #FFFFFF);
   text-align: center;
   padding-top:2rem;
-  font-family: 'Rubik', sans-serif;
 }
-
-.hero-text .intro {
-  font-size: 18px;
-  font-family: 'Karla', sans-serif;
-  margin-bottom: 0.25rem;
-}
-
-.hero-text h1 {
-  font-size: 42px;
-  font-weight: 800;
-  color: var(--secondary); /* #00464F */
-  line-height: 1.2;
-}
-
-.hero-text h2 {
-  font-size:20px;
-  font-weight: 700;
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.5;
-}
-
-.hero-text .description {
-  font-family: 'Karla', sans-serif;
-  max-width: 500px;
-  line-height: 1.5;
-}
-
 
 .icons img {
   height: 48px;
@@ -364,20 +336,6 @@ p {
   min-width: 260px;
 }
 
-.card-content h3 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 0.3rem;
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.4;
-}
-
-.card-content p {
-  font-size: 18px;
-  margin-bottom: 0.5rem;
-  color: var(--grey3);
-  line-height: 1.4;
-}
 
 .case-button {
   display: inline-flex;
@@ -420,7 +378,6 @@ p {
 }
 
 .card-content-new p {
-  font-size: 16px;
   color: var(--grey3);
   margin-bottom: 0.6rem;
 }
@@ -433,9 +390,6 @@ p {
 
 
 .card-content-new h3 {
-  font-size: 28px;
-  font-weight: 500;
-  font-family: 'Rubik', sans-serif;
   margin-bottom: 1rem;
   line-height: 1.4;
   color:var(--secondary);
@@ -477,7 +431,6 @@ p {
 }
 
 .description-new {
-  font-size: 16px;
   margin-bottom: 1.5rem;
   color: var(--grey3);
 }
