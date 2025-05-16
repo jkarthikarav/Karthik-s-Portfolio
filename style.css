@@ -1055,6 +1055,7 @@ th {
 .activity-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+  max-width:128px; height:auto;
 }
 
 .activity-box h3 {
