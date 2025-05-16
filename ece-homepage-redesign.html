@@ -89,49 +89,50 @@
       This redesign project aimed to transform the University of Toronto’s Electrical & Computer Engineering (ECE) department homepage into a compelling, student-focused digital experience. <br><br>
       The core goals were to attract prospective students, serve as a clear access portal to key departmental information, and represent the department’s research, programs, and values effectively.
     </p>
-  <h5 style="text-align:center; color:var(--secondary);line-height:1.2; margin-bottom:0.5rem;">Project Requirements</h5>  
-
-  <div class="ux-grid">
-    <div class="ux-point" style="background-color:var(--white);">
-      <p class="p1">Help Recruit Prospective Students</p>
-      <p class="p2">Do visitors get the information they need to want to join the department?</p>
-    </div>
-    <div class="ux-point" style="background-color:var(--white);">
-      <p class="p1">Be an Access Portal</p>
-      <p class="p2">Are visitors guided to important information about the ECE Department's research and programs?</p>
-    </div>
-  <div class="ux-point" style="background-color:var(--white);">
-    <p class="p1">Be Representative</p>
-    <p class="p2">Do people understand the interests and goals of the Department of Electrical & Computer Engineering?</p>
-  </div>
-</div>
 
 <div class="two-column-grid-challenges-ece" style="background:var(--white);">
+
   <!-- Column 1 -->
-  <div class="challenges-container">
-    <div class="challenges-text">
-  <h5 style="text-align:center; color:var(--secondary);line-height:1.2; margin-bottom:0.5rem;">Challenges</h5>
-      <p class="p2">
-        Key opportunities included the outdated hero banner, limited explanation of research areas, missing info on co-op opportunities, and a lack of visibility for upcoming events.<br><br>
-        We wanted to avoid a text-heavy page and instead highlight visuals and CTAs to guide visitors toward key pages like Research at ECE and Programs.<br><br>
-        However, the redesign also had to follow the University of Toronto’s official design guidelines to maintain consistency with U of T and the Faculty of Engineering. The content & marketing team provided revised homepage copy to align with these guidelines.
-      </p>
-  <p class="snippet-caption">What kind of messaging do our home Faculty and sibling departments have?</p>
-<div class="ux-snippet" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; justify-items: center; align-items: start; margin-top: 10px; margin-bottom: 40px;">
-  <img src="images/webp/fase.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/fase.webp')" />
-  <img src="images/webp/CIVMIN.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/CIVMIN.webp')" />
-  <img src="images/webp/MIE.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/MIE.webp')" />
-</div>
-<!-- Modal -->
-<div id="imageModal" class="modal-mrs" onclick="closeModal()">
-    <img id="modalImage" class="modal-image-mrs">
-  </div>
-
-
-    </div>
-  </div>
+       <div class="challenges-container" style="padding:0rem;">
+             <h5 style="color:var(--secondary);line-height:1.2; margin-bottom:0rem;">Project Requirements</h5>  
+          <div class="ux-grid" style="justify-content:left; margin-top:0 rem;">
+             <div class="ux-point" style="background-color:var(--white);">
+               <p class="p1">Help Recruit Prospective Students</p>
+               <p class="p2">Do visitors get the information they need to want to join the department?</p>
+             </div>
+             <div class="ux-point" style="background-color:var(--white);">
+               <p class="p1">Be an Access Portal</p>
+               <p class="p2">Are visitors guided to important information about the ECE Department's research and programs?</p>
+             </div>
+             <div class="ux-point" style="background-color:var(--white);">
+               <p class="p1">Be Representative</p>
+               <p class="p2">Do people understand the interests and goals of the Department of Electrical & Computer Engineering?</p>
+             </div>
+          </div>
+      </div>
 
   <!-- Column 2 -->
+       <div class="challenges-container">
+             <h5 style="text-align:center; color:var(--secondary);line-height:1.2; margin-bottom:0.5rem;">Challenges</h5>
+             <p class="p2">
+                Key opportunities included the outdated hero banner, limited explanation of research areas, missing info on co-op opportunities, and a lack of visibility for upcoming events.<br><br>
+                We wanted to avoid a text-heavy page and instead highlight visuals and CTAs to guide visitors toward key pages like Research at ECE and Programs.<br><br>
+                However, the redesign also had to follow the University of Toronto’s official design guidelines to maintain consistency with U of T and the Faculty of Engineering. The content & marketing team provided revised homepage copy to align with these guidelines.
+             </p>
+             
+             <p class="snippet-caption">What kind of messaging do our home Faculty and sibling departments have?</p>
+             <div class="ux-snippet" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; justify-items: center; align-items: start; margin-top: 10px; margin-bottom: 40px;">
+                 <img src="images/webp/fase.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/fase.webp')" />
+                <img src="images/webp/CIVMIN.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/CIVMIN.webp')" />
+                <img src="images/webp/MIE.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/MIE.webp')" />
+              </div>
+              <!-- Modal -->
+              <div id="imageModal" class="modal-mrs" onclick="closeModal()">
+                  <img id="modalImage" class="modal-image-mrs">
+              </div>
+      </div>
+
+  <!-- Column 3 -->
   <div class="legacy-home-page">
   <h5 style="text-align:center; color:var(--secondary);line-height:1.2;">Legacy Home Page</h5>
     <div class="challenges-image">
@@ -168,17 +169,17 @@
     <div class="activities-grid">
       <div class="activity-box" style="background-color:var(--white);">
         <img src="icons/BrainStorming.png" alt="Brainstorming Icon" class="activity-icon">
-        <h3>Brainstorming & Ideation</h3>
+        <h3 style="color:var(--secondary);">Brainstorming & Ideation</h3>
         <p>To Explore multiple layouts + UI ideas and visualize the redesign direction.</p>
       </div>
       <div class="activity-box" style="background-color:var(--white);">
         <img src="icons/Research.png" alt="Research Icon" class="activity-icon">
-        <h3>Research</h3>
+        <h3 style="color:var(--secondary);">Research</h3>
         <p>To Benchmark functionality and appeal.</p>
       </div>
       <div class="activity-box" style="background-color:var(--white);">
         <img src="icons/Deliverables.png" alt="Wireframe Icon" class="activity-icon">
-        <h3>Wireframes & Mockups</h3>
+        <h3 style="color:var(--secondary);">Wireframes & Mockups</h3>
         <p>Create high-fidelity designs and visual mockups using Figma.</p>
       </div>
     </div>

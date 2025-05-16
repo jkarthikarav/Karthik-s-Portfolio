@@ -867,12 +867,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content:center; 
+  align-items:start;
+  margin-bottom: 2rem;s
 }
 
 .ux-point {
-  background-color: #f9f9f9;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
@@ -939,12 +939,10 @@ footer {
 }
 
 .challenges-container {
-  display: flex;
+  display: grid;
   align-items: flex-start;
-  justify-content: space-between;
-
+  justify-content: top;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .challenges-text {
@@ -1431,10 +1429,9 @@ th {
 
 .two-column-grid-challenges-ece {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   padding: 2rem;
-  background: transparent;
   color: var(--black);
 }
 
