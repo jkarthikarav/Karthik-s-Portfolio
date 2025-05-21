@@ -10,29 +10,11 @@
 </head>
 <body>  
 
-  <header class="header" style="padding: 4rem 2rem 1rem;">
-    <div >
-      <a href="index.html"><img src="logos/Karthik Aravind.png"style="max-width:200px;"></a>
-    </div>
+<div id="header-placeholder"></div>
 
-    <nav class="nav-links">
-      <a href="ece-website-projects.html" target="_blank">ECE Work Highlights</a>
 
-      <div class="dropdown">
-        <a href="#">UX/UI & Web Design</a>
-        <div class="submenu">
-          <a href="ece-homepage-redesign.html" target="_blank">ECE Home Page Redesign</a>
-          <a href="spy-film-pitch.html" target="_blank">Spy Film Pitch Website</a>
-          <a href="tmc.html" target="_blank">IA for Textile Museum of Canada</a>
-          <a href="research-virtual-museum.html" target="_blank">Website Research Design & Insights</a>
-          <a href="ui-design-mobile-app.html" target="_blank">Mobile App UI - Experience Toronto</a>
-        </div>
-      </div>
 
-      <a href="#service">Service Design</a>
-      <a href="about-me.html" target="_blank">About Me</a>
-    </nav>
-  </header>
+
 
 <section class="hero"  style="padding: 4rem 2rem 0rem;">
 	<div class="hero-text" style="text-align:left;padding: 2rem;">
@@ -132,28 +114,23 @@
    onmouseout="this.style.filter=''">     View All UX/UI Projects 🡻</a>
 
 		<div class="hidden-section" style="display: none;" id="hiddenSection">
-	<h6 class="section-title" style="text-align:left; margin-top:0px; margin-bottom: 0;">UX/UI Design</h6>
-	<div style="height: 1px; background-color: var(--grey2); width: 100%; margin-top: 0;"></div>
-	<p>
-		<span style="font-size:24px;font-weight:800;color:var(--secondary);margin-top:10px;">
-			I have worked on a wide range of UX/UI design projects that explore interaction, navigation, and content discoverability strategies across digital platforms.
-		</span>
-	</p>
+<h6 class="section-title" style="text-align:left; margin-top:0;">Design for Culture, Access & Engagement</h6>
 
-			<div class="project-gd-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
-				<div class="project-card" style="overflow: hidden;">
-                                            <a href="ui-design-mobile-app.html" target="_blank"></a>
-					    <p>UX Design - Course Project (INF1602)</p>
-				            <h6>Experience Toronto – AI Museum Ticket App</h6>
-                                            <a href="ui-design-mobile-app.html" class="case-button-new" target="_blank">Case Study</a><br><br>
-                                            <img src="images/Exp-Toronto.png" alt="Experience Toronto – AI Museum Ticket App" style="max-width: 100%; height: fill; object-fit: cover;">
-        			</div>
+<div class="project-gd-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+
+<div class="project-card" style="overflow: hidden;">
+ <a href="ui-design-mobile-app.html" target="_blank"></a>
+ <p>UX/UI Design - Course Project (INF1602)</p>
+ <h6>Museum Ticket AI App UI Design</h6>
+ <a href="ui-design-mobile-app.html" class="case-button-new" target="_blank">Case Study</a><br><br>
+ <img src="images/Exp-Toronto.png" alt="Experience Toronto – AI Museum Ticket App" style="max-width: 100%; height: fill; object-fit: cover;">
+</div>
 
 <!-- CHLAVM Virtual Museum Website -->
 <div class="project-card" style="overflow: hidden;">
   <a href="research-virtual-museum.html" target="_blank">
-  <p>CHLAVM Virtual Museum Website (UNDER NDA)</p>
-  <h6>UX Research Design, Planning and Insights</h6>
+  <p>CHLAVM Virtual Museum (UNDER NDA)</p>
+  <h6>UX Research Design and Insights</h6>
   <a href="research-virtual-museum.html" class="case-button-new" target="_blank">Case Study</a><br><br>
   <img src="images/Exhibit.jpg" alt="CHLAVM Virtual Museum" style="max-width: 100%; height: auto; object-fit: cover;">
 
@@ -163,12 +140,21 @@
 <div class="project-card" style="overflow: hidden;">
   <a href="tmc.html" target="_blank">
   <p>Textile Museum of Canada</p>
-  <h6>Information Architecture and Navigation Design</h6>
+  <h6>IA and Navigation Design</h6>
   <a href="tmc.html" class="case-button-new" target="_blank">Case Study</a><br><br>
   <img src="logos/tmclogo.jpg" alt="Textile Museum of Canada" style="max-width: 100%; height: auto; object-fit: cover;">
 
 </div>
 
+<!-- Digital Comics Museum -->
+<div class="project-card" style="overflow: hidden;">
+  <a href="tmc.html" target="_blank">
+  <p>Digitization - Course Project (INF2228)</p>
+  <h6>Digitization Critique</h6>
+  <a href="https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" class="case-button-new" target="_blank">View Slides</a><br><br>
+  <img src="images/DIGITIZATION CRITIQUE.png" style="max-width: 100%; height: auto; object-fit: cover;">
+
+</div>
     			</div>
 		</div>
 
@@ -276,5 +262,13 @@
 	<br>Website created using HTML and hosted on my Github repo.
     </div>
 </footer>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
 </body>
 </html>

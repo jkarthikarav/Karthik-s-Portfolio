@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 function openModal(imageSrc) {
   // Get the modal element
   var modal = document.getElementById("imageModal");
