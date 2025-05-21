@@ -258,7 +258,11 @@ p {
       display: block;
     }
 
-
+.header a.active-link {
+  pointer-events: none; /* disables clicking */
+  text-decoration: underline;
+  color: inherit; /* optional: keep default text color */
+}
 
 
 

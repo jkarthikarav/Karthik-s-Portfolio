@@ -10,30 +10,7 @@
 </head>
 <body>
 
-  <header class="header">
-    <div style="color:var(--white);">
-      <h6><a href="index.html" style="text-decoration: none;">Go to Home</a></h6>
-    </div>
-
-    <nav class="nav-links">
-      <a href="ece-website-projects.html" target="_blank">ECE Work Highlights</a>
-
-      <div class="dropdown">
-        <a href="#">UX/UI & Web Design</a>
-        <div class="submenu">
-          <a href="ece-homepage-redesign.html" target="_blank">ECE Home Page Redesign</a>
-          <a href="spy-film-pitch.html" target="_blank">Spy Film Pitch Website</a>
-          <a href="tmc.html" target="_blank">IA for Textile Museum of Canada</a>
-          <a href="#" style="text-decoration: underline;">Website Research Design & Insights</a>
-          <a href="ui-design-mobile-app.html" target="_blank">Mobile App UI - Experience Toronto</a>
-        </div>
-      </div>
-
-      <a href="index.html#service">Service Design</a>
-      <a href="about-me.html" target="_blank">About Me</a>
-    </nav>
-  </header>
-
+<div id="header-placeholder"></div>
 
 <section class="hero-banner-market-research-mrs">
   <div class="text-container-market-research-mrs">
@@ -253,7 +230,13 @@
     </div>
   </footer>
 
- 
+ <script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
 
 </body>
 </html>
