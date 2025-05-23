@@ -68,44 +68,29 @@ textElements.forEach(el => {
 });
 
 
-
-document.getElementById('toggleButton').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevents the default anchor link behavior
-    var hiddenSection = document.getElementById('hiddenSection');
-    
-    // Toggle the display of the hidden section
-    if (hiddenSection.style.display === "none" || hiddenSection.style.display === "") {
-        hiddenSection.style.display = "block"; // Show the section
-    } else {
-        hiddenSection.style.display = "none"; // Hide the section
-    }
-});
-
-
-document.getElementById('toggleButton2').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevents the default anchor link behavior
-    var hiddenSection2 = document.getElementById('hiddenSection2');
-    
-    // Toggle the display of the hidden section
-    if (hiddenSection2.style.display === "none" || hiddenSection2.style.display === "") {
-        hiddenSection2.style.display = "block"; // Show the section
-    } else {
-        hiddenSection2.style.display = "none"; // Hide the section
-    }
-});
-
-
+// Toggle for Service Design & Workflow Projects
 document.getElementById('service').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevents the default anchor link behavior
+    event.preventDefault(); // Prevent default anchor behavior
     var hiddenSection3 = document.getElementById('hiddenSection3');
-    
-    // Toggle the display of the hidden section
+
+    // Toggle display
     if (hiddenSection3.style.display === "none" || hiddenSection3.style.display === "") {
-        hiddenSection3.style.display = "block"; // Show the section
+        hiddenSection3.style.display = "block";
     } else {
-        hiddenSection3.style.display = "none"; // Hide the section
+        hiddenSection3.style.display = "none";
     }
 });
 
+// Toggle for Visual Design Projects
+document.getElementById('toggleButton2').addEventListener('click', function(event) {
+    event.preventDefault();
+    var hiddenSection2 = document.getElementById('hiddenSection2');
+
+    if (hiddenSection2.style.display === "none" || hiddenSection2.style.display === "") {
+        hiddenSection2.style.display = "block";
+    } else {
+        hiddenSection2.style.display = "none";
+    }
+});
 
 
