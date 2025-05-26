@@ -68,19 +68,6 @@ textElements.forEach(el => {
 });
 
 
-// Toggle for Service Design & Workflow Projects
-document.getElementById('service').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default anchor behavior
-    var hiddenSection3 = document.getElementById('hiddenSection3');
-
-    // Toggle display
-    if (hiddenSection3.style.display === "none" || hiddenSection3.style.display === "") {
-        hiddenSection3.style.display = "block";
-    } else {
-        hiddenSection3.style.display = "none";
-    }
-});
-
 // Toggle for Visual Design Projects
 document.getElementById('toggleButton2').addEventListener('click', function(event) {
     event.preventDefault();
