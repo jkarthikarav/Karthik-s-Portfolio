@@ -23,7 +23,6 @@
 
 
 
-
 function openModal(imageSrc) {
   // Get the modal element
   var modal = document.getElementById("imageModal");
@@ -80,13 +79,3 @@ document.getElementById('toggleButton2').addEventListener('click', function(even
     }
 });
 
-document.getElementById('toggleButton3').addEventListener('click', function(event) {
-    event.preventDefault();
-    var hiddenSection3 = document.getElementById('hiddenSection3');
-
-    if (hiddenSection3.style.display === "none" || hiddenSection3.style.display === "") {
-        hiddenSection3.style.display = "block";
-    } else {
-        hiddenSection3.style.display = "none";
-    }
-});
