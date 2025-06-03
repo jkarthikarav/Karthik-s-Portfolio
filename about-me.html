@@ -16,9 +16,17 @@
         const headerPlaceholder = document.getElementById('header-placeholder');
 
         // When mouse enters the element, ensure it's visible
-        headerPlaceholder.addEventListener('mouseenter', function() {
-            headerPlaceholder.style.display = 'block';
-        });
+window.addEventListener('scroll', function() {
+    const headerPlaceholder = document.getElementById('headerPlaceholder');
+
+    if (window.scrollY === 0) {
+        // At the top of the page
+        headerPlaceholder.style.display = 'block';
+    } else {
+        // Scrolled down
+        headerPlaceholder.style.display = 'none';
+    }
+});
 
         // When mouse leaves the element, hide it
         headerPlaceholder.addEventListener('mouseleave', function() {
