@@ -11,28 +11,44 @@
 <body>
 
 <div id="header-placeholder"></div>
-<section>
-  <div style="margin: 6rem 4rem; display: flex; align-items: center; gap: 40px;">
+    <script>
+        // Get the element
+        const headerPlaceholder = document.getElementById('header-placeholder');
+
+        // When mouse enters the element, ensure it's visible
+        headerPlaceholder.addEventListener('mouseenter', function() {
+            headerPlaceholder.style.display = 'block';
+        });
+
+        // When mouse leaves the element, hide it
+        headerPlaceholder.addEventListener('mouseleave', function() {
+            headerPlaceholder.style.display = 'none';
+        });
+    </script>
+
+<section style="position: relative; overflow: hidden; padding: 2rem;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top right, #00746A 0%, #00464F 25%, #009B82 75%, #00BFA0 90%); z-index: -1;"></div>
+
+  <div style="margin: 0; display: flex; align-items: center; gap: 40px; padding: 2rem;">
     
     <!-- Left Column: Text -->
     <div style="flex: 0 0 450px">
-      <img src="images/karthik-profile.jpg" alt="Photo of Karthik" style="width: 100%; height: auto; border-radius: 12px;">
+      <img src="images/webp/Karthik2.webp" alt="Photo of Karthik" style="width: 100%; height: auto; border-radius: 12px;">
     </div>
 
     <div style="flex: 1;">
-      <h2 style="margin: 0 0 16px 0; color: var(--secondary); line-height: 1.4;">
+      <h2 style="margin: 0 0 16px 0; color: var(--secondary); line-height: 1.4; color:var(--white);">
         Designing vivid and usable digital experiences rooted in research, systems thinking, and a passion for storytelling.
       </h2>
     </div>
 
   </div>
-
   <!-- Second Paragraph Below -->
   <div style="max-width: 1400px; margin: 20px auto 0 auto;">
-    <h3 style="color: var(--secondary);">
-      From engineering faculty websites to film pitch decks, I’ve led product and service design projects across education, media, fintech, and healthcare.
+    <h3 style="color: var(--white);">
+     <br> From engineering faculty websites to film pitch decks, I’ve led product and service design projects across education, media, fintech, and healthcare.
     </h3>
-    <h6>
+    <h6 style="color: var(--white);">
 I currently maintain the ECE Department website at the University of Toronto and previously shaped production processes at Fix It In Post Studios, while also freelancing in design, research, and digital strategy.
 <br><br>
 Based in Toronto and originally from Chennai, I hold a Master’s in User Experience Design from the University of Toronto and a Master’s in Media from Anna University.
@@ -42,67 +58,135 @@ Since 2019, I’ve worked on agency and freelance projects focused on improving 
 Feel free to reach out — I’m chronically online.
     </h6>
   </div>
-</section>
 
-<section class="design-process">
-  <div class="section-container" style="max-width:1800px;">
-    <h4>My Design Process</h4>
-    <div class="process-grid">
-      <div class="process-step">
-        <h4>Step 1</h4>
-        <h3>UX & Market Research</h3>
-        <p>I begin with the goals, audience, and context. Through user interviews, competitive analysis, and assessing business needs, I gather insights that influence my direction.</p>
-      </div>
 
-      <div class="process-step">
-        <h4>Step 2</h4>
-        <h3>UI: Ideate & Brainstorm</h3>
-        <p>I brainstorm a variety of solutions, sketching ideas, and creating wireframes on Figma. I also quickly whip up prototypes and concepts, if need be.</p>
-      </div>
-
-      <div class="process-step">
-        <h4>Step 3</h4>
-        <h3>UI: Wireframes & Prototype</h3>
-        <p>Once I have a clear direction and I receive my go-ahead, I develop high-fidelity mockups. At this stage, I focus on working with both aesthetics and usability.</p>
-      </div>
-
-      <div class="process-step">
-        <h4>Step 4</h4>
-        <h3>Test, Iterate, Present</h3>
-        <p>I conduct testing, gather feedback by presenting it to peers and stakeholders, and then fine-tune the final design. I am very flexible with stakeholder feedback, making designs that satisfy business goals as well as consumer/user needs.</p>
-      </div>
-
-      <div class="process-step">
-        <h4>Additional Step</h4>
-        <h3>Post-Design</h3>
-        <p>If required, I am able to create content using Adobe Suite, Canva and AI, as well as use front end web development and software such as Wix, WordPress, HTML and CSS; as well as maintain and update the digital products.</p>
-      </div>
+<h4 style="color: var(--white); text-align:center;">My Design Process</h4>   
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; justify-items: center; max-width: 100%;">
+  
+  <!-- Process Step 1 -->
+  <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+    <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 300px; position: relative; transition: box-shadow 0.3s ease;">
+      <h4>Step 1</h4>
+      <h3>UX & Market Research + Ideate</h3>
+      <p>I begin with understanding the goals, audience, and context. Through user interviews, competitive analysis, and business needs assessment, I gather insights that influence the direction. I also brainstorm multiple solutions, sketch ideas, and create early wireframes to explore possible designs.</p>
+      <!-- Invisible border initially, becomes visible on hover -->
+      <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
     </div>
   </div>
-</section>
-
-<section class="key-software">
-  <div class="section-container">
-    <h4>Key Software</h4>   
-<div class="software-grid">
-  <div class="ux-snippet-1">
-    <img src="images/software1.png" alt="Journey" class="snippet-img-1">
-  </div>  <div class="ux-snippet-1">
-    <img src="images/software2.png" alt="Journey" class="snippet-img-1">
-  </div>  <div class="ux-snippet-1">
-    <img src="images/software3.png" alt="Journey" class="snippet-img-1">
-  </div>  <div class="ux-snippet-1">
-    <img src="images/software4.png" alt="Journey" class="snippet-img-1">
-  </div>      
-  </div></div>
-</section>
-
-<section class="ux-section">
-  <h4>My Academic and Professional Journey</h4>
-  <div class="ux-snippet">
-    <img src="images/Journey-Timeline.png" alt="Journey" class="snippet-img-2">
+  
+  <!-- Process Step 2 -->
+  <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+    <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 300px; position: relative; transition: box-shadow 0.3s ease;">
+      <h4>Step 2</h4>
+      <h3>Wireframes & Prototypes</h3>
+      <p>Once I have a clear direction, I develop high-fidelity mockups. I focus on creating detailed wireframes and interactive prototypes, using Figma to ensure both aesthetics and usability are balanced for a seamless user experience.</p>
+      <!-- Invisible border initially, becomes visible on hover -->
+      <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+    </div>
   </div>
+  
+  <!-- Process Step 3 -->
+  <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+    <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 300px; position: relative; transition: box-shadow 0.3s ease;">
+      <h4>Step 3</h4>
+      <h3>Test, Iterate, Present</h3>
+      <p>I conduct testing, gather feedback by presenting it to peers and stakeholders, and then refine the final design. I am flexible with stakeholder feedback, making sure the design aligns with business goals and user needs while keeping the experience intuitive and engaging.</p>
+      <!-- Invisible border initially, becomes visible on hover -->
+      <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+    </div>
+  </div>
+  
+  <!-- Process Step 4 (Additional Step) -->
+  <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+    <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 300px; position: relative; transition: box-shadow 0.3s ease;">
+      <h4>Additional Step</h4>
+      <h3>Post-Design</h3>
+      <p>If required, I can create content using Adobe Suite, Canva, and AI, and use front-end web development tools like Wix, WordPress, HTML, and CSS to maintain and update digital products.</p>
+      <!-- Invisible border initially, becomes visible on hover -->
+      <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+  const processSteps = document.querySelectorAll('.process-step');
+  processSteps.forEach(step => {
+    step.addEventListener('mouseover', function() {
+      this.querySelector('div').style.opacity = 1;
+    });
+    step.addEventListener('mouseout', function() {
+      this.querySelector('div').style.opacity = 0;
+    });
+  });
+</script>
+
+<h4 style="color: var(--white); text-align:center;">Key Software</h4>   
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; justify-items: center; max-width: 100%;">
+
+    <!-- Process Step 1 (Image 1 as background) -->
+    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+        <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 200px; position: relative; background-image: url('images/softwares/Untitled_2.png'); background-size: cover; background-position: center; transition: box-shadow 0.3s ease;">
+            <!-- Invisible border initially, becomes visible on hover -->
+            <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+        </div>
+    </div>
+    
+    <!-- Process Step 2 (Image 2 as background) -->
+    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+        <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 200px; position: relative; background-image: url('images/softwares/Untitled_3.png'); background-size: cover; background-position: center; transition: box-shadow 0.3s ease;">
+            <!-- Invisible border initially, becomes visible on hover -->
+            <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+        </div>
+    </div>
+    
+    <!-- Process Step 3 (Image 3 as background) -->
+    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+        <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 200px; position: relative; background-image: url('images/softwares/Untitled_4.png'); background-size: cover; background-position: center; transition: box-shadow 0.3s ease;">
+            <!-- Invisible border initially, becomes visible on hover -->
+            <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+        </div>
+    </div>
+    
+    <!-- Process Step 4 (Image 4 as background) -->
+    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
+        <div class="process-step" style="box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); padding: 20px; width: 100%; display: flex; flex-direction: column; height: 200px; position: relative; background-image: url('images/softwares/Untitled_1.png'); background-size: cover; background-position: center; transition: box-shadow 0.3s ease;">
+            <!-- Invisible border initially, becomes visible on hover -->
+            <div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 2px solid var(--grey0); opacity: 0; transition: opacity 0.3s ease;"></div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+  const processSteps = document.querySelectorAll('.process-step');
+  processSteps.forEach(step => {
+    step.addEventListener('mouseover', function() {
+      this.querySelector('div').style.opacity = 1;
+    });
+    step.addEventListener('mouseout', function() {
+      this.querySelector('div').style.opacity = 0;
+    });
+  });
+</script>
+
+
+  <h4 style="text-align:center; color: var(--white);">My Academic and Professional Journey</h4>
+<div class="ux-snippet">
+  <img src="images/Journey-Timeline.png" alt="Journey" class="snippet-img-2" style="background:var(--white); border: 2px solid var(--grey0); box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); border-radius: 15px;">
+</div>
+
+
 </section>
+
+<style>
+  /* Hover effect only on text */
+  h2:hover, h3:hover, h4:hover, h6:hover, p:hover {
+    transform: scale(1.01); /* Scale text by 5% on hover */
+    transition: transform 0.3s ease-in-out;
+  }
+</style>
+
 
   <footer>
    <script>

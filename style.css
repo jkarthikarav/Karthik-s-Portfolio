@@ -10,7 +10,9 @@
 }
 
 
-
+  .image-wrapper:hover .border {
+    opacity: 1; /* Border appears when the image wrapper is hovered */
+  }
 
 
 
