@@ -408,13 +408,12 @@ We identified key issues in the original experience, including confusing navigat
 <div id="footer-placeholder"></div>
 
 <script>
-  window.addEventListener("DOMContentLoaded", () => {
+
     fetch('/includes/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       });
-  });
 </script>
 
  <script>

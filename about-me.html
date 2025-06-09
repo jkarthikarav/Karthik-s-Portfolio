@@ -13,7 +13,7 @@
 <div id="header-placeholder"></div>
 
 <section style="position: relative; overflow: hidden; padding: 2rem;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top right, #00746A 0%, #00464F 25%, #009B82 75%, #00BFA0 90%); z-index: -1;"></div>
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--grey0); z-index: -1;"></div>
 
   <div style="margin: 0; display: flex; align-items: center; gap: 40px; padding: 2rem;">
     
@@ -23,7 +23,7 @@
     </div>
 
     <div style="flex: 1;">
-      <h2 style="margin: 0 0 16px 0; color: var(--secondary); line-height: 1.4; color:var(--white);">
+      <h2 style="margin: 0 0 16px 0; color: var(--secondary); line-height: 1.4; color:var(--secondary);">
         Designing vivid and usable digital experiences rooted in research, systems thinking, and a passion for storytelling.
       </h2>
     </div>
@@ -31,10 +31,10 @@
   </div>
   <!-- Second Paragraph Below -->
   <div style="max-width: 1400px; margin: 20px auto 0 auto;">
-    <h3 style="color: var(--white);">
+    <h3 style="color: var(--secondary);">
      <br> From engineering faculty websites to film pitch decks, I’ve led product and service design projects across education, media, fintech, and healthcare.
     </h3>
-    <h6 style="color: var(--white);">
+    <h6 style="color: var(--secondary);">
 I currently maintain the ECE Department website at the University of Toronto and previously shaped production processes at Fix It In Post Studios, while also freelancing in design, research, and digital strategy.
 <br><br>
 Based in Toronto and originally from Chennai, I hold a Master’s in User Experience Design from the University of Toronto and a Master’s in Media from Anna University.
@@ -46,7 +46,7 @@ Feel free to reach out — I’m chronically online.
   </div>
 
 
-<h4 style="color: var(--white); text-align:center;">My Design Process</h4>   
+<h4 style="color: var(--secondary); text-align:center;">My Design Process</h4>   
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; justify-items: center; max-width: 100%;">
   
   <!-- Process Step 1 -->
@@ -107,7 +107,7 @@ Feel free to reach out — I’m chronically online.
   });
 </script>
 
-<h4 style="color: var(--white); text-align:center;">Key Software</h4>   
+<h4 style="color: var(--secondary); text-align:center;">Key Software</h4>   
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; justify-items: center; max-width: 100%;">
 
     <!-- Process Step 1 (Image 1 as background) -->
@@ -157,7 +157,7 @@ Feel free to reach out — I’m chronically online.
 </script>
 
 
-  <h4 style="text-align:center; color: var(--white);">My Academic and Professional Journey</h4>
+  <h4 style="text-align:center; color: var(--secondary);">My Academic and Professional Journey</h4>
 <div class="ux-snippet">
   <img src="images/Journey-Timeline.png" alt="Journey" class="snippet-img-2" style="background:var(--white); border: 2px solid var(--grey0); box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); border-radius: 15px;">
 </div>
@@ -178,13 +178,12 @@ Feel free to reach out — I’m chronically online.
 <div id="footer-placeholder"></div>
 
 <script>
-  window.addEventListener("DOMContentLoaded", () => {
+
     fetch('/includes/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       });
-  });
 </script>
 
 <script>

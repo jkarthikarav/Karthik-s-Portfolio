@@ -260,13 +260,12 @@ The biggest challenge was organizing the content in a way that made sense for di
 <div id="footer-placeholder"></div>
 
 <script>
-  window.addEventListener("DOMContentLoaded", () => {
+
     fetch('/includes/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       });
-  });
 </script>
 
 <script>
