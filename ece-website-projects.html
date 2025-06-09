@@ -181,22 +181,18 @@ Used Website production to improve online experience and better showcase departm
 </section>
 
 
-  <footer>
-   <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-  <div class="footer-links">
-      <a href="index.html">Go to Home</a>
-      <a href="about-me.html" target="_blank">About Me</a>
-      <a href="#" onclick="scrollToTop()">Go to Top</a>
-    </div>
-    <div class="contact-info">
-	<strong>Write to me: </strong>karthikaravindj@gmail.com<strong> &emsp;Connect with me on Linkedin: </strong><a href="https://linkedin.com/in/karthikjambunathan" target="_blank">Karthik Jambunathan</a>
-	<br>Website created using HTML and hosted on my Github repo.
-    </div>
-  </footer>
+<div id="footer-placeholder"></div>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    fetch('/includes/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  });
+</script>
+
 
 <script>
   fetch('header.html')
