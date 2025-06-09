@@ -261,7 +261,7 @@ The biggest challenge was organizing the content in a way that made sense for di
 
 <script>
 
-    fetch('/includes/footer.html')
+    fetch('footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
