@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Football Manager: UI Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<section class="project-banner-section-newhero" style="padding-left:2rem; padding-right:2rem; padding-top:4rem; padding-bottom:2rem;">
+  <h2 class="section-title-newhero" style="color:var(--secondary); line-height:1.2; margin-top:2rem;">
+    Desktop App UI Redesign for Football Manager
+    <span style="font-size:36px; color:var(--black); font-weight:400;">
+      <br>Designing for Visuals and Data Analysis
+    </span>
+  <div style="width: 100%; height: 400px; overflow: hidden;">
+      <img src="images/webp/FMTitle.webp" alt="Mockup" class="mockup-img-newhero" style="width: 100%; height: 100%; object-fit: cover;"/>
+  </div>
+</section>
+
+
+<section class="project-details-section-newhero">
+  <div class="project-details-grid-newhero">
+    <div class="detail-item-newhero">
+      <h3 class="detail-heading-newhero" style="font-size:24px;">Project Context</h3>
+</div>
+    <div class="detail-item-newhero">
+      <h3 class="detail-heading-newhero">Role</h3>
+      <p class="detail-placeholder-newhero">UI Designer</p>
+    </div>
+    <div class="detail-item-newhero">
+      <h3 class="detail-heading-newhero">Duration</h3>
+      <p class="detail-placeholder-newhero">UI Design: March 2025.</p>
+    </div>
+    <div class="detail-item-newhero">
+      <h3 class="detail-heading-newhero">Deliverables</h3>
+      <p class="detail-placeholder-newhero">UI Concept Designs</p>
+    </div>
+    <div class="detail-item-newhero">
+      <h3 class="detail-heading-newhero">Tools</h3>
+      <p class="detail-placeholder-newhero">Figma</p>
+    </div>
+  </div>
+</section>
+
+<section class="process-section" style="background:var(--white);">
+
+
+<h4 style="text-align:left; color:var(--secondary);line-height:1.2; margin-bottom:2rem;">Project Goals</h4>
+
+    <p class="p2">
+     Football Manager has a lot of depth, but the interface can feel messy and hard to use. I looked at three key screens on the club page: Club Overview, Registration, and Transfer History.
+<br><br>These are all part of the tabs and dropdowns you see when viewing any club. The Club Overview is what you see first. 
+<br><br>I asked one main question:<em> How can I show key club info without crowding the screen? </em>
+<br><br>My redesign focuses on grouping related info together which helps users scan faster, make decisions quicker, and feel more in control when they view a club. My redesign focuses on how other clubs are viewed, which is why the user playing as Liverpool FC is looking at a Chelsea FC Club Overview. While the game does generate an in-game next match report for the club, the user should still be able to view the club overview screen and make decisions for themselves, i.e., to not have to rely on the package that the user's in-game assistant manager generates, which might contain errors and the personal opinions of the assistant.
+<br><br>The game also uses latest player and club data, but is designed for the 2021 version of the game. This is because the concept of the redesigns is based on the fandom concept of <em>Mods</em>, a process wherein fans create customised skins, game data and other content for the game on their localised PC. This adds a level of customisation and oneness that the generic version often doesn't provide.
+<br><br>Sports Interactive, the developer of FM, does not officially sell in-game skins. The game provides a default skin, and players are encouraged to customize their experience through community-created mods. FM's modding community is vibrant and creative, producing a wide array of custom skins, face packs, logos, and other graphical enhancements.
+<br><br>The community's active participation shows a strong demand for aesthetically and game-value enhancing add-ons.
+    </p>
+
+    <p class="p2">
+These are some of the original screens that I shall be redesigning:
+    </p>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; justify-items: start; align-items: start; margin-top: 1rem; margin-bottom: 0.5rem;">
+  <img src="images/webp/OriginalFM1.webp" alt="MTDapp-lofi" style="width: 100%; max-width: 600px; height: auto; display: block;" onclick="openModal('images/webp/OriginalFM1.webp')" />
+  <img src="images/webp/OriginalFM2.webp" alt="MTDapp-lofi" style="width: 100%; max-width: 600px; height: auto; display: block;" onclick="openModal('images/webp/OriginalFM2.webp')" />
+  <img src="images/webp/OriginalFM3.webp" alt="MTDapp-lofi" style="width: 100%; max-width: 600px; height: auto; display: block;" onclick="openModal('images/webp/OriginalFM3.webp')" />
+</div>
+
+<h4 style="text-align:left; color:var(--secondary);line-height:1.2; margin-bottom:2rem;">High Fidelity Concept Designs:</h4>
+<img src="images/webp/FM1.webp" alt="MTDapp-lofi" style="width: 900px; height: auto;" onclick="openModal('images/webp/FM1.webp')" />
+
+
+<!-- Modal -->
+<div id="imageModal" class="modal-mrs" onclick="closeModal()">
+    <img id="modalImage" class="modal-image-mrs">
+</div>
+
+</section>
+
+<section class="concluding-thoughts-section" style="background:var(--white);">
+  <div class="concluding-row">
+    <div class="concluding-text">
+      <h2 class="section-heading">Conclusion: Thoughts and Takeaways</h2>
+      <p class="p2">Redesigning the Football Manager interface was all about striking the right balance between presenting detailed data and ensuring the layout was visually accessible and easy to digest. 
+<br><br>My design focuses on optimizing the visual flow, organizing information in a way that makes it easy for users to scan and understand at a glance. I placed a strong emphasis on visual hierarchy and grouping related data to make it intuitive and less overwhelming.
+<br><br>Also, I envisioned it as an AI-powered interface: its recommendations and event highlights would adapt based on user preferences and behaviour data, improving relevance over time.
+</p>
+<p class="section-title" style="font-size:16px;text-align:left; margin-bottom: 0;">Key Takeaway: Designing and Presenting Data in Games with Purpose.</p>
+        <div style="height: 1px; background-color: var(--grey2); width: 100%; margin-top: 0;"></div>
+      <p class="p2">Every piece of information on screen should either enhance realism or serve the decision-making process. In complex systems like Football Manager, the interface must focus on what’s truly needed, ensuring that every element contributes meaningfully to the player's experience.
+	</p>
+</div>
+    <div class="concluding-image">
+      <img src="images/webp/FMTitle.webp">
+    </div>
+  </div>
+</section>
+
+
+
+<div id="footer-placeholder"></div>
+
+<script>
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+</html>
