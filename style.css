@@ -278,7 +278,6 @@ p {
   top: 100%;
   left: 0; /* Changed to align it to the left of the screen/container */
   width: 100%; /* Ensures it takes up the full width of the parent container */
-  max-width: 1200px; /* Limits the width to prevent stretching across the full screen */
   padding: 2rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   display: none;
