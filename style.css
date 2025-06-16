@@ -206,7 +206,7 @@ p {
   display: flex;
   justify-content: space-between; /* space between logo and nav */
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   background-color: var(--secondary);
   color: var(--white);
 }
