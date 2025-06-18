@@ -240,7 +240,7 @@ p {
 
 .mega-menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Set three columns for content */
+  grid-template-columns: repeat(2, 1fr); /* Set three columns for content */
   gap: 2rem;
   background-color: var(--secondary);
   position: absolute;
