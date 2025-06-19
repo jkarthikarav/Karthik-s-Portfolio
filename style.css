@@ -14,6 +14,56 @@
     opacity: 1; /* Border appears when the image wrapper is hovered */
   }
 
+.card-button-1906 {
+  all: unset;
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-button-1906:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+}
+
+.image-container-1906 {
+  position: relative;
+  height: 60%;
+  width: 100%;
+}
+
+.image-container-1906 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-1906 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--white);
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.card-content-1906 {
+  padding: 16px; /* reduced vertical padding */
+}
+
+.location-1906 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 
 
 
