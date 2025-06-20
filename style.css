@@ -9,6 +9,27 @@
   --secondary: #00464F;
 }
 
+  article {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: var(--white);
+    transition: box-shadow 0.3s ease;
+  }
+
+  article:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+.no-bg-no-hover {
+  background: none !important;
+}
+.no-bg-no-hover:hover {
+  box-shadow: none !important;
+}
+
+
+
 
   .image-wrapper:hover .border {
     opacity: 1; /* Border appears when the image wrapper is hovered */
@@ -65,6 +86,51 @@
   margin-bottom: 8px;
 }
 
+.tabs-1906 {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.tab-1906 {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.tab-1906.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(45deg, #00464F, #7BAE7F);
+}
+
+.tab-content-1906 {
+  position: relative;
+  min-height: 100px;
+  margin-top: 1rem;
+}
+
+.tab-pane-1906 {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: absolute;
+  color: var(--black);
+  width: 100%;
+}
+
+.tab-pane-1906.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  color: var(--black);
+}
 
 
 body {
@@ -128,6 +194,34 @@ p {
 
 
 
+/* Fade-in and slide-up animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the text elements */
+.fade-slide-up {
+  animation: fadeSlideUp 1.5s ease-out forwards;
+}
+
+.fade-slide-up:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.fade-slide-up:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.fade-slide-up:nth-child(3) {
+  animation-delay: 0.9s;
+}
 
 
 .case-study-cards {
@@ -288,28 +382,22 @@ p {
   font-size: 0.7em;
 }
 
+/* Mega Menu */
 .mega-menu {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Set three columns for content */
-  gap: 2rem;
-  background-color: var(--secondary);
+  display: none; /* Ensures mega menu is hidden by default */
+  grid-template-columns: repeat(6, 1fr); /* Set default columns */
+  gap: 20px;
+  background-color: var(--grey0);
   position: absolute;
-  top: 100%;
-  right: 0; /* Positioned at the right corner of the screen */
-  width: max-content; /* Width adjusts to content size */
+  top: 100%; /* Adjust position to below header */
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
   padding: 2rem;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  display: none;
-  z-index: 1;
-  color: var(--white);
-  min-width: max-content;
-  white-space: nowrap;
+  z-index: 999;
+  color: var(--secondary);
   margin-top: 0.5rem; /* Add spacing below header */
   text-align: left; /* Align items inside the mega menu to the left */
-}
-
-.dropdown:hover .mega-menu {
-  display: grid;
 }
 
 /* Mega Menu Columns */
@@ -342,7 +430,7 @@ p {
 .mega-menu a {
   display: block;
   padding: 4px 0;
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -354,17 +442,6 @@ p {
   font-style: italic;
   font-size: 0.85em;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -559,25 +636,43 @@ p {
 }
 
 
-.case-button-new:hover
+/* White overlay styles */
+.overlay {
+  position: absolute; /* Temporarily positioned for JS control */
+  left: 0;
+  width: 100%;
+  height: 3000px;
+  background-color: var(--white); /* Temporary background color for visibility */
+  z-index: 9999; /* Ensure it's above all content */
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* Ensure it doesn't block clicks when it's invisible */
+}
 
 
+/* Scroll button and fade-in animations will still apply */
 .scroll-button {
   display: inline-block;
-  color:var(--secondary);
-  min-height:40px;
+  color: var(--secondary);
+  min-height: 40px;
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   margin-top: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 1.8s;
 }
 
-.scroll-button:hover {
-  transform: scale(1.01);
-  text-decoration:underline;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .custom-cursor {
   position: fixed;
@@ -1293,7 +1388,7 @@ th {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      max-width: 1000px;
+      width: 1500px;
       margin: auto;
       padding: 20px;
     }

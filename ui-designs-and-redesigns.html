@@ -23,49 +23,67 @@
 
 
 <section class="project-details-section-newhero" style="background:var(--white); padding-left:4rem; padding-right:4rem;">
-  <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 2rem;">
 
-    <!-- Column 1 -->
-    <div style="flex: 1 1 48%; max-width: 48%;" id="row1">
-      <h5 style="color:var(--secondary); line-height:1.2; margin-bottom:1rem;">EMSuite: Home Page Design</h5>
-      <p class="p2">AI-powered SaaS platform offering a suite of digital healthcare tools</p>
-      <img src="images/webp/EMSuite.webp" alt="UI Design 1" style="object-position: top; width:100%; height:600px; object-fit:cover; margin-top:1rem;">
-      <br><br>
-      <a href="pdfs/EMSuite Home Page.pdf" target="_blank" class="case-button-new">View High Quality PDF</a>
-    </div>
+<!-- Row 1 Healthcare -->
+<article id="row1">
+  <video src="videos/EM Suite.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
+  <p style="font-size: 14px; margin-bottom: 0;">Healthcare Website UI</p>
+  <h6 style="margin: 0;">EMSuite: SaaS Home Page</h6>
+  <p style="margin-top: 0;">AI-powered SaaS platform for digital healthcare tools.</p>
+  <button onclick="window.open('pdfs/EMSuite Home Page.pdf', '_blank');" class="case-button-new" target="_blank">View High Quality PDF</button>
+</article>
 
-    <!-- Column 2 -->
-    <div style="flex: 1 1 48%; max-width: 48%;">
-      <h5 style="color:var(--secondary); line-height:1.2; margin-bottom:1rem;">Football Manager: Redesigned Club Overview</h5>
-      <p class="p2">Updated Club Overview screen offering a display of key information about the club as opposed to the original screen</p>
-      <img src="images/webp/FM1.webp" alt="UI Design 2" style="max-width:100%; height:auto; margin-top:1rem;">
-      <br><br>
-      <a href="game-design-football-manager.html" target="_blank" class="case-button-new">Case Study</a>
-    </div>
+<article>
+  <video src="videos/EM Suite.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
+  <p style="font-size: 14px; margin-bottom: 0;">Healthcare Mobile UI</p>
+  <h6 style="margin: 0;">Dictation & SOAP Notes: Mobile App</h6>
+  <p style="margin-top: 0;">AI-powered Mobile-first design for clinical dictation and notes entry.</p>
+  <button onclick="window.open('pdfs/EMSuite Home Page.pdf', '_blank');" class="case-button-new" target="_blank">View High Quality PDF</button>
+</article>
 
+<!-- Row 3 Games -->
+<article id="row3">
+  <video src="videos/FM CLUB PROFILE SCREEN Recording.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
+  <p style="font-size: 14px; margin-bottom: 0;">Game Design Desktop App UI</p>
+  <h6 style="margin: 0;">Football Manager: Redesigned Club Overview</h6>
+  <p style="margin-top: 0;">Updated Club Overview screen offering a display of key information about the club.</p>
+  <button onclick="window.open('game-design-football-manager.html', '_blank');" class="case-button-new">View Case Study</button>
+</article>
 
-    <!-- Column 3 -->
-    <div style="flex: 1 1 48%; max-width: 48%;" id="row2">
-      <h5 style="color:var(--secondary); line-height:1.2; margin-bottom:1rem;">CBC Radio Canada: Careers and Sub-Pages Consolidation</h5>
-      <p class="p2">UI redesign of CBC Radio Canada’s careers page and its subpages into an single page. <a href="https://cbc.radio-canada.ca/en/working-with-us/jobs" target="_blank">Original Page</a>
-</p>
-      <img src="images/webp/CBC.webp" alt="UI Design 3" style="object-position: top; width:100%; height:600px; object-fit:cover; margin-top:1rem;">
-      <br><br>
-      <a href="pdfs/CBC Radio Canada Careers Page.pdf" target="_blank" class="case-button-new">View High Quality PDF</a>
-    </div>
-
-    <!-- Column 4 -->
-    <div style="flex: 1 1 48%; max-width: 48%;">
-      <h5 style="color:var(--secondary); line-height:1.2; margin-bottom:1rem;">Thomas Fisher Rare Book Library: Exhibitions Sub-Pages Consolidation</h5>
-      <p class="p2">UI redesign of the Thomas Fisher Rare Book Library’s Exhibitions page and its subpages into a single page. <a href="https://fisher.library.utoronto.ca/exhibitions/current" target="_blank">Original Page</a></p>
-      <img src="images/webp/Fisher.webp" alt="UI Design 4" style="object-position: top; width:100%; height:600px; object-fit:cover; margin-top:1rem;">
-      <br><br>
-      <a href="pdfs/Fisher Rare Book Library Exhibitions Page.pdf" target="_blank" class="case-button-new">View High Quality PDF</a>
-    </div>
-
-
-
+<article>
+  <div style="width: 100%; height: 450px; overflow: hidden; border-radius: 6px;">
+    <img src="images/webp/Concept_01_LFC.webp" style="width: 100%; object-fit: cover; object-position: top;">
   </div>
+  <p style="font-size: 14px; margin-bottom: 0;">Website UI</p>
+  <h6 style="margin: 0;">Liverpool FC: Player Bio Redesign</h6>
+  <p style="margin-top: 0;">Updated Player Bio/Profile page offering a rich, visual experience</p>
+  <button onclick="window.open('pdfs/Concept_01_LFC.pdf', '_blank');" class="case-button-new">View High Quality PDF</button>
+</article>
+
+<!-- Row 4 Consolidation -->
+<article id="row4">
+  <div style="width: 100%; height: 450px; overflow: hidden; border-radius: 6px;">
+    <img src="images/webp/CBC.webp" style="width: 100%; object-fit: cover; object-position: top;">
+  </div>
+  <p style="font-size: 14px; margin-bottom: 0;">My Speciality: Consolidating Website Pages</p>
+  <h6 style="margin: 0;">CBC Radio Canada: Careers and Sub-Pages</h6>
+  <p style="margin-top: 0;">UI redesign of CBC Radio Canada’s careers page into a single page.</p>
+  <button onclick="window.open('pdfs/CBC Radio Canada Careers Page.pdf', '_blank');" class="case-button-new">View High Quality PDF</button>
+</article>
+
+<article>
+  <div style="width: 100%; height: 450px; overflow: hidden; border-radius: 6px;">
+    <img src="images/webp/Fisher.webp" style="width: 100%; object-fit: cover; object-position: top;">
+  </div>
+  <p style="font-size: 14px; margin-bottom: 0;">My Speciality: Consolidating Website Pages</p>
+  <h6 style="margin: 0;">Thomas Fisher Rare Book Library: Exhibitions and Sub-Pages</h6>
+  <p style="margin-top: 0;">UI redesign of the Fisher Rare Book Library’s Exhibitions page into a single page.</p>
+  <button onclick="window.open('pdfs/Fisher Rare Book Library Exhibitions Page.pdf', '_blank');" class="case-button-new">View High Quality PDF</button>
+</article>
+
+
+</div>
 </section>
 
 <div id="footer-placeholder"></div>

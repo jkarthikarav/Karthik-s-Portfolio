@@ -11,3 +11,38 @@
 
     			</div>
 		</div>
+
+
+
+<!-- Caterpillar -->
+<a class="card-button-1906" style="width:100%;" href="construction-site-supervision-app.html" target="_blank">
+  <div class="image-container-1906">
+    <img src="images/placeholder-thumb.jpg" alt="Caterpillar Construction App">
+    <span class="badge-1906">UX/UI Design</span>
+  </div>
+  <div class="card-content-1906">
+    <div class="location-1906">
+      Construction Project Dashboard UI Design.<br><br><span style="color:var(--grey3);">SaaS Solution for Construction Task Management
+    </span></div><br><br>
+    <span class="case-button-new">Read Case Study</span>
+  </div>
+</a>
+
+
+
+<!-- Row 2 Finance -->
+<article>
+  <video src="videos/EM Suite.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
+  <p style="font-size: 14px; margin-bottom: 0;">Healthcare Website UI</p>
+  <h6 style="margin: 0;">EMSuite: SaaS Home Page</h6>
+  <p style="margin-top: 0;">AI-powered SaaS platform for digital healthcare tools.</p>
+  <button onclick="window.open('pdfs/EMSuite Home Page.pdf', '_blank');" class="case-button-new" target="_blank">View High Quality PDF</button>
+</article>
+
+<article>
+  <video src="videos/EM Suite.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
+  <p style="font-size: 14px; margin-bottom: 0;">Healthcare Mobile UI</p>
+  <h6 style="margin: 0;">Dictation & SOAP Notes: Mobile App</h6>
+  <p style="margin-top: 0;">AI-powered Mobile-first design for clinical dictation and notes entry.</p>
+  <button onclick="window.open('pdfs/EMSuite Home Page.pdf', '_blank');" class="case-button-new">View High Quality PDF</button>
+</article>

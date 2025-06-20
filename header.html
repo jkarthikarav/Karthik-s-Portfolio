@@ -1,52 +1,150 @@
-<header class="header">
+<header class="header" style="position: relative; border: none;">
   <img src="logos/Karthik Aravind.png" alt="Logo" class="logo">
   
   <div class="nav-links">
-    	<div class="dropdown">
-      		<a href="#">Explore</a>
-      		<div class="mega-menu">
-        	<!-- Featured & Other Work -->
-        		<div class="mega-column">
-          			<div class="mega-heading">Featured Work</div>
-          				<a href="index.html#websitework" target="_blank">ECE Website Production Highlights (COLLECTION)</a>
-          				<a href="ece-homepage-redesign.html" target="_blank">ECE Homepage: Redesign for Recruitment <em>(CASE STUDY)</em></a>
-          				<a href="spy-film-pitch.html" target="_blank">Film Deck: Non-Traditional UX/UI <em>(CASE STUDY)</em></a>
-          				<a href="index.html#visualdesign" target="_blank">Visual Design/Digital Media Projects (COLLECTION)</a>
+    <div class="dropdown">
+      <a href="#" onclick="toggleMegaMenu(event)">Explore</a>
+    </div>
+  </div>
 
-          				<div class="mega-subheading">UX/UI Projects</div>
-          					<a href="research-virtual-museum.html" target="_blank">Virtual Museum: Research to Design <em>(CASE STUDY)</em></a>
-          					<a href="ui-design-mobile-app.html" target="_blank">Museum Tickets App: UI Design <em>(CASE STUDY)</em></a>
-          					<a href="tmc.html" target="_blank">Textile Museum IA: Phased Redesign Strategy <em>(CASE STUDY)</em></a>
-          					<a href="construction-site-supervision-app.html" target="_blank">Construction Site Tool: Dashboard UI Design <em>(CASE STUDY)</em></a>
+  <!-- Mega Menu -->
+  <div id="megaMenu" class="mega-menu" style="
+    position: absolute;
+    top: 0; /* Set dynamically via JS */
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--grey0);
+    display: none; /* Set to none by default */
+    padding: 2rem;
+    z-index: 999;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: start;
+    gap: 20px;
+    box-shadow: none;
+    border: none;
+    height: auto;
+  ">
 
-					<a href="ui-designs-and-redesigns.html" class="mega-subheading" target="_blank">UI Designs and Redesigns (COLLECTION)</a>
-          					<a href="ui-designs-and-redesigns.html#row1" target="_blank">EMSuite: SaaS Digital Healthcare Tool</a>
-          					<a href="ui-designs-and-redesigns.html#row1" target="_blank">Football Manager: Video Game Screen</a>
-          					<a href="ui-designs-and-redesigns.html#row2" target="_blank">CBC Radio Canada: Sub-Pages Consolidation</a>
-          					<a href="ui-designs-and-redesigns.html#row2" target="_blank">Fisher Library: Sub-Pages Consolidation</a>
-        		</div>
-          
-        	<!-- Presentations & Docs -->
-        		<div class="mega-column">
-          			<div class="mega-heading">&nbsp;</div>
+    <!-- Column 1: Featured Work, UI Designs, and Expand -->
+    <div>
+      <div class="mega-heading">Featured Work</div>
+      <a href="index.html#websitework" target="_blank">ECE Website Production</a>
+      <a href="index.html#visualdesign" target="_blank">Digital Media Projects</a>
+      <span style="display: inline-flex; align-items: center;">
+        <a href="ui-designs-and-redesigns.html" target="_blank">UI Designs and Redesigns</a>
+        <a href="#" onclick="toggleUISection(event)" id="expandLink" style="font-size: 12px; color: var(--secondary); cursor: pointer; margin-left: 5px;">Expand</a>
+      </span>
+    </div>
 
-          				<div class="mega-subheading">Presentations</div>
-          					<a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank">UX Design: User Journey Analysis for Capstone Project <em>(PPT)</em></a>
-          					<a href="https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" target="_blank">UX in Digitization: Digital Comics Museum <em>(PPT)</em></a>
-          					<a href="https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing" target="_blank">UX Design: Guidelines for Canadian Recycling System <em>(PPT)</em></a>
+    <!-- Column 2: UI Designs Subpages (Initially Hidden) -->
+    <div id="uiDesignsSubpages" style="display: none;">
+      <div class="mega-heading">&nbsp;</div>
+      <a href="ui-designs-and-redesigns.html#row1" target="_blank">SaaS Digital Health Tools</a>
+      <a href="ui-designs-and-redesigns.html#row2" target="_blank">SaaS Finance Tools</a>
+      <a href="ui-designs-and-redesigns.html#row3" target="_blank">Sports and Video Games</a>
+      <a href="ui-designs-and-redesigns.html#row4" target="_blank">Website Page Consolidation</a>
+    </div>
 
-          				<div class="mega-subheading">Writing & Analysis</div>
-          					<a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank">Speculative Design: When Creativity Is Governed <em>(DOC)</em></a>
-          					<a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank">Data Analysis: Collaboration and Charting Probability <em>(DOC)</em></a>
-          					<a href="https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing" target="_blank">Article Analysis: Cognitive authorities of COVID-19 information <em>(DOC)</em></a>
-          					<a href="https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing" target="_blank">Article Analysis: Digital fanfic in negotiation <em>(DOC)</em></a>
+    <!-- Column 3: Case Study Links -->
+    <div>
+      <div class="mega-heading">Case Studies</div>
+      <a href="ece-homepage-redesign.html" target="_blank">ECE Homepage</a>
+      <a href="spy-film-pitch.html" target="_blank">Film Pitch Website</a>
+      <a href="research-virtual-museum.html" target="_blank">Virtual Museum UXR</a>
+      <a href="ui-design-mobile-app.html" target="_blank">Museum Tickets Mobile UX/UI</a>
+      <a href="tmc.html" target="_blank">Textile Museum Design Strategy</a>
+    </div>
 
-          				<div class="mega-subheading">Who am I?</div>
-          					<a href="about-me.html" target="_blank">About Me</a>
-          					<a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank">LinkedIn</a>
-          					<a href="mailto:karthikaravindj@gmail.com">Email</a>
-          		</div>
-        	</div>
-    	</div>
+    <!-- Column 4: Presentations (PPTs) -->
+    <div>
+      <div class="mega-heading">Presentations</div>
+      <a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank">User Journey Analysis (PPT)</a>
+      <a href="https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" target="_blank">Digitization Critique (PPT)</a>
+      <a href="https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing" target="_blank">Design Guidelines (PPT)</a>
+    </div>
+
+    <!-- Column 5: Writing & Analysis -->
+    <div>
+      <div class="mega-heading">Writing & Analysis</div>
+      <a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank">Speculative Design (DOC)</a>
+      <a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank">Data Analysis (DOC)</a>
+      <a href="https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing" target="_blank">Article Analysis (DOC)</a>
+      <a href="https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing" target="_blank">Method Analysis (DOC)</a>
+    </div>
+
+    <!-- Column 6: Who Am I? -->
+    <div>
+      <div class="mega-heading">Who Am I?</div>
+      <a href="about-me.html" target="_blank">About Me</a>
+      <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank">LinkedIn</a>
+      <a href="mailto:karthikaravindj@gmail.com">Email</a>
+    </div>
+
   </div>
 </header>
+
+<style>
+  /* Media Query for Smaller Screens (Tablet) */
+  @media (max-width: 1080px) {
+    #megaMenu {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+      gap: 15px;
+    }
+  }
+
+  /* Media Query for Mobile Screens */
+  @media (max-width: 600px) {
+    #megaMenu {
+      display: grid;
+      grid-template-columns: 1fr; /* 1 item per row */
+      gap: 10px;
+    }
+  }
+</style>
+
+
+<script>
+// Function to toggle the visibility of the mega menu
+function toggleMegaMenu(event) {
+  event.preventDefault();
+  const megaMenu = document.getElementById('megaMenu');
+  
+  // Toggle the display property of the mega menu
+  if (megaMenu.style.display === 'none' || megaMenu.style.display === '') {
+    megaMenu.style.display = 'grid'; // Show the mega menu
+  } else {
+    megaMenu.style.display = 'none'; // Hide the mega menu
+  }
+}
+
+// Toggle function for expanding UI Designs section
+function toggleUISection(event) {
+  event.preventDefault();
+  var uiDesignsSubpages = document.getElementById("uiDesignsSubpages");
+  var expandLink = document.getElementById("expandLink");
+  
+  if (uiDesignsSubpages.style.display === "none") {
+    uiDesignsSubpages.style.display = "block";
+    expandLink.innerText = "Collapse"; // Change text to Collapse when expanded
+  } else {
+    uiDesignsSubpages.style.display = "none";
+    expandLink.innerText = "Expand"; // Change text to Expand when collapsed
+  }
+}
+
+// Close the mega menu if mouse leaves the header
+document.querySelector('.header').addEventListener('mouseleave', function() {
+  const megaMenu = document.getElementById('megaMenu');
+  megaMenu.style.display = 'none';
+});
+
+// Set the correct position for the mega menu after the page loads
+window.addEventListener('load', function() {
+  const headerHeight = document.querySelector('.header').offsetHeight; // Get header height
+  const megaMenu = document.getElementById('megaMenu');
+  megaMenu.style.top = `${headerHeight}px`; // Set top position based on header height
+});
+</script>
