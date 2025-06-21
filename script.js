@@ -21,6 +21,7 @@
 
 
 
+
 //Tabs 
   const tabs = document.querySelectorAll(".tab-1906");
   const panes = document.querySelectorAll(".tab-pane-1906");

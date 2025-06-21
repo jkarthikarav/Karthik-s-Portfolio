@@ -12,62 +12,221 @@
 
 <div id="header-placeholder"></div>
 
-<section style="position: relative; overflow: hidden; padding: 2rem;">
-<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: -1;"></div>
+<section id="about-section" class="hero" style="padding: 4rem 2rem 2rem 2rem; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: -1;"></div>
 
-  <div style="margin: 0; display: flex; align-items: center; gap: 40px; padding: 2rem;">
+  <div class="hero-text" style="text-align: left; padding: 2rem; margin: 0; display: flex; align-items: center; gap: 40px; padding: 2rem;">
     
-    
-    <!-- Left Column: Text -->
-    <div style="flex: 0 0 450px">
-      <img src="images/Karthik 5.jpg" alt="Photo of Karthik" style="width: 100%; height: auto; border-radius: 12px;">
+    <!-- Left Column: Image -->
+    <div style="flex: 0 0 450px;">
+      <img src="images/Karthik 5.jpg" alt="Photo of Karthik" style="width: 100%; height: auto; border-radius: 12px; opacity: 0; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0s;">
     </div>
 
+    <!-- Right Column: Text -->
     <div style="flex: 1;">
-    <h6 style="color:var(--black); margin-bottom:20px;">Hello! My name is Karthik Jambunathan.</h6>
+      <h6 style="opacity: 0; color: var(--black); margin-bottom: 20px; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0.4s;">
+        <span id="greeting" style="margin-left: 0.5rem;"></span><span style="margin-left: 0.5rem;">My name is Karthik Jambunathan.</span>
+      </h6>
 
-    <h3 style="color:var(--secondary); margin-bottom:20px; padding-right:5rem;">
-      I'm a Toronto-based UI/UX, Website and Service designer with a background in research and web content strategy.
-    </h3>
+      <h3 style="opacity: 0; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent; margin-bottom: 20px; padding-right: 5rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0s;">
+        You might know me as a Website, UI/UX, and Solutions designer who does research and web content strategy.
+      </h3>
 
-    <p>I design digital interfaces and creative workflows, helping education, media, and cultural organisations solve challenges more effectively.</p>
+      <p style="opacity: 0; color: var(--black); animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0.8s;">
+        I've also shown through this portfolio website that I design digital interfaces and creative workflows, for clients in education, media, fintech, and healthcare.
+      </p>
+  <button onclick="scrollToNewSection()" class="scroll-button" style="cursor: pointer;">
+    Click Here
+  </button>
     </div>
-
   </div>
-  <!-- Second Paragraph Below -->
-  <div>
-    <h3 style="color: var(--secondary);">
-     <br> From engineering faculty websites to film pitch decks, I’ve led product and service design projects across education, media, fintech, and healthcare.
-    </h3>
-    <h6 style="color: var(--secondary);">
-I currently maintain the ECE Department website at the University of Toronto and previously shaped production processes at Fix It In Post Studios, while also freelancing in design, research, and digital strategy.
-<br><br>
-Based in Toronto and originally from Chennai, I hold a Master’s in User Experience Design from the University of Toronto and a Master’s in Media from Anna University.
-<br><br>
-Since 2019, I’ve worked on agency and freelance projects focused on improving experiences across creative and technical domains.
-<br><br>
-Feel free to reach out — I’m chronically online.
+
+
+
+  <style>
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(2rem); /* Start 2rem below */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+      }
+    }
+  </style>
+
+
+</section>
+
+
+<section id="new-section" style="padding: 1rem 2rem; position: relative; overflow: hidden;">
+  <!-- Background Layer -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: -1;"></div>
+
+  <!-- First Row: Two Images (slide from above) -->
+  <div class="image-grid image-top" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; opacity: 0;">
+    <div style="position: relative; height: 34vh; overflow: hidden;">
+      <img src="images/webp/FMTitle.webp" alt="Working on AI tools" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
+      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
+        Managing AC Milan on Football Manager
+      </p>
+    </div>
+    <div style="position: relative; height: 34vh; overflow: hidden;">
+      <img src="images/about/agakhanmuseum.jpg" alt="Visiting Museums" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
+      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
+        Enjoying local culture
+      </p>
+    </div>
+  </div>
+
+  <!-- Center Row: H1 text (shrinks to H3) -->
+  <div style="text-align: center; margin: 2rem 0;">
+    <h1 id="shrinking-text" class="shrink-animate" style="font-family: 'Rubik', sans-serif; font-weight: 700; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent; opacity: 0;">
+      But what else am I known for?
+    </h1>
+  </div>
+
+  <!-- Third Row: Two Images (slide from below) -->
+  <div class="image-grid image-bottom" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; opacity: 0;">
+    <div style="position: relative; height: 34vh; overflow: hidden;">
+      <img src="images/about/meme.jpg" alt="Making Memes" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
+      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
+        Making Memes for the Group Chat
+      </p>
+    </div>
+    <div style="position: relative; height: 34vh; overflow: hidden;">
+      <img src="images/about/main.jpg" alt="Being an Adorable Nerd" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
+      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
+        Being an Adorable Nerd who's always learning new and better things
+      </p>
+    </div>
+  </div>
+
+  <!-- Animation styles -->
+  <style>
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeSlideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-2rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes shrinkText {
+      0% {
+        font-size: 100px;
+      }
+      50% {
+        font-size: 80px;
+      }
+      100% {
+        font-size: 57px;
+      }
+    }
+
+    .animate-shrink {
+      animation: shrinkText 1s ease-out forwards, fadeSlideUp 0.8s ease-out forwards;
+      opacity: 1 !important;
+    }
+
+    .animate-slide-up {
+      animation: fadeSlideUp 0.8s ease-out forwards;
+      opacity: 1 !important;
+    }
+
+    .animate-slide-down {
+      animation: fadeSlideDown 0.8s ease-out forwards;
+      opacity: 1 !important;
+    }
+  </style>
+   <h4 style="margin-bottom: 0.5rem; text-align:center; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
+      Y'all still need to know what makes me qualified, don't ya?
+    </h4>
+</section>
+
+
+
+<div style="width: 100%; display: grid; grid-template-columns: 15% 1fr 15%; padding: 0;">
+  <!-- Left empty column -->
+  <div></div>
+
+  <!-- Center text column -->
+  <div style="padding: 0 2rem;">
+    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
+      From engineering faculty websites to film pitch decks,
+    </h4>
+    <h6 style="color: var(--grey3); margin-top: 0;">
+      I’ve led product and service design projects across education, media, fintech, and healthcare. I currently maintain the ECE Department website at the University of Toronto and previously shaped production processes at Fix It In Post Studios, while also freelancing in design, research, and digital strategy. Based in Toronto and originally from Chennai, I hold a Master’s in User Experience Design from the University of Toronto and a Master’s in Media from Anna University. Since 2019, I’ve worked on agency and freelance projects focused on improving experiences across creative and technical domains. Feel free to reach out — I’m chronically online.
     </h6>
   </div>
 
+  <!-- Right empty column -->
+  <div></div>
 
-    <h6 style="color:var(--black); margin-bottom:20px;">Who am I as a designer?</h6>
 
-    <h5 style="color:var(--secondary); margin-top:0px; margin-bottom:20px; padding-right:5rem;">
+ <!-- Left empty column -->
+  <div></div>
+
+  <!-- Center text column -->
+  <div style="padding: 0 2rem;">
+
+    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
+      Who am I as a designer?
+    </h4>
+
+    <h6 style="color: var(--grey3); margin-top: 0;">
       I’m the kind of designer who will ask, “Why does this need to exist?” before deciding how to build it. I collaborate easily with researchers, editors, developers, and subject matter experts. My goal is always to make things easier to use, easier to understand, and easier to maintain. I’ve worked in remote teams, start up teams, small businesses, and academic environments. In all of them, I aim to bring a calm to the table.
-    </h5>
+    </h6>
 
-    <h6 style="color:var(--black); margin-bottom:20px;">What technical experience do I have?</h6>
+  </div>
 
-    <h5 style="color:var(--secondary); margin-top:0px; margin-bottom:20px; padding-right:5rem;">
+  <!-- Right empty column -->
+  <div></div>
+
+
+ <!-- Left empty column -->
+  <div></div>
+
+  <!-- Center text column -->
+  <div style="padding: 0 2rem;">
+
+    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
+      What technical experience do I have?
+    </h4>
+
+    <h6 style="color: var(--grey3); margin-top: 0;">
       I work across the full product design process, from early research to final UI handoff. I use tools like Figma, FigJam, and Miro for designing and collaborating, and I’m comfortable creating responsive layouts, UI kits, and systems that scale. My background includes designing for both web and mobile, always keeping accessibility and usability at the core.
 <br><br>
 On the research side, I run interviews, build surveys, map user journeys, and synthesize findings into actionable insights. I’ve done moderated usability tests, light A/B testing, and workshop facilitation for internal teams.
 <br><br>
 I collaborate closely with developers using annotated specs, basic front-end familiarity (HTML/CSS), and sprint-based workflows. My presentations are clear and grounded, shaped by client decks, team critiques, and stakeholder reviews.
 <br><br>
-My toolkit includes Figma, Adobe Creative Suite, WordPress, Framer, Notion, Maze, Lookback, and Google Analytics (certified). I’m adaptable, and I choose the right tools for the job rather than relying on buzzwords.
-    </h5>
+My toolkit includes Figma, Adobe Creative Suite, WordPress, Framer, Notion, Maze, Lookback, and Google Analytics (certified). I’m adaptable, and I choose the right tools for the job rather than relying on buzzwords.    </h6>
+
+  </div>
+
+  <!-- Right empty column -->
+  <div></div>
+
+ <!-- Left empty column -->
+  <div></div>
+
+  <!-- Center text column -->
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; max-width: 100%;">
 
     <!-- Process Step 1 (Image 1) -->
@@ -92,13 +251,27 @@ My toolkit includes Figma, Adobe Creative Suite, WordPress, Framer, Notion, Maze
 
 </div>
 
+  <!-- Right empty column -->
+  <div></div>
 
+ <!-- Left empty column -->
+  <div></div>
 
-    <h6 style="color:var(--black); margin-bottom:20px;">My Academic and Professional Journey</h6>
-  <img src="images/Journey-Timeline.png" alt="Journey" style="width:100%; background:var(--white);">
+  <!-- Center text column -->
+  <div style="padding: 0 2rem;">
 
-<br>
-<br>
+    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
+      My Academic and Professional Journey <span style="font-size:14px;">(Ignoring Freelance history)<span>
+    </h4>
+
+<img src="images/Journey-Timeline.png" alt="Journey" style="width:100%; background:var(--white);">
+
+  </div>
+
+  <!-- Right empty column -->
+  <div></div>
+</div>
+
 </section>
 
 <div id="footer-placeholder"></div>
@@ -110,14 +283,94 @@ My toolkit includes Figma, Adobe Creative Suite, WordPress, Framer, Notion, Maze
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       });
-</script>
 
-<script>
   fetch('header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
     });
+
+
+  function scrollToNewSection() {
+    const section = document.getElementById("new-section");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function triggerNewSectionAnimations() {
+    const header = document.getElementById('shrinking-text');
+    const imageTop = document.querySelectorAll('.image-top');
+    const imageBottom = document.querySelectorAll('.image-bottom');
+
+    header?.classList.add('animate-shrink');
+    imageTop.forEach(el => el.classList.add('animate-slide-down'));
+    imageBottom.forEach(el => el.classList.add('animate-slide-up'));
+  }
+
+  // Scroll trigger
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        triggerNewSectionAnimations();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(document.getElementById('new-section'));
+
+  // Button click trigger
+  const scrollBtn = document.querySelector('.scroll-button');
+  if (scrollBtn) {
+    scrollBtn.addEventListener('click', () => {
+      scrollToNewSection();
+      setTimeout(triggerNewSectionAnimations, 1000); // buffer for scroll animation
+    });
+  }
+    const greetings = ["Hello!", "Ciao!", "Hola!", "Vanakkam!", "Namaste!"];
+    let currentGreetingIndex = 0;
+    const greetingElement = document.getElementById("greeting");
+
+    function scrambleText(targetElement, newText) {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let scrambleInterval = 50; // Speed of scrambling
+      let totalScrambleTime = 1000; // Total time for scrambling before settling
+      let currentText = targetElement.textContent;
+      let scramble = setInterval(() => {
+        let scrambledText = '';
+        for (let i = 0; i < newText.length; i++) {
+          if (Math.random() > 0.5) {
+            scrambledText += characters.charAt(Math.floor(Math.random() * characters.length));
+          } else {
+            scrambledText += currentText[i] || '';
+          }
+        }
+        targetElement.textContent = scrambledText;
+      }, scrambleInterval);
+
+      // After the scramble time, set the text to the final greeting
+      setTimeout(() => {
+        clearInterval(scramble);
+        targetElement.textContent = newText;
+      }, totalScrambleTime);
+    }
+
+    function changeGreeting() {
+      const newGreeting = greetings[currentGreetingIndex];
+      scrambleText(greetingElement, newGreeting);
+
+      // Move to the next greeting in the list
+      currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+    }
+
+    // Change the greeting every 4 seconds (time for scramble effect)
+    setInterval(changeGreeting, 4000);
+    
+    // Initial call to start the scrambling
+    changeGreeting();
+
+
+
 </script>
 
 </body>
