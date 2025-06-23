@@ -12,7 +12,26 @@
     			</div>
 		</div>
 
+<!-- Student Research Opportunities Page Card -->
+<article>
+  <!-- Image Container with Badge -->
+  <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
+    <img src="images/webp/SRO.webp" alt="Student Research Opportunities page mockup" style="width: 100%; height: 100%; object-fit: cover;">
+    <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
+      New Web Page Design
+    </span>
+  </span>
 
+  <!-- Heading and Description -->
+  <h6 style="font-size: 20px; margin: 10px 0 0 0;">Student Research Opportunities ↗</h6>
+  <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
+    Live December 2024<br>
+    Designed a new page to list open positions for undergraduate and graduate research assistants under the ECE Research section.
+  </p>
+
+  <!-- Call to Action Button -->
+  <button onclick="window.open('https://www.ece.utoronto.ca/research/studentresearchopportunities/', '_blank');" class="case-button-new">Visit Site</button>
+</article>
 
 <!-- Caterpillar -->
 <a class="card-button-1906" style="width:100%;" href="construction-site-supervision-app.html" target="_blank">
