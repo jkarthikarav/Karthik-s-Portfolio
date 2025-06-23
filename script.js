@@ -52,7 +52,7 @@ function setOverlayPosition() {
   const websiteWorkTop = websiteWorkSection.getBoundingClientRect().top;
 
   // Set the overlay to align with the top of the website work section
-  overlay.style.top = `${websiteWorkTop}px`;
+  overlay.style.top = `${websiteWorkTop + 20}px`;
 }
 
 // Function to hide the overlay when the user scrolls or clicks the scroll button
