@@ -18,7 +18,7 @@
     display: none; /* Set to none by default */
     padding: 2rem;
     z-index: 999;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     align-items: start;
     gap: 20px;
@@ -32,19 +32,7 @@
       <div class="mega-heading">Featured Work</div>
       <a href="index.html#websitework" target="_blank">ECE Website Production</a>
       <a href="index.html#visualdesign" target="_blank">Digital Media Projects</a>
-      <span style="display: inline-flex; align-items: center;">
-        <a href="ui-designs-and-redesigns.html" target="_blank">UI Designs and Redesigns</a>
-        <a href="#" onclick="toggleUISection(event)" id="expandLink" style="font-size: 12px; color: var(--secondary); cursor: pointer; margin-left: 5px;">Expand</a>
-      </span>
-    </div>
-
-    <!-- Column 2: UI Designs Subpages (Initially Hidden) -->
-    <div id="uiDesignsSubpages" style="display: none;">
-      <div class="mega-heading">&nbsp;</div>
-      <a href="ui-designs-and-redesigns.html#row1" target="_blank">SaaS Digital Health Tools</a>
-      <a href="ui-designs-and-redesigns.html#row2" target="_blank">SaaS Finance Tools</a>
-      <a href="ui-designs-and-redesigns.html#row3" target="_blank">Sports and Video Games</a>
-      <a href="ui-designs-and-redesigns.html#row4" target="_blank">Website Page Consolidation</a>
+      <a href="ui-designs-and-redesigns.html" target="_blank">UI Designs and Redesigns</a>
     </div>
 
     <!-- Column 3: Case Study Links -->
@@ -117,21 +105,6 @@ function toggleMegaMenu(event) {
     megaMenu.style.display = 'grid'; // Show the mega menu
   } else {
     megaMenu.style.display = 'none'; // Hide the mega menu
-  }
-}
-
-// Toggle function for expanding UI Designs section
-function toggleUISection(event) {
-  event.preventDefault();
-  var uiDesignsSubpages = document.getElementById("uiDesignsSubpages");
-  var expandLink = document.getElementById("expandLink");
-  
-  if (uiDesignsSubpages.style.display === "none") {
-    uiDesignsSubpages.style.display = "block";
-    expandLink.innerText = "Collapse"; // Change text to Collapse when expanded
-  } else {
-    uiDesignsSubpages.style.display = "none";
-    expandLink.innerText = "Expand"; // Change text to Expand when collapsed
   }
 }
 
