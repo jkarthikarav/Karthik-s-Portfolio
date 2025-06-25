@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ECE Events: Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<section class="hero" style="padding: 4rem 2rem;">
+  <div class="hero-text" style="text-align:left;padding: 2rem;">
+    <div class="container">
+
+      <h6 class="fade-slide-up" style="opacity: 0; color:var(--black); margin-bottom:20px;">Designed for Discovery: A Mobile-First Events Page for ECE</h6>
+
+      <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;  margin-bottom:20px; padding-right:5rem;">ECE Events Page Redesign</h3>
+
+      <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color:var(--secondary);" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
+        Read Case Study ↓
+      </a>
+
+      <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 1rem; padding: 1rem 0;">
+
+        <button onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');"
+                class="case-button-new"
+                style="flex: 1; border-radius: 16px; padding: 2rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.4s; opacity: 0;">
+          Visit Live Site
+        </button>
+
+        <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.6s; opacity: 0;">
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
+            <span style="color:var(--secondary); font-weight:800;">Role</span><br>
+            UX/UI and Front End Developer
+          </h6>
+        </div>
+
+        <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.8s; opacity: 0;">
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
+            <span style="color:var(--secondary); font-weight:800;">Duration</span><br>
+            March 2025
+          </h6>
+        </div>
+
+        <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.0s; opacity: 0;">
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
+            <span style="color:var(--secondary); font-weight:800;">Deliverables</span><br>
+            Mockups + WordPress Site
+          </h6>
+        </div>
+
+        <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.2s; opacity: 0;">
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
+            <span style="color:var(--secondary); font-weight:800;">Tools</span><br>
+            Figma, SharePoint, WordPress
+          </h6>
+        </div>
+
+      </div>
+
+      <img class="fade-slide-up" src="images/webp/events-bef-aft.webp" alt="ECE Events" style="width: 100%; height: auto; object-fit: cover;">
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="process-section" style="display: flex; flex-direction: row; background: var(--white); padding: 2rem 2rem 0rem 0rem; margin-bottom:0;" id="context">
+
+  <!-- Region 1: 200px wide gradient box with Project Goals -->
+  <div style="width: 90px; background: linear-gradient(45deg, #7A1C3B, #D46A7C); display: flex; align-items: top; justify-content: center; padding: 2rem 2rem 2rem 2rem;">
+    <h3 style="font-weight:800; margin: 0; text-align: center; line-height: 1.2; color: var(--white);">
+      P<br>R<br>O<br>J<br>E<br>C<br>T<br><br>G<br>O<br>A<br>L<br>S
+    </h3>
+  </div>
+
+  <!-- Region 2: Main Content -->
+  <div style="width: 100%; display: flex; flex-direction: column;  padding-left: 2rem;padding-bottom: 2rem;padding-top: 2rem;">
+
+    <!-- Row 1: Description and Project Aim -->
+    <div style="display: flex; flex-direction: column; align-items: left; justify-content: center;">
+      <h6 style="text-align:left; color: var(--grey3); margin-bottom: 20px;">
+        <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
+          Project Goals</span><br><br>
+        The Electrical & Computer Engineering (ECE) department hosts a wide range of events that support prospective and current students, from research showcases to industry events.<br><br>
+        While the existing events calendar widget through WordPress made the event listings functional, there was an opportunity to make the experience more engaging and mobile-accessible as especially as many students interact with event links via social media or messaging apps. There was also the opportunity to do something that most designers dread
+      </h6>
+
+      <h5 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin: 5px;">
+        Make the events page pop!
+      </h5>
+
+     <!-- Column 2: Design Opportunities -->
+      <div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
+        <div style="border: 2px solid #B7375B; background: var(--white); padding: 0.5rem; flex: 1;">
+          <h6 style="text-align:center; margin: 0; color: #B7375B; padding:1rem;">
+            Design Opportunities
+          </h6>
+          <hr style="border: none; border-top: 1px solid var(--grey1);" />
+
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
+            <span style="font-size:24px; color:var(--black);">Clarify and Categorize</span><br>
+            Introduce sectioning and brief descriptions to highlight types of events.
+          </h6>
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
+            <span style="font-size:24px; color:var(--black);">Optimize for Mobile Sharing</span><br>
+            Design for responsive viewing across devices, anticipating high mobile traffic.
+          </h6>
+          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
+            <span style="font-size:24px; color:var(--black);">Support University Systems</span><br>
+            Embed existing calendar tools while improving frontend presentation.
+          </h6>
+        </div>
+      </div>
+
+      <h6 style="color: var(--grey3); margin-top: 15px;">
+        This redesign involved creating a standalone Events page that presents ECE's offerings with clear structure and supporting context while maintaining access to the events calendar widget that using the CMS afforded us with.<br><br>
+Here's what it originally looked like:
+      </h6>
+
+      <img src="images/webp/Events-calendar.webp" style="width:60%;" alt="ECE Events">
+
+    </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="process-section" style="display: flex; flex-direction: row; background: var(--white); padding: 2rem 2rem 0rem 0rem; margin-bottom:0;">
+
+  <!-- Region 1: 200px wide grey box with Design Process -->
+  <div style="width: 90px; background: linear-gradient(45deg, #002B4F, #2F5EAA); display: flex; align-items: top; justify-content: center; padding: 2rem 2rem 2rem 2rem;">
+    <h3 style="font-weight:800; margin: 0; text-align: center; line-height: 1.2; color: var(--white);">
+      D<br>E<br>S<br>I<br>G<br>N<br><br>P<br>R<br>O<br>C<br>E<br>S<br>S
+    </h3>
+  </div>
+
+  <!-- Region 2: Main Column -->
+  <div style="width: 100%; display: flex; flex-direction: column; padding-left: 2rem;padding-bottom: 2rem;padding-top: 2rem;">
+
+   <!-- Step 1: Research & Mockups -->
+    <div style="margin-bottom: 2rem;">
+      <h5 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 10px;">
+        Step 1: Research & Mockups
+      </h5>
+      <h6 style="color: var(--grey3); margin-top: 15px;">
+        I began with a short content audit of the existing events page and explored how other U of T departments presented similar information. Based on this and my own design knowledge, I designed a mockup that proposed room for broad event descriptions, and a calendar widget.
+        <br><br>
+        <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
+          My focus was on layout and visual cues.
+        </span>
+      </h6>
+      <img src="images/webp/Events (1).webp" style="width:60%;" alt="ECE Events">
+
+
+    </div>
+
+    <!-- Step 2: Working Within WordPress -->
+    <div style="margin-bottom: 2rem;">
+      <h5 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 10px;">
+        Step 2: WordPress Development
+      </h5>
+      <h6 style="color: var(--grey3); margin-top: 15px;">
+        Once development began, I realized the calendar design was visually polished but too advanced for the widget available.
+        <br><br>
+        Creating a custom-coded calendar or sourcing a new plugin was possible. However, that was not the goal of this project. It was to
+        <br><br>
+        <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
+          Deliver an improved layout.
+        </span>
+        <br><br>
+        I revised the approach to keep the existing widget and instead focused on improving the surrounding layout to make the events easier to understand and share.
+      </h6>
+
+      <img src="images/webp/events-now.webp" style="width:60%;" alt="ECE Events">
+
+    </div>
+
+    <!-- Step 3: Mobile Layout Planning -->
+    <div style="margin-bottom: 0;">
+      <h5 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 10px;">
+        Step 3: Mobile Layout and Responsiveness
+      </h5>
+      <h6 style="color: var(--grey3); margin-top: 15px;">
+        Many students would open event links from social media apps. I needed to ensure the page worked well on mobile and was easy to scan.
+        <br><br>
+        I structured the layout into two modular content blocks. One block held the broader event descriptions. The other held the calendar widget. Fortunately, this was accounted for in my original mockup.
+        <br><br>
+        <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
+          On desktop, these appear side by side. On mobile, they stack vertically for ease of navigation.
+        </span>
+      </h6>
+<div style="display: flex; flex-direction: row ; align-items: center; gap: 1rem; margin-top: 2rem; margin-bottom: 2rem;">
+  <img src="images/webp/Events-crop.webp" style="width: 60%;" alt="ECE Events">
+    <img src="images/webp/Grouped (1).webp" style="height: 400px;" alt="ECE Events">
+    <img src="images/webp/Grouped.webp" style="height: 400px;" alt="ECE Events">
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="process-section" style="display: flex; flex-direction: row; background: var(--white); padding: 2rem 2rem 2rem 0rem; margin-top:0;">
+
+  <!-- Region 1: 200px wide grey box with Project Goals -->
+  <div style="width: 90px; background: linear-gradient(45deg, #00464F, #417A50); display: flex; align-items: top; justify-content: center; padding: 2rem 2rem 2rem 2rem;">
+    <h3 style="font-weight:800; margin: 0; text-align: center; line-height: 1.2; color: var(--white);">
+      R<br>E<br>S<br>U<br>L<br>T<br>S
+    </h3>
+  </div>
+
+ <!-- Region 2: Main Column -->
+  <div style="width: 100%; display: flex; flex-direction: column; padding-left: 2rem;padding-bottom: 2rem;padding-top: 2rem;">
+
+    <!-- Summary Text -->
+    <div style="width: 100%; display: flex; flex-direction: column;">
+      <h6 style="font-weight: bold; color: var(--grey3); margin-top: 10px;">
+        <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
+          Project Results</span><br><br>        
+        <span style="font-weight: bold; color: var(--grey3);">
+        The final layout reflects a balance between design goals and platform constraints.</span>
+        <br><br>
+          It is now easier to understand what types of events ECE offers.
+      </h6>
+
+     <button class="case-button-new" onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style=" width:300px; cursor: pointer; margin-bottom: 20px;">
+        Visit Live Site
+      </button>
+
+    </div>
+
+    <!-- Achievements Mini Column -->
+    <div style="display: flex; flex-direction: row; gap: 1rem; margin-top: 2rem;">
+      <div style="width: 50%; border: 2px solid #00464F; border-radius: 8px; background: var(--white); padding: 1rem;">
+        <h6 style="text-align: center; margin: 0; color: #00464F; padding: 1rem;">
+          What did we Achieve?
+        </h6>
+        <hr style="border: none; border-top: 1px solid var(--grey1);" />
+
+        <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding: 1rem;">
+          <span style="color: #417A50; font-weight:800;">✓</span> Introduced an informative section with clearer messaging for students.
+        </h6>
+
+        <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding: 1rem;">
+          <span style="color: #417A50; font-weight:800;">✓</span> Structured the layout into modular sections that are readable on mobile and desktop.
+        </h6>
+
+        <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding: 1rem;">
+          <span style="color: #417A50; font-weight:800;">✓</span> Retained the existing calendar system while using real event visuals.
+        </h6>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="concluding-thoughts-section" style="background:var(--white);">
+  <div class="concluding-row" style="align-items:top;">
+    <div class="concluding-text">
+      <h2 class="section-heading">Takeaways</h2>
+      <p class="p2">The goal of this project was to redesign the ECE Events page to highlight departmental offerings in a clear and accessible format for both current and prospective students. 
+The new layout added structure and context around the existing calendar, making it easier for users to understand what kinds of events were available and how they connected to the 
+department’s broader academic and professional initiatives. Care was taken to ensure the page remained easy to use on mobile, as many students access event information through shared links. 
+The redesign was completed within the university’s approved web framework, respecting all guidelines and maintaining consistency with other sites across the Faculty.</p>
+        <p class="section-title" style="font-size:16px;text-align:left; margin-bottom: 0;">Key Takeaway: Design for the Platform, not for Visuals</p>
+        <div style="height: 1px; background-color: var(--grey2); width: 100%; margin-top: 0;"></div>
+      <p class="p2">This project helped me understand how important it is to design with the output system in mind. While early concepts explored more advanced options, it became clear that working within WordPress and university standards was the right approach for long-term sustainability.
+</p>
+    </div>
+
+    <div class="concluding-image">
+      <img src="images/webp/Events Page.webp" alt="Mockup of the redesigned ECE homepage">
+    </div>
+  </div>
+</section>
+
+
+
+<div id="footer-placeholder"></div>
+
+<script>
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+
