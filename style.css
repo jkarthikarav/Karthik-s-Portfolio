@@ -352,7 +352,7 @@ p {
   justify-content: space-between; /* space between logo and nav */
   align-items: center;
   padding: 3rem 2rem;
-  background-color: #F4ECE6;
+  background-color: var(--black2);
   color: var(--secondary);
 }
 
@@ -369,7 +369,7 @@ p {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--primary);
   padding: 8px;
 }
 
@@ -388,7 +388,7 @@ p {
   display: none; /* Ensures mega menu is hidden by default */
   grid-template-columns: repeat(6, 1fr); /* Set default columns */
   gap: 20px;
-  background-color: var(--grey0);
+  background-color: var(--black2);
   position: absolute;
   top: 100%; /* Adjust position to below header */
   left: 0;
@@ -396,7 +396,7 @@ p {
   box-sizing: border-box;
   padding: 2rem;
   z-index: 999;
-  color: var(--secondary);
+  color: var(--white);
   margin-top: 0.5rem; /* Add spacing below header */
   text-align: left; /* Align items inside the mega menu to the left */
 }
@@ -431,7 +431,7 @@ p {
 .mega-menu a {
   display: block;
   padding: 4px 0;
-  color: var(--black);
+  color: var(--primary);
   text-decoration: none;
 }
 
