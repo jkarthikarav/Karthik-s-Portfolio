@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karthik Jambunathan Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+</noscript>
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -23,7 +27,10 @@
 
       <p class="fade-slide-up" style="color:#FFD59A; opacity: 0;">I design digital interfaces and creative workflows, helping education, media, and cultural organisations solve challenges more effectively.</p>
 
-      <a href="#websitework" class="scroll-button" style="font-size:24px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      <a href="#websitework" class="scroll-button" style=" 
+  font-size: 0.875rem;
+  padding-right:0rem;
+  background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;" >
         Scroll down to view Projects 🡻
       </a>
     </div>
@@ -70,294 +77,318 @@
   </div>
 
 <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(24%, 1fr)); gap: 1.5rem;">
+
 <!-- ECE Department Website Card -->
-<article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
-
-  <!-- Heading and Description -->
-  <h6 style="font-size: 20px; margin: 10px 0 0 0;">ECE Department's Home Page</h6>
-  <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-    Shipped | January 2025<br>
-    Made it easier for prospective students to explore ECE.<br><br>
-      Visit Live Page ↗
-  </p>
-
-</article>
+      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="display:flex; align-items:flex-start; gap:16px; padding:2rem; border:1px solid var(--grey1);">
+        <div>
+          <h6 style="font-size: 18px; margin:0; color:var(--secondary);">ECE Department's Home Page</h3>
+          <p style="font-size: 14px; margin:0; color:var(--grey3);">
+            Shipped | January 2025<br>
+    Made it easier for prospective students to explore ECE.
+          </p>
+        </div>
+        <span style="margin-left:auto; color:var(--grey2); font-size:1.5rem; align-self:flex-start;">&#8599;</span>
+      </article>
 
 <!-- Toronto Nanofabrication Centre Card -->
-<article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');">
-
-  <!-- Heading and Description -->
-  <h6 style="font-size: 20px; margin: 10px 0 0 0;">Toronto Nanofabrication Centre</h6>
-  <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-    Shipped | March-April 2025<br>
-    Migrated the TNFC into the main ECE website.<br><br>
-      Visit Live Page ↗
-  </p>
-
-</article>
+      <article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="display:flex; align-items:flex-start; gap:16px; padding:2rem; border:1px solid var(--grey1);">
+        <div>
+          <h6 style="font-size: 18px; margin:0; color:var(--secondary);">Toronto Nanofabrication Centre</h3>
+          <p style="font-size: 14px; margin:0; color:var(--grey3);">
+            Shipped | March-April 2025<br>
+    Migrated the TNFC into the main ECE website.
+          </p>
+        </div>
+        <span style="margin-left:auto; color:var(--grey2); font-size:1.5rem; align-self:flex-start;">&#8599;</span>
+      </article>
 
 <!-- ECE Events Page Card -->
-<article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');">
-
-  <!-- Heading and Description -->
-  <h6 style="font-size: 20px; margin: 10px 0 0 0;">ECE Events Page</h6>
-  <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-    Shipped | March 2025<br>
-    Made it easier to discover events beyond the old calendar view.<br><br>
-      Visit Live Page ↗
-  </p>
-
-</article>
-
-
-
+      <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="display:flex; align-items:flex-start; gap:16px; padding:2rem; border:1px solid var(--grey1);">
+        <div>
+          <h6 style="font-size: 18px; margin:0; color:var(--secondary);">ECE Events Page</h3>
+          <p style="font-size: 14px; margin:0; color:var(--grey3);">
+                Shipped | March 2025<br>
+    Made it easier to discover events beyond the old calendar view.
+          </p>
+        </div>
+        <span style="margin-left:auto; color:var(--grey2); font-size:1.5rem; align-self:flex-start;">&#8599;</span>
+      </article>
 
 </div>
 </section>
 
 
+
 <section style="align:left; padding-left: 4rem; padding-top:2rem; padding-bottom: 3rem; padding-right: 4rem; background: linear-gradient(to bottom, var(--black), var(--black2), var(--black));" id="proj">
-<br><br>
-    <h5 style="color: var(--primary); margin-top:0px; margin-bottom:20px; padding-right:5rem; padding-bottom:2rem;"><strong>
-        UX/UI Design Case Studies
-       </h5>
+  <div style="margin-left: auto; margin-right: auto; max-width: 80rem; padding-left: 1.5rem; padding-right: 2rem;">
+    <h6 style="color: var(--primary); text-align: center; letter-spacing: 0.07em; padding-bottom:0rem; margin-bottom:0rem;">
+      UX/UI Design Case Studies
+    </h6>
+    <h4 style="color: var(--white); margin-left: auto; margin-right: auto; max-width: 72rem; text-align: center; letter-spacing: -0.01em; line-height: 1.1;">
+      UX/UI Case Studies in sectors such as Education, Arts and Culture, and Film
+    </h4>
+  </div>
 
-<!-- Grid Container -->
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+<!-- Grid Wrapper -->
+<div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem;">
 
-  <!-- ECE Project Card -->
-  <article style="position: relative; border-radius: 6px;" onclick="window.open('ece-homepage-redesign.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/webp/Before-After-ECE.webp" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover;">
-      <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-        Web Redesign and Development
-      </span>
-    </span>
+    <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.open('ece-homepage-redesign.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/webp/Before-After-ECE.webp" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+      </div>
+      <div style="padding: 20px; background: white; margin-top:1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--grey2); font-size: 14px;">Shipped - January 2025</span>
+          <span style="background: var(--grey0); color: var(--grey2); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Educational Institution</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
+          ECE Department's Home Page: Web Redesign and Development
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--grey3); font-size: 14px; line-height: 1.6;">
+          Focused on prospective student recruitment by prioritizing academic, research, and student life content.
+        </p>
+      </div>
+    </div>
 
-    <!-- Heading and Description -->
-    <h6 style="color:var(--secondary); font-size: 20px; margin: 10px 0 0 0;">ECE Department's Home Page</h6>
-    <p style="margin-top: 0; color: var(--black); font-weight: normal;">
-      Shipped | January 2025 | Education <br>
-      Focused on prospective student recruitment by prioritizing academic, research, and student life content.<br><br>
-      Read Case Study ↗
-    </p>
 
-  </article>
+    <!-- Spy Film Card -->
 
-  <!-- Spy Film Project Card -->
-  <article style="position: relative; border-radius: 6px;" onclick="window.open('spy-film-pitch.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/filmy.webp" alt="Spy Film Web Design" style="width: 100%; height: 450px; object-fit: cover;">
-      <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-        Website Design for Film Storytelling
-      </span>
-    </span>
-
-    <!-- Heading and Description -->
-    <h6 style="color:var(--secondary); font-size: 20px; margin: 10px 0 0 0;">Spy-Themed Film Pitch Website</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       Shipped | August 2021 | Film and Media <br>
-       Transforming a static film pitch into an interactive, music-integrated web experience to overcome the limitations of traditional PPT formats.<br><br>
-       Read Case Study ↗
-    </p>
-
-  </article>
+    <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.open('spy-film-pitch.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/webp/VeeraTitle.webp" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+      </div>
+      <div style="padding: 20px; background: white; margin-top:1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--grey2); font-size: 14px;">Shipped - August 2021</span>
+          <span style="background: var(--grey0); color: var(--grey2); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
+          Spy-Themed Film Pitch: Website Design for Storytelling
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--grey3); font-size: 14px; line-height: 1.6;">
+          Transforming a static film pitch into an interactive, music-integrated web experience to overcome the limitations of traditional PPT formats.
+        </p>
+      </div>
+    </div>
+  </div>
 
 </div>
 
-<div class="grid-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-top: 1rem;">
-  
-<!-- ECE Events Card -->
-<article style="border-radius: 6px;" onclick="window.open('ece-events-redesign.html', '_blank');">
+<!-- Grid Wrapper -->
+<div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-top:2rem; ">
 
-  <!-- Image Container with Badge -->
-  <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-    <img src="images/webp/Events Page.webp" alt="Museum Tickets" style="width: 100%; height: 450px; object-fit: cover;">
-    <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-      Web Redesign and Development
-    </span>
+    <!-- ECE Events Card -->
+
+    <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.open('ece-events-redesign.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="logos/uoft-ece-logo.jpg" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+      </div>
+      <div style="padding: 20px; background: white; margin-top:1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--grey2); font-size: 14px;">Shipped - March 2025</span>
+          <span style="background: var(--grey0); color: var(--grey2); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Educational Institution</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
+          ECE sEvents: Web Redesign and Development
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--grey3); font-size: 14px; line-height: 1.6;">
+          Transforming Event Listings for Student Engagement.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Museum Tickets Mobile App Card -->
+    <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.open('ui-design-mobile-app.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/tickets.webp" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+      </div>
+      <div style="padding: 20px; background: white; margin-top:1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--grey2); font-size: 14px;">Presented - Fall 2023</span>
+          <span style="background: var(--grey0); color: var(--grey2); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
+          Mobile App for Museum Ticket Deals: UX/UI Design
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--grey3); font-size: 14px; line-height: 1.6;">
+          Designing for Mobile User Needs and Behaviors.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Textile Museum Card -->
+    <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.open('tmc.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/textile.webp" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+      </div>
+      <div style="padding: 20px; background: white; margin-top:1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--grey2); font-size: 14px;">Presented - Fall 2023</span>
+          <span style="background: var(--grey0); color: var(--grey2); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
+          Textile Museum of Canada: Design Strategy
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--grey3); font-size: 14px; line-height: 1.6;">
+          Implementing Redesign Strategies for IA and Navigation Menu.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Virtual Museum Card -->
+    <div style="border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" onclick="window.open('research-virtual-museum.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/vr.webp" alt="ECE Redesign" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+      </div>
+      <div style="padding: 20px; background: white; margin-top:1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--grey2); font-size: 14px;">Presented - Winter 2025</span>
+          <span style="background: var(--grey0); color: var(--grey2); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
+          Virtual Museum Website: UX Research
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--grey3); font-size: 14px; line-height: 1.6;">
+          Translating UX Research insights into UI designs with purpose.
+        </p>
+      </div>
+    </div>
+
+
+</div>
+
+  <div style="margin-left: auto; margin-right: auto; max-width: 80rem; padding-left: 1.5rem; padding-right: 2rem;">
+    <h6 style="color: var(--primary); text-align: center; letter-spacing: 0.07em; padding-bottom:0rem; margin-bottom:2rem;">
+      UI Redesigns
+    </h6>
+    <h4 style="color: var(--white); margin-left: auto; margin-right: auto; max-width: 72rem; text-align: center; letter-spacing: -0.01em; line-height: 1.1;">
+       Redesigns and Original UI Designs across Fintech, Video Games, SaaS and more.<br><br> <a href="ui-designs-and-redesigns.html" target="_blank" class="case-button" style="background: var(--white); color:var(--secondary);">
+        View All UI Designs and Redesigns ↗
+      </a>
+    </h4>
+</div>
+
+<div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:1rem;">
+ <!-- Card 2 -->
+<article style="background:none; padding:12px; display:flex; flex-direction:column; align-items:flex-start;" onclick="window.open('', '_blank');">
+  <img src="images/webp/MOGO.webp"
+       alt="MOGO Project Screenshot"
+       style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
+      <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    MOGO Project
   </span>
-
-  <!-- Heading and Description -->
-  <h6 style="color:var(--secondary); font-size: 20px; margin: 10px 0 0 0;">
-    ECE Events Page Redesign
-  </h6>
-  <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-           Shipped | March 2025 | Education <br>
-           Transforming Event Listings for Student Engagement<br><br>
-       Read Case Study ↗
-  </p>
-
+      <span style="color:var(--grey0); font-size:14px; margin-bottom:2px;">
+    Fintech Landing Page
+  </span>
 </article>
 
-  <!-- Museum Tickets 1602 Card -->
-  <article style="grid-column: span 2; border-radius: 6px;" onclick="window.open('ui-design-mobile-app.html', '_blank');" >
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/tickets.webp" alt="Museum Tickets" style="width: 100%; height: 450px; object-fit: cover;">
-      <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-        UX/UI Design
-      </span>
-    </span>
 
-    <!-- Heading and Description -->
-    <h6 style="color:var(--secondary); font-size: 20px; margin: 10px 0 0 0;">Mobile App for Museum Ticket Deals</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       Fall 2023 | Arts and Culture <br>
-       Designing for Mobile User Needs and Behaviors<br><br>
-       Read Case Study ↗
-    </p>
-
-  </article>
-
-
-
-</div>
-
-<div class="grid-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-top: 1rem; padding-bottom:3rem;">
-  
-  <!-- Textile Museum of Canada Card -->
-  <article style="grid-column: span 2; border-radius: 6px;" onclick="window.open('tmc.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/textile.webp" alt="Textile Museum of Canada" style="width: 100%; height: 450px; object-fit: cover;">
-      <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-        Design Strategy
-      </span>
-    </span>
-
-    <!-- Heading and Description -->
-    <h6 style="color:var(--secondary); font-size: 20px; margin: 10px 0 0 0;">Textile Museum of Canada</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       Fall 2023 | Arts and Culture <br>
-       Implementing Redesign Strategies for IA and Navigation Menu<br><br>
-       Read Case Study ↗
-    </p>
+ <!-- Card 3 -->
+<article style="background:none; padding:12px; display:flex; flex-direction:column; align-items:flex-start;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">
+  <img src="images/webp/Banking-Mockup.webp"
+       alt="Banking Mockup Screenshot"
+       style="width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center; border-radius:8px;">
+      <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Banking App Mockup
+  </span>
+      <span style="color:var(--grey0); font-size:14px; margin-bottom:2px;">
+    Fintech Dashboard UI
+  </span>
 </article>
 
-  <!-- Virtual Museum Website Card -->
-  <article style="border-radius: 6px;" onclick="window.open('research-virtual-museum.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/vr.webp" alt="CHLAVM Virtual Museum" style="width: 100%; height: 450px; object-fit: cover;">
-      <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-        UX Research
-      </span>
-    </span>
-
-    <!-- Heading and Description -->
-    <h6 style="color:var(--secondary); font-size: 20px; margin: 10px 0 0 0;">Virtual Museum Website</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       Winter 2025 | Arts and Culture <br>
-       Translating UX Research insights into UI designs with purpose<br><br>
-       Read Case Study ↗
-    </p>
-
+<article style="background:none; padding:12px; display:flex; flex-direction:column; align-items:flex-start;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">
+  <img src="images/webp/UsedCarHome.webp"
+       alt="Used Car Homepage UI Screenshot"
+       style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
+  <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Used Car Homepage
+  </span>
+  <span style="color:var(--grey0); font-size:14px; margin-bottom:2px;">
+    Automobile E-Commerce
+  </span>
 </article>
-</div>
 
-    <h5 style="color: var(--primary); margin-top:0px; margin-bottom:20px; padding-right:5rem; padding-bottom:2rem;"><strong>
-        UI Designs and Redesigns
-      </h5>
-
-<div class="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding-bottom: 2rem;">
-
-<article style="background:var(--white); padding:10px;">  <video src="videos/FM CLUB PROFILE SCREEN Recording.mp4" controls style="width: 100%; height: 240px; border-radius: 6px; object-fit: cover;" autoplay muted loop playsinline></video>
-</article>
-<article style="background:var(--white); padding:10px;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">    <img src="images/webp/MOGO.webp" style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 6px;">
-</article>
-<article style="background:var(--white); padding:10px;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">    <img src="images/webp/Banking-Mockup.webp" style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 6px;">
-</article>
-<article style="background:var(--white); padding:10px;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">  <a href="ui-designs-and-redesigns.html" target="_blank" style="display: flex; align-items: center; justify-content: center; background-color: var(--white); color: var(--secondary); height: 240px; border-radius: 6px; text-align: center; text-decoration: none; font-weight: bold;">
-    View All<br>UI Designs
-  </a>
+<article style="background:none; padding:12px; display:flex; flex-direction:column; align-items:flex-start;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">
+  <img src="images/webp/Concept_01_LFC.webp"
+       style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
+  <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Liverpool FC Website: Player Bio
+  </span>
+  <span style="color:var(--grey0); font-size:14px; margin-bottom:2px;">
+    Sports Organisation Website UI
+  </span>
 </article>
 
 </div>
 
-    <h5 id="vd" style="background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin-top:0px; margin-bottom:20px; padding-right:5rem;"><strong>
-        Visual Design/Digital Media Projects
-      </h5>
-
-      <p style="color:var(--white);">
-I have worked on a variety of visual design projects that support brand identity, storytelling, and promotional strategies across film, fashion, and healthcare domains.
-      </p>
-
-      <a href="pdfs/Graphic Design.pdf" class="case-button" style="background: var(--white); color:var(--secondary);">
+  <div style="margin-left: auto; margin-right: auto; max-width: 80rem; padding-left: 1.5rem; padding-right: 2rem;">
+    <h6 style="color: var(--primary); text-align: center; letter-spacing: 0.07em; padding-bottom:0rem; margin-bottom:0rem;">
+      Visual Design and Digital Media
+    </h6>
+    <h4 style="color: var(--white); margin-left: auto; margin-right: auto; max-width: 72rem; text-align: center; letter-spacing: -0.01em; line-height: 1.1;">
+       Brand identity, Storytelling, and Promotional strategies across Film, Fashion, Healthcare and more.<br><br> <a href="pdfs/Graphic Design.pdf" target="_blank" class="case-button" style="background: var(--white); color:var(--secondary);">
         View Graphic Design Portfolio [PDF] ↗
       </a>
+    </h4>
+</div>
 
-<div class="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding-top: 2rem; padding-bottom:2rem;">
+<div class="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width:100%;">
 
-  <!-- Graphic Design for Films Card -->
-  <article style="position: relative; border-radius: 6px;" onclick="window.open('graphic-design-media.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/The Akaali Title Poster2.jpg" alt="Graphic Design for Films" style="width: 100%; height: 450px; object-fit: cover;">
-    </span>
+<!-- Film and Media Card -->
+<article onclick="window.open('graphic-design-media.html', '_blank');" style="background:none; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.05); padding:12px; display:flex; flex-direction:column; align-items:flex-start;">
+  <img src="images/The Akaali Title Poster2.jpg"
+       alt="Graphic Design for Films"
+       style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px;">
+  <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Posters & Titles for Films
+  </span>
+  <span style="color: var(--white); font-size:14px; font-weight:400; margin-bottom:2px;">
+    Ongoing | Film and Media <br>
+  </span>
+</article>
 
-    <!-- Heading and Description -->
-    <h6 style="font-size: 20px; margin: 10px 0 0 0;">Posters & Titles for Films</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       Ongoing | Film and Media <br>
-       Poster design and other promotional designs for the Indian film industry.<br><br>
-       View Designs ↗      
-    </p>
+<!-- Her Choice Fashions Card -->
+<article onclick="window.open('graphic-design-hcf.html', '_blank');" style="background:none; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.05); padding:12px; display:flex; flex-direction:column; align-items:flex-start;">
+  <img src="images/ai/hcf.webp"
+       alt="Her Choice Fashions"
+       style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px;">
+  <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Fashion Branding, Digital Presence
+  </span>
+  <span style="color: var(--white); font-size:14px; font-weight:400; margin-bottom:2px;">
+    W/S 2022 | Women's Fashion and Retail <br>
+  </span>
+</article>
 
-  </article>
+<!-- Sai Healthcare Card -->
+<article onclick="window.open('graphic-design-shf.html', '_blank');" style="background:none; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.05); padding:12px; display:flex; flex-direction:column; align-items:flex-start;">
+  <img src="images/ai/equipment.webp"
+       alt="Sai Healthcare"
+       style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px;">
+  <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Healthcare Marketing
+  </span>
+  <span style="color: var(--white); font-size:14px; font-weight:400; margin-bottom:2px;">
+    S/S 2022 | Healthcare and Wellness <br>
+  </span>
+</article>
 
-  <!-- Her Choice Fashions Card -->
-  <article style="position: relative; border-radius: 6px;" onclick="window.open('graphic-design-hcf.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/hcf.webp" alt="Her Choice Fashions" style="width: 100%; height: 450px; object-fit: cover;">
-    </span>
+<!-- Reelit Media Card -->
+<article onclick="window.open('graphic-design-reelit.html', '_blank');" style="background:none; border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.05); padding:12px; display:flex; flex-direction:column; align-items:flex-start;">
+  <img src="images/ai/cricket.webp"
+       alt="Reelit Media"
+       style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px;">
+  <span style="color: var(--primary); font-size:16px; font-weight:500; margin-top:10px; margin-bottom:2px; letter-spacing:0.01em;">
+    Sports Marketing
+  </span>
+  <span style="color: var(--white); font-size:14px; font-weight:400; margin-bottom:2px;">
+    S/S 2023 | Sports and Affliateds<br>
+  </span>
+</article>
 
-    <!-- Heading and Description -->
-    <h6 style="font-size: 20px; margin: 10px 0 0 0;">Fashion Branding and Digital Presence</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       Winter 2022 | Women's Fashion and Retail <br>
-       Establishing a Social Media presence for a women’s ethnic fashion retailer.<br><br>
-       View Designs ↗      
-    </p>
-
-  </article>
-
-  <!-- Sai Healthcare Card -->
-  <article style="position: relative; border-radius: 6px;" onclick="window.open('graphic-design-shf.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/equipment.webp" alt="Sai Healthcare" style="width: 100%; height: 450px; object-fit: cover;">
-    </span>
-
-    <!-- Heading and Description -->
-    <h6 style="font-size: 20px; margin: 10px 0 0 0;">Healthcare Marketing</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       S/S 2022 | Healthcare and Wellness <br>
-       Establishing a Social Media presence for a group of Physiotherapy clinics.<br><br>
-       View Designs ↗       
-    </p>
-
-  </article>
-
-  <!-- Reelit Media Card -->
-  <article style="position: relative; border-radius: 6px;" onclick="window.open('graphic-design-reelit.html', '_blank');">
-    <!-- Image Container with Badge -->
-    <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-      <img src="images/ai/cricket.webp" alt="Reelit Media" style="width: 100%; height: 450px; object-fit: cover;">
-    </span>
-
-    <!-- Heading and Description -->
-    <h6 style="font-size: 20px; margin: 10px 0 0 0;">Sports Marketing</h6>
-    <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-       S/S 2023 | Sports and Affliated Businesses <br>
-       Creating social media and digital designs for sports-related companies and individuals.<br><br>
-       View Designs ↗             
-    </p>
-
-  </article>
 
 </div>
 
