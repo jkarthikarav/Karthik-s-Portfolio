@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karthik Jambunathan Portfolio</title>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+</noscript>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body> 
 
 <header class="header" style="position: relative; border: none;">
   <img src="logos/Karthik.png" alt="Logo" class="logo">
@@ -9,34 +24,18 @@
   </div>
 
   <!-- Mega Menu -->
-  <div id="megaMenu" class="mega-menu" style="
-    position: absolute;
-    top: 100;
-    left: 0;
-    width: 100vw;
-    box-sizing: border-box;
-    display: none; /* Set to none by default */
-    padding: 2.2 rem;
-    z-index: 999;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    align-items: start;
-    gap: 20px;
-    box-shadow: none;
-    border: none;
-    height: auto;
-  ">
+  <div id="megaMenu" class="mega-menu" style="background:var(--black2);  ">
 
     <!-- Column 1: Featured Work, UI Designs, and Expand -->
-    <div>
+    <div style="  max-width: 15.5%;  min-width: 0;  overflow-wrap: break-word;">
       <div class="mega-heading">Featured Work</div>
       <a href="ece-homepage-redesign.html" target="_blank"><div><strong>ECE Homepage (Web)<br></strong><small>Redesign of the ECE homepage<br><br></small></div></a>
       <a href="spy-film-pitch.html" target="_blank"><div><strong>Film Pitch Website (Web)<br></strong><small>Website for a Film pitch<br><br></small></div></a>
-      <a href="ui-designs-and-redesigns.html" target="_blank"><div><strong>UI Designs/Redesigns<br></strong><small>Portfolio of UI design<br><br></small></div></a>
+      <a href="ui-designs-and-redesigns.html" target="_blank"><div><strong>UI Designs / Redesigns<br></strong><small>Portfolio of UI design<br><br></small></div></a>
     </div>
 
     <!-- Column 2: Case Study Links -->
-    <div style="margin-left:10px;">
+    <div style="  max-width: 15.5%;  min-width: 0;  overflow-wrap: break-word;">
       <div class="mega-heading">Case Studies</div>
       <a href="ece-events-redesign.html" target="_blank"><div><strong>ECE Events (Web)<br></strong><small>Redesign of the ECE Events page<br><br></small></div></a>
       <a href="research-virtual-museum.html" target="_blank"><div><strong>Virtual Museum Website (UXR/UI)<br></strong><small>Producing Insights for Redesign<br><br></small></div></a>
@@ -45,28 +44,28 @@
     </div>
 
     <!-- Column 3: Presentations (PPTs) II -->
-    <div style="max-width:175px;">
+    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
       <div class="mega-heading">External Links</div>
       <a href="https://linktr.ee/karthik_ece_at_uoft" target="_blank">ECE Website Work (LinkTree)</a>
       <a href="https://linktr.ee/karthik_visual_design" target="_blank">Visual Design (LinkTree)</a>
     </div>
 
     <!-- Column 4: Presentations (PPTs) -->
-    <div style="max-width:175px;">
+    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
       <div class="mega-heading">Presentations</div>
       <a href="https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" target="_blank">Conversational UX: Healthcare AI (PPT)</a>
       <a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank">UXR: User Journey Analysis (PPT)</a>
     </div>
 
     <!-- Column 5: Writing & Analysis -->
-    <div style="max-width:175px;">
+    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
       <div class="mega-heading">Analysis Work</div>
       <a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank">Speculative Design: Film & Media (DOC)</a>
       <a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank">Data Analysis: Billboard Music Charts (DOC)</a>
     </div>
 
     <!-- Column 6: Who Am I? -->
-    <div style="max-width:175px;">
+    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
       <div class="mega-heading">ME</div>
       <a href="about-me.html" target="_blank">About</a>
       <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank">LinkedIn</a>
@@ -85,7 +84,7 @@ function toggleMegaMenu(event) {
   
   // Toggle the display property of the mega menu
   if (megaMenu.style.display === 'none' || megaMenu.style.display === '') {
-    megaMenu.style.display = 'grid'; // Show the mega menu
+    megaMenu.style.display = 'flex'; // Show the mega menu
   } else {
     megaMenu.style.display = 'none'; // Hide the mega menu
   }
