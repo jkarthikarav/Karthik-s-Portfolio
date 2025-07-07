@@ -49,25 +49,29 @@
 
 /* Mega Menu */
 .mega-menu {
-  display: none; /* Ensures mega menu is hidden by default */
-  grid-template-columns: repeat(6, 1fr); /* Set default columns */
-  gap: 20px;
-  background-color: var(--black2);
-  position: absolute;
-  top: 100%; /* Adjust position to below header */
-  left: 0;
-  width: 100vw;
-  box-sizing: border-box;
-  padding: 2rem;
-  z-index: 999;
-  color: var(--white);
-  margin-top: 0.5rem; /* Add spacing below header */
-  text-align: left; /* Align items inside the mega menu to the left */
+    position: absolute;
+    top: 90;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    display: none; /* Set to none by default */
+    padding: 2rem;
+    z-index: 999;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: start;
+    box-shadow: none;
+    border: none;
+    height: auto;
+    overflow-x: hidden;
+    gap:10px; 
+    color: var(--white);
+    margin-top: 0rem; /* Add spacing below header */
+    text-align: left; /* Align items inside the mega menu to the left */
 }
 
 /* Mega Menu Columns */
 .mega-column {
-  min-width: 240px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   padding-right: 1rem;
 }
