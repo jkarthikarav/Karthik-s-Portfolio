@@ -10,18 +10,102 @@
   --secondary: #00464F;
 }
 
-.dropdown {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-10px);
-  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between; /* space between logo and nav */
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: var(--black2);
+  color: var(--secondary);
 }
 
-.dropdown.show {
-  max-height: 1000px; /* Large enough to fit content */
-  opacity: 1;
-  transform: translateY(0);
+.header img.logo {
+  width: 200px; /* Set width of logo */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: auto; /* pushes nav to far right */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 8px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a::after {
+  content: " ▼";
+  font-size: 0.7em;
+}
+
+/* Mega Menu */
+.mega-menu {
+  display: none; /* Ensures mega menu is hidden by default */
+  grid-template-columns: repeat(6, 1fr); /* Set default columns */
+  gap: 20px;
+  background-color: var(--black2);
+  position: absolute;
+  top: 100%; /* Adjust position to below header */
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2rem;
+  z-index: 999;
+  color: var(--white);
+  margin-top: 0.5rem; /* Add spacing below header */
+  text-align: left; /* Align items inside the mega menu to the left */
+}
+
+/* Mega Menu Columns */
+.mega-column {
+  min-width: 240px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 1rem;
+}
+
+.mega-column:last-child {
+  border-right: none;
+}
+
+/* Headings in Mega Menu */
+.mega-heading {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.mega-subheading {
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Mega Menu Links */
+.mega-menu a {
+  display: block;
+  padding: 4px 0;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.mega-menu a:hover {
+  text-decoration: underline;
+}
+
+.mega-menu em {
+  font-style: italic;
+  font-size: 0.85em;
 }
 
 
