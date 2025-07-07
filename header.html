@@ -1,120 +1,106 @@
-<header style="background-color: var(--black2); display: flex; justify-content: space-between; align-items: center; padding-right: 20px; padding-left: 20px; padding-top: 3rem;padding-right:3rem;">
-  <!-- Logo -->
-  <img src="logos/Karthik.png" alt="Logo" style="width: 220px;">
-
-  <!-- Navigation Menu Aligned to the Right -->
-  <nav style="display: flex; justify-content: flex-end; gap: 30px; flex: 1;">
-
-    <!-- Featured Work Dropdown -->
-    <div style="position: relative;">
-      <a href="#" style="color: var(--primary); padding: 2rem 0; text-decoration: none;" onclick="toggleDropdown('featuredWorkDropdown')">Featured Work</a>
-      <div id="featuredWorkDropdown" style="text-decoration: none;min-width: 768px; display:none; position: absolute; top: 100%; right: 0; padding: 20px; border: 1px solid var(--grey0); background-color: var(--black2); color: var(--white); width: 300px; opacity: 0; transform: translateX(-100%); transition: opacity 0.3s ease, transform 0.3s ease; grid-template-columns: 1fr 1fr; gap: 20px;">
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); ">
-        <!-- Column 1: Focus List -->
-        <div style="color: var(--primary);">
-          <ul style="list-style-type: none; padding: 0;">
-            <li><a href="ece-homepage-redesign.html" target="_blank" style="color: var(--primary);"><div><strong>ECE Homepage (Web)<br></strong><small>Redesign of the ECE homepage<br><br></small></div></a></li>
-            <li><a href="spy-film-pitch.html" target="_blank" style="color: var(--primary);"><div><strong>Film Pitch Website (Web)<br></strong><small>Website for a Film pitch<br><br></small></div></a></li>
-            <li><a href="ui-designs-and-redesigns.html" target="_blank" style="color: var(--primary);"><div><strong>UI Designs/Redesigns<br></strong><small>Portfolio of UI design<br><br></small></div></a></li>
-          </ul>
-        </div>
-
-        <!-- Column 2: Additional List -->
-        <div style="color: var(--white);">
-          <ul style="list-style-type: none; padding: 0;">
-            <li><a href="https://linktr.ee/karthik_ece_at_uoft" target="_blank" style="color: var(--white);">ECE Website Work (LinkTree)</a></li><br>
-            <li><a href="https://linktr.ee/karthik_visual_design" target="_blank" style="color: var(--white);">Visual Design (LinkTree)</a></li><br>
-            <li><a href="ece-events-redesign.html" target="_blank" style="color: var(--white);">ECE Events (Web)</a></li><br>
-            <li><a href="research-virtual-museum.html" target="_blank" style="color: var(--white);">Virtual Museum Website (UXR/UI)</a></li><br>
-            <li><a href="ui-design-mobile-app.html" target="_blank" style="color: var(--white);">Museum Tickets Mobile App(UX/UI)</a></li><br>
-            <li><a href="tmc.html" target="_blank" style="color: var(--white);">Textile Museum of Canada (IA/UI)</a></li>
-          </ul>
-        </div>
-      </div>
+<header class="header" style="position: relative; border: none;">
+  <img src="logos/Karthik.png" alt="Logo" class="logo">
+  
+  <div class="nav-links">
+    <div class="dropdown">
+      <a href="#" onclick="toggleMegaMenu(event)">Explore</a>
     </div>
-</div>
+  </div>
 
+  <!-- Mega Menu -->
+  <div id="megaMenu" class="mega-menu" style="
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    display: none; /* Set to none by default */
+    padding: 2.2 rem;
+    z-index: 999;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: start;
+    gap: 20px;
+    box-shadow: none;
+    border: none;
+    height: auto;
+  ">
 
-    <!-- Other Work Dropdown -->
-    <div style="position: relative;">
-      <a href="#" style="color: var(--primary); padding: 2rem 0; text-decoration: none;" onclick="toggleDropdown('otherWorkDropdown')">Other Work</a>
-      <div id="otherWorkDropdown" style="text-decoration: none;min-width: 768px; display:none; position: absolute; top: 100%; right: 0; padding: 20px; border: 1px solid var(--grey0); background-color: var(--black2); color: var(--white); width: 300px; opacity: 0; transform: translateX(-100%); transition: opacity 0.3s ease, transform 0.3s ease; grid-template-columns: 1fr 1fr; gap: 20px;">
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); ">
-        <!-- Column 1: Focus List (Writing & Analysis) -->
-        <div style="color: var(--primary);">
-          <ul style="list-style-type: none; padding-right: 20px;">
-            <li><a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank" style="color: var(--primary);"><div><strong>Speculative Design: Film & Media (DOC)<br></strong><small>Consequences of Productivity Frameworks And Policies<br><br></small></div></a></li>
-            <li><a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank" style="color: var(--primary);"><div><strong>Data Analysis: Billboard Music Charts (DOC)<br></strong><small>Effect of Collaboration on Charting Probability<br><br></small></div></a></li>
-          </ul>
-        </div>
-
-
-        <!-- Column 2: Additional List (Presentations) -->
-        <div style="color: var(--white); padding-left:10px;">
-          <ul style="list-style-type: none; padding: 0;">
-            <li><a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank" style="color: var(--white);">UXR: User Journey Analysis (PPT)</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" target="_blank" style="color: var(--white);">UX/UI: Digitization Critique (PPT)</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing" target="_blank" style="color: var(--white);">UXR: Design Guidelines (PPT)</a></li>
-            <li><a href="https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" target="_blank" style="color: var(--white);">Conversational UX: Healthcare AI (PPT)</a></li>
-          </ul>
-        </div>
-      </div>
+    <!-- Column 1: Featured Work, UI Designs, and Expand -->
+    <div>
+      <div class="mega-heading">Featured Work</div>
+      <a href="ece-homepage-redesign.html" target="_blank"><div><strong>ECE Homepage (Web)<br></strong><small>Redesign of the ECE homepage<br><br></small></div></a>
+      <a href="spy-film-pitch.html" target="_blank"><div><strong>Film Pitch Website (Web)<br></strong><small>Website for a Film pitch<br><br></small></div></a>
+      <a href="ui-designs-and-redesigns.html" target="_blank"><div><strong>UI Designs/Redesigns<br></strong><small>Portfolio of UI design<br><br></small></div></a>
     </div>
 
-</div>
-
-
-    <!-- About Me Dropdown -->
-    <div style="position: relative; background-color: var(--black2);">
-      <a href="#" style="color: var(--primary); padding: 2rem 0; text-decoration: none;" onclick="toggleDropdown('aboutMeDropdown')">About Me</a>
-      <div id="aboutMeDropdown" style="text-decoration: none; display:none; position: absolute; top: 100%; right: 0; padding: 20px; background-color: var(--black2); color: var(--white); width: 300px; opacity: 0; transform: translateX(-100%); transition: opacity 0.3s ease, transform 0.3s ease; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-        <ul style="list-style-type: none; padding: 0; color: var(--white);">
-          <li><a href="about-me.html" target="_blank" style="color: var(--white);">About</a></li>
-          <li><a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank" style="color: var(--white);">LinkedIn</a></li>
-          <li><a href="mailto:karthikaravindj@gmail.com" style="color: var(--white);">Email</a></li>
-        </ul>
-      </div>
+    <!-- Column 2: Case Study Links -->
+    <div style="margin-left:10px;">
+      <div class="mega-heading">Case Studies</div>
+      <a href="ece-events-redesign.html" target="_blank">ECE Events (Web)</a>
+      <a href="research-virtual-museum.html" target="_blank">Virtual Museum Website (UXR/UI)</a>
+      <a href="ui-design-mobile-app.html" target="_blank">Museum Tickets Mobile App(UX/UI)</a>
+      <a href="tmc.html" target="_blank">Textile Museum of Canada (IA/UI)</a>
     </div>
 
-  </nav>
+    <!-- Column 5: Presentations (PPTs) II -->
+    <div>
+      <div class="mega-heading">External Links</div>
+      <a href="https://linktr.ee/karthik_ece_at_uoft" target="_blank">ECE Website Work (LinkTree)</a>
+      <a href="https://linktr.ee/karthik_visual_design" target="_blank">Visual Design (LinkTree)</a>
+    </div>
+
+    <!-- Column 4: Presentations (PPTs) -->
+    <div>
+      <div class="mega-heading">Presentations</div>
+      <a href="https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" target="_blank">Conversational UX: Healthcare AI (PPT)</a>
+      <a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank">UXR: User Journey Analysis (PPT)</a>
+    </div>
+
+
+    <!-- Column 6: Writing & Analysis -->
+    <div>
+      <div class="mega-heading">Analysis Work</div>
+      <a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank">Speculative Design: Film & Media (DOC)</a>
+      <a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank">Data Analysis: Billboard Music Charts (DOC)</a>
+    </div>
+
+    <!-- Column 8: Who Am I? -->
+    <div>
+      <div class="mega-heading">ME</div>
+      <a href="about-me.html" target="_blank">About</a>
+      <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank">LinkedIn</a>
+      <a href="mailto:karthikaravindj@gmail.com">Email</a>
+    </div>
+
+  </div>
 </header>
 
+
 <script>
-function toggleDropdown(id) {
-  const dropdowns = document.querySelectorAll('[id$="Dropdown"]');
-
-  dropdowns.forEach((dropdown) => {
-    if (dropdown.id !== id) {
-      dropdown.style.display = 'none';
-      dropdown.style.opacity = 0;
-      dropdown.style.transform = 'translateY(-40px)';
-    }
-  });
-
-  const clickedDropdown = document.getElementById(id);
-  const isOpen = clickedDropdown.style.display === 'block';
-
-  if (isOpen) {
-    clickedDropdown.style.display = 'none';
-    clickedDropdown.style.opacity = 0;
-    clickedDropdown.style.transform = 'translateY(+40px)';
+// Function to toggle the visibility of the mega menu
+function toggleMegaMenu(event) {
+  event.preventDefault();
+  const megaMenu = document.getElementById('megaMenu');
+  
+  // Toggle the display property of the mega menu
+  if (megaMenu.style.display === 'none' || megaMenu.style.display === '') {
+    megaMenu.style.display = 'grid'; // Show the mega menu
   } else {
-    clickedDropdown.style.display = 'block';
-    // Small delay to allow transition to apply
-    setTimeout(() => {
-      clickedDropdown.style.opacity = 1;
-      clickedDropdown.style.transform = 'translateX(0)';
-    }, 10);
+    megaMenu.style.display = 'none'; // Hide the mega menu
   }
 }
 
-// Optional: Close all dropdowns on page load
-window.addEventListener('DOMContentLoaded', () => {
-  const dropdowns = document.querySelectorAll('[id$="Dropdown"]');
-  dropdowns.forEach((dropdown) => {
-    dropdown.style.display = 'none';
-    dropdown.style.opacity = 0;
-    dropdown.style.transform = 'translateY(+40px)';
-  });
+// Close the mega menu if mouse leaves the header
+document.querySelector('.header').addEventListener('mouseleave', function() {
+  const megaMenu = document.getElementById('megaMenu');
+  megaMenu.style.display = 'none';
+});
+
+// Set the correct position for the mega menu after the page loads
+window.addEventListener('load', function() {
+  const headerHeight = document.querySelector('.header').offsetHeight; // Get header height
+  const megaMenu = document.getElementById('megaMenu');
+  megaMenu.style.top = `${headerHeight}px`; // Set top position based on header height
 });
 </script>
