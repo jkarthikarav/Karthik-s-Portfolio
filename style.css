@@ -14,7 +14,7 @@
 
 /* Header + Glass Effect */
 .site-header {
-  position: fixed;
+position: relative;
   top: 1rem;
   left: 1rem;
   right: 1rem;
