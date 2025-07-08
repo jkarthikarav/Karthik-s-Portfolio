@@ -51,7 +51,7 @@
 /* Mega Menu */
 .mega-menu {
     position: absolute;
-    top: 90;
+    top: 100;
     left: 0;
     width: 100vw;
     box-sizing: border-box;
@@ -67,7 +67,6 @@
     overflow-x: hidden;
     gap:10px; 
     color: var(--white);
-    margin-top: 0rem; /* Add spacing below header */
     text-align: left; /* Align items inside the mega menu to the left */
 }
 
