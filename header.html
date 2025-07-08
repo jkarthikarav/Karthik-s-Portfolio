@@ -61,16 +61,15 @@
 
 
 <script>
-// Function to toggle the visibility of the mega menu
 function toggleMegaMenu(event) {
   event.preventDefault();
   const megaMenu = document.getElementById('megaMenu');
   
   // Toggle the display property of the mega menu
   if (megaMenu.style.display === 'none' || megaMenu.style.display === '') {
-    megaMenu.style.display = 'flex'; // Show the mega menu
+    megaMenu.style.display = 'flex';  // Show the mega menu
   } else {
-    megaMenu.style.display = 'none'; // Hide the mega menu
+    megaMenu.style.display = 'none';  // Hide the mega menu
   }
 }
 
