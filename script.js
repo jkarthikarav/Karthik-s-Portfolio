@@ -20,36 +20,6 @@
     .catch(err => console.error('Error:', err));
 
 
-// Toggle mobile menu
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.main-nav');
-
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
-
-
-//Tabs 
-  const tabs = document.querySelectorAll(".tab-1906");
-  const panes = document.querySelectorAll(".tab-pane-1906");
-
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
-
-      const targetId = tab.dataset.tab;
-
-      panes.forEach(pane => {
-        pane.classList.remove("active");
-        if (pane.id === targetId) {
-          pane.classList.add("active");
-        }
-      });
-    });
-  });
-
-
 // Function to update overlay position based on the websitework section
 function setOverlayPosition() {
   const overlay = document.getElementById("overlay");
@@ -82,6 +52,38 @@ window.addEventListener("scroll", () => {
     hideOverlay();
   }
 });
+
+// Toggle mobile menu
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.main-nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+
+//Tabs 
+  const tabs = document.querySelectorAll(".tab-1906");
+  const panes = document.querySelectorAll(".tab-pane-1906");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const targetId = tab.dataset.tab;
+
+      panes.forEach(pane => {
+        pane.classList.remove("active");
+        if (pane.id === targetId) {
+          pane.classList.add("active");
+        }
+      });
+    });
+  });
+
+
+
 
 const scrollButton = document.querySelector(".scroll-button");
 
