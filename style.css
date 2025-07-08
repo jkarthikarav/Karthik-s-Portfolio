@@ -19,6 +19,8 @@
   padding: 3rem 2rem;
   background-color: var(--black2);
   color: var(--secondary);
+  position: relative; /* Ensure the mega menu is positioned relative to the header */
+  z-index: 1000; /* Keep header on top of mega menu */
 }
 
 .header img.logo {
@@ -50,24 +52,21 @@
 
 /* Mega Menu */
 .mega-menu {
-    position: absolute;
-    top: 100;
-    left: 0;
-    width: 100vw;
-    box-sizing: border-box;
-    display: none; /* Set to none by default */
-    padding: 2rem;
-    z-index: 999;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    align-items: start;
-    box-shadow: none;
-    border: none;
-    height: auto;
-    overflow-x: hidden;
-    gap:10px; 
-    color: var(--white);
-    text-align: left; /* Align items inside the mega menu to the left */
+  position: absolute;
+  top: 100%; /* Position it directly below the header */
+  left: 0;
+  width: calc(100vw - 1px); /* Span full width */
+  padding: 2rem;
+  margin: 0;
+  display: none; /* Initially hidden */
+  z-index: 999; /* Ensure it's below the header */
+  background: var(--black2); /* Matching background */
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: start;
+  gap: 10px;
+  color: var(--white);
+  text-align: left;
 }
 
 /* Mega Menu Columns */
