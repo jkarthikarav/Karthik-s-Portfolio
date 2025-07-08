@@ -20,6 +20,13 @@
     .catch(err => console.error('Error:', err));
 
 
+// Toggle mobile menu
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.main-nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
 
 
 //Tabs 

@@ -11,105 +11,200 @@
   --green: #2d6a4f;
 }
 
-/* Header Styling */
-.header {
+
+/* Header + Glass Effect */
+.site-header {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  width: calc(100% - 2rem);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  color: var(--white);
+  z-index: 9999;
+}
+
+/* Inner layout with Flexbox */
+.header-inner {
   display: flex;
-  justify-content: space-between; /* space between logo and nav */
   align-items: center;
-  padding: 3rem 2rem;
-  background-color: var(--black2);
-  color: var(--secondary);
-  position: relative; /* Ensure the mega menu is positioned relative to the header */
-  z-index: 1000; /* Keep header on top of mega menu */
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 24px;
 }
 
-.header img.logo {
-  width: 200px; /* Set width of logo */
+/* Logo */
+.logo img {
+  height: 20px;
 }
 
-.nav-links {
+/* Navigation */
+.main-nav {
+  flex-grow: 1;
+  margin: 0 32px;
+}
+
+.nav-list {
   display: flex;
-  gap: 2rem;
-  align-items: center;
-  margin-left: auto; /* pushes nav to far right */
+  gap: 16px;
+  list-style: none;
 }
 
-.nav-links a {
+.nav-item > a {
+  color: var(--black2);  /* Color for nav menu items */
   text-decoration: none;
-  color: var(--primary);
+  font-size: 16px;
   padding: 8px;
+  display: inline-block;
 }
 
 /* Dropdown Styling */
-.dropdown {
+.dropdown-menu {
+  position: absolute;
+  background: white;  /* White background for dropdown */
+  list-style: none;
+  padding: 8px 0;
+  margin-top: 0.5rem;
+  min-width: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+  color: var(--black2);  /* Color for submenu items */
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect for dropdown items (10% black overlay) */
+.dropdown-menu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);  /* 10% black overlay on hover */
+}
+
+/* Show the dropdown menu when hovered or focused */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Button */
+.contact-btn {
+  background: var(--black2);
+  color: var(--primary);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hamburger (Mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--black2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.open {
+    display: block;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+/* Submenu (Nested) Styling */
+.has-submenu {
   position: relative;
 }
 
-.dropdown > a::after {
-  content: " ▼";
-  font-size: 0.7em;
-}
-
-/* Mega Menu */
-.mega-menu {
+.nested-dropdown {
+  display: none;
   position: absolute;
-  top: 100%; /* Position it directly below the header */
-  left: 0;
-  width: calc(100vw - 1px); /* Span full width */
-  padding: 2rem;
-  margin: 0;
-  display: none; /* Initially hidden */
-  z-index: 999; /* Ensure it's below the header */
-  background: var(--black2); /* Matching background */
-  grid-template-columns: repeat(6, 1fr);
-  justify-items: center;
-  align-items: start;
-  gap: 10px;
-  color: var(--white);
-  text-align: left;
+  top: 0;
+  left: 100%;
+  background-color: white;  /* White background for nested dropdown */
+  list-style: none;
+  padding: 8px 16px;
+  opacity: 0;
+  min-width:240px;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-/* Mega Menu Columns */
-.mega-column {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  padding-right: 1rem;
-}
-
-.mega-column:last-child {
-  border-right: none;
-}
-
-/* Headings in Mega Menu */
-.mega-heading {
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  font-size: 0.95rem;
-}
-
-.mega-subheading {
-  font-weight: 600;
-  margin: 1rem 0 0.5rem;
-  font-size: 0.85rem;
-  opacity: 0.9;
-}
-
-/* Mega Menu Links */
-.mega-menu a {
+.has-submenu:hover > .nested-dropdown,
+.has-submenu:focus-within > .nested-dropdown {
   display: block;
-  padding: 4px 0;
-  color: var(--primary);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styling for nested dropdown links */
+.nested-dropdown li a {
+  color: var(--black2);  /* Color for nested items */
   text-decoration: none;
+  padding: 8px 16px;
+  display: block;
 }
 
-.mega-menu a:hover {
-  text-decoration: underline;
+/* Hover effect for nested dropdown items (10% black overlay) */
+.nested-dropdown li:hover {
+  background-color: rgba(0, 0, 0, 0.1);  /* 10% black overlay on hover */
 }
 
-.mega-menu em {
-  font-style: italic;
-  font-size: 0.85em;
+/* Optional: Hover Effect for Parent Items (Link Trees, PPT Reports, Written Reports) */
+.has-submenu > a:hover {
+  color: var(--secondary); /* Optional hover effect for parent items */
 }
+
 
 
   article {

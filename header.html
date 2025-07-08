@@ -1,88 +1,108 @@
-<header class="header" style="position: relative; border: none;">
-  <img src="logos/Karthik.png" alt="Logo" class="logo">
-  
-  <div class="nav-links">
-    <div class="dropdown">
-      <a href="#" onclick="toggleMegaMenu(event)">Explore</a>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <div class="logo" role="img" aria-label="Site Logo">
+        <a href="/"><img src="logos/JAK.png" alt="Logo" /></a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Main menu">
+        <ul class="nav-list">
+
+          <!-- Featured Work -->
+          <li class="nav-item dropdown" tabindex="0">
+            <a href="#">Featured Work</a>
+            <ul class="dropdown-menu">
+              <li><a href="ece-homepage-redesign.html" target="_blank"><div><strong>ECE Homepage (Web)
+<br></strong><span style="font-size:16px; color:var(--black);">Redesign of the ECE homepage<br><br></span></div></a></li>
+              <li><a href="ui-designs-and-redesigns.html" target="_blank"><div><strong>UI Designs / Redesigns
+<br></strong><span style="font-size:16px; color:var(--black);">Collection of UI designs<br><br></span></div></a></li>
+            </ul>
+          </li>
+
+          <!-- Case Studies -->
+          <li class="nav-item dropdown" tabindex="0">
+            <a href="#">Case Studies</a>
+            <ul class="dropdown-menu">
+              <li><a href="ece-events-redesign.html" target="_blank"><div><strong>ECE Events (Web)
+<br></strong><span style="font-size:16px; color:var(--black);">Redesign of the ECE Events page<br><br></span></div></a></li>
+              <li><a href="spy-film-pitch.html" target="_blank"><div><strong>Film Pitch Website (Web)
+<br></strong><span style="font-size:16px; color:var(--black);">Website for a Film pitch<br><br></span></div></a></li>
+              <li><a href="research-virtual-museum.html" target="_blank"><div><strong>Virtual Museum Website (UXR/UI)
+<br></strong><span style="font-size:16px; color:var(--black);">Producing Insights for Redesign<br><br></span></div></a></li>
+              <li><a href="ui-design-mobile-app.html" target="_blank"><div><strong>Museum Tickets Mobile App (UX/UI)
+<br></strong><span style="font-size:16px; color:var(--black);">Designing for User Needs<br><br></span></div></a></li>
+              <li><a href="tmc.html" target="_blank"><div><strong>Textile Museum of Canada (IA/UI)
+<br></strong><span style="font-size:16px; color:var(--black);">Implementing Phased Redesign Strategies<br><br></span></div></a></li>
+            </ul>
+          </li>
+
+<!-- External Links -->
+<li class="nav-item dropdown" tabindex="0">
+  <a href="#">External Links</a>
+  <ul class="dropdown-menu">
+    
+    <!-- Link Trees Submenu -->
+    <li class="has-submenu" tabindex="0">
+      <a href="#"><div><strong>Link Trees
+</strong><br><span style="font-size:16px; color:var(--black);">Links to Externally Hosted Work</span></div></a></a>
+      <ul class="nested-dropdown">
+        <li><a href="https://linktr.ee/karthik_ece_at_uoft" target="_blank">ECE Website Work (LinkTree)</a></li>
+        <li><a href="https://linktr.ee/karthik_visual_design" target="_blank">Visual Design (LinkTree)</a></li>
+      </ul>
+    </li>
+
+    <!-- PPT Reports Submenu -->
+    <li class="has-submenu" tabindex="0">
+      <a href="#"><div><strong>Visual Reports
+</strong><br><span style="font-size:16px; color:var(--black);">Samples of UX/UI Presentation Work</span></div></a></a>
+      <ul class="nested-dropdown">
+        <li><a href="https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" target="_blank">
+            <div><strong>Conversational UX: Healthcare AI (SLIDES)</strong><br><span style="font-size:16px; color:var(--black);">Fixing Flaws in Symptom Input Flow</span></div></a>
+        </li>
+        <li><a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank">
+            <div><strong>UXR: User Journey Analysis (SLIDES)</strong><br><span style="font-size:16px; color:var(--black);">Identifying Patterns and Navigation Strategies</span></div></a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Written Reports Submenu -->
+    <li class="has-submenu" tabindex="0">
+      <a href="#"><div><strong>Written Reports
+</strong><br><span style="font-size:16px; color:var(--black);">Information Sciences and Human-Centered Design Work</span></div></a></a>
+      <ul class="nested-dropdown">
+        <li><a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank"><div><strong>Speculative Design: Media & Entertainment (DOCS)
+</strong><br><span style="font-size:16px; color:var(--black);">Designing Productivity Frameworks And Policies</span></div></a></li>
+        <li><a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank"><div><strong>Data Analysis: Billboard Top 100 Charts (DOCS)
+</strong><br><span style="font-size:16px; color:var(--black);">Effect of Collaboration on Charting Probability and Rank</span></div></a></li>
+      </ul>
+    </li>
+    
+  </ul>
+</li>
+          <!-- About -->
+          <li class="nav-item dropdown" tabindex="0">
+            <a href="#">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="about-me.html" target="_blank">About Me</a></li>
+              <li><a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank">Connect on LinkedIn</a></li>
+              <li><a href="mailto:karthikaravindj@gmail.com">Email Me</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Contact Me -->
+      <div class="contact-area">
+        <button class="contact-btn">Contact Me</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
     </div>
-  </div>
-
-  <!-- Mega Menu -->
-  <div id="megaMenu" class="mega-menu" style="background:var(--black2);  ">
-
-    <!-- Column 1: Featured Work, UI Designs, and Expand -->
-    <div style="  max-width: 15.5%;  min-width: 0;  overflow-wrap: break-word;">
-      <div class="mega-heading">Featured Work</div>
-      <a href="ece-homepage-redesign.html" target="_blank"><div><strong>ECE Homepage (Web)<br></strong><small>Redesign of the ECE homepage<br><br></small></div></a>
-      <a href="spy-film-pitch.html" target="_blank"><div><strong>Film Pitch Website (Web)<br></strong><small>Website for a Film pitch<br><br></small></div></a>
-      <a href="ui-designs-and-redesigns.html" target="_blank"><div><strong>UI Designs / Redesigns<br></strong><small>Portfolio of UI design<br><br></small></div></a>
-    </div>
-
-    <!-- Column 2: Case Study Links -->
-    <div style="  max-width: 15.5%;  min-width: 0;  overflow-wrap: break-word;">
-      <div class="mega-heading">Case Studies</div>
-      <a href="ece-events-redesign.html" target="_blank"><div><strong>ECE Events (Web)<br></strong><small>Redesign of the ECE Events page<br><br></small></div></a>
-      <a href="research-virtual-museum.html" target="_blank"><div><strong>Virtual Museum Website (UXR/UI)<br></strong><small>Producing Insights for Redesign<br><br></small></div></a>
-      <a href="ui-design-mobile-app.html" target="_blank"><div><strong>Museum Tickets Mobile App(UX/UI)<br></strong><small>Designing for User Needs<br><br></small></div></a>
-      <a href="tmc.html" target="_blank"><div><strong>Textile Museum of Canada (IA/UI)<br></strong><small>Implementing Phased Redesign Strategies<br><br></small></div></a>
-    </div>
-
-    <!-- Column 3: Presentations (PPTs) II -->
-    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
-      <div class="mega-heading">External Links</div>
-      <a href="https://linktr.ee/karthik_ece_at_uoft" target="_blank">ECE Website Work (LinkTree)</a>
-      <a href="https://linktr.ee/karthik_visual_design" target="_blank">Visual Design (LinkTree)</a>
-    </div>
-
-    <!-- Column 4: Presentations (PPTs) -->
-    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
-      <div class="mega-heading">Presentations</div>
-      <a href="https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" target="_blank">Conversational UX: Healthcare AI (PPT)</a>
-      <a href="https://docs.google.com/presentation/d/1t9cRq54IrcPImDwXZGdzwSt49tPpZAxcF5WLXzDvbx8/edit?usp=sharing" target="_blank">UXR: User Journey Analysis (PPT)</a>
-    </div>
-
-    <!-- Column 5: Writing & Analysis -->
-    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
-      <div class="mega-heading">Analysis Work</div>
-      <a href="https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing" target="_blank">Speculative Design: Film & Media (DOC)</a>
-      <a href="https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing" target="_blank">Data Analysis: Billboard Music Charts (DOC)</a>
-    </div>
-
-    <!-- Column 6: Who Am I? -->
-    <div style="  max-width: 12.5%;  min-width: 0;  overflow-wrap: break-word;">
-      <div class="mega-heading">ME</div>
-      <a href="about-me.html" target="_blank">About</a>
-      <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank">LinkedIn</a>
-      <a href="mailto:karthikaravindj@gmail.com">Email</a>
-    </div>
-
-  </div>
-</header>
-
-
-<script>
-function toggleMegaMenu(event) {
-  event.preventDefault();
-  const megaMenu = document.getElementById('megaMenu');
-  
-  // Toggle the display property of the mega menu
-  if (megaMenu.style.display === 'none' || megaMenu.style.display === '') {
-    megaMenu.style.display = 'flex';  // Show the mega menu
-  } else {
-    megaMenu.style.display = 'none';  // Hide the mega menu
-  }
-}
-
-// Close the mega menu if mouse leaves the header
-document.querySelector('.header').addEventListener('mouseleave', function() {
-  const megaMenu = document.getElementById('megaMenu');
-  megaMenu.style.display = 'none';
-});
-
-// Set the correct position for the mega menu after the page loads
-window.addEventListener('load', function() {
-  const headerHeight = document.querySelector('.header').offsetHeight; // Get header height
-  const megaMenu = document.getElementById('megaMenu');
-  megaMenu.style.top = `${headerHeight}px`; // Set top position based on header height
-});
-</script>
+  </header>
