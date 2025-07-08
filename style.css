@@ -20,7 +20,8 @@
   right: 1rem;
   width: calc(100% - 2rem);
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.25); /* lighter but more visible over dark */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border for clarity */
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
   color: var(--white);
