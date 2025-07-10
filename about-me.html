@@ -12,36 +12,41 @@
 
 <div id="header-placeholder"></div>
 
-<section id="about-section" class="hero" style="padding: 4rem 2rem 2rem 2rem; position: relative; overflow: hidden;">
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: -1;"></div>
+<section id="about-section" class="hero" style="background:var(--black2); padding: 4rem; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; min-height: 80vh; background: var(--white); z-index: -1;"></div>
 
   <div class="hero-text" style="text-align: left; padding: 2rem; margin: 0; display: flex; align-items: center; gap: 40px; padding: 2rem;">
     
     <!-- Left Column: Image -->
-    <div style="flex: 0 0 450px;">
+    <div class="about-image" style="flex: 0 0 450px;">
       <img src="images/Karthik 5.jpg" alt="Photo of Karthik" style="width: 100%; height: auto; border-radius: 12px; opacity: 0; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0s;">
     </div>
 
     <!-- Right Column: Text -->
     <div style="flex: 1;">
-      <h6 style="opacity: 0; color: var(--black); margin-bottom: 20px; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0.4s;">
-        <span id="greeting" style="margin-left: 0.5rem;"></span><span style="margin-left: 0.5rem;">My name is Karthik Jambunathan.</span>
+      <h6 style="opacity: 0; color:#F6BD60; margin-bottom: 20px; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0.4s;">
+        <span id="greeting"></span><span style="margin-left: 0.5rem;">My name is Karthik Jambunathan.</span>
       </h6>
 
-      <h3 style="opacity: 0; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent; margin-bottom: 20px; padding-right: 5rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0s;">
-        You might know me as a Website, UI/UX, and Solutions designer who does research and web content strategy.
+      <h3 style="opacity: 0; background: linear-gradient(60deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin-bottom: 20px; padding-right: 5rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0s;">
+Your partner for standout digital solutions
+
+
       </h3>
 
-      <p style="opacity: 0; color: var(--black); animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0.8s;">
-        I've also shown through this portfolio website that I design digital interfaces and creative workflows, for clients in education, media, fintech, and healthcare.
+      <p style="opacity: 0; color:#F6BD60; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 0.8s;">
+I work across industries, be it education, media, fintech, or healthcare, quickly mastering each domain to create solutions that go beyond UI/UX. I combine design with business, marketing, and strategy to build digital experiences that truly move the needle. If you want to break free from the safe and ordinary, I’m the partner who will help you stand out and succeed.
       </p>
-  <button onclick="scrollToNewSection()" class="scroll-button" style="cursor: pointer;">
-    Click Here
-  </button>
+
+      <a href="#new-section" class="scroll-button" style=" 
+  font-size: 20px;
+  padding-right:0rem;
+  background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;" >
+        Why Hire Me? 🡻
+      </a>
+
     </div>
   </div>
-
-
 
   <style>
     @keyframes fadeSlideUp {
@@ -54,225 +59,284 @@
         transform: translateY(0); /* End at normal position */
       }
     }
+
+    /* Hide image on screens smaller than 768px */
+    @media (max-width: 767px) {
+      .about-image {
+        display: none;
+      }
+    }
   </style>
 
 
 </section>
 
 
-<section id="new-section" style="padding: 1rem 2rem; position: relative; overflow: hidden;">
-  <!-- Background Layer -->
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); z-index: -1;"></div>
+<section id="new-section" style="min-height:100vh; background: var(--black2); padding: 4rem;">
 
-  <!-- First Row: Two Images (slide from above) -->
-  <div class="image-grid image-top" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; opacity: 0;">
-    <div style="position: relative; height: 34vh; overflow: hidden;">
-      <img src="images/webp/FMTitle.webp" alt="Working on AI tools" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
-      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
-        Managing AC Milan on Football Manager
+     <h3 style="text-align:center; background: linear-gradient(60deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin-top:4rem; margin-bottom: 2rem;">
+Without me, you’re playing it safe. And safe rarely leads. 
+     </h3>
+
+  <!-- Heading -->
+  <h6 style="text-align:center; color: #F6BD60; margin-bottom: 2rem;">
+    What I Bring to the Table
+  </h6>
+
+  <!-- Card Grid -->
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+
+    <!-- Card 1 -->
+    <div style="
+  flex: 1 1 300px;
+  padding: 2rem 1.5rem;
+  background: none;
+  color: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.08), inset 0 -1px 2px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(2px);
+      ">
+		<div style="  width: 64px;  height: 64px;  background-color: var(--primary);  border-radius: 12px;  display: flex;  align-items: center;  justify-content: center;">
+			  <img src="icons/solution.png" alt="Icon" style="width: 48px; height: 48px;">
+		</div>
+      <h6 style="margin: 0.5rem 0 0.75rem 0; color: var(--primary);">Domain Agility</h6>
+      <p style="margin: 0; color: var(--grey0);">
+        Freelance and agency experience across diverse industries means I speak your language and understand your audience.
       </p>
     </div>
-    <div style="position: relative; height: 34vh; overflow: hidden;">
-      <img src="images/about/agakhanmuseum.jpg" alt="Visiting Museums" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
-      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
-        Enjoying local culture
+
+    <!-- Card 2 -->
+    <div style="
+  flex: 1 1 300px;
+  padding: 2rem 1.5rem;
+  background: none;
+  color: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.05), inset 0 -1px 2px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(2px);
+      ">
+		<div style="  width: 64px;  height: 64px;  background-color: var(--primary);  border-radius: 12px;  display: flex;  align-items: center;  justify-content: center;">
+			  <img src="icons/insight.png" alt="Icon" style="width: 48px; height: 48px;">
+		</div>
+      <h6 style="margin: 0.5rem 0 0.75rem 0; color: var(--primary);">Strategic Insight</h6>
+      <p style="margin: 0; color: var(--grey0);">
+        I design with your business goals front and center—not just pixels, but purpose.
       </p>
     </div>
+
+    <!-- Card 3 -->
+    <div style="
+  flex: 1 1 300px;
+  padding: 2rem 1.5rem;
+  background: none;
+  color: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.05), inset 0 -1px 2px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(2px);
+      ">
+		<div style="  width: 64px;  height: 64px;  background-color: var(--primary);  border-radius: 12px;  display: flex;  align-items: center;  justify-content: center;">
+			  <img src="icons/strong.png" alt="Icon" style="width: 48px; height: 48px;">
+		</div>
+      <h6 style="margin: 0.5rem 0 0.75rem 0; color: var(--primary);">Bold Creativity</h6>
+      <p style="margin: 0; color: var(--grey0);">
+        I challenge norms and push boundaries to create meaningful, standout experiences.
+      </p>
+    </div>
+
   </div>
 
-  <!-- Center Row: H1 text (shrinks to H3) -->
-  <div style="text-align: center; margin: 2rem 0;">
-    <h1 id="shrinking-text" class="shrink-animate" style="font-family: 'Rubik', sans-serif; font-weight: 700; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent; opacity: 0;">
-      But what else am I known for?
-    </h1>
-  </div>
+  <!-- Heading -->
+  <h6 style="text-align:center; color: #F6BD60; margin-top: 5rem; margin-bottom: 0.5rem;">
+    My Qualifications
+  </h6>
 
-  <!-- Third Row: Two Images (slide from below) -->
-  <div class="image-grid image-bottom" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; opacity: 0;">
-    <div style="position: relative; height: 34vh; overflow: hidden;">
-      <img src="images/about/meme.jpg" alt="Making Memes" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
-      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
-        Making Memes for the Group Chat
-      </p>
-    </div>
-    <div style="position: relative; height: 34vh; overflow: hidden;">
-      <img src="images/about/me.jpg" alt="Being an Adorable Nerd" style="width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 12px;">
-      <p style="position: absolute; bottom: 10px; left: 10px; color: var(--white); background: rgba(0, 0, 0, 0.5); padding: 5px; border-radius: 4px;">
-        Being an Adorable Nerd who's always learning new and better things
-      </p>
-    </div>
-  </div>
+  <!-- Column 1: H3 Heading -->
+  <div style="padding-top: 1rem;">
+    <h4 style="
+      text-align: left; 
+      background: linear-gradient(60deg, #F6BD60, #FFD59A); 
+      -webkit-background-clip: text; 
+      color: transparent; 
+      margin-bottom: 1rem;
+    ">
+      My blend of experience, strategic insight, and hands-on execution brings unmatched value to every project.
+    </h4>
+    <p style="margin: 0 0 2rem 0; color: var(--grey0); line-height: 1.6;">
+      I lead high-impact design projects that transform how organizations in education, media, fintech, and healthcare connect with their audiences. <br><br>From engineering faculty websites to film pitch decks, my work delivers results that stand out. I currently manage the ECE Department website at the University of Toronto and have optimized production workflows at Fix It In Post Studios while driving freelance projects in design, research, and digital strategy.
+    </p>
 
-  <!-- Animation styles -->
+<div style="
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  align-items: flex-start; 
+  margin-bottom: 2rem;
+  justify-content: center;
+">
+
+  <!-- Shared card styles -->
   <style>
-    @keyframes fadeSlideUp {
-      from {
-        opacity: 0;
-        transform: translateY(2rem);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+    .info-card {
+      flex: 1 1 300px;
+      max-width: 48%;
+      padding: 2rem 1.5rem;
+      background: none;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 800px) {
+      .info-card {
+        max-width: 100%;
       }
     }
 
-    @keyframes fadeSlideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-2rem);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
-    @keyframes shrinkText {
-      0% {
-        font-size: 100px;
-      }
-      50% {
-        font-size: 80px;
-      }
-      100% {
-        font-size: 57px;
-      }
-    }
-
-    .animate-shrink {
-      animation: shrinkText 1s ease-out forwards, fadeSlideUp 0.8s ease-out forwards;
-      opacity: 1 !important;
-    }
-
-    .animate-slide-up {
-      animation: fadeSlideUp 0.8s ease-out forwards;
-      opacity: 1 !important;
-    }
-
-    .animate-slide-down {
-      animation: fadeSlideDown 0.8s ease-out forwards;
-      opacity: 1 !important;
+    .image-row img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
     }
   </style>
-   <h4 style="margin-bottom: 0.5rem; text-align:center; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
-      Y'all still need to know what makes me qualified, don't ya?
-    </h4>
-</section>
 
-
-
-<div style="width: 100%; display: grid; grid-template-columns: 15% 1fr 15%; padding: 0;">
-  <!-- Left empty column -->
-  <div></div>
-
-  <!-- Center text column -->
-  <div style="padding: 0 2rem;">
-    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
-      From engineering faculty websites to film pitch decks,
-    </h4>
-    <h6 style="color: var(--grey3); margin-top: 0;">
-      I’ve led product and service design projects across education, media, fintech, and healthcare. I currently maintain the ECE Department website at the University of Toronto and previously shaped production processes at Fix It In Post Studios, while also freelancing in design, research, and digital strategy. Based in Toronto and originally from Chennai, I hold a Master’s in User Experience Design from the University of Toronto and a Master’s in Media from Anna University. Since 2019, I’ve worked on agency and freelance projects focused on improving experiences across creative and technical domains. Feel free to reach out — I’m chronically online.
-    </h6>
+  <!-- Card 1 -->
+  <div class="info-card">
+    <p style="margin: 0.5rem 0 0.75rem 0; color: var(--primary); font-weight:800;">Full-Cycle Product Design</p>
+    <p style="margin: 0; color: var(--grey0);">
+      From early research to polished UI handoff, I cover every stage.
+    </p>
   </div>
 
-  <!-- Right empty column -->
-  <div></div>
-
-
- <!-- Left empty column -->
-  <div></div>
-
-  <!-- Center text column -->
-  <div style="padding: 0 2rem;">
-
-    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
-      Who am I as a designer?
-    </h4>
-
-    <h6 style="color: var(--grey3); margin-top: 0;">
-      I’m the kind of designer who will ask, “Why does this need to exist?” before deciding how to build it. I collaborate easily with researchers, editors, developers, and subject matter experts. My goal is always to make things easier to use, easier to understand, and easier to maintain. I’ve worked in remote teams, start up teams, small businesses, and academic environments. In all of them, I aim to bring a calm to the table.
-    </h6>
-
+  <!-- Card 2 -->
+  <div class="info-card">
+    <p style="margin: 0.5rem 0 0.75rem 0; color: var(--primary); font-weight:800;">What I Build</p>
+    <p style="margin: 0; color: var(--grey0);">
+      Responsive layouts & scalable UI kits for web and mobile.<br>Accessibility and usability at the core
+    </p>
   </div>
 
-  <!-- Right empty column -->
-  <div></div>
+  <!-- Card 4 -->
+  <div class="info-card">
+    <p style="margin: 0.5rem 0 0.75rem 0; color: var(--primary); font-weight:800;">How I Work</p>
+    <div class="image-row" style="flex-wrap: wrap;">
+      <img src="icons/Research.png" style="background-color:var(--white);" alt="Software 1">
+      <img src="icons/Usability.png" style="background-color:var(--white);" alt="Software 2">
+      <img src="icons/Backgrounds.png" style="background-color:var(--white);" alt="Software 3">
+    </div>
+  </div>
 
+  <!-- Card 3 -->
+  <div class="info-card">
+    <p style="margin: 0.5rem 0 0.75rem 0; color: var(--primary); font-weight:800;">My Toolkit</p>
+    <div class="image-row">
+      <img src="images/softwares/Untitled_2.png" alt="Software 1">
+      <img src="images/softwares/Untitled_3.png" alt="Software 2">
+      <img src="images/softwares/Untitled_4.png" alt="Software 3">
+      <img src="images/softwares/Untitled_1.png" alt="Software 4">
+    </div>
+  </div>
 
- <!-- Left empty column -->
-  <div></div>
-
-  <!-- Center text column -->
-  <div style="padding: 0 2rem;">
-
-    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
-      What technical experience do I have?
-    </h4>
-
-    <h6 style="color: var(--grey3); margin-top: 0;">
-      I work across the full product design process, from early research to final UI handoff. I use tools like Figma, FigJam, and Miro for designing and collaborating, and I’m comfortable creating responsive layouts, UI kits, and systems that scale. My background includes designing for both web and mobile, always keeping accessibility and usability at the core.
-<br><br>
-On the research side, I run interviews, build surveys, map user journeys, and synthesize findings into actionable insights. I’ve done moderated usability tests, light A/B testing, and workshop facilitation for internal teams.
-<br><br>
-I collaborate closely with developers using annotated specs, basic front-end familiarity (HTML/CSS), and sprint-based workflows. My presentations are clear and grounded, shaped by client decks, team critiques, and stakeholder reviews.
-<br><br>
-My toolkit includes Figma, Adobe Creative Suite, WordPress, Framer, Notion, Maze, Lookback, and Google Analytics (certified). I’m adaptable, and I choose the right tools for the job rather than relying on buzzwords.    </h6>
+</div>
 
   </div>
 
-  <!-- Right empty column -->
-  <div></div>
+  <!-- Column 2: Paragraph + Logo Space -->
+  <div style="padding-top: 1rem;">
+  <h6 style="text-align:center; color: #F6BD60; margin-bottom: 2rem;">
+    Why Me?
+  </h6>
 
- <!-- Left empty column -->
-  <div></div>
+    <p style="margin: 0 0 2rem 0; color: var(--grey0); line-height: 1.6;">
+      I lead high-impact design projects that transform how organizations in education, media, fintech, and healthcare connect with their audiences. <br><br>From engineering faculty websites to film pitch decks, my work delivers results that stand out. I currently manage the ECE Department website at the University of Toronto and have optimized production workflows at Fix It In Post Studios while driving freelance projects in design, research, and digital strategy.
+    </p>
 
-  <!-- Center text column -->
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; max-width: 100%;">
+  <h6 style="text-align:center; color: #F6BD60; margin-bottom: 0.5rem;">
+    Academic Experience
+  </h6>
 
-    <!-- Process Step 1 (Image 1) -->
-    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
-        <img src="images/softwares/Untitled_2.png" alt="Software 1" style="width: 150px; height: 150px; object-fit: cover;">
+    <div style="display: flex; gap: 2rem; align-items: top; margin-bottom:2rem;">
+    <!-- Card 1 -->
+    <div style="
+  flex: 1 1 300px;
+  padding: 2rem 1.5rem;
+  background: none;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom:2rem;
+      ">
+		<div style="background-color:var(--white); padding:5px; display: flex;  align-items: center;  justify-content: center;">
+			  <img src="logos/uoft-logo.png" alt="Icon" style="width: auto; height: 96px;">
+		</div>
+      <p style="margin: 0.5rem 0 0.75rem 0; color: var(--primary);">Master of Information (MI), Concentration in User Experience Design</p>
+      <p style="margin: 0; color: var(--grey0);">
+        Coursework in UX Design, Data Sciences, Information Sciences and Libraries
+      </p>
     </div>
 
-    <!-- Process Step 2 (Image 2) -->
-    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
-        <img src="images/softwares/Untitled_3.png" alt="Software 2" style="width: 150px; height: 150px; object-fit: cover;">
-    </div>
-
-    <!-- Process Step 3 (Image 3) -->
-    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
-        <img src="images/softwares/Untitled_4.png" alt="Software 3" style="width: 150px; height: 150px; object-fit: cover;">
-    </div>
-
-    <!-- Process Step 4 (Image 4) -->
-    <div style="padding: 20px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 350px; position: relative;">
-        <img src="images/softwares/Untitled_1.png" alt="Software 4" style="width: 150px; height: 150px; object-fit: cover;">
+    <!-- Card 2 -->
+    <div style="
+  flex: 1 1 300px;
+  padding: 2rem 1.5rem;
+  background: none;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+      ">
+		<div style="background-color:var(--white); padding:5px; display: flex;  align-items: center;  justify-content: center;">
+			  <img src="logos/anna-logo.png" alt="Icon" style="width: 96px; height:  96px;">
+		</div>
+      <p style="margin: 0.5rem 0 0.75rem 0; color: var(--primary);">Master of Science (5 Years Integrated) in Electronic Media</p>
+      <p style="margin: 0; color: var(--grey0);">
+        Thesis: Analysis of UGC on Tumblr, AO3: Release the #SnyderCut Movement
+      </p>
     </div>
 
 </div>
 
-  <!-- Right empty column -->
-  <div></div>
-
- <!-- Left empty column -->
-  <div></div>
-
-  <!-- Center text column -->
-  <div style="padding: 0 2rem;">
-
-    <h4 style="margin-bottom: 0.5rem; background: linear-gradient(45deg, #00464F, #7BAE7F); -webkit-background-clip: text; color: transparent;">
-      My Academic and Professional Journey <span style="font-size:14px;">(Ignoring Freelance history)<span>
-    </h4>
-
-<img src="images/Journey-Timeline.png" alt="Journey" style="width:100%; background:var(--white);">
 
   </div>
 
-  <!-- Right empty column -->
-  <div></div>
+  <h6 style="text-align:center; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin-bottom: 2rem;">
+      My Journey
+    </h4>
+
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
+    <img src="images/Journey-Timeline.png" alt="Journey" style="width:65%; background:var(--white);">
 </div>
 
 </section>
+
+
 
 <div id="footer-placeholder"></div>
 
