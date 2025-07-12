@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karthik Jambunathan Portfolio</title>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
-</noscript>
-
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+    </noscript>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -19,51 +18,41 @@
 <section class="hero" style="background:var(--black2); padding: 4rem;">
   <div class="hero-text" style="text-align:left;">
     <div class="container">
-      <h6 class="fade-slide-up" style="opacity: 0; color:#F6BD60; margin-bottom:20px;">Karthik, Toronto-based Website, UI/UX, and Solutions designer.</h6>
-
+      <h6 class="fade-slide-up" style="opacity: 0; color:#F6BD60; margin-bottom:20px;">You get Solutions, not just Design.</h6>
       <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin: 0px; padding-right:5rem;">
-        I don’t just design; I solve complex challenges for organisations with adaptable and impactful digital experiences.
+        Toronto-based Reseacher/Solutions Designer who solves complex challenges for organisations by creating adaptable and impactful digital experiences.
       </h3>
-
-<style>
-  /* Media query for mobile screens */
-  @media (max-width: 768px) {
-    h3.fade-slide-up {
-      font-size: 24px !important;
-      padding-right: 0.5rem !important;
-    }
-  }
-</style>
-
-
-      <p class="fade-slide-up" style="color:#FFD59A; opacity: 0; animation-delay: 0.4s;">Hiring me means choosing bold, effective solutions that make a difference.</p>
-
-      <a href="#websitework" class="scroll-button" style=" 
-  font-size: 20px;
-  padding-right:0rem;
-  background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;" >
-        Scroll down to see my work 🡻
+      <style>
+        /* Media query for mobile screens */
+            @media (max-width: 768px) {
+              h3.fade-slide-up {
+                font-size: 24px !important;
+                padding-right: 0.5rem !important;
+              }}
+      </style>
+      <p class="fade-slide-up" style="color:#FFD59A; opacity: 0; animation-delay: 0.4s;">Choosing Karthik means Choosing Bold, Effective Solutions that make a Difference.</p>
+      <a href="#websitework" class="scroll-button" style="font-size: 20px; padding-right:0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;" >
+      Scroll down to see my work in action 🡻
       </a>
     </div>
   </div>
+  <style>
+    @keyframes fadeweb {
+      0% {
+      opacity: 0;
+      transform: translateY(20px);
+      }
+      100% {
+      opacity: 1;
+      transform: translateY(0);
+      }
+    }
+  </style>
 </section>
-
-<style>
-@keyframes fadeweb {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
 
 <section class="ece-section" id="websitework" style=" background: var(--black2); padding-left: 4rem; padding-top:2rem; padding-bottom: 3rem; padding-right: 4rem;">
   <h5 style="margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.2s;"><strong>
-    Website design highlights for ECE, University of Toronto
+    Design work for ECE, University of Toronto
   </h5>
 
   <div class="tabs-1906" style="opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.4s;">
@@ -96,231 +85,332 @@
     </div>
   </div>
 
-<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(24%, 1fr)); gap: 1.5rem; margin-top: 0rem; margin-bottom:5rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.8s;">
+  <div class="flex-container" style="
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0rem;
+  justify-content: space-between; margin-top: 0rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.8s;">
 
 <!-- ECE Department Website Card -->
-      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="display:flex; align-items:flex-start; gap:16px; padding:2rem; border:1px solid var(--grey1);">
-        <div>
-          <h6 style="font-size: 18px; margin:0; color:var(--secondary);">ECE Department's Home Page &#8599;</h3>
-          <p style="font-size: 14px; margin:0; color:var(--grey3);">
-            Shipped | January 2025<br>
-    Made it easier for prospective students to explore ECE.
-          </p>
-        </div>
-      </article>
+<article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="
+  flex: 1 1 calc(24% - 1rem); 
+  max-width: calc(24% - 1rem); 
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  opacity: 0;
+  animation: fadeweb 0.8s ease forwards;
+  animation-delay: 2.9s;">
+    <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Department's Home Page &#8599;</h6>
+    <p style="font-size: 14px; margin: 0; color: var(--grey0);">
+      Shipped | January 2025<br>
+      Made it easier for prospective students to explore ECE.
+    </p>
+</article>
 
-<!-- Toronto Nanofabrication Centre Card -->
-      <article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="display:flex; align-items:flex-start; gap:16px; padding:2rem; border:1px solid var(--grey1);">
-        <div>
-          <h6 style="font-size: 18px; margin:0; color:var(--secondary);">Toronto Nano Fabrication Centre &#8599;</h3>
-          <p style="font-size: 14px; margin:0; color:var(--grey3);">
-            Shipped | March, April 2025<br>
-    Migrated the TNFC into the main ECE website.
-          </p>
-        </div>
-      </article>
 
 <!-- ECE Events Page Card -->
-      <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="display:flex; align-items:flex-start; gap:16px; padding:2rem; border:1px solid var(--grey1);">
+<article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="
+  flex: 1 1 calc(24% - 1rem); 
+  max-width: calc(24% - 1rem); 
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  opacity: 0;
+  animation: fadeweb 0.8s ease forwards;
+  animation-delay: 2.9s;">
+    <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Events Page &#8599;</h6>
+    <p style="font-size: 14px; margin: 0; color: var(--grey0);">
+      Shipped | March 2025<br>
+      Made it easier to discover events beyond the old calendar view.
+    </p>
+</article>
+
+<!-- Toronto Nanofabrication Centre Card -->
+<article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="
+  flex: 1 1 calc(24% - 1rem); 
+  max-width: calc(24% - 1rem); 
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  opacity: 0;
+  animation: fadeweb 0.8s ease forwards;
+  animation-delay: 2.9s;">
+    <h6 style="font-size: 18px; margin: 0; color: var(--primary);">Toronto Nano Fabrication Centre &#8599;</h6>
+    <p style="font-size: 14px; margin: 0; color: var(--grey0);">
+      Shipped | March, April 2025<br>
+      Migrated the TNFC into the main ECE website.
+    </p>
+</article>
+
+<style>
+    @media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flex-container > * {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+}
+  </style>
+</div>
+
+<div class="grid-container" style="
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default two columns */
+  gap: 1.5rem;
+  margin-top: 0rem;
+  opacity: 0;
+  animation: fadeweb 0.8s ease forwards;
+  animation-delay: 2.8s;
+">
+
+  <!-- ECE Home Page Redesign -->
+  <div class="zoom-on-hover" style="
+    display: flex; /* Flexbox to ensure content inside stretches */
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    opacity: 0;
+    animation: fadeweb 0.8s ease forwards;
+    animation-delay: 2.9s;
+  ">
+    <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;" onclick="window.open('ece-homepage-redesign.html', '_blank');">
+      <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">ECE Department's Home Page Redesign</h6>
+      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Turning an academic homepage into a student recruitment portal
+      </h6>
+      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Watch me turn a university homepage, once cluttered and difficult to navigate, transform into a student-focused digital experience.
+        This redesign not only improved information accessibility and visual appeal but also strengthened recruitment efforts and stakeholder alignment; all while respecting U of T's own brand guidelines and the WordPress CMS's technical constraints.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="ece-homepage-redesign.html" target="_blank" class="case-button" style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-size: 14px; max-width: 200px;">
+          Read Case Study ↗
+        </a>
+        <a href="https://www.ece.utoronto.ca/" target="_blank" class="case-button" style="background: none; color: var(--primary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-size: 14px; max-width: 200px;">
+          Visit Live Site ↗
+        </a>
+      </div>
+      <div style="display: flex; flex-direction: row; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
         <div>
-          <h6 style="font-size: 18px; margin:0; color:var(--secondary);">ECE Events Page &#8599;</h3>
-          <p style="font-size: 14px; margin:0; color:var(--grey3);">
-                Shipped | March 2025<br>
-    Made it easier to discover events beyond the old calendar view.
-          </p>
+          <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Role</h6>
+          <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">Led UX/UI and front-end</p>
         </div>
-      </article>
-
-</div>
-
-  <div style="margin-left: auto; margin-top:2rem; margin-right: auto;">
-  <h5 style="margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;"><strong>
-          UX/UI Design Case Studies
-  </h5>
-  </div>
-
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; padding-bottom: 3rem;">
-
-  <!-- Right Column (Detailed Description) -->
-  <div style="display: flex; flex-direction: column; justify-content: flex-start; margin-top:0rem;">
-    <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px;">ECE Department's Home Page: Web Redesign</h6>
-
-    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.5rem;">
-      <span style="background: var(--grey0); color: var(--black); padding: 4px 8px; border-radius: 4px; font-weight: 800; font-size: 14px;">Shipped - March 2025</span>
-      <span style="background: var(--grey0); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 14px; font-weight: 800;">Educational Institution</span>
-    </div>
-
-    <p style="margin-bottom: 1rem; color: var(--white); font-size: 18px; line-height: 1.6;">
-      Driving Student Recruitment through Web Design for Academic Institutions.
-    </p>
-
-    <p style="margin: 0; color: var(--white); font-weight: 800; font-size: 14px; line-height: 1.5;">
-      Focused on prospective student recruitment by prioritizing academic, research, and student life content.
-    </p>
-
-    <p style="margin-bottom: 1rem; color: var(--white); font-size: 14px; line-height: 1.6;">
-      This project aimed to transform the University of Toronto’s Electrical & Computer Engineering (ECE) department homepage into a compelling, student-focused digital experience.
-      <br><br>The solution wasn’t simply improving layout or updating visuals; it was about fundamentally rethinking the homepage’s structure.
-      <br><br>This meant starting with a comprehensive design audit and competitive research to pinpoint gaps and identify best practices.
-      <br><br>Finally, We built a homepage that informs, invites, and reflects the department.
-    </p>
-
-    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
-      <a href="ece-homepage-redesign.html" target="_blank" class="case-button"
-         style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-size: 14px; max-width: 200px;">
-        Read Case Study ↗
-      </a>
-      <a href="https://www.ece.utoronto.ca/" target="_blank" class="case-button"
-         style="background: none; color: var(--primary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-size: 14px; max-width: 200px;">
-        Visit Live Site ↗
-      </a>
-    </div>
-
-    <div style="display: flex; flex-direction: row; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
-      <div>
-        <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Role</h6>
-        <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">UX/UI and Front End</p>
-      </div>
-      <div>
-        <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Deliverables</h6>
-        <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">Mockups + WordPress Site</p>
-      </div>
-      <div>
-        <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Tools</h6>
-        <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">Figma, WordPress</p>
+        <div>
+          <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Duration</h6>
+          <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">3 months (Jan–Mar 2025)</p>
+        </div>
+        <div>
+          <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Tools</h6>
+          <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">Figma, WordPress</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Left Column (Image + Tags/Text, no background card) -->
-    <img style="width: 100%; aspect-ratio: 1/1; background-image: url('images/SocialLogo.png'); background-size: cover; background-position: center; margin-bottom:0rem;" onclick="window.open('ece-homepage-redesign.html', '_blank');"/>
+  <!-- ECE Events Page Redesign -->
+  <div class="zoom-on-hover" style="
+    display: flex; /* Flexbox to ensure content inside stretches */
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    opacity: 0;
+    animation: fadeweb 0.8s ease forwards;
+    animation-delay: 2.9s;
+  ">
+    <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;" onclick="window.open('ece-events-redesign.html', '_blank');">
+      <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">ECE Department's Events Page Redesign</h6>
+      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Turning a functional calendar into a mobile-first student touchpoint
+      </h6>
+      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        I redesigned ECE’s Events page to go beyond just listing: it now highlights what the department offers, why it matters, and how students can engage.
+        This redesign not only improved content clarity and mobile usability but also helped visually elevate the content; all while respecting U of T's own brand guidelines and the WordPress CMS's technical constraints.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="ece-events-redesign.html" target="_blank" class="case-button" style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-size: 14px; max-width: 200px;">
+          Read Case Study ↗
+        </a>
+        <a href="https://www.ece.utoronto.ca/events/" target="_blank" class="case-button" style="background: none; color: var(--primary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; font-size: 14px; max-width: 200px;">
+          Visit Live Site ↗
+        </a>
+      </div>
+      <div style="display: flex; flex-direction: row; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+        <div>
+          <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Role</h6>
+          <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">UX/UI and front-end design</p>
+        </div>
+        <div>
+          <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Duration</h6>
+          <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">1 month (March 2025)</p>
+        </div>
+        <div>
+          <h6 style="margin: 0; font-weight: bold; font-size: 16px; color: var(--white);">Tools</h6>
+          <p style="margin: 0; font-size: 14px; color: var(--white); font-weight: 600;">Figma, WordPress</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
-
-
-
+    <div style="margin-left: auto; margin-top:2rem; margin-right: auto;">
+    <h5 style="font-weight:bold; margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      Case Studies
+    </h5>
+  </div>
 
 <!-- Grid Wrapper -->
 <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; padding-top:2rem; padding-bottom: 3rem;">
 
-<!-- ECE Events Card -->
-<div style="border-radius: 12px;" onclick="window.open('ece-events-redesign.html', '_blank');">
-  <div style="overflow: hidden; border-radius: 12px;">
-    <img src="images/SocialLogo.png"
-         alt="ECE Redesign" 
-         style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-  </div>
-  <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-      <span style="color: var(--white); font-size: 14px;">Shipped - Mar 2025</span>
-      <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Educational Institution</span>
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+  <!-- Museum Tickets App -->
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;" onclick="window.open('ui-design-mobile-app.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/tickets.webp"
+           alt="Mobile App Design" 
+           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
     </div>
-    <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-      ECE Events Page Redesign
-    </h6>
-    <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-      Transforming Departmental Event Listings for Student Engagement.
-    </p>
-  </div>
-</div>
-
-<!-- Spy Film Card -->
-<div style="border-radius: 12px;" onclick="window.open('spy-film-pitch.html', '_blank');">
-  <div style="overflow: hidden; border-radius: 12px;">
-    <img src="images/ai/filmy.webp"
-         alt="Spy Film Pitch"
-         style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-  </div>
-  <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-      <span style="color: var(--white); font-size: 14px;">Shipped - Aug 2021</span>
-      <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
+    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+        <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
+        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+      </div>
+      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Mobile App UX Research for Ticket Deals
+      </h6>
+      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Translating UX Research insights into Mobile UI designs.
+      </p>
     </div>
-    <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-      Film Pitch Deck Web Design
-    </h6>
-    <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-      Applying Web Design and UX/UI Principles in Non-Traditional Contexts.
-    </p>
   </div>
-</div>
 
-<!-- Museum Tickets Mobile App Card -->
-<div style="border-radius: 12px;" onclick="window.open('ui-design-mobile-app.html', '_blank');">
-  <div style="overflow: hidden; border-radius: 12px;">
-    <img src="images/ai/tickets.webp"
-         alt="Mobile App Design" 
-         style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
   </div>
-  <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-      <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
-      <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+  <!-- Virtual Museum -->
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;" onclick="window.open('research-virtual-museum.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/vr.webp"
+           alt="Virtual Museum" 
+           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
     </div>
-    <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-      Mobile App Design for Museum Ticket Deals
-    </h6>
-    <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-      Designing for Mobile User Needs and Behaviors.
-    </p>
-  </div>
-</div>
-
-<!-- Textile Museum Card -->
-<div style="border-radius: 12px;" onclick="window.open('tmc.html', '_blank');">
-  <div style="overflow: hidden; border-radius: 12px;">
-    <img src="images/ai/textile.webp"
-         alt="Textile Museum" 
-         style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-  </div>
-  <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-      <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
-      <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+        <span style="color: var(--white); font-size: 14px;">Presented - Winter 2025</span>
+        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+      </div>
+      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        UX Research for Virtual Museum Website
+      </h6>
+      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Translating UX Research insights into Website UI designs.
+      </p>
     </div>
-    <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-      Textile Museum of Canada: Information Architecture Redesign
-    </h6>
-    <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-      Implementing Phased Redesign Strategies for Information Architecture and Navigation Menu
-    </p>
   </div>
-</div>
 
-
-<!-- Virtual Museum Card -->
-<div style="border-radius: 12px;" onclick="window.open('research-virtual-museum.html', '_blank');">
-  <div style="overflow: hidden; border-radius: 12px;">
-    <img src="images/ai/vr.webp"
-         alt="Virtual Museum" 
-         style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
   </div>
-  <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-      <span style="color: var(--white); font-size: 14px;">Presented - Winter 2025</span>
-      <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+
+  
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+  <!-- Textile Museum Card -->
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;" onclick="window.open('tmc.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/textile.webp"
+           alt="Textile Museum" 
+           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
     </div>
-    <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-      Virtual Museum Website: UX/UI Research & Design
-    </h6>
-    <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-      Translating UX Research insights into UI designs with purpose.
-    </p>
+    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+        <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
+        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+      </div>
+      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Information Architecture Redesign
+      </h6>
+      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Designing a Phased IA and Navigation Menu Testing Strategy.
+      </p>
+    </div>
   </div>
-</div>
+  </div>
 
 
 </div>
+
+
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
   <!-- Left Content -->
   <div style="flex: 1 1 40%; max-width: 500px; padding-right: 2rem;">
-    <h6 style="color: var(--primary); margin-bottom: 1rem;">UI Redesigns</h2>
-    <p style="margin-bottom: 1rem; color: var(--white);">
+    <h4 style="color: var(--primary);">Visual Design Works</h4>
+    <h6 style="margin-bottom: 1rem; color: var(--white);">
       Redesigns and Original UI Designs across Fintech, Video Games, SaaS and more.
-    </p>
+    </h6>
 <a href="ui-designs-and-redesigns.html" target="_blank" class="case-button" style="background: var(--white); color:var(--secondary);"> View All UI Designs and Redesigns ↗</a>
    </div>
 
@@ -366,7 +456,7 @@
           <img src="images/OXFMUN.jpg" alt="Brochure Cover" 
                style="width: 100%; object-fit: cover;
                       border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-          <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">Brochure Cover</p>
+          <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">Brochures</p>
         </div>
       </div>
 
@@ -375,7 +465,7 @@
         <img src="images/The Akaali Title Poster.jpg" alt="The Akaali Title Poster" 
              style="width: 100%; object-fit: cover;
                     border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">The Akaali Title Poster</p>
+        <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">The Akaali First Look Poster</p>
       </div>
 
     </div>
@@ -384,10 +474,9 @@
 
   <!-- Right Text Column -->
   <div style="flex: 0 1 35%; max-width: 35%;">
-    <h6 style="color: var(--primary); margin-bottom: 1rem;">Graphic Design</h6>
-    <p style="margin-bottom: 1rem; color: var(--white);">
-      Brand identity, Storytelling, and Promo content across Film, Fashion, Healthcare and more.
-    </p>
+    <h6 style="margin-bottom: 1rem; color: var(--white);">
+      Helping Establish a Digital Brand Presence and Creating Digital First Designs for B2C and B2B Companies; <br>Also... Movie Posters!
+    </h6>
     <a href="pdfs/Graphic Design.pdf" target="_blank" class="case-button"
        style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none;">
       View Graphic Design Portfolio [PDF] ↗
@@ -403,8 +492,6 @@
 <div id="footer-placeholder"></div>
 
 <script>
-
-
 //Tabs 
   const tabs = document.querySelectorAll(".tab-1906");
   const panes = document.querySelectorAll(".tab-pane-1906");
@@ -428,7 +515,7 @@
 </script>
 
 
-<script>ss
+<script>
     fetch('footer.html')
       .then(response => response.text())
       .then(data => {
