@@ -12,309 +12,360 @@
 
 <div id="header-placeholder"></div>
 
-<section class="hero" style="background:linear-gradient(to bottom, var(--black2), var(--black)); padding: 4rem 2rem 6rem 2rem;">
-  <div class="hero-text" style="text-align:left;">
-    <div class="container">
-      <h6 class="fade-slide-up" style="opacity: 0; color:#F6BD60; margin-bottom:20px;">Designing a Phased IA Testing Strategy</h6>
+<section style="
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('images/ai/textile.webp') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+">
 
-      <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;  margin-bottom:20px; padding-right:5rem;">
-        Information Architecture Redesign for the Textile Museum of Canada
-      </h3>
+  <!-- Black overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  "></div>
 
-<a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color:#FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-  Read Case Study ↓
-</a>
-
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap: 1rem; padding: 1rem 0;">
-
-  <!-- Domain -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.6s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Domain</span><br>
-      Arts and Culture
+  <!-- Frosted glass card with content -->
+  <div class="fade-slide-up" style=" opacity:0;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    margin: 3rem;
+    padding: 2rem;
+    max-width: 800px;
+    width: 90%;
+    color: white;
+    text-align: left;
+  ">
+    <h6 style="color: #FFD59A; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
+      Designing a Phased IA and Navigation Menu Testing Strategy
     </h6>
+
+    <h3 style="
+      background: linear-gradient(45deg, var(--primary), #FFD59A);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-right: 5rem;
+    ">
+      Textile Museum of Canada Information Architecture Redesign
+    </h3>
+
+    <p style="color: #ffffff; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
+      Tasked with fixing the IA, I realized that changing the navigation menu design would make it hard to isolate impact, so I presented testing them in phases.
+    </p>
+
+    <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color: #FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
+      Read Case Study ↓
+    </a>
   </div>
 
-  <!-- Role -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.8s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Role</span><br>
-      Information Architecture,<br>Visual Design
-    </h6>
+  <!-- Responsive Grid of Info Cards -->
+  <div class="fade-slide-up" id="info-grid" style=" opacity:0;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    width: 90%;
+    max-width: 1000px;
+    padding: 1rem 2rem;
+  ">
+
+    <!-- Info Card -->
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Project Type</p>
+      <p style="color: var(--white); margin: 0;">Academic + Presented to Client</p>
+    </div>
+    
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Tools</p>
+      <p style="color: var(--white); margin: 0;">Figma, Miro, Optimal Workshop</p>
+    </div>
+
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Role</p>
+      <p style="color: var(--white); margin: 0;">UX Researcher</p>
+    </div>
+
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Duration</p>
+      <p style="color: var(--white); margin: 0;">Oct–Dec 2023</p>
+    </div>
+
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Domain</p>
+      <p style="color: var(--white); margin: 0;">Arts & Culture</p>
+    </div>
+
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Stage</p>
+      <p style="color: var(--white); margin: 0;">Research-based IA Redesign</p>
+    </div>
+
   </div>
 
-  <!-- Duration -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.0s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Duration</span><br>
-      Fall 2023
-    </h6>
-  </div>
+  <style>
+    .info-card {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 1rem;
+    }
 
-  <!-- Deliverables -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.2s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Deliverables</span><br>
-      IA Redesign + Menu Mockups
-    </h6>
-  </div>
+    @media (max-width: 768px) {
+      #info-grid {
+        display: block;
+      }
 
-  <!-- Tools -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.4s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Tools</span><br>
-      Figma, Adobe, Balsamiq, Optimal Workshop
-    </h6>
-  </div>
+      .info-card {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
 
-</div>
-
-<article style="background: var(--white); margin-top:2rem; padding:0;">
-
-    <img class="fade-slide-up" src="images/webp/Banner-TMC.webp" alt="ECE Home Page Mockup" style="width: 100%; height: auto; object-fit: cover;">
-
-</article>
-
-  </div>
-
-</div>
 </section>
 
-<section style="padding:6rem; background:var(--black);">
+<section id="context" style="
+  background-color: var(--black2);
+  color: var(--white);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 3rem;
+">
 
-<h1 style="display: block; width: 100%; text-align: center; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">TEXTILE MUSEUM OF CANADA</h1>
-
-</section>
-
-
-<section class="process-section"  style="padding: 2rem;" id="context">
-
-
-  <div>
-
-    <!-- Row 1: Project Summary -->
-    <div style="display: flex; flex-direction: column; align-items: left; justify-content: center;">
-      <h6 style="text-align:left; color: var(--grey3); margin-bottom: 20px;">
-        <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          Project Goals</span><br><br>
-        The museum wanted to modernize how visitors found information about events, exhibits, and memberships. While content existed, it was buried in inconsistent menus and vague page structures.
-      </h6>
-
-      <h5 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin: 5px;">
-        It wasn’t a lack of information.
-      </h5>
-
-      <h6 style="color: var(--grey3); margin-top: 15px;">
-        The redesign became an opportunity to streamline wayfinding, reframe the information architecture, and
-        <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          help the museum welcome its audiences more effectively online.</span><br><br>
-        Our aim was to propose a navigation system that was intuitive, clearly labeled, and aligned with the museum’s organizational goals.
-      </h6>
-
-      <!-- Research Plan Text -->
-      <h6 style="color: var(--grey3); margin-top: 10px; margin-bottom: 30px;">
-        <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">Research Plan:</span> How can we improve the discoverability of content and wayfinding across the website?<br><br>
-        We conducted a comprehensive content inventory, followed by card sorting and tree testing to explore how users expected information to be grouped. These methods helped us define a new navigation structure aligned with user expectations and institutional priorities.
-      <br><br><span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">Current Website Screens</span>
-
-<div class="ux-snippet" style="margin-top: 10px;">
-    <img src="images/TMCcurrent.png" class="snippet-img"><br><br>
-    <img src="images/TMCcurrent-menu.png" class="snippet-img"><br><br>
-  </div></h6>
+    <!-- Title Section -->
+    <div style="max-width:1000px;">
+      <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">UX Research</h4>
+      <h6 style="color: var(--primary); text-align: center; margin-bottom:1rem;">Objective</h6>
+      <p style="color: var(--white); text-align: center;">This project aimed to improve the discoverability of content and wayfinding across the Textile Museum of Canada’s website. Therefore, our research focused on understanding user needs and behaviors related to how visitors find and navigate information on the site.</p>
     </div>
 
-    <!-- Row 2: Two-Column Mini Div -->
-    <div style="display: flex; flex-direction: row; gap: 1rem;">
-
-      <!-- Column 1: Website Observations -->
-      <div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-        <div style="border: 2px solid #6E0F28; background: var(--white); padding: 0.5rem; flex: 1;">
-          <h6 style="text-align: center; margin: 0; color: #6E0F28; padding: 1rem;">
-            Existing Site Observations
-          </h6>
-          <hr style="border: none; border-top: 1px solid var(--grey1);" />
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="font-size:24px; color:var(--black);">Too Much Content</span><br>
-            Overwhelming navigation and redundant categories
-          </h6>
-          <hr style="border: none; border-top: 1px solid var(--grey1);" />
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="color:#6E0F28; font-weight:800;">1</span> No clear action for key pages like “Visit”
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="color:#6E0F28; font-weight:800;">2</span> Inconsistent page titles and labels
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="color:#6E0F28; font-weight:800;">3</span> Missing or outdated content across sections
-          </h6>
-        </div>
-      </div>
-
-      <!-- Column 2: Design Challenges -->
-      <div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-        <div style="border: 2px solid #B7375B; background: var(--white); padding: 0.5rem; flex: 1;">
-          <h6 style="text-align:center; margin: 0; color: #B7375B; padding:1rem;">
-            Key Research Findings
-          </h6>
-          <hr style="border: none; border-top: 1px solid var(--grey1);" />
-
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="font-size:24px; color:var(--black);">Information Overload</span><br>
-            Too many overlapping categories with unclear labels.
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="font-size:24px; color:var(--black);">Missing CTAs</span><br>
-            Pages lacked clear next steps for visitors—no donation or membership prompts.
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="font-size:24px; color:var(--black);">Low Findability</span><br>
-            Visitors struggled to locate subpages for programs and opportunities.
-          </h6>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Region 2: 80% width column -->
-<div>
-
-    <!-- Row 1: Description and Project Aim -->
-    <div style="display: flex; flex-direction: column; align-items: left; justify-content: center; margin-top: 0; margin-bottom: 5px;">
-      <h6 style="text-align:left; color: var(--grey3); margin-bottom: 20px;">
-        <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          Design Process</span><br><br>
-        The project wasn’t just about refining the layout or visuals; it was about reshaping the entire user experience by focusing on improving the information architecture (IA) and overall flow.
-      </h6>
-
-<!-- Row 2: Mini div of two columns -->
-<div style="display: flex; flex-direction: row; gap: 1rem;">
-
-  <!-- Column 1: Research Plan -->
-  <div style="width: 33%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-    <div style="border: 2px solid #002B4F; background: var(--white); padding: 0.5rem; flex: 1;">
-      <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-        <span style="font-size:24px; color:var(--secondary);">Step 1: UX Research</span><br>
-        This step involved conducting a content audit and card sorting exercises to gather insights into the current IA. The research helped define a new navigation structure that better aligned with both user needs and the museum's goals.
-      </h6>
-    </div>
-  </div>
-
-  <!-- Column 2: IA Refinement -->
-  <div style="width: 33%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-    <div style="border: 2px solid #002B4F; background: var(--white); padding: 0.5rem; flex: 1;">
-      <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-        <span style="font-size:24px; color:var(--secondary);">Step 2: IA Refinement</span><br>
-        After initial wireframing, we focused on creating high-fidelity mockups of the IA. This phase refined the navigation system to ensure ease of access to key sections like ticketing, events, and donations.
-      </h6>
-    </div>
-  </div>
-
-  <!-- Column 3: Final Report -->
-  <div style="width: 33%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-    <div style="border: 2px solid #002B4F; background: var(--white); padding: 0.5rem; flex: 1;">
-      <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-        <span style="font-size:24px; color:var(--secondary);">Step 3: Report & Presentation</span><br>
-        Finally, we prepared a comprehensive report and presentation to communicate the research findings, IA design, and refined navigation system to stakeholders. This phase helped gain buy-in and approval for the final design.
-      </h6>
-    </div>
-  </div>
-
-</div>
-
-
-    </div>
-
+    <!-- Methodology Section -->
     <div>
-     		<h6 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 2rem; margin-bottom:1rem;">
-       		 Research Plan & Observations
-      		</h6>
+      <h4 style="color: var(--primary);">Activities & Methods</h4>
+      <div class="insight-grid" style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        ">
 
- <div class="ux-grid">
-    <div class="ux-point">
-      <p class="p1">The current menu is hidden away inside a hamburger menu, it isn't less-complex nor it is accessible.</p>
+        <!-- Individual Insight Cards -->
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Content Inventory</h6>
+          <p style="color: var(--white);">
+          Audited existing pages and menu items to identify redundancies and unclear labeling.
+          </p>
+        </div>
+
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Card Sorting & Tree Testing</h6>
+          <p style="color: var(--white);">
+            Conducted card sorting with users to understand their mental models. Used tree testing (Optimal Workshop) to validate navigation paths.
+          </p>
+        </div>
+
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Competitive Benchmarking</h6>
+          <p style="color: var(--white);">
+            Reviewed navigation and IA patterns from leading museum and arts websites.
+          </p>
+        </div>
+
       </div>
-<div class="ux-point">
-      <p class="p1">The menu covers the entire page and there is no indication as to what page the user is in nor does it have a way for the user to go home.</p>
+
+      <h4 style="color: var(--primary);">Key Findings</h4>
+      <div class="insight-grid" style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        ">
+
+        <!-- Individual Insight Cards -->
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Overlapping categories and vague menu labels</h6>
+        </div>
+
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Struggled to locate subpages</h6>
+        </div>
+
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Hamburger menu obscured navigation</h6>
+        </div>
+
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h6 style="color: var(--primary); margin-top:1rem;">Accessibility issues with color contrast</h6>
+        </div>
+
       </div>
-<div class="ux-point">
-      <p class="p1">The menu also uses the + symbol to reveal the sub menu, which is not intuitive and might lead to mis-clicks as the menu items themselves are pages, not dropdown folders.</p>
-      </div>
-
-
-
-    <!-- Row 2: Mini div of two columns -->
-    <div style="display: flex; flex-direction: row; gap: 1rem;">
-
-<!-- Column 1: Research Plan -->
-<div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-  <div style="border: 2px solid #002B4F; background: var(--white); padding: 0.5rem; flex: 1;">
-    <h6 style="text-align: center; margin: 0; color: #002B4F; padding: 1rem;">
-      Research Plan & Activities
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="font-size:24px; color:var(--black);">Brainstorming & Ideation</span><br>
-      To explore multiple layouts + UI ideas and visualize the redesign direction.
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="color:#002B4F; font-weight:800;">1</span> Research to benchmark functionality and appeal
-    </h6>
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="color:#002B4F; font-weight:800;">2</span> Wireframes & Mockups created using Figma
-    </h6>
-  </div>
-</div>
-
-<!-- Column 2: UX Observations -->
-<div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-  <div style="border: 2px solid #2F5EAA; background: var(--white); padding: 0.5rem; flex: 1;">
-    <h6 style="text-align: center; margin: 0; color: #2F5EAA; padding: 1rem;">
-      UX Observations & Challenges
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="font-size:24px; color:var(--black);">Information Overload</span><br>
-      Too much information on the pages, overwhelming the user experience.
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="color:#2F5EAA; font-weight:800;">1</span> Inconsistent labels and categorization
-    </h6>
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="color:#2F5EAA; font-weight:800;">2</span> Missing subpages and outdated content
-    </h6>
-  </div>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- Region 2: 80% width column -->
-<div>
-
-    <!-- Row 1: Description and Project Aim -->
-    <div style="display: flex; flex-direction: column; align-items: left; justify-content: center; margin-top: 0; margin-bottom: 5px;">
-      <h6 style="text-align:left; color: var(--grey3); margin-bottom: 20px;">
-        <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          Proposed Information Architecture</span><br><br>
-        Our proposed IA was shaped by content audit findings and card sort insights. The new structure improves clarity, reduces redundancy, and enhances navigation.
-        <strong>The final solution now reflects the following changes:</strong>
-        <ul>
-          <li>Consolidated and streamlined navigation categories based on card sort patterns</li>
-          <li>Reorganized content to reduce duplication and improve clarity</li>
-          <li>Introduced clearer labels for pages to enhance user understanding</li>
-          <li>Refined menu structure to support intuitive wayfinding</li>
-          <li>Aligned IA with user expectations and core museum priorities</li>
-      </h6>
     </div>
 
-<div class="ux-snippet" style="margin-top: 10px;">
+
+    <style>
+      @media (max-width: 1024px) {
+      .insight-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      }
+
+      @media (max-width: 600px) {
+      .insight-grid {
+        grid-template-columns: 1fr;
+      }
+      }
+    </style>
+
+</section>
+
+<section id="persona" style="
+  background-color: var(--black2);
+  color: var(--white);
+  padding: 1rem 2rem 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+">
+
+  <!-- Section Header -->
+  <div>
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+      Design Touchpoints & Decisions
+    </h4>
+    <p style="text-align: center; color: var(--white); max-width: 720px; margin: 0 auto;">
+      I realized that changing both the IA and the navigation menu design at once would make it difficult to isolate the impact of each. To ensure we could measure the effect of the new IA independently, I proposed a phased implementation and testing strategy:
+    </p>
+  </div>
+
+  <!-- Flex Grid Wrapper -->
+<div style="
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+">
+
+  <!-- Card 1 -->
+  <div style="
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1rem;
+    color: var(--primary);
+    position: relative;
+  ">
+    <h6 style="margin-top: 0;">Phase 1: Test New IA in Existing Menu</h6>
+    <p style="margin-top:0; color:var(--white);">Integrate the new, consolidated IA into the current menu structure with minimal visual changes.<br><br>
+      Gather user feedback and analytics to assess improvements in navigation and content discoverability.
+    </p>
+    <div style="
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: white;
+    ">
+      ➡
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1rem;
+    color: var(--primary);
+    position: relative;
+  ">
+    <h6 style="margin-top: 0;">Phase 2: Test New Navigation Menu Design</h6>
+    <p style="margin-top:0; color:var(--white);">Move away from the hamburger menu to a visible, mega menu-styled navigation bar.<br><br>
+      Gather user feedback and analytics to assess improvements in navigation and content discoverability.
+    </p>
+    <div style="
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: white;
+    ">
+      ➡
+    </div>
+  </div>
+
+    <div style="
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1rem;
+    color: var(--primary);
+    position: relative;
+  ">
+    <h6 style="margin-top: 0;">Rationale behind Two Phase Strategy</h6>
+    <p style="margin-top:0; color:var(--white);">
+      Clearly attribute improvements to the correct intervention.<br><br>
+      Reduce disruption to real users.<br><br>
+      Ensure Changes are Real-time Data-Driven.
+    </p>
+  </div>
+
+</div>
+  
+</section>
+
+<section style="background-color: var(--black); padding: 3rem 2rem 6rem 3rem;">
+
+<div style="align-items: center; display: flex; flex-direction: column;">
+  <!-- Section Header -->
+  <div>
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+      What I Actually Built
+    </h4>
+    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
+      Information Architecture Redesign:
+    </p>
+
     <img src="images/webp/tmc-ia-0.webp" class="user-journey-image-mrs" style="min-width:100%;" onclick="openModal('images/webp/tmc-ia-0.webp')"><br><br>
-<p>Select sections of the IA:</p>
+<p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">Select sections of the IA:</p>
 
 <!-- Row 2: Mini div of two columns -->
 <div style="display: flex; flex-direction: row; gap: 1rem;">
@@ -331,19 +382,15 @@
 
 </div>
 
-     		<h6 style="text-align:left;font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 2rem; margin-bottom:1rem;">
-       		 Implementation Strategy
-      		</h6>
-
 <div class="ux-snippet" style="margin-top: 10px;">
-<p style="font-size:20px;color:var(--black);text-align:left;">Phase 1: The short-term solution that will integrate the new consolidated information architecture into the existing navigation menu design. This will allow testing with real users and gathering metrics, while avoiding disruption from a complete overhaul of the navigation system. It will also address accessibility issues, as the primary and secondary colors lack sufficient contrast.​</p>
+<p style="font-size:20px;color:var(--grey0);text-align: center; margin-bottom: 20px;">Phase 1: The short-term solution that will integrate the new consolidated information architecture into the existing navigation menu design. This will allow testing with real users and gathering metrics, while avoiding disruption from a complete overhaul of the navigation system. It will also address accessibility issues, as the primary and secondary colors lack sufficient contrast.​</p>
 
 <img src="images/webp/tmc-op1-1.webp" class="user-journey-image-mrs" onclick="openModal('images/webp/tmc-op1-1.webp')"><br><br>
 <div class="media-row" style="max-width:90vw;" >
 <img src="images/webp/tmc-op1-2.webp" class="user-journey-image-mrs" onclick="openModal('images/webp/tmc-op1-2.webp')"><br><br>
 <img src="images/webp/tmc-op1-3.webp" class="user-journey-image-mrs" onclick="openModal('images/webp/tmc-op1-3.webp')"><br><br>
 </div>
-<p style="font-size:20px;color:var(--black);text-align:left;"><br>Phase 2: The long-term solution that brings the menu out of the hamburger.
+<p style="font-size:20px;color:var(--grey0);text-align: center; margin-bottom: 20px;"><br>Phase 2: The long-term solution that brings the menu out of the hamburger.
 This approach also allowed for more flexible use of color, to improve the design using the WCAG contrast and accessibility guidelines.</p>
 <img src="images/webp/tmc-op2-1.webp" class="user-journey-image-mrs" onclick="openModal('images/webp/tmc-op2-1.webp')"><br><br>
 <div class="media-row" style="max-width:90vw;" >
@@ -357,53 +404,54 @@ This approach also allowed for more flexible use of color, to improve the design
 
 </div>
 
-
-
-  <!-- Modal -->
-  <div id="imageModal" class="modal-mrs" onclick="closeModal()">
-    <img id="modalImage" class="modal-image-mrs">
-  </div>
-
-</div>
 </section>
 
+<section style="background: var(--black2); padding: 4rem 2rem;">
+  <div style="display: flex; flex-direction: row; gap: 3rem; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
 
-<section class="concluding-thoughts-section" style="background:var(--white);">
-  <div class="concluding-row">
-    <div class="concluding-text">
-      <h2 class="section-heading">Conclusion: Thoughts and Takeaways</h2>
-      <p class="p2">The goal of this project was to redesign the navigation for the Textile Museum of Canada, making it easier for users to find information without feeling lost. <br><br>
-The biggest challenge was organizing the content in a way that made sense for different types of visitors while keeping the design simple and functional. By restructuring the menu and improving labels, users can now access key sections like exhibitions, collections, and resources more easily.</p>
-        <p class="section-title" style="font-size:16px;text-align:left; margin-bottom: 0;">Key Takeaway: Looking at How a Solution can be implemented</p>
-        <div style="height: 1px; background-color: var(--grey2); width: 100%; margin-top: 0;"></div>
-      <p class="p2">While a navigation menu redesign could theoretically work, the question of whether the redesigned menu or the IA is being tested comes to the fore. This is why I suggested two solutions: a short term to test the IA and to also familiarise audiences with it and then the Long term to test the design.</p>
+    <!-- Text Column -->
+    <div style="flex: 0.80; min-width: 300px;">
+      <h4 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h4>
+      <p style="color: var(--white); margin-bottom: 2rem;">
+        The goal of this project was to create a clear, accessible user experience that makes it easier for people to discover and navigate the Textile Museum of Canada’s rich collections, exhibitions, and events.
+        <br><br>
+        This project also strengthened my ability to prioritize features and content, focusing on what would have the most impact for both first-time visitors and returning patrons. I found that building trust online comes from making the digital experience simple and transparent.
+      </p>
+
+      <!-- Glassmorphic Card for Key Takeaway -->
+      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 2rem;">
+        <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Blending User Needs with Post-deployment Business Goals</p>
+        <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
+        <p style="color: var(--white);">
+          The most valuable insight was learning to balance immediate user needs such as content discoverability with the museum’s long-term goals, such as increasing engagement and supporting their growth. A phased, research-driven plan ensured both were addressed.
+        </p>
+      </div>
     </div>
 
-    <div class="concluding-image">
-      <img src="images/webp/tmc-op1-1.webp" style="object-position:left; background-color:#FFFFFF;">
+    <!-- Image Column -->
+    <div style="flex: 1.2; width: 100%; display: flex; justify-content: center; align-items: center;">
+      <img src="images/webp/tmc-op1-1.webp" style="width: 100%; border-radius: 12px;">
     </div>
   </div>
 </section>
 
+  <div id="footer-placeholder"></div>
 
-
-<div id="footer-placeholder"></div>
-
-<script>
+  <script>
 
     fetch('footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       });
-</script>
+  </script>
 
-<script>
+  <script>
   fetch('header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
     });
-</script>
+  </script>
 </body>
 

@@ -39,10 +39,10 @@
   "></div>
 
   <!-- Frosted glass card with content -->
-  <div class="fade-slide-up" style="
+  <div class="fade-slide-up" style=" opacity:0;
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -55,12 +55,11 @@
     color: white;
     text-align: left;
   ">
-    <h6 class="fade-slide-up" style="opacity: 0; color: var(--primary); margin-top: 0; margin-bottom: 20px; font-weight:bold;">
+    <h6 style="color: #FFD59A; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
       Translating UX Research insights into Mobile UI designs
     </h6>
 
-    <h3 class="fade-slide-up" style="
-      opacity: 0;
+    <h3 style="
       background: linear-gradient(45deg, var(--primary), #FFD59A);
       -webkit-background-clip: text;
       color: transparent;
@@ -71,13 +70,17 @@
       Mobile App UX Research for Ticket Deals
     </h3>
 
+    <p style="color: #ffffff; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
+      Museum-goers in Toronto often miss out on free or discounted tickets because deal info is scattered, hard to find, or outdated. Most give up mid-search.
+    </p>
+
     <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color: #FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
       Read Case Study ↓
     </a>
   </div>
 
   <!-- Responsive Grid of Info Cards -->
-  <div class="fade-slide-up" id="info-grid" style="
+  <div class="fade-slide-up" id="info-grid" style=" opacity:0;
     position: relative;
     z-index: 2;
     display: grid;
@@ -89,6 +92,11 @@
   ">
 
     <!-- Info Card -->
+    <div class="info-card">
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Project Type</p>
+      <p style="color: var(--white); margin: 0;">Academic</p>
+    </div>
+    
     <div class="info-card">
       <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Tools</p>
       <p style="color: var(--white); margin: 0;">Figma, Miro, Google Workspace</p>
@@ -110,20 +118,15 @@
     </div>
 
     <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Deliverables</p>
-      <p style="color: var(--white); margin: 0;">Research case study, UI mockups</p>
-    </div>
-
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Team/Solo</p>
-      <p style="color: var(--white); margin: 0;">UXR Team</p>
+      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Stage</p>
+      <p style="color: var(--white); margin: 0;">Research-based Mobile App concept</p>
     </div>
 
   </div>
 
   <style>
     .info-card {
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -151,14 +154,15 @@
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
+  align-items:center;
   gap: 3rem;
 ">
 
   <!-- Title Section -->
-  <div>
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Phase 1: Discovery Research: Interviews</h4>
+  <div style="max-width:1000px;">
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">UX Research</h4>
     <h6 style="color: var(--primary); text-align: center; margin-bottom:1rem;">Objective</h6>
-    <p style="color: var(--white); text-align: center;">Understand real user needs and behaviors related to museum visits and ticket purchasing in Toronto.</p>
+    <p style="color: var(--white); text-align: center;">This project aimed to help more Torontonians, especially students, families, and newcomers, access affordable arts and culture in the city. Therefore, our research was focused on attempting to understand real user needs and behaviors related to museum visits and museum ticket purchasing in Toronto.</p>
   </div>
 
   <!-- Methodology Section -->
@@ -193,21 +197,18 @@
 
   </div>
 
-  </div>
-
   <!-- Validated Insights Section (Group) -->
-  <div>
     <h4 style="color: var(--primary);">Validated Insights</h4>
-      <div style="
+      <div class="insight-grid" style="
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-">
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+    ">
 
     <!-- Individual Insight Cards -->
     <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
       <img src="icons/brand-awareness.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <h6 style="color: var(--primary);">Low Awareness of Deals:</h6>
+      <h6 style="color: var(--primary); margin-top:1rem;">Low Awareness of Deals:</h6>
       <p style="color: var(--white);">
         Many museum-goers are unaware of existing discounts or free ticket opportunities. This is consistent with broader research showing that cultural event discounts are often poorly publicized, leading to underutilization by target audiences.
       </p>
@@ -215,7 +216,7 @@
 
     <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
       <img src="icons/effort.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <h6 style="color: var(--primary);">Perceived Effort vs. Benefit:</h6>
+      <h6 style="color: var(--primary); margin-top:1rem;">Perceived Effort vs. Benefit:</h6>
       <p style="color: var(--white);">
         Users frequently feel that searching for deals is not worth the effort due to scattered or hard-to-find information. This matches findings from studies on digital ticketing, where users abandon searches if discounts are not clearly presented or easily accessible.
       </p>
@@ -223,36 +224,12 @@
 
     <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
       <img src="icons/trust.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <h6 style="color: var(--primary);">Trusted Information Sources:</h6>
+      <h6 style="color: var(--primary); margin-top:1rem;">Trusted Information Sources:</h6>
       <p style="color: var(--white);">
         Participants rely on a mix of word-of-mouth, official museum websites, and social media, but express skepticism about outdated or incomplete information on these channels.
       </p>
     </div>
-  </div>
-
-</section>
-
-<section id="competitive-benchmarking" style="
-  background-color: var(--black);
-  color: var(--white);
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-">
-
-  <!-- Title Section -->
-  <div>
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Phase 2: Competitive Benchmarking & Secondary Research</h4>
-    <h6 style="color: var(--primary); text-align: center; margin-bottom: 1rem;">Objective</h6>
-    <p style="color: var(--white); text-align: center;">Analyze ticketing flows and information presentation across major Toronto museums.</p>
-  </div>
-
-  <!-- Key Findings Section -->
-  <div style="margin-bottom: 5rem;">
-    <h4 style="color: var(--primary);">Key Findings</h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-      
+ 
       <!-- Card 1: Inconsistent Digital Flows -->
       <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
         <img src="icons/non.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
@@ -283,6 +260,21 @@
     </div>
   </div>
 
+  <style>
+  @media (max-width: 1024px) {
+    .insight-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .insight-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
 </section>
 
 <section id="persona" style="
@@ -292,12 +284,13 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
 ">
 
   <!-- Section Header -->
   <div>
     <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
-      Phase 3: Persona Creation
+      Design Touchpoints & Decisions
     </h4>
     <p style="text-align: center; color: var(--white); max-width: 720px; margin: 0 auto;">
       We synthesized recurring themes to develop a research-backed persona.
@@ -320,7 +313,7 @@
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;">
 
       <!-- Left: Image and Summary -->
-      <div style="flex: 1; min-width: 260px; text-align: center;">
+      <div style="flex: 1; min-width: 260px; text-align: center; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
         <img src="images/webp/MTMG.webp" alt="Mary, the Museum Go-er" style="max-width: 100%; margin-bottom: 0.5rem; border-radius: 8px;">
         <h6 style="color: var(--primary); margin-top: 0; margin-bottom: 0rem;">Mary, the Museum Go-er</h6>
         <p style="color: var(--grey0); margin-top: 0rem;">
@@ -361,26 +354,11 @@
     <img id="modalImage" class="modal-image-mrs"  style="max-width: 80%; max-height: 80%;">
 </div>
   
-</section>
-
-
-<section style="background-color: var(--black); padding: 3rem 2rem 6rem 3rem;">
-
-
-  <!-- Section Header -->
-  <div>
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
-      Research Insights to Design
-    </h4>
-  </div>
-
-  <div class="design-table-wrapper">
-    <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 1rem; margin-bottom: 2rem;"></div>
-
+  <div class="design-table-wrapper" style="width:900px;">
     <div class="responsive-table">
       <table style="width: 100%; border-collapse: collapse; color: var(--white);">
         <thead>
-          <tr style="background-color: var(--black2);">
+          <tr style="background-color: var(--black);">
             <th style="text-align: left; padding: 1rem; color: var(--primary);">Research Insight</th>
             <th style="text-align: left; padding: 1rem; color: var(--primary);">Design Idea</th>
           </tr>
@@ -407,14 +385,65 @@
     </div>
   </div>
 
+</section>
 
-  <!-- Initial Concept -->
-  <div style="margin-top: 4rem;">
+
+<section style="background-color: var(--black); padding: 3rem 2rem 6rem 3rem;">
+
+<div style="align-items: center; display: flex; flex-direction: column;">
+  <!-- Section Header -->
+  <div>
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+      What I Actually Built
+    </h4>
+    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
+      We created a mobile UI concept focused on removing friction from discovering ticket deals. Based on our user research, the app supports:
+    </p>
+    <div class="insight-grid" style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    ">
+
+    <!-- Individual Insight Cards -->
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+      <h6 style="color: var(--primary); margin-top:1rem;">Centralized Tickets Feed</h6>
+      <p style="color: var(--white);">
+        Provides all free or discounted museum tickets in one place.
+      </p>
+    </div>
+
+        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+      <h6 style="color: var(--primary); margin-top:1rem;">Save & Share</h6>
+      <p style="color: var(--white);">
+        Each deal can be bookmarked or sent to friends.
+      </p>
+    </div>
+ 
+      <!-- Card 1: Inconsistent Digital Flows -->
+      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
+        <h6 style="color: var(--primary); margin-top:1rem;">AI-enhanced Search Feature</h6>
+        <p style="color: var(--white); margin-top:0rem;">
+          An AI-enhanced feature for search and recommendations, based on user habits and history.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+  @media (max-width: 600px) {
+    .insight-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
     <h6 style="font-size: 42px; font-weight: bold; color: var(--primary); margin-bottom: 1rem;">
       Initial Concept:
     </h6>
     <p style="color: var(--white); margin-bottom: 2rem;">
-      These are the initial designs we presented to our course instructor Prof. Olivier St-Cyr and a panel of senior UXRs.
+      These are the initial designs we prepared as a group. Presented to a panel of senior UX researchers, who praised the idea and clarity of the UI.
     </p>
 
     <div class="progress-images" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
@@ -427,15 +456,12 @@
         <img src="images/MTDoldcard-open.png" style="max-width: 200px; cursor: pointer;" onclick="openModal('images/MTDoldcard-open.png')" />
       </div>
     </div>
-  </div>
-
-  <!-- High Fidelity Concept -->
-  <div style="margin-top: 4rem;">
+  
     <h6 style="font-size: 42px; font-weight: bold; color: var(--primary); margin-bottom: 2rem;">
       High Fidelity Concept:
     </h6>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
       <img src="images/webp/MTDapp-lofi.webp" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/webp/MTDapp-lofi.webp')" />
       <img src="images/webp/MTDapp-hifi.webp" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/webp/MTDapp-hifi.webp')" />
       <img src="images/webp/MTDapp-1.webp" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/webp/MTDapp-1.webp')" />
@@ -448,6 +474,7 @@
     <img id="modalImage" style="max-width: 90%; max-height: 90%;">
   </div>
 
+</div>
 </section>
 
 <section style="background: var(--black2); padding: 4rem 2rem;">
@@ -455,11 +482,11 @@
 
     <!-- Text Column -->
     <div style="flex: 1; min-width: 300px;">
-      <h4 style="color: var(--primary); margin-bottom: 1rem;">Conclusion: Thoughts and Takeaways</h4>
+      <h4 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h4>
       <p style="color: var(--white); margin-bottom: 2rem;">
         The goal of this project was to create a clean, functional UI that simplifies how Torontonians discover and access museum ticket deals.
         <br><br>
-        Designing around real-world fragmentation (many museums, different systems) required a UI that could bring coherence without overwhelming the user. Through visual hierarchy, smart filtering, and minimal navigation, we created a prototype that felt both local and user-friendly.
+        Designing around real-world fragmentation (many museums, different systems) required a UI that could bring coherence without overwhelming the user. Through visual hierarchy, smart filtering, and minimal navigation, we created a prototype that felt both local and user-friendly. This project also sharpened my feature prioritization skills using an impact-feasibility matrix, and reinforced the value of designing for trust.
         <br><br>
         Also, I envisioned it as an AI-powered interface: its recommendations and event highlights would adapt based on user preferences and behaviour data, improving relevance over time.
       </p>
