@@ -2,189 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karthik Jambunathan Portfolio</title>
+
+  <!-- Fonts -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
-    </noscript>
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+  </noscript>
+
+  <!-- Styles and Scripts -->
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>  
 
-<div id="header-placeholder"></div>
+  <!-- Header Placeholder -->
+  <div id="header-placeholder"></div>
 
-<section class="hero" style="background:var(--black2); padding: 4rem;">
-  <div class="hero-text" style="text-align:left;">
-    <div class="container">
-      <h6 class="fade-slide-up" style="opacity: 0; color:#F6BD60; margin-bottom:20px;">You get Solutions, not just Design.</h6>
-      <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin: 0px; padding-right:5rem;">
-        Toronto-based Reseacher/Solutions Designer who solves complex challenges for organisations by creating adaptable and impactful digital experiences.
-      </h3>
-      <style>
-        /* Media query for mobile screens */
-            @media (max-width: 768px) {
-              h3.fade-slide-up {
-                font-size: 24px !important;
-                padding-right: 0.5rem !important;
-              }}
-      </style>
-      <p class="fade-slide-up" style="color:#FFD59A; opacity: 0; animation-delay: 0.4s;">Choosing Karthik means Choosing Bold, Effective Solutions that make a Difference.</p>
-      <a href="#websitework" class="scroll-button" style="font-size: 20px; padding-right:0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;" >
-      Scroll down to see my work in action 🡻
-      </a>
+  <!-- Hero Section -->
+  <section class="hero" style="background: var(--black2); padding: 4rem;">
+    <div class="hero-text" style="text-align: left;">
+      <div class="container">
+        <h6 class="fade-slide-up" style="opacity: 0; color: #F6BD60; margin-bottom: 20px;">You get Solutions, not just Design.</h6>
+        <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; margin: 0px; padding-right: 5rem;">
+          Toronto-based Researcher/Solutions Designer who solves complex challenges for organisations by creating adaptable and impactful digital experiences.
+        </h3>
+        
+        <!-- Mobile Responsive Styling -->
+        <style>
+          @media (max-width: 768px) {
+            h3.fade-slide-up {
+              font-size: 24px !important;
+              padding-right: 0.5rem !important;
+            }
+          }
+        </style>
+
+        <p class="fade-slide-up" style="color: #FFD59A; opacity: 0; animation-delay: 0.4s;">
+          Choosing Karthik means Choosing Bold, Effective Solutions that make a Difference.
+        </p>
+        <a href="#websitework" class="scroll-button" style="font-size: 20px; padding-right: 0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+          Scroll down to see my work in action 🡻
+        </a>
+      </div>
     </div>
-  </div>
-  <style>
-    @keyframes fadeweb {
-      0% {
-      opacity: 0;
-      transform: translateY(20px);
+
+    <!-- Animation Keyframe -->
+    <style>
+      @keyframes fadeweb {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
-      100% {
-      opacity: 1;
-      transform: translateY(0);
-      }
-    }
-  </style>
-</section>
+    </style>
+  </section>
 
-<section class="ece-section" id="websitework" style=" background: var(--black2); padding-left: 4rem; padding-top:2rem; padding-bottom: 3rem; padding-right: 4rem;">
-  <h5 style="margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.2s;"><strong>
-    Design work for ECE, University of Toronto
-  </h5>
+  <!-- ECE Website Work Section -->
+  <section class="ece-section" id="websitework" style="background: var(--black2); padding-left: 4rem; padding-top: 2rem; padding-bottom: 3rem; padding-right: 4rem;">
+    <h5 style="margin-top: 0px; margin-bottom: 20px; padding-right: 5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.2s;">
+      <strong>Design work for ECE, University of Toronto</strong>
+    </h5>
 
-  <div class="tabs-1906" style="opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.4s;">
-    <p class="p2 tab-1906 active" data-tab="overview" style="color:var(--white);">Project Overview</p>
-    <p class="p2 tab-1906" data-tab="responsibilities" style="color:var(--white);">Responsibilities</p>
-    <p class="p2 tab-1906" data-tab="goals" style="color:var(--white);">Goals</p>
-    <p class="p2 tab-1906" data-tab="results" style="color:var(--white);">Results</p>
-  </div>
-
-  <div class="tab-content-1906" style="opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.6s;">
-    <div class="tab-pane-1906 active" id="overview">
-      <h6 style="margin-top: 20px; line-height:1.6;">
-        I helped improve ECE’s website by designing pages that support student recruitment, highlight research, and make academic info easier to find.
-      </h6>
+    <!-- Tabs for Project Overview, Responsibilities, Goals, Results -->
+    <div class="tabs-1906" style="opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.4s;">
+      <p class="p2 tab-1906 active" data-tab="overview" style="color: var(--white);">Project Overview</p>
+      <p class="p2 tab-1906" data-tab="responsibilities" style="color: var(--white);">Responsibilities</p>
+      <p class="p2 tab-1906" data-tab="goals" style="color: var(--white);">Goals</p>
+      <p class="p2 tab-1906" data-tab="results" style="color: var(--white);">Results</p>
     </div>
-    <div class="tab-pane-1906" id="responsibilities">
-      <h6 style="margin-top: 20px; line-height:1.6;">
-        Audited for accessibility, redesigned key pages in Figma and WordPress, updated site content with team members, and led design tasks.
-      </h6>
+
+    <div class="tab-content-1906" style="opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.6s;">
+      <div class="tab-pane-1906 active" id="overview">
+        <h6 style="margin-top: 20px; line-height: 1.6;">
+          I helped improve ECE’s website by designing pages that support student recruitment, highlight research, and make academic info easier to find.
+        </h6>
+      </div>
+      <div class="tab-pane-1906" id="responsibilities">
+        <h6 style="margin-top: 20px; line-height: 1.6;">
+          Audited for accessibility, redesigned key pages in Figma and WordPress, updated site content with team members, and led design tasks.
+        </h6>
+      </div>
+      <div class="tab-pane-1906" id="goals">
+        <h6 style="margin-top: 20px; line-height: 1.6;">
+          Improve usability, showcase student life, and make department info easier to find.
+        </h6>
+      </div>
+      <div class="tab-pane-1906" id="results">
+        <h6 style="margin-top: 20px; line-height: 1.6;">
+          Designed and shipped key pages, and improved the student user experience.
+        </h6>
+      </div>
     </div>
-    <div class="tab-pane-1906" id="goals">
-      <h6 style="margin-top: 20px; line-height:1.6;">
-        Improve usability, showcase student life, and make department info easier to find.
-      </h6>
+
+    <!-- Flex Container for Project Cards -->
+    <div class="flex-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0rem; margin-bottom: 0rem; justify-content: space-between; margin-top: 0rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.8s;">
+
+      <!-- ECE Department Website Card -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.9s;">
+        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Department's Home Page &#8599;</h6>
+        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
+          Shipped | January 2025<br>
+          Made it easier for prospective students to explore ECE.
+        </p>
+      </article>
+
+      <!-- ECE Events Page Card -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.9s;">
+        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Events Page &#8599;</h6>
+        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
+          Shipped | March 2025<br>
+          Made it easier to discover events beyond the old calendar view.
+        </p>
+      </article>
+
+      <!-- Toronto Nanofabrication Centre Card -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 1rem; margin-bottom: 1rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.9s;">
+        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">Toronto Nano Fabrication Centre &#8599;</h6>
+        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
+          Shipped | March, April 2025<br>
+          Migrated the TNFC into the main ECE website.
+        </p>
+      </article>
     </div>
-    <div class="tab-pane-1906" id="results">
-      <h6 style="margin-top: 20px; line-height:1.6;">
-        Designed and shipped key pages, and improved the student user experience.
-      </h6>
-    </div>
-  </div>
 
-  <div class="flex-container" style="
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 0rem;
-  justify-content: space-between; margin-top: 0rem; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.8s;">
-
-<!-- ECE Department Website Card -->
-<article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="
-  flex: 1 1 calc(24% - 1rem); 
-  max-width: calc(24% - 1rem); 
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  opacity: 0;
-  animation: fadeweb 0.8s ease forwards;
-  animation-delay: 2.9s;">
-    <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Department's Home Page &#8599;</h6>
-    <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-      Shipped | January 2025<br>
-      Made it easier for prospective students to explore ECE.
-    </p>
-</article>
-
-
-<!-- ECE Events Page Card -->
-<article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="
-  flex: 1 1 calc(24% - 1rem); 
-  max-width: calc(24% - 1rem); 
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  opacity: 0;
-  animation: fadeweb 0.8s ease forwards;
-  animation-delay: 2.9s;">
-    <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Events Page &#8599;</h6>
-    <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-      Shipped | March 2025<br>
-      Made it easier to discover events beyond the old calendar view.
-    </p>
-</article>
-
-<!-- Toronto Nanofabrication Centre Card -->
-<article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="
-  flex: 1 1 calc(24% - 1rem); 
-  max-width: calc(24% - 1rem); 
-  min-width: 250px;
-  display: flex;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  opacity: 0;
-  animation: fadeweb 0.8s ease forwards;
-  animation-delay: 2.9s;">
-    <h6 style="font-size: 18px; margin: 0; color: var(--primary);">Toronto Nano Fabrication Centre &#8599;</h6>
-    <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-      Shipped | March, April 2025<br>
-      Migrated the TNFC into the main ECE website.
-    </p>
-</article>
-
-<style>
-    @media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .flex-container > * {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-  }
-}
-  </style>
-</div>
 
 <div class="grid-container" style="
   display: grid;
@@ -214,7 +155,9 @@
     animation-delay: 2.9s;
   ">
     <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
-      <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">ECE Department's Home Page Redesign</h6>
+      <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">
+        ECE Department's Home Page Redesign
+      </h6>
       <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
         Turning an academic homepage into a student recruitment portal
       </h6>
@@ -265,7 +208,9 @@
     animation-delay: 2.9s;
   ">
     <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
-      <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">ECE Department's Events Page Redesign</h6>
+      <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">
+        ECE Department's Events Page Redesign
+      </h6>
       <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
         Turning a functional calendar into a mobile-first student touchpoint
       </h6>
@@ -300,228 +245,224 @@
 
 </div>
 
-    <div style="margin-left: auto; margin-top:2rem; margin-right: auto;">
-    <h5 style="font-weight:bold; margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-      Case Studies
-    </h5>
+<div style="margin-left: auto; margin-top:2rem; margin-right: auto;">
+  <h5 style="font-weight:bold; margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+    My Impact
+  </h5>
+
+  <div class="stats-summary-container">
+    <!-- Projects Delivered -->
+    <div class="stats-summary-block">
+      <h4>Projects Delivered</h4>
+      <div class="stats-value"><h3>20+</h3><span class="stats-baseline">film and media productions</span></div>
+      <div class="stats-change-tag stats-up">Contributed to visual design, research, and marketing</div>
+    </div>
+
+    <hr class="stats-divider" />
+
+    <!-- Funds Raised -->
+    <div class="stats-summary-block">
+      <h4>Funds Raised via Decks</h4>
+      <div class="stats-value"><h3>$150K+</h3><span class="stats-baseline">Estimated Value Secured</span></div>
+      <div class="stats-change-tag stats-up">Helped shape narratives and pitch materials</div>
+    </div>
+
+    <hr class="stats-divider" />
+
+    <!-- Sectors Designed For -->
+    <div class="stats-summary-block">
+      <h4>Sectors Designed For</h4>
+      <div class="stats-value"><h3>8+</h3><span class="stats-baseline">Including Education, Healthcare, Finance, Fashion, Film</span></div>
+      <div class="stats-change-tag stats-up">UX/UI and Digital Solutions</div>
+    </div>
+
+    <hr class="stats-divider" />
+
+    <!-- Pitch Conversion Rate -->
+    <div class="stats-summary-block">
+      <h4>Pitch-to-Production Conversion</h4>
+      <div class="stats-value"><h3>~75%</h3><span class="stats-baseline">Conversion rate</span></div>
+      <div class="stats-change-tag stats-up">Decks and visual prototypes</div>
+    </div>
   </div>
+</div>
+
+<div style="margin-left: auto; margin-top: 6rem; margin-right: auto;">
+  <h5 style="font-weight: bold; margin-top: 0px; margin-bottom: 20px; padding-right: 5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+    Case Studies
+  </h5>
+</div>
 
 <!-- Grid Wrapper -->
-<div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; padding-top:2rem; padding-bottom: 3rem;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding-top: 1rem; padding-bottom: 3rem;">
 
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
   <!-- Museum Tickets App -->
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;" onclick="window.open('ui-design-mobile-app.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/tickets.webp"
-           alt="Mobile App Design" 
-           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
-      </div>
-      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Mobile App UX Research for Ticket Deals
-      </h6>
-      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Translating UX Research insights into Mobile UI designs.
-      </p>
-    </div>
-  </div>
-
-  </div>
-
   <div style="flex: 1 1 calc(33.33% - 1rem);">
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('ui-design-mobile-app.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/tickets.webp" alt="Mobile App Design" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+      </div>
+      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
+          <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          Mobile App UX Research for Ticket Deals
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          Translating UX Research insights into Mobile UI designs.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <!-- Virtual Museum -->
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;" onclick="window.open('research-virtual-museum.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/vr.webp"
-           alt="Virtual Museum" 
-           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Presented - Winter 2025</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
-      </div>
-      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        UX Research for Virtual Museum Website
-      </h6>
-      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Translating UX Research insights into Website UI designs.
-      </p>
-    </div>
-  </div>
-
-  </div>
-
-  
   <div style="flex: 1 1 calc(33.33% - 1rem);">
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('research-virtual-museum.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/vr.webp" alt="Virtual Museum" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+      </div>
+      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--white); font-size: 14px;">Presented - Winter 2025</span>
+          <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          UX Research for Virtual Museum Website
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          Translating UX Research insights into Website UI designs.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <!-- Textile Museum Card -->
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;" onclick="window.open('tmc.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/textile.webp"
-           alt="Textile Museum" 
-           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('tmc.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/textile.webp" alt="Textile Museum" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Information Architecture Redesign
-      </h6>
-      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Designing a Phased IA and Navigation Menu Testing Strategy.
-      </p>
+      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
+          <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          Information Architecture Redesign
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          Designing a Phased IA and Navigation Menu Testing Strategy.
+        </p>
+      </div>
     </div>
-  </div>
   </div>
 
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
   <!-- SpyPitch -->
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;" onclick="window.open('spy-film-pitch.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/filmy.webp" 
-           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Shipped - August 2021</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
-      </div>
-      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Pitch Deck Website for a Film Director
-      </h6>
-      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Turning a traditional pitch into a cinematic web experience.
-      </p>
-    </div>
-  </div>
-  </div>
-
   <div style="flex: 1 1 calc(33.33% - 1rem);">
-  <!-- PREVIZ -->
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; p  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;" onclick="window.open('previz.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/PREVIZ.webp" 
-           style="width:100%; aspect-ratio:4/3; object-position: top; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="padding: 5px; margin-top:1rem; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Shipped - Summer 2023</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('spy-film-pitch.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/filmy.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Designing an AI-assisted PreViz Workflow
-      </h6>
-      <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        A scalable pipeline to visualize film concepts faster.
-      </p>
+      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--white); font-size: 14px;">Shipped - August 2021</span>
+          <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          Pitch Deck Website for a Film Director
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          Turning a traditional pitch into a cinematic web experience.
+        </p>
+      </div>
     </div>
   </div>
+
+  <!-- PREVIZ -->
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('previz.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+      </div>
+      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+          <span style="color: var(--white); font-size: 14px;">Shipped - Summer 2023</span>
+          <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
+        </div>
+        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          Designing an AI-assisted PreViz Workflow
+        </h6>
+        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          A scalable pipeline to visualize film concepts faster.
+        </p>
+      </div>
+    </div>
   </div>
-
-
 
 </div>
 
-
-
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+
   <!-- Left Content -->
   <div style="flex: 1 1 40%; max-width: 500px; padding-right: 2rem;">
     <h4 style="color: var(--primary);">Visual Design Works</h4>
     <h6 style="margin-bottom: 1rem; color: var(--white);">
       Redesigns and Original UI Designs across Fintech, Video Games, SaaS and more.
     </h6>
-<a href="ui-designs-and-redesigns.html" target="_blank" class="case-button" style="background: var(--white); color:var(--secondary);"> View All UI Designs and Redesigns ↗</a>
-   </div>
+    <a href="ui-designs-and-redesigns.html" target="_blank" class="case-button" style="background: var(--white); color: var(--secondary);">
+      View All UI Designs and Redesigns ↗
+    </a>
+  </div>
 
-<div style="position: relative; display: flex; width: 100%; height: 750px; margin-top: 2rem; overflow: hidden;">
+  <div style="position: relative; display: flex; width: 100%; height: 750px; margin-top: 2rem; overflow: hidden;">
 
+    <!-- Image (Centered, Largest) -->
+    <img src="images/webp/Banking.webp" alt="Banking website UI design showcasing financial transaction interface" 
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    <style>
+      /* Media query to hide the image on mobile screens */
+      @media (max-width: 1400px) {
+        img[src="images/webp/Banking.webp"] {
+          display: none !important;
+        }
+      }
+    </style>
 
-  <!-- Image (Centered, Largest) -->
-  <img src="images/webp/Banking.webp" alt="Woman at sunset" 
-       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-<style>
-  /* Media query to hide the image on mobile screens */
-  @media (max-width: 768px) {
-    img[src="images/webp/Banking.webp"] {
-      display: none !important;
-    }
-  }
-</style>
+    <!-- Image (Top-Right, 45% height) -->
+    <img src="images/webp/Debit.webp" alt="Educational resources website UI design for academic institutions" 
+         style="position: absolute; top: 2%; right: 0; height: 60%; width: auto; object-position: top; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
 
-  <!-- Image (Top-Right, 45% height) -->
-  <img src="images/webp/edures.webp" alt="Basketball" 
-       style="position: absolute; top: 2%; right: 0; height: 60%; width: auto; object-position:top; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    <!-- Image (Bottom-Left, 60% height) -->
+    <img src="images/webp/EMSuite.webp" alt="Event management software UI design showcasing event scheduling interface" 
+         style="position: absolute; bottom: 2%; left: 0; height: 60%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; object-position: top; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
 
- <!-- Image (Bottom-Left, 60% height) -->
-  <img src="images/webp/EMSuite.webp" alt="MOGO Project" 
-       style="position: absolute; bottom: 2%; left: 0; height: 60%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; object-position:top;
-              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+  </div>
 
 </div>
 
-</div>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; margin-top:3rem; column-gap: 2rem;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; margin-top: 3rem; column-gap: 2rem;">
 
   <!-- Left Image Grid -->
   <div style="flex: 0 1 60%; display: flex; flex-direction: column; gap: 1.5rem; max-width: 60%;">
 
     <!-- Top Row: Only one stacked image + one beside -->
     <div style="display: flex; gap: 1rem;">
-      
+
       <!-- OXF MUN stacked -->
       <div style="display: flex; flex-direction: column;">
         <div style="margin-bottom: 2rem;"> <!-- Increased vertical gap here -->
-          <img src="images/OXFMUN.jpg" alt="Brochure Cover" 
-               style="width: 100%; object-fit: cover;
-                      border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-          <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">Brochures</p>
+          <img src="images/webp/OXFMUN.webp" alt="OXF MUN event brochure cover with trip itineraries" 
+               style="width: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+          <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">Trip Itineraries & Brochures</p>
         </div>
       </div>
 
       <!-- The Akaali Title Poster image -->
-      <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top:6rem;">
-        <img src="images/The Akaali Title Poster.jpg" alt="The Akaali Title Poster" 
-             style="width: 100%; object-fit: cover;
-                    border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 6rem;">
+        <img src="images/webp/The Akaali.webp" alt="The Akaali movie first look poster" 
+             style="width: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
         <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">The Akaali First Look Poster</p>
       </div>
 
@@ -534,8 +475,7 @@
     <h6 style="margin-bottom: 1rem; color: var(--white);">
       Helping Establish a Digital Brand Presence and Creating Digital First Designs for B2C and B2B Companies; <br>Also... Movie Posters!
     </h6>
-    <a href="pdfs/Graphic Design.pdf" target="_blank" class="case-button"
-       style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none;">
+    <a href="pdfs/Graphic Design.pdf" target="_blank" class="case-button" style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none;">
       View Graphic Design Portfolio [PDF] ↗
     </a>
   </div>
@@ -549,44 +489,50 @@
 <div id="footer-placeholder"></div>
 
 <script>
-//Tabs 
+  // Tabs functionality
   const tabs = document.querySelectorAll(".tab-1906");
   const panes = document.querySelectorAll(".tab-pane-1906");
 
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
+      // Deactivate all tabs
       tabs.forEach(t => t.classList.remove("active"));
+      // Activate clicked tab
       tab.classList.add("active");
 
       const targetId = tab.dataset.tab;
 
+      // Deactivate all panes
       panes.forEach(pane => {
         pane.classList.remove("active");
         if (pane.id === targetId) {
+          // Activate the target pane
           pane.classList.add("active");
         }
       });
     });
   });
-
 </script>
 
-
 <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
+  // Fetch and insert footer HTML
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
 </script>
 
-
 <script>
+  // Fetch and insert header HTML
   fetch('header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
-    });
+    })
+    .catch(error => console.error("Error loading header:", error));
 </script>
+
 </body>
 </html>
