@@ -408,34 +408,58 @@ This approach also allowed for more flexible use of color, to improve the design
 
 </section>
 
-<section style="background: var(--black2); padding: 4rem 2rem;">
-  <div style="display: flex; flex-direction: row; gap: 3rem; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
+<section style="
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ai/textile.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+">
+  <div style="
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  ">
 
-    <!-- Text Column -->
-    <div style="flex: 0.80; min-width: 300px;">
+    <!-- Glassmorphic Text Block -->
+    <div style="
+      background: rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 2rem;
+    ">
       <h4 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h4>
-      <p style="color: var(--white); margin-bottom: 2rem;">
+      <p style="color: var(--white); margin-bottom: 0;">
         The goal of this project was to create a clear, accessible user experience that makes it easier for people to discover and navigate the Textile Museum of Canada’s rich collections, exhibitions, and events.
         <br><br>
         This project also strengthened my ability to prioritize features and content, focusing on what would have the most impact for both first-time visitors and returning patrons. I found that building trust online comes from making the digital experience simple and transparent.
       </p>
-
-      <!-- Glassmorphic Card for Key Takeaway -->
-      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 2rem;">
-        <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Blending User Needs with Post-deployment Business Goals</p>
-        <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
-        <p style="color: var(--white);">
-          The most valuable insight was learning to balance immediate user needs such as content discoverability with the museum’s long-term goals, such as increasing engagement and supporting their growth. A phased, research-driven plan ensured both were addressed.
-        </p>
-      </div>
     </div>
 
-    <!-- Image Column -->
-    <div style="flex: 1.2; width: 100%; display: flex; justify-content: center; align-items: center;">
-      <img src="images/webp/tmc-op1-1.webp" style="width: 100%; border-radius: 12px;">
+    <!-- Glassmorphic Takeaway Block -->
+    <div style="
+      background: rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 2rem;
+    ">
+      <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Blending User Needs with Post-deployment Business Goals</p>
+      <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
+      <p style="color: var(--white);">
+        The most valuable insight was learning to balance immediate user needs such as content discoverability with the museum’s long-term goals, such as increasing engagement and supporting their growth. A phased, research-driven plan ensured both were addressed.
+      </p>
     </div>
+
   </div>
 </section>
+
 
   <div id="footer-placeholder"></div>
 

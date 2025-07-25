@@ -127,33 +127,10 @@
     </div>
 
 
-<div class="grid-container" style="
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Default two columns */
-  gap: 1.5rem;
-  margin-top: 0rem;
-  opacity: 0;
-  animation: fadeweb 0.8s ease forwards;
-  animation-delay: 2.8s;
-">
+<div class="grid-container">
 
   <!-- ECE Home Page Redesign -->
-  <div class="zoom-on-hover" style="
-    display: flex; /* Flexbox to ensure content inside stretches */
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    opacity: 0;
-    animation: fadeweb 0.8s ease forwards;
-    animation-delay: 2.9s;
-  ">
+  <div class="zoom-on-hover">
     <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
       <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">
         ECE Department's Home Page Redesign
@@ -191,22 +168,7 @@
   </div>
 
   <!-- ECE Events Page Redesign -->
-  <div class="zoom-on-hover" style="
-    display: flex; /* Flexbox to ensure content inside stretches */
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    opacity: 0;
-    animation: fadeweb 0.8s ease forwards;
-    animation-delay: 2.9s;
-  ">
+  <div class="zoom-on-hover">
     <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
       <h6 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 24px; margin-top: 1rem;">
         ECE Department's Events Page Redesign
@@ -243,9 +205,55 @@
     </div>
   </div>
 
+  <style>
+/* General Flex Container */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between items */
+  margin-top: 0rem;
+  opacity: 0;
+  animation: fadeweb 0.8s ease forwards;
+  animation-delay: 2.8s;
+}
+
+/* 2 items per row for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .grid-container > div {
+    flex: 1 1 48%;  /* 2 items per row with slight gap */
+    display: block; /* Block-level to allow wrapping */
+    box-sizing: border-box; /* Include padding and borders in the width */
+  }
+}
+
+/* 1 item per row for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .grid-container > div {
+    flex: 1 1 100%;  /* 1 item per row */
+    display: block; /* Ensure each item takes full width */
+    box-sizing: border-box; /* Ensure padding/borders don't affect width */
+  }
+}
+
+/* Glassmorphism effect with hover zoom */
+.zoom-on-hover {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.15); /* Glassmorphism background */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  cursor: pointer;
+  opacity: 1;
+}
+  </style>
 </div>
 
-<div style="margin-left: auto; margin-top:2rem; margin-right: auto;">
+<div style="margin-left: auto; margin-top:5rem; margin-right: auto;">
   <h5 style="font-weight:bold; margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
     My Impact
   </h5>
@@ -299,7 +307,7 @@
 </div>
 
 <!-- Grid Wrapper -->
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding-top: 1rem; padding-bottom: 3rem;">
+<div class="grid-wrapper">
 
     <!-- SpyPitch -->
   <div style="flex: 1 1 calc(33.33% - 1rem);">
@@ -307,21 +315,43 @@
       <div style="overflow: hidden; border-radius: 12px;">
         <img src="images/ai/filmy.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
           <span style="color: var(--white); font-size: 14px;">Shipped - August 2021</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Digital Web Experience Design</span>
         </div>
-        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
           Pitch Deck Website for a Film Director
         </h6>
-        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
           Turning a traditional pitch into a cinematic web experience.
         </p>
       </div>
     </div>
   </div>
+
+  <!-- HDFC -->
+<div style="flex: 1 1 calc(33.33% - 1rem);">
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('HDFC.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/Bank.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+    </div>
+    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
+        <span style="color: var(--white); font-size: 14px;">Redesigned - Summer 2025</span>
+        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Banking & Finance</span>
+        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">UX Research + UI Design</span>
+      </div>
+      <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Redesigning HDFC’s Legacy NetBanking Platform
+      </h6>
+      <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Bringing modern design and usability to a market where UX is overlooked
+      </p>
+    </div>
+  </div>
+</div>
 
   <!-- PREVIZ -->
   <div style="flex: 1 1 calc(33.33% - 1rem);">
@@ -329,16 +359,16 @@
       <div style="overflow: hidden; border-radius: 12px;">
         <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
           <span style="color: var(--white); font-size: 14px;">Shipped - Summer 2023</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Film and Media</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">AI Workflow Service Design</span>
         </div>
-        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
           Designing an AI-assisted PreViz Workflow
         </h6>
-        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
           A scalable pipeline to visualize film concepts faster.
         </p>
       </div>
@@ -351,16 +381,16 @@
       <div style="overflow: hidden; border-radius: 12px;">
         <img src="images/ai/tickets.webp" alt="Mobile App Design" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
           <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Mobile UX/UI Design</span>
         </div>
-        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
           Mobile App UX Research for Ticket Deals
         </h6>
-        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
           Translating UX Research insights into Mobile UI designs.
         </p>
       </div>
@@ -373,16 +403,16 @@
       <div style="overflow: hidden; border-radius: 12px;">
         <img src="images/ai/vr.webp" alt="Virtual Museum" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
           <span style="color: var(--white); font-size: 14px;">Presented - Winter 2025</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Web UX/UI Design</span>
         </div>
-        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
           UX Research for Virtual Museum Website
         </h6>
-        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
           Translating UX Research insights into Website UI designs.
         </p>
       </div>
@@ -395,105 +425,88 @@
       <div style="overflow: hidden; border-radius: 12px;">
         <img src="images/ai/textile.webp" alt="Textile Museum" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
       </div>
-      <div style="padding: 5px; margin-top: 1rem; border-radius: 12px;">
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
           <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
           <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Web Information Architecture</span>
         </div>
-        <h6 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
           Information Architecture Redesign
         </h6>
-        <p style="margin: 0 0 20px 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
           Designing a Phased IA and Navigation Menu Testing Strategy.
         </p>
       </div>
     </div>
   </div>
-
-</div>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-
-  <!-- Left Content -->
-  <div style="flex: 1 1 40%; max-width: 500px; padding-right: 2rem;">
-    <h4 style="color: var(--primary);">Visual Design Works</h4>
-    <h6 style="margin-bottom: 1rem; color: var(--white);">
-      Redesigns and Original UI Designs across Fintech, Video Games, SaaS and more.
-    </h6>
-    <a href="ui-designs-and-redesigns.html" target="_blank" class="case-button" style="background: var(--white); color: var(--secondary);">
-      View All UI Designs and Redesigns ↗
-    </a>
-  </div>
-
-  <div style="position: relative; display: flex; width: 100%; height: 750px; margin-top: 2rem; overflow: hidden;">
-
-    <!-- Image (Centered, Largest) -->
-    <img src="images/webp/Banking.webp" alt="Banking website UI design showcasing financial transaction interface" 
-         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-    <style>
-      /* Media query to hide the image on mobile screens */
-      @media (max-width: 1400px) {
-        img[src="images/webp/Banking.webp"] {
-          display: none !important;
-        }
-      }
-    </style>
-
-    <!-- Image (Top-Right, 45% height) -->
-    <img src="images/webp/Debit.webp" alt="Educational resources website UI design for academic institutions" 
-         style="position: absolute; top: 2%; right: 0; height: 60%; width: auto; object-position: top; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-
-    <!-- Image (Bottom-Left, 60% height) -->
-    <img src="images/webp/EMSuite.webp" alt="Event management software UI design showcasing event scheduling interface" 
-         style="position: absolute; bottom: 2%; left: 0; height: 60%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; object-position: top; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-
-  </div>
-
-</div>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; margin-top: 3rem; column-gap: 2rem;">
-
-  <!-- Left Image Grid -->
-  <div style="flex: 0 1 60%; display: flex; flex-direction: column; gap: 1.5rem; max-width: 60%;">
-
-    <!-- Top Row: Only one stacked image + one beside -->
-    <div style="display: flex; gap: 1rem;">
-
-      <!-- OXF MUN stacked -->
-      <div style="display: flex; flex-direction: column;">
-        <div style="margin-bottom: 2rem;"> <!-- Increased vertical gap here -->
-          <img src="images/webp/OXFMUN.webp" alt="OXF MUN event brochure cover with trip itineraries" 
-               style="width: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-          <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">Trip Itineraries & Brochures</p>
-        </div>
+ 
+  <!-- Card 1: UI Designs -->
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('ui-designs-and-redesigns.html', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/webp/Banking-Mockup.webp" alt="Banking UI Design" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
       </div>
-
-      <!-- The Akaali Title Poster image -->
-      <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 6rem;">
-        <img src="images/webp/The Akaali.webp" alt="The Akaali movie first look poster" 
-             style="width: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p style="color: white; font-size: 0.9rem; margin-top: 0.4rem;">The Akaali First Look Poster</p>
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">Visual Design Works</h6>
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          Redesigns and Original UI Designs across Fintech, Video Games, SaaS and more.
+        </p>
       </div>
-
     </div>
-
   </div>
 
-  <!-- Right Text Column -->
-  <div style="flex: 0 1 35%; max-width: 35%;">
-    <h6 style="margin-bottom: 1rem; color: var(--white);">
-      Helping Establish a Digital Brand Presence and Creating Digital First Designs for B2C and B2B Companies; <br>Also... Movie Posters!
-    </h6>
-    <a href="pdfs/Graphic Design.pdf" target="_blank" class="case-button" style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none;">
-      View Graphic Design Portfolio [PDF] ↗
-    </a>
+  <!-- Card 2: Graphic Design Portfolio -->
+  <div style="flex: 1 1 calc(33.33% - 1rem);">
+    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('pdfs/Graphic Design.pdf', '_blank');">
+      <div style="overflow: hidden; border-radius: 12px;">
+        <img src="images/webp/The Akaali.webp" alt="Graphic Design" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+      </div>
+      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+        <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">Graphic Design</h6>
+        <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          Helping Establish a Digital Brand Presence and Creating Digital First Designs for B2C and B2B Companies; Also... Movie Posters!
+        </p>
+      </div>
+    </div>
   </div>
 
+  <div></div>
 </div>
 
-</div>
+<style>
 
+/* Default Flexbox Layout (3 items per row) */
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+/* 1 item per row on mobile (up to 767px) */
+@media screen and (max-width: 767px) {
+  .grid-wrapper > div {
+    flex: 1 1 100%;  /* 100% width (one per row) */
+  }
+}
+
+/* 2 items per row on screens between 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-wrapper > div {
+    flex: 1 1 48%;  /* 2 per row */
+  }
+}
+
+/* 3 items per row on screens 1024px and above */
+@media screen and (min-width: 1024px) {
+  .grid-wrapper > div {
+    flex: 1 1 32%;  /* 3 per row */
+  }
+}
+
+</style>
 </section>
 
 <div id="footer-placeholder"></div>

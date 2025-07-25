@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Karthik Jambunathan Portfolio</title>
+  <title>Redesigning Netbanking Platform</title>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
@@ -256,9 +256,25 @@
     </tbody>
   </table>
 </div>
-
-
 </div>
+</div>
+
+  <!-- Section Header -->
+  <div>
+    <h6 style="color: var(--primary); text-align: center; margin-bottom:1rem;">Exisiting Screens</h6>
+  </div>
+
+<div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; padding:1rem;">
+    <img src="images/hdfc/Cards.webp" class="user-journey-image-mrs" style="height: 300px; max-width:25%; object-fit: contain;" onclick="openModal('images/hdfc/Cards.png')">
+    <img src="images/hdfc/Funds.webp" class="user-journey-image-mrs" style="height: 300px; max-width:25%; object-fit: contain;" onclick="openModal('images/hdfc/Funds.png')">
+   <img src="images/hdfc/Enquire.webp" class="user-journey-image-mrs" 
+         style="max-width:20%; height: 300px; object-fit: contain;" 
+         onclick="openModal('images/hdfc/Enquire.png')">
+    <img src="images/hdfc/Request.webp" class="user-journey-image-mrs" 
+         style="max-width:20%; height: 300px; object-fit: contain;" 
+         onclick="openModal('images/hdfc/Request.png')">
+</div>
+
   
 </section>
 
@@ -267,25 +283,24 @@
 
   <div style="align-items: center; display: flex; flex-direction: column;">
     <!-- Section Header -->
-<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">👤 User Journey: Quick RTGS Transfer</h4>
+<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">User Journey: Check if Beneficiary is added and Make a Transaction</h4>
 <p style="text-align: center; color: var(--grey0); margin-bottom: 2rem;">I used user journeys to map out task flows and decision-making processes, helping identify friction points and guide a more intuitive redesign.</p>
 
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 0: Arrives at Home → sees Account Summary.</p>
-<img src="images/hdfc/step0.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step0.png')">
-
+<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 0: Arrives at Home (Account Summary).</p>
 <p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 1: Clicks Transfer Funds in main menu.</p>
-<img src="images/hdfc/step1.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step1.png')">
+
+<img src="images/hdfc/Step 0.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 0.png')">
 
 <p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 2: Clicks Requests in sidebar.</p>
-<img src="images/hdfc/step2.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step2.png')">
+<img src="images/hdfc/Step 1.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 1.png')">
 
 <p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 3: Selects View/Delete Beneficiaries.</p>
-<img src="images/hdfc/step3.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step3.png')">
+<img src="images/hdfc/Step 2.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 2.png')">
 
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 4: If beneficiary is saved, initiates an RTGS transfer.</p>
-<img src="images/hdfc/step4.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step4.png')">
+<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 4: If beneficiary is saved, either Views Beneficiary or goes back to Transact and initiates a transfer.</p>
+<img src="images/hdfc/Step 3.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 3.png')">
 
-<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">👤 User Journey: Checking Card Features</h4>
+<!-- <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">User Journey: Checking Card Features</h4>
 
 <p style="color: var(--grey0); text-align: center; margin-bottom: 1rem;">Step 1: Home → Cards → Debit Cards → View Active/Inactive Cards.</p>
 <img src="images/hdfc/step5.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step5.png')">
@@ -295,73 +310,8 @@
 
 <p style="color: var(--grey0); text-align: center; margin-bottom: 1rem;">Step 3: Turns on e-commerce and international usage.</p>
 <img src="images/hdfc/step7.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step7.png')">
-
-
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
-      The Impact
-    </h4>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
-      The editor assembled and animated the passes, bringing the scenes to life.
-    </p>
-
-      <!-- Flex Grid Wrapper -->
-      <div style="
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-        padding: 2rem;"
-        >
-
-
-        <div style="flex: 1 1 300px;
-          max-width: 350px;
-          background: rgba(0, 0, 0, 0.3);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 16px;
-          padding: 1rem;
-          color: var(--primary);
-          position: relative;
-          ">
-          <h6 style="margin-top: 0;">The director successfully used the PreViz video in a live pitch to producers, securing next-stage buy-in</h6>
-        </div>
-
-        <div style="flex: 1 1 300px;
-          max-width: 350px;
-          background: rgba(0, 0, 0, 0.3);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 16px;
-          padding: 1rem;
-          color: var(--primary);
-          position: relative;
-          ">
-          <h6 style="margin-top: 0;">Our studio adopted this AI-assisted workflow for future animated Pre-Viz projects</h6>
-        </div>
-
-        <div style="flex: 1 1 300px;
-          max-width: 350px;
-          background: rgba(0, 0, 0, 0.3);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          border-radius: 16px;
-          padding: 1rem;
-          color: var(--primary);
-          position: relative;
-          ">
-          <h6 style="margin-top: 0;">We cut scene preparation time by 40% compared to previous PreViz methods</h6>
-        </div>
-
-
       </div>
-  </div>
+  </div> -->
 
    <!-- Modal Viewer -->
   <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
