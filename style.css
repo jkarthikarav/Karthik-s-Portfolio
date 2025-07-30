@@ -355,13 +355,11 @@ position: relative;
 .tabs-1906 {
   display: flex;
   gap: 2rem;
-  padding-bottom: 0.5rem;
 }
 
 .tab-1906 {
   cursor: pointer;
   position: relative;
-  padding-bottom: 5px;
 }
 
 .tab-1906.active::after {
@@ -376,8 +374,6 @@ position: relative;
 
 .tab-content-1906 {
   position: relative;
-  min-height: 100px;
-  margin-top: 1rem;
 }
 
 .tab-pane-1906 {
