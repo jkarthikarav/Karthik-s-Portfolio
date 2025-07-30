@@ -1,43 +1,51 @@
-<footer style="background-color: var(--black); text-align: center; font-size: 0.95rem; padding: 2rem 0;">
+<footer style="padding: 2rem 0; position: relative; width: 100%; background: url('images/ai/BG.webp') center/cover no-repeat;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.2);"></div>
+    <!-- Optional: Content on top -->
+    <div style="position: relative; z-index: 1; color: white; text-align: center; padding: 2rem;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+          <h3 style="text-align:center; margin-top:4rem; margin-bottom:20px; color: var(--white);">
+            Let’s Work Together
+          </h3>
 
-  <!-- Footer Links Section -->
-  <div class="footer-links" style="margin-bottom: 2rem;">
-    <a href="about-me.html" target="_blank" class="case-button" 
-       style="background: var(--white); color: var(--secondary); padding: 0.6rem 1rem; border-radius: 4px; 
-              text-decoration: none; font-size: 14px; max-width: 200px;">
-      About Me ↗
-    </a>
-    <a href="#" onclick="scrollToTop()" class="case-button" 
-       style="background: none; color: var(--primary); padding: 0.6rem 1rem; border-radius: 4px; 
-              text-decoration: none; font-size: 14px; max-width: 200px;">
-      Go to Top ↑
-    </a>
-  </div>
+          <p style="max-width:60%; margin: 0 0 2rem 0; color: var(--white);">
+            Get in touch with me at karthikaravindj@gmail.com or connect on LinkedIn at <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" 
+              style="color: var(--white); text-decoration: underline;">Karthik Jambunathan</a>
+          </p>
 
-  <!-- Contact Info Section -->
-  <p style="color: var(--white); line-height: 1.6; margin-bottom: 1rem;">
-    <strong>Write to me:</strong> karthikaravindj@gmail.com &emsp;
-    <strong>Connect on LinkedIn:</strong>
-    <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" 
-       style="color: var(--white); text-decoration: underline;">Karthik Jambunathan</a>
-  </p>
+      </div>
+    <div class="footer-links" style="gap:1rem; margin-bottom: 2rem;"> 
+      <button class="contact-btn" onclick="window.open('about-me.html', '_blank');" onmouseover="this.style.borderColor='var(--green)'; "
+                onmouseout="this.style.borderColor='var(--grey3)'; "
+                style="color:var(--white); border:1px solid var(--grey3); padding:1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+        About Me
+      </button>
+  
+      <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--green)'; "
+                onmouseout="this.style.borderColor='var(--grey3)'; "
+                style="color:var(--white); border:1px solid var(--grey3); padding:1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+        View Work
+      </button>
 
-  <!-- Footer Credits Section -->
-  <p style="color: var(--white); margin-bottom: 1rem;">
-    Website created using HTML and hosted on my GitHub repo.
-  </p>
+      <a href="#" onclick="scrollToTop()"  class="contact-btn" onmouseover="this.style.borderColor='var(--green)'; "
+                onmouseout="this.style.borderColor='var(--grey3)'; "
+                style="color:var(--black2); border:1px solid var(--grey3); padding:1rem; cursor: pointer; background: rgb(255, 255, 255); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+        Scroll To Top
+      </a>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+      <p style="font-size:14px; color: var(--white);">
+        Website created using HTML and hosted on my GitHub repo.
+        <strong>© Karthik Jambunathan 2025. All rights reserved.</strong>
+          Everything on this site was created by me. (Some representational images were created using Leonardo.AI). 
+          <br>Please do not reuse, copy, or share any part of it without written permission. I take misuse seriously and will act if needed.
+      </p>
 
-  <!-- Copyright Section -->
-  <p style="color: var(--white);">
-    <strong>© Karthik Jambunathan 2025. All rights reserved.</strong> Everything on this site was created by moi 
-    (Some representational images were created using Leonardo.AI). 
-    <br>Please do not reuse, copy, or share any part of it without written permission. I take misuse seriously and will act if needed.
-  </p>
-
-  <!-- Disclaimer Section -->
-  <p style="color: var(--white); font-style: italic;">
-    (In short: don't take stuff from here unless I say it's okay.)
-  </p>
+      <!-- Disclaimer Section -->
+      <p style="font-size:14px; color: var(--white); font-style: italic;">
+          (In short: don't take stuff from here unless I say it's okay.)
+      </p>
+    </div>
 
   <!-- Scroll to Top Function -->
   <script>
