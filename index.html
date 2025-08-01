@@ -16,20 +16,25 @@
   <script src="script.js" defer></script>
 </head>
 
-<body>  
+<body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">  
 
   <!-- Header Placeholder -->
   <div id="header-placeholder"></div>
 
   <!-- Hero Section -->
-  <section class="hero" style="background: var(--black2); padding: 4rem;">
+  <section class="hero" style="background:none; padding: 2rem 2rem 3rem 2rem;">
     <div class="hero-text" style="text-align: left;">
       <div class="container">
         <h6 class="fade-slide-up" style="opacity: 0; color: var(--white); margin-bottom: 20px;">You get Solutions, not just Design.</h6>
         <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(75deg, #F6BD60, #ffedd4); -webkit-background-clip: text; color: transparent; margin: 0px; padding-right: 5rem;">
           Toronto-based Researcher/Solutions Designer who solves complex challenges for organisations by creating adaptable and impactful digital experiences.
         </h3>
-        
+        <p class="fade-slide-up" style="color: var(--white); opacity: 0; animation-delay: 0.4s;">
+          Choosing Karthik means Choosing Bold, Effective Solutions that make a Difference.
+        </p>
+        <a href="#websitework" class="scroll-button" style="font-size: 20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+          Scroll down to see my work in action 🡻
+        </a>
         <!-- Mobile Responsive Styling -->
         <style>
           @media (max-width: 768px) {
@@ -37,15 +42,11 @@
               font-size: 24px !important;
               padding-right: 0.5rem !important;
             }
+            a {
+              display: none !important;
+            }
           }
         </style>
-
-        <p class="fade-slide-up" style="color: var(--white); opacity: 0; animation-delay: 0.4s;">
-          Choosing Karthik means Choosing Bold, Effective Solutions that make a Difference.
-        </p>
-        <a href="#websitework" class="scroll-button" style="font-size: 20px; padding-right: 0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-          Scroll down to see my work in action 🡻
-        </a>
       </div>
     </div>
 
@@ -59,18 +60,18 @@
   </section>
 
   <!-- ECE Website Work Section -->
-  <section class="ece-section" id="websitework" style="background: var(--black2); padding-left: 4rem; padding-top: 2rem; padding-bottom: 3rem; padding-right: 4rem; min-height:100vh;">
-      <h4 style="font-weight:bold; margin-top:0px; margin-bottom:20px; padding-right:5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.2s;">
+  <section class="ece-section" id="websitework" style="padding: 2rem 2rem 3rem 2rem; min-height:100vh;">
+      <h3 style="font-weight:bold; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.2s;">
         My Impact
-      </h4>
+      </h3>
 
 
-  <p style="margin: 0 0 20px 0; color: var(--white);   opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.4s;">
+  <p style="color: var(--white); opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.4s;">
     I’ve consistently brought UX thinking and digital innovation to fields that don’t usually ask for it: from film production to local business outreach. <br><br>
     I help directors and producers sharpen their vision through pitch decks and film bibles that win funding. I support founders and teams with smart, short-term digital media campaigns, AND teach them how to keep things running. My strength lies in making digital tools work in places where they’re often overlooked.
   </p>
   
-  <div class="stats-summary-container" style="border: 1px solid rgba(255, 255, 255, 0.05);   opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.6s;">
+  <div class="stats-summary-container" style="opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.6s;">
     <!-- Projects Delivered -->
     <div class="stats-summary-block">
       <h4>Projects Delivered</h4>
@@ -107,59 +108,109 @@
   </div>
 </div>
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;   opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.8s;">
-  <h3 style="text-align:center; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+<div style="padding-top:2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.8s;">
+  <h3 style="text-align:center; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
     Explore How I Bring Value Across Key Roles
   </h3>
 
-  <p style="max-width:60%; margin: 0 0 2rem 0; color: var(--white);">
-   Whether you’re interested in my UX design skills, analytical approach, research expertise, or solutions-driven mindset, each section offers a quick but comprehensive look at what makes me a strong candidate.  
+  <p style="max-width:60%; color: var(--white);">
+   Whether you’re interested in my UX design skills, analytical approach, research expertise, or solutions-driven mindset, each section below offers a quick but comprehensive look at what makes me a strong candidate.  
   </p>
 
-  <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 6rem; flex-wrap: wrap;">
-        <a href="#benefits" class="scroll-button" style="font-size: 20px; padding-right: 0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-          Scroll down to see what I have to offer 🡻
-        </a>
-        
-        <button class="contact-btn" onclick="window.open('work.html', '_blank');"
-      onmouseover="this.style.borderColor='var(--white)';"
-      onmouseout="this.style.borderColor='var(--grey3)';"
-      style="border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-        View All Case Studies Here
-    </button>
+  <style>
+    @media (max-width: 768px) {
+      h3 {
+          font-size: 24px !important;
+          padding-right: 0.5rem !important;
+      }
+            
+      p {
+          max-width:100% !important;
+      }
+    }
+  </style>
 
-    <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');"
-      onmouseover="this.style.borderColor='var(--white)';"
-      onmouseout="this.style.borderColor='var(--grey3)';"
-      style="border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-      View UI Design collection
-    </button>
+  <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="#benefits" class="scroll-button" style="font-size: 20px; padding-right: 0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+          What I deliver 🡻
+        </a>
   </div>
+
+  <style>
+    @media (max-width: 768px) {
+      a {
+        display:none !important;
+      }
+    }
+  </style>
 
 </div>
 
 </section>
 
-<section class="ece-section"  id="benefits" style="background: var(--black2); padding-left: 4rem; padding-top: 2rem; padding-bottom: 3rem; padding-right: 4rem;">
+<section class="ece-section"  id="benefits" style="padding: 2rem 2rem 3rem 2rem; ">
+
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin-bottom:2rem; ">
+  <h3 style="text-align:center; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+    What I Deliver
+  </h3>
+
+  <button class="contact-btn" onclick="window.open('work.html', '_blank');"
+      onmouseover="this.style.borderColor='var(--white)';"
+      onmouseout="this.style.borderColor='var(--grey3)';"
+      style="border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+        View All Case Studies Here
+  </button>
+
+  <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');"
+      onmouseover="this.style.borderColor='var(--white)';"
+      onmouseout="this.style.borderColor='var(--grey3)';"
+      style="border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+      View UI Design collection
+  </button>
+
+  <style>
+    @media (max-width: 768px) {
+      h3 {
+          font-size: 24px !important;
+          padding-right: 0.5rem !important;
+      }
+    }
+  </style>
+
+</div>
 
 <!-- Outer Div with Glass Background -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 6rem;">
+<div style="height:100vh; display: flex; flex-wrap: wrap; gap: 2rem;">
 
   <!-- Left Column: Text Content (No Glassmorphism) -->
-  <div style="flex: 1 1 60%; padding: 2rem; border-radius: 16px;">
+  <div style="flex: 1 1 60%; border-radius: 16px;">
     <h5 style="font-weight: bold; margin-top: 0px; margin-bottom: 20px; padding-right: 5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
       You get Creative Ideas
     </h5>
     <!-- How I Design Section -->
-    <p style="margin: 0 0 20px 0; color: var(--white);">
+    <p style="color: var(--white);">
       <strong>What I do?</strong><br><br> I synthesize user insight, analytics, and creative experimentation to drive concepts that work in the real world.
       My process blends data with rapid ideation and iteration.
     </p>
 
     <!-- Why I'm Right for This Role Section -->
-    <p style="margin: 0 0 20px 0; color: var(--white); padding-top:30px;">
+    <p style="color: var(--white);">
       <strong>How I do it:</strong><br><br> I turn creativity into measurable success by evaluating what works and why, ensuring bold ideas deliver results.
     </p>
+
+    <a href="#insights" class="scroll-button" style="font-size: 20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      My Ideas are supported by Insights 🡻
+    </a>
+
+  <style>
+    @media (max-width: 768px) {
+      a {
+          display:none !important;
+      }
+    }
+  </style>
+
   </div>
 
 
@@ -196,22 +247,35 @@
 </div>
 
 <!-- Outer Div with Glass Background -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+<div id="insights" style="height:100vh; display: flex; flex-wrap: wrap; margin-top: 2rem;">
 
   <!-- Left Column: Text Content (No Glassmorphism) -->
-  <div style="flex: 1 1 45%; padding: 2rem; border-radius: 16px;">
-    <h5 style="font-weight: bold; margin-top: 0px; margin-bottom: 20px; padding-right: 5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+  <div style="flex: 1 1 45%; border-radius: 16px;">
+    <h5 style="font-weight: bold; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
       You get Insights that are Actionable
     </h5>
     <!-- How I Design Section -->
-    <p style="margin: 0 0 20px 0; color: var(--white);">
+    <p style="color: var(--white);">
       <strong>What I do?</strong> <br><br>Skilled at uncovering user pain points and translating insights into actionable recommendations, I use methods like interviews, usability testing, and journey mapping to drive change.
     </p>
 
     <!-- Why I'm Right for This Role Section -->
-    <p style="margin: 0 0 20px 0; color: var(--white); padding-top:30px;">
+    <p style="color: var(--white);">
       <strong>And you get?</strong><br><br>You get data that is meaningful for teams to act upon.
     </p>
+
+    <a href="#results" class="scroll-button" style="font-size: 20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      And My Insights lead to 🡻
+    </a>
+
+    <style>
+    @media (max-width: 768px) {
+      a {
+          display:none !important;
+      }
+    }
+    </style>
+
   </div>
 
   <!-- Grid Wrapper -->
@@ -288,21 +352,22 @@
 
 </div>
 
+<div style="padding:1rem;"></div>
 <!-- Outer Div with Glass Background -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+<div style="height:100vh; display: flex; flex-wrap: wrap;" id="results">
 
   <!-- Left Column: Text Content (No Glassmorphism) -->
-    <div style="flex: 1 1 100%; padding: 2rem; border-radius: 16px;">
-        <h5 style="font-weight: bold; margin-top: 0px; margin-bottom: 20px; padding-right: 5rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+    <div style="flex: 1 1 100%; border-radius: 16px;">
+        <h5 style="font-weight: bold; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
           You Get Research-Driven, Full-Lifecycle Design
         </h5>
         <!-- How I Design Section -->
-          <p style="margin: 0 0 20px 0; color: var(--white);">
+          <p style="color: var(--white);">
             <strong>What I do?</strong><br><br> I help projects succeed by using research, clear user flows, and your business goals to build simple, easy-to-use solutions. From planning new workflows to redesigning old websites, my work is shaped by what real users need and what helps your business.
           </p>
 
         <!-- Why I'm Right for This Role Section -->
-          <p style="margin: 0 0 20px 0; color: var(--white); padding-top:30px;">
+          <p style="color: var(--white); padding-top:30px;">
             <strong>Why Me?</strong><br><br> I am able to bridge cross-functional teams and solve complex challenges that ensure outcomes that last.
           </p>
     </div>
@@ -357,8 +422,6 @@
   </div>
      
 </div>
-
-
 <style>
 
 /* Default Flexbox Layout (3 items per row) */
@@ -394,8 +457,20 @@
 </style>
 </section>
 
+<div style="padding:2rem;"></div>
+
 <div id="footer-placeholder"></div>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.main-nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+});
+</script>
 <script>
   // Tabs functionality
   const tabs = document.querySelectorAll(".tab-1906");

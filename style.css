@@ -855,8 +855,6 @@ p {
 footer {
   text-align: center;
   padding: 3rem;
-  background: var(--white);
-  border-top: 1px solid var(--grey1);
 }
 
 .footer-links a {
