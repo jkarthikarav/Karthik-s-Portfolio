@@ -6,9 +6,8 @@
   <title>UI Design Collection</title>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="script.js" defer></script>
+
+<script src="script.js"></script>
 </head>
 <body>
 
@@ -121,28 +120,6 @@
 
 <div id="footer-placeholder"></div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const grid = document.querySelector('.masonry-grid');
-
-  if (grid) {
-    console.log("Masonry grid found");
-
-    imagesLoaded(grid, function () {
-      console.log("Images loaded — initializing Masonry");
-
-      new Masonry(grid, {
-        itemSelector: '.masonry-item',
-        columnWidth: '.grid-sizer',
-        gutter: 0,
-        percentPosition: true
-      });
-    });
-  } else {
-    console.warn("No masonry grid found");
-  }
-});
-</script>
 
 <script>
     fetch('footer.html')
