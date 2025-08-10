@@ -1,57 +1,68 @@
-<footer style="padding: 2rem 0; position: relative; width: 100%; background: url('images/ai/BG.webp') center/cover no-repeat;">
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.2);"></div>
-    <!-- Optional: Content on top -->
-    <div style="position: relative; z-index: 1; color: white; text-align: center; padding: 2rem;">
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-          <h3 style="text-align:center; margin-top:4rem; margin-bottom:20px; color: var(--white);">
-            Let’s Work Together
-          </h3>
+<footer style="
+  height: 100vh; 
+  padding: 2rem; 
+  position: relative; 
+  background: url('images/ai/BG.webp') center/cover no-repeat; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+  text-align: center;
+">
+  <!-- Background overlay -->
+  <div style="
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  "></div>
 
-          <p style="max-width:60%; margin: 0 0 2rem 0; color: var(--white);">
-            Get in touch with me at karthikaravindj@gmail.com or connect on LinkedIn at <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" 
-              style="color: var(--white); text-decoration: underline;">Karthik Jambunathan</a>
-          </p>
+  <!-- Content on top -->
+  <div style="position: relative; z-index: 1; color: white; max-width: 800px; width: 100%;">
+    <h3 style="margin-bottom: 20px; color: var(--white);">Let’s Work Together</h3>
 
-      </div>
-    <div class="footer-links" style="gap:2rem; margin-bottom: 2rem;"> 
-      <button class="contact-btn" onclick="window.open('about-me.html', '_blank');" onmouseover="this.style.borderColor='var(--green)'; "
-                onmouseout="this.style.borderColor='var(--grey3)'; "
-                style="color:var(--white); border:1px solid var(--grey3); padding:1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+    <p style="max-width: 60%; margin: 0 auto 2rem auto; color: var(--white);">
+      Get in touch with me at <a href="mailto:karthikaravindj@gmail.com" style="color: var(--white); text-decoration: underline;">karthikaravindj@gmail.com</a> 
+      or connect on LinkedIn at <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" style="color: var(--white); text-decoration: underline;">Karthik Jambunathan</a>
+    </p>
+
+    <!-- Buttons -->
+    <div class="footer-links" style="gap: 2rem; margin-bottom: 2rem; display: flex; justify-content: center; flex-wrap: wrap;"> 
+      <button class="contact-btn" onclick="window.open('about-me.html', '_blank');"
+        style="color: var(--white); border: 1px solid var(--grey3); padding: 1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); border-radius: 16px;">
         About Me
       </button>
-  
-      <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--green)'; "
-                onmouseout="this.style.borderColor='var(--grey3)'; "
-                style="color:var(--white); border:1px solid var(--grey3); padding:1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+
+      <button class="contact-btn" onclick="window.open('work.html', '_blank');"
+        style="color: var(--white); border: 1px solid var(--grey3); padding: 1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); border-radius: 16px;">
         View Work
       </button>
 
-      <a href="#" onclick="scrollToTop()"  class="contact-btn" onmouseover="this.style.borderColor='var(--green)'; "
-                onmouseout="this.style.borderColor='var(--grey3)'; "
-                style="color:var(--black2); border:1px solid var(--grey3); padding:1rem; cursor: pointer; background: rgb(255, 255, 255); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+      <a href="#" onclick="scrollToTop()" 
+        style="color: var(--black2); border: 1px solid var(--grey3); padding: 1rem; cursor: pointer; background: white; border-radius: 16px;">
         Scroll To Top
       </a>
     </div>
-    
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-      <p style="font-size:14px; color: var(--white);">
-        Website created using HTML and hosted on my GitHub repo.
-        <strong>© Karthik Jambunathan 2025. All rights reserved.</strong>
-          Everything on this site was created by me. (Some representational images were created using Leonardo.AI). 
-          <br>Please do not reuse, copy, or share any part of it without written permission. I take misuse seriously and will act if needed.
-      </p>
 
-      <!-- Disclaimer Section -->
-      <p style="font-size:14px; color: var(--white); font-style: italic;">
-          (In short: don't take stuff from here unless I say it's okay.)
-      </p>
-    </div>
+    <!-- Footer Text -->
+    <p style="font-size: 14px; color: var(--white);">
+      Website created using HTML and hosted on my GitHub repo.<br>
+      <strong>© Karthik Jambunathan 2025. All rights reserved.</strong><br>
+      Everything on this site was created by me. (Some representational images were created using Leonardo.AI). 
+      <br>Please do not reuse, copy, or share any part of it without written permission.
+    </p>
 
-  <!-- Scroll to Top Function -->
+    <p style="font-size: 14px; color: var(--white); font-style: italic;">
+      (In short: don't take stuff from here unless I say it's okay.)
+    </p>
+  </div>
+
   <script>
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-
 </footer>
