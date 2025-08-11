@@ -12,493 +12,410 @@
 
 <div id="header-placeholder"></div>
 
-<section class="hero" style="background:linear-gradient(to bottom, var(--black2), var(--black)); padding: 4rem 2rem 6rem 2rem;">
-  <div class="hero-text" style="text-align:left;">
-    <div class="container">
-      <h6 class="fade-slide-up" style="opacity: 0; color:#F6BD60; margin-bottom:20px;">Turning an academic homepage into a student recruitment portal</h6>
+<section style="
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url('images/ai/ece.webp') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+">
 
-      <h3 class="fade-slide-up" style="opacity: 0; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;  margin-bottom:20px; padding-right:5rem;">
-        ECE Homepage Redesign
-      </h3>
+  <!-- Black overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  "></div>
 
-<a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color:#FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-  Read Case Study ↓
+  <!-- Frosted glass card with content (HDFC style) -->
+  <div class="fade-slide-up" style="
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    margin: 3rem;
+    padding: 2rem;
+    max-width: 720px;
+    width: 90%;
+    color: white;
+    text-align: left;
+  ">
+    <h6 style="color: #F6BD60; margin-top: 0; margin-bottom: 20px; font-weight:700;">
+      Turning an academic homepage into a student recruitment portal
+    </h6>
+
+    <h3 style="
+      background: linear-gradient(45deg, #F6BD60, #FFD59A);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-right: 5rem;
+      font-size: 2rem;
+    ">
+      ECE Homepage Redesign
+    </h3>
+
+    <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color:#FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
+      Read Case Study ↓
+    </a>
+  </div>
+
+  <!-- Responsive Grid of Info Cards (HDFC style, with ECE info) -->
+<div class="fade-slide-up" id="info-grid" style="
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    width: 90%;
+    max-width: 1000px;
+    padding: 1rem 2rem;
+  ">
+
+  <div class="info-card">
+    <button onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="
+      color: var(--secondary);
+      width: 100%;
+      background: linear-gradient(45deg, #F6BD60, #FFD59A);
+      border-radius: 16px;
+      padding: 1.5rem 0;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+    ">
+      Visit Live Site
+    </button>
+  </div>
+
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Domain</p>
+  <p style="color: var(--white); margin: 0;">Education</p>
+</div>
+
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Role</p>
+  <p style="color: var(--white); margin: 0;">UX/UI and Front End</p>
+</div>
+
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Duration</p>
+  <p style="color: var(--white); margin: 0;">Jan – Mar 2025</p>
+</div>
+
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Deliverables</p>
+  <p style="color: var(--white); margin: 0;">Mockups + WordPress Dev</p>
+</div>
+
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Tools</p>
+  <p style="color: var(--white); margin: 0;">Figma, WordPress</p>
+</div>
+
+
+  <style>
+    .info-card {
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 0.75rem;
+      min-height: 72px;
+    }
+
+    @media (max-width: 768px) {
+      #info-grid {
+        display: block;
+      }
+      .info-card {
+        margin-bottom: 0.75rem;
+      }
+    }
+  </style>
+
+</section>
+  
+
+<section id="context" style="
+  background-color: var(--black2);
+  color: var(--white);
+  padding: 3rem 2rem;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  gap: 3rem;
+">
+
+  <!-- Title Section -->
+  <div style="max-width:60vw;">
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Project Context</h4>
+    <p style="color: var(--white);">The Electrical & Computer Engineering (ECE) department at U of T needed to transform their academic homepage into a recruitment tool for prospective students, without losing rigorous compliance to cross-departmental brand standards. The challenge: content wasn’t lacking, but clarity, visual hierarchy, and navigation needed a fundamental rethink. Departmental identity and student-focused storytelling had to be balanced within tight stakeholder constraints.</p>
+    
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Goals</h6>
+    <p style="color: var(--white);">
+      1. Reimagine the homepage as a digital ambassador to attract prospective students<br>
+
+      2. Improve clarity, navigation, and access to key info<br>
+
+      3. Align and Ensure visual design and layout with Faculty of Applied Science & Engineering (FASE) web visual standards as well as the University of Toronto brand guidelines<br>
+
+      4. Support a range of stakeholder needs; from students to faculty and industry partners<br><br>
+      Before we delve into the case study, here's what the page looked like before I worked on it.
+    </p>
+    <style>
+      @media (max-width: 1024px) {
+        .div {
+          width: 100vw;
+        }
+      }
+    </style>
+
+    <button class="case-button-new" onclick="window.open('images/webp/ece-old-homepage.webp', '_blank');" style=" width:300px; cursor: pointer; margin-bottom: 20px;">
+        View Legacy Home Page
+    </button>
+
+
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Key Challenges</h6>
+
+    <div class="responsive-table">
+      <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+      <thead>
+      <tr style="background-color: var(--black);">
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Issue</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Legacy State</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Impact</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Outdated Visuals</td>
+        <td style="padding: 1rem; color: var(--white);">Relied on static, non-student-focused images</td>
+        <td style="padding: 1rem; color: var(--white);">Weak first impression for prospective students</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Content Overload</td>
+        <td style="padding: 1rem; color: var(--white);">Dense, text-heavy layout</td>
+        <td style="padding: 1rem; color: var(--white);">Key info buried, increased cognitive load</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Poor Navigation</td>
+        <td style="padding: 1rem; color: var(--white);">Inconsistent quick-links and CTAs</td>
+        <td style="padding: 1rem; color: var(--white);">Users struggled to find programs, events, research</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Inconsistent Branding</td>
+        <td style="padding: 1rem; color: var(--white);">Style drift from FASE guidelines</td>
+        <td style="padding: 1rem; color: var(--white);">Website felt disjointed from faculty identity</td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Process</h4>
+
+    <div id="icon-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); 
+              box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); 
+              border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; 
+              display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+      1. Design Audit & Research
+    </p>
+    <p style="color: var(--white); margin-top: 0;">
+      Assessed competing FASE faculty sites and leading global engineering portals<br><br>
+      Mapped gaps: missing CTAs, unclear section hierarchy, outdated hero imagery
+    </p>
+    </div>
+
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); 
+              box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); 
+              border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; 
+              display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+      2. Wireframes & Mockups
+    </p>
+    <p style="color: var(--white); margin-top: 0;">
+      Built wireframes in Figma to clarify info architecture and streamline page structure<br><br>
+      Visual hierarchy focused on what prospective students search for first
+    </p>
+    </div>
+
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); 
+              box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); 
+              border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; 
+              display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+      3. Stakeholder & Peer Iteration
+    </p>
+    <p style="color: var(--white); margin-top: 0;">
+      Presented concepts for department leadership and student ambassadors<br><br>
+      Iterated based on feedback from academic admin, researchers, and staff
+    </p>
+    </div>
+
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); 
+              box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); 
+              border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; 
+              display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+      4. WordPress Development
+    </p>
+    <p style="color: var(--white); margin-top: 0;">
+      Handled front-end implementation, ensuring responsive, fast-loading, and modular section design<br><br>
+      Deployed content and built reusable components for future campaign pivots
+    </p>
+    </div>
+
+    </div>
+
+	  <H6 style="text-align:left; margin-bottom: 1rem;">Existing Hero Banner Practices</H5>
+    <div class="ux-snippet" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; justify-items: center; align-items: start; margin-top: 10px; margin-bottom: 20px;">
+      <img src="images/webp/fase.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/fase.webp')" />
+      <img src="images/webp/CIVMIN.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/CIVMIN.webp')" />
+      <img src="images/webp/MIE.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/MIE.webp')" />
+    </div>
+
+		<H6 style="text-align:left; margin-bottom: 1rem;">UI Element Ideation</H5>
+		<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; justify-items: center; align-items: start; margin-top: 1rem; margin-bottom: 2rem;">
+			<img src="images/webp/HEAR.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/HEAR.webp')" />
+			<img src="images/webp/HEAR (1).webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/HEAR (1).webp')" />
+			<img src="images/webp/BANNER-1.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/BANNER-1.webp')" />
+			<img src="images/webp/STATS.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/STATS.webp')" />
+			<img src="images/webp/TABS.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/TABS.webp')" />
+		</div>
+					
+    <!-- Modal -->
+		<div id="imageModal" class="modal-mrs" onclick="closeModal()">
+			<img id="modalImage" class="modal-image-mrs">
+		</div> 
+		
+  </div>
+</section>
+
+<section style="background-color: var(--black); padding: 3rem 2rem 6rem 3rem;">
+
+  <div style="align-items: center; display: flex; flex-direction: column;">
+<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Final Design Concept</h4>
+<div class="responsive-table" style="overflow-x:auto; margin-bottom: 3rem;">
+  <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+    <thead>
+      <tr style="background-color: var(--black);">
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Problem Area</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Redesign Move</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Outcome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Hero Banner</td>
+        <td style="padding: 1rem; color: var(--white);">Crafted bold, human-centric banner using ECE’s slogan and real department visuals</td>
+        <td style="padding: 1rem; color: var(--white);">Immediate engagement and identity clarity</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Quick Links</td>
+        <td style="padding: 1rem; color: var(--white);">Created visually grouped, mobile-friendly calls to action</td>
+        <td style="padding: 1rem; color: var(--white);">Reduced confusion, accelerated task completion</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Programs/Events</td>
+        <td style="padding: 1rem; color: var(--white);">Prioritized with modular cards, stats, and visual blocks</td>
+        <td style="padding: 1rem; color: var(--white);">Prospects can quickly compare offerings &amp; see “what's happening”</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Research &amp; Co‑op</td>
+        <td style="padding: 1rem; color: var(--white);">Added spotlight cards and up-to-date stats</td>
+        <td style="padding: 1rem; color: var(--white);">Students/partners see clear value and opportunity</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--primary); font-weight: bold;">Visual/Brand</td>
+        <td style="padding: 1rem; color: var(--white);">Applied FASE color, grid, and typography standards throughout</td>
+        <td style="padding: 1rem; color: var(--white);">Consistent, trust-building look &amp; feel</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<a href="images/webp/ECEH.webp" target="_blank" rel="noopener noreferrer">
+  <img src="images/webp/ECEHFCROPPED.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" />
 </a>
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; gap: 1rem; padding: 1rem 0;">
 
-  <!-- Link -->
-  <button onclick="window.open('https://www.ece.utoronto.ca/', '_blank');"
-    class="case-button-new"
-    style="color:var(--secondary); flex: 1; background: linear-gradient(45deg, #F6BD60, #FFD59A); border-radius: 16px; padding: 2rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.4s; opacity: 0;">
-    Visit Live Site
-  </button>
+<h6 style="color: var(--primary); margin-bottom:1rem;">Before Redesign versus After Web Redesign and Development</h6>
 
-  <!-- Role -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.6s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Domain</span><br>
-      Education
-    </h6>
-  </div>
-
-  <!-- Role -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 2.8s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Role</span><br>
-      UX/UI and Front End
-    </h6>
-  </div>
-
-  <!-- Duration -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.0s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Duration</span><br>
-      Jan – Mar 2025
-    </h6>
-  </div>
-
-  <!-- Deliverables -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.2s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Deliverables</span><br>
-      Mockups + WordPress Dev
-    </h6>
-  </div>
-
-  <!-- Tools -->
-  <div style="flex: 1; border: 2px solid var(--secondary); border-radius: 16px; background: var(--white); padding: 1rem; animation: fadeSlideUp 0.8s ease-out forwards; animation-delay: 3.4s; opacity: 0;">
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); text-align: center;">
-      <span style="color:var(--secondary); font-weight:800;">Tools</span><br>
-      Figma, WordPress
-    </h6>
-  </div>
-
+<div class="responsive-table" style="overflow-x:auto;">
+  <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+    <thead>
+      <tr style="background-color: var(--black);">
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Legacy Homepage</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Redesigned Homepage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--white);">Generic hero image, academic jargon headlines</td>
+        <td style="padding: 1rem; color: var(--white);">Inviting banner and department slogan</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--white);">Long paragraphs, minimal visual breaks</td>
+        <td style="padding: 1rem; color: var(--white);">Short blurbs, visual dividers, section cards</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--white);">Small/unreadable quick links in dense lists</td>
+        <td style="padding: 1rem; color: var(--white);">Large, color-coded buttons and links to most-visited content</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--white);">Limited research/co-op visibility</td>
+        <td style="padding: 1rem; color: var(--white);">Stats, stories, and highlights up front</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem; color: var(--white);">Inconsistent layout on mobile</td>
+        <td style="padding: 1rem; color: var(--white);">Fully responsive with modular blocks</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
-<article style="background: var(--white); margin-top:2rem;">
-
-    <img class="fade-slide-up" src="images/webp/ECE_Home_mockup.webp" alt="ECE Home Page Mockup" style="width: 100%; height: auto; object-fit: cover;">
-
-</article>
-
-  </div>
 
 </div>
 </section>
 
-<section style="padding:6rem; background:var(--black);">
+<section style="position: relative; padding: 4rem 2rem; background: url('images/ai/ece.webp') no-repeat center center; background-size: cover;">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5);"></div> <!-- Black overlay -->
 
-<h1 style="display: block; width: 100%; text-align: center; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">ECE HOME PAGE</h1>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 1rem; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
+    <!-- Glassmorphic Text Column -->
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+      <h4 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h4>
+      <p style="color: var(--white); margin-bottom: 2rem;">
+        The ECE Homepage Redesign turned a dense academic site into a clear, student‑focused recruitment tool. Guided by research, competitive benchmarking, and stakeholder input, the final design improves navigation, aligns with faculty branding, and highlights programs and events in just a few scrolls. The result is a responsive, modular homepage that strengthens trust, reflects departmental excellence, and supports future recruitment efforts.
+      </p>
 
-</section>
-
-
-<section class="process-section" style="padding: 2rem;" id="context">
-
-    <!-- Row 1: Description and Project Aim -->
-    <div>
-      <h6 style="text-align:left; scolor: var(--grey3); margin-bottom: 20px;">
-        <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          Project Goals</span><br><br>
-	Prospective students have questions. However, answers aren't always easy to find. <br>At the same time, We had a strong story to tell: one of innovation, opportunity, and research excellence.
-      </h6>
-
-      <h5 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin: 5px;">
-        It wasn’t a lack of content.
-      </h5>
-
-      <h6 style="color: var(--grey3); margin-top: 15px;">
-        That’s when it became clear: This wasn’t just a redesign.
-        <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          It was a chance to reframe how the department welcomed future students.</span><br><br>
-        This project aimed to transform the University of Toronto’s Electrical & Computer Engineering (ECE) department homepage into a compelling, student-focused digital experience.
-      </h6>
-
-      <button class="case-button-new" onclick="window.open('images/webp/ece-old-homepage.webp', '_blank');" style=" width:300px; cursor: pointer; margin-bottom: 20px;">
-        View Legacy Home Page
-      </button>
-    </div>
-
-    <!-- Row 2: Mini div of two columns -->
-    <div style="display: flex; flex-direction: row; gap: 1rem;">
-
-      <!-- Column 1: Traditional Academic Websites -->
-      <div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-        <div style="border: 2px solid #6E0F28; background: var(--white); padding: 0.5rem; flex: 1;">
-          <h6 style="text-align: center; margin: 0; color: #6E0F28; padding: 1rem;">
-            Traditional Academic Websites
-          </h6>
-          <hr style="border: none; border-top: 1px solid var(--grey1);" />
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="font-size:24px; color:var(--black);">Well-intentioned, Content-rich</span><br>
-            but often hard to navigate
-          </h6>
-          <hr style="border: none; border-top: 1px solid var(--grey1);" />
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-            <span style="color:#6E0F28; font-weight:800;">1</span> Help Recruit Prospective Students
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-            <span style="color:#6E0F28; font-weight:800;">2</span> Be an Access Portal
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-            <span style="color:#6E0F28; font-weight:800;">3</span> Be Representative
-          </h6>
-        </div>
-      </div>
-
-      <!-- Column 2: Challenges -->
-      <div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-        <div style="border: 2px solid #B7375B; background: var(--white); padding: 0.5rem; flex: 1;">
-          <h6 style="text-align:center; margin: 0; color: #B7375B; padding:1rem;">
-            Challenges
-          </h6>
-          <hr style="border: none; border-top: 1px solid var(--grey1);" />
-
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-            <span style="font-size:24px; color:var(--black);">Surface Key Gaps in the Existing Page</span><br>
-            Outdated visuals, vague research info, no co-op details, and low event visibility.
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-            <span style="font-size:24px; color:var(--black);">Design for Visual Clarity and Action</span><br>
-            Text-heavy layout with few visual cues or CTAs to guide users.
-          </h6>
-          <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-            <span style="font-size:24px; color:var(--black);">Align with U of T’s Brand Standards</span><br>
-            Inconsistent application of U of T guidelines compared to other FASE departments.
-          </h6>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Region 2: 80% width column -->
-  <div>
-
-	    <!-- Row 1: Description and Project Aim -->
-
-	    <div style="display: flex; flex-direction: column; align-items: left; justify-content: center; margin-top: 0; margin-bottom: 5px;">
-	      <h6 style="text-align:left; scolor: var(--grey3); margin-bottom: 20px;">
-        	<span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-          	Design process</span><br><br>
-		The solution wasn’t simply improving layout or updating visuals; it was about fundamentally rethinking the homepage’s structure.
-	      </h6>
-
-	      <h5 style="text-align:left; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 5px; margin-bottom: 5px;">
-		We had to enhance Clarity and Visual Hierarchy.
-	      </h5>
-
-      		<h6 style="text-align:left; color: var(--grey3); margin-top: 15px;">
-      		This meant starting with 
-      		<span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">a comprehensive design audit and competitive research</span>
-      		to pinpoint gaps and identify best practices.<br><br>
-      		From there, <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;"> wireframes and mockups </span>
-      		were created to establish a new direction.
-      		</h6>
-
-    		</div>
-
-     		<h6 style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 2rem; margin-bottom:1rem;">
-       		 Core Design Deliverables & Activities
-      		</h6>
-
-    		<!-- Row 2: Mini div of two columns -->
-    		<div style="display: flex; flex-direction: row; gap: 1rem;">
-
-     			 <!-- Column 1: Traditional Academic Websites -->
-      				<div style="width: 30%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-      					<div> 
-            					<div class="process-box" style="border: 0;">
-      						<h6>Step 1: UX/UI Design</h6>
-      						<p>Tasks such as Design Audit, Competitor research, Wireframes, and High-fidelity Mockups.</p>
-      						      </div>
-      					</div>
-      				</div>
-
-      			<!-- Column 2: Challenges -->
-      				<div style="width: 70%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-
-    					<div class="activities-grid">
-      						<div class="activity-box" style="background-color:var(--white);">
-        						<img src="icons/BrainStorming.png" alt="Brainstorming Icon" class="activity-icon">
-        						<h3 style="color:var(--secondary);">Brainstorming & Ideation</h3>
-        						<p>To Explore multiple layouts + UI ideas and visualize the redesign direction.</p>
-      						</div>
-      						<div class="activity-box" style="background-color:var(--white);">
-        						<img src="icons/Research.png" alt="Research Icon" class="activity-icon">
-        						<h3 style="color:var(--secondary);">Research</h3>
-        						<p>To Benchmark functionality and appeal.</p>
-      						</div>
-      						<div class="activity-box" style="background-color:var(--white);">
-        						<img src="icons/Deliverables.png" alt="Wireframe Icon" class="activity-icon">
-        						<h3 style="color:var(--secondary);">Wireframes & Mockups</h3>
-        						<p>Create high-fidelity designs and visual mockups using Figma.</p>
-      						</div>
-    					</div>
-				</div>
-  		</div>
-
-    		<!-- Row 2: Mini div of two columns -->
-    				<div style="display: flex; flex-direction: row; gap: 1rem;">
-
-      					<!-- Column 1: Traditional Academic Websites -->
-      					<div style="width: 30%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-      						<div> 
-            						<div class="process-box" style="border: 0;">
-      								<h6>Step 2: Website Development</h6>
-      								<p>Tasks such as Developing using WordPress + Apply UI Element Animations, and Check Responsiveness.</p>
-      						        </div>
-      						</div>
-      					</div>
-
-
-      					<!-- Column 2: Challenges -->
-      					<div style="width: 70%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-
-    						<div class="activities-grid">
-      							<div class="activity-box" style="background-color:var(--white);">
-        							<img src="icons/BrainStorming.png" alt="Brainstorming Icon" class="activity-icon">
-        							<h3 style="color:var(--secondary);">Website Building</h3>
-        							<p>Designing/Developing the Webpage on the CMS.</p>
-      							</div>
-      							<div class="activity-box" style="background-color:var(--white);">
-        							<img src="icons/Research.png" alt="Research Icon" class="activity-icon">
-        							<h3 style="color:var(--secondary);">Interaction Design</h3>
-        							<p>Animating the sections.</p>
-      							</div>
-      							<div class="activity-box" style="box-shadow: none; background-color:var(--white);">
-
-
-      							</div>
-    						</div>
-
-
-        			</div>
-      </div>
-
-
-					<div class="design-table-wrapper">
-        					<p class="section-title" style="font-size:24px;text-align:left; margin-top:1.5rem;margin-bottom: 1rem; color:var(--secondary);">Design Audit</p>
-        					<div style="height: 1px; background-color: var(--grey2); width: 100%; margin-top: 1rem; margin-bottom:10px;"></div>
-        					<div class="responsive-table">
-          						<table>
-            							<thead>
-              							<tr>
-									<th>Design Elements</th>
-							                <th>Purpose of Element</th>
-							                <th>Already Exists?</th>
-							                <th>Redesign Needed?</th>
-							                <th>Narrative Order</th>
-							              </tr>
-							            </thead>
-							            <tbody>
-							              <tr>
-							                              <td>Hero Banner</td>
-							                              <td>Draw in People</td>
-							                              <td>Yes, not student-focused</td>
-							                              <td>Yes</td>
-							                              <td>1</td>
-							                            </tr>
-							                            <tr>
-							                              <td>Interactive Banner</td>
-							                              <td>Jobs & Events</td>
-							                              <td>Exists, but inactive</td>
-							                              <td>No</td>
-							                              <td>2</td>
-							                            </tr>
-							                            <tr>
-							                              <td>Quick Links</td>
-							                              <td>Navigate site</td>
-							                              <td>Exists, poorly styled</td>
-							                              <td>Yes</td>
-							                              <td>3</td>
-							                            </tr>
-							                            <tr>
-							                              <td>Important Facts</td>
-							                              <td>Why join ECE</td>
-							                              <td>No, outdated content</td>
-							                              <td>Yes</td>
-							                              <td>4</td>
-							                            </tr>
-							                            <tr>
-							                              <td>Programs of Study</td>
-							                              <td>Highlight offerings</td>
-							                              <td>Yes, 2020–21 content</td>
-							                              <td>Yes</td>
-							                              <td>5</td>
-							                            </tr>
-							                            <tr>
-							                              <td>Chair’s Message / Events</td>
-							                              <td>Welcome & Events</td>
-							                              <td>Chair exists, not Events</td>
-							                              <td>Yes</td>
-							                              <td>6</td>
-							                            </tr>
-							                            <tr>
-							                              <td>Other Highlights</td>
-							                              <td>Research & Co-op</td>
-							                              <td>Research links exist</td>
-							                              <td>Yes</td>
-							                              <td>7</td>
-							                            </tr>
-							                          </tbody>
-							                        </table>
-						                      </div>
-							           </div>
-
-
-
-				<H6 style="text-align:left; margin-bottom: 1rem;">Existing Hero Banner Practices</H5>
-             				<div class="ux-snippet" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; justify-items: center; align-items: start; margin-top: 10px; margin-bottom: 20px;">
-                 				<img src="images/webp/fase.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/fase.webp')" />
-                					<img src="images/webp/CIVMIN.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/CIVMIN.webp')" />
-                						<img src="images/webp/MIE.webp" alt="Snippet" class="snippet-img" onclick="openModal('images/webp/MIE.webp')" />
-              				</div>
-              				<!-- Modal -->
-              					<div id="imageModal" class="modal-mrs" onclick="closeModal()">
-             					     <img id="modalImage" class="modal-image-mrs">
-              					</div>
-
-				<H6 style="text-align:left; margin-bottom: 1rem;">UI Element Ideation</H5>
-					<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; justify-items: center; align-items: start; margin-top: 1rem; margin-bottom: 2rem;">
-					  <img src="images/webp/HEAR.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/HEAR.webp')" />
-					  <img src="images/webp/HEAR (1).webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/HEAR (1).webp')" />
-					  <img src="images/webp/BANNER-1.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/BANNER-1.webp')" />
-					  <img src="images/webp/STATS.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/STATS.webp')" />
-					  <img src="images/webp/TABS.webp" style="width: 100%; max-width: 700px; height: auto; display: block;" onclick="openModal('images/webp/TABS.webp')" />
-					</div>
-					<!-- Modal -->
-					<div id="imageModal" class="modal-mrs" onclick="closeModal()">
-					    <img id="modalImage" class="modal-image-mrs">
-					  </div> 
-					</div>
-
-		    		</div>
-	        	</div>
-		</div>
-	</div>
-</div>
-
-
-  <!-- Region 2: 80% width column -->
-  <div>
-
-    <!-- Row 1: Description and Project Aim -->
-    	<div style="display: flex; flex-direction: column; align-items: left; justify-content: center;">
-<h6 style="text-align:left; color: var(--grey3); margin-bottom: 20px;">
-  <span style="font-size:42px; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">
-    Website Development</span><br><br>
-  With feedback from internal teams, the approved mockups were implemented directly into WordPress—translating design into a responsive, student-focused homepage.
-</h6>
-
-<h5 style="text-align:left; font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent; margin-top: 5px; margin-bottom: 5px;">
-  We built a homepage that informs, invites, and reflects the department.
-</h5>
-
-<h6 style="text-align:left; color: var(--grey3); margin-top: 15px;">
-  Key updates included a 
-  <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">prominent hero banner</span> 
-  featuring the department slogan and ECE experience.<br><br>
-
-  Important content like facts, programs, and events were 
-  <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">restructured for clarity</span>, 
-  with bold headings and visual emphasis.<br><br>
-
-  A new 
-  <span style="font-weight: bold; background: linear-gradient(45deg, #00464F, #417A50); -webkit-background-clip: text; color: transparent;">events section</span> 
-  was introduced, and research & industry opportunities were spotlighted with clear calls to action.
-</h6>
-    	</div>
-
-    <!-- Row 2: Mini div of two columns -->
-    	<div style="display: flex; flex-direction: row; gap: 1rem;">
-
-<!-- Column: What the Redesign Needed to Solve -->
-<div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-  <div style="border: 2px solid #B7375B; background: var(--white); padding: 0.5rem; flex: 1;">
-    <h6 style="text-align: center; margin: 0; color: #B7375B; padding: 1rem;">
-      Requirements for a Meaningful Redesign
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="font-size:24px; color:var(--black);">Student-Centric, Visually Clear</span><br>
-      and aligned with brand standards
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-      <span style="color:#B7375B; font-weight:800;">1</span> Surface Key Gaps in the Existing Page<br>
-      <span style="color: var(--grey2);">Outdated visuals, vague research info, no co-op details, low event visibility</span>
-    </h6>
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-      <span style="color:#B7375B; font-weight:800;">2</span> Design for Visual Clarity and Action<br>
-      <span style="color: var(--grey2);">Reduce cognitive load, increase CTA visibility, improve layout hierarchy</span>
-    </h6>
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-      <span style="color:#B7375B; font-weight:800;">3</span> Align with U of T’s Brand Standards<br>
-      <span style="color: var(--grey2);">Correct inconsistent styling compared to other FASE departments</span>
-    </h6>
-  </div>
-</div>
-
-
-  <div style="width: 30px; display: flex; justify-content: center; align-items: center;">
-    <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 15px solid #00464F;"></div>
-  </div>
-
-<!-- Column: Final Outcome -->
-<div style="width: 50%; display: flex; flex-direction: column; margin-top: 1rem; margin-bottom: 1rem;">
-  <div style="border: 2px solid #00a189; background: var(--white); padding: 0.5rem; flex: 1;">
-    <h6 style="text-align: center; margin: 0; color: #00a189; padding: 1rem;">
-      Final Outcome
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem;">
-      <span style="font-size:24px; color:var(--black);">Up-to-date and Modular</span><br>
-      Customizable and campaign-ready by design
-    </h6>
-    <hr style="border: none; border-top: 1px solid var(--grey1);" />
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-      <span style="color:#00a189; font-weight:800;">1</span> Helps Recruit Prospective Students<br>
-      <span style="color: var(--grey2);">Provides information and links to aid student decision-making</span>
-    </h6>
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-      <span style="color:#00a189; font-weight:800;">2</span> Functions as an Access Portal<br>
-      <span style="color: var(--grey2);">Showcases strengths, programs, and opportunities clearly</span>
-    </h6>
-    <h6 style="font-size:18px; margin: 0; color: var(--grey3); padding:1rem; margin-bottom:1rem;">
-      <span style="color:#00a189; font-weight:800;">3</span> Represents the Department<br>
-      <span style="color: var(--grey2);">Accurately reflects identity, values, and tone</span>
-    </h6>
-  </div>
-</div>
-
-
-      	</div>
-
-</section>
-
-
-
-<section class="concluding-thoughts-section" style="background:var(--white);">
-  <div class="concluding-row" style="align-items:top;">
-    <div class="concluding-text">
-      <h2 class="section-heading">Takeaways</h2>
-      <p class="p2">The goal of this project was to redesign the home page to serve as a tool for recruitment of prospective students and represent the ECE Department. 
-      By structuring accurate content effectively and incorporating authentic images of the department, I designed the website's homepage on WordPress. 
-      It was very important to ensure it served these requirements as it a part of the Faculty of Applied Science & Engineering at the University of Toronto. 
-      They need to attract as well as be consistent across the Faculty. 
-      There were strict guidelines and conventions to follow; this website would be used by students, professors, university staff, as well as Industry Partners throughout Toronto and Canada.</p>
-        <p class="section-title" style="font-size:16px;text-align:left; margin-bottom: 0;">Key Takeaway: Stakeholder Perspectives</p>
-        <div style="height: 1px; background-color: var(--grey2); width: 100%; margin-top: 0;"></div>
-      <p class="p2">This project taught me to advocate for design and understand a wide range of stakeholders, including the different staff members in the department, the wider Engineering Faculty, as well as the needs and demands of the students we wished to recruit, and the Professors and Researchers who work at the Department.</p>
-    </div>
-
-    <div class="concluding-image">
-      <img src="images/webp/ECE-Latest-Home.webp" alt="Mockup of the redesigned ECE homepage">
+    <!-- Glassmorphic Card for Key Takeaway -->
+    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 2rem;">
+      <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Structure drives trust</p>
+      <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
+      <p style="color: var(--white);">
+        Reframing an academic homepage isn’t just about better visuals; it’s about architecting the journey for all your users. 
+      </p>
     </div>
   </div>
 </section>
-
 
 
 <div id="footer-placeholder"></div>

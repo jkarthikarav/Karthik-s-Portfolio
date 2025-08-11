@@ -201,11 +201,11 @@
   <!-- Methodology Section -->
   <h6 style="color: var(--primary);">Methodology</h6>
   <p style="color: var(--white);">I conducted a heuristic audit of the current NetBanking interface and common tasks, focusing on:</p>
-  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
+  <div id="icon-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
     
     <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
       <img src="icons/run.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Speed-runnig tasks</p>
+      <p style="color: var(--white); margin-top: 0;">Speed-running tasks</p>
     </div>
 
     <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
@@ -224,6 +224,20 @@
     </div>
 
   </div>
+
+  <style>
+  @media (max-width: 1024px) {
+    #icon-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    #icon-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  </style>
   <p style="color: var(--white);">I also reviewed customer feedback from app stores and online forums to understand pain points from real users.</p>
 
   <!-- Section Header -->

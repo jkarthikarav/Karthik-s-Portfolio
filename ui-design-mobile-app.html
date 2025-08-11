@@ -106,12 +106,12 @@
 
     <div class="info-card">
       <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Role</p>
-      <p style="color: var(--white); margin: 0;">UXR, UI Design (+ Team of 5 UXRs)</p>
+      <p style="color: var(--white); margin: 0;">UX Researcher, UI Designer (Team of 5 UXRs)</p>
     </div>
 
     <div class="info-card">
       <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Duration</p>
-      <p style="color: var(--white); margin: 0;">Oct–Dec 2023 (Research)</p>
+      <p style="color: var(--white); margin: 0;">Oct–Dec 2023 (Research Focus)</p>
     </div>
 
     <div class="info-card">
@@ -122,11 +122,6 @@
     <div class="info-card">
       <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Current Stage</p>
       <p style="color: var(--white); margin: 0;">Research-based Mobile App concept</p>
-    </div>
-
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Future Scalability</p>
-      <p style="color: var(--white); margin: 0;">MVP Development, Investor Funding</p>
     </div>
 
   </div>
@@ -166,16 +161,35 @@
 ">
 
   <!-- Title Section -->
-  <div style="max-width:1000px;">
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">UX Research</h4>
-    <h6 style="color: var(--primary); text-align: center; margin-bottom:1rem;">Objective</h6>
-    <p style="color: var(--white); text-align: center;">This project aimed to help more Torontonians, especially students, families, and newcomers, access affordable arts and culture in the city. Therefore, our research was focused on attempting to understand real user needs and behaviors related to museum visits and museum ticket purchasing in Toronto.</p>
-  </div>
+  <div style="max-width:60vw;">
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Project Context</h4>
+    <p style="color: var(--white);">Toronto museums offer free or discounted admission to students, families, and other groups; yet attendance for eligible visitors remains low.
+      <br><br><strong>Why?</strong> Access to deals is scattered across multiple sites, often outdated, hard to verify, and inconsistent in how it's presented.
+      <br><br><strong>Our goal:</strong> reduce fragmentation and make discounts discoverable and actionable in a single mobile-first platform.
+    </p>
+    
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Research Goals</h6>
+    <p style="color: var(--white);">
+      1. Understand user awareness and behaviour around museum ticket discounts<br>
+
+      2. Identify friction points and drop-off reasons for potential visitors<br>
+
+      3. Explore trust indicators in cultural event digital experiences<br>
+
+      4. Highlight accessibility and inclusivity gaps<br>
+    </p>
+    <style>
+      @media (max-width: 1024px) {
+        .div {
+          width: 100vw;
+        }
+      }
+    </style>
 
   <!-- Methodology Section -->
-<div>
-  <h4 style="color: var(--primary);">Methodology</h4>
-  <p style="color: var(--white);">We went out and spoke to the following demographic.</p>
+  <div>
+  <h4 style="color: var(--primary);  text-align:center;">UX Research</h4>
+  <p style="color: var(--white);">We conducted qualitative interviews & contextual inquiries with:</p>
   <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
     
     <!-- Card 1: Participants (Students) -->
@@ -203,69 +217,49 @@
     </div>
 
   </div>
+    
+  <p style="color: var(--white);">We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
 
   <!-- Validated Insights Section (Group) -->
-    <h4 style="color: var(--primary);">Validated Insights</h4>
-      <div class="insight-grid" style="
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-    ">
-
-    <!-- Individual Insight Cards -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
-      <img src="icons/brand-awareness.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <h6 style="color: var(--primary); margin-top:1rem;">Low Awareness of Deals:</h6>
-      <p style="color: var(--white);">
-        Many museum-goers are unaware of existing discounts or free ticket opportunities. This is consistent with broader research showing that cultural event discounts are often poorly publicized, leading to underutilization by target audiences.
-      </p>
+    <h6 style="color: var(--primary);margin-bottom:1rem;">Validated Insights</h6>
+      
+    <div class="responsive-table">
+      <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+      <thead>
+      <tr style="background-color: var(--black);">
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Insight</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Explanation</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Low Awareness of Deals</td>
+        <td style="padding: 1rem; color: var(--grey0);">Discounts exist but are poorly publicised; many audiences simply don’t know.</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Perceived Effort &gt; Benefit</td>
+        <td style="padding: 1rem; color: var(--grey0);">Participants abandon searches if offers aren’t easy to spot or verify.</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Skepticism Toward Sources</td>
+        <td style="padding: 1rem; color: var(--grey0);">Outdated or inaccurate event info reduces trust.</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Inconsistent Digital Flows</td>
+        <td style="padding: 1rem; color: var(--grey0);">Different museums have entirely different booking and discount layouts.</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Fragmented Information</td>
+        <td style="padding: 1rem; color: var(--grey0);">No single source aggregates deal data or event calendars.</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Financial Barriers</td>
+        <td style="padding: 1rem; color: var(--grey0);">Even modest admission prices deter low-income visitors when free options aren't visible.</td>
+      </tr>
+      </tbody>
+      </table>
     </div>
 
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
-      <img src="icons/effort.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <h6 style="color: var(--primary); margin-top:1rem;">Perceived Effort vs. Benefit:</h6>
-      <p style="color: var(--white);">
-        Users frequently feel that searching for deals is not worth the effort due to scattered or hard-to-find information. This matches findings from studies on digital ticketing, where users abandon searches if discounts are not clearly presented or easily accessible.
-      </p>
-    </div>
-
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
-      <img src="icons/trust.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <h6 style="color: var(--primary); margin-top:1rem;">Trusted Information Sources:</h6>
-      <p style="color: var(--white);">
-        Participants rely on a mix of word-of-mouth, official museum websites, and social media, but express skepticism about outdated or incomplete information on these channels.
-      </p>
-    </div>
- 
-      <!-- Card 1: Inconsistent Digital Flows -->
-      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
-        <img src="icons/non.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-        <h6 style="color: var(--primary); margin-top:1rem;">Inconsistent Digital Flows:</h6>
-        <p style="color: var(--white); margin-top:0rem;">
-          Toronto museums vary widely in how they present ticketing and discount information online. Some, like the Gardiner Museum, offer pay-what-you-wish admission and clear free entry times, while others require visitors to search for eligibility or download separate documents.
-        </p>
-      </div>
-
-      <!-- Card 2: Mobile & Online Booking -->
-      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
-        <img src="icons/defragment.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-        <h6 style="color: var(--primary); margin-top:1rem;">Fragmented Information:</h6>
-        <p style="color: var(--white); margin-top:0rem;">
-          There is no centralized calendar or platform that aggregates cultural events and ticket deals across Toronto museums. Users must visit multiple sites, increasing friction and discouraging exploration.
-        </p>
-      </div>
-
-      <!-- Card 3: Accessibility Features -->
-      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
-        <img src="icons/broke.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-        <h6 style="color: var(--primary); margin-top:1rem;">Financial Barriers:</h6>
-        <p style="color: var(--white); margin-top:0rem;">
-          Financial means remain a significant barrier for many Torontonians, particularly students, newcomers, and families with limited budgets. While some museums offer free or discounted admission, these opportunities are often not widely known or are perceived as difficult to access.
-        </p>
-      </div>
-
-    </div>
-  </div>
 
   <style>
   @media (max-width: 1024px) {
@@ -281,28 +275,11 @@
   }
 </style>
 
-
-</section>
-
-<section id="persona" style="
-  background-color: var(--black2);
-  color: var(--white);
-  padding: 1rem 2rem 5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-">
-
-  <!-- Section Header -->
-  <div>
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
-      Design Touchpoints & Decisions
-    </h4>
+<div style="padding:1.25rem;"></div>
     <p style="text-align: center; color: var(--white); max-width: 720px; margin: 0 auto;">
-      We synthesized recurring themes to develop a research-backed persona.
+      From our synthesis, we developed Mary, the Museum-Goer:
     </p>
-  </div>
+<div style="padding:1.25rem;"></div>
 
   <!-- Persona Card -->
   <div style="
@@ -348,11 +325,9 @@
 
   </div>
 
-  <div>
     <p style="text-align: center; color: var(--white); margin-top: 2rem;">
-      Mary helped us develop the feature list. Our priority feature matrix helped sort ideas by impact and feasibility, ensuring alignment with what the users truly needed.
+      Mary’s needs shaped our feature prioritisation using an Impact vs. Feasibility matrix, ensuring essential features addressed her core frustrations.
     </p>
-  </div>
 
     <div class="ux-grid"><img src="images/webp/Priority.webp" class="snippet-img" onclick="openModal('images/webp/Priority.webp')" style="width:900px; height:auto;border:0; box-shadow:0 8px 24px rgba(0, 0, 0, 0.0);"s/></div>
 
@@ -361,36 +336,40 @@
     <img id="modalImage" class="modal-image-mrs"  style="max-width: 80%; max-height: 80%;">
 </div>
   
-  <div class="design-table-wrapper" style="width:900px;">
-    <div class="responsive-table">
-      <table style="width: 100%; border-collapse: collapse; color: var(--white);">
-        <thead>
-          <tr style="background-color: var(--black);">
-            <th style="text-align: left; padding: 1rem; color: var(--primary);">Research Insight</th>
-            <th style="text-align: left; padding: 1rem; color: var(--primary);">Design Idea</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="background-color: black;">
-            <td style="padding: 1rem; color: var(--white);">Users want deals but feel frustrated by scattered sources</td>
-            <td style="padding: 1rem; color: var(--grey0);">Create a centralized 'Tickets' feed with all available discounts</td>
-          </tr>
-          <tr style="background-color: black;">
-            <td style="padding: 1rem; color: var(--white);">Time-sensitive users want quick ways to act</td>
-            <td style="padding: 1rem; color: var(--grey0);">Add a 'Save & Share' CTA for each offer</td>
-          </tr>
-          <tr style="background-color: black;">
-            <td style="padding: 1rem; color: var(--white);">Visitors plan by date, not just interest</td>
-            <td style="padding: 1rem; color: var(--grey0);">Build a calendar-based visual planner</td>
-          </tr>
-          <tr style="background-color: black;">
-            <td style="padding: 1rem; color: var(--white);">Trust in visual clarity and layout consistency</td>
-            <td style="padding: 1rem; color: var(--grey0);">Reduce cognitive load through grouping and icons</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Touchpoints & Decisions</h4>
+<div class="responsive-table">
+  <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+    <thead>
+      <tr style="background-color: var(--black);">
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Research Insight</th>
+        <th style="text-align: left; padding: 1rem; color: var(--primary);">Design Response</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Users want deals but info is scattered</td>
+        <td style="padding: 1rem;">Built a Centralized Tickets Feed combining all discounts</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Users value speed</td>
+        <td style="padding: 1rem;">Added Save &amp; Share CTA for quick action</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Users plan by date</td>
+        <td style="padding: 1rem;">Integrated Calendar-based visual planner</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Trust grows with clarity</td>
+        <td style="padding: 1rem;">Grouped offers visually, used recognisable icons</td>
+      </tr>
+      <tr style="background-color: black;">
+        <td style="padding: 1rem;">Users need relevant content</td>
+        <td style="padding: 1rem;">Proposed AI-enhanced recommendations based on history</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="padding:1.25rem;"></div>
 
 </section>
 
@@ -404,38 +383,32 @@
       What I Designed
     </h4>
     <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
-      We created a mobile UI concept focused on removing friction from discovering ticket deals. Based on our user research, the app supports:
+      We prototyped a mobile UI designed to make complexity invisible through:
     </p>
-    <div class="insight-grid" style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    ">
+    
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem;">
+  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">Centralized Feed</p>
+    <p style="color: var(--white); margin-top: 0;">All available free or discounted tickets in one screen</p>
+  </div>
 
-    <!-- Individual Insight Cards -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
-      <h6 style="color: var(--primary); margin-top:1rem;">Centralized Tickets Feed</h6>
-      <p style="color: var(--white);">
-        Provides all free or discounted museum tickets in one place.
-      </p>
-    </div>
+  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">Save & Share</p>
+    <p style="color: var(--white); margin-top: 0;">Enable bookmarking & sharing of offers instantly</p>
+  </div>
 
-        <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
-      <h6 style="color: var(--primary); margin-top:1rem;">Save & Share</h6>
-      <p style="color: var(--white);">
-        Each deal can be bookmarked or sent to friends.
-      </p>
-    </div>
- 
-      <!-- Card 1: Inconsistent Digital Flows -->
-      <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
-        <h6 style="color: var(--primary); margin-top:1rem;">AI-enhanced Search Feature</h6>
-        <p style="color: var(--white); margin-top:0rem;">
-          An AI-enhanced feature for search and recommendations, based on user habits and history.
-        </p>
-      </div>
+  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">AI-powered Search & Recommendations</p>
+    <p style="color: var(--white); margin-top: 0;">Personalised suggestions based on previous behaviour</p>
+  </div>
 
-    </div>
+  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">Visual Planner</p>
+    <p style="color: var(--white); margin-top: 0;">Calendar view for date-based planning</p>
+  </div>
+</div>
+
+
   </div>
 
   <style>
@@ -447,10 +420,10 @@
 </style>
 
     <h6 style="font-size: 42px; font-weight: bold; color: var(--primary); margin-bottom: 1rem;">
-      Initial Concept:
+      Design Evolution
     </h6>
     <p style="color: var(--white); margin-bottom: 2rem;">
-      These are the initial designs we prepared as a group. Presented to a panel of senior UX researchers, who praised the idea and clarity of the UI.
+      These are the initial designs we prepared as a group. Presented to a panel of senior UX researchers, who praised the idea behind the app and the features.
     </p>
 
     <div class="progress-images" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
@@ -465,7 +438,7 @@
     </div>
   
     <h6 style="font-size: 42px; font-weight: bold; color: var(--primary); margin-bottom: 2rem;">
-      High Fidelity Concept:
+      Final UI Design:
     </h6>
 
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
@@ -501,10 +474,10 @@
 
       <!-- Glassmorphic Card for Key Takeaway -->
       <div style="max-width: 40%; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 2rem;">
-        <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Design clarity</p>
+        <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Make messy systems feel simple</p>
         <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
         <p style="color: var(--white);">
-          When systems behind the scenes are messy, UI must work harder to maintain simplicity. The interface must earn the user’s trust by making complexity invisible.
+          When back-end data is scattered or inconsistent, design clarity is non-negotiable. A well-structured interface can build trust by masking complexity, guiding users straight to what they value.
         </p>
       </div>
     </div>
