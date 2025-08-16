@@ -62,204 +62,197 @@
       }
     </style>
 
+  </section>
+
+  <section class="websitework" style="background:none; padding: 2rem;">
+
     <div id="websitework" style="padding-top:2rem; display: flex; flex-direction: column; justify-content: start; opacity: 0; animation: fadeweb 0.8s ease forwards; animation-delay: 2.0s;">
       <h3 style="text-align:left; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
         What I Do
       </h3>
 
-      <p style="text-align:left; max-width:60%; color: var(--white);">
+      <p style="text-align:left; color: var(--white);">
         Whether you’re interested in my UX design skills, analytical approach, research expertise, or solutions-driven mindset, each section below offers a quick but comprehensive look at what makes me a strong candidate.  
       </p>
 
       <style>
-    @media (max-width: 768px) {
-      h3 {
-          font-size: 24px !important;
-          padding-right: 0.5rem !important;
-      }
+        @media (max-width: 768px) {
+          h3 {
+            font-size: 24px !important;
+            padding-right: 0.5rem !important;
+          }
             
-      p {
-          max-width:100% !important;
-      }
-    }
+          p {
+            max-width:100% !important;
+          }
+        }
       </style>
 
-      <div   style="padding: 1rem; position: relative;" onmouseover="this.style.boxShadow='0 0 10px 1rem rgba(0, 0, 0, 0.2)';" onmouseout="this.style.boxShadow='none';">
+        <div id="AdditionalWorkButtonGroup" style="display: flex; flex-direction: row; justify-content: start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
 
-      <div class="grid-wrapper">
+          <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
+            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+            View All Case Studies Here
+          </button>
 
-        <!-- HDFC Card -->
-        <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('HDFC.html', '_blank');">
-        <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/Bank.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-        </div>
-        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-            <span style="color: var(--white); font-size: 14px;">Redesigned - Summer 2025</span>
-            <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Banking & Finance</span>
-            <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">UX Research + UI Design</span>
+          <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
+            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+            View UI Design collection
+          </button>
+
+        </div> 
+
+        <div id="CaseStudyGrid" class="grid-wrapper">
+
+          <!-- ECE Card 1: Homepage Redesign -->
+          <div style="flex: 1 1 calc(33.33% - 1rem);">
+            <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('ece-homepage-redesign.html', '_blank');">
+              <div style="overflow: hidden; border-radius: 12px;">
+                <img src="images/webp/ECE-Latest-Home.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+                <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Shipped – March 2025</p>
+                <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+                  U of T ECE Homepage Redesign
+                </h6>
+                <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+                  My work in accessibility, large-scale stakeholder collaboration, high fidelity prototyping, web standards, and measurable impact for a prominent Canadian institution.
+                </p>
+              </div>
+            </div>
           </div>
-          <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-            Redesigning HDFC’s Legacy NetBanking Platform
-          </h6>
-          <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-            Bringing modern design and usability to a market where UX is overlooked.
-          </p>
-        </div>
-      </div>
-        </div>
 
-        <!-- ECE Card 1: Homepage Redesign -->
-        <div style="flex: 1 1 calc(33.33% - 1rem);">
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('ece-homepage-redesign.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/webp/ECE-Latest-Home.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-    </div>
-    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Shipped – March 2025</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Higher Ed</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">UX/UI & Front-end</span>
-      </div>
-      <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        U of T ECE Homepage Redesign
-      </h6>
-      <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        A cluttered academic homepage reimagined into a student-first recruitment experience.
-      </p>
-    </div>
-  </div>
-        </div>
+          <!-- Museum Tickets App Card -->
+          <div style="flex: 1 1 calc(33.33% - 1rem);">
+            <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" 
+                onclick="window.open('exptorontoapp.html', '_blank');">
+              <div style="overflow: hidden; border-radius: 12px;">
+                <img src="images/ai/tickets.webp" alt="Mobile App Design" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+                <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Presented - Fall 2023</p>
+                <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+                  Mobile App UX Research for Ticket Deals
+                </h6>
+                <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+                  Full-cycle design capability: user research, feature prioritization, wireframing, high-fidelity UI design, and mobile-first thinking.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <!-- Museum Tickets App Card -->
-        <div style="flex: 1 1 calc(33.33% - 1rem);">
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('ui-design-mobile-app.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/tickets.webp" alt="Mobile App Design" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-    </div>
-    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 12px;">
-        <span style="color: var(--white); font-size: 14px;">Presented - Fall 2023</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Arts and Culture</span>
-        <span style="background: var(--white); color: var(--black); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Mobile UX/UI Design</span>
-      </div>
-      <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Mobile App UX Research for Ticket Deals
-      </h6>
-      <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Translating UX Research insights into Mobile UI designs.
-      </p>
-    </div>
-  </div>
-        </div>
-
-        <div></div>
+          <!-- SpyPitch Card -->
+          <div style="flex: 1 1 calc(33.33% - 1rem);">
+            <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" onclick="window.open('spy-film-pitch.html', '_blank');">
+              <div style="overflow: hidden; border-radius: 12px;">
+                <img src="images/ai/filmy.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+                <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Shipped - August 2021</p>
+                <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+                  Pitch Deck Website for a Film Director
+                </h6>
+                <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+                  expertise in interactive storytelling, media web design, cross-platform visuals, and designing for entertainment clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div></div>
     
-        <style>
+          <style>
 
-      /* Default Flexbox Layout (3 items per row) */
-      .grid-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-      }
+            /* Default Flexbox Layout (3 items per row) */
+            .grid-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              padding-top: 1rem;
+              padding-bottom: 3rem;
+            }
 
-      /* 1 item per row on mobile (up to 767px) */
-      @media screen and (max-width: 767px) {
-  .grid-wrapper > div {
-    flex: 1 1 100%;  /* 100% width (one per row) */
-  }
-      }
+            /* 1 item per row on mobile (up to 767px) */
+            @media screen and (max-width: 767px) {
+              .grid-wrapper > div {
+                flex: 1 1 100%;  /* 100% width (one per row) */
+              }
+            }
 
-      /* 2 items per row on screens between 768px and 1023px */
-      @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .grid-wrapper > div {
-    flex: 1 1 48%;  /* 2 per row */
-  }
-      }
+            /* 2 items per row on screens between 768px and 1023px */
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+              .grid-wrapper > div {
+                flex: 1 1 48%;  /* 2 per row */
+              }
+            }   
 
-      /* 3 items per row on screens 1024px and above */
-      @media screen and (min-width: 1024px) {
-  .grid-wrapper > div {
-    flex: 1 1 32%;  /* 3 per row */
-  }
-      }
+            /* 3 items per row on screens 1024px and above */
+            @media screen and (min-width: 1024px) {
+            .grid-wrapper > div {
+              flex: 1 1 32%;  /* 3 per row */
+              }
+            }
 
-        </style>
+          </style>
 
-      </div>
+        </div>
 
-      <div style="display: flex; flex-direction: row; justify-content: start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
-
-        <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
-          onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-          View All Case Studies Here
-        </button>
-
-        <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
-          onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-          View UI Design collection
-        </button>
-
-      </div> 
-      
-      </div>
-
-      <div style="padding:1.25rem;"></div>
-
+  </section>
+  
+  <section class="MyImpact" style="background:none; padding: 2rem;">
       <h3 style="text-align:left; margin-top:2rem; font-weight:bold; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-      My Impact
+        My Impact
       </h3>
 
-
       <p style="text-align:left; color: var(--white);">
-      I deliver exceptional outcomes at the intersection of UX/UI, enterprise web solutions, and storytelling: helping businesses across sectors stand out and grow fast. <br><br>
-      I help directors and producers sharpen their vision through pitch decks and film bibles that win funding. I support founders and teams with smart, short-term digital media campaigns, AND teach them how to keep things running. My strength lies in making digital tools work in places where they’re often overlooked.
+        I deliver exceptional outcomes at the intersection of UX/UI, enterprise web solutions, and storytelling: helping businesses across sectors stand out and grow fast. <br><br>
+        I help directors and producers sharpen their vision through pitch decks and film bibles that win funding. I support founders and teams with smart, short-term digital media campaigns, AND teach them how to keep things running. My strength lies in making digital tools work in places where they’re often overlooked.
       </p>
-  
-      <div class="stats-summary-container">
+
+      <div style="padding:1.75rem;"></div>
+
+      <div>
+        <div class="stats-summary-container">
         
         <!-- Projects Delivered -->
         <div class="stats-summary-block">
-      <h4>Results Achieved</h4>
-      <div class="stats-value"><h3>~150%</h3><span class="stats-baseline">increase in public site traffic</span></div>
-      <div class="stats-change-tag stats-up">On Average across Websites after Redesign</div>
+          <h4>Results Achieved</h4>
+          <div class="stats-value"><h3>~150%</h3><span class="stats-baseline">increase in public site traffic</span></div>
+          <div class="stats-change-tag stats-up">On Average across Websites after Redesign</div>
         </div>
 
         <hr class="stats-divider" />
 
         <!-- Funds Raised -->
         <div class="stats-summary-block">
-      <h4>Funds Raised via Pitch Deck Websites</h4>
-      <div class="stats-value"><h3>INR 3.5 Cr+</h3><span class="stats-baseline">Estimated funding secured for clients</span></div>
-      <div class="stats-change-tag stats-up">Designed narratives and pitch materials</div>
+          <h4>Funds Raised via Pitch Deck Websites</h4>
+          <div class="stats-value"><h3>INR 3.5 Cr+</h3><span class="stats-baseline">Estimated funding secured for clients</span></div>
+          <div class="stats-change-tag stats-up">Designed narratives and pitch materials</div>
         </div>
 
         <hr class="stats-divider" />
 
         <!-- Sectors Designed For -->
         <div class="stats-summary-block">
-      <h4>UX/UI and Digital Solutions Across Sectors</h4>
-      <div class="stats-value"><h3>10+</h3><span class="stats-baseline">Industries</span></div>
-      <div class="stats-change-tag stats-up">Delivered user-centered design and strategic digital solutions</div>
+          <h4>UX/UI and Digital Solutions Across Sectors</h4>
+          <div class="stats-value"><h3>10+</h3><span class="stats-baseline">Industries</span></div>
+          <div class="stats-change-tag stats-up">Delivered user-centered design and strategic digital solutions</div>
         </div>
 
         <hr class="stats-divider" />
 
         <!-- Pitch Conversion Rate -->
         <div class="stats-summary-block">
-      <h4>Notable Results</h4>
-      <div class="stats-value"><h3>25%</h3><span class="stats-baseline">faster creative workflows</span></div>
-      <div class="stats-change-tag stats-up">After Research and Service design work implemented</div>
+          <h4>Notable Results</h4>
+          <div class="stats-value"><h3>25%</h3><span class="stats-baseline">faster creative workflows</span></div>
+          <div class="stats-change-tag stats-up">After Research and Service design work implemented</div>
+        </div>
+
         </div>
       </div>
-
     </div>
 
-    <div style="padding:1.25rem;"></div>
+    <div style="padding:0.75rem;"></div>
 
     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
       <a href="#footer" class="scroll-button" style="font-size: 20px; padding-right: 0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
@@ -269,7 +262,7 @@
 
   </section>
 
-  <div style="padding:2rem;"></div>
+  <div style="padding:1.25rem;"></div>
 
   <div id="footer-placeholder"></div>
 

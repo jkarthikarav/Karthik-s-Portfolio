@@ -57,7 +57,7 @@
     text-align: left;
   ">
     <h6 style="color: #FFD59A; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      Bringing modern design and usability to a market where UX is overlooked.
+      Fintech User Journey and UI Redesign #Quick Wins
     </h6>
 
     <h3 style="
@@ -68,11 +68,11 @@
       margin-bottom: 20px;
       padding-right: 5rem;
     ">
-      Redesigning HDFC’s Legacy NetBanking Platform
+      HDFC Bank’s NetBanking Platform
     </h3>
 
     <p style="color: #ffffff; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      While institutions race toward mobile apps and immersive tech, many users still rely on browser-based banking for high-trust transactions. Is HDFC's user interface discouraging usage?
+      How can netbanking customers navigate secure and reliable experiences when stringent beneficiary security measures are obscured by outdated interfaces?
       </span>
     </p>
 
@@ -105,11 +105,6 @@
 </div>
 
 <div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Role</p>
-  <p style="color: var(--white); margin: 0;">UX/UI Designer</p>
-</div>
-
-<div class="info-card">
   <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Duration</p>
   <p style="color: var(--white); margin: 0;">2 Weeks</p>
 </div>
@@ -121,7 +116,7 @@
 
 <div class="info-card">
   <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Stages</p>
-  <p style="color: var(--white); margin: 0;">Heuristic Audit, User Journey Mapping, High‑Fidelity Designs</p>
+  <p style="color: var(--white); margin: 0;">User Journey Mapping, High‑Fidelity Designs</p>
 </div>
 
   </div>
@@ -162,151 +157,26 @@
 
   <!-- Title Section -->
   <div style="max-width:60vw;">
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Project Context</h4>
-    <p style="color: var(--white);">Despite mobile app growth, a majority of HDFC users still rely heavily on the legacy browser-based NetBanking platform for critical transactions. As a longstanding HDFC customer, I undertook this redesign to address significant usability gaps without altering the brand’s visual identity or UI kit, focusing instead on improving clarity.</p>
-    
-    <h6 style="color: var(--primary); margin-bottom:1rem;">Goals</h6>
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Challenge</h4>
+    <p style="color: var(--white);">First-time netbanking users, used to UPI/Google Pay's quick transactions, encountered absent beneficiary activation steps, authentication delays, and no real-time instruction. The legacy browser UI disguised critical information regarding this aspect of transfering funds; there were no tooltips, FAQs, or in-context teaching.</p>
+    <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; padding:1rem;">
+      <img src="images/hdfc/Funds.webp" class="user-journey-image-mrs" style="height: 300px; max-width:25%; object-fit: contain;" onclick="openModal('images/hdfc/Funds.png')">
+    </div>
+
+    <p style="color: var(--white);">The above image, a screengrab from the application was how the transfer options were presented. There were a note and a scrolling flash banner below this but it was regarding fraudlent transactions and a warning to the user to link their Aadhar (India's Standarized Identification card) to their account. <em>On a hilarious note, there is a literal ad for their credit card with an offer for availing a discount through a food delivery app at the top.</em></p>
+
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Current User Flow:</h6>
     <p style="color: var(--white);">
-      1. Modernize a legacy platform while retaining established visual identity<br>
-
-      2. Reduce navigation friction in critical high‑frequency flows<br>
-
-      3. Improve information architecture for discoverability and speed<br>
-
-      4. Respect legacy content & technical constraints<br>
+      1. User clicks “Transfer Funds.”
+      <br>
+      2.Picks a transfer option, but discovers midway a beneficiary isn’t added.
+      <br>
+      3. Has to quit, navigate to an obscure part of the sidebar, add a beneficiary, enter OTP, then search in a separate menu to check activation status.
+      <br>
+      4. Waits (without visible countdown or guidance) for limits to unlock before retrying the transfer.
     </p>
-    <style>
-      @media (max-width: 1024px) {
-        .div {
-          width: 100vw;
-        }
-      }
-    </style>
-
-  </div>
-
-    <!-- Title Section -->
-  <div style="max-width:60vw;">
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">UX Research</h4>
-    <h6 style="color: var(--primary); margin-bottom:1rem;">Objective</h6>
-    <p style="color: var(--white);">To understand what specifically frustrates users about the current HDFC NetBanking experience; Does this friction stem from UI design, structure, or content hierarchy?</p>
-    <style>
-      @media (max-width: 1024px) {
-        .div {
-          width: 100vw;
-        }
-      }
-    </style>
-
-  <!-- Methodology Section -->
-  <h6 style="color: var(--primary);">Methodology</h6>
-  <p style="color: var(--white);">I conducted a heuristic audit of the current NetBanking interface and common tasks, focusing on:</p>
-  <div id="icon-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
-    
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/run.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Speed-running tasks</p>
-    </div>
-
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/faq.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Feature discovery tasks</p>
-    </div>
-
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/warning.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">UI errors and Affordances</p>
-    </div>
-
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/perception.png" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">User Perception of visual elements</p>
-    </div>
-
-  </div>
-
-  <style>
-  @media (max-width: 1024px) {
-    #icon-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 768px) {
-    #icon-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  </style>
-  <p style="color: var(--white);">I also reviewed customer feedback from app stores and online forums to understand pain points from real users.</p>
-
-  <!-- Section Header -->
-  <div>
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Touchpoints & Decisions</h4>
-    <h6 style="color: var(--primary);margin-bottom:1rem;">Research & Heuristic Audit</h6>
-
-    <!-- Flex Grid Wrapper -->
-    <div style="
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    ">
-
-      <div class="design-table-wrapper">
-        <div class="responsive-table">
-          <table style="width: 100%; border-collapse: collapse; color: var(--white);">
-            <thead>
-              <tr style="background-color: var(--black);">
-                <th style="text-align: left; padding: 1rem; color: var(--primary);">Issue Area</th>
-                <th style="text-align: left; padding: 1rem; color: var(--primary);">Finding</th>
-                <th style="text-align: left; padding: 1rem; color: var(--primary);">Redesign Solution</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="background-color: black;">
-                <td style="padding: 1rem;">Transaction Overview</td>
-                <td style="padding: 1rem;">Dense, flat table UI difficult to scan quickly</td>
-                <td style="padding: 1rem; color: var(--grey0);">Replaced with a visual card layout surfacing key info (balances, due dates) with on-demand detail access</td>
-              </tr>
-              <tr style="background-color: black;">
-                <td style="padding: 1rem;">Beneficiaries Table</td>
-                <td style="padding: 1rem;">Confusing filter functionality; reused transaction card template; refreshes table on CTA action</td>
-                <td style="padding: 1rem; color: var(--grey0);">Replaced with dropdown-based streamlined table simplifying search and filtering; more standard list pattern</td>
-              </tr>
-              <tr style="background-color: black;">
-                <td style="padding: 1rem;">Beneficiaries Navigation</td>
-                <td style="padding: 1rem;">“View/Delete Beneficiaries” buried under non-intuitive “Enquire” tab</td>
-                <td style="padding: 1rem; color: var(--grey0);">Regrouped beneficiary actions into intuitive “Requests” tab improving menu clarity and findability</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <h6 style="color: var(--primary); text-align:left; margin-bottom:1rem;">Security Constraints in Beneficiary Management</h6>
-      <p style="color: var(--grey0); margin-bottom: 2rem;">
-        In Indian banking, adding a new beneficiary is not instant. When a user adds a beneficiary, even during a transfer, they must:
-        <br>1. Authenticate the action using a One‑Time Password (OTP) sent to the registered mobile/email.
-        <br>2. Wait for a cooling period (usually 30 minutes to several hours, depending on transaction type and account profile) before transactions to that beneficiary are enabled.
-        <br><br><strong>This affects urgency: Users needing to make an immediate transfer must already have the beneficiary active in their list.</strong>
-        <br><br>Therefore, we need to:
-        <br>1. Clearly label beneficiaries in Active or Pending Activation state.
-        <br>2. Show time remaining until activation to set expectations.
-        <br>3. Make the verification flow intuitive so users don’t start a transfer that will fail due to pending activation.
-      </p>
-
-
-    </div>
-
-
-    <!-- Section Header -->
-    <div>
-      <h6 style="color: var(--primary); margin-bottom:1rem;">Existing Screens</h6>
-    </div>
 
     <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; padding:1rem;">
-      <img src="images/hdfc/Cards.webp" class="user-journey-image-mrs" style="height: 300px; max-width:25%; object-fit: contain;" onclick="openModal('images/hdfc/Cards.png')">
-      <img src="images/hdfc/Funds.webp" class="user-journey-image-mrs" style="height: 300px; max-width:25%; object-fit: contain;" onclick="openModal('images/hdfc/Funds.png')">
       <img src="images/hdfc/Enquire.webp" class="user-journey-image-mrs" 
          style="max-width:20%; height: 300px; object-fit: contain;" 
          onclick="openModal('images/hdfc/Enquire.png')">
@@ -315,7 +185,19 @@
          onclick="openModal('images/hdfc/Request.png')">
     </div>
 
-  </div>
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Security Constraints in Beneficiary Management:</h6>
+    <p style="color: var(--white);">
+      1.If you add a new beneficiary, you must authenticate with OTP.
+      <br>
+      2. Small transfers (often up to ₹50,000) can sometimes be done immediately after activation.
+      <br>
+      3. Full transfer limits are enabled only after a waiting period (cooling period): usually 30 minutes to 24 hours depending on transaction type and account.
+      <br>
+      4. Trying to transfer to a beneficiary who isn’t “Active” always fails.
+      <br>
+      5. These waits and flows are not clearly surfaced in the legacy interface—they are essentially invisible speedbumps.
+    </p>
+
 </section>
 
 
@@ -323,123 +205,75 @@
 
   <div style="align-items: center; display: flex; flex-direction: column;">
     <!-- Section Header -->
-<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">User Journey & High Fidelity Design</h4>
-<h6 style="color: var(--primary); margin-bottom:1rem;">Focus: Verifying Beneficiary Existence Before Transfer</h6>
-<div class="responsive-table">
-  <table style="width: 100%; border-collapse: collapse; color: var(--white);">
-    <thead>
-      <tr style="background-color: var(--black);">
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">Step</th>
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">User Action</th>
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">System Response</th>
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">Why It Matters</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">0</td>
-        <td style="padding: 1rem;">Arrives at Account Summary</td>
-        <td style="padding: 1rem;">Overview of accounts</td>
-        <td style="padding: 1rem; color: var(--grey0);">User starts at a familiar hub.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">1</td>
-        <td style="padding: 1rem;">Clicks “Transfer Funds” (main menu)</td>
-        <td style="padding: 1rem;">Opens Transfers screen</td>
-        <td style="padding: 1rem; color: var(--grey0);">Logical entry point for both transfers & related management.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">2</td>
-        <td style="padding: 1rem;">Clicks “Requests” (sidebar)</td>
-        <td style="padding: 1rem;">Opens requests submenu</td>
-        <td style="padding: 1rem; color: var(--grey0);">Beneficiary actions are logically grouped here.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">3</td>
-        <td style="padding: 1rem;">Selects “View/Delete Beneficiaries”</td>
-        <td style="padding: 1rem;">Shows beneficiary list with activation status</td>
-        <td style="padding: 1rem; color: var(--grey0);">Clear visibility into beneficiary readiness.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">4</td>
-        <td style="padding: 1rem;">If beneficiary is Active → goes to transfer; If Pending → messaging explains wait time</td>
-        <td style="padding: 1rem;">User informed before finalizing</td>
-        <td style="padding: 1rem; color: var(--grey0);">Prevents frustration from failed transfer attempts.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <div style="max-width:60vw;">
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">My Design Solutions</h4>
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Redesigned User Journey:</h6>
 
-<p style="text-align: center; color: var(--grey0); margin-bottom: 2rem;">This journey highlights the importance of enabling users to confirm if a beneficiary is saved before sending money; a common source of friction in banking UX.</p>
-
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 0: Arrives at Home (Account Summary).</p>
-<img src="images/hdfc/Landing.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Landing.png')">
-
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 1: Clicks Transfer Funds in main menu.</p>
-
-<img src="images/hdfc/Step 0.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 0.png')">
-
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 2: Clicks Requests in sidebar.</p>
-<img src="images/hdfc/Step 1.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 1.png')">
-
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 3: Selects View/Delete Beneficiaries.</p>
-<img src="images/hdfc/Step 2.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 2.png')">
-
-<p style="text-align: center; color: var(--grey0); margin-bottom: 1rem;">Step 4: If beneficiary is saved, either Views Beneficiary or goes back to Transact and initiates a transfer.</p>
-<img src="images/hdfc/Step 3.webp" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/Step 3.png')">
-
-<h6 style="color: var(--primary); margin-bottom:1rem;">High Fidelity Screens</h6>
-
-<div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; padding: 1rem;">
-  <img src="images/uiwork/HDFC-1.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 25%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-1.png')">
-  <img src="images/uiwork/HDFC-2.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 25%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-2.png')">
-  <img src="images/uiwork/HDFC-3.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 25%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-3.png')">
-  <img src="images/uiwork/HDFC-4.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 25%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-4.png')">
-  <img src="images/uiwork/Transfer-Sidebar.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 25%; object-fit: contain;" onclick="openModal('images/uiwork/Transfer-Sidebar.png')">
-</div>
-
-<!-- <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">User Journey: Checking Card Features</h4>
-
-<p style="color: var(--grey0); text-align: center; margin-bottom: 1rem;">Step 1: Home → Cards → Debit Cards → View Active/Inactive Cards.</p>
-<img src="images/hdfc/step5.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step5.png')">
-
-<p style="color: var(--grey0); text-align: center; margin-bottom: 1rem;">Step 2: Clicks Enable/Disable Card Features.</p>
-<img src="images/hdfc/step6.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step6.png')">
-
-<p style="color: var(--grey0); text-align: center; margin-bottom: 1rem;">Step 3: Turns on e-commerce and international usage.</p>
-<img src="images/hdfc/step7.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('images/hdfc/step7.png')">
-      </div>
-  </div> -->
-
-   <!-- Modal Viewer -->
-  <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
-    <img id="modalImage" style="max-width: 90%; max-height: 90%;">
+    <div class="design-table-wrapper">
+  <div class="responsive-table">
+    <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+      <thead>
+        <tr style="background-color: var(--black);">
+          <th style="text-align: left; padding: 1rem; color: var(--primary);">Step</th>
+          <th style="text-align: left; padding: 1rem; color: var(--primary);">User Action</th>
+          <th style="text-align: left; padding: 1rem; color: var(--primary);">System Response</th>
+          <th style="text-align: left; padding: 1rem; color: var(--primary);">Why It Matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: black;">
+          <td style="padding: 1rem;">0</td>
+          <td style="padding: 1rem;">Arrives at Account Summary</td>
+          <td style="padding: 1rem;">Overview of accounts</td>
+          <td style="padding: 1rem; color: var(--grey0);">Familiar hub for all banking activity.</td>
+        </tr>
+        <tr style="background-color: black;">
+          <td style="padding: 1rem;">1</td>
+          <td style="padding: 1rem;">Clicks “Transfer Funds” from main menu</td>
+          <td style="padding: 1rem;">Transfer screen with visible tooltips</td>
+          <td style="padding: 1rem; color: var(--grey0);">Surfaces crucial beneficiary activation guidance before wasted effort.</td>
+        </tr>
+        <tr style="background-color: black;">
+          <td style="padding: 1rem;">2</td>
+          <td style="padding: 1rem;">Tooltip on transact cards: “Please ensure your beneficiary is added &amp; active before proceeding. For new beneficiaries, full transfer limits may activate after 30min–24hrs. Go to Requests → View/Delete Beneficiaries to check status and limits.”</td>
+          <td style="padding: 1rem;">User learns about security and waiting periods up front.</td>
+          <td style="padding: 1rem; color: var(--grey0);"></td>
+        </tr>
+        <tr style="background-color: black;">
+          <td style="padding: 1rem;">3</td>
+          <td style="padding: 1rem;">Follows link to “Requests” → “View/Delete Beneficiaries”</td>
+          <td style="padding: 1rem;">Sees beneficiary status (Active/Pending), adds new beneficiary, completes OTP flow, sees countdown or next available transfer limit</td>
+          <td style="padding: 1rem; color: var(--grey0);">Ensures all necessary steps and info are handled before transaction.</td>
+        </tr>
+        <tr style="background-color: black;">
+          <td style="padding: 1rem;">4</td>
+          <td style="padding: 1rem;">Confirms beneficiary now “Active” and checks any limit info</td>
+          <td style="padding: 1rem;">Proceeds to successful transfer flow</td>
+          <td style="padding: 1rem; color: var(--grey0);">Delivers an experience closer to UPI’s simplicity and instant feedback.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</section>
+    </div>
 
-<section style="position: relative; padding: 4rem 2rem; background: url('images/ai/Bank.webp') no-repeat center center; background-size: cover;">
-  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5);"></div> <!-- Black overlay -->
+    <h6 style="color: var(--primary); margin-bottom:1rem;">High Fidelity Screens:</h6>
 
-  <div style="position: relative; display: flex; flex-direction: column; gap: 1rem; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
-    <!-- Glassmorphic Text Column -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
-      <h4 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h4>
-      <p style="color: var(--white); margin-bottom: 2rem;">
-        The goal of this redesign was to modernize a legacy netbanking experience without discarding its visual identity or disrupting long-time users. Designing within legacy, regulated fintech constraints reinforced the value of small, intentional UX changes over unnecessary overhauls. Addressing IA clarity, surfacing system status, and aligning flows with security realities delivers substantial user value without heavy engineering work.
-      </p>
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 1rem;">
+  <img src="images/uiwork/HDFC-1.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 35%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-1.png')">
+  <img src="images/uiwork/HDFC-2.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 35%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-2.png')">
+  <img src="images/uiwork/HDFC-3.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 35%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-3.png')">
+  <img src="images/uiwork/HDFC-4.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 35%; object-fit: contain;" onclick="openModal('images/uiwork/HDFC-4.png')">
+  <img src="images/uiwork/Transfer-Sidebar.webp" class="user-journey-image-mrs" style="height: 300px; max-width: 60%; object-fit: contain;" onclick="openModal('images/uiwork/Transfer-Sidebar.png')">
+    </div>
 
-    <!-- Glassmorphic Card for Key Takeaway -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 2rem;">
-      <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: UX builds trust</p>
-      <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
-      <p style="color: var(--white);">
-        You don’t need a full visual redesign to solve deep usability challenges. By carefully restructuring the platform’s information architecture and streamlining complex navigation flows, like beneficiary management with activation status, you can create a clearer, more predictable user experience.
-      </p>
+    <!-- Modal Viewer -->
+    <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
+      <img id="modalImage" style="max-width: 90%; max-height: 90%;">
+    </div>
     </div>
   </div>
+
 </section>
-
-
 
 <div id="footer-placeholder"></div>
 
