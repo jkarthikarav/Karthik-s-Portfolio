@@ -1,64 +1,167 @@
 <footer id="footer" style="
-  height: 45vh; 
-  padding: 2rem; 
-  position: relative; 
-  background: url('images/ai/BG.webp') center/cover no-repeat; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  flex-direction: column;
-  text-align: center;
+  background: url('images/ai/BG.webp') no-repeat center center/cover;
+  color: var(--white);
+  padding: 2rem;
 ">
-  <!-- Background overlay -->
-  <div style="
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 0;
-  "></div>
 
-  <!-- Content on top -->
-  <div style="position: relative; z-index: 1; color: white; max-width: 800px; width: 100%;">
-    <h3 style="margin-bottom: 20px; color: var(--white);">Let’s Work Together</h3>
-
-    <p style="max-width: 60%; margin: 0 auto 2rem auto; color: var(--white);">
-      Get in touch with me at <a href="mailto:karthikaravindj@gmail.com" style="color: var(--white); text-decoration: underline;">karthikaravindj@gmail.com</a> 
-      or connect on LinkedIn at <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" style="color: var(--white); text-decoration: underline;">Karthik Jambunathan</a>
-    </p>
-
-    <!-- Buttons -->
-    <div class="footer-links" style="gap: 2rem; margin-bottom: 2rem; display: flex; justify-content: center; flex-wrap: wrap;"> 
-      <button class="contact-btn" onclick="window.open('about-me.html', '_blank');"
-        style="color: var(--white); border: 1px solid var(--grey3); padding: 1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); border-radius: 16px;">
-        About Me
-      </button>
-
-      <button class="contact-btn" onclick="window.open('work.html', '_blank');"
-        style="color: var(--white); border: 1px solid var(--grey3); padding: 1rem; cursor: pointer; background: var(--black2); backdrop-filter: blur(12px); border-radius: 16px;">
-        View Work
-      </button>
-
-      <a href="#" onclick="scrollToTop()" 
-        style="color: var(--black2); border: 1px solid var(--grey3); padding: 1rem; cursor: pointer; background: white; border-radius: 16px;">
-        Scroll To Top
-      </a>
-    </div>
-
-    <!-- Footer Text -->
-    <p style="font-size: 14px; color: var(--white);">
-      Website created using HTML and hosted on my GitHub repo.<br>
-      <strong>© Karthik Jambunathan 2025. All rights reserved.</strong><br>
-      Everything on this site was created by me. (Some representational images were created using Leonardo.AI). 
-      <br>Please do not reuse, copy, or share any part of it without written permission.
-    </p>
-
-    <p style="font-size: 14px; color: var(--white); font-style: italic;">
-      (In short: don't take stuff from here unless I say it's okay.)
-    </p>
+  <!-- Contact Section -->
+  <div class="footer-container">
+    <!-- Left Column -->
+  <div class="footer-contact">
+    <p style="color:var(--white);">Contact</p>
+    <a href="#" onclick="scrollToTop()" class="scroll-top-btn">
+      Scroll To Top
+    </a>
   </div>
+
+    <!-- Right Column (Table) -->
+    <div class="footer-table">
+      <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+        <tbody>
+          <!-- Email -->
+          <tr>
+            <td style="padding: 0.75rem 0; font-weight: 600; width: 30%;">Email</td>
+            <td style="padding: 0.75rem 0; display: flex; justify-content: space-between; align-items: center;">
+              <a href="mailto:karthikaravindj@gmail.com" class="footer-link">
+                karthikaravindj@gmail.com
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+
+          <!-- LinkedIn -->
+          <tr>
+            <td style="padding: 0.75rem 0; font-weight: 600;">LinkedIn</td>
+            <td style="padding: 0.75rem 0; display: flex; justify-content: space-between; align-items: center;">
+              <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" class="footer-link">
+                linkedin.com/in/karthikjambunathan
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+
+          <!-- About Me -->
+          <tr>
+            <td style="padding: 0.75rem 0; font-weight: 600;">About Me</td>
+            <td style="padding: 0.75rem 0; display: flex; justify-content: space-between; align-items: center;">
+              <a href="about-me.html" class="footer-link">
+                Learn more About Me
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+
+          <!-- Case Studies -->
+          <tr>
+            <td style="padding: 0.75rem 0; font-weight: 600;">Case Studies</td>
+            <td style="padding: 0.75rem 0; display: flex; justify-content: space-between; align-items: center;">
+              <a href="work.html" class="footer-link">
+                View All Case Studies
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.3); margin: 2rem 0;" />
+
+  <!-- Bottom Info -->
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin: 0 auto;    padding-left: 10rem;
+    padding-right: 10rem;">
+    <p style="color:var(--white);margin: 0; font-weight: 600;">Karthik Jambunathan</p>
+    <p style="color:var(--white);margin: 0; font-size: 14px; opacity: 0.8;">
+      Website created using HTML, CSS, Javascript and hosted on GitHub.
+    </p>
+    <p style="color:var(--white);margin: 0; font-size: 14px;">©2023</p>
+  </div>
+
+<style>
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .footer-contact {
+    flex: 0 0 200px; /* fixed width */
+    text-align: left; /* ensure left alignment */
+  }
+
+  .scroll-top-btn {
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 16px;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent; /* removed background */
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .scroll-top-btn:hover {
+    background: var(--white);
+    color: var(--black2); /* invert on hover */
+  }
+
+  .footer-table {
+    flex: 0 0 900px; /* fixed width */
+  }
+
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-contact {
+      flex: unset;
+      width: 100%;
+      max-width: 600px;
+      text-align: left; /* stay left-aligned */
+    }
+
+    .footer-table {
+      flex: unset;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .footer-table table {
+      margin: 0 auto;
+    }
+  }
+
+  .footer-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: font-weight 0.2s ease;
+}
+
+.footer-link:visited,
+.footer-link:active,
+.footer-link:hover {
+  color: var(--white); /* stays white always */
+}
+
+.footer-link:hover {
+  font-weight: 700; /* subtle effect, not color */
+}
+
+/* Remove any row hover background */
+tr:hover {
+  background: transparent !important;
+  cursor: default;
+}
+</style>
 
   <script>
     function scrollToTop() {
