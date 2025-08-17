@@ -87,7 +87,6 @@ position: relative;
   left: 1rem;
   right: 1rem;
   width: calc(100% - 2rem);
-/*   backdrop-filter: blur(12px);  */
   background: var(--grey0); /* lighter but more visible over dark */
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
