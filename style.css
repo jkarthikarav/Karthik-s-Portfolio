@@ -1357,7 +1357,8 @@ th, td {
 }
 
 tbody tr:hover {
-  background-color: #f2f2f2;
+  background: transparent !important;
+  cursor: default;
 }
 
 th {
