@@ -12,15 +12,57 @@
 <body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">
 <div id="header-placeholder"></div>
 
-<section class="hero" style="background: var(--black2); padding:2rem; align-items: center;">
+<section class="hero" style="background: var(--black2); padding:2rem; display: flex; flex-direction: column; align-items: center;">
+  <div style="max-width: 60vw;">
+  <h5 style=" text-align: left; font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+    Onboarding Flow – BNPL App Concept
+  </h5>
+
+  <p style=" text-align: left; color: var(--white);">
+    PayDaze is a conceptual Buy Now, Pay Later (BNPL) app that allows users to split payments into installments.<br>The UI design images below depict the onboarding process.
+  </p>
+
+  <p style="color: var(--white); text-align: left;">
+  <strong>Onboarding Flow</strong><br>
+  1. Welcome – 3 intro screens orient users to PayDaze.<br>2. Profile Setup – Enter personal details + create account.<br>3. Identity Verification – Upload ID for KYC validation.<br>4. Bank Linking – Connect bank account/credit/debit card.<br>5. Terms – User reviews + accepts policies<br>
+  On Completion, they will access the Dashboard
+  </p>
+  
+  <div class="uibox" style="
+  display: flex; 
+  flex-wrap: wrap;  
+  gap: 16px;  
+  margin: auto;
+  ">
+  <img src="images/paydaze/Loading_Screen_1.png" alt="Loading Screen 1" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Loading_Screen_2.png" alt="Loading Screen 2" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Loading_Screen_3.png" alt="Loading Screen 3" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 1.png" alt="Account Creation Step 1" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 2.png" alt="Account Creation Step 2" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 2 [OTP entered].png" alt="Account Creation Step 2 [OTP entered]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 3.png" alt="Account Creation Step 3" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 3 [Generate OTP Tapped].png" alt="Account Creation Step 3 [Generate OTP Tapped]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 3 [OTP entered].png" alt="Account Creation Step 3 [OTP entered]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 4 [Button Disabled].png" alt="Account Creation Step 4 [Button Disabled]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  <img src="images/paydaze/Account Creation Step 4 [Button Enabled].png" alt="Account Creation Step 4 [Button Enabled]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+  </div>
+  
+  <style>
+    @media (max-width: 768px) {
+      .uibox img {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  </style> 
+</div>
   <h5 style="font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-    Explore My UI Designs
+    Explore other UI Designs
   </h5>
 
   <p style="color: var(--white); font-size: 14px;">
     Click each image to see high quality versions.
   </p>
-
 
 <div class="masonry-grid" style="margin-top: 2rem; margin-bottom: 2rem; gap:1rem;">
   <div class="grid-sizer"></div>
@@ -49,11 +91,6 @@
   <div class="masonry-item wide">
     <a href="images/uiwork/FM.png" target="_blank">
       <img src="images/uiwork/FM.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/Netflix1.png" target="_blank">
-      <img src="images/uiwork/Netflix1.webp" alt="" style="cursor: pointer;">
     </a>
   </div>
   <div class="masonry-item wide">
