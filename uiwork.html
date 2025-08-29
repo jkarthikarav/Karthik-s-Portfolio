@@ -13,199 +13,176 @@
 <div id="header-placeholder"></div>
 
 <section class="hero" style="background: var(--black2); padding:2rem; display: flex; flex-direction: column; align-items: center;">
-  <div style="max-width: 60vw;">
-  <h5 style=" text-align: left; font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-    Onboarding Flow – BNPL App Concept
-  </h5>
-
-  <p style=" text-align: left; color: var(--white);">
-    PayDaze is a conceptual Buy Now, Pay Later (BNPL) app that allows users to split payments into installments.<br>The UI design images below depict the onboarding process.
-  </p>
-
-  <p style="color: var(--white); text-align: left;">
-  <strong>Onboarding Flow</strong><br>
-  1. Welcome – 3 intro screens orient users to PayDaze.<br>2. Profile Setup – Enter personal details + create account.<br>3. Identity Verification – Upload ID for KYC validation.<br>4. Bank Linking – Connect bank account/credit/debit card.<br>5. Terms – User reviews + accepts policies<br>
-  On Completion, they will access the Dashboard
-  </p>
-  
-  <div class="uibox" style="
-  display: flex; 
-  flex-wrap: wrap;  
-  gap: 16px;  
-  margin: auto;
-  ">
-  <img src="images/paydaze/Loading_Screen_1.png" alt="Loading Screen 1" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Loading_Screen_2.png" alt="Loading Screen 2" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Loading_Screen_3.png" alt="Loading Screen 3" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 1.png" alt="Account Creation Step 1" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 2.png" alt="Account Creation Step 2" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 2 [OTP entered].png" alt="Account Creation Step 2 [OTP entered]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 3.png" alt="Account Creation Step 3" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 3 [Generate OTP Tapped].png" alt="Account Creation Step 3 [Generate OTP Tapped]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 3 [OTP entered].png" alt="Account Creation Step 3 [OTP entered]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 4 [Button Disabled].png" alt="Account Creation Step 4 [Button Disabled]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  <img src="images/paydaze/Account Creation Step 4 [Button Enabled].png" alt="Account Creation Step 4 [Button Enabled]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
-  </div>
-  
   <style>
-    @media (max-width: 768px) {
-      .uibox img {
-        flex: 1 1 100% !important;
-        max-width: 100% !important;
+    @media (max-width: 913px) {
+      .container-ui {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+          "col1"
+          "col2"
+          "row2" !important;
       }
     }
-  </style> 
-</div>
-  <h5 style="font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-    Explore other UI Designs
-  </h5>
+  </style>
 
-  <p style="color: var(--white); font-size: 14px;">
-    Click each image to see high quality versions.
-  </p>
+  <div class="container-ui" 
+       style="width:100%; display:grid; grid-template-columns:1fr 1fr; grid-template-areas:'col1 col2' 'row2 row2'; gap:16px;">
+    
+    <div class="col1-ui" 
+         style="grid-area:col1; display:flex; flex-wrap:wrap; padding:16px;">
+      <h5 style=" text-align: left; font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+        Onboarding Flow UI Designs – BNPL App Concept
+      </h5>
 
-<div class="masonry-grid" style="margin-top: 2rem; margin-bottom: 2rem; gap:1rem;">
-  <div class="grid-sizer"></div>
+      <p style=" text-align: left; color: var(--white);">
+        PayDaze is a conceptual Buy Now, Pay Later (BNPL) app that allows users to split payments into installments.<br>The UI design images below depict the onboarding process.
+      </p>
 
-  <!-- Tall full-page designs -->
-  <div class="masonry-item" style="margin:2rem;">
-    <a href="images/uiwork/CBC.png" target="_blank">
-      <img src="images/uiwork/CBC.webp" alt="" style="cursor: pointer;">
+      <p style="color: var(--white); text-align: left;">
+        <strong>Onboarding Flow</strong><br>
+        1. Welcome – 3 intro screens orient users to PayDaze.<br>2. Profile Setup – Enter personal details + create account.<br>3. Identity Verification – Upload ID for KYC validation.<br>4. Bank Linking – Connect bank account/credit/debit card.<br>5. Terms – User reviews + accepts policies<br>
+        On Completion, they will access the Dashboard
+        </p>
+    </div>
+    
+    <div class="col2-ui" 
+       style="grid-area:col2; display:flex; overflow-x:auto; gap:16px; scroll-snap-type:x mandatory; padding:16px; -webkit-overflow-scrolling:touch;">
+      <img src="images/paydaze/Loading_Screen_1.png" alt="Loading Screen 1" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Loading_Screen_2.png" alt="Loading Screen 2" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Loading_Screen_3.png" alt="Loading Screen 3" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 1.png" alt="Account Creation Step 1" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 2.png" alt="Account Creation Step 2" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 2 [OTP entered].png" alt="Account Creation Step 2 [OTP entered]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 3.png" alt="Account Creation Step 3" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 3 [Generate OTP Tapped].png" alt="Account Creation Step 3 [Generate OTP Tapped]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 3 [OTP entered].png" alt="Account Creation Step 3 [OTP entered]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 4 [Button Disabled].png" alt="Account Creation Step 4 [Button Disabled]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+      <img src="images/paydaze/Account Creation Step 4 [Button Enabled].png" alt="Account Creation Step 4 [Button Enabled]" style="flex:1 1 calc(33.333% - 16px); max-width:calc(33.333% - 16px); height:auto; border-radius:8px; cursor:pointer;" onclick="window.open(this.src,'_blank')">
+    </div>
+    
   </div>
-  <div class="masonry-item" style="margin:2rem;">
-    <a href="images/uiwork/EMSuite.png" target="_blank">
-      <img src="images/uiwork/EMSuite.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item" style="margin:2rem;">
-    <a href="images/uiwork/MOGO.png" target="_blank">
-      <img src="images/uiwork/MOGO.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-</div>
 
-<div class="masonry-grid" style="margin-top: 2rem; margin-bottom: 2rem; gap:1rem;">
-  <div class="grid-sizer"></div> 
+</section>
 
-  <!-- Wide layouts -->
-  <div class="masonry-item wide">
-    <a href="images/uiwork/FM.png" target="_blank">
-      <img src="images/uiwork/FM.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/Netflix2.png" target="_blank">
-      <img src="images/uiwork/Netflix2.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/HDFC-1.png" target="_blank">
-      <img src="images/uiwork/HDFC-1.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/HDFC-2.png" target="_blank">
-      <img src="images/uiwork/HDFC-2.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/HDFC-3.png" target="_blank">
-      <img src="images/uiwork/HDFC-3.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/HDFC-4.png" target="_blank">
-      <img src="images/uiwork/HDFC-4.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/AIChatDashboard-1.png" target="_blank">
-      <img src="images/uiwork/AIChatDashboard-1.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-  <div class="masonry-item wide">
-    <a href="images/uiwork/AIChatDashboard-2.png" target="_blank">
-      <img src="images/uiwork/AIChatDashboard-2.webp" alt="" style="cursor: pointer;">
-    </a>
-  </div>
-</div>
+aaaa
 
-<div class="masonry-grid" style="margin-top: 2rem; margin-bottom: 2rem; gap:1rem;">
-  <div class="grid-sizer"></div>
 
-  <div class="masonry-item">
-    <a href="images/uiwork/Fisher.png" target="_blank">
-      <img src="images/uiwork/Fisher.webp" alt="" style="cursor: pointer;">
-    </a>
+<section style="background: var(--black2); padding:2rem; display: flex; flex-direction: column; align-items: center;">
+
+  <div class="container-ui" 
+     style="width:100%; display:grid; grid-template-columns:1fr 1fr; grid-template-areas:'col1 col2' 'row2 row2'; gap:16px;">
+  
+  <div class="col1-ui" 
+       style="grid-area:col1; display:flex; flex-wrap:wrap; padding:16px;">
+    <h5 style=" text-align: left; font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      UI Designs – Event Ticketing App Concept
+    </h5>
+
+    <p style=" text-align: left; color: var(--white);">
+      We prototyped a mobile UI designed to simplify discovery and planning by making complexity invisible.<br>
+      The following features highlight the core design directions.
+    </p>
+
+    <p style="color: var(--white); text-align: left;">
+      <strong>Key Features</strong><br>
+      1. Centralized Feed – All available free or discounted tickets in one screen.<br>
+      2. Save & Share – Bookmark and share offers instantly.<br>
+      3. AI-powered Search & Recommendations – Personalized suggestions based on previous behaviour.<br>
+      4. Visual Planner – Calendar view for date-based planning.<br>
+    </p>
   </div>
-  <div class="masonry-item">
-    <a href="images/uiwork/Autonest.png" target="_blank">
-      <img src="images/uiwork/Autonest.webp" alt="" style="cursor: pointer;">
-    </a>
+  
+  <div class="col2-ui" 
+       style="grid-area:col2; display:flex; overflow-x:auto; gap:16px; scroll-snap-type:x mandatory; padding:16px; -webkit-overflow-scrolling:touch;">
+    <img src="images/webp/MTDapp-lofi.webp" alt="MTD App Low Fidelity" style="flex:0 0 80%; max-width:80%; height:auto; border-radius:8px; cursor:pointer; scroll-snap-align:center;" onclick="window.open(this.src,'_blank')">
+    <img src="images/webp/MTDapp-hifi.webp" alt="MTD App High Fidelity" style="flex:0 0 80%; max-width:80%; height:auto; border-radius:8px; cursor:pointer; scroll-snap-align:center;" onclick="window.open(this.src,'_blank')">
+    <img src="images/webp/MTDapp-1.webp" alt="MTD App Screen 1" style="flex:0 0 80%; max-width:80%; height:auto; border-radius:8px; cursor:pointer; scroll-snap-align:center;" onclick="window.open(this.src,'_blank')">
+    <img src="images/webp/MTDapp-2.webp" alt="MTD App Screen 2" style="flex:0 0 80%; max-width:80%; height:auto; border-radius:8px; cursor:pointer; scroll-snap-align:center;" onclick="window.open(this.src,'_blank')">
   </div>
+
+  
 </div>
 
+</section>
 
-<style>
+<section style="background: var(--black); padding:2rem; display: flex; flex-direction: column; align-items: center;">
+<div class="container-ui" 
+     style="width:100%; display:grid; grid-template-columns:1fr 1fr; grid-template-areas:'col1 col2'; gap:16px;">
+  
+  <div class="col1-ui" 
+       style="grid-area:col1; display:flex; flex-direction:column; padding:16px;">
+    <h5 style=" text-align: left; font-weight:bold; margin-top:4rem; margin-bottom:20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      Explore other UI Designs
+    </h5>
 
-    * {
-      box-sizing: border-box;
-    }
+    <p style=" text-align: left; color: var(--white);">
+      Click each image to see high quality versions.
+    </p>
+  </div>
+  
+  <!-- Gallery slider inside col2 (1 image at a time, 60% width, cropped from top) -->
+  <div class="col2-ui" 
+       style="grid-area:col2; display:flex; overflow-x:auto; gap:16px; scroll-snap-type:x mandatory; padding:16px; -webkit-overflow-scrolling:touch;">
+    
+    <img src="images/uiwork/CBC.webp" alt="CBC" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/CBC.png','_blank')">
+    
+    <img src="images/uiwork/EMSuite.webp" alt="EM Suite" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/EMSuite.png','_blank')">
+    
+    <img src="images/uiwork/MOGO.webp" alt="MOGO" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/MOGO.png','_blank')">
+    
+    <img src="images/uiwork/FM.webp" alt="FM" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/FM.png','_blank')">
+    
+    <img src="images/uiwork/Netflix2.webp" alt="Netflix" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/Netflix2.png','_blank')">
+    
+    <img src="images/uiwork/HDFC-1.webp" alt="HDFC 1" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/HDFC-1.png','_blank')">
+    
+    <img src="images/uiwork/HDFC-2.webp" alt="HDFC 2" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/HDFC-2.png','_blank')">
+    
+    <img src="images/uiwork/HDFC-3.webp" alt="HDFC 3" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/HDFC-3.png','_blank')">
+    
+    <img src="images/uiwork/HDFC-4.webp" alt="HDFC 4" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/HDFC-4.png','_blank')">
+    
+    <img src="images/uiwork/AIChatDashboard-1.webp" alt="AI Chat Dashboard 1" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/AIChatDashboard-1.png','_blank')">
+    
+    <img src="images/uiwork/AIChatDashboard-2.webp" alt="AI Chat Dashboard 2" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/AIChatDashboard-2.png','_blank')">
+    
+    <img src="images/uiwork/Fisher.webp" alt="Fisher" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/Fisher.png','_blank')">
+    
+    <img src="images/uiwork/Autonest.webp" alt="Autonest" 
+         style="flex:0 0 60%; max-width:60%; aspect-ratio:16/9; object-fit:cover; object-position:top; border-radius:8px; cursor:pointer; scroll-snap-align:center;" 
+         onclick="window.open('images/uiwork/Autonest.png','_blank')">
+    
+  </div>
+  
+</div>
 
 
-
-.masonry-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
-.masonry-item {
-  flex: 1 1 auto;
-  max-width: 24%; /* You can adjust this */
-}
-
-.masonry-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-}
-
-/* Wide images span 2 columns */
-.masonry-item.wide {
-  width: 30%;
-}
-
-/* Tall images keep same width, but appear taller naturally because of image height */
-.masonry-item.tall img {
-  height: auto;
-}
-
-/* Responsive overrides */
-@media (max-width: 1024px) {
-  .grid-sizer,
-  .masonry-item {
-    width: 50%;
-  }
-
-  .masonry-item.wide {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-sizer,
-  .masonry-item {
-    width: 100%;
-  }
-}
-
-</style>
+  
 </section>
 
 <div id="footer-placeholder"></div>
