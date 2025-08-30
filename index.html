@@ -40,7 +40,7 @@
     <div class="hero-text" style="text-align: left;">
       <div class="container">
         <h6 class="fade-slide-up" style="color: var(--white); opacity: 0; animation-delay: 0.4s; margin-top:2rem; margin-bottom: 20px;">
-          &nbsp;Toronto-based UX/UI Designer with 4+ Years’ Experience
+          &nbsp;<span id="greeting"></span> I'm a Toronto-based UX/UI Designer with 4+ Years’ Experience
         </h6>
 
         <h2 class="fade-slide-up" style="opacity: 0; background: linear-gradient(75deg, #F6BD60, #ffedd4); -webkit-background-clip: text; color: transparent;">
@@ -77,7 +77,7 @@
       </h3>
 
       <p style="text-align:left; color: var(--white);">
-        Explore my main case studies, each demonstrating my expertise in accessibility, mobile UX, and entertainment-focused interactive design.
+        Explore my case studies, each demonstrating my expertise in different facets of UX/UI design.
       </p>
 
       <style>
@@ -93,78 +93,66 @@
         }
       </style>
 
-        <div id="AdditionalWorkButtonGroup" style="display: flex; flex-direction: row; justify-content: start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
-
-          <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
-            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-            View All Case Studies Here
-          </button>
-
-          <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
-            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-            View UI Design collection
-          </button>
-
-        </div> 
-
         <div id="CaseStudyGrid" class="grid-wrapper">
 
-          <!-- ECE Card 1: Homepage Redesign -->
-          <div style="flex: 1 1 calc(33.33% - 1rem);">
-            <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;"
-               onclick="window.open('eceHome.html', '_blank');">
-              <div style="overflow: hidden; border-radius: 12px;">
-                <img src="images/webp/ECE-Latest-Home.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-              </div>
-              <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-                <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Shipped – March 2025</p>
-                <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-                  U of T ECE Homepage Redesign
-                </h6>
-                <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-                  My work in accessibility, large-scale stakeholder collaboration, high fidelity prototyping, web standards, and measurable impact for a prominent Canadian institution.
-                </p>
-              </div>
-            </div>
-          </div>
+<!-- ECE Homepage Redesign Card -->
+<div style="flex: 1 1 calc(33.33% - 1rem);">
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border-radius: 16px; padding: 2rem;"
+       onclick="window.open('eceHome.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+    </div>
+    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+      <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Shipped Mar 2025</p>
+      <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        ECE Homepage Redesign (UX/UI to Web Dev)
+      </h6>
+      <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development, improving clarity, navigation, and alignment with U of T’s faculty branding standards.
+      </p>
+    </div>
+  </div>
+</div>
 
-          <!-- Museum Tickets App Card -->
-          <div style="flex: 1 1 calc(33.33% - 1rem);">
-            <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;" 
-                onclick="window.open('mobileUXR.html', '_blank');">
-              <div style="overflow: hidden; border-radius: 12px;">
-                <img src="images/ai/tickets.webp" alt="Mobile App Design" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-              </div>
-              <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-                <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Presented - Fall 2023</p>
-                <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-                  Mobile App UX Research for Ticket Deals
-                </h6>
-                <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-                  Full-cycle design capability: user research, feature prioritization, wireframing, high-fidelity UI design, and mobile-first thinking.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- SpyPitch Card -->
-          <div style="flex: 1 1 calc(33.33% - 1rem);">
-            <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;"
-               onclick="window.open('filmPitchSite.html', '_blank');">
-              <div style="overflow: hidden; border-radius: 12px;">
-                <img src="images/ai/filmy.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-              </div>
-              <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-                <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Shipped - August 2021</p>
-                <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-                  Pitch Deck Website for a Film Director
-                </h6>
-                <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-                  expertise in interactive storytelling, media web design, cross-platform visuals, and designing for entertainment clients.
-                </p>
-              </div>
-            </div>
-          </div>
+<!-- Experience Toronto: Ticket Deals UX Card -->
+<div style="flex: 1 1 calc(33.33% - 1rem);">
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;"
+       onclick="window.open('mobileUXR.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+    </div>
+    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+      <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Presented Dec 2023</p>
+      <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
+      </h6>
+      <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept that makes cultural access more discoverable, inclusive, and actionable.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Gen-AI Service Blueprint Card -->
+<div style="flex: 1 1 calc(33.33% - 1rem);">
+  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 0px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;"
+     onclick="window.open('previz.html', '_blank');">
+    <div style="overflow: hidden; border-radius: 12px;">
+      <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+    </div>
+    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+      <p style="color: var(--white); font-size: 14px; margin-bottom: 12px;">Shipped July 2023</p>
+      <h6 style="margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+        Gen-AI Service Blueprint for Film Pitch (Service Design)
+      </h6>
+      <p style="margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+        Designed an AI-assisted workflow to streamline movie pitch video creation — mapping roles, clarifying handoffs, and enabling directors to visualize stories faster.
+      </p>
+    </div>
+  </div>
+</div>
+
           
           <div></div>
     
@@ -204,6 +192,19 @@
 
         </div>
 
+        <div id="AdditionalWorkButtonGroup" style="display: flex; flex-direction: row; justify-content: start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
+
+          <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
+            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+            View All Case Studies
+          </button>
+
+          <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
+            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+            View UI Design work
+          </button>
+
+        </div> 
   </section>
   
   <section class="MyImpact" style="background:none; padding: 2rem;">
@@ -233,7 +234,7 @@
 
         <!-- Funds Raised -->
         <div class="stats-summary-block">
-          <h4>Funds Raised </h4>
+          <h4>Funds Raised & Sales Generated</h4>
           <div class="stats-value"><h3>INR 3.5 Cr+</h3><span class="stats-baseline">Estimated funding secured for clients</span></div>
           <div class="stats-change-tag stats-up">via Pitch Decks and Websites</div>
         </div>
@@ -244,14 +245,14 @@
         <div class="stats-summary-block">
           <h4>Cross Sector Expertise</h4>
           <div class="stats-value"><h3>10+</h3><span class="stats-baseline">types of clients served</span></div>
-          <div class="stats-change-tag stats-up">Finance, Health, Education, Manufacturing, and more</div>
+          <div class="stats-change-tag stats-up">Finance, Education, and more</div>
         </div>
 
         <hr class="stats-divider" />
 
         <!-- Pitch Conversion Rate -->
         <div class="stats-summary-block">
-          <h4>Creative Workflow Speed</h4>
+          <h4>Workflow Speed</h4>
           <div class="stats-value"><h3>25%</h3><span class="stats-baseline">faster project delivery</span></div>
           <div class="stats-change-tag stats-up">due to Service design implementation</div>
         </div>
@@ -331,5 +332,48 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error("Error loading header:", error));
   </script>
 
+  <script>
+      const greetings = ["Hello!", "Ciao!", "Hola!", "Vanakkam!", "Namaste!"];
+    let currentGreetingIndex = 0;
+    const greetingElement = document.getElementById("greeting");
+
+    function scrambleText(targetElement, newText) {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let scrambleInterval = 50; // Speed of scrambling
+      let totalScrambleTime = 1000; // Total time for scrambling before settling
+      let currentText = targetElement.textContent;
+      let scramble = setInterval(() => {
+        let scrambledText = '';
+        for (let i = 0; i < newText.length; i++) {
+          if (Math.random() > 0.5) {
+            scrambledText += characters.charAt(Math.floor(Math.random() * characters.length));
+          } else {
+            scrambledText += currentText[i] || '';
+          }
+        }
+        targetElement.textContent = scrambledText;
+      }, scrambleInterval);
+
+      // After the scramble time, set the text to the final greeting
+      setTimeout(() => {
+        clearInterval(scramble);
+        targetElement.textContent = newText;
+      }, totalScrambleTime);
+    }
+
+    function changeGreeting() {
+      const newGreeting = greetings[currentGreetingIndex];
+      scrambleText(greetingElement, newGreeting);
+
+      // Move to the next greeting in the list
+      currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
+    }
+
+    // Change the greeting every 4 seconds (time for scramble effect)
+    setInterval(changeGreeting, 4000);
+    
+    // Initial call to start the scrambling
+    changeGreeting();
+  </script>
 </body>
 </html>
