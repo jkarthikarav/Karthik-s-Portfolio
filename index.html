@@ -40,7 +40,7 @@
     <div class="hero-text" style="text-align: left;">
       <div class="container">
         <h6 class="fade-slide-up" style="color: var(--white); opacity: 0; animation-delay: 0.4s; margin-top:2rem; margin-bottom: 20px;">
-          &nbsp;<span id="greeting"></span> I'm a Toronto-based UX/UI Designer with 4+ Years’ Experience
+        <span id="greeting"></span> I'm a Toronto-based UX/UI Designer with 4+ Years’ Experience
         </h6>
 
         <h2 class="fade-slide-up" style="opacity: 0; background: linear-gradient(75deg, #F6BD60, #ffedd4); -webkit-background-clip: text; color: transparent;">
@@ -48,7 +48,7 @@
         </h2>
 
         <a href="#websitework" class="scroll-button" style="font-size: 20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-          Scroll down to see my work in action 🡻
+          Scroll down to see my work in action
         </a>
       </div>
     </div>
@@ -59,11 +59,12 @@
         0% { opacity: 0; transform: translateY(20px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-              @media (max-width: 1560px) {
-          h2 {
-            font-size: 42px !important;
-            padding-right: 0.5rem !important;
-          }
+      
+      @media (max-width: 1560px) {
+        h2 {
+          font-size: 30px !important;
+          padding-right: 0.5rem !important;
+        }
      }           
     </style>
 
@@ -92,6 +93,20 @@
           }
         }
       </style>
+
+        <div id="AdditionalWorkButtonGroup" style="display: flex; flex-direction: row; justify-content: start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
+
+          <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
+            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+            View All Case Studies
+          </button>
+
+          <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
+            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
+            View UI Design work
+          </button>
+
+        </div> 
 
         <div id="CaseStudyGrid" class="grid-wrapper">
 
@@ -153,7 +168,6 @@
   </div>
 </div>
 
-          
           <div></div>
     
           <style>
@@ -167,48 +181,26 @@
               padding-bottom: 3rem;
             }
 
-            /* 1 item per row on mobile (up to 767px) */
-            @media screen and (max-width: 767px) {
-              .grid-wrapper > div {
-                flex: 1 1 100%;  /* 100% width (one per row) */
-              }
+            @media (max-width: 768px) {
+              #CaseStudyGrid > div {
+                flex: 1 1 100% !important; /* full width on small screens */
+                }
             }
 
-            /* 2 items per row on screens between 768px and 1023px */
-            @media screen and (min-width: 768px) and (max-width: 1023px) {
-              .grid-wrapper > div {
-                flex: 1 1 48%;  /* 2 per row */
-              }
-            }   
-
-            /* 3 items per row on screens 1024px and above */
-            @media screen and (min-width: 1024px) {
-            .grid-wrapper > div {
-              flex: 1 1 32%;  /* 3 per row */
-              }
-            }
-
+  @media (max-width: 768px) {
+    .zoom-on-hover {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
           </style>
 
         </div>
 
-        <div id="AdditionalWorkButtonGroup" style="display: flex; flex-direction: row; justify-content: start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 2rem;">
-
-          <button class="contact-btn" onclick="window.open('work.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
-            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-            View All Case Studies
-          </button>
-
-          <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');" onmouseover="this.style.borderColor='var(--white)';"
-            onmouseout="this.style.borderColor='var(--grey3)';" style=" flex: 1 1 0; border:1px solid var(--grey3); padding:2rem; cursor: pointer; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 16px;  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);">
-            View UI Design work
-          </button>
-
-        </div> 
   </section>
   
   <section class="MyImpact" style="background:none; padding: 2rem;">
-      <h3 style="text-align:left; margin-top:2rem; font-weight:bold; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
+      <h3 style="text-align:left; font-weight:bold; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
         Value Delivered
       </h3>
 
@@ -217,8 +209,6 @@
         <br><br>
         Partnering with universities, studios, and directors, I drive measurable gains in usability, engagement, and business growth, applying creative problem-solving to every challenge.
       </p>
-
-      <div style="padding:1.75rem;"></div>
 
       <div>
         <div class="stats-summary-container">
@@ -260,12 +250,18 @@
         </div>
       </div>
     </div>
+<style>
+    .stats-summary-container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+</style>
 
     <div style="padding:0.75rem;"></div>
 
     <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
       <a href="#footer" class="scroll-button" style="font-size: 20px; padding-right: 0rem; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-        What are you waiting for? Contact Me 🡻
+        What are you waiting for? Contact Me
       </a>
     </div>
 
