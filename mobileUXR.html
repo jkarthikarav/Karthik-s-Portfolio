@@ -162,18 +162,17 @@
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   gap: 3rem;
 ">
 
   <!-- Title Section -->
-  <div style="max-width:60vw;">
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Project Context</h4>
+   <div style="max-width: 80vw;">
+    <h4 style="color: var(--primary); margin-bottom: 20px;text-align:center;">Project Context</h4>
     <p style="color: var(--white);">Toronto museums offer free or discounted admission to students, families, and other groups; yet attendance for eligible visitors remains low.
-      <br><br><strong>Why?</strong> Access to deals is scattered across multiple sites, often outdated, hard to verify, and inconsistent in how it's presented.
-      <br><br><strong>Our goal:</strong> reduce fragmentation and make discounts discoverable and actionable in a single mobile-first platform.
+      Access to deals is scattered across multiple sites, often outdated, hard to verify, and inconsistent in how it's presented.
+      Therefore, Our goal was to teduce fragmentation and make discounts discoverable and actionable in a single mobile-first platform.
     </p>
-    
     <h6 style="color: var(--primary); margin-bottom:1rem;">Research Goals</h6>
     <p style="color: var(--white);">
       1. Understand user awareness and behaviour around museum ticket discounts<br>
@@ -184,19 +183,11 @@
 
       4. Highlight accessibility and inclusivity gaps<br>
     </p>
-    <style>
-      @media (max-width: 1024px) {
-        .div {
-          width: 100vw;
-        }
-      }
-    </style>
-
-  <!-- Methodology Section -->
-  <div>
-  <h4 style="color: var(--primary);  text-align:center;">UX Research</h4>
-  <p style="color: var(--white);">We conducted qualitative interviews & contextual inquiries with:</p>
-  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
+    <!-- Methodology Section -->
+    <div>
+    <h4 style="color: var(--primary);  text-align:center;">UX Research</h4>
+    <p style="color: var(--white);">We conducted qualitative interviews & contextual inquiries with:</p>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
     
     <!-- Card 1: Participants (Students) -->
     <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
@@ -222,11 +213,11 @@
       <p style="color: var(--white); margin-top: 0;">Seniors</p>
     </div>
 
-  </div>
+    </div>
     
-  <p style="color: var(--white);">We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
+    <p style="color: var(--white);">We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
 
-  <!-- Validated Insights Section (Group) -->
+    <!-- Validated Insights Section (Group) -->
     <h6 style="color: var(--primary);margin-bottom:1rem;">Validated Insights</h6>
       
     <div class="responsive-table">
@@ -267,28 +258,28 @@
     </div>
 
 
-  <style>
-  @media (max-width: 1024px) {
+    <style>
+    @media (max-width: 1024px) {
     .insight-grid {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+    }
 
-  @media (max-width: 600px) {
+    @media (max-width: 600px) {
     .insight-grid {
       grid-template-columns: 1fr;
     }
-  }
-</style>
+    }
+    </style>
 
-<div style="padding:1.25rem;"></div>
-    <p style="text-align: center; color: var(--white); max-width: 720px; margin: 0 auto;">
+    <div style="padding:1.25rem;"></div>
+    <h5 style="color: var(--white); margin: 0 auto;">
       From our synthesis, we developed Mary, the Museum-Goer:
-    </p>
-<div style="padding:1.25rem;"></div>
+    </h5>
+    <div style="padding:1.25rem;"></div>
 
-  <!-- Persona Card -->
-  <div style="
+    <!-- Persona Card -->
+    <div style="
     background: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -298,7 +289,7 @@
     padding: 2rem;
     max-width: 960px;
     margin: 0 auto;
-  ">
+    ">
 
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;">
 
@@ -329,22 +320,24 @@
 
     </div>
 
-  </div>
+    </div>
 
-    <p style="text-align: center; color: var(--white); margin-top: 2rem;">
-      Mary’s needs shaped our feature prioritisation using an Impact vs. Feasibility matrix, ensuring essential features addressed her core frustrations.
-    </p>
+    <h5 style="color: var(--white); margin-top: 2rem;">
+      Mary’s needs shaped our features.
+    </h5>
+
+    <h6 style="color: var(--primary);margin-bottom:1rem;">Impact vs. Feasibility matrix</h6>
 
     <div class="ux-grid"><img src="images/webp/Priority.webp" class="snippet-img" onclick="openModal('images/webp/Priority.webp')" style="width:900px; height:auto;border:0; box-shadow:0 8px 24px rgba(0, 0, 0, 0.0);"s/></div>
 
-<!-- Modal -->
-<div id="imageModal" class="modal-mrs" onclick="closeModal()">
+    <!-- Modal -->
+    <div id="imageModal" class="modal-mrs" onclick="closeModal()">
     <img id="modalImage" class="modal-image-mrs"  style="max-width: 80%; max-height: 80%;">
-</div>
+    </div>
   
-<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Touchpoints & Decisions</h4>
-<div class="responsive-table">
-  <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Touchpoints & Decisions</h4>
+    <div class="responsive-table">
+    <table style="width: 100%; border-collapse: collapse; color: var(--white);">
     <thead>
       <tr style="background-color: var(--black);">
         <th style="text-align: left; padding: 1rem; color: var(--primary);">Research Insight</th>
@@ -373,22 +366,17 @@
         <td style="padding: 1rem;">Proposed AI-enhanced recommendations based on history</td>
       </tr>
     </tbody>
-  </table>
-</div>
-<div style="padding:1.25rem;"></div>
+    </table>
+    </div>
+    <div style="padding:1.25rem;"></div>
 
-</section>
-
-
-<section style="background-color: var(--black); padding: 3rem 2rem 6rem 3rem;">
-
-<div style="align-items: center; display: flex; flex-direction: column;">
+<div style="display: flex; flex-direction: column;">
   <!-- Section Header -->
   <div>
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+    <h6 style="color: var(--primary);margin-bottom:1rem;">
       What I Designed
-    </h4>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
+    </h6>
+    <p style="color: var(--grey0); margin-bottom: 20px;">
       We prototyped a mobile UI designed to make complexity invisible through:
     </p>
     
@@ -425,7 +413,7 @@
   }
 </style>
 
-    <h6 style="font-size: 42px; font-weight: bold; color: var(--primary); margin-bottom: 1rem;">
+    <h6 style="color: var(--primary);margin-bottom:1rem;">
       Design Evolution
     </h6>
     <p style="color: var(--white); margin-bottom: 2rem;">
@@ -443,7 +431,7 @@
       </div>
     </div>
   
-    <h6 style="font-size: 42px; font-weight: bold; color: var(--primary); margin-bottom: 2rem;">
+    <h6 style="color: var(--primary);margin-bottom:1rem;">
       Final UI Design:
     </h6>
 
@@ -460,7 +448,6 @@
     <img id="modalImage" style="max-width: 90%; max-height: 90%;">
   </div>
 
-</div>
 </section>
 
 <section style="position: relative; padding: 4rem 2rem; background: url('images/ai/tickets.webp') no-repeat center center; background-size: cover;">
