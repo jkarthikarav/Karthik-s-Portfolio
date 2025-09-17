@@ -11,11 +11,31 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <style>
-  table tr:hover {
-    background: black !important; /* keep rows black */
-    cursor: default !important;   /* no pointer on hover */
+  .contentgrid {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap */
+    gap: 2rem;
+    margin: 1rem;
   }
-  </style>
+
+  .contentgrid > div {
+    flex: 1 1 100%; /* default: 1 per row */
+  }
+
+  /* ≥768px: 2 items per row */
+  @media (min-width: 768px) {
+    .contentgrid > div {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  /* ≥1400px: 4 items per row */
+  @media (min-width: 1400px) {
+    .contentgrid > div {
+      flex: 1 1 calc(20% - 2rem);
+    }
+  }
+</style>
 </head>
 
 <body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">
@@ -42,23 +62,17 @@
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
   "></div>
 
-  <!-- Frosted glass card with content -->
-  <div class="fade-slide-up" style=" opacity:0;
+  <!-- Frosted glass card with content (HDFC style) -->
+  <div class="fade-slide-up" style="
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
     margin: 3rem;
     padding: 2rem;
-    max-width: 720px;
+    max-width: 800px;
     width: 90%;
     color: white;
     text-align: left;
@@ -105,42 +119,37 @@
       <p style="color: var(--white); margin: 0;">Academic Project (MI-UXD Year 1)</p>
     </div>
     
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Tools</p>
-      <p style="color: var(--white); margin: 0;">Figma, Miro, Google Workspace</p>
-    </div>
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Domain</p>
+  <p style="color: var(--white); margin: 0;">Arts & Culture</p>
+</div>
 
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Role</p>
-      <p style="color: var(--white); margin: 0;">UX Researcher, UI Designer (Team of 5 UXRs)</p>
-    </div>
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Role</p>
+  <p style="color: var(--white); margin: 0;">UXR + UI Design</p>
+</div>
 
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Duration</p>
-      <p style="color: var(--white); margin: 0;">Oct–Dec 2023 (Research Focus)</p>
-    </div>
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Duration</p>
+  <p style="color: var(--white); margin: 0;">Oct – Dec 2023 (Research Focus)</p>
+</div>
 
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Domain</p>
-      <p style="color: var(--white); margin: 0;">Arts & Culture</p>
-    </div>
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Deliverables</p>
+  <p style="color: var(--white); margin: 0;">Mobile UI Mockups</p>
+</div>
 
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Current Stage</p>
-      <p style="color: var(--white); margin: 0;">Research-based Mobile App concept</p>
-    </div>
+<div class="info-card">
+  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Tools</p>
+  <p style="color: var(--white); margin: 0;">Figma, Miro, Google Workspace</p>
+</div>
 
   </div>
 
   <style>
     .info-card {
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      padding: 1rem;
+      padding: 0.75rem;
+      min-height: 72px;
     }
 
     @media (max-width: 768px) {
@@ -149,7 +158,7 @@
       }
 
       .info-card {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
       }
     }
   </style>
@@ -169,11 +178,11 @@
   <!-- Title Section -->
    <div style="max-width: 80vw;">
     <h4 style="color: var(--primary); margin-bottom: 20px;text-align:center;">Project Context</h4>
-    <p style="color: var(--white);">Toronto museums offer free or discounted admission to students, families, and other groups; yet attendance for eligible visitors remains low.
-      Access to deals is scattered across multiple sites, often outdated, hard to verify, and inconsistent in how it's presented.
-      Therefore, Our goal was to teduce fragmentation and make discounts discoverable and actionable in a single mobile-first platform.
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Defining the Problem</h6>
+    <p style="color: var(--white);">Toronto museums offer free or discounted admission to students, families, and other groups, yet many eligible visitors miss out. Deal information is scattered across multiple sites, often outdated, hard to verify, and inconsistent.
+      Therefore, Our goal was to to reduce fragmentation and make discounts discoverable and actionable in a single mobile-first platform.
     </p>
-    <h6 style="color: var(--primary); margin-bottom:1rem;">Research Goals</h6>
+    <h6 style="color: var(--primary); margin-bottom:1rem;">UX Research Goals</h6>
     <p style="color: var(--white);">
       1. Understand user awareness and behaviour around museum ticket discounts<br>
 
@@ -186,115 +195,86 @@
     <!-- Methodology Section -->
     <div>
     <h4 style="color: var(--primary);  text-align:center;">UX Research</h4>
-    <p style="color: var(--white);">We conducted qualitative interviews & contextual inquiries with:</p>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; flex-wrap: wrap;">
-    
-    <!-- Card 1: Participants (Students) -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/education.png" alt="Student Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Students</p>
-    </div>
+    <p style="color: var(--white);">We conducted qualitative interviews and contextual inquiries to understand user behavior and challenges. Our target audiences were:</p>
+<div class="contentgrid">
 
-    <!-- Card 2: Participants (Newcomers) -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/tourist.png" alt="Newcomer Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Newcomers</p>
-    </div>
+  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/education.png" alt="Student Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="color: var(--white); margin-top: 0; text-align: center;">Students</p>
+  </div>
 
-    <!-- Card 3: Participants (Families) -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/family.png" alt="Family Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Families</p>
-    </div>
+  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/tourist.png" alt="Newcomer Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="color: var(--white); margin-top: 0; text-align: center;">Newcomers</p>
+  </div>
 
-    <!-- Card 4: Participants (Seniors) -->
-    <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-      <img src="icons/elderly.png" alt="Senior Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-      <p style="color: var(--white); margin-top: 0;">Seniors</p>
-    </div>
+  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/family.png" alt="Family Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="color: var(--white); margin-top: 0; text-align: center;">Families</p>
+  </div>
 
-    </div>
+  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/elderly.png" alt="Senior Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="color: var(--white); margin-top: 0; text-align: center;">Seniors</p>
+  </div>
+
+</div>
+
     
     <p style="color: var(--white);">We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
 
     <!-- Validated Insights Section (Group) -->
-    <h6 style="color: var(--primary);margin-bottom:1rem;">Validated Insights</h6>
+    <h6 style="color: var(--primary);margin-bottom:1rem;">Our UXR Insights</h6>
       
-    <div class="responsive-table">
-      <table style="width: 100%; border-collapse: collapse; color: var(--white);">
-      <thead>
-      <tr style="background-color: var(--black);">
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">Insight</th>
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">Explanation</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Low Awareness of Deals</td>
-        <td style="padding: 1rem; color: var(--grey0);">Discounts exist but are poorly publicised; many audiences simply don’t know.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Perceived Effort &gt; Benefit</td>
-        <td style="padding: 1rem; color: var(--grey0);">Participants abandon searches if offers aren’t easy to spot or verify.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Skepticism Toward Sources</td>
-        <td style="padding: 1rem; color: var(--grey0);">Outdated or inaccurate event info reduces trust.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Inconsistent Digital Flows</td>
-        <td style="padding: 1rem; color: var(--grey0);">Different museums have entirely different booking and discount layouts.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Fragmented Information</td>
-        <td style="padding: 1rem; color: var(--grey0);">No single source aggregates deal data or event calendars.</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Financial Barriers</td>
-        <td style="padding: 1rem; color: var(--grey0);">Even modest admission prices deter low-income visitors when free options aren't visible.</td>
-      </tr>
-      </tbody>
-      </table>
-    </div>
+<div class="contentgrid">
 
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Low Awareness of Deals</h6>
+    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+      Discounts exist but are poorly publicised; many audiences simply don’t know.
+    </p>
+  </div>
 
-    <style>
-    @media (max-width: 1024px) {
-    .insight-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    }
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Perceived Effort &gt; Benefit</h6>
+    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+      Participants abandon searches if offers aren’t easy to spot or verify.
+    </p>
+  </div>
 
-    @media (max-width: 600px) {
-    .insight-grid {
-      grid-template-columns: 1fr;
-    }
-    }
-    </style>
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Inconsistent Digital Flows</h6>
+    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+      Different museums have entirely different booking and discount layouts.
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Fragmented Information</h6>
+    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+      No single source aggregates deal data or event calendars.
+    </p>
+  </div>
+
+</div>
 
     <div style="padding:1.25rem;"></div>
-    <h5 style="color: var(--white); margin: 0 auto;">
-      From our synthesis, we developed Mary, the Museum-Goer:
+    
+    <h5 style="color: var(--white); margin-top: 2rem;">
+    We synthesized the research into a persona: Mary, the Museum-Goer.
     </h5>
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Persona Creation</h6>
     <div style="padding:1.25rem;"></div>
 
     <!-- Persona Card -->
     <div style="
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 2rem;
-    max-width: 960px;
     margin: 0 auto;
     ">
 
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;">
 
       <!-- Left: Image and Summary -->
-      <div style="flex: 1; min-width: 260px; text-align: center; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+      <div style="flex: 1; min-width: 260px; text-align: center; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
         <img src="images/webp/MTMG.webp" alt="Mary, the Museum Go-er" style="max-width: 100%; margin-bottom: 0.5rem; border-radius: 8px;">
         <h6 style="color: var(--primary); margin-top: 0; margin-bottom: 0rem;">Mary, the Museum Go-er</h6>
         <p style="color: var(--grey0); margin-top: 0rem;">
@@ -308,7 +288,7 @@
 
       <!-- Right: Persona Description -->
       <div style="flex: 2; min-width: 280px;">
-        <h6 style="color: var(--primary); margin-top: 0;">Meet Mary, the Museum Go-er!</h6>
+        <h6 style="color: var(--primary); margin-top: 0;">Meet Mary,<br>the Museum Go-er!</h6>
         <p style="color: var(--white);">
           Mary was a fictitious human birthed by the group's research data. A hard-working and busy student, when time allows, she opts to visit museums with her friends or even solo!
           <br><br>
@@ -323,10 +303,12 @@
     </div>
 
     <h5 style="color: var(--white); margin-top: 2rem;">
-      Mary’s needs shaped our features.
+      Mary’s needs shaped our App's features.
     </h5>
 
-    <h6 style="color: var(--primary);margin-bottom:1rem;">Impact vs. Feasibility matrix</h6>
+    <h6 style="color: var(--primary); margin-bottom:1rem;">Ideation & Feature Prioritization</h6>
+
+    <p style="color: var(--grey0); margin-top: 0rem;">Mary’s needs shaped our Impact vs. Feasibility matrix for feature prioritization.</p>
 
     <div class="ux-grid"><img src="images/webp/Priority.webp" class="snippet-img" onclick="openModal('images/webp/Priority.webp')" style="width:900px; height:auto;border:0; box-shadow:0 8px 24px rgba(0, 0, 0, 0.0);"s/></div>
 
@@ -336,38 +318,46 @@
     </div>
   
     <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Touchpoints & Decisions</h4>
-    <div class="responsive-table">
-    <table style="width: 100%; border-collapse: collapse; color: var(--white);">
-    <thead>
-      <tr style="background-color: var(--black);">
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">Research Insight</th>
-        <th style="text-align: left; padding: 1rem; color: var(--primary);">Design Response</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Users want deals but info is scattered</td>
-        <td style="padding: 1rem;">Built a Centralized Tickets Feed combining all discounts</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Users value speed</td>
-        <td style="padding: 1rem;">Added Save &amp; Share CTA for quick action</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Users plan by date</td>
-        <td style="padding: 1rem;">Integrated Calendar-based visual planner</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Trust grows with clarity</td>
-        <td style="padding: 1rem;">Grouped offers visually, used recognisable icons</td>
-      </tr>
-      <tr style="background-color: black;">
-        <td style="padding: 1rem;">Users need relevant content</td>
-        <td style="padding: 1rem;">Proposed AI-enhanced recommendations based on history</td>
-      </tr>
-    </tbody>
-    </table>
-    </div>
+ 
+    <div class="contentgrid">
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Users want ease of access</h6>
+    <p style="color: var(--white); text-align:center; margin-top:0;">
+      Built a Centralized Tickets Feed combining all discounts
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Users value speed</h6>
+    <p style="color: var(--white); text-align:center; margin-top:0;">
+      Added Save &amp; Share CTA for quick action
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Users plan by date</h6>
+    <p style="color: var(--white); text-align:center; margin-top:0;">
+      Integrated Calendar-based visual planner
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Trust grows with clarity</h6>
+    <p style="color: var(--white); text-align:center; margin-top:0;">
+      Grouped offers visually, used recognisable icons
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Users need relevant content</h6>
+    <p style="color: var(--white); text-align:center; margin-top:0;">
+      Proposed AI-enhanced recommendations based on history
+    </p>
+  </div>
+
+</div>
+
     <div style="padding:1.25rem;"></div>
 
 <div style="display: flex; flex-direction: column;">
@@ -381,23 +371,23 @@
     </p>
     
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem;">
-  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">Centralized Feed</p>
+  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Centralized Feed</p>
     <p style="color: var(--white); margin-top: 0;">All available free or discounted tickets in one screen</p>
   </div>
 
-  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">Save & Share</p>
+  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Save & Share</p>
     <p style="color: var(--white); margin-top: 0;">Enable bookmarking & sharing of offers instantly</p>
   </div>
 
-  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">AI-powered Search & Recommendations</p>
+  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">AI-powered Recommendations</p>
     <p style="color: var(--white); margin-top: 0;">Personalised suggestions based on previous behaviour</p>
   </div>
 
-  <div style="background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-    <p style="color: var(--white); font-weight: bold; margin-bottom: 0.5rem;">Visual Planner</p>
+  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
+    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Visual Planner</p>
     <p style="color: var(--white); margin-top: 0;">Calendar view for date-based planning</p>
   </div>
 </div>
@@ -417,7 +407,7 @@
       Design Evolution
     </h6>
     <p style="color: var(--white); margin-bottom: 2rem;">
-      These are the initial designs we prepared as a group. Presented to a panel of senior UX researchers, who praised the idea behind the app and the features.
+      Designs were iterated based on internal review and presented to senior UX researchers. Feedback validated our approach and reinforced the value of visual clarity, trust, and actionable ticket information.
     </p>
 
     <div class="progress-images" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
@@ -451,11 +441,11 @@
 </section>
 
 <section style="position: relative; padding: 4rem 2rem; background: url('images/ai/tickets.webp') no-repeat center center; background-size: cover;">
-  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5);"></div> <!-- Black overlay -->
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7);"></div> <!-- Black overlay -->
 
-  <div style="position: relative; display: flex; flex-direction: row; gap: 3rem; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
-    <!-- Glassmorphic Text Column -->
-    <div style="flex: 1; min-width: 300px; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+  <div style="position: relative; display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; justify-content: flex-start;">
+    <!-- Main content container -->
+    <div style="padding: 2rem; margin-bottom: 2rem;">
       <h4 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h4>
       <p style="color: var(--white); margin-bottom: 2rem;">
         The goal of this project was to create a clean, functional UI that simplifies how Torontonians discover and access museum ticket deals.
@@ -465,8 +455,8 @@
         Also, I envisioned it as an AI-powered interface: its recommendations and event highlights would adapt based on user preferences and behaviour data, improving relevance over time.
       </p>
 
-      <!-- Glassmorphic Card for Key Takeaway -->
-      <div style="max-width: 40%; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-top: 2rem;">
+      <!-- Key Takeaway -->
+      <div class="takeaway" style="margin-top: 2rem; background-color: transparent;">
         <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: Make messy systems feel simple</p>
         <div style="height: 1px; background-color: var(--grey0); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
         <p style="color: var(--white);">
@@ -475,6 +465,22 @@
       </div>
     </div>
   </div>
+
+  <style>
+    /* Takeaway width for screens <1400px */
+    @media (max-width: 1399px) {
+      .takeaway {
+        width: 75%;
+      }
+    }
+
+    /* Takeaway width for screens >=1400px */
+    @media (min-width: 1400px) {
+      .takeaway {
+        width: 25%;
+      }
+    }
+  </style>
 </section>
 
 
