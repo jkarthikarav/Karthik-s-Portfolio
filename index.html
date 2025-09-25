@@ -29,286 +29,564 @@
 
 </head>
 
-<body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">  
+<body style="background-color: var(--black3);">  
 
   <!-- Header Placeholder -->
   <div id="header-placeholder"></div>
-  <div style="padding:1.25rem;"></div>
 
   <!-- Hero Section -->
-  <section class="hero" style="background:none; padding: 2rem;">
+<section class="hero" style="background:none; padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;">
 
-<div class="container fade-slide-up">
-  <div class="column column-2">
-    <h4 class="gradient-text" style="margin-bottom:0;">
-      <span id="greeting"></span> I'm Karthik
-    </h4>
+    <div style="padding:1.25rem;"></div>
+
+    <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; color:var(--white); opacity:0; min-height: fit-content;">
+      <h5 style="font-weight:400; margin:0;">
+        <span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--primary);">Karthik Jambunathan</span>
+      </h5>
+
+      <h5 style="font-weight:400; margin:10px 0;">
+        driving 🏛️Fintech, 🖥️Web, and 🗺️Digital Strategy,
+      </h5>
+
+      <h5 style="font-weight:400; margin:10px 0;">
+        through 🛠️product innovation and 🧩 workflow design.
+      </h5>
+
+      <p style="margin-top:40px; color:var(--white);">
+        <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
+        Seeking Hybrid/WFO Canada & Remote Global Roles
+      </p>
+
+      <p style="color:var(--white);">
+        Based in 📍<span style="font-weight:bold; color:var(--primary);">Greater Toronto Area, ON, Canada</span><br>
+        4+ years of creating innovative solutions in Filmmaking, Fintech, and Healthcare Domains.
+        <br>Master of Information @ 
+        <span style="font-weight:bold; color:var(--primary);">University of Toronto - iSchool </span>
+        and Media Studies @
+        <span style="font-weight:bold; color:var(--primary);">Anna University, Chennai</span>
+      </p>
+      
+      <div class="button-flex">
+        <button class="contact-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
+          Scroll down to View Featured Work
+        </button>
+
+        <button class="contact-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
+          Why Me?
+        </button>
+      </div>
+
+    </div>
+
+    <script>
+      // Pulsing green dot effect
+      const dot = document.getElementById('pulseDot');
+      let scale = 1;
+      let growing = true;
+
+      setInterval(() => {
+            if (growing) {
+              scale += 0.05;
+              if (scale >= 1.4) growing = false;
+            } else {
+              scale -= 0.05;
+              if (scale <= 1) growing = true;
+            }
+            dot.style.transform = `scale(${scale})`;
+      }, 100);
+    </script>
+  
+  
+    <style>
+          .button-row {
+            display: flex;
+            gap: 1rem;
+          }
+
+          .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 52px; /* fixed height */
+            padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+            border: 1px solid var(--grey3);
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+            transition: border-color 0.3s ease;
+            flex: 0 0 auto; /* shrink to fit content + padding */
+          }   
+
+          .contact-btn:hover {
+            border-color: var(--white);
+          }
+
+          /* Responsive: stack buttons on small screens */
+          @media (max-width: 768px) {
+            .button-row {
+              flex-direction: column;
+            }
+          }
+
+          .container {
+            display: flex;
+            gap: 2rem; 
+            align-items: center; 
+          }
+
+          .column-1 {
+            flex: 0 0 30%;
+          }
+
+          .column-2 {
+            flex: 0 0 70%;
+            text-align: left;
+          }
+
+          .profile-img {
+            width: 100%;
+            aspect-ratio: 1 / 1; 
+            object-fit: cover;
+            display: block;
+            border-radius: 4%;
+          }
+
+          .gradient-text {
+          background: linear-gradient(45deg, #F6BD60, #FFD59A);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          }
+
+          /* Scroll link style */
+          .scroll-link {
+            text-align: left;
+            color: var(--white);
+            cursor: pointer;
+          }
+
+
+          @media (min-width: 1025px) and (max-width: 1440px) {
+            .column-2 h4 {
+              font-size: 42px !important;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .scroll-link {
+              max-width: 100% !important;
+            }
+          }
+
+          /* Smooth scroll behavior */
+          html {
+            scroll-behavior: smooth;
+          }
+    </style>
     
-    <p style="margin-top:0.5rem; color:var(--white); font-size: 18px;">📍Toronto, CA</p>
+  </section>
 
-    <h6 style="color:var(--white); margin-bottom:0;">UX/UI Solutions Consultant with background in Filmmaking, Fintech, and Information Science</h6>
-
-    <p style="margin-top:0.5rem; color:var(--white);">I turn <span style="font-weight: bold; color: var(--primary);">UXR insights into actionable design strategies</span> that create <span style="font-weight: bold; color: var(--primary);">tangible business value</span>. 
-    My work focuses on <span style="font-weight: bold; color: var(--primary);">making information accessible and usable</span> for clients and end-users alike, and <span style="font-weight: bold; color: var(--primary);"></span>improve outcomes for your organization.
-    I also <span style="font-weight: bold; color: var(--primary);">introduce new workflows, including the use of GenAI</span>, to optimize delivery and improve efficiency.
+<section id="about" class="bento-section fade-slide-up" style="opacity:0;">
+  <div class="center-container">
+    <h6 style="color:var(--white); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--primary);">Karthik</span> different?</h6>
+    <p style="color:var(--white);">
+      I love to turn <span class="highlight">UXR insights into actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
+      My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
+      I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product/service delivery and improve overall internal team efficiency.
     </p>
-
-    <!-- New content added -->
-    <p class="scroll-link" style="cursor:pointer; text-decoration: underline;">Scroll down to view my Featured Work</p>
-      <!-- Buttons row -->
-  <div class="button-row">
-    <button class="contact-btn" onclick="window.open('work.html', '_blank');"
-      onmouseover="this.style.borderColor='var(--white)';"
-      onmouseout="this.style.borderColor='var(--grey3)';">
-      View My Work
-    </button>
-
-    <button class="contact-btn" onclick="window.open('uiwork.html', '_blank');"
-      onmouseover="this.style.borderColor='var(--white)';"
-      onmouseout="this.style.borderColor='var(--grey3)';">
-      View UI Designs
-    </button>
-
-    <button class="contact-btn" onclick="window.open('pdfs/Graphic Design.pdf', '_blank');"
-      onmouseover="this.style.borderColor='var(--white)';"
-      onmouseout="this.style.borderColor='var(--grey3)';">
-      View Graphic Designs
+    <button class="contact-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" 
+        onmouseover="this.style.borderColor='var(--white)';" 
+        onmouseout="this.style.borderColor='var(--grey3)';">
+        Scroll down to View Featured Work
     </button>
   </div>
-</div>
-</div>
+
+  <!-- Skill Badges -->
+  <div class="badge skill" style="top: 5%; left: 35%;">Information Architecture</div>
+  <div class="badge skill" style="top: 20%; right: 10%;">Front End Web Development</div>
+  <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity UI Prototyping</div>
+  <div class="badge skill" style="bottom: 18%; right: 4%;">User & Competitor Research</div>
+  <div class="badge skill" style="top: 35%; left: 5%;">Journey Mapping & Task Flows</div>
+  <div class="badge skill" style="bottom: 15%; left: 50%;">Service Blueprinting</div>
+
+
+  <!-- Logo Badges -->
+  <div class="badge logo" style="bottom: 10%; left: 38%;">
+    <img src="icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  <div class="badge logo" style="top: 40%; right: 8%;">
+    <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
+  </div>
+  <div class="badge logo" style="top: 5%; left: 60%;">
+    <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
+  </div>
+  <div class="badge logo" style="top: 15%; left: 22%;">
+    <img src="icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
+  </div>
+  <div class="badge logo" style="top: 52%; left: 8%;">
+    <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+  </div>
 
 <style>
-    .button-row {
+  .bento-section {
+    position: relative;
+    height: 100vh;
     display: flex;
-    gap: 1rem;
-  }
-
-  .contact-btn {
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    height: 52px; /* fixed height */
-    padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
-    border: 1px solid var(--grey3);
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 16px;
-    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-    transition: border-color 0.3s ease;
-    flex: 0 0 auto; /* shrink to fit content + padding */
+    align-items: center;
+    overflow: hidden;
   }
 
-  .contact-btn:hover {
-    border-color: var(--white);
-  }
-
-  /* Responsive: stack buttons on small screens */
-  @media (max-width: 768px) {
-    .button-row {
-      flex-direction: column;
-    }
-  }
-
-  .container {
+  .center-container {
     display: flex;
-    gap: 2rem; 
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 60vw;
+    padding: 2rem;
+    z-index: 10;
   }
 
-  .column-1 {
-    flex: 0 0 30%;
+  .highlight {
+    font-weight: bold;
+    color: var(--primary);
   }
 
-  .column-2 {
-    flex: 0 0 70%;
-    text-align: left;
+  .badge {
+    position: absolute;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: default;
+    transition: transform 0.3s, box-shadow 0.5s;
   }
 
-  .profile-img {
-    width: 100%;
-    aspect-ratio: 1 / 1; 
-    object-fit: cover;
-    display: block;
-    border-radius: 4%;
+  /* Glow only for skill badges */
+  .badge.skill {
+    padding: 0.8rem 1.2rem;
+    background: var(--primary);
+    color: var(--black2);
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    animation: glowPulse 3s ease-in-out infinite;
   }
 
-  .gradient-text {
-    background: linear-gradient(45deg, #F6BD60, #FFD59A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+  .badge.logo {
+    color: #fff;
+    width: 128px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* Gradient for h5 */
-  .gradient-h5 {
-    text-align: left;
-    background: linear-gradient(45deg, #F6BD60, #FFD59A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+  .badge.logo img {
+    min-height: 100%;
+    object-fit: contain;
   }
 
-  /* Scroll link style */
-  .scroll-link {
-    text-align: left;
-    color: var(--white);
-    cursor: pointer;
-  }
-
-  @media (max-width: 1440px) {
-    .container {
-      flex-direction: column-reverse; 
-      gap: 1.5rem;
-    }
-
-    .column-2 {
-      flex: 0 0 auto;
-      width: 100%;
-    }
-
-        .column-1{
-          display:none;
-        }
-        
-    .column-2 h4 {
-      font-size: 30px !important;
+  @media (max-width: 990px) {
+    .bento-section .badge {
+      display: none;
     }
   }
 
-    @media (min-width: 1025px) and (max-width: 1440px) {
-    .column-2 h4 {
-      font-size: 42px !important;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .gradient-h5 {
-      font-size: 24px !important;
-      padding-right: 0.5rem !important;
-    }
-
-    .scroll-link {
-      max-width: 100% !important;
-    }
-  }
-
-  /* Smooth scroll behavior */
-  html {
-    scroll-behavior: smooth;
+  @keyframes glowPulse {
+    0% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
+    50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
+    100% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
   }
 </style>
 
 <script>
-  // Scroll to featured work on click
-  document.querySelector('.scroll-link').addEventListener('click', function() {
-    const target = document.getElementById('fw');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+  const badges = document.querySelectorAll('.badge');
+
+  badges.forEach(badge => {
+    // Random default rotation (-20 to 20 degrees)
+    const defaultDeg = Math.random() * 40 - 20;
+    badge.style.transform = `rotate(${defaultDeg}deg)`;
+
+    // Hover: straighten and scale up
+    badge.addEventListener('mouseover', () => {
+      badge.style.transform = 'rotate(0deg) scale(1.1)';
+    });
+
+    badge.addEventListener('mouseout', () => {
+      badge.style.transform = `rotate(${defaultDeg}deg) scale(1)`;
+    });
   });
 </script>
 
-  <div id="fw" style="padding:1.25rem;"></div>
+</section>
 
-    <h5 class="gradient-h5" style="margin-top:2rem;" >Featured Work</h5>
 
-        <div id="CaseStudyGrid" class="grid-wrapper">
 
-<!-- ECE Homepage Redesign Card -->
-<div style="flex: 1 1 calc(33.33% - 1rem);">
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;"
-       onclick="window.open('eceHome.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-    </div>
-    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-      <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
-      <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        ECE Homepage Redesign (UX/UI to Web Dev)
-      </h6>
-      <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development, improving clarity, navigation, and alignment with U of T’s faculty branding standards.
-      </p>
-    </div>
-  </div>
-</div>
+  <section id="fw" style="min-height:100vh; display: flex; flex-direction: column; padding:2rem;">
 
-<!-- Experience Toronto: Ticket Deals UX Card -->
-<div style="flex: 1 1 calc(33.33% - 1rem);">
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;"
-       onclick="window.open('mobileUXR.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-    </div>
-    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-      <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
-      <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
-      </h6>
-      <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept that makes cultural access more discoverable, inclusive, and actionable.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- Gen-AI Service Blueprint Card -->
-<div style="flex: 1 1 calc(33.33% - 1rem);">
-  <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;"
-     onclick="window.open('previz.html', '_blank');">
-    <div style="overflow: hidden; border-radius: 12px;">
-      <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-    </div>
-    <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-      <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
-      <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-        Gen-AI Service Blueprint for Film Pitch (Service Design)
-      </h6>
-      <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
-        Designed an AI-assisted workflow to streamline movie pitch video creation — mapping roles, clarifying handoffs, and enabling directors to visualize stories faster.
-      </p>
-    </div>
-  </div>
-</div>
-
+  <h5 class="fade-slide-up" style="color:var(--primary); margin-top:2rem; opacity:0;">
+    Featured Work &nbsp;&nbsp;
+    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
+      <span>View All</span>
+      <span style="display: inline-block; transform: rotate(-45deg);">→</span>
+    </a>&nbsp;&nbsp;
     
-          <style>
+    <a href="#logo-gallery-section" 
+      style="font-size: 1rem; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem; cursor: pointer;"
+      onclick="document.getElementById('logo-gallery-section').scrollIntoView({behavior: 'smooth'});">
+      <span>Companies that trust me</span>
+      <span style="display: inline-block; transform: rotate(90deg);">→</span>
+    </a>
 
-            /* Default Flexbox Layout (3 items per row) */
-            .grid-wrapper {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 1rem;
-              padding-top: 1rem;
-              padding-bottom: 3rem;
-            }
+  </h5>
 
-            @media (max-width: 768px) {
-              #CaseStudyGrid > div {
-                flex: 1 1 100% !important; /* full width on small screens */
-                }
-            }
+  <div id="CaseStudyGrid" class="grid-wrapper fade-slide-up">
+
+    <!-- ECE Homepage Redesign Card -->
+    <div style="flex: 1 1 calc(33.33% - 1rem);">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;" onclick="window.open('eceHome.html', '_blank');">
+        <div style="overflow: hidden; border-radius: 12px;">
+          <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+          <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            ECE Homepage Redesign (UX/UI to Web Dev)
+          </h6>
+          <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+            Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development, improving clarity, navigation, and alignment with U of T’s faculty branding standards.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Toronto: Ticket Deals UX Card -->
+    <div style="flex: 1 1 calc(33.33% - 1rem);">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;" onclick="window.open('mobileUXR.html', '_blank');">
+        <div style="overflow: hidden; border-radius: 12px;">
+          <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+          <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
+          </h6>
+          <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+            Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept that makes cultural access more discoverable, inclusive, and actionable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gen-AI Service Blueprint Card -->
+    <div style="flex: 1 1 calc(33.33% - 1rem);">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;" onclick="window.open('previz.html', '_blank');">
+        <div style="overflow: hidden; border-radius: 12px;">
+          <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+          <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            Gen-AI Service Blueprint for Film Pitch (Service Design)
+          </h6>
+          <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+            Designed an AI-assisted workflow to streamline movie pitch video creation — mapping roles, clarifying handoffs, and enabling directors to visualize stories faster.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+  /* Default Flexbox Layout (3 items per row) */
+  .grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
 
   @media (max-width: 768px) {
+    #CaseStudyGrid > div {
+      flex: 1 1 100% !important; /* full width on small screens */
+    }
+
     .zoom-on-hover {
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
   }
-          </style>
+  </style>
 
-        </div>
+  </section>
+
+<section id="logo-gallery-section" class="fade-slide-up" style="padding:2rem;height: 50vh; opacity: 0; overflow: hidden; display: flex; flex-direction: column;">
+
+  <!-- Header -->
+  <h5 style="color: var(--primary); margin-top: 2rem;">Companies worked with</h5>
+
+  <!-- Slider Container -->
+  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; height: 300px;">
+    <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
+      <!-- Logos inserted via JS -->
+    </div>
+  </div>
+
+</section>
+
+<script>
+  const slider = document.querySelector('.slider');
+  const totalLogos = 20; // 20 logos
+
+  for (let i = 1; i <= totalLogos; i++) {
+    const img = document.createElement('img');
+    img.src = `logos/Company/Logo_VD_${i}.jpg`;
+    img.alt = `Logo ${i}`;
+    img.style.height = '100%';       // scale to slider height
+    img.style.width = 'auto';        // maintain 1:1 aspect ratio
+    img.style.objectFit = 'contain';
+    slider.appendChild(img);
+  }
+
+  // Duplicate for seamless scroll
+  for (let i = 1; i <= totalLogos; i++) {
+    const img = document.createElement('img');
+    img.src = `logos/Company/Logo_VD_${i}.jpg`;
+    img.alt = `Logo ${i} duplicate`;
+    img.style.height = '100%';
+    img.style.width = 'auto';
+    img.style.objectFit = 'contain';
+    slider.appendChild(img);
+  }
+
+  // IntersectionObserver for fade-slide-up and 5s animation delay
+  const section = document.querySelector('#logo-gallery-section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        section.classList.add('visible'); // fade-slide-up
+        setTimeout(() => {
+          slider.style.animation = 'scroll-left 40s linear infinite';
+        }, 5000);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(section);
+</script>
+
+<style>
+  /* Slider animation */
+  .slider {
+    display: flex;
+    align-items: center;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Hover pause */
+  .slider:hover {
+    animation-play-state: paused;
+  }
+
+  /* Fade-slide-up animation */
+  .fade-slide-up {
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<section id="footer" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-right:2rem; padding-left:2rem;">
+
+  <div id="footer-card" style="
+    border-radius: 16px; 
+    overflow: hidden; /* ensures child content respects rounded corners */
+    background: inherit; /* keeps the footer background image/color */
+    width: 100%;
+    ">
+    <div id="footer-placeholder"></div>
+  </div>
 
   </section>
   
-  <div style="padding:1.25rem;"></div>
+  <style>
+    /* Base padding */
+#footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
-  <div id="footer-placeholder"></div>
+/* Reduce by 0.5rem per 100px from 1200px down to 700px */
+@media (max-width: 1199px) {
+  #footer {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 1099px) {
+  #footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 999px) {
+  #footer {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 899px) {
+  #footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 799px) {
+  #footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 699px) {
+  #footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+  </style>
+
+<style>
+        .button-flex{
+        display: flex; flex-direction: row; gap: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        .button-flex {
+          flex-direction: column;
+        }
+      }
+</style>
 
   <script>
 document.addEventListener('DOMContentLoaded', () => {
