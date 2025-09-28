@@ -35,295 +35,254 @@
   <div id="header-placeholder"></div>
 
   <!-- Hero Section -->
-<section class="hero" style="background:none; padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;">
+<section class="hero" style="background:none; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box;">
 
     <div style="padding:1.25rem;"></div>
 
-    <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; color:var(--white); opacity:0; min-height: fit-content;">
-      <h5 style="font-weight:400; margin:0;">
-        <span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--primary);">Karthik Jambunathan</span>
-      </h5>
+      <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; color:var(--white); opacity:0;">
+        
+        <h5 style="font-weight:400; margin:0;"><span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--primary);">Karthik Jambunathan</span></h5>
 
-      <h5 style="font-weight:400; margin:10px 0;">
-        driving 🏛️Fintech, 🖥️Web, and 🗺️Digital Strategy,
-      </h5>
+        <h5 style="font-weight:400; margin:10px 0;">driving 🏛️Fintech, 🖥️Web, and 🗺️Digital Strategy,</h5>
 
-      <h5 style="font-weight:400; margin:10px 0;">
-        through 🛠️product innovation and 🧩 workflow design.
-      </h5>
+        <h5 style="font-weight:400; margin:10px 0;">through 🛠️product innovation and 🧩 workflow design.</h5>
 
-      <p style="margin-top:40px; color:var(--white);">
-        <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
-        Seeking Hybrid/WFO Canada & Remote Global Roles
-      </p>
+        <p style="margin-top:40px; color:var(--white);">
+          <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
+          Seeking Hybrid/WFO Canada & Remote Global Roles
+        </p>
 
-      <p style="color:var(--white);">
-        Based in 📍<span style="font-weight:bold; color:var(--primary);">Greater Toronto Area, ON, Canada</span><br>
-        4+ years of creating innovative solutions in Filmmaking, Fintech, and Healthcare Domains.
-        <br>Master of Information @ 
-        <span style="font-weight:bold; color:var(--primary);">University of Toronto - iSchool </span>
-        and Media Studies @
-        <span style="font-weight:bold; color:var(--primary);">Anna University, Chennai</span>
-      </p>
-      
-      <div class="button-flex">
-        <button class="contact-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
-          Scroll down to View Featured Work
-        </button>
+        <p style="color:var(--white);">
+          Based in 📍<span style="font-weight:bold; color:var(--primary);">Greater Toronto Area, ON, Canada</span><br>
+          4+ years of creating innovative solutions in Filmmaking, Fintech, and Healthcare Domains.
+          <br>Master of Information @ <span style="font-weight:bold; color:var(--primary);">University of Toronto - iSchool </span>and Masters in Media @ <span style="font-weight:bold; color:var(--primary);">Anna University, Chennai</span>
+        </p>
 
-        <button class="contact-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
-          Why Me?
-        </button>
+          <button class="contact-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
+            Next Section
+          </button>
+        </div>
+
       </div>
 
-    </div>
+      <script>
+        // Pulsing green dot effect
+        const dot = document.getElementById('pulseDot');
+        let scale = 1;
+        let growing = true;
 
-    <script>
-      // Pulsing green dot effect
-      const dot = document.getElementById('pulseDot');
-      let scale = 1;
-      let growing = true;
-
-      setInterval(() => {
-            if (growing) {
-              scale += 0.05;
-              if (scale >= 1.4) growing = false;
-            } else {
-              scale -= 0.05;
-              if (scale <= 1) growing = true;
-            }
-            dot.style.transform = `scale(${scale})`;
-      }, 100);
-    </script>
+        setInterval(() => {
+          if (growing) {
+            scale += 0.05;
+            if (scale >= 1.4) growing = false;
+          } else {
+            scale -= 0.05;
+          if (scale <= 1) growing = true;
+          }
+          dot.style.transform = `scale(${scale})`;
+        }, 100);
+      </script>
   
   
-    <style>
+      <style>
+
+        .button-row {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .contact-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          border: 1px solid var(--grey3);
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }   
+
+        .contact-btn:hover {
+          border-color: var(--white);
+        }
+
+        /* Responsive: stack buttons on small screens */
+        @media (max-width: 768px) {
           .button-row {
-            display: flex;
-            gap: 1rem;
-          }
-
-          .contact-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 52px; /* fixed height */
-            padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
-            border: 1px solid var(--grey3);
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 16px;
-            box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
-            transition: border-color 0.3s ease;
-            flex: 0 0 auto; /* shrink to fit content + padding */
-          }   
-
-          .contact-btn:hover {
-            border-color: var(--white);
-          }
-
-          /* Responsive: stack buttons on small screens */
-          @media (max-width: 768px) {
-            .button-row {
               flex-direction: column;
-            }
           }
+        }
 
-          .container {
-            display: flex;
-            gap: 2rem; 
-            align-items: center; 
-          }
+        .container {
+          display: flex;
+          gap: 2rem; 
+          align-items: center; 
+        }
 
-          .column-1 {
-            flex: 0 0 30%;
-          }
-
-          .column-2 {
-            flex: 0 0 70%;
-            text-align: left;
-          }
-
-          .profile-img {
-            width: 100%;
-            aspect-ratio: 1 / 1; 
-            object-fit: cover;
-            display: block;
-            border-radius: 4%;
-          }
-
-          .gradient-text {
+        .gradient-text {
           background: linear-gradient(45deg, #F6BD60, #FFD59A);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           color: transparent;
-          }
+        }
 
-          /* Scroll link style */
-          .scroll-link {
-            text-align: left;
-            color: var(--white);
-            cursor: pointer;
-          }
-
-
-          @media (min-width: 1025px) and (max-width: 1440px) {
-            .column-2 h4 {
-              font-size: 42px !important;
-            }
-          }
-
-          @media (max-width: 768px) {
-            .scroll-link {
-              max-width: 100% !important;
-            }
-          }
-
-          /* Smooth scroll behavior */
-          html {
-            scroll-behavior: smooth;
-          }
     </style>
     
   </section>
 
-<section id="about" class="bento-section fade-slide-up" style="opacity:0;">
-  <div class="center-container">
-    <h6 style="color:var(--white); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--primary);">Karthik</span> different?</h6>
-    <p style="color:var(--white);">
-      I love to turn <span class="highlight">UXR insights into actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
-      My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
-      I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product/service delivery and improve overall internal team efficiency.
-    </p>
-    <button class="contact-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" 
+  <section id="about" class="bento-section fade-slide-up" style="background:none; opacity:0;">
+
+    <div class="center-container">
+
+      <h6 style="color:var(--white); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--primary);">Karthik</span> different?</h6>
+
+      <p style="color:var(--white);">
+        I love to turn <span class="highlight">UXR insights into actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
+        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
+        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product/service delivery and improve overall internal team efficiency.
+      </p>
+
+      <button class="contact-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" 
         onmouseover="this.style.borderColor='var(--white)';" 
         onmouseout="this.style.borderColor='var(--grey3)';">
-        Scroll down to View Featured Work
-    </button>
-  </div>
+        View Featured Work
+      </button>
 
-  <!-- Skill Badges -->
-  <div class="badge skill" style="top: 5%; left: 35%;">Information Architecture</div>
-  <div class="badge skill" style="top: 20%; right: 10%;">Front End Web Development</div>
-  <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity UI Prototyping</div>
-  <div class="badge skill" style="bottom: 18%; right: 4%;">User & Competitor Research</div>
-  <div class="badge skill" style="top: 35%; left: 5%;">Journey Mapping & Task Flows</div>
-  <div class="badge skill" style="bottom: 15%; left: 50%;">Service Blueprinting</div>
+    </div>
+
+    <!-- Skill Badges -->
+    <div class="badge skill" style="top: 5%; left: 35%;">Information Architecture</div>
+    <div class="badge skill" style="top: 20%; right: 10%;">Front End Web Development</div>
+    <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity UI Prototyping</div>
+    <div class="badge skill" style="bottom: 18%; right: 4%;">User & Competitor Research</div>
+    <div class="badge skill" style="top: 35%; left: 5%;">Journey Mapping & Task Flows</div>
+    <div class="badge skill" style="bottom: 15%; left: 50%;">Service Blueprinting</div>
 
 
-  <!-- Logo Badges -->
-  <div class="badge logo" style="bottom: 10%; left: 38%;">
-    <img src="icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  <div class="badge logo" style="top: 40%; right: 8%;">
-    <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
-  </div>
-  <div class="badge logo" style="top: 5%; left: 60%;">
-    <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
-  </div>
-  <div class="badge logo" style="top: 15%; left: 22%;">
-    <img src="icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
-  </div>
-  <div class="badge logo" style="top: 52%; left: 8%;">
-    <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
-  </div>
+    <!-- Logo Badges -->
+    <div class="badge logo" style="bottom: 10%; left: 38%;">
+      <img src="icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 40%; right: 8%;">
+      <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 5%; left: 60%;">
+      <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 15%; left: 22%;">
+      <img src="icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 52%; left: 8%;">
+      <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+    </div>
 
-<style>
-  .bento-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .center-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 60vw;
-    padding: 2rem;
-    z-index: 10;
-  }
-
-  .highlight {
-    font-weight: bold;
-    color: var(--primary);
-  }
-
-  .badge {
-    position: absolute;
-    border-radius: 1rem;
-    font-weight: bold;
-    cursor: default;
-    transition: transform 0.3s, box-shadow 0.5s;
-  }
-
-  /* Glow only for skill badges */
-  .badge.skill {
-    padding: 0.8rem 1.2rem;
-    background: var(--primary);
-    color: var(--black2);
-    box-shadow: 0 0 15px rgba(255,255,255,0.2);
-    animation: glowPulse 3s ease-in-out infinite;
-  }
-
-  .badge.logo {
-    color: #fff;
-    width: 128px;
-    height: 128px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .badge.logo img {
-    min-height: 100%;
-    object-fit: contain;
-  }
-
-  @media (max-width: 990px) {
-    .bento-section .badge {
-      display: none;
+    <style>
+    .bento-section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
     }
-  }
 
-  @keyframes glowPulse {
-    0% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
-    50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
-    100% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
-  }
-</style>
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 60vw;
+      padding: 2rem;
+      z-index: 10;
+    }
 
-<script>
-  const badges = document.querySelectorAll('.badge');
+    .highlight {
+      font-weight: bold;
+      color: var(--primary);
+    }
 
-  badges.forEach(badge => {
-    // Random default rotation (-20 to 20 degrees)
-    const defaultDeg = Math.random() * 40 - 20;
-    badge.style.transform = `rotate(${defaultDeg}deg)`;
+    .badge {
+      position: absolute;
+      border-radius: 1rem;
+      font-weight: bold;
+      cursor: default;
+      transition: transform 0.3s, box-shadow 0.5s;
+    }
 
-    // Hover: straighten and scale up
-    badge.addEventListener('mouseover', () => {
-      badge.style.transform = 'rotate(0deg) scale(1.1)';
-    });
+    .badge.skill {
+      padding: 0.8rem 1.2rem;
+      background: var(--primary);
+      color: var(--black2);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
 
-    badge.addEventListener('mouseout', () => {
-      badge.style.transform = `rotate(${defaultDeg}deg) scale(1)`;
-    });
-  });
-</script>
+    .badge.logo {
+      color: #fff;
+      width: 128px;
+      height: 128px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-</section>
+    .badge.logo img {
+      min-height: 100%;
+      object-fit: contain;
+    }
 
+    @media (max-width: 990px) {
+      .bento-section .badge {
+        display: none;
+      }
+    }
 
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
+      50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
+      100% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
+    }
+    </style>
 
-  <section id="fw" style="min-height:100vh; display: flex; flex-direction: column; padding:2rem;">
+    <script>
+      const badges = document.querySelectorAll('.badge');
+
+      badges.forEach(badge => {
+        // Random default rotation (-20 to 20 degrees)
+        const defaultDeg = Math.random() * 40 - 20;
+        badge.style.transform = `rotate(${defaultDeg}deg)`;
+
+        // Hover: straighten and scale up
+        badge.addEventListener('mouseover', () => {
+          badge.style.transform = 'rotate(0deg) scale(1.1)';
+        });
+
+        badge.addEventListener('mouseout', () => {
+          badge.style.transform = `rotate(${defaultDeg}deg) scale(1)`;
+        }); });
+    </script>
+
+  </section>
+
+  <section id="fw" style="background-image: url('images/bg/BGG.png'); 
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    mask-repeat: no-repeat;
+    mask-size: cover;
+     min-height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding:2rem;">
 
   <h5 class="fade-slide-up" style="color:var(--primary); margin-top:2rem; opacity:0;">
     Featured Work &nbsp;&nbsp;
@@ -331,13 +290,6 @@
       <span>View All</span>
       <span style="display: inline-block; transform: rotate(-45deg);">→</span>
     </a>&nbsp;&nbsp;
-    
-    <a href="#logo-gallery-section" 
-      style="font-size: 1rem; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem; cursor: pointer;"
-      onclick="document.getElementById('logo-gallery-section').scrollIntoView({behavior: 'smooth'});">
-      <span>Companies that trust me</span>
-      <span style="display: inline-block; transform: rotate(90deg);">→</span>
-    </a>
 
   </h5>
 
@@ -423,21 +375,21 @@
 
   </section>
 
-<section id="logo-gallery-section" class="fade-slide-up" style="padding:2rem;height: 50vh; opacity: 0; overflow: hidden; display: flex; flex-direction: column;">
+  <section id="logo-gallery-section" class="fade-slide-up" style="padding:2rem; opacity: 0; overflow: hidden; display: flex; flex-direction: column; margin-bottom:2rem;">
 
   <!-- Header -->
-  <h5 style="color: var(--primary); margin-top: 2rem;">Companies worked with</h5>
+  <h5 style="color: var(--primary); margin-top: 2rem;">Companies/Clients worked with</h5>
 
   <!-- Slider Container -->
-  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; height: 300px;">
+  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; height: 150px;">
     <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
       <!-- Logos inserted via JS -->
     </div>
   </div>
 
-</section>
+  </section>
 
-<script>
+  <script>
   const slider = document.querySelector('.slider');
   const totalLogos = 20; // 20 logos
 
@@ -476,9 +428,9 @@
   }, { threshold: 0.2 });
 
   observer.observe(section);
-</script>
+  </script>
 
-<style>
+  <style>
   /* Slider animation */
   .slider {
     display: flex;
@@ -509,21 +461,10 @@
     opacity: 1;
     transform: translateY(0);
   }
-</style>
+  </style>
 
-<section id="footer" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-right:2rem; padding-left:2rem;">
+  <div id="footer-placeholder"></div>
 
-  <div id="footer-card" style="
-    border-radius: 16px; 
-    overflow: hidden; /* ensures child content respects rounded corners */
-    background: inherit; /* keeps the footer background image/color */
-    width: 100%;
-    ">
-    <div id="footer-placeholder"></div>
-  </div>
-
-  </section>
-  
   <style>
     /* Base padding */
 #footer {
@@ -576,7 +517,7 @@
 
   </style>
 
-<style>
+  <style>
         .button-flex{
         display: flex; flex-direction: row; gap: 1rem;
       }
@@ -586,7 +527,7 @@
           flex-direction: column;
         }
       }
-</style>
+  </style>
 
   <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -597,32 +538,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('open');
   });
 });
-  </script>
-  
-  <script>
-  // Tabs functionality
-  const tabs = document.querySelectorAll(".tab-1906");
-  const panes = document.querySelectorAll(".tab-pane-1906");
-
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      // Deactivate all tabs
-      tabs.forEach(t => t.classList.remove("active"));
-      // Activate clicked tab
-      tab.classList.add("active");
-
-      const targetId = tab.dataset.tab;
-
-      // Deactivate all panes
-      panes.forEach(pane => {
-        pane.classList.remove("active");
-        if (pane.id === targetId) {
-          // Activate the target pane
-          pane.classList.add("active");
-        }
-      });
-    });
-  });
   </script>
 
   <script>
@@ -646,12 +561,30 @@ document.addEventListener('DOMContentLoaded', () => {
   </script>
 
   <script>
-      const greetings = ["Hello!", "Ciao!", "Hola!", "Vanakkam!", "Namaste!"];
+    const greetings = ["Hello", "Ciao", "Hola", "привіт", "வணக்கம்", "नमस्ते", "Bonjour", "안녕", "你好"];
     let currentGreetingIndex = 0;
     const greetingElement = document.getElementById("greeting");
 
     function scrambleText(targetElement, newText) {
-      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const characters =
+  // Latin letters (neighbors for H,e,l,o,C,i,a,B,j,n)
+  'FGHIJcdefgklmnopqrsab' +
+
+  // Cyrillic letters from "привіт" with visually similar characters
+  'пнтряждииевфбіиїтпд' +
+
+  // Tamil letters from "வணக்கம்" with visually similar characters
+  'வபமணகசஸ்ஹளற' +
+
+  // Devanagari letters from "नमस्ते" with visually similar characters
+  'नपमतसशषअआइईउऊएऐओऔ' +
+
+  // Hangul letters from "안녕" with visually similar characters
+  '안앉안녕옹엉앙' +
+
+  // Chinese letters from "你好" with visually similar characters
+  '你他妳好妈她';
+
       let scrambleInterval = 50; // Speed of scrambling
       let totalScrambleTime = 1000; // Total time for scrambling before settling
       let currentText = targetElement.textContent;
@@ -674,13 +607,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }, totalScrambleTime);
     }
 
-    function changeGreeting() {
-      const newGreeting = greetings[currentGreetingIndex];
-      scrambleText(greetingElement, newGreeting);
+function changeGreeting() {
+    let newIndex;
+    do {
+        // Pick a random index
+        newIndex = Math.floor(Math.random() * greetings.length);
+    } while (newIndex === currentGreetingIndex); // ensure it's not the same as the current greeting
 
-      // Move to the next greeting in the list
-      currentGreetingIndex = (currentGreetingIndex + 1) % greetings.length;
-    }
+    const newGreeting = greetings[newIndex];
+    scrambleText(greetingElement, newGreeting);
+
+    // Update the current greeting index
+    currentGreetingIndex = newIndex;
+}
 
     // Change the greeting every 4 seconds (time for scramble effect)
     setInterval(changeGreeting, 4000);
@@ -688,5 +627,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial call to start the scrambling
     changeGreeting();
   </script>
+
 </body>
 </html>
