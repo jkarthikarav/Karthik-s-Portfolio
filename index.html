@@ -35,30 +35,34 @@
   <div id="header-placeholder"></div>
 
   <!-- Hero Section -->
-<section class="hero" style="background:none; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box;">
+<section class="hero" style="    background-image: url('images/bg/BGG5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box;">
 
     <div style="padding:1.25rem;"></div>
 
-      <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; color:var(--white); opacity:0;">
+      <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; color:var(--black); opacity:0;">
         
-        <h5 style="font-weight:400; margin:0;"><span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--primary);">Karthik Jambunathan</span></h5>
+        <h5 style="font-weight:400; margin:0;"><span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--secondary);">Karthik Jambunathan</span></h5>
 
         <h5 style="font-weight:400; margin:10px 0;">driving 🏛️Fintech, 🖥️Web, and 🗺️Digital Strategy,</h5>
 
         <h5 style="font-weight:400; margin:10px 0;">through 🛠️product innovation and 🧩 workflow design.</h5>
 
-        <p style="margin-top:40px; color:var(--white);">
+        <p style="margin-top:40px; color:var(--black);">
           <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
           Seeking Hybrid/WFO Canada & Remote Global Roles
         </p>
 
-        <p style="color:var(--white);">
-          Based in 📍<span style="font-weight:bold; color:var(--primary);">Greater Toronto Area, ON, Canada</span><br>
+        <p style="color:var(--black);">
+          Based in 📍<span style="font-weight:bold; color:var(--secondary);">Greater Toronto Area, ON, Canada</span><br>
           4+ years of creating innovative solutions in Filmmaking, Fintech, and Healthcare Domains.
-          <br>Master of Information @ <span style="font-weight:bold; color:var(--primary);">University of Toronto - iSchool </span>and Masters in Media @ <span style="font-weight:bold; color:var(--primary);">Anna University, Chennai</span>
+          <br>Master of Information @ <span style="font-weight:bold; color:var(--secondary);">University of Toronto - iSchool </span>and Masters in Media @ <span style="font-weight:bold; color:var(--secondary);">Anna University, Chennai</span>
         </p>
 
-          <button class="contact-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
+          <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
             Next Section
           </button>
         </div>
@@ -136,7 +140,7 @@
     
   </section>
 
-  <section id="about" class="bento-section fade-slide-up" style="background:none; opacity:0;">
+  <section id="about" class="bento-section fade-slide-up" style="background: var(--black3); opacity:0;">
 
     <div class="center-container">
 
@@ -157,7 +161,7 @@
     </div>
 
     <!-- Skill Badges -->
-    <div class="badge skill" style="top: 5%; left: 35%;">Information Architecture</div>
+    <div class="badge skill" style="top: 16%; left: 35%;">Information Architecture</div>
     <div class="badge skill" style="top: 20%; right: 10%;">Front End Web Development</div>
     <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity UI Prototyping</div>
     <div class="badge skill" style="bottom: 18%; right: 4%;">User & Competitor Research</div>
@@ -172,7 +176,7 @@
     <div class="badge logo" style="top: 40%; right: 8%;">
       <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
     </div>
-    <div class="badge logo" style="top: 5%; left: 60%;">
+    <div class="badge logo" style="top: 15%; left: 60%;">
       <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
     </div>
     <div class="badge logo" style="top: 15%; left: 22%;">
@@ -271,22 +275,20 @@
 
   </section>
 
-  <section id="fw" style="background-image: url('images/bg/BGG.png'); 
-                background-size: cover; 
-                background-position: center; 
-                background-repeat: no-repeat;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
+<section id="fw" style="
+    position: relative;
+    background-color: var(--grey0);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+    padding: 2rem;">
 
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
-    mask-repeat: no-repeat;
-    mask-size: cover;
-     min-height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding:2rem;">
-
-  <h5 class="fade-slide-up" style="color:var(--primary); margin-top:2rem; opacity:0;">
+  <h5 class="fade-slide-up" style="color:var(--black3); margin-top:2rem; opacity:0;">
     Featured Work &nbsp;&nbsp;
-    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
+    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--green); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
       <span>View All</span>
       <span style="display: inline-block; transform: rotate(-45deg);">→</span>
     </a>&nbsp;&nbsp;
@@ -302,11 +304,11 @@
           <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
             ECE Homepage Redesign (UX/UI to Web Dev)
           </h6>
-          <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          <p style="text-align:left; margin: 0; color: var(--black); font-size: 14px; line-height: 1.6;">
             Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development, improving clarity, navigation, and alignment with U of T’s faculty branding standards.
           </p>
         </div>
@@ -320,11 +322,11 @@
           <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
             Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
           </h6>
-          <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          <p style="text-align:left; margin: 0; color: var(--black); font-size: 14px; line-height: 1.6;">
             Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept that makes cultural access more discoverable, inclusive, and actionable.
           </p>
         </div>
@@ -338,11 +340,11 @@
           <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--white); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+          <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
             Gen-AI Service Blueprint for Film Pitch (Service Design)
           </h6>
-          <p style="text-align:left; margin: 0; color: var(--white); font-size: 14px; line-height: 1.6;">
+          <p style="text-align:left; margin: 0; color: var(--black); font-size: 14px; line-height: 1.6;">
             Designed an AI-assisted workflow to streamline movie pitch video creation — mapping roles, clarifying handoffs, and enabling directors to visualize stories faster.
           </p>
         </div>
@@ -375,13 +377,13 @@
 
   </section>
 
-  <section id="logo-gallery-section" class="fade-slide-up" style="padding:2rem; opacity: 0; overflow: hidden; display: flex; flex-direction: column; margin-bottom:2rem;">
+  <section id="logo-gallery-section" class="fade-slide-up" style="background-color: var(--black3); padding:2rem; opacity: 0; overflow: hidden; display: flex; flex-direction: column;">
 
   <!-- Header -->
   <h5 style="color: var(--primary); margin-top: 2rem;">Companies/Clients worked with</h5>
 
   <!-- Slider Container -->
-  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; height: 150px;">
+  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; margin-bottom:2rem; height: 150px;">
     <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
       <!-- Logos inserted via JS -->
     </div>
