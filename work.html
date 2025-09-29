@@ -218,15 +218,15 @@
     </div>
 
     <!-- Virtual Museum Card -->
-    <div class="gallery-card">
-      <div class="zoom-on-hover"
-           style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15);
-                  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-                  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2),
-                              0 4px 30px rgba(0, 0, 0, 0.3);
-                  border: 1px solid rgba(255, 255, 255, 0.05);
-                  border-radius: 16px; padding: 2rem;"
-           onclick="window.open('virtualMuseum.html', '_blank');">
+<div class="gallery-card">
+  <div class="zoom-on-hover"
+       style="cursor: pointer; gap: 3rem; background: rgba(0, 0, 0, 0.15);
+              backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+              box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2),
+                          0 4px 30px rgba(0, 0, 0, 0.3);
+              border: 1px solid rgba(255, 255, 255, 0.05);
+              border-radius: 16px; padding: 2rem;"
+       onclick="openProtectedPage()">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/vr.webp" alt="Virtual Museum"
                style="width: 100%; aspect-ratio: 4/3;
@@ -241,7 +241,7 @@
           </div>
           <h6 style="margin: 0; font-size: 18px; font-weight: 600;
                      color: var(--primary); line-height: 1.4;">
-            UXR for Canadian Hispanic-Latin American Virtual Museum [Under NDA]
+            Canadian Hispanic-Latin American Virtual Museum [Password Protected]
           </h6>
         </div>
       </div>
@@ -311,6 +311,45 @@
 
   <button class="gallery-btn right" onclick="moveGallery(1)">&#8250;</button>
 </div>
+
+<!-- Password Popup -->
+<div id="passwordPopup" 
+     style="display:none; position:fixed; top:0; left:0; 
+     width:100%; height:100%; background:rgba(0,0,0,0.7); 
+     justify-content:center; align-items:center; z-index:9999;">
+  <div style="background: var(--white); padding:2rem; border-radius:12px; text-align:center; width:300px;">
+    <h5 style="margin-top:0; margin-bottom: 20px;">Enter Password</h3>
+    <input type="password" id="museumPassword" placeholder="Password" 
+           style="width:90%; padding:10px; margin: 0; border:1px solid #ccc; border-radius:6px;">
+    <br>
+    <button onclick="checkMuseumPassword()" 
+            style="margin-top: 20px; padding:10px 20px; border:none; background: var(--secondary); color: var(--white); border-radius:6px; cursor:pointer;">
+      Submit
+    </button>
+    <p id="museumError" style="color:red; display:none; margin-top:10px;">Wrong password. Try again.</p>
+  </div>
+</div>
+
+<script>
+function openProtectedPage() {
+  document.getElementById("passwordPopup").style.display = "flex";
+}
+
+function checkMuseumPassword() {
+  const correctPassword = "museum2025"; // 🔑 set your password
+  const entered = document.getElementById("museumPassword").value;
+  const error = document.getElementById("museumError");
+
+  if (entered === correctPassword) {
+    window.open("virtualMuseum.html", "_blank");
+    document.getElementById("passwordPopup").style.display = "none";
+    document.getElementById("museumPassword").value = "";
+    error.style.display = "none";
+  } else {
+    error.style.display = "block";
+  }
+}
+</script>
 
 <script>
 let currentIndex = 0;
