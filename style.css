@@ -9,6 +9,7 @@
   --grey2: #8B8B8B;
   --grey3: #505050;
   --primary: #F6BD60;
+  --bright: #ff9d00;
   --secondary: #00464F;
   --green: #2d6a4f;
 }
@@ -87,7 +88,7 @@ html {
   top: 1rem;
   left: 1rem;
   right: 1rem;
-  background: var(--white);
+  background: var(--black3);
 }
 
 /* Inner layout with Flexbox */
@@ -117,7 +118,7 @@ html {
 }
 
 .nav-item > a {
-  color: var(--black2);  /* Color for nav menu items */
+  color: var(--white);  /* Color for nav menu items */
   text-decoration: none;
   font-size: 16px;
   padding: 8px;
@@ -127,7 +128,7 @@ html {
 /* Dropdown Styling */
 .dropdown-menu {
   position: absolute;
-  background: white;  /* White background for dropdown */
+  background: var(--black);  /* White background for dropdown */
   list-style: none;
   padding: 8px 0;
   margin-top: 0.5rem;
@@ -144,14 +145,14 @@ html {
 }
 
 .dropdown-menu li a {
-  color: var(--black2);  /* Color for submenu items */
+  color: var(--white);  /* Color for submenu items */
   text-decoration: none;
   display: block;
 }
 
 /* Hover effect for dropdown items (10% black overlay) */
 .dropdown-menu li:hover {
-  background-color: rgba(0, 0, 0, 0.1);  /* 10% black overlay on hover */
+  background-color: rgba(255, 255, 255, 0.1);  /* 10% black overlay on hover */
 }
 
 /* Show the dropdown menu when hovered or focused */
@@ -162,34 +163,6 @@ html {
   transform: translateY(0);
 }
 
-/* Button */
-.contact-btn {
-  background: var(--black2);
-  color: var(--primary);
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Hamburger (Mobile) */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  width: 24px;
-  height: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: var(--black2);
-}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -211,10 +184,6 @@ html {
     flex-direction: column;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
   .dropdown-menu {
     position: static;
     opacity: 1;
@@ -222,52 +191,6 @@ html {
     transform: none;
   }
 }
-
-/* Submenu (Nested) Styling */
-.has-submenu {
-  position: relative;
-}
-
-.nested-dropdown {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background-color: white;  /* White background for nested dropdown */
-  list-style: none;
-  padding: 8px 16px;
-  opacity: 0;
-  min-width:240px;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
-
-.has-submenu:hover > .nested-dropdown,
-.has-submenu:focus-within > .nested-dropdown {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Styling for nested dropdown links */
-.nested-dropdown li a {
-  color: var(--black2);  /* Color for nested items */
-  text-decoration: none;
-  padding: 8px 16px;
-  display: block;
-}
-
-/* Hover effect for nested dropdown items (10% black overlay) */
-.nested-dropdown li:hover {
-  background-color: rgba(0, 0, 0, 0.1);  /* 10% black overlay on hover */
-}
-
-/* Optional: Hover Effect for Parent Items (Link Trees, PPT Reports, Written Reports) */
-.has-submenu > a:hover {
-  color: var(--secondary); /* Optional hover effect for parent items */
-}
-
 
 
   article {
@@ -410,7 +333,7 @@ h2 {
   font-size: 76px;
   font-weight: 700;
   margin: 0.2em 0;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h3 {
@@ -418,28 +341,28 @@ h3 {
   font-size: 57px;
   font-weight: 700;
   margin: 0.3em 0;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h4 {
   font-family: 'Rubik', sans-serif;
   font-size: 42px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h5 {
   font-family: 'Rubik', sans-serif;
   font-size: 32px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h6 {
   font-family: 'Rubik', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 p {

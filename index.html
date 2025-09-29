@@ -15,16 +15,28 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
     <style>
-   @media (max-width: 768px) {
-    h3 {
-    font-size: 24px !important;
-      }
+     /* For screens under 1000px */
+  @media (max-width: 1200px) {
+    h5 {
+      font-size: 24px;
     }
-    @media (max-width: 1400px) {
-    h3 {
-    font-size: 36px !important;
-      }
+    p {
+      font-size: 15px;
     }
+  }
+
+  /* For mobile (under 600px is a common breakpoint) */
+  @media (max-width: 600px) {
+    h4 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
   </style>
 
 </head>
@@ -35,35 +47,42 @@
   <div id="header-placeholder"></div>
 
   <!-- Hero Section -->
-<section class="hero" style="    background-image: url('images/bg/BGG5.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  <section class="hero" style="background: var(--white);
     display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box;">
 
     <div style="padding:1.25rem;"></div>
 
-      <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; color:var(--black); opacity:0;">
+      <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color:var(--black); opacity:0;">
         
-        <h5 style="font-weight:400; margin:0;"><span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--secondary);">Karthik Jambunathan</span></h5>
+        <h5 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:400; margin:0;">
+          <span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--secondary);">Karthik Jambunathan</span>
+        </h5>
 
-        <h5 style="font-weight:400; margin:10px 0;">driving 🏛️Fintech, 🖥️Web, and 🗺️Digital Strategy,</h5>
+        <h5 style="font-weight:400; margin:10px 0;">driving Fintech, Web, and Digital Strategy,</h5>
 
-        <h5 style="font-weight:400; margin:10px 0;">through 🛠️product innovation and 🧩 workflow design.</h5>
+        <h5 style="font-weight:400; margin:10px 0;">through product + workflow innovation.</h5>
 
-        <p style="margin-top:40px; color:var(--black);">
+        <p style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin-top:40px; color:var(--black);">
           <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
           Seeking Hybrid/WFO Canada & Remote Global Roles
         </p>
 
-        <p style="color:var(--black);">
-          Based in 📍<span style="font-weight:bold; color:var(--secondary);">Greater Toronto Area, ON, Canada</span><br>
-          4+ years of creating innovative solutions in Filmmaking, Fintech, and Healthcare Domains.
-          <br>Master of Information @ <span style="font-weight:bold; color:var(--secondary);">University of Toronto - iSchool </span>and Masters in Media @ <span style="font-weight:bold; color:var(--secondary);">Anna University, Chennai</span>
+        <p style="color:var(--black); padding: 1rem; margin-bottom: 1.25rem;">
+          Based in <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">📍 Toronto, ON, Canada</span>&nbsp;&nbsp;&nbsp;
+          4+ years Designing Solutions in <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">Filmmaking, Fintech, and Healthcare</span>
+          <br><br>
+          Master of Information @ <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">University of Toronto - iSchool </span>
+          and a Masters in Media @ <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">Anna University, Chennai</span>
         </p>
 
-          <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
-            Next Section
+          <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
+            View my Featured Work
           </button>
         </div>
 
@@ -136,148 +155,13 @@
           color: transparent;
         }
 
-    </style>
+      </style>
     
-  </section>
-
-  <section id="about" class="bento-section fade-slide-up" style="background: var(--black3); opacity:0;">
-
-    <div class="center-container">
-
-      <h6 style="color:var(--white); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--primary);">Karthik</span> different?</h6>
-
-      <p style="color:var(--white);">
-        I love to turn <span class="highlight">UXR insights into actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
-        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
-        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product/service delivery and improve overall internal team efficiency.
-      </p>
-
-      <button class="contact-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" 
-        onmouseover="this.style.borderColor='var(--white)';" 
-        onmouseout="this.style.borderColor='var(--grey3)';">
-        View Featured Work
-      </button>
-
-    </div>
-
-    <!-- Skill Badges -->
-    <div class="badge skill" style="top: 16%; left: 35%;">Information Architecture</div>
-    <div class="badge skill" style="top: 20%; right: 10%;">Front End Web Development</div>
-    <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity UI Prototyping</div>
-    <div class="badge skill" style="bottom: 18%; right: 4%;">User & Competitor Research</div>
-    <div class="badge skill" style="top: 35%; left: 5%;">Journey Mapping & Task Flows</div>
-    <div class="badge skill" style="bottom: 15%; left: 50%;">Service Blueprinting</div>
-
-
-    <!-- Logo Badges -->
-    <div class="badge logo" style="bottom: 10%; left: 38%;">
-      <img src="icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-    </div>
-    <div class="badge logo" style="top: 40%; right: 8%;">
-      <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
-    </div>
-    <div class="badge logo" style="top: 15%; left: 60%;">
-      <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
-    </div>
-    <div class="badge logo" style="top: 15%; left: 22%;">
-      <img src="icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
-    </div>
-    <div class="badge logo" style="top: 52%; left: 8%;">
-      <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
-    </div>
-
-    <style>
-    .bento-section {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .center-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      max-width: 60vw;
-      padding: 2rem;
-      z-index: 10;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: var(--primary);
-    }
-
-    .badge {
-      position: absolute;
-      border-radius: 1rem;
-      font-weight: bold;
-      cursor: default;
-      transition: transform 0.3s, box-shadow 0.5s;
-    }
-
-    .badge.skill {
-      padding: 0.8rem 1.2rem;
-      background: var(--primary);
-      color: var(--black2);
-      box-shadow: 0 0 15px rgba(255,255,255,0.2);
-      animation: glowPulse 3s ease-in-out infinite;
-    }
-
-    .badge.logo {
-      color: #fff;
-      width: 128px;
-      height: 128px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .badge.logo img {
-      min-height: 100%;
-      object-fit: contain;
-    }
-
-    @media (max-width: 990px) {
-      .bento-section .badge {
-        display: none;
-      }
-    }
-
-    @keyframes glowPulse {
-      0% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
-      50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
-      100% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
-    }
-    </style>
-
-    <script>
-      const badges = document.querySelectorAll('.badge');
-
-      badges.forEach(badge => {
-        // Random default rotation (-20 to 20 degrees)
-        const defaultDeg = Math.random() * 40 - 20;
-        badge.style.transform = `rotate(${defaultDeg}deg)`;
-
-        // Hover: straighten and scale up
-        badge.addEventListener('mouseover', () => {
-          badge.style.transform = 'rotate(0deg) scale(1.1)';
-        });
-
-        badge.addEventListener('mouseout', () => {
-          badge.style.transform = `rotate(${defaultDeg}deg) scale(1)`;
-        }); });
-    </script>
-
   </section>
 
 <section id="fw" style="
     position: relative;
-    background-color: var(--grey0);
+    background-color: var(--black3);
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -286,9 +170,9 @@
     box-sizing: border-box;
     padding: 2rem;">
 
-  <h5 class="fade-slide-up" style="color:var(--black3); margin-top:2rem; opacity:0;">
+  <h4 class="fade-slide-up" style="font-size:32px; color:var(--primary); margin-top:2rem; opacity:0;">
     Featured Work &nbsp;&nbsp;
-    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--green); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
+    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--white); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
       <span>View All</span>
       <span style="display: inline-block; transform: rotate(-45deg);">→</span>
     </a>&nbsp;&nbsp;
@@ -299,16 +183,18 @@
 
     <!-- ECE Homepage Redesign Card -->
     <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;" onclick="window.open('eceHome.html', '_blank');">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'" onclick="window.open('eceHome.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-            ECE Homepage Redesign (UX/UI to Web Dev)
+          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            ECE Homepage Redesign (UX/UI to Web Dev)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
           </h6>
-          <p style="text-align:left; margin: 0; color: var(--black); font-size: 14px; line-height: 1.6;">
+          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
             Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development, improving clarity, navigation, and alignment with U of T’s faculty branding standards.
           </p>
         </div>
@@ -317,16 +203,18 @@
 
     <!-- Experience Toronto: Ticket Deals UX Card -->
     <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;" onclick="window.open('mobileUXR.html', '_blank');">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'" onclick="window.open('mobileUXR.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-            Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
+          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
           </h6>
-          <p style="text-align:left; margin: 0; color: var(--black); font-size: 14px; line-height: 1.6;">
+          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
             Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept that makes cultural access more discoverable, inclusive, and actionable.
           </p>
         </div>
@@ -335,16 +223,18 @@
 
     <!-- Gen-AI Service Blueprint Card -->
     <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem;" onclick="window.open('previz.html', '_blank');">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'" onclick="window.open('previz.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-            Gen-AI Service Blueprint for Film Pitch (Service Design)
+          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            Gen-AI Service Blueprint for Film Pitch (Service Design)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
           </h6>
-          <p style="text-align:left; margin: 0; color: var(--black); font-size: 14px; line-height: 1.6;">
+          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
             Designed an AI-assisted workflow to streamline movie pitch video creation — mapping roles, clarifying handoffs, and enabling directors to visualize stories faster.
           </p>
         </div>
@@ -377,10 +267,53 @@
 
   </section>
 
+  <section id="about" class="bento-section fade-slide-up" style="background: var(--grey0); opacity:0;">
+
+    <div class="center-container">
+
+      <h6 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color:var(--black3); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--secondary);">Karthik</span> different?</h6>
+
+      <p style="color:var(--black);">
+        I love to turn <span class="highlight">UXR insights into actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
+        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
+        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product/service delivery and improve overall internal team efficiency.
+      </p>
+
+    </div>
+
+    <!-- Skill Badges -->
+    <div class="badge skill" style="top: 9%; left: 35%;">Information Architect</div>
+    <div class="badge skill" style="top: 20%; right: 6%;">Front End Web Developer</div>
+    <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity + Prototyping</div>
+    <div class="badge skill" style="bottom: 18%; right: 4%;">User Research</div>
+    <div class="badge skill" style="top: 35%; left: 5%;">Journey Mapping & Task Flows</div>
+    <div class="badge skill" style="bottom: 15%; left: 50%;">Service Designer</div>
+
+
+    <!-- Logo Badges -->
+    <div class="badge logo" style="bottom: 10%; left: 38%;">
+      <img src="icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 40%; right: 8%;">
+      <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 11%; left: 60%;">
+      <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 15%; left: 22%;">
+      <img src="icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
+    </div>
+    <div class="badge logo" style="top: 52%; left: 8%;">
+      <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+    </div>
+
+  </section>
+
   <section id="logo-gallery-section" class="fade-slide-up" style="background-color: var(--black3); padding:2rem; opacity: 0; overflow: hidden; display: flex; flex-direction: column;">
 
   <!-- Header -->
-  <h5 style="color: var(--primary); margin-top: 2rem;">Companies/Clients worked with</h5>
+  <h5 style="color: var(--primary); margin-top: 2rem; text-align: center;">Companies/Clients worked with</h5>
 
   <!-- Slider Container -->
   <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; margin-bottom:2rem; height: 150px;">
@@ -390,6 +323,130 @@
   </div>
 
   </section>
+
+  <style>
+  /* Slider animation */
+  .slider {
+    display: flex;
+    align-items: center;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Hover pause */
+  .slider:hover {
+    animation-play-state: paused;
+  }
+
+  /* Fade-slide-up animation */
+  .fade-slide-up {
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  </style>
+  <style>
+    .bento-section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 60vw;
+      padding: 2rem;
+      z-index: 10;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: var(--green);
+    }
+
+    .badge {
+      position: absolute;
+      border-radius: 1rem;
+      font-weight: bold;
+      cursor: default;
+      transition: transform 0.3s, box-shadow 0.5s;
+    }
+
+    .badge.skill {
+      padding: 0.8rem 1.2rem;
+      background: var(--primary);
+      color: var(--black2);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+
+    .badge.logo {
+      color: #fff;
+      width: 128px;
+      height: 128px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .badge.logo img {
+      min-height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 1200px) {
+      .bento-section .badge {
+        display: none;
+      }
+      .bento-section {
+        height:fit-content;
+      }
+    }
+
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
+      50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
+      100% { box-shadow: 0 0 10px rgba(255,255,255,0.15); }
+    }
+  </style>
+    
+  <div id="footer-placeholder"></div>
+
+  <script>
+      const badges = document.querySelectorAll('.badge');
+
+      badges.forEach(badge => {
+        // Random default rotation (-20 to 20 degrees)
+        const defaultDeg = Math.random() * 40 - 20;
+        badge.style.transform = `rotate(${defaultDeg}deg)`;
+
+        // Hover: straighten and scale up
+        badge.addEventListener('mouseover', () => {
+          badge.style.transform = 'rotate(0deg) scale(1.1)';
+        });
+
+        badge.addEventListener('mouseout', () => {
+          badge.style.transform = `rotate(${defaultDeg}deg) scale(1)`;
+        }); });
+  </script>
 
   <script>
   const slider = document.querySelector('.slider');
@@ -431,41 +488,6 @@
 
   observer.observe(section);
   </script>
-
-  <style>
-  /* Slider animation */
-  .slider {
-    display: flex;
-    align-items: center;
-  }
-
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  /* Hover pause */
-  .slider:hover {
-    animation-play-state: paused;
-  }
-
-  /* Fade-slide-up animation */
-  .fade-slide-up {
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-
-  .fade-slide-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  </style>
-
-  <div id="footer-placeholder"></div>
 
   <style>
     /* Base padding */
