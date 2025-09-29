@@ -38,7 +38,7 @@
 </style>
 </head>
 
-<body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">
+<body style="background:var(--grey0);">
 <div id="header-placeholder"></div>
 
 
@@ -167,9 +167,9 @@
 </section>
 
 <section id="context" style="
-  background-color: var(--black2);
-  color: var(--white);
-  padding: 3rem 2rem;
+  background-color: none;
+  color: var(--black);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,114 +177,127 @@
 ">
 
   <!-- Title Section -->
-   <div style="max-width: 80vw;">
-<h4 style="color: var(--primary); margin-bottom: 20px; text-align:center;">Project Context</h4>
+  <div style="max-width:80vw;">
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Domain & Focus</h6>
-<p style="color: var(--white);">
-  We (a team of 6 UXRs) studied accessibility challenges for Torontonians in the arts and culture domain, focusing specifically on how people discover and use museum ticket deals.
-</p>
+    <h4 style="color: var(--secondary); margin-bottom: 20px; text-align:center;">Project Context</h4>
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Problem Identification</h6>
-<p style="color: var(--white);">
-  Desk research revealed that eligible visitors often miss out on free or discounted admission because deal information is:<br>
-  1. Scattered across multiple sites<br>
-  2. Hard to verify<br>
-  3. Inconsistent and outdated
-</p>
+    <h6 style="color: var(--secondary); margin-top:0; margin-bottom:1rem;">Domain & Focus</h6>
+    <p>
+      We (a team of 6 UXRs) studied accessibility challenges for Torontonians in the arts and culture domain, focusing specifically on how people discover and use museum ticket deals.
+    </p>
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Goal</h6>
-<p style="color: var(--white);">
-  Reduce fragmentation and create a mobile-first platform where deals are easy to discover and act upon.
-</p>
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Problem Identification</h6>
+    <p>
+      Desk research revealed that eligible visitors often miss out on free or discounted admission because deal information is:<br>
+      1. Scattered across multiple sites<br>
+      2. Hard to verify<br>
+      3. Inconsistent and outdated
+    </p>
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Solution Approach</h6>
-<p style="color: var(--white);">
-  To design the solution, we conducted UX research to understand users’ behaviors, pain points, and needs when accessing museum ticket deals.
-</p>
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Goal</h6>
+    <p>
+      Reduce fragmentation and create a mobile-first platform where deals are easy to discover and act upon.
+    </p>
 
-<h4 style="color: var(--primary); margin-bottom: 20px; text-align:center;">UX Research Findings</h4>
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Solution Approach</h6>
+    <p>
+      To design the solution, we conducted UX research to understand users’ behaviors, pain points, and needs when accessing museum ticket deals.
+    </p>
+    
+    <h4 style="color: var(--secondary); margin-bottom: 20px; text-align:center;">UX Research Findings</h4>
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Research Goals</h6>
-<p style="color: var(--white);">
-  1. Understand user awareness and behavior regarding museum ticket discounts.<br>
-  2. Identify friction points and reasons for drop-off.<br>
-  3. Explore trust indicators in digital cultural experiences.<br>
-  4. Highlight accessibility and inclusivity gaps.
-</p>
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Research Goals</h6>
+    <p>
+    1. Understand user awareness and behavior regarding museum ticket discounts.<br>
+    2. Identify friction points and reasons for drop-off.<br>
+    3. Explore trust indicators in digital cultural experiences.<br>
+    4. Highlight accessibility and inclusivity gaps.
+    </p>
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Research Process</h6>
-<p style="color: var(--white);">We conducted qualitative interviews and contextual inquiries to understand user behavior and challenges. Our target audiences were:</p>
-<div class="contentgrid">
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Research Process</h6>
+    <p>We conducted qualitative interviews and contextual inquiries to understand user behavior and challenges. Our target audiences were:</p>
+    <div class="contentgrid">
 
-  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/education.png" alt="Student Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="color: var(--white); margin-top: 0; text-align: center;">Students</p>
-  </div>
+    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/education.png" alt="Student Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="margin-top: 0; text-align: center;">Students</p>
+    </div>
 
-  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/tourist.png" alt="Newcomer Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="color: var(--white); margin-top: 0; text-align: center;">Newcomers</p>
-  </div>
+    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/tourist.png" alt="Newcomer Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="margin-top: 0; text-align: center;">Newcomers</p>
+    </div>
 
-  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/family.png" alt="Family Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="color: var(--white); margin-top: 0; text-align: center;">Families</p>
-  </div>
+    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/family.png" alt="Family Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="margin-top: 0; text-align: center;">Families</p>
+    </div>
 
-  <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/elderly.png" alt="Senior Icon" style="width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="color: var(--white); margin-top: 0; text-align: center;">Seniors</p>
-  </div>
+    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <img src="icons/elderly.png" alt="Senior Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+    <p style="margin-top: 0; text-align: center;">Seniors</p>
+    </div>
 
-</div>
+    </div>
 
-<p style="color: var(--white);">We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
+    <p>We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
 
-<h6 style="color: var(--primary);margin-bottom:1rem;">Our Insights</h6>
+    <h6 style="color: var(--secondary);margin-bottom:1rem;">Our Insights</h6>
       
-<div class="contentgrid">
+    <div class="contentgrid"> 
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Low Awareness of Deals</h6>
-    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Low Awareness of Deals</h6>
+    <p style="text-align:center; margin-top:0;">
       Discounts exist but are poorly publicised; many audiences simply don’t know.
     </p>
-  </div>
+    </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Perceived Effort &gt; Benefit</h6>
-    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Perceived Effort &gt; Benefit</h6>
+    <p style="text-align:center; margin-top:0;">
       Participants abandon searches if offers aren’t easy to spot or verify.
     </p>
-  </div>
+    </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Inconsistent Digital Flows</h6>
-    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Inconsistent Digital Flows</h6>
+    <p style="text-align:center; margin-top:0;">
       Different museums have entirely different booking and discount layouts.
     </p>
-  </div>
+    </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--primary); margin-top:0; text-align:center;">Fragmented Information</h6>
-    <p style="color: var(--grey0); text-align:center; margin-top:0;">
+    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Fragmented Information</h6>
+    <p style="text-align:center; margin-top:0;">
       No single source aggregates deal data or event calendars.
     </p>
+    </div>
+
+    </div>
   </div>
 
-</div>
+</section>
+ 
+<section style="background: var(--white); 
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+">
+
+  <div style="max-width:80vw;">
 
     <div style="padding:1.25rem;"></div>
   
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">UXR to UI Design Process</h4>
+    <h4 style="color: var(--secondary); text-align: center; margin-top:0; margin-bottom: 20px;">UXR to UI Design Process</h4>
 
-    <h6 style="color: var(--primary); margin-bottom:1rem;">Persona Creation</h6>
-    <div style="padding:1.25rem;"></div>
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Persona Creation</h6>
 
     <!-- Persona Card -->
     <div style="
-    margin: 0 auto;
+    margin: 0;
     ">
 
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;">
@@ -292,20 +305,20 @@
       <!-- Left: Image and Summary -->
       <div style="flex: 1; min-width: 260px; text-align: center; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
         <img src="images/webp/MTMG.webp" alt="Mary, the Museum Go-er" style="max-width: 100%; margin-bottom: 0.5rem; border-radius: 8px;">
-        <h6 style="color: var(--primary); margin-top: 0; margin-bottom: 0rem;">Mary, the Museum Go-er</h6>
-        <p style="color: var(--grey0); margin-top: 0rem;">
+        <h6 style="color: var(--secondary); margin-top: 0; margin-bottom: 0rem;">Mary, the Museum Go-er</h6>
+        <p style="margin-top: 0rem;">
           Busy student 🏫 On a budget 💲<br>
           Loves exploring culture ❤️, lives in the moment 😌
         </p>
-        <blockquote style="font-size: 20px; color: var(--white); margin-top: 1rem;">
-          <em>"I would visit more museums if <br>I had free or discounted tickets"</em>
-        </blockquote>
       </div>
 
       <!-- Right: Persona Description -->
       <div style="flex: 2; min-width: 280px;">
-        <h6 style="color: var(--primary); margin-top: 0;">Meet Mary,<br>the Museum Go-er!</h6>
-        <p style="color: var(--white);">
+        <h6 style="color: var(--secondary); margin-top: 0;">Meet Mary,<br>the Museum Go-er!</h6>
+        <blockquote style="font-size: 20px; color: var(--green);">
+          <em>"I would visit more museums if <br>I had free or discounted tickets"</em>
+        </blockquote>
+        <p>
           Mary was a fictitious human birthed by the group's research data. A hard-working and busy student, when time allows, she opts to visit museums with her friends or even solo!
           <br><br>
           Mary’s attempt to visit a museum in the modern day and age mirrors the challenges faced by many Torontonians. Despite prolonged efforts to find discounted tickets, the benefits are overshadowed by the time spent searching.
@@ -316,11 +329,9 @@
 
     </div>
 
-    </div>
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Ideation & Feature Prioritization</h6>
 
-    <h6 style="color: var(--primary); margin-bottom:1rem;">Ideation & Feature Prioritization</h6>
-
-    <p style="color: var(--grey0); margin-top: 0rem;">Mary’s needs shaped our Impact vs. Feasibility matrix for feature prioritization.</p>
+    <p style="margin-top: 0rem;">Mary’s needs shaped our Impact vs. Feasibility matrix for feature prioritization.</p>
 
     <div class="ux-grid"><img src="images/webp/Priority.webp" class="snippet-img" onclick="openModal('images/webp/Priority.webp')" style="width:900px; height:auto;border:0; box-shadow:0 8px 24px rgba(0, 0, 0, 0.0);"s/></div>
 
@@ -329,17 +340,29 @@
     <img id="modalImage" class="modal-image-mrs"  style="max-width: 80%; max-height: 80%;">
     </div>
  
-   
+  </div>
+
+</section>
+ 
+<section style=" background: var(--black3); 
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+">
+
+  <div style="max-width: 80vw;">
 
 <div style="padding:1.25rem;"></div>
 
 <div style="display: flex; flex-direction: column;">
   <!-- Section Header -->
   <div>
-    <h6 style="color: var(--primary);margin-bottom:1rem;">
-      What I Designed
-    </h6>
-    <p style="color: var(--grey0); margin-bottom: 20px;">
+    <h4 style="text-align: center; color: var(--primary); margin-top:0; margin-bottom: 20px;">
+      The Designs
+    </h4>
+    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
       I (alongside one other member of the UXR team) designed a mobile UI to make this complexity invisible through:
     </p>
     
@@ -420,6 +443,7 @@
     <img id="modalImage" style="max-width: 90%; max-height: 90%;">
   </div>
 
+  </div>
 </section>
 
 <section style="position: relative; padding: 4rem 2rem; background: url('images/ai/tickets.webp') no-repeat center center; background-size: cover;">

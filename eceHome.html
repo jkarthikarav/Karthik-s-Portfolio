@@ -15,7 +15,7 @@
   </style>
 </head>
 
-<body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">
+<body style="background: var(--grey0);">
 <div id="header-placeholder"></div>
 
 <section style="
@@ -146,10 +146,27 @@
 
 </section>
   
-
+<style>
+        .contact-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          border: 1px solid var(--grey3);
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }
+</style>
 <section id="context" style="
-  background-color: var(--black2);
-  color: var(--white);
+  background-color: none;
+  color: var(--black);
   padding: 3rem 2rem;
   display: flex;
   align-items:center;
@@ -159,11 +176,11 @@
 
   <!-- Title Section -->
   <div style="max-width:80vw;">
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Project Context</h4>
-    <p style="color: var(--white);">The Electrical & Computer Engineering (ECE) department at U of T needed to transform their academic homepage into a recruitment tool for prospective students, without losing rigorous compliance to cross-departmental brand standards. The challenge: content wasn’t lacking, but clarity, visual hierarchy, and navigation needed a fundamental rethink. Departmental identity and student-focused storytelling had to be balanced within tight stakeholder constraints.</p>
+    <h4 style="color: var(--secondary); text-align: center; margin-bottom: 20px;">Project Context</h4>
+    <p>The Electrical & Computer Engineering (ECE) department at U of T needed to transform their academic homepage into a recruitment tool for prospective students, without losing rigorous compliance to cross-departmental brand standards. The challenge: content wasn’t lacking, but clarity, visual hierarchy, and navigation needed a fundamental rethink. Departmental identity and student-focused storytelling had to be balanced within tight stakeholder constraints.</p>
     
-    <h6 style="color: var(--primary); margin-bottom:1rem;">Goals</h6>
-    <p style="color: var(--white);">
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">Goals</h6>
+    <p>
       1. Reimagine the homepage as a digital ambassador to attract prospective students<br>
 
       2. Improve clarity, navigation, and access to key info<br>
@@ -181,8 +198,8 @@
       }
     </style>
 
-    <button class="case-button-new" onclick="window.open('images/webp/ece-old-homepage.webp', '_blank');" style=" width:300px; cursor: pointer; margin-bottom: 20px;">
-        View Legacy Home Page
+    <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="window.open('images/webp/ece-old-homepage.webp', '_blank');"  onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
+      View Legacy Home Page
     </button>
 
     
@@ -214,37 +231,37 @@
   }
 </style>
 
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Key Challenges</h4>
+    <h4 style="color: var(--secondary); text-align: center; margin-bottom: 20px;">Key Challenges</h4>
 
 <div class="contentgrid">
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Hero Section Lacked Impact</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Hero Section Lacked Impact</p>
+  <p style="margin-top: 0;">
     <strong>Legacy State:</strong> Hero section lacked student-focused visuals<br>
     <strong>Why it matters:</strong> Weak first impression for prospective students
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Cluttered Navigation</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Cluttered Navigation</p>
+  <p style="margin-top: 0;">
     <strong>Legacy State:</strong> Navigation had too many unorganized links<br>
     <strong>Why it matters:</strong> Users struggled to find key programs and events
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Outdated Program and Event Content</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Outdated Program and Event Content</p>
+  <p style="margin-top: 0;">
     <strong>Legacy State:</strong> Program and event content was outdated<br>
     <strong>Why it matters:</strong> Students could not quickly understand offerings
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Limited Research and Co-op Visibility</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Limited Research and Co-op Visibility</p>
+  <p style="margin-top: 0;">
     <strong>Legacy State:</strong> Opportunities were buried or unclear<br>
     <strong>Why it matters:</strong> Students and partners could not see key opportunities
   </p>
@@ -253,45 +270,45 @@
 </div>
 
 
-<h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design Process</h4>
+<h4 style="color: var(--secondary); text-align: center; margin-bottom: 20px;">Design Process</h4>
   
 <div class="contentgrid">
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">
       1. Design Audit & Research
     </p>
-    <p style="color: var(--white); margin-top: 0;">
+    <p style="margin-top: 0;">
       Assessed other FASE faculty sites and leading global engineering department portals<br><br>
       Mapped gaps: missing CTAs, unclear section hierarchy, outdated hero imagery
     </p>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">
       2. Wireframes & Mockups
     </p>
-    <p style="color: var(--white); margin-top: 0;">
+    <p style="margin-top: 0;">
       Built wireframes in Figma to clarify information layout<br><br>
       Visual hierarchy focused on what prospective students searched for first
     </p>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">
       3. Stakeholder Presentations
     </p>
-    <p style="color: var(--white); margin-top: 0;">
+    <p style=" margin-top: 0;">
       Presented concepts to department leadership<br><br>
       Iterated based on feedback from academic admin, researchers, and staff
     </p>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">
+    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">
       4. WordPress Development
     </p>
-    <p style="color: var(--white); margin-top: 0;">
+    <p style=" margin-top: 0;">
       Handled front-end implementation, ensuring responsive and modular section design<br><br>
       Deployed content and built reusable components for future campaigns
     </p>
@@ -300,11 +317,11 @@
 </div>
 
 <!-- Phase 1: Design Audit & Research -->
-<h5 style="color: var(--primary); margin-bottom: 1rem;">Design Audit & Research</h5>
+<h5 style="color: var(--secondary); margin-bottom: 1rem;">Design Audit & Research</h5>
 <div class="responsive-flex">
 
   <div class="phot-item">
-    <h6 style="color: var(--primary);">Mechanical Engineering Department Site</h6>
+    <h6 style="color: var(--green);">Mechanical Engineering Department Site</h6>
     <a href="https://www.mie.utoronto.ca/" target="_blank" rel="noopener noreferrer">
       <div style="overflow: hidden;">
         <img src="images/webp/MIE.png" 
@@ -314,7 +331,7 @@
   </div>
 
   <div class="phot-item">
-    <h6 style="color: var(--primary);">Engineering Faculty Site</h6>
+    <h6 style="color: var(--green);">Engineering Faculty Site</h6>
     <a href="https://www.engineering.utoronto.ca/" target="_blank" rel="noopener noreferrer">
       <div style="overflow: hidden;">
         <img src="images/webp/fase.png" 
@@ -326,11 +343,11 @@
 </div>
 
 <!-- Phase 2: Wireframes & Mockups -->
-<h5 style="color: var(--primary); margin-bottom: 1rem;">Wireframes & Mockups</h5>
+<h5 style="color: var(--secondary); margin-bottom: 1rem;">Wireframes & Mockups</h5>
 <div class="responsive-flex">
 
   <div class="phot-item">
-    <h6 style="color: var(--primary);">High Fidelity Hero Section</h6>
+    <h6 style="color: var(--green);">High Fidelity Hero Section</h6>
     <a href="images/jpeg/BANNER-1.png" target="_blank" rel="noopener noreferrer">
       <div style="overflow: hidden;">
         <img src="images/jpeg/BANNER-1.png" 
@@ -340,7 +357,7 @@
   </div>
 
   <div class="phot-item">
-    <h6 style="color: var(--primary);">High Fidelity “Hear from the Chair” Section</h6>
+    <h6 style="color: var(--green);">High Fidelity “Hear from the Chair” Section</h6>
     <a href="images/jpeg/HEAR FROM THE CHAIR (1).png" target="_blank" rel="noopener noreferrer">
       <div style="overflow: hidden;">
         <img src="images/jpeg/HEAR FROM THE CHAIR (1).png" 
@@ -352,7 +369,7 @@
 </div>
 
 <!-- Phase 3: Stakeholder & Peer Iteration -->
-<h5 style="color: var(--primary); margin-bottom: 1rem;">Presented Version</h5>
+<h5 style="color: var(--secondary); margin-bottom: 1rem;">Presented Version</h5>
 <div class="responsive-flex">
 
   <div class="phot-item">
@@ -368,37 +385,37 @@
 
 
   <div style="align-items: center; display: flex; flex-direction: column;">
-<h5 style="color: var(--primary); margin-bottom: 1rem;">Final Design to WordPress Development</h5>
+<h5 style="color: var(--secondary); margin-bottom: 1rem;">Final Design to WordPress Development</h5>
 
 <div class="contentgrid">
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Hero Banner</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Hero Banner</p>
+  <p style=" margin-top: 0;">
     Image+Video banner with contextualized department info<br>
     <strong>Outcome:</strong> Fixed outdated hero, providing a strong, engaging first impression
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Quick Links</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Quick Links</p>
+  <p style=" margin-top: 0;">
     Visually grouped, mobile-friendly calls to action<br>
     <strong>Outcome:</strong> Simplified navigation and reduced user confusion
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Programs & Events</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Programs & Events</p>
+  <p style=" margin-top: 0;">
     Updated outdated content with modular cards and stats<br>
     <strong>Outcome:</strong> Improved clarity and made offerings easy to scan
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Research & Co-op</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Research & Co-op</p>
+  <p style=" margin-top: 0;">
     Spotlight cards and updated stats with links<br>
     <strong>Outcome:</strong> Made research and co-op opportunities clear and visible
   </p>
@@ -411,7 +428,7 @@
 <div class="responsive-flex">
 
   <div class="phot-item">
-    <h6 style="color: var(--primary);">Implemented Version</h6>
+    <h6 style="color: var(--secondary);">Implemented Version</h6>
     <a href="images/webp/ECE-Latest-Home.webp" target="_blank" rel="noopener noreferrer">
       <div style="aspect-ratio: 4 / 3; overflow:hidden;">
         <img src="images/webp/ECE-Latest-Home.webp" 
@@ -421,7 +438,7 @@
   </div>
 
   <div class="phot-item">
-    <h6 style="color: var(--primary);">Currently Active</h6>
+    <h6 style="color: var(--secondary);">Currently Active</h6>
     <a href="images/webp/ECEHF-colorless.png" target="_blank" rel="noopener noreferrer">
       <img src="images/webp/ECEHF-colorless.webp" style="width: 100%; display: block;" />
     </a>
@@ -449,41 +466,41 @@
   }
 </style>
 
-<h6 style="color: var(--primary); margin-bottom:1rem;">Summary of Core Changes</h6>
+<h6 style="color: var(--secondary); margin-bottom:1rem;">Summary of Core Changes</h6>
 
 <div class="contentgrid">
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Hero Banner</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Hero Banner</p>
+  <p style=" margin-top: 0;">
     Video and contextualized department info engage students and communicate the department’s identity
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Quick Links</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Quick Links</p>
+  <p style=" margin-top: 0;">
     Grouped, mobile-friendly buttons simplify navigation and make key content easy to access
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Programs & Events</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Programs & Events</p>
+  <p style=" margin-top: 0;">
     Updated content in modular cards and stats highlights department programs. The events calendar widget displays upcoming events directly on the homepage
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Research & Co-op</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Research & Co-op</p>
+  <p style=" margin-top: 0;">
     Spotlight cards and updated stats make opportunities clear, visible, and easy to update for students and partners
   </p>
 </div>
 
 <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
-  <p style="color: var(--primary); font-weight: bold; margin-bottom: 0.5rem;">Modular Page Layout</p>
-  <p style="color: var(--white); margin-top: 0;">
+  <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Modular Page Layout</p>
+  <p style=" margin-top: 0;">
     The homepage uses a modular structure with images, videos, and easily editable content, ensuring updates are quick and consistent
   </p>
 </div>
