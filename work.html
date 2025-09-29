@@ -214,25 +214,6 @@ function checkMuseumPassword() {
 }
 </script>
 
-<script>
-let currentIndex = 0;
-const visibleCards = 3; 
-const gallery = document.getElementById("gallery");
-const cards = document.querySelectorAll(".gallery-card");
-
-function moveGallery(direction) {
-  const totalCards = cards.length;
-  const maxIndex = totalCards - visibleCards;
-
-  currentIndex += direction;
-  if (currentIndex < 0) currentIndex = 0;
-  if (currentIndex > maxIndex) currentIndex = maxIndex;
-
-  const cardWidth = cards[0].offsetWidth + 16; // card + margin
-  gallery.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
-}
-</script>
-
 </section>
  
 <!-- <section style=" background: var(--black3); 
