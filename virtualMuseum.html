@@ -15,14 +15,13 @@
   </style>
 </head>
 
-<body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">
+<body style="background: var(--grey0);">
 <div id="header-placeholder"></div>
-
 
 <section style="
   position: relative;
   width: 100%;
-  height: auto;
+  height: 40vh;
   background: url('images/ai/vr.webp') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -43,124 +42,82 @@
     z-index: 1;
   "></div>
 
-  <!-- Frosted glass card with content -->
-  <div class="fade-slide-up" style=" opacity:0;
+  <!-- Frosted glass card with content (HDFC style) -->
+  <div style="
     position: relative;
     z-index: 2;
     margin: 3rem;
-    padding: 2rem;
     max-width: 800px;
     width: 90%;
     color: white;
-    text-align: left;
-  ">
-    <h6 style="color: #FFD59A; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      Web Content Discoverability UXR
-    </h6>
+    text-align: left;  ">
 
-    <h3 style="
-      background: linear-gradient(45deg, var(--primary), #FFD59A);
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-top: 0;
-      margin-bottom: 20px;
-      padding-right: 5rem;
-    ">
-      Canadian Hispanic-Latin American Virtual Museum [Under NDA]
-    </h3>
+    <h5 style="color: #F6BD60; margin-top: 0; margin-bottom: 20px; font-weight:700;">
+      UXR for Website Content Discoverability<br>
+      <span style="font-size: 14px;">
+        for Canadian Hispanic-Latin American Virtual Museum [Under NDA]
+      </span>
+    </h5>
 
-    <p style="color: #ffffff; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      How can information be arranged so that key resources are both discoverable and accessible?
-    </p>
-
-    <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color: #FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-      Read Case Study ↓
-    </a>
-  </div>
-
-  <!-- Responsive Grid of Info Cards -->
-  <div class="fade-slide-up" id="info-grid" style=" opacity:0;
+    <div id="info-grid" style="
     position: relative;
     z-index: 2;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
     width: 90%;
-    max-width: 1000px;
-    padding: 1rem 2rem;
-  ">
-
-    <!-- Matching info card headers with updated values -->
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Project Type</p>
-      <p style="color: var(--white); margin: 0;">Client Project (NDA)</p>
-    </div>
-  
+    max-width: 1000px;">
 
     <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Duration</p>
-      <p style="color: var(--white); margin: 0;">Jan–Apr 2025</p>
-    </div>
+    
+    <button class="contact-btn" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
+      Read Case Study ↓
+    </button>
 
+    </div>
     <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Domain</p>
-      <p style="color: var(--white); margin: 0;">Arts & Culture</p>
-    </div>
 
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Tools</p>
-      <p style="color: var(--white); margin: 0;">Figma, FigJam</p>
+    <!--<button class="contact-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
+      View Prototype Video Live Site
+    </button>-->
     </div>
-
-    <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Current Stage</p>
-      <p style="color: var(--white); margin: 0;">Presented to Client Apr 2025</p>
-    </div>
-
+    
   </div>
-
-  <style>
-    .info-card {
-      padding: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      #info-grid {
-        display: block;
-      }
-
-      .info-card {
-        margin-bottom: 1rem;
-      }
-    }
-  </style>
-
 </section>
 
-<section id="context" style="
-  background-color: var(--white);
-  color: var(--black);
-  padding: 3rem 2rem;
-  display: flex;
-  align-items:center;
-  flex-direction: column;
-  gap: 3rem;
-">
+<section id="context" style="padding:2rem;">
 
-  <!-- Title Section -->
-  <div style="max-width:80vw;">
-    <h4 style="color: var(--secondary); text-align: center; margin-bottom: 20px;">Challenge</h4> 
+  <div class="post" style=" display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
+    <!-- Title -->
+    <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
+      UXR: Enhancing Content discoverability on Website
+    </h3>
+
+    <!-- Meta: date / author / categories -->
+    <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+      <time style="color:var(--muted);">Capstone Project - Winter 2025 (Presented to CHLAVM Apr 2025)</time>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-author" style="color:var(--muted);">Role: UX/UI Design (team of 4)</span>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-cats" style="color:var(--muted);">Mockups and Style Guide using Figma, Figjam</span>
+    </div>
+
+    <div class="post-content" style="max-width: 80vw; color:var(--black); margin:0 auto; line-height:1.6; justify-content: flex-start;">
+
+      <h5 style="color: var(--secondary); margin-bottom: 20px;">Project Context</h5>
+    
+      <p>
+        The Canadian Hispanic-Latin American Virtual Museum (CHLAVM) website limited user engagement and access to its core content:
+      </p>
 <p>
-  The Canadian Hispanic-Latin American Virtual Museum (CHLAVM) website limited user engagement and access to its core content:
-</p>
-<p style="margin-left:1rem;">
   1. Navigation & Discovery Issues – The site’s information architecture was unintuitive, with confusing menu labels and inconsistent structure, making it difficult for users to locate projects, educational resources, or exhibits.<br>
   2. Visual Clutter & Information Overload – The Embassy & Consulate page overwhelmed visitors by presenting 24+ country flags as raw icons and hyperlinks. Across the site, text-heavy layouts and outdated design further distracted from the museum’s mission.<br>
   3. Accessibility Gaps – Poor link visibility, insufficient color contrast, and limited keyboard navigation reduced inclusivity and overall usability.
 </p>
 
 <p style="margin-top:1rem;">
-  The included images showcase redesigned pages—such as the Educational Resource Hub and Embassy & Consulate section—shared as standalone visuals due to NDA restrictions.
+  The included images showcase redesigned pages -- such as the Educational Resource Hub and Embassy & Consulate section -- shared as standalone visuals due to NDA restrictions.
 </p>
 
 <p style="margin-bottom: 2rem;">
@@ -201,21 +158,7 @@
 
 </div>
 
-  </div>
-
-</section>
- 
-<section style=" background: var(--grey0); 
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-">
-
-  <div style="max-width: 80vw;">
-
-  <h4 style="color: var(--secondary); text-align: center; margin-bottom: 20px;">Design Solutions</h4>
+  <h5 style="color: var(--secondary); margin-bottom: 20px;">Design Solutions</h5>
 
   <h6 style="color: var(--secondary); margin-bottom: 1rem;">My Role & the Style Guide</h6> 
 
@@ -234,11 +177,8 @@
 
   <img src="images/chlavm/Contrast grid.png" class="user-journey-image-mrs" style="width:45%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Contrast grid.png')">
 
-
-  <div style="align-items: center; display: flex; flex-direction: column;">
-
       <!-- Education and Learning -->
-      <h5 style="color: var(--secondary); margin-bottom:1rem;">Education and Learning</h5>
+<h5 style="color: var(--secondary); margin-bottom:1rem;">Education and Learning</h5>
 <div class="contentgrid">
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
@@ -314,57 +254,151 @@
              onclick="openModal('images/chlavm/Community_Embassies and Consulates.png')">
       </div>
     </div>
+    
     <!-- Modal Viewer -->
     <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
       <img id="modalImage" style="max-width: 90%; max-height: 90%;">
     </div>
-
-    <h6 style="color: var(--secondary); margin-bottom: 2rem;">Usability Testing</h6> 
-<div class="contentgrid">
-
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Task Success</p>
-    <p style="margin-top: 0;">All participants completed navigation tasks without friction.</p>
-  </div>
-
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">CTA Clarity</p>
-    <p style="margin-top: 0;">Updated buttons and labels were easy to notice and understand.</p>
-  </div>
-
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">User Preferences</p>
-    <p style="margin-top: 0;">Participants preferred the clean layout, vibrant colors, and accessible contrast of the new homepage.</p>
-  </div>
-
-</div>
-
-<h6 style="color: var(--secondary); margin-bottom: 2rem;">Impact</h6> 
-<div class="contentgrid">
-
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Unified Design System</p>
-    <p style="margin-top: 0;">Established consistent style guidelines across typography, color, and layout.</p>
-  </div>
-
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Streamlined Embassy & Consulate</p>
-    <p style="margin-top: 0;">Replacing flag overload with a structured dropdown improved clarity and usability.</p>
-  </div>
-
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Education & Learning Hub</p>
-    <p style="margin-top: 0;">A new filtering system helped students and educators quickly locate resources.</p>
-  </div>
-
-</div>
-
 
   </div>
 
 </section>
 
 <div id="footer-placeholder"></div>
+
+<style>
+    @media (width< 1400px) {
+    .takeaway {
+      width: 75%;
+    }
+  }
+
+  /* Large desktop / >1400px */
+  @media (width> 1399px) {
+    .takeaway {
+      width: 25%;
+    }
+  }
+  .info-card {
+      padding: 0.75rem;
+      min-height: 72px;
+    }
+
+            .contact-btn {
+              color: var(--primary);
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          cursor: pointer;
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }   
+
+        .contact-btn:hover {
+          border-color: var(--white);
+        }
+
+
+    @media (max-width: 768px) {
+      #info-grid {
+        display: block;
+      }
+      .info-card {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+        .contact-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          border: 1px solid var(--grey3);
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    h3 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .contentgrid {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap */
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .contentgrid > div {
+    flex: 1 1 100%; /* default: 1 per row */
+  }
+
+  /* ≥768px: 2 items per row */
+  @media (min-width: 768px) {
+    .contentgrid > div {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  /* ≥1400px: 4 items per row */
+  @media (min-width: 1400px) {
+    .contentgrid > div {
+      flex: 1 1 calc(20% - 2rem);
+    }
+  }
+
+  .responsive-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .responsive-flex > .phot-item {
+    width: calc(50% - 1rem) !important; /* two per row on >=768px */
+    box-sizing: border-box;
+  }
+
+  /* Mobile: stack vertically */
+  @media (max-width: 768px) {
+    .responsive-flex > .phot-item {
+      width: 100% !important;
+    }
+  }
+</style>
 
 <script>
 

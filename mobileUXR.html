@@ -41,11 +41,10 @@
 <body style="background:var(--grey0);">
 <div id="header-placeholder"></div>
 
-
 <section style="
   position: relative;
   width: 100%;
-  height: auto;
+  height: 40vh;
   background: url('images/ai/tickets.webp') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -67,240 +66,175 @@
   "></div>
 
   <!-- Frosted glass card with content (HDFC style) -->
-  <div class="fade-slide-up" style="
+  <div style="
     position: relative;
     z-index: 2;
     margin: 3rem;
-    padding: 2rem;
     max-width: 800px;
     width: 90%;
     color: white;
-    text-align: left;
-    opacity:0;
-  ">
-    <h6 style="color: #FFD59A; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
+    text-align: left;  ">
+
+    <h5 style="color: #F6BD60; margin-top: 0; margin-bottom: 20px; font-weight:700;">
       Translating UX Research insights into Mobile UI designs
-    </h6>
+    </h5>
 
-    <h3 style="
-      background: linear-gradient(45deg, var(--primary), #FFD59A);
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-top: 0;
-      margin-bottom: 20px;
-      padding-right: 5rem;
-    ">
-      Mobile App UX Research for Ticket Deals
-    </h3>
-
-    <p style="color: #ffffff; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      Museum-goers in Toronto often miss out on free or discounted tickets because deal info is scattered, hard to find, or outdated. Most give up mid-search.
-    </p>
-
-    <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color: #FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-      Read Case Study ↓
-    </a>
-  </div>
-
-  <!-- Responsive Grid of Info Cards -->
-  <div class="fade-slide-up" id="info-grid" style=" opacity:0;
+    <div id="info-grid" style="
     position: relative;
     z-index: 2;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
     width: 90%;
-    max-width: 1000px;
-    padding: 1rem 2rem;
-  ">
+    max-width: 1000px;">
 
-    <!-- Info Card -->
     <div class="info-card">
-      <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Project Type</p>
-      <p style="color: var(--white); margin: 0;">Academic Project (MI-UXD Year 1)</p>
+    
+    <button class="contact-btn" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
+      Read Case Study ↓
+    </button>
+
+    </div>
+    <div class="info-card">
+
+    <!--<button class="contact-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
+      View Prototype Video Live Site
+    </button>-->
     </div>
     
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Domain</p>
-  <p style="color: var(--white); margin: 0;">Arts & Culture</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Role</p>
-  <p style="color: var(--white); margin: 0;">UXR + UI Design</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Duration</p>
-  <p style="color: var(--white); margin: 0;">Oct – Dec 2023 (Research Focus)</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Deliverables</p>
-  <p style="color: var(--white); margin: 0;">Mobile UI Mockups</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight: bold;">Tools</p>
-  <p style="color: var(--white); margin: 0;">Figma, Miro, Google Workspace</p>
-</div>
-
   </div>
-
-  <style>
-    .info-card {
-      padding: 0.75rem;
-      min-height: 72px;
-    }
-
-    @media (max-width: 768px) {
-      #info-grid {
-        display: block;
-      }
-
-      .info-card {
-        margin-bottom: 0.75rem;
-      }
-    }
-  </style>
-
 </section>
 
-<section id="context" style="
-  background-color: none;
-  color: var(--black);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-">
+<section id="context" style="padding:2rem;">
 
-  <!-- Title Section -->
-  <div style="max-width:80vw;">
+  <div class="post" style=" display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
+    <!-- Title -->
+    <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
+      UX Research: Mobile App for Ticket Deals
+    </h3>
 
-    <h4 style="color: var(--secondary); margin-bottom: 20px; text-align:center;">Project Context</h4>
+    <!-- Meta: date / author / categories -->
+    <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+      <time style="color:var(--muted);">Academic Project Oct - Dec 2023</time>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-author" style="color:var(--muted);">Role: UXR + UI Design</span>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-cats" style="color:var(--muted);">Mobile UI Mockups using Figma, Miro</span>
+    </div>
 
-    <h6 style="color: var(--secondary); margin-top:0; margin-bottom:1rem;">Domain & Focus</h6>
-    <p>
-      We (a team of 6 UXRs) studied accessibility challenges for Torontonians in the arts and culture domain, focusing specifically on how people discover and use museum ticket deals.
-    </p>
+    <div class="post-content" style="max-width: 80vw; color:var(--black); margin:0 auto; line-height:1.6;">
 
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Problem Identification</h6>
-    <p>
-      Desk research revealed that eligible visitors often miss out on free or discounted admission because deal information is:<br>
-      1. Scattered across multiple sites<br>
-      2. Hard to verify<br>
-      3. Inconsistent and outdated
-    </p>
+      <h5 style="color: var(--secondary); margin-bottom: 20px;">Project Context</h5>
 
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Goal</h6>
-    <p>
-      Reduce fragmentation and create a mobile-first platform where deals are easy to discover and act upon.
-    </p>
-
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Solution Approach</h6>
-    <p>
-      To design the solution, we conducted UX research to understand users’ behaviors, pain points, and needs when accessing museum ticket deals.
-    </p>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Domain & Focus</h6>
     
-    <h4 style="color: var(--secondary); margin-bottom: 20px; text-align:center;">UX Research Findings</h4>
+      <p>
+        We (a team of 6 UXRs) studied accessibility challenges for Torontonians in the arts and culture domain, focusing specifically on how people discover and use museum ticket deals.
+      </p>
 
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Research Goals</h6>
-    <p>
-    1. Understand user awareness and behavior regarding museum ticket discounts.<br>
-    2. Identify friction points and reasons for drop-off.<br>
-    3. Explore trust indicators in digital cultural experiences.<br>
-    4. Highlight accessibility and inclusivity gaps.
-    </p>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Problem Identification</h6>
+    
+      <p>
+        Desk research revealed that eligible visitors often miss out on free or discounted admission because deal information is:<br>
+        1. Scattered across multiple sites<br>
+        2. Hard to verify<br>
+        3. Inconsistent and outdated
+      </p>
 
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Research Process</h6>
-    <p>We conducted qualitative interviews and contextual inquiries to understand user behavior and challenges. Our target audiences were:</p>
-    <div class="contentgrid">
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Goal</h6>
+    
+      <p>
+        Reduce fragmentation and create a mobile-first platform where deals are easy to discover and act upon.
+      </p>
 
-    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/education.png" alt="Student Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="margin-top: 0; text-align: center;">Students</p>
-    </div>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Solution Approach</h6>
+    
+      <p>
+        To design the solution, we conducted UX research to understand users’ behaviors, pain points, and needs when accessing museum ticket deals.
+      </p>
+    
+      <h5 style="color: var(--secondary); margin-bottom: 20px;">UX Research Findings</h5>
 
-    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/tourist.png" alt="Newcomer Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="margin-top: 0; text-align: center;">Newcomers</p>
-    </div>
-
-    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/family.png" alt="Family Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="margin-top: 0; text-align: center;">Families</p>
-    </div>
-
-    <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="icons/elderly.png" alt="Senior Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
-    <p style="margin-top: 0; text-align: center;">Seniors</p>
-    </div>
-
-    </div>
-
-    <p>We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
-
-    <h6 style="color: var(--secondary);margin-bottom:1rem;">Our Insights</h6>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Research Goals</h6>
       
-    <div class="contentgrid"> 
+      <p>
+        1. Understand user awareness and behavior regarding museum ticket discounts.<br>
+        2. Identify friction points and reasons for drop-off.<br>
+        3. Explore trust indicators in digital cultural experiences.<br>
+        4. Highlight accessibility and inclusivity gaps.
+      </p>
 
-    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Low Awareness of Deals</h6>
-    <p style="text-align:center; margin-top:0;">
-      Discounts exist but are poorly publicised; many audiences simply don’t know.
-    </p>
-    </div>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Research Process</h6>
+    
+      <p>We conducted qualitative interviews and contextual inquiries to understand user behavior and challenges. Our target audiences were:</p>
+    
+      <div class="contentgrid">
 
-    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Perceived Effort &gt; Benefit</h6>
-    <p style="text-align:center; margin-top:0;">
-      Participants abandon searches if offers aren’t easy to spot or verify.
-    </p>
-    </div>
+        <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <img src="icons/education.png" alt="Student Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+          <p style="margin-top: 0; text-align: center;">Students</p>
+        </div>
 
-    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Inconsistent Digital Flows</h6>
-    <p style="text-align:center; margin-top:0;">
-      Different museums have entirely different booking and discount layouts.
-    </p>
-    </div>
+        <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <img src="icons/tourist.png" alt="Newcomer Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+          <p style="margin-top: 0; text-align: center;">Newcomers</p>
+        </div>
 
-    <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Fragmented Information</h6>
-    <p style="text-align:center; margin-top:0;">
-      No single source aggregates deal data or event calendars.
-    </p>
-    </div>
+        <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <img src="icons/family.png" alt="Family Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+          <p style="margin-top: 0; text-align: center;">Families</p>
+        </div>
 
-    </div>
-  </div>
+        <div class="photo-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <img src="icons/elderly.png" alt="Senior Icon" style="background: var(--black3); padding:1rem; border-radius: 16px; width: 64px; height: 64px; margin-bottom: 0.5rem;">
+          <p style="margin-top: 0; text-align: center;">Seniors</p>
+        </div>
 
-</section>
+      </div>
+
+      <p>We also examined museum websites & ticketing flows (competitive audit) and analysed deal discovery behaviours.</p>
+
+      <h6 style="color: var(--secondary);margin-bottom:1rem;">Our Insights</h6>
+      
+      <div class="contentgrid"> 
+
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Low Awareness of Deals</h6>
+          <p style="text-align:center; margin-top:0;">Discounts exist but are poorly publicised; many audiences simply don’t know.</p>
+        </div>
+
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Perceived Effort &gt; Benefit</h6>
+          <p style="text-align:center; margin-top:0;">
+            Participants abandon searches if offers aren’t easy to spot or verify.
+          </p>
+        </div>
+
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Inconsistent Digital Flows</h6>
+          <p style="text-align:center; margin-top:0;">
+            Different museums have entirely different booking and discount layouts.
+          </p>
+        </div>
+
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:0; text-align:center;">Fragmented Information</h6>
+          <p style="text-align:center; margin-top:0;">
+            No single source aggregates deal data or event calendars.
+          </p>
+        </div>
+
+      </div>
  
-<section style="background: var(--white); 
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-">
+      <h5 style="color: var(--secondary); margin-bottom: 20px;">UXR to UI Design Process</h5>
 
-  <div style="max-width:80vw;">
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Persona Creation</h6>
 
-    <div style="padding:1.25rem;"></div>
-  
-    <h4 style="color: var(--secondary); text-align: center; margin-top:0; margin-bottom: 20px;">UXR to UI Design Process</h4>
+      <!-- Persona Card -->
+      <div style="margin: 0;">
 
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Persona Creation</h6>
-
-    <!-- Persona Card -->
-    <div style="
-    margin: 0;
-    ">
-
-    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;">
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem;">
 
       <!-- Left: Image and Summary -->
       <div style="flex: 1; min-width: 260px; text-align: center; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
@@ -327,43 +261,34 @@
         </p>
       </div>
 
-    </div>
+      </div>
 
-    <h6 style="color: var(--secondary); margin-bottom:1rem;">Ideation & Feature Prioritization</h6>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Ideation & Feature Prioritization</h6>
 
-    <p style="margin-top: 0rem;">Mary’s needs shaped our Impact vs. Feasibility matrix for feature prioritization.</p>
+      <p style="margin-top: 0rem;">Mary’s needs shaped our Impact vs. Feasibility matrix for feature prioritization.</p>
 
-    <div class="ux-grid"><img src="images/webp/Priority.webp" class="snippet-img" onclick="openModal('images/webp/Priority.webp')" style="width:900px; height:auto;border:0; box-shadow:0 8px 24px rgba(0, 0, 0, 0.0);"s/></div>
+      <div class="ux-grid"><img src="images/webp/Priority.webp" class="snippet-img" onclick="openModal('images/webp/Priority.webp')" style="width:900px; height:auto;border:0; box-shadow:0 8px 24px rgba(0, 0, 0, 0.0);"s/></div>
 
-    <!-- Modal -->
-    <div id="imageModal" class="modal-mrs" onclick="closeModal()">
-    <img id="modalImage" class="modal-image-mrs"  style="max-width: 80%; max-height: 80%;">
-    </div>
+      <!-- Modal -->
+      <div id="imageModal" class="modal-mrs" onclick="closeModal()">
+      <img id="modalImage" class="modal-image-mrs"  style="max-width: 80%; max-height: 80%;">
+      </div>
  
+    </div>
+
   </div>
 
 </section>
- 
-<section style=" background: var(--black3); 
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-">
 
-  <div style="max-width: 80vw;">
+<section id="context" style="background: var(--black3); padding:2rem;">
 
-<div style="padding:1.25rem;"></div>
-
-<div style="display: flex; flex-direction: column;">
+  <div class="post" style="display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
   <!-- Section Header -->
   <div>
-    <h4 style="text-align: center; color: var(--primary); margin-top:0; margin-bottom: 20px;">
-      The Designs
-    </h4>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
-      I (alongside one other member of the UXR team) designed a mobile UI to make this complexity invisible through:
+      <h5 style="color: var(--primary); margin-bottom: 20px;">UI Designs</h5>
+      
+    <p style="color: var(--grey0); margin-bottom: 20px;">
+      I (with one other member of the UXR team) designed mobile UI screens and a prototype to make ticket deal surfing and sharing easy through:
     </p>
     
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem;">
@@ -393,13 +318,6 @@
 
 </div>
 
-  <style>
-  @media (max-width: 600px) {
-    .insight-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
 
     <h6 style="color: var(--primary);margin-bottom:1rem;">
       UI Design Process - Low Fidelity
@@ -427,14 +345,14 @@
       <img src="images/exptor/LF/LF.webp" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/LF/LF.png')" />
     </div>
 
-    <h6 style="color: var(--primary);margin-bottom:1rem;">
+    <h6 style="color: var(--primary);margin-bottom: 3rem;">
       UI Design Process - High Fidelity
     </h6>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
-      <img src="images/exptor/HF/HF.png" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/HF/HF.webp')" />
-      <img src="images/exptor/HF/Disc.png" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/HF/Disc.webp')" />
-      <img src="images/exptor/HF/Tick.png" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/HF/Tick.webp')" />
+    <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; justify-content: center; margin-bottom: 2rem;">
+      <img src="images/exptor/HF/HF.png" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/HF/HF.webp')" />
+      <img src="images/exptor/HF/Disc.png" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/HF/Disc.webp')" />
+      <img src="images/exptor/HF/Tick.png" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('images/exptor/HF/Tick.webp')" />
     </div>
   </div>
 
@@ -472,25 +390,144 @@
     </div>
   </div>
 
-  <style>
-    /* Takeaway width for screens <1400px */
-    @media (max-width: 1399px) {
-      .takeaway {
-        width: 75%;
-      }
-    }
-
-    /* Takeaway width for screens >=1400px */
-    @media (min-width: 1400px) {
-      .takeaway {
-        width: 25%;
-      }
-    }
-  </style>
 </section>
 
 
 <div id="footer-placeholder"></div>
+
+  <style>
+    @media (width< 1400px) {
+    .takeaway {
+      width: 75%;
+    }
+  }
+
+  /* Large desktop / >1400px */
+  @media (width> 1399px) {
+    .takeaway {
+      width: 25%;
+    }
+  }
+  .info-card {
+      padding: 0.75rem;
+      min-height: 72px;
+    }
+
+            .contact-btn {
+              color: var(--primary);
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          cursor: pointer;
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }   
+
+        .contact-btn:hover {
+          border-color: var(--white);
+        }
+
+
+    @media (max-width: 768px) {
+      #info-grid {
+        display: block;
+      }
+      .info-card {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+        .contact-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          border: 1px solid var(--grey3);
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    h3 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .contentgrid {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap */
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .contentgrid > div {
+    flex: 1 1 100%; /* default: 1 per row */
+  }
+
+  /* ≥768px: 2 items per row */
+  @media (min-width: 768px) {
+    .contentgrid > div {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  /* ≥1400px: 4 items per row */
+  @media (min-width: 1400px) {
+    .contentgrid > div {
+      flex: 1 1 calc(20% - 2rem);
+    }
+  }
+
+  .responsive-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .responsive-flex > .phot-item {
+    width: calc(50% - 1rem) !important; /* two per row on >=768px */
+    box-sizing: border-box;
+  }
+
+  /* Mobile: stack vertically */
+  @media (max-width: 768px) {
+    .responsive-flex > .phot-item {
+      width: 100% !important;
+    }
+  }
+</style>
 
 <script>
     fetch('footer.html')

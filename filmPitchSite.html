@@ -9,14 +9,14 @@
   <script src="script.js" defer></script>
 </head>
 
-<body style="background: url('images/bg/Gradient.webp') center/cover no-repeat;">
+<body style="background: var(--grey0);">
 <div id="header-placeholder"></div>
 
 
 <section style="
   position: relative;
   width: 100%;
-  height: auto;
+  height: 40vh;
   background: url('images/ai/filmy.webp') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -37,194 +37,127 @@
     z-index: 1;
   "></div>
 
-  <!-- Frosted glass card with content -->
-  <div class="fade-slide-up" style="
+  <!-- Frosted glass card with content (HDFC style) -->
+  <div style="
     position: relative;
     z-index: 2;
     margin: 3rem;
-    padding: 2rem;
     max-width: 800px;
     width: 90%;
     color: white;
-    text-align: left;
-  ">
-    <h6 style="color: #FFD59A; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      Turning a traditional pitch into a cinematic web experience
-    </h6>
+    text-align: left;  ">
 
-    <h3 style="
-      background: linear-gradient(45deg, var(--primary), #FFD59A);
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-top: 0;
-      margin-bottom: 20px;
-      padding-right: 5rem;
-    ">
-      Pitch Deck Website for Film Pre-Production
-    </h3>
-
-    <p style="color: #ffffff; margin-top: 0; margin-bottom: 20px; font-weight:bold;">
-      PowerPoint just wasn’t cutting it. The director needed a film pitch that stood out, but slides were too static and didn’t support continuous music: two key parts of the storytelling.
+    <h5 style="color: #F6BD60; margin-top: 0; margin-bottom: 20px; font-weight:700;">
+      Turning a traditional presentation into a cinematic web experience<br>
+      <span style="font-size: 14px;">
+      PowerPoint just wasn’t cutting it; they did not support continuous music: a key part of Storytelling.
       </span>
-    </p>
+    </h5>
 
-    <a href="javascript:void(0);" class="scroll-button" style="font-size:24px; color: #FFD59A;" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-      Read Case Study ↓
-    </a>
-  </div>
-
-  <!-- Responsive Grid of Info Cards -->
-  <div class="fade-slide-up" id="info-grid" style="
+    <div id="info-grid" style="
     position: relative;
     z-index: 2;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
     width: 90%;
-    max-width: 1000px;
-    padding: 1rem 2rem;
-  ">
+    max-width: 1000px;">
 
-    <!-- Info Card -->
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Project Type</p>
-  <p style="color: var(--white); margin: 0;">Fix It In Post Studios Client Project</p>
-</div>
+    <div class="info-card">
+    
+    <button class="contact-btn" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
+      Read Case Study ↓
+    </button>
 
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Domain</p>
-  <p style="color: var(--white); margin: 0;">Film and Media</p>
-</div>
+    </div>
+    <div class="info-card">
 
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Role</p>
-  <p style="color: var(--white); margin: 0;">Researcher, Designer, Developer</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Duration</p>
-  <p style="color: var(--white); margin: 0;">4 Weeks Research + 6 Weeks Dev</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Tools</p>
-  <p style="color: var(--white); margin: 0;">Adobe Suite, CMS Platform, JavaScript</p>
-</div>
-
-<div class="info-card">
-  <p style="color: var(--primary); margin-top: 0; font-weight:bold;">Deliverables</p>
-  <p style="color: var(--white); margin: 0;">Shipped Website (Aug 2021)</p>
-</div>
-
+    <!--<button class="contact-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
+      View Prototype Video Live Site
+    </button>-->
+    </div>
+    
   </div>
-
-  <style>
-    .info-card {
-      padding: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      #info-grid {
-        display: block;
-      }
-
-      .info-card {
-        margin-bottom: 1rem;
-      }
-    }
-  </style>
-
 </section>
 
-<section id="context" style="
-  background-color: var(--black2);
-  color: var(--white);
-  padding: 3rem 2rem;
-  display: flex;
-  align-items:center;
-  flex-direction: column;
-  gap: 3rem;
-">
+<section id="context" style="padding:2rem;">
 
-<style>
-  .contentgrid {
-    display: flex;
-    flex-wrap: wrap; /* allow items to wrap */
-    gap: 2rem;
-    margin: 1rem;
-  }
+  <div class="post" style=" display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
+    <!-- Title -->
+    <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
+      Pitch Deck Website for Film Pre-Production
+    </h3>
 
-  .contentgrid > div {
-    flex: 1 1 100%; /* default: 1 per row */
-  }
+    <!-- Meta: date / author / categories -->
+    <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+      <time style="color:var(--muted);">Client Project - Aug 2021</time>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-author" style="color:var(--muted);">Role: Presentation Designer</span>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-cats" style="color:var(--muted);">Website using Adobe Suite, WordPress, JavaScript</span>
+    </div>
 
-  /* ≥768px: 2 items per row */
-  @media (min-width: 768px) {
-    .contentgrid > div {
-      flex: 1 1 calc(33% - 2rem);
-    }
-  }
+    <div class="post-content" style="max-width: 80vw; color:var(--black); margin:0 auto; line-height:1.6;">
 
-  /* ≥1400px: 4 items per row */
-  @media (min-width: 1400px) {
-    .contentgrid > div {
-      flex: 1 1 calc(20% - 2rem);
-    }
-  }
-</style>
+      <h5 style="color: var(--secondary); margin-bottom: 20px;">Project Context</h5>
 
-  <!-- Title Section -->
-  <div style="max-width:80vw;">
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Project Context</h4>
-    <p style="color: var(--white);">This was a client project at Fix It In Post Studios, a part of the services we offered for Film Pre-production. Here, We transformed a film director's static pitch deck into an interactive website with seamless music, cinematic visuals, and spy-inspired branding.
-    <h6 style="color: var(--primary); text-align: center; ">But Why?</h6>
+      <h6 style="color: var(--secondary); margin-bottom:1rem;">Problem Definition and Goals</h6>
     
-    <h5 style="color: var(--white);">
-    While the story and visual content were strong, the delivery format needed to be elevated. I reframed the solution entirely: not a deck, but a cinematic web experience.
-    </h5>
+      <p>
+        This was a client project at Fix It In Post Studios, a part of the services we offered for Film Pre-production.
+        Here, We transformed a film director's static pitch deck into an interactive website with seamless music, cinematic visuals, and spy-inspired branding.
+      </p>
+
+    
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">But Why?</h6>
+    
+    <p>
+      While the story and visual content were strong, the delivery format needed to be elevated. I reframed the solution entirely: not a deck, but a cinematic web experience.
+    </p>
 
 <div class="contentgrid">
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">Transformed slides into an interactive website</h6>
-    <p style="margin-top: 0; color: var(--white);">
+    <h6 style="margin-top: 0; color: var(--secondary);">Transformed slides into an interactive website</h6>
+    <p style="margin-top: 0;">
       The site format solved cross-platform compatibility issues and added immersive storytelling tools like animation and music.
     </p>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">Browser-safe audio playback with trigger</h6>
-    <p style="margin-top: 0; color: var(--white);">
+    <h6 style="margin-top: 0; color: var(--secondary);">Browser-safe audio playback with trigger</h6>
+    <p style="margin-top: 0;">
       Since autoplay is blocked on most browsers, I tied music playback to a website interaction, solving a technical challenge with thematic relevance.
     </p>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">JavaScript transitions for cinematic flows</h6>
-    <p style="margin-top: 0; color: var(--white);">
+    <h6 style="margin-top: 0; color: var(--secondary);">JavaScript transitions for cinematic flows</h6>
+    <p style="margin-top: 0;">
       Animations and UI reveals followed cinematic pacing instead of web-native behaviors, adding theatrical impact.
     </p>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">Responsive layout and performance optimization</h6>
-    <p style="margin-top: 0; color: var(--white);">
+    <h6 style="margin-top: 0; color: var(--secondary);">Responsive layout and performance optimization</h6>
+    <p style="margin-top: 0;">
       Ensured smooth, fullscreen playback of visuals and audio on mobile, tablet, and desktop.
     </p>
   </div>
 
 </div>
 
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">Design and Development</h4>
-    <p style="color: var(--white);">I designed and developed a password-protected, fully responsive website for the film pitch, focused on cinematic pacing, minimal UI, and uninterrupted music playback.
+    <h5 style="color: var(--secondary); margin-bottom: 20px;">Design and Development</h5>
+    <p>I designed and developed a password-protected, fully responsive website for the film pitch, focused on cinematic pacing, minimal UI, and uninterrupted music playback.
       <br><br>As the movie is currently in production and is NDA-protected, I have used low-fidelity images and/or stock images for explanation purposes.
     </p>
 
-    <h6 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">
       Visual & UX Research
     </h6>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
-      Conducted research and created graphic and visual content, high fidelity mockups thematically inspired by movies in the same genre such as Argo, the Mission Impossible series, and Saving Private Ryan.
+    <p>
+      Conducted research and created graphic and visual content, high fidelity mockups thematically inspired by movies in the same genre such as Argo, and Saving Private Ryan.
     </p>
 
 <div class="contentgrid">
@@ -243,45 +176,10 @@
 
 </div>
 
-    <h6 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
-      Secure Landing & Entry Flow
-    </h6>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
-      Visitors began with a login screen leading to a blank dark interface, all to keep the mystery intact.
-    </p>
-    
-    <div class="contentgrid">
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; position: relative;">
-    <h6 style="color: var(--primary); margin-top: 0;">Step 1: Build Secure Entry Point</h6>
-    <p style="margin-top:0; color:var(--white);">
-      Developed a password-protected landing page to ensure confidentiality of the pitch.<br><br>
-      Minimal UI focused attention on a single interactive element.
-    </p>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; position: relative;">
-    <h6 style="color: var(--primary); margin-top: 0;">Step 2: Create Cinematic Reveal</h6>
-    <p style="margin-top:0; color:var(--white);">
-      Clicking a plane-shaped button triggered background music and unveiled the full pitch content.<br><br>
-      Transitions were themed to match the film's tone.
-    </p>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; position: relative;">
-    <h6 style="color: var(--primary); margin-top: 0;">Step 3: Optimize for Responsiveness</h6>
-    <p style="margin-top:0; color:var(--white);">
-      Ensured seamless playback across all devices and browsers.<br><br>
-      Background audio was uninterrupted, and layout adapted to screen size.
-    </p>
-  </div>
-
-</div>
-
-    <h6 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+<h6 style="color: var(--secondary); margin-bottom:1rem;">
       Plane-Shaped Button Interaction
     </h6>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
+    <p>
       Clicking the stylized button triggered background music and revealed the rest of the pitch content with smooth transitions.
     </p>
 
@@ -291,33 +189,68 @@
        onclick="openModal('images/webp/wireframe-veera.webp')" />
 </div>
 
-    <h6 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">
+      Secure Landing & Entry Flow
+    </h6>
+    <p>
+      Visitors began with a login screen leading to a blank dark interface, all to keep the mystery intact.
+    </p>
+    
+    <div class="contentgrid">
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; position: relative;">
+    <h6 style="color: var(--secondary); margin-top: 0;">Step 1: Build Secure Entry Point</h6>
+    <p style="margin-top:0;">
+      Developed a password-protected landing page to ensure confidentiality of the pitch.<br><br>
+      Minimal UI focused attention on a single interactive element.
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; position: relative;">
+    <h6 style="color: var(--secondary); margin-top: 0;">Step 2: Create Cinematic Reveal</h6>
+    <p style="margin-top:0;">
+      Clicking a plane-shaped button triggered background music and unveiled the full pitch content.<br><br>
+      Transitions were themed to match the film's tone.
+    </p>
+  </div>
+
+  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; position: relative;">
+    <h6 style="color: var(--secondary); margin-top: 0;">Step 3: Optimize for Responsiveness</h6>
+    <p style="margin-top:0;">
+      Ensured seamless playback across all devices and browsers.<br><br>
+      Background audio was uninterrupted, and layout adapted to screen size.
+    </p>
+  </div>
+
+</div>
+
+    <h6 style="color: var(--secondary); margin-bottom:1rem;">
       Responsive Web Development
     </h4>
-    <p style="color: var(--grey0); text-align: center; margin-bottom: 20px;">
+    <p>
       The final step was to develop, test for bugs and usability, and ship the website. It was built with custom JavaScript to ensure performance across all web devices.
     </p>
 
-    <h4 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+    <h5 style="color: var(--secondary); margin-bottom: 20px;">
       The Impact
-    </h4>
+    </h5>
 
     <div class="contentgrid">
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">
+    <h6 style="margin-top: 0; color: var(--secondary);">
       The director presented the website in producer meetings, resulting in follow-ups
     </h6>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">
+    <h6 style="margin-top: 0; color: var(--secondary);">
       The format impressed producers and stood out from traditional slides
     </h6>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="margin-top: 0; color: var(--primary);">
+    <h6 style="margin-top: 0; color: var(--secondary);">
       Led to continued collaborations on future film-related projects
     </h6>
   </div>
@@ -365,26 +298,145 @@
     </div>
   </div>
 
-  <style>
-    /* Takeaway width for screens <1400px */
-    @media (max-width: 1399px) {
-      .takeaway {
-        width: calc(50% - 1rem);
-      }
-    }
-
-    /* Takeaway width for screens >=1400px */
-    @media (min-width: 1400px) {
-      .takeaway {
-        width: 25%;
-      }
-    }
-  </style>
 </section>
 
 
 
 <div id="footer-placeholder"></div>
+
+<style>
+    @media (width< 1400px) {
+    .takeaway {
+      width: 75%;
+    }
+  }
+
+  /* Large desktop / >1400px */
+  @media (width> 1399px) {
+    .takeaway {
+      width: 25%;
+    }
+  }
+  .info-card {
+      padding: 0.75rem;
+      min-height: 72px;
+    }
+
+            .contact-btn {
+              color: var(--primary);
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          cursor: pointer;
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }   
+
+        .contact-btn:hover {
+          border-color: var(--white);
+        }
+
+
+    @media (max-width: 768px) {
+      #info-grid {
+        display: block;
+      }
+      .info-card {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+        .contact-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px; /* fixed height */
+          padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
+          border: 1px solid var(--grey3);
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3);
+          transition: border-color 0.3s ease;
+          flex: 0 0 auto; /* shrink to fit content + padding */
+        }
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    h3 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .contentgrid {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap */
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .contentgrid > div {
+    flex: 1 1 100%; /* default: 1 per row */
+  }
+
+  /* ≥768px: 2 items per row */
+  @media (min-width: 768px) {
+    .contentgrid > div {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  /* ≥1400px: 4 items per row */
+  @media (min-width: 1400px) {
+    .contentgrid > div {
+      flex: 1 1 calc(20% - 2rem);
+    }
+  }
+
+  .responsive-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .responsive-flex > .phot-item {
+    width: calc(50% - 1rem) !important; /* two per row on >=768px */
+    box-sizing: border-box;
+  }
+
+  /* Mobile: stack vertically */
+  @media (max-width: 768px) {
+    .responsive-flex > .phot-item {
+      width: 100% !important;
+    }
+  }
+</style>
 
 <script>
     fetch('footer.html')
