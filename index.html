@@ -81,9 +81,10 @@
           backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">Anna University, Chennai</span>
         </p>
 
-          <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});" onmouseover="this.style.borderColor='var(--white)';" onmouseout="this.style.borderColor='var(--grey3)';">
-            View my Featured Work
-          </button>
+        <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
+          View my Featured Work
+        </button>
+
         </div>
 
       </div>
@@ -159,122 +160,14 @@
     
   </section>
 
-<section id="fw" style="
-    position: relative;
-    background-color: var(--black3);
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    box-sizing: border-box;
-    padding: 2rem;">
-
-  <h4 class="fade-slide-up" style="font-size:32px; color:var(--primary); margin-top:2rem; opacity:0;">
-    Featured Work &nbsp;&nbsp;
-    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--white); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
-      <span>View All</span>
-      <span style="display: inline-block; transform: rotate(-45deg);">→</span>
-    </a>&nbsp;&nbsp;
-
-  </h5>
-
-  <div id="CaseStudyGrid" class="grid-wrapper fade-slide-up">
-
-    <!-- ECE Homepage Redesign Card -->
-    <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-  onmouseover="this.style.transform='scale(1.05)'" 
-  onmouseout="this.style.transform='scale(1)'" onclick="window.open('eceHome.html', '_blank');">
-        <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-        </div>
-        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-            ECE Homepage Redesign (UX/UI to Web Dev)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-          </h6>
-          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
-            Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development, improving clarity, navigation, and alignment with U of T’s faculty branding standards.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Experience Toronto: Ticket Deals UX Card -->
-    <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-  onmouseover="this.style.transform='scale(1.05)'" 
-  onmouseout="this.style.transform='scale(1)'" onclick="window.open('mobileUXR.html', '_blank');">
-        <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-        </div>
-        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Presented Dec 2023</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-            Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-          </h6>
-          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
-            Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept that makes cultural access more discoverable, inclusive, and actionable.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Gen-AI Service Blueprint Card -->
-    <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-  onmouseover="this.style.transform='scale(1.05)'" 
-  onmouseout="this.style.transform='scale(1)'" onclick="window.open('previz.html', '_blank');">
-        <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
-        </div>
-        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Implemented July 2023</p>
-          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-            Gen-AI Service Blueprint for Film Pitch (Service Design)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-          </h6>
-          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
-            Designed an AI-assisted workflow to streamline movie pitch video creation — mapping roles, clarifying handoffs, and enabling directors to visualize stories faster.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <style>
-  /* Default Flexbox Layout (3 items per row) */
-  .grid-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-  }
-
-  @media (max-width: 768px) {
-    #CaseStudyGrid > div {
-      flex: 1 1 100% !important; /* full width on small screens */
-    }
-
-    .zoom-on-hover {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-  }
-  </style>
-
-  </section>
-
-  <section id="about" class="bento-section fade-slide-up" style="background: var(--grey0); opacity:0;">
+  <section id="about" class="bento-section" style="background: var(--white);">
 
     <div class="center-container">
 
-      <h6 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      <h6 class="fade-slide-up" style="opacity:0; border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
           backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color:var(--black3); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--secondary);">Karthik</span> different?</h6>
 
-      <p style="color:var(--black);">
+      <p class="fade-slide-up" style="opacity:0; color:var(--black);">
         I love to turn <span class="highlight">UXR insights into actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
         My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
         I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product/service delivery and improve overall internal team efficiency.
@@ -310,7 +203,7 @@
 
   </section>
 
-  <section id="logo-gallery-section" class="fade-slide-up" style="background-color: var(--grey0); padding:2rem; opacity: 0; overflow: hidden; display: flex; flex-direction: column;">
+  <section id="logo-gallery-section" style="background-color: var(--white); padding:2rem; overflow: hidden; display: flex; flex-direction: column;">
 
   <!-- Header -->
   <h5 style="color: var(--black3); margin-top: 2rem; text-align: center;">Companies/Clients worked with</h5>
@@ -321,6 +214,117 @@
       <!-- Logos inserted via JS -->
     </div>
   </div>
+
+  </section>
+
+<section id="fw" style="
+    position: relative;
+    background-color: var(--black3);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    box-sizing: border-box;
+    padding: 2rem;">
+
+  <h4 class="fade-slide-up" style="font-size:32px; color:var(--primary); margin-top:2rem; opacity:0;">
+    Featured Work &nbsp;&nbsp;
+    <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--white); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
+      <span>View All</span>
+      <span style="display: inline-block; transform: rotate(-45deg);">→</span>
+    </a>&nbsp;&nbsp;
+
+  </h5>
+
+  <div id="CaseStudyGrid" class="grid-wrapper fade-slide-up">
+
+    <!-- ECE Homepage Redesign Card -->
+    <div style="flex: 1 1 calc(33.33% - 1rem);">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'" onclick="window.open('eceHome.html', '_blank');">
+        <div style="overflow: hidden; border-radius: 12px;">
+          <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            ECE Homepage Redesign (UX/UI to Web Dev)
+          </h6>
+          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
+            Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development.
+            <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study<span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Toronto: Ticket Deals UX Card -->
+    <div style="flex: 1 1 calc(33.33% - 1rem);">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'" onclick="window.open('mobileUXR.html', '_blank');">
+        <div style="overflow: hidden; border-radius: 12px;">
+          <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0; font-weight: bold;">Presented Dec 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
+          </h6>
+          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
+            Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept.
+            <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study<span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gen-AI Service Blueprint Card -->
+    <div style="flex: 1 1 calc(33.33% - 1rem);">
+      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'" onclick="window.open('previz.html', '_blank');">
+        <div style="overflow: hidden; border-radius: 12px;">
+          <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
+          <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0; font-weight: bold;">Implemented July 2023</p>
+          <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
+            Gen-AI Service Blueprint for Film Pitch (Service Design)
+          </h6>
+          <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
+            Designed an AI-assisted workflow to streamline movie pitch video creation -- enabling directors to visualize stories faster.
+            <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study<span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+  /* Default Flexbox Layout (3 items per row) */
+  .grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    #CaseStudyGrid > div {
+      flex: 1 1 100% !important; /* full width on small screens */
+    }
+
+    .zoom-on-hover {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  </style>
 
   </section>
 
@@ -356,7 +360,9 @@
     transform: translateY(0);
   }
   </style>
+
   <style>
+
     .bento-section {
       position: relative;
       height: 100vh;
