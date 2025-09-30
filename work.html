@@ -21,158 +21,204 @@
   <div id="header-placeholder"></div>
 
 
-    <section class="hero" style="padding: 2rem;">
+<section style="padding:2rem; max-width:1000px; margin:0 auto; font-family:sans-serif;">
 
-    <h5 style="font-weight:bold; margin-top:2rem; margin-bottom:20px; color: var(--secondary);">
-    Explore My Case Studies
-    </h5>
+  <h3 style="color: var(--secondary); font-weight: bold; margin-bottom: 2rem;">Explore My Work</h2>
 
-<style>
-  /* Default Flexbox Layout (3 items per row) */
-  .grid-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-  }
+  <!-- 2025 -->
+  <div style="display:flex; gap:1rem; margin-bottom:2rem;">
+    <!-- Year column -->
+    <div style="flex:0 0 45%; color:var(--black); font-weight:bold;">2025</div>
 
-  @media (max-width: 768px) {
-    #CaseStudyGrid > div {
-      flex: 1 1 100% !important; /* full width on small screens */
-    }
+    <!-- Projects column -->
+    <div style="flex:0 0 55%; display:flex; flex-direction:column; gap:1.5rem;">
 
-    .zoom-on-hover {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-  }
-  </style>
-
-  <div id="CaseStudyGrid" class="grid-wrapper fade-slide-up">
-
-  <!-- ECE Homepage Redesign Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="window.open('eceHome.html', '_blank');">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
+      <!-- ECE Homepage Redesign -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="logos/Company/Logo_VD_5.jpg" alt="ECE" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">ECE Homepage Redesign</h6>
+          <p style="color:var(--black); margin:0;">Shipped Mar 2025</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="window.open('eceHome.html','_blank')">View Project</button>
+        </div>
       </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Shipped Mar 2025</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          ECE Homepage Redesign (UX/UI to Web Dev)<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
+
+      <!-- HDFC NetBanking Redesign -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="images/ai/Bank.webp" alt="HDFC" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">UI Redesign for HDFC NetBanking</h6>
+          <p style="color:var(--black); margin:0;">Self-Initiated Summer 2025</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="window.open('netBanking.html','_blank')">View Project</button>
+        </div>
       </div>
-    </div>
+
+      <!-- Virtual Museum -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="images/ai/vr.webp" alt="Virtual Museum" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">Canadian Hispanic-Latin American Virtual Museum</h6>
+          <p style="color:var(--black); margin:0;">Capstone Project [NDA] Winter 2025</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="document.getElementById('passwordPopup').style.display='flex'">View Project</button>
+        </div>
+      </div>
+
+      <!-- Surviving When Our Creativity Is Governed -->
+<div style="display:flex; gap:1rem; align-items:flex-start;">
+  <img src="images/blogs/DEEZTORT.png" alt="Surviving Creativity" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+    <h6 style="color:var(--secondary); margin:0;">Speculative Product Design (Essay + Design Workbook)</h6>
+    <p style="color:var(--black); margin:0;">Presented 2025 (INF 2260)</p>
+    <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+            onclick="window.open('https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing','_blank')">View Project</button>
   </div>
-
-  <!-- Museum Tickets App Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="window.open('mobileUXR.html', '_blank');">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/tickets.webp" alt="Mobile App Design" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-      </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Presented Fall 2023</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          Mobile UX Research for Ticket Deals<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- SpyPitch Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="window.open('filmPitchSite.html', '_blank');">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/filmy.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-      </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Shipped Aug 2021</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          Pitch Deck Website for Film Pre-Production<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- HDFC Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="window.open('netBanking.html', '_blank');">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/Bank.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-      </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Self-Initiated Summer 2025</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          UI Redesign for HDFC NetBanking<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- Virtual Museum Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="openProtectedPage()">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/vr.webp" alt="Virtual Museum" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-      </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Capstone Project [NDA] Winter 2025</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          Canadian Hispanic-Latin American Virtual Museum<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- PREVIZ Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="window.open('previz.html', '_blank');">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-      </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Implemented Jul 2023</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          Gen-AI Service Blueprint for Film Pitch<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- AI Chatbot Conversational UX Card -->
-  <div style="flex: 1 1 calc(33.33% - 1rem);">
-    <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-      onmouseover="this.style.transform='scale(1.05)'" 
-      onmouseout="this.style.transform='scale(1)'" onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">
-      <div style="overflow: hidden; border-radius: 12px;">
-        <img src="images/ai/Chatbot.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
-      </div>
-      <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
-        <p style="text-align:left; color: var(--green); font-size: 14px; margin-bottom: 0;">Self-Initiated Spring 2025</p>
-        <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--secondary); line-height: 1.4;">
-          AI Chatbot Conversational UX<span style="display: inline-block; transform: rotate(-45deg);">→</span>
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div style="flex: 1 1 calc(33.33% - 1rem);"></div>
-  <div style="flex: 1 1 calc(33.33% - 1rem);"></div>
 </div>
+
+
+      <!-- AI Chatbot -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="images/ai/Chatbot.webp" alt="AI Chatbot" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">Conversational UX Design for Healthcare AI</h6>
+          <p style="color:var(--black); margin:0;">Self-Initiated Spring 2025</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing','_blank')">View Project</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid var(--black); margin:2rem 0;">
+
+  <!-- 2024 -->
+  <div style="display:flex; gap:1rem; margin-bottom:2rem;">
+    <div style="flex:0 0 45%; color:var(--black); font-weight:bold;">2024</div>
+    <div style="flex:0 0 55%; display:flex; flex-direction:column; gap:1.5rem;">
+
+      <!-- Digitization Critique of the Digital Comics Museum -->
+<div style="display:flex; gap:1rem; align-items:flex-start;">
+  <img src="images/blogs/INF2228.png" alt="Digital Comics Museum" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+    <h6 style="color:var(--secondary); margin:0;">Digitization Critique of the Digital Comics Museum</h6>
+    <p style="color:var(--black); margin:0;">Presented Fall 2024 (INF 2228)</p>
+    <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+            onclick="window.open('https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing','_blank')">View Project</button>
+  </div>
+</div>
+
+<!-- Billboard Music Top 100 Analysis -->
+<div style="display:flex; gap:1rem; align-items:flex-start;">
+  <img src="images/blogs/music.jpg" alt="Billboard Music Analysis" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+    <h6 style="color:var(--secondary); margin:0;">Data Analytics Report (Python) – Billboard Top100 Charts</h6>
+    <p style="color:var(--black); margin:0;">Submitted Aug 2024 (INF 1340)</p>
+    <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+            onclick="window.open('https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing','_blank')">View Project</button>
+  </div>
+</div>
+
+
+<!-- Web Production Design for ECE at U of T -->
+<div style="display:flex; gap:1rem; align-items:flex-start;">
+  <img src="logos/Company/Logo_VD_5.jpg" alt="Web Production" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+    <h6 style="color:var(--secondary); margin:0;">Web Production Design for ECE at U of T</h6>
+    <p style="color:var(--black); margin:0;">Shipped Jun 2024 - Mar 2025</p>
+    <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+            onclick="window.open('web-production.html','_blank')">View Project</button>
+  </div>
+</div>
+
+
+
+<!-- Developing Design Guidelines for improving Canadian Recycling System -->
+<div style="display:flex; gap:1rem; align-items:flex-start;">
+  <img src="images/blogs/INF2169.png" alt="Canadian Recycling System" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+    <h6 style="color:var(--secondary); margin:0;">Developing Design Guidelines for improving Canadian Recycling System</h6>
+    <p style="color:var(--black); margin:0;">Presented Winter 2024 (INF 2169)</p>
+    <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+            onclick="window.open('https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing','_blank')">View Project</button>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid var(--black); margin:2rem 0;">
+
+  <!-- 2023 -->
+  <div style="display:flex; gap:1rem; margin-bottom:2rem;">
+    <div style="flex:0 0 45%; color:var(--black); font-weight:bold;">2023</div>
+    <div style="flex:0 0 55%; display:flex; flex-direction:column; gap:1.5rem;">
+      
+      <!-- Mobile UX Research for Ticket Deals -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="images/ai/tickets.webp" alt="Tickets App" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">Mobile UX Research for Ticket Deals</h6>
+          <p style="color:var(--black); margin:0;">Presented Fall 2023</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="window.open('mobileUXR.html','_blank')">View Project</button>
+        </div>
+      </div>
+
+      <!-- PREVIZ -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="logos/Company/Logo_VD_3.jpg" alt="PREVIZ" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">Gen-AI Service Blueprint for Film Pitch</h6>
+          <p style="color:var(--black); margin:0;">Implemented Jul 2023</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="window.open('previz.html','_blank')">View Project</button>
+        </div>
+      </div>
+
+      <!-- IA and Navigation Menu Redesign -->
+<div style="display:flex; gap:1rem; align-items:flex-start;">
+  <img src="logos/textile_museum_wordmark-2.png" alt="Textile Museum Logo" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+  <div style="display:flex; flex-direction:column; gap:0.25rem;">
+    <h6 style="color:var(--secondary); margin:0;">IA and Navigation Menu Redesign</h6>
+    <p style="color:var(--black); margin:0;">Presented Nov 2023</p>
+    <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+            onclick="window.open('tmc.html','_blank')">View Project</button>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid var(--black); margin:2rem 0;">
+
+  <!-- 2021 -->
+  <div style="display:flex; gap:1rem; margin-bottom:2rem;">
+    <div style="flex:0 0 45%; color:var(--black); font-weight:bold;">2021</div>
+    <div style="flex:0 0 55%; display:flex; flex-direction:column; gap:1.5rem;">
+
+      <!-- Pitch Deck Website for Film Pre-Production -->
+      <div style="display:flex; gap:1rem; align-items:flex-start;">
+        <img src="images/ai/filmy.webp" alt="Film Pitch" style="width:200px; height:200px; object-fit:cover; border-radius:8px;">
+        <div style="display:flex; flex-direction:column; gap:0.25rem;">
+          <h6 style="color:var(--secondary); margin:0;">Pitch Deck Website for Film Pre-Production</h6>
+          <p style="color:var(--black); margin:0;">Shipped Aug 2021</p>
+          <button style="background:var(--black); color:white; border:none; border-radius:4px; padding:0.5rem 1rem; cursor:pointer; width:fit-content;"
+                  onclick="window.open('filmPitchSite.html','_blank')">View Project</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
 
 <!-- Password Popup -->
 <div id="passwordPopup" 
@@ -214,102 +260,38 @@ function checkMuseumPassword() {
 </script>
 
 </section>
- 
-<!-- <section style=" background: var(--black3); 
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-">
 
-</section>
- 
-<section style=" background: var(--black3); 
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-">
-
-   <h5 style="text-align:left; margin-top: 2rem; margin-bottom: 20px; background: linear-gradient(45deg, #F6BD60, #FFD59A); -webkit-background-clip: text; color: transparent;">
-      <strong>Website Design work for ECE, University of Toronto</strong>
-    </h5>
-
-    <div class="tabs-1906" style="text-align:left;">
-      <p class="p2 tab-1906" data-tab="responsibilities" style="color: var(--white);">Responsibilities</p>
-      <p class="p2 tab-1906" data-tab="goals" style="color: var(--white);">Goals</p>
-      <p class="p2 tab-1906" data-tab="results" style="color: var(--white);">Results</p>
-    </div>
-
-    <div class="tab-content-1906">
-      <div class="tab-pane-1906" id="responsibilities">
-        <h6 style="text-align:left; margin-top: 20px; line-height: 1.6;">
-          Audited for accessibility, redesigned key pages in Figma and WordPress, updated site content with team members, and led design tasks.
-        </h6>
-      </div>
-      <div class="tab-pane-1906" id="goals">
-        <h6 style="text-align:left; margin-top: 20px; line-height: 1.6;">
-          Improve usability, showcase student life, and make department info easier to find.
-        </h6>
-      </div>
-      <div class="tab-pane-1906" id="results">
-        <h6 style="text-align:left; margin-top: 20px; line-height: 1.6;">
-          Designed and shipped key pages, and improved the student user experience.
-        </h6>
-      </div>
-    </div>
-
-    <div class="flex-container" style="text-align:left; display: flex; flex-wrap: flex-start; gap: 0.5rem; margin: 0 0 20px 0; justify-content: space-between;">
-
-      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px;">
-        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Department's Home Page &#8599;</h6>
-        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-          Shipped | January 2025<br>
-          Made it easier for prospective students to explore ECE.
-        </p>
-      </article>
-
-      <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px;">
-        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">ECE Events Page &#8599;</h6>
-        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-          Shipped | March 2025<br>
-          Made it easier to discover events beyond the old calendar view.
-        </p>
-      </article>
-
-      <article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px;">
-        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">Toronto Nano Fabrication Centre &#8599;</h6>
-        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-          Shipped | March, April 2025<br>
-          Migrated the TNFC into the main ECE website.
-        </p>
-      </article>
-
-      <article onclick="window.open('https://www.ece.utoronto.ca/research/studentresearchopportunities/', '_blank');" style="flex: 1 1 calc(24% - 1rem); max-width: calc(24% - 1rem); min-width: 250px; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2), 0 4px 30px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px;">
-        <h6 style="font-size: 18px; margin: 0; color: var(--primary);">Student Research Opportunities &#8599;</h6>
-        <p style="font-size: 14px; margin: 0; color: var(--grey0);">
-          Shipped | December 2024<br>
-          Created Student research sub page under Research page.
-        </p>
-      </article>
-
-    </div>
-<style>
-
-  @media screen and (max-width: 1600px) {
-  .flex-container  {
-    flex-wrap: wrap;  /* 100% width (one per row) */
-  }
-}
-
-</style>
-</div>
-</section>
--->
 
 <div id="footer-placeholder"></div>
+
+<style>
+  /* For screens less than 1200px */
+  @media (max-width: 1199px) {
+    h3 {
+      font-size: 32px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  /* For screens less than 768px */
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 24px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+</style>
+
 
 <script>
   // Tabs functionality

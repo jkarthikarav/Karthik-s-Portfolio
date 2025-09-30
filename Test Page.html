@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Test Page</title>
+
+	<!-- Fonts -->
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+	</noscript>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Script -->
+	<script src="script.js" defer></script>
+</head>
+
+<body style="background-color: var(--white);">
+
+	<!-- Header Placeholder -->
+	<div id="header-placeholder"></div>
+
+<section>
+  <div class="post">
+
+    <header class="post-header" style="display:flex; flex-direction:column; max-width:var(--content-max-width,1200px); margin:2rem auto 0 auto; align-items:flex-start;">
+
+      <!-- Title -->
+      <h1 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem;">
+        Web Production Design for ECE at U of T
+      </h1>
+
+      <!-- Meta: date / author / categories -->
+      <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+        <time style="color:var(--muted);">June 2024 - March 2025</time>
+        <span style="margin: 0 0.5rem;">•</span>
+        <span class="post-author" style="color:var(--muted);">Work Highlights</span>
+        <span style="margin: 0 0.5rem;">•</span>
+        <span class="post-cats" style="color:var(--muted);">Web Design, UX, WordPress, Figma</span>
+      </div>
+    </header>
+
+    <div class="post-content" style="color:var(--black); max-width:var(--content-max-width,1200px); margin:0 auto; line-height:1.6;">
+      <p>
+        Between <strong>June 2024 and March 2025</strong>, I worked with the ECE Department at the University of Toronto
+      to redesign, update, and manage their public-facing website and intranet. My work combined accessibility auditing,
+      content design using Canva and Figma, stakeholder coordination, and full page builds in WordPress.
+      </p>
+
+      <h5 style="color:var(--black); margin-top:1.5rem; font-size:1.5rem;">Responsibilities</h5>
+      <ul style="color:var(--black); text-align:left; line-height:1.6; margin-top:0;">
+      <li>Conducted content reviews and usability checks to identify layout, accessibility, and content issues.</li>
+      <li>Built and updated multiple WordPress pages, ensuring accessibility, branding, and responsive design.</li>
+      <li>Processed monthly web content/design requests through Asana, preparing assets in Adobe and Canva.</li>
+    </ul>
+
+		<h5 style="color:var(--black); margin-top:1.5rem; font-size:1.5rem;">
+  			Mockup & Information Design
+		</h5>
+
+  		<p>
+    		As part of my role, I frequently created mockups in Figma to visualize and refine design changes before implementating them in WordPress. 
+    		These ranged from full-page redesigns to smaller, incremental updates where I adjusted layouts, components, or added new content blocks to existing pages.
+		</p>
+
+		<figure style="margin:2rem 0; text-align:center;">
+        <img 
+          src="images/blogs/TNFC - MOCKUP.png" 
+          alt="Supporting Graphic" 
+          style="width:100%; height:auto; border-radius:6px;" />
+        <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
+          Focus on high priority challenges: Mockup done for TNFC site - Pre-Content Migration.
+        </figcaption>
+      </figure>
+
+  		<p>
+    		This process allowed stakeholders to preview changes early and provide feedback before any development work was done. By iterating through mockups first, 
+    		I helped the department save time on revisions and ship pages that were both 
+    		user-friendly and visually consistent with U of T's branding guidelines (<a href="https://brand.utoronto.ca/" target="_blank" rel="noopener" style="text-decoration:underline;">available publicly here</a>).
+		</p>
+
+		<p>
+ 		 	In addition to creating mockups, I also updated content directly on the website, uploaded new blog posts, and modified images to ensure consistency with the department’s branding and design standards. 
+  			These updates helped keep the site current and engaging for students and visitors.
+		</p>
+
+		<figure style="margin:2rem 0; text-align:center;">
+        <img 
+          src="images/blogs/Grad Mockup.png" 
+          alt="Supporting Graphic" 
+          style="width:100%; height:auto; border-radius:6px;" />
+        <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
+          Focus on real day-to-day requirements: Back when the Graduate Programs page needed its layout adjusted to add a photo.
+        </figcaption>
+      	</figure>
+
+	<h5 style="color:var(--black); margin-top:1.5rem; font-size:1.5rem;">Key Pages built</h5>
+
+      <!-- Project Showcase -->
+    <div class="flex-container" style="text-align:left; display:flex; flex-wrap:wrap; gap:1rem; margin:2rem 0; justify-content:flex-start;">
+
+      <!-- Homepage -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" 
+        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
+        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">ECE Department’s Home Page ↗</h6>
+        <p style="font-size:0.9rem; margin:0; color:var(--black);">
+          Shipped | January 2025<br>
+          Made it easier for prospective students to explore ECE.
+        </p>
+      </article>
+
+      <!-- Events Page -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" 
+        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
+        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">ECE Events Page ↗</h6>
+        <p style="font-size:0.9rem; margin:0; color:var(--black);">
+          Shipped | March 2025<br>
+          Improved event discovery beyond the static calendar.
+        </p>
+      </article>
+
+      <!-- TNFC -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" 
+        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
+        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">Toronto Nanofabrication Centre ↗</h6>
+        <p style="font-size:0.9rem; margin:0; color:var(--black);">
+          Shipped | Mar–Apr 2025<br>
+          Migrated TNFC into the main ECE website.
+        </p>
+      </article>
+
+      <!-- Student Research -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/research/studentresearchopportunities/', '_blank');" 
+        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
+        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">Student Research Opportunities ↗</h6>
+        <p style="font-size:0.9rem; margin:0; color:var(--black);">
+          Shipped | December 2024<br>
+          Created a new section under Research to showcase student work.
+        </p>
+      </article>
+
+    </div>
+</div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .hero-ece {
+      flex-direction: column !important;
+      gap: 1rem !important;
+    }
+    .hero-ece img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+</style>
+
+<section class="hero-ece" style="background: var(--black3); border-radius: 20px; max-width: var(--content-max-width, 1200px); margin: 3rem auto; padding: 2rem; display: flex; flex-direction: row; align-items: center; gap: 2rem;">
+  
+  <!-- Left Image -->
+  <div style="flex:1;">
+    <img src="images/ai/ece.webp" alt="ECE Homepage Redesign Preview" style="width:100%; height:auto; border-radius:16px;" />
+  </div>
+
+  <!-- Right Text -->
+  <div style="flex:1; display:flex; flex-direction:column; align-items:flex-start; text-align:left;">
+    <h5 style="margin-bottom: 1rem; font-weight: 700; font-size: 1.75rem; line-height: 1.25; color: var(--primary);">
+      Explore the ECE Homepage Redesign
+    </h5>
+    <p style="color: var(--white); line-height: 1.6; margin-bottom: 1.5rem;">
+      Discover the full homepage redesign project, including mockups, design iterations, and implementation process. 
+      This case study highlights how I improved accessibility, usability, and visual consistency across the department’s main landing page.
+    </p>
+    <p>
+      <a href="https://karthikjambunathan.com/eceHome.html" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">
+        View the Case Study →
+      </a>
+    </p>
+  </div>
+
+</section>
+
+
+<div id="footer-placeholder"></div>
+
+<script>
+  // Fetch and insert footer HTML
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+</script>
+
+<script>
+  // Fetch and insert header HTML
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+</script>
+
+</body>
+</html>
