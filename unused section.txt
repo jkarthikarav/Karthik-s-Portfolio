@@ -1,67 +1,14 @@
-		<a href="#" class="case-button" id="toggleButton3" style="display: inline-flex; align-items: center; justify-content: center; min-height: 60px;">View Non-UX Projects I've worked on</a>
-
-		<div class="hidden-section3" style="display: none;" id="hiddenSection3">
-
-				<div class="project-card" style="overflow: hidden;">
-					<p>Digitization and Remediation - Course Project (INF2228)</p>
-					<h6>Web Audit Critique and Analysis (Presentation)</h6>
-					<img src="images/DIGITIZATION CRITIQUE.png" alt="Web Audit Critique" style="max-width: 100%; height: auto; object-fit: cover;"><br>
-					<a href="https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" class="case-button-new" target="_blank">View Slides</a>
-        			</div>
-
-    			</div>
-		</div>
-
-<!-- Student Research Opportunities Page Card -->
-<article>
-  <!-- Image Container with Badge -->
-  <span style="position: relative; width: 100%; height: 450px; display: block; overflow: hidden;">
-    <img src="images/webp/SRO.webp" alt="Student Research Opportunities page mockup" style="width: 100%; height: 100%; object-fit: cover;">
-    <span style="position: absolute; top: 12px; left: 12px; background: var(--white); color: black; padding: 0.25rem 0.5rem; font-size: 12px; border-radius: 4px;">
-      New Web Page Design
-    </span>
-  </span>
-
-  <!-- Heading and Description -->
-  <h6 style="font-size: 20px; margin: 10px 0 0 0;">Student Research Opportunities ↗</h6>
-  <p style="margin-top: 0; color: var(--grey3); font-weight: normal;">
-    Live December 2024<br>
-    Designed a new page to list open positions for undergraduate and graduate research assistants under the ECE Research section.
-  </p>
-
-  <!-- Call to Action Button -->
-  <button onclick="window.open('https://www.ece.utoronto.ca/research/studentresearchopportunities/', '_blank');" class="case-button-new">Visit Site</button>
-</article>
-
-<!-- Caterpillar -->
-<a class="card-button-1906" style="width:100%;" href="construction-site-supervision-app.html" target="_blank">
-  <div class="image-container-1906">
-    <img src="images/placeholder-thumb.jpg" alt="Caterpillar Construction App">
-    <span class="badge-1906">UX/UI Design</span>
-  </div>
-  <div class="card-content-1906">
-    <div class="location-1906">
-      Construction Project Dashboard UI Design.<br><br><span style="color:var(--grey3);">SaaS Solution for Construction Task Management
-    </span></div><br><br>
-    <span class="case-button-new">Read Case Study</span>
-  </div>
-</a>
 
 
+    {
+      title: "IA and Navigation Menu Redesign",
+      tags: ["Information Architecture", "Strategy"],
+      link: "tmc.html"
+    },
 
-<!-- Row 2 Finance -->
-<article>
-  <video src="videos/EM Suite.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
-  <p style="font-size: 14px; margin-bottom: 0;">Healthcare Website UI</p>
-  <h6 style="margin: 0;">EMSuite: SaaS Home Page</h6>
-  <p style="margin-top: 0;">AI-powered SaaS platform for digital healthcare tools.</p>
-  <button onclick="window.open('pdfs/EMSuite Home Page.pdf', '_blank');" class="case-button-new" target="_blank">View High Quality PDF</button>
-</article>
-
-<article>
-  <video src="videos/EM Suite.mp4" controls style="width: 100%; border-radius: 6px;" autoplay muted loop playsinline></video>
-  <p style="font-size: 14px; margin-bottom: 0;">Healthcare Mobile UI</p>
-  <h6 style="margin: 0;">Dictation & SOAP Notes: Mobile App</h6>
-  <p style="margin-top: 0;">AI-powered Mobile-first design for clinical dictation and notes entry.</p>
-  <button onclick="window.open('pdfs/EMSuite Home Page.pdf', '_blank');" class="case-button-new">View High Quality PDF</button>
-</article>
+    
+    {
+      title: "UI Redesign for HDFC NetBanking",
+      tags: ["UI"],
+      link: "netBanking.html"
+    },
