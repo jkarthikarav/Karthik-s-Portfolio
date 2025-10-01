@@ -16,42 +16,47 @@
   <script src="script.js" defer></script>
 </head>
 
-<body style="background: var(--white);">
+<body style="background: var(--white); margin:0; display:flex; flex-direction:column; min-height:100vh;">
 
-  <div id="header-placeholder"></div>
+  <!-- Header (injected by JS) -->
+  <div id="header-placeholder" style="flex-shrink:0;"></div>
 
-<!-- Quick Explore Section -->
-<section id="quickExploreSection" style="background: var(--grey0); padding:2rem; margin:0 auto; display:none; height:fit-content;">
-  <h3 style="color: var(--secondary); font-weight: bold; margin-bottom: 2rem;">Quick Explore</h3>
+  <!-- Middle Section -->
+  <main style="flex:1; display:flex; flex-direction:column;">
+    <section id="quickExploreSection" 
+             style="background: none; padding:2rem; flex:1;">
+      <h3 style="color: var(--secondary); font-weight: bold; margin-bottom: 2rem;">
+        Explore My Work
+      </h3>
 
-  <!-- Filter Buttons -->
-  <div id="filterButtons" style="display:flex; flex-direction:row; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('UXR', this)">UXR</button>
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('UI', this)">UI</button>
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Strategy', this)">Strategy</button>
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Service Design', this)">Service Design</button>
-    <!--<button class="contact-btn" style="width:fit-content;" onclick="filterCards('Information Architecture', this)">Information Architecture</button>-->
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Presentations', this)">Presentations</button>
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Reports', this)">Written Reports</button>
-    <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Website Development', this)">Website Development</button>
-  </div>
+      <!-- Filter Buttons -->
+      <div id="filterButtons" 
+           style="display:flex; flex-direction:row; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+        <button class="contact-btn" style="width:fit-content;" onclick="filterCards('UXR', this)">UX Research</button>
+        <!--<button class="contact-btn" style="width:fit-content;" onclick="filterCards('UI', this)">UI</button>-->
+        <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Strategy', this)">UX Strategy</button>
+        <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Service Design', this)">Service Design</button>
+        <!--<button class="contact-btn" style="width:fit-content;" onclick="filterCards('Information Architecture', this)">Information Architecture</button>-->
+        <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Presentations', this)">UX and related Presentations</button>
+        <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Reports', this)">UX and related Written Reports</button>
+        <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Website Development', this)">Website Development</button>
+      </div>
 
-  <!-- Filtered Cards Container -->
-  <div id="filteredCards" style="display:flex; flex-direction:column; gap:1rem;"></div>
-</section>
+      <!-- Filtered Cards Container -->
+      <div id="filteredCards" style="display:flex; flex-direction:column; gap:1rem;"></div>
+    </section>
+  </main>
 
+  <!-- Footer (injected by JS) -->
+  <div id="footer-placeholder" style="flex-shrink:0;"></div>
 
+<!--
 <section style="padding:2rem; max-width:1000px; margin:0 auto;">
 
 <h2 style="color: var(--secondary); font-weight: bold; margin-bottom: 0rem;">Explore my work</h2>
 
-<button id="quickExploreBtn" class="contact-btn-normal" style="width:fit-content; margin-bottom:1rem; background: none; color: var(--black);">
-  Click on this hyperlink to Quick Explore!
-</button>
-
 <div id="spacer1" style="padding:0.25rem;"></div>
 
-<!-- Card 1 -->
 <section id="card1" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
@@ -68,10 +73,8 @@
   </div>
 </section>
 
-<!-- Spacer 2
 <div id="spacer2" style="padding:2rem;"></div>
 
-Card 2
 <section id="card2" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
@@ -86,33 +89,11 @@ Card 2
       </div>
     </div>
   </div>
-</section> -->
+</section> 
 
-<!-- Spacer 3 -->
 <div id="spacer3" style="padding:2rem;"></div>
 
-<!-- Card 3 -->
 <section id="card3" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/ai/Chatbot.webp" alt="AI Chatbot" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Conversational UX Design for Healthcare AI</h3>
-      <p>Self-Initiated May 2025</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer4').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Spacer 4 -->
-<div id="spacer4" style="padding:2rem;"></div>
-
-<!-- Card 4 — Virtual Museum -->
-<section id="card4" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
       <img src="images/ai/vr.webp" alt="Virtual Museum" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
@@ -122,54 +103,15 @@ Card 2
       <p>Presented Jan-Apr 2025</p>
       <div class="button-flex-work">
         <button class="contact-btn" onclick="document.getElementById('passwordPopup').style.display='flex'">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer5').scrollIntoView({behavior:'smooth'});">Next</p>
+        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer4').scrollIntoView({behavior:'smooth'});">Next</p>
       </div>
     </div>
   </div>
 </section>
 
-<div id="spacer5" style="padding:2rem;"></div>
+<div id="spacer4" style="padding:2rem;"></div>
 
-<!-- Card 5 — Speculative Product Design -->
-<section id="card5" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/blogs/DEEZTORT.png" alt="Speculative Design" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Speculative Product Design (Essay + Design Workbook)</h3>
-      <p>Feb-Apr 2025</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer6').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer6" style="padding:2rem;"></div>
-
-<!-- Card 6 — Data Analytics Report (Billboard Top100) -->
-<section id="card6" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/blogs/music.jpg" alt="Billboard Music Analysis" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Data Analytics Report (Python) – Billboard Top100 Charts</h3>
-      <p>Submitted Aug 2024 (INF 1340)</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer7').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer7" style="padding:2rem;"></div>
-
-<!-- Card 7 — Web Production Design for ECE -->
-<section id="card7" class="cards-work">
+<section id="card4" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
       <img src="logos/Company/Logo_VD_5.jpg" alt="Web Production" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
@@ -179,54 +121,15 @@ Card 2
       <p>Shipped Jun 2024 - Mar 2025</p>
       <div class="button-flex-work">
         <button class="contact-btn" onclick="window.open('web-production.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer8').scrollIntoView({behavior:'smooth'});">Next</p>
+        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer5').scrollIntoView({behavior:'smooth'});">Next</p>
       </div>
     </div>
   </div>
 </section>
 
-<div id="spacer8" style="padding:2rem;"></div>
+<div id="spacer5" style="padding:2rem;"></div>
 
-<!-- Card 8 — Developing Design Guidelines for Canadian Recycling System -->
-<section id="card8" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/blogs/INF2169.png" alt="Canadian Recycling System" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Developing Design Guidelines for improving Canadian Recycling System</h3>
-      <p>Presented Winter 2024 (INF 2169)</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer9').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer9" style="padding:2rem;"></div>
-
-<!-- Card 9 — Digitization Critique of Digital Comics Museum -->
-<section id="card9" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/blogs/INF2228.png" alt="Digital Comics Museum" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Digitization Critique of the Digital Comics Museum</h3>
-      <p>Presented Fall 2024 (INF 2228)</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer10').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer10" style="padding:2rem;"></div>
-
-<!-- Card 10 — Mobile UX Research for Ticket Deals -->
-<section id="card10" class="cards-work">
+<section id="card5" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
       <img src="images/ai/tickets.webp" alt="Tickets App" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
@@ -236,16 +139,15 @@ Card 2
       <p>Presented Oct-Dec 2023 (INF1602)</p>
       <div class="button-flex-work">
         <button class="contact-btn" onclick="window.open('mobileUXR.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer11').scrollIntoView({behavior:'smooth'});">Next</p>
+        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer6').scrollIntoView({behavior:'smooth'});">Next</p>
       </div>
     </div>
   </div>
 </section>
 
-<div id="spacer11" style="padding:2rem;"></div>
+<div id="spacer6" style="padding:2rem;"></div>
 
-<!-- Card 11 — Gen-AI Service Blueprint for Film Pitch -->
-<section id="card11" class="cards-work">
+<section id="card7" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
       <img src="logos/Company/Logo_VD_3.jpg" alt="PREVIZ" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
@@ -255,16 +157,15 @@ Card 2
       <p>Implemented Jul 2023</p>
       <div class="button-flex-work">
         <button class="contact-btn" onclick="window.open('previz.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer12').scrollIntoView({behavior:'smooth'});">Next</p>
+        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer8').scrollIntoView({behavior:'smooth'});">Next</p>
       </div>
     </div>
   </div>
 </section>
 
-<div id="spacer12" style="padding:2rem;"></div>
+<div id="spacer7" style="padding:2rem;"></div>
 
-<!-- Card 12 — Pitch Deck Website for Film Pre-Production -->
-<section id="card12" class="cards-work">
+<section id="card7" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
       <img src="images/ai/filmy.webp" alt="Film Pitch" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
@@ -280,9 +181,19 @@ Card 2
   </div>
 </section>
 
+<div id="spacer8" style="padding:2rem;"></div>
+
+<div id="spacer9" style="padding:2rem;"></div>
+
+<div id="spacer10" style="padding:2rem;"></div>
+
+<div id="spacer11" style="padding:2rem;"></div>
+
+<div id="spacer12" style="padding:2rem;"></div>
+
 <div id="spacer13" style="padding:2rem;"></div>
 
-<!-- Card 13 — IA and Navigation Menu Redesign (commented out)
+Card 13 — IA and Navigation Menu Redesign (commented out)
 <section id="card13" class="cards-work">
   <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
     <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
@@ -297,9 +208,8 @@ Card 2
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
-<!-- Password Popup -->
 <div id="passwordPopup" 
      style="display:none; position:fixed; top:0; left:0; 
      width:100%; height:100%; background:rgba(0,0,0,0.7); 
@@ -318,8 +228,7 @@ Card 2
 </div>
 
 </section>
-
-<div id="footer-placeholder"></div>
+-->
 
 <style>
 
@@ -475,8 +384,28 @@ function checkMuseumPassword() {
   // Array of card data
   const cards = [
     {
+      title: "Translation as Cognitive Authority: An Information Behavior Research Study Proposal",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1ARf3zDGp-LZjc6jdzZr2RXjDqugFo-bvWgJq33EbalQ/edit?usp=sharing"
+    },
+    {
+      title: "Paper Review Cognitive Authorities of COVID-19 Information",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing"
+    },
+    { 
+      title: "Research Method Review: Digital Fanfic in Negotiation",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing"
+    },
+    {
+      title: "Youtube Music IA Critique",
+      tags: ["Reports"],
+      link: "pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
+    },
+    {
       title: "ECE Homepage Redesign",
-      tags: ["UXR", "Website Development"],
+      tags: ["Website Development"],
       link: "eceHome.html"
     },
     {
@@ -486,7 +415,7 @@ function checkMuseumPassword() {
     },
     {
       title: "Conversational UX Design for Healthcare AI",
-      tags: ["UXR", "Strategy", "Presentations"],
+      tags: ["Strategy", "Presentations"],
       link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing"
     },
     {
@@ -501,7 +430,7 @@ function checkMuseumPassword() {
     },
     {
       title: "Canadian Hispanic-Latin American Virtual Museum",
-      tags: ["UXR", "UI"],
+      tags: ["UXR"],
       link: "document link or HTML"
     },
     {
@@ -516,7 +445,7 @@ function checkMuseumPassword() {
     },
     {
       title: "Pitch Deck Website for Film Pre-Production",
-      tags: ["UXR", "Website Development"],
+      tags: ["Website Development"],
       link: "filmPitchSite.html"
     },
     {
@@ -525,8 +454,8 @@ function checkMuseumPassword() {
       link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing"
     },
     {
-      title: "Digitization Critique of the Digital Comics Museum",
-      tags: ["UXR", "UI", "Presentations"],
+      title: "Digitization Critique of the Digital Comics Museum Website",
+      tags: ["Presentations"],
       link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing"
     }
   ];
@@ -585,19 +514,6 @@ function checkMuseumPassword() {
       container.appendChild(div);
     });
   }
-</script>
-
-<script>
-  const quickExploreBtn = document.getElementById('quickExploreBtn');
-  const quickExploreSection = document.getElementById('quickExploreSection');
-
-  quickExploreBtn.addEventListener('click', () => {
-    if (quickExploreSection.style.display === 'none' || quickExploreSection.style.display === '') {
-      quickExploreSection.style.display = 'block';
-    } else {
-      quickExploreSection.style.display = 'none';
-    }
-  });
 </script>
 
 </body>
