@@ -46,48 +46,58 @@
   <!-- Header Placeholder -->
   <div id="header-placeholder"></div>
 
-  <!-- Hero Section -->
-  <section class="hero" style="background: var(--white);
-    display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box;">
+<section class="hero" style="position: relative;   background: linear-gradient(to bottom, 
+                              var(--tan) 0%, 
+                              var(--tan) 80%, 
+                              var(--white) 100%);
+    display: flex; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box; overflow: hidden;">
 
-    <div style="padding:1.25rem;"></div>
+<!-- Right-side image (normal) -->
+<img class="over" src="images/ai/papier.png" alt="Overlay Right" 
+     style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); 
+            max-width: 30%; max-height: 60%; object-fit: contain; z-index:1;">
 
-      <div class="fade-slide-up" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color:var(--black); opacity:0;">
-        
-        <h5 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:400; margin:0;">
-          <span id="greeting"></span> 👋 I'm <span style="font-weight:600; color:var(--secondary);">Karthik Jambunathan</span>
-        </h5>
+<!-- Left-side mirrored image -->
+<img class="over" src="images/ai/papier.png" alt="Overlay Left" 
+     style="position: absolute; top: 50%; left: 0; transform: translateY(-50%) scaleX(-1); 
+            max-width: 30%; max-height: 60%; object-fit: contain; z-index:1;">
 
-        <h5 style="font-weight:400; margin:10px 0;">driving Fintech, Web, and Digital Strategy,</h5>
+  <!-- Hero content -->
+  <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align:center;">
+    <h5 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin:0;">
+      <span id="greeting"></span> 👋 I'm <span style="font-weight:800; color:var(--secondary); text-shadow: 2px 2px 4px var(--primary);">Karthik Jambunathan</span>
+    </h5>
 
-        <h5 style="font-weight:400; margin:10px 0;">through product + workflow innovation.</h5>
+    <h5 style="font-weight:400; margin:10px 0;">driving Fintech, Web, and Digital Strategy,</h5>
 
-        <p style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin-top:40px; color:var(--black);">
-          <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
-          Seeking Hybrid/WFO Canada & Remote Global Roles
-        </p>
+    <h5 style="font-weight:400; margin:10px 0;">through product + workflow innovation.</h5>
 
-        <p style="color:var(--black); padding: 1rem; margin-bottom: 1.25rem;">
-          Based in <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">📍 Toronto, ON, Canada</span>&nbsp;&nbsp;&nbsp;
-          4+ years Designing Solutions in <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">Filmmaking, Fintech, and Healthcare</span>
-          <br><br>
-          Master of Information @ <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">University of Toronto - iSchool </span>
-          and a Masters in Media @ <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--secondary);">Anna University, Chennai</span>
-        </p>
+    <p style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin-top:40px; color:var(--00464F); text-shadow: 2px 2px 4px var(--primary);">
+      <span id="pulseDot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:limegreen; margin-right:8px;"></span>
+      Seeking Hybrid/WFO Canada & Remote Global Roles
+    </p>
 
-        <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-          View my Featured Work
-        </button>
+    <p style="color:var(--black); padding: 1rem; margin-bottom: 1.25rem;">
+      Based in <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--green); text-shadow: 2px 2px 4px var(--primary);">📍 Toronto, ON, Canada</span>&nbsp;&nbsp;&nbsp;
+      4+ years Designing Solutions in <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--green); text-shadow: 2px 2px 4px var(--primary);">Filmmaking and Fintech</span>
+      <br><br>
+      Master of Information @ <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--green); text-shadow: 2px 2px 4px var(--primary);">iSchool, University of Toronto </span>
+      + Masters in Media @ <span style="border: none; padding:0.5rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-weight:bold; color:var(--green); text-shadow: 2px 2px 4px var(--primary);">Anna University, Chennai</span>
+    </p>
 
-        </div>
+    <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
+      View my Featured Work
+    </button>
+  </div>
 
-      </div>
+</section>
+
 
       <script>
         // Pulsing green dot effect
@@ -109,6 +119,12 @@
   
   
       <style>
+
+        @media (max-width: 767px) {
+  .over {
+    display: none !important;
+  }
+}
 
         .button-row {
           display: flex;
@@ -158,8 +174,6 @@
 
       </style>
     
-  </section>
-
   <section id="about" class="bento-section" style="background: var(--white);">
 
     <div class="center-container">
@@ -200,20 +214,6 @@
     <div class="badge logo" style="top: 52%; left: 8%;">
       <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
     </div>
-
-  </section>
-
-  <section id="logo-gallery-section" style="background-color: var(--white); padding:2rem; overflow: hidden; display: flex; flex-direction: column;">
-
-  <!-- Header -->
-  <h5 style="color: var(--black3); margin-top: 2rem; text-align: center;">Companies/Clients worked with</h5>
-
-  <!-- Slider Container -->
-  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; margin-bottom:2rem; height: 150px;">
-    <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
-      <!-- Logos inserted via JS -->
-    </div>
-  </div>
 
   </section>
 
@@ -271,7 +271,7 @@
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
           <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0; font-weight: bold;">Presented Dec 2023</p>
           <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-            Mobile UX Research for Ticket Deals (UXR to Hi Fidelity)
+            UX Research: Mobile App for Ticket Deals (UXR to Hi Fidelity)
           </h6>
           <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
             Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept.
@@ -292,10 +292,10 @@
         <div style="padding: 5px; margin-top: 0; border-radius: 12px;">
           <p style="text-align:left; color: var(--bright); font-size: 14px; margin-bottom: 0; font-weight: bold;">Implemented July 2023</p>
           <h6 style="text-align:left; margin: 0; font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4;">
-            Gen-AI Service Blueprint for Film Pitch (Service Design)
+            Gen-AI Service Blueprint for Film Pre-Production (Service Design)
           </h6>
           <p style="text-align:left; margin: 0; color: var(--grey0); font-size: 14px; line-height: 1.6;">
-            Designed an AI-assisted workflow to streamline movie pitch video creation -- enabling directors to visualize stories faster.
+            Designed an AI-assisted workflow to streamline the video creation process -- Enabling directors to visualize stories faster.
             <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study<span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
           </p>
         </div>
@@ -325,6 +325,21 @@
     }
   }
   </style>
+
+  </section>
+
+  
+  <section id="logo-gallery-section" style="background-color: var(--white); padding:2rem; overflow: hidden; display: flex; flex-direction: column;">
+
+  <!-- Header -->
+  <h5 style="color: var(--black3); margin-top: 2rem; text-align: center;">Companies/Clients worked with</h5>
+
+  <!-- Slider Container -->
+  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; margin-bottom:2rem; height: 150px;">
+    <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
+      <!-- Logos inserted via JS -->
+    </div>
+  </div>
 
   </section>
 
