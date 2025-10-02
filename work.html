@@ -50,6 +50,23 @@
   <!-- Footer (injected by JS) -->
   <div id="footer-placeholder" style="flex-shrink:0;"></div>
 
+<div id="passwordPopup" 
+     style="display:none; position:fixed; top:0; left:0; 
+     width:100%; height:100%; background:rgba(0,0,0,0.7); 
+     justify-content:center; align-items:center; z-index:9999;">
+  <div style="background: var(--white); padding:2rem; border-radius:12px; text-align:center; width:300px;">
+    <h5 style="margin-top:0; margin-bottom: 20px;">Enter Password</h3>
+    <input type="password" id="museumPassword" placeholder="Password" 
+           style="width:90%; padding:10px; margin: 0; border:1px solid #ccc; border-radius:6px;">
+    <br>
+    <button onclick="checkMuseumPassword()" 
+            style="margin-top: 20px; padding:10px 20px; border:none; background: var(--secondary); color: var(--white); border-radius:6px; cursor:pointer;">
+      Submit
+    </button>
+    <p id="museumError" style="color:red; display:none; margin-top:10px;">Wrong password. Try again.</p>
+  </div>
+</div>
+
 <!--
 <section style="padding:2rem; max-width:1000px; margin:0 auto;">
 
@@ -210,23 +227,6 @@ Card 13 — IA and Navigation Menu Redesign (commented out)
   </div>
 </section>
 
-<div id="passwordPopup" 
-     style="display:none; position:fixed; top:0; left:0; 
-     width:100%; height:100%; background:rgba(0,0,0,0.7); 
-     justify-content:center; align-items:center; z-index:9999;">
-  <div style="background: var(--white); padding:2rem; border-radius:12px; text-align:center; width:300px;">
-    <h5 style="margin-top:0; margin-bottom: 20px;">Enter Password</h3>
-    <input type="password" id="museumPassword" placeholder="Password" 
-           style="width:90%; padding:10px; margin: 0; border:1px solid #ccc; border-radius:6px;">
-    <br>
-    <button onclick="checkMuseumPassword()" 
-            style="margin-top: 20px; padding:10px 20px; border:none; background: var(--secondary); color: var(--white); border-radius:6px; cursor:pointer;">
-      Submit
-    </button>
-    <p id="museumError" style="color:red; display:none; margin-top:10px;">Wrong password. Try again.</p>
-  </div>
-</div>
-
 </section>
 -->
 
@@ -384,22 +384,22 @@ function checkMuseumPassword() {
   // Array of card data
   const cards = [
     {
-      title: "Translation as Cognitive Authority: An Information Behavior Research Study Proposal",
+      title: "Information Sciences Research Proposal + Lit Review: Translation as Cognitive Authority [Docs]",
       tags: ["Reports"],
       link: "https://docs.google.com/document/d/1ARf3zDGp-LZjc6jdzZr2RXjDqugFo-bvWgJq33EbalQ/edit?usp=sharing"
     },
     {
-      title: "Paper Review Cognitive Authorities of COVID-19 Information",
+      title: "Paper Review: Cognitive Authorities of COVID-19 Information [Docs]",
       tags: ["Reports"],
       link: "https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing"
     },
     { 
-      title: "Research Method Review: Digital Fanfic in Negotiation",
+      title: "Research Method Review: Digital Fanfic in Negotiation [Docs]",
       tags: ["Reports"],
       link: "https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing"
     },
     {
-      title: "Youtube Music IA Critique",
+      title: "IA Critique: Youtube Music [Docs]",
       tags: ["Reports"],
       link: "pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
     },
@@ -414,32 +414,33 @@ function checkMuseumPassword() {
       link: "mobileUXR.html"
     },
     {
-      title: "Conversational UX Design for Healthcare AI",
+      title:"IA Redesign and Navigation Menu Test Strategy Design",
+      tags: ["UXR", "Strategy"],
+      link: "tmc.html"
+    },
+    {
+      title: "Conversational UX Design: Healthcare AI ChatBot [PPT]",
       tags: ["Strategy", "Presentations"],
       link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing"
     },
     {
-      title: "Speculative Product Design (Essay + Design Workbook)",
+      title: "Speculative Product Design (Essay + Design Workbook): Frameworks for Creative Media Control [Docs]",
       tags: ["Reports"],
       link: "https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing"
     },
     {
-      title: "Data Analytics Report (Python) – Billboard Top100 Charts",
+      title: "Data Analytics Report (using Python) – Ranking on Billboard Top100 Charts [Docs]",
       tags: ["Reports"],
       link: "https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing"
     },
     {
-      title: "Canadian Hispanic-Latin American Virtual Museum",
+      title: "Canadian Hispanic-Latin American Virtual Museum [Password Protexted - Contact Me]",
       tags: ["UXR"],
-      link: "document link or HTML"
+      protected: true,  // <-- NEW: mark this as protected
+      link: "virtualMuseum.html"  // <-- NEW: real URL
     },
     {
-      title: "Web Production Design for ECE at U of T",
-      tags: ["Website Development"],
-      link: "web-production.html"
-    },
-    {
-      title: "Gen-AI Service Blueprint for Film Pitch",
+      title: "Gen-AI Service Blueprint for Film Pre-Production",
       tags: ["Strategy", "Service Design"],
       link: "previz.html"
     },
@@ -449,12 +450,12 @@ function checkMuseumPassword() {
       link: "filmPitchSite.html"
     },
     {
-      title: "Developing Design Guidelines for Canadian Recycling System",
+      title: "Developing Design Guidelines: Canadian Recycling System [PPT]",
       tags: ["UXR", "Presentations"],
       link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing"
     },
     {
-      title: "Digitization Critique of the Digital Comics Museum Website",
+      title: "Digitization Critique: Digital Comics Museum Website [PPT]",
       tags: ["Presentations"],
       link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing"
     }
@@ -504,11 +505,22 @@ function checkMuseumPassword() {
       div.style.alignItems = 'center';
 
       const a = document.createElement('a');
-      a.href = card.link;
-      a.target = "_blank";
       a.textContent = `View: ${card.title}`;
-      a.style.color = "dark blue";
+      a.style.color = "darkblue";
       a.style.textDecoration = "underline";
+      a.style.cursor = "pointer";
+
+      // <-- NEW: handle protected card
+      if (card.protected) {
+        a.href = "#";
+        a.onclick = (e) => {
+          e.preventDefault();
+          openProtectedPage();
+        };
+      } else {
+        a.href = card.link;
+        a.target = "_blank";
+      }
 
       div.appendChild(a);
       container.appendChild(div);

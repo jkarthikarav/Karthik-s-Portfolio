@@ -18,81 +18,23 @@
 <body style="background: var(--grey0);">
 <div id="header-placeholder"></div>
 
-<section style="
-  position: relative;
-  width: 100%;
-  height: 40vh;
-  background: url('images/ai/vr.webp') center center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-">
+<section style="padding:2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
 
-  <!-- Black overlay -->
-  <div style="
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-  "></div>
-
-  <!-- Frosted glass card with content (HDFC style) -->
-  <div style="
-    position: relative;
-    z-index: 2;
-    margin: 3rem;
-    max-width: 800px;
-    width: 90%;
-    color: white;
-    text-align: left;  ">
-
-    <h5 style="color: #F6BD60; margin-top: 0; margin-bottom: 20px; font-weight:700;">
-      UXR for Website Content Discoverability<br>
-      <span style="font-size: 14px;">
-        for Canadian Hispanic-Latin American Virtual Museum [Under NDA]
-      </span>
-    </h5>
-
-    <div id="info-grid" style="
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-    width: 90%;
-    max-width: 1000px;">
-
-    <div class="info-card">
+  <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;">
     
-    <button class="contact-btn" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-      Read Case Study ↓
-    </button>
-
+    <div class="bannerIMG">
+      <img src="images/chlavm/Education and Learning.png" class="bannerIMG-img" />
     </div>
-    <div class="info-card">
 
-    <!--<button class="contact-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
-      View Prototype Video Live Site
-    </button>-->
-    </div>
-    
-  </div>
-</section>
 
-<section id="context" style="padding:2rem;">
-
-  <div class="post" style=" display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
     <!-- Title -->
-    <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
+    <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0rem; max-width: 80vw;">
       UXR: Enhancing Content discoverability on Website
     </h3>
+
+    <h5 style="color: var(--secondary); margin-top: 0rem; margin-bottom: 20px;">
+      For the Canadian Hispanic-Latin American Virtual Museum [Under NDA]
+    </h5>
 
     <!-- Meta: date / author / categories -->
     <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
@@ -108,105 +50,109 @@
       <h5 style="color: var(--secondary); margin-bottom: 20px;">Project Context</h5>
     
       <p>
-        The Canadian Hispanic-Latin American Virtual Museum (CHLAVM) website limited user engagement and access to its core content:
+
+        The Canadian Hispanic-Latin American Virtual Museum (CHLAVM) website limited user engagement and access to its core content: <br><br>
+        1. Navigation & Discovery Issues – The site’s information architecture was unintuitive, with confusing menu labels and inconsistent structure, making it difficult for users to locate projects, educational resources, or exhibits.<br>
+
+        2. Visual Clutter & Information Overload – The Embassy & Consulate page overwhelmed visitors by presenting 24+ country flags as raw icons and hyperlinks. Across the site, text-heavy layouts and outdated design further distracted from the museum’s mission.<br>
+  
+        3. Accessibility Gaps – Poor link visibility, insufficient color contrast, and limited keyboard navigation reduced inclusivity and overall usability.
+
       </p>
-<p>
-  1. Navigation & Discovery Issues – The site’s information architecture was unintuitive, with confusing menu labels and inconsistent structure, making it difficult for users to locate projects, educational resources, or exhibits.<br>
-  2. Visual Clutter & Information Overload – The Embassy & Consulate page overwhelmed visitors by presenting 24+ country flags as raw icons and hyperlinks. Across the site, text-heavy layouts and outdated design further distracted from the museum’s mission.<br>
-  3. Accessibility Gaps – Poor link visibility, insufficient color contrast, and limited keyboard navigation reduced inclusivity and overall usability.
-</p>
 
-<p style="margin-top:1rem;">
-  The included images showcase redesigned pages -- such as the Educational Resource Hub and Embassy & Consulate section -- shared as standalone visuals due to NDA restrictions.
-</p>
+      <p style="margin-top:1rem;">
+        The included images showcase redesigned pages -- such as the Educational Resource Hub and Embassy & Consulate section -- shared as standalone visuals due to NDA restrictions.
+      </p>
 
-<p style="margin-bottom: 2rem;">
-  This was a short research sprint for a virtual museum client under NDA. The nature of this work is confidential. For the time being, please reach out for more details.
-</p>
+      <p style="margin-bottom: 2rem;">
+        This was a short research sprint for a virtual museum client under NDA. The nature of this work is confidential. For the time being, please reach out for more details.
+      </p>
 
-<h6 style="color: var(--secondary); margin-bottom: 1rem;">Research Methods</h6> 
-<p style="margin-bottom: 2rem;"> 
-  We employed a mixed-methods research approach to validate challenges and inform design updates:<br><br>
-  1. Desk & Competitor Research – Compared virtual-only, hybrid, and Hispanic/Latin museums to identify structural best practices, content strategies, and navigation patterns.<br>
-  2. Accessibility Audit – Applied a structured checklist to evaluate contrast, link visibility, and keyboard navigation compliance.<br>
-  3. User Surveys – Captured expectations around resource discovery, navigation, and educational use.<br>
-  4. Observational Interviews & Usability Tasks – Conducted one-hour Zoom sessions with exploratory observation and task-based testing to uncover user pain points in real time.
-</p>
+      <h6 style="color: var(--secondary); margin-bottom: 1rem;">Research Methods</h6> 
+      
+      <p style="margin-bottom: 2rem;"> 
+        We employed a mixed-methods research approach to validate challenges and inform design updates:<br><br>
+        1. Desk & Competitor Research – Compared virtual-only, hybrid, and Hispanic/Latin museums to identify structural best practices, content strategies, and navigation patterns.<br>
+        2. Accessibility Audit – Applied a structured checklist to evaluate contrast, link visibility, and keyboard navigation compliance.<br>
+        3. User Surveys – Captured expectations around resource discovery, navigation, and educational use.<br>
+        4. Observational Interviews & Usability Tasks – Conducted one-hour Zoom sessions with exploratory observation and task-based testing to uncover user pain points in real time.
+      </p>
 
-<h6 style="color: var(--secondary); margin-bottom: 2rem;">UX Research Insights</h6> 
-<div class="contentgrid">
+      <h6 style="color: var(--secondary); margin-bottom: 2rem;">UX Research Insights</h6> 
 
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">1. Confusing Navigation</p>
-    <p style="margin-top: 0;">Users struggled with unclear menus and redundant tabs, confirming the need for streamlined IA and intuitive pathways.</p>
-  </div>
+      <div class="contentgrid">
 
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">2. Outdated Design</p>
-    <p style="margin-top: 0;">Overloaded text blocks and obsolete layouts buried the museum’s cultural and educational mission.</p>
-  </div>
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">1. Confusing Navigation</p>
+          <p style="margin-top: 0;">Users struggled with unclear menus and redundant tabs, confirming the need for streamlined IA and intuitive pathways.</p>
+        </div>
 
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">3. Unclear CTAs</p>
-    <p style="margin-top: 0;">Users were unsure how to donate, join the community, or access resources due to vague buttons and inconsistent action flows.</p>
-  </div>
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">2. Outdated Design</p>
+          <p style="margin-top: 0;">Overloaded text blocks and obsolete layouts buried the museum’s cultural and educational mission.</p>
+        </div>
 
-  <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">4. Information Overload</p>
-    <p style="margin-top: 0;">Dense, unfocused content diluted key messages and made discovery frustrating.</p>
-  </div>
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">3. Unclear CTAs</p>
+          <p style="margin-top: 0;">Users were unsure how to donate, join the community, or access resources due to vague buttons and inconsistent action flows.</p>
+        </div>
 
-</div>
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">4. Information Overload</p>
+          <p style="margin-top: 0;">Dense, unfocused content diluted key messages and made discovery frustrating.</p>
+        </div>
 
-  <h5 style="color: var(--secondary); margin-bottom: 20px;">Design Solutions</h5>
+      </div>
 
-  <h6 style="color: var(--secondary); margin-bottom: 1rem;">My Role & the Style Guide</h6> 
+      <h5 style="color: var(--secondary); margin-bottom: 20px;">Design Solutions</h5>
 
-<p style="margin-bottom: 2rem;">
-  As one of four UX/UI designers, I created the style guide and designed the Educational Resource Hub and Embassy & Consulate pages. These pages demonstrated how participant feedback and research insights were translated into concrete design improvements. While another teammate created the header and footer, I delivered these specific components of the design system:
-</p>
+      <h6 style="color: var(--secondary); margin-bottom: 1rem;">My Role & the Style Guide</h6> 
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
-  <img src="images/chlavm/Tab Component.png" class="user-journey-image-mrs" style="width:100%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Tab Component.png')">
-  <img src="images/chlavm/Card.png" class="user-journey-image-mrs" style="height:30%; width:30%; cursor: pointer;" onclick="openModal('images/chlavm/Card.png')">
-  <img src="images/chlavm/Title Banner_Page.png" class="user-journey-image-mrs" style="width:60%; height:90%; cursor: pointer;" onclick="openModal('images/chlavm/Title Banner_Page.png')">
-  <img src="images/chlavm/Dropdown_Default.png" class="user-journey-image-mrs" style="width:50%; height:50%; cursor: pointer;" onclick="openModal('images/chlavm/Dropdown_Default.png')">
-</div>
+      <p style="margin-bottom: 2rem;">
+        As one of four UX/UI researchers, I created the style guide and designed the Educational Resource Hub and Embassy & Consulate pages. These pages demonstrated how participant feedback and research insights were translated into concrete design improvements. While another teammate created the header and footer, I delivered these specific components of the design system:
+      </p>
 
-<h6 style="color: var(--green); font-size:20px; margin-bottom: 1rem;">Style Guide</h6> 
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
+        <img src="images/chlavm/Tab Component.png" class="user-journey-image-mrs" style="width:100%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Tab Component.png')">
+        <img src="images/chlavm/Card.png" class="user-journey-image-mrs" style="height:30%; width:30%; cursor: pointer;" onclick="openModal('images/chlavm/Card.png')">
+        <img src="images/chlavm/Title Banner_Page.png" class="user-journey-image-mrs" style="width:60%; height:90%; cursor: pointer;" onclick="openModal('images/chlavm/Title Banner_Page.png')">
+        <img src="images/chlavm/Dropdown_Default.png" class="user-journey-image-mrs" style="width:50%; height:50%; cursor: pointer;" onclick="openModal('images/chlavm/Dropdown_Default.png')">
+      </div>
 
-  <img src="images/chlavm/Contrast grid.png" class="user-journey-image-mrs" style="width:45%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Contrast grid.png')">
+      <h6 style="color: var(--green); font-size:20px; margin-bottom: 1rem;">Style Guide</h6> 
+
+      <img src="images/chlavm/Contrast grid.png" class="user-journey-image-mrs" style="width:45%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Contrast grid.png')">
 
       <!-- Education and Learning -->
-<h5 style="color: var(--secondary); margin-bottom:1rem;">Education and Learning</h5>
-<div class="contentgrid">
+      <h5 style="color: var(--secondary); margin-bottom:1rem;">Education and Learning</h5>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:1rem;">Lack of Intuitive Navigation</h6>
-    <p style="text-align:center;">
-      <strong>Problem:</strong> Resources scattered across menus, no central access.<br>
-      <strong>Solution:</strong> Unified hub gathers all educational materials in one organized place.
-    </p>
-  </div>
+      <div class="contentgrid">
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:1rem;">Unclear CTAs and Interactions</h6>
-    <p style="text-align:center;">
-      <strong>Problem:</strong> Users were unsure how to access each item.<br>
-      <strong>Solution:</strong> Added clear ‘Read’/‘View’ actions on each resource card, clarifying next steps.
-    </p>
-  </div>
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:1rem;">Lack of Intuitive Navigation</h6>
+          <p style="text-align:center;">
+            <strong>Problem:</strong> Resources scattered across menus, no central access.<br>
+            <strong>Solution:</strong> Unified hub gathers all educational materials in one organized place.
+          </p>
+        </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:1rem;">Optimize Content Layout</h6>
-    <p style="text-align:center;">
-      <strong>Problem:</strong> Resources buried, site felt cluttered.<br>
-      <strong>Solution:</strong> Only the relevant resource links appear, reducing clutter for all users.
-    </p>
-  </div>
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:1rem;">Unclear CTAs and Interactions</h6>
+          <p style="text-align:center;">
+            <strong>Problem:</strong> Users were unsure how to access each item.<br>
+            <strong>Solution:</strong> Added clear ‘Read’/‘View’ actions on each resource card, clarifying next steps.
+          </p>
+        </div>
 
-</div>
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:1rem;">Optimize Content Layout</h6>
+          <p style="text-align:center;">
+            <strong>Problem:</strong> Resources buried, site felt cluttered.<br>
+            <strong>Solution:</strong> Only the relevant resource links appear, reducing clutter for all users.
+          </p>
+        </div>
 
+      </div>
 
       <!-- Education Image -->
       <div style="display: flex; justify-content: center; padding: 1rem;">
@@ -218,48 +164,76 @@
       <!-- Embassies & Consulates -->
       <h5 style="color: var(--secondary); margin-bottom:1rem;">Embassies & Consulates</h5>
 
-<div class="contentgrid">
+      <div class="contentgrid">
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:1rem;">Lack of Intuitive Navigation</h6>
-    <p style="text-align:center;">
-      <strong>Problem:</strong> All flags crowded on one page, tough to find correct country.<br>
-      <strong>Solution:</strong> Collapsed flags into a single country dropdown; users select the country, instantly seeing relevant consulates/embassy info.
-    </p>
-  </div>
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:1rem;">Lack of Intuitive Navigation</h6>
+          <p style="text-align:center;">
+            <strong>Problem:</strong> All flags crowded on one page, tough to find correct country.<br>
+            <strong>Solution:</strong> Collapsed flags into a single country dropdown; users select the country, instantly seeing relevant consulates/embassy info.
+          </p>
+        </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:1rem;">Information Overload</h6>
-    <p style="text-align:center;">
-      <strong>Problem:</strong> Too many flag links, overwhelming new visitors.<br>
-      <strong>Solution:</strong> Dropdown hides non-relevant options, letting users focus only on what matters.
-    </p>
-  </div>
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:1rem;">Information Overload</h6>
+          <p style="text-align:center;">
+            <strong>Problem:</strong> Too many flag links, overwhelming new visitors.<br>
+            <strong>Solution:</strong> Dropdown hides non-relevant options, letting users focus only on what matters.
+          </p>
+        </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h6 style="color: var(--secondary); margin-top:1rem;">Optimize Content Layout</h6>
-    <p style="text-align:center;">
-      <strong>Problem:</strong> Scattered links; no visual summary.<br>
-      <strong>Solution:</strong> Page now displays only the selected country's embassy or consulate links.
-    </p>
-  </div>
+        <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <h6 style="color: var(--secondary); margin-top:1rem;">Optimize Content Layout</h6>
+          <p style="text-align:center;">
+            <strong>Problem:</strong> Scattered links; no visual summary.<br>
+            <strong>Solution:</strong> Page now displays only the selected country's embassy or consulate links.
+          </p>
+        </div>
 
-</div>
-
+      </div>
 
       <!-- Embassies Image -->
       <div style="display: flex; justify-content: center; padding: 1rem;">
-        <img src="images/chlavm/Community_Embassies and Consulates.png" class="user-journey-image-mrs" 
-             style="max-width: 100%;" 
-             onclick="openModal('images/chlavm/Community_Embassies and Consulates.png')">
+        <img src="images/chlavm/Community_Embassies and Consulates.png" class="user-journey-image-mrs" style="max-width: 100%;" onclick="openModal('images/chlavm/Community_Embassies and Consulates.png')">
       </div>
+
+    
+      <!-- Modal Viewer -->
+      <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
+        <img id="modalImage" style="max-width: 90%; max-height: 90%;">
+      </div>
+
+      <h6 style="color: var(--secondary); margin-bottom: 2rem;">Usability Testing</h6> 
+      <p style="margin-bottom: 2rem;">
+        We tested existing and redesigned pages with both new and returning participants (n=8):
+      </p>
+
+      <div class="contentgrid">
+
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Task Success</p>
+          <p style="margin-top: 0;">All participants completed navigation tasks without friction.</p>
+        </div>
+
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">CTA Clarity</p>
+          <p style="margin-top: 0;">Updated buttons and labels were easy to notice and understand.</p>
+        </div>
+
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+          <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">User Preferences</p>
+          <p style="margin-top: 0;">Participants preferred the clean layout, vibrant colors, and accessible contrast of the new homepage.</p>
+        </div>
+
+        <div style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+         <p style="color: var(--secondary); font-weight: bold; margin-bottom: 0.5rem;">Refinements</p>
+         <p style="margin-top: 0;">Minor updates, such as clarifying “Legacies & Gifts,” were guided by participant feedback.</p>
+        </div>
+
+      </div>
+
     </div>
     
-    <!-- Modal Viewer -->
-    <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
-      <img id="modalImage" style="max-width: 90%; max-height: 90%;">
-    </div>
-
   </div>
 
 </section>
@@ -267,6 +241,38 @@
 <div id="footer-placeholder"></div>
 
 <style>
+
+  .bannerIMG {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.bannerIMG-img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: translateY(-192px);
+}
+
+/* For smaller screens, move image less */
+@media (width: 768px) {
+  .bannerIMG-img {
+    transform: translateY(-50px);
+  }
+}
+
+/* For large screens, maybe move more */
+@media (width: 1200px) {
+  .bannerIMG-img {
+    transform: translateY(-150px);
+  }
+}
+
+
     @media (width< 1400px) {
     .takeaway {
       width: 75%;

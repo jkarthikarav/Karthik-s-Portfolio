@@ -41,78 +41,23 @@
 <body style="background:var(--grey0);">
 <div id="header-placeholder"></div>
 
-<section style="
-  position: relative;
-  width: 100%;
-  height: 40vh;
-  background: url('images/ai/tickets.webp') center center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-">
+      
 
-  <!-- Black overlay -->
-  <div style="
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-  "></div>
 
-  <!-- Frosted glass card with content (HDFC style) -->
-  <div style="
-    position: relative;
-    z-index: 2;
-    margin: 3rem;
-    max-width: 800px;
-    width: 90%;
-    color: white;
-    text-align: left;  ">
+<section style="padding:2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
 
-    <h5 style="color: #F6BD60; margin-top: 0; margin-bottom: 20px; font-weight:700;">
-      Translating UX Research insights into Mobile UI designs
-    </h5>
+  <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;">
 
-    <div id="info-grid" style="
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-    width: 90%;
-    max-width: 1000px;">
-
-    <div class="info-card">
-    
-    <button class="contact-btn" onclick="document.getElementById('context').scrollIntoView({ behavior: 'smooth' });">
-      Read Case Study ↓
-    </button>
-
+    <div style="width:100%; height:40vh; overflow: hidden; margin-bottom: 2rem;">
+      <img src="images/webp/Banner-EXPTOR.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
     </div>
-    <div class="info-card">
 
-    <!--<button class="contact-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
-      View Prototype Video Live Site
-    </button>-->
-    </div>
-    
-  </div>
-</section>
-
-<section id="context" style="padding:2rem;">
-
-  <div class="post" style=" display: flex; flex-direction:column; justify-content: center; align-items: center; min-height: 100vh;">
     <!-- Title -->
     <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
       UX Research: Mobile App for Ticket Deals
     </h3>
+
+    <h5 style="color: var(--secondary); margin-top: 0rem; margin-bottom: 20px;">Translating UX Research insights into Mobile UI designs</h5>
 
     <!-- Meta: date / author / categories -->
     <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
