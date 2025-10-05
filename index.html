@@ -190,12 +190,12 @@
     </div>
 
     <!-- Skill Badges -->
-    <div class="badge skill" style="top: 9%; left: 35%;">Information Architect</div>
-    <div class="badge skill" style="top: 20%; right: 6%;">Front End Web Developer</div>
-    <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity + Prototyping</div>
-    <div class="badge skill" style="bottom: 18%; right: 4%;">User Research</div>
-    <div class="badge skill" style="top: 35%; left: 5%;">Journey Mapping & Task Flows</div>
-    <div class="badge skill" style="bottom: 15%; left: 50%;">Service Designer</div>
+    <div class="badge skill" style="top: 9%; left: 35%;">Visual and Graphic Design</div>
+    <div class="badge skill" style="top: 20%; right: 6%;">Front End Web Development</div>
+    <div class="badge skill" style="bottom: 20%; left: 10%;">High Fidelity UI Prototyping</div>
+    <div class="badge skill" style="bottom: 18%; right: 4%;">UX Research</div>
+    <div class="badge skill" style="top: 35%; left: 5%;">Information Architecture</div>
+    <div class="badge skill" style="bottom: 15%; left: 50%;">Service Design</div>
 
 
     <!-- Logo Badges -->
@@ -229,7 +229,7 @@
     padding: 2rem;">
 
   <h4 class="fade-slide-up" style="font-size:32px; color:var(--primary); margin-top:2rem; opacity:0;">
-    Featured Work &nbsp;&nbsp;
+    Featured UX Work &nbsp;&nbsp;
     <a href="work.html" target="_blank" style="font-size: 1rem; color: var(--white); text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
       <span>View All</span>
       <span style="display: inline-block; transform: rotate(-45deg);">→</span>
@@ -241,9 +241,12 @@
 
     <!-- ECE Homepage Redesign Card -->
     <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-  onmouseover="this.style.transform='scale(1.05)'" 
-  onmouseout="this.style.transform='scale(1)'" onclick="window.open('eceHome.html', '_blank');">
+      <div style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.querySelector('img').style.transform='scale(1.01)'; 
+                 this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
+    onmouseout="this.querySelector('img').style.transform='scale(1)'; 
+                this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
+ onclick="window.open('eceHome.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
         </div>
@@ -262,9 +265,12 @@
 
     <!-- Experience Toronto: Ticket Deals UX Card -->
     <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-  onmouseover="this.style.transform='scale(1.05)'" 
-  onmouseout="this.style.transform='scale(1)'" onclick="window.open('mobileUXR.html', '_blank');">
+      <div onmouseover="this.querySelector('img').style.transform='scale(1.01)'; 
+                 this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
+    onmouseout="this.querySelector('img').style.transform='scale(1)'; 
+                this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
+ style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+   onclick="window.open('mobileUXR.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-position: center; object-fit: cover; border-radius: 8px;">
         </div>
@@ -283,9 +289,12 @@
 
     <!-- Gen-AI Service Blueprint Card -->
     <div style="flex: 1 1 calc(33.33% - 1rem);">
-      <div class="zoom-on-hover" style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
-  onmouseover="this.style.transform='scale(1.05)'" 
-  onmouseout="this.style.transform='scale(1)'" onclick="window.open('previz.html', '_blank');">
+      <div style="cursor: pointer; gap: 3rem; transition:transform 0.3s;" 
+  onmouseover="this.querySelector('img').style.transform='scale(1.01)'; 
+                 this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
+    onmouseout="this.querySelector('img').style.transform='scale(1)'; 
+                this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
+ onclick="window.open('previz.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-position: top; object-fit: cover; border-radius: 8px;">
         </div>
@@ -327,6 +336,8 @@
   </style>
 
   </section>
+
+
 
   
   <section id="logo-gallery-section" style="background-color: var(--white); padding:2rem; overflow: hidden; display: flex; flex-direction: column;">
