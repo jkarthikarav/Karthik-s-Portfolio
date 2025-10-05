@@ -33,10 +33,8 @@
       <div id="filterButtons" 
            style="display:flex; flex-direction:row; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
         <button class="contact-btn" style="width:fit-content;" onclick="filterCards('UXR', this)">UX Research</button>
-        <!--<button class="contact-btn" style="width:fit-content;" onclick="filterCards('UI', this)">UI</button>-->
         <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Strategy', this)">UX Strategy</button>
         <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Service Design', this)">Service Design</button>
-        <!--<button class="contact-btn" style="width:fit-content;" onclick="filterCards('Information Architecture', this)">Information Architecture</button>-->
         <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Presentations', this)">UX and related Presentations</button>
         <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Reports', this)">UX and related Written Reports</button>
         <button class="contact-btn" style="width:fit-content;" onclick="filterCards('Website Development', this)">Website Development</button>
@@ -66,169 +64,6 @@
     <p id="museumError" style="color:red; display:none; margin-top:10px;">Wrong password. Try again.</p>
   </div>
 </div>
-
-<!--
-<section style="padding:2rem; max-width:1000px; margin:0 auto;">
-
-<h2 style="color: var(--secondary); font-weight: bold; margin-bottom: 0rem;">Explore my work</h2>
-
-<div id="spacer1" style="padding:0.25rem;"></div>
-
-<section id="card1" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="logos/Company/Logo_VD_5.jpg" alt="ECE" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">ECE Homepage Redesign</h3>
-      <p>Jan-Mar 2025</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('eceHome.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer3').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer2" style="padding:2rem;"></div>
-
-<section id="card2" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/ai/Bank.webp" alt="HDFC" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">UI Redesign for HDFC NetBanking</h3>
-      <p>Self-Initiated Jun 2025</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('netBanking.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer3').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section> 
-
-<div id="spacer3" style="padding:2rem;"></div>
-
-<section id="card3" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/ai/vr.webp" alt="Virtual Museum" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Canadian Hispanic-Latin American Virtual Museum</h3>
-      <p>Presented Jan-Apr 2025</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="document.getElementById('passwordPopup').style.display='flex'">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer4').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer4" style="padding:2rem;"></div>
-
-<section id="card4" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="logos/Company/Logo_VD_5.jpg" alt="Web Production" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Web Production Design for ECE at U of T</h3>
-      <p>Shipped Jun 2024 - Mar 2025</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('web-production.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer5').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer5" style="padding:2rem;"></div>
-
-<section id="card5" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/ai/tickets.webp" alt="Tickets App" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Mobile UX Research for Ticket Deals</h3>
-      <p>Presented Oct-Dec 2023 (INF1602)</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('mobileUXR.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer6').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer6" style="padding:2rem;"></div>
-
-<section id="card7" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="logos/Company/Logo_VD_3.jpg" alt="PREVIZ" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Gen-AI Service Blueprint for Film Pitch</h3>
-      <p>Implemented Jul 2023</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('previz.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer8').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer7" style="padding:2rem;"></div>
-
-<section id="card7" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="images/ai/filmy.webp" alt="Film Pitch" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">Pitch Deck Website for Film Pre-Production</h3>
-      <p>Shipped Aug 2021</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('filmPitchSite.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer1').scrollIntoView({behavior:'smooth'});">Top</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="spacer8" style="padding:2rem;"></div>
-
-<div id="spacer9" style="padding:2rem;"></div>
-
-<div id="spacer10" style="padding:2rem;"></div>
-
-<div id="spacer11" style="padding:2rem;"></div>
-
-<div id="spacer12" style="padding:2rem;"></div>
-
-<div id="spacer13" style="padding:2rem;"></div>
-
-Card 13 — IA and Navigation Menu Redesign (commented out)
-<section id="card13" class="cards-work">
-  <div style="display:flex; gap:2rem; width:100%; max-width:1200px; height:100%;">
-    <div style="flex:1; display:flex; justify-content:center; align-items:center; height:100%;">
-      <img src="logos/textile_museum_wordmark-2.png" alt="Textile Museum Logo" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-    </div>
-    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap: 0rem;">
-      <h3 style="color:var(--secondary);">IA and Navigation Menu Redesign</h3>
-      <p>Presented Oct-Nov 2023 (INF2170)</p>
-      <div class="button-flex-work">
-        <button class="contact-btn" onclick="window.open('tmc.html','_blank')">View Project</button>
-        <p style="cursor:pointer; color:var(--secondary);" onclick="document.getElementById('spacer14').scrollIntoView({behavior:'smooth'});">Next</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-</section>
--->
 
 <style>
 
@@ -436,8 +271,8 @@ function checkMuseumPassword() {
     {
       title: "Canadian Hispanic-Latin American Virtual Museum [Password Protexted - Contact Me]",
       tags: ["UXR"],
-      protected: true,  // <-- NEW: mark this as protected
-      link: "virtualMuseum.html"  // <-- NEW: real URL
+      protected: true,
+      link: "virtualMuseum.html" 
     },
     {
       title: "Gen-AI Service Blueprint for Film Pre-Production",
