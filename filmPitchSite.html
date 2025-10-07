@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Film Deck: Non-Traditional UX/UI</title>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body style="background: var(--grey0);">
@@ -17,7 +17,7 @@
   <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;">
     
     <div style="width:100%; height:40vh; overflow: hidden; margin-bottom: 2rem;">
-      <img src="images/ai/filmy.webp" style="width: 100%; height: 100%; object-fit: cover; display: block; object-position: top;" />
+      <img src="assets/images/ai/filmy.webp" style="width: 100%; height: 100%; object-fit: cover; display: block; object-position: top;" />
     </div>
 
     <!-- Title -->
@@ -105,15 +105,15 @@
 <div class="contentgrid">
 
   <div class="phot-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <video src="videos/Landing.mp4" controls style="width: 100%; cursor: pointer;" onclick="event.stopPropagation()" muted></video>
+    <video src="assets/videos/Landing.mp4" controls style="width: 100%; cursor: pointer;" onclick="event.stopPropagation()" muted></video>
   </div>
 
   <div class="phot-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <video src="videos/Pitchdeck_History_4.mp4" controls style="width: 100%; cursor: pointer;" onclick="event.stopPropagation()" muted></video>
+    <video src="assets/videos/Pitchdeck_History_4.mp4" controls style="width: 100%; cursor: pointer;" onclick="event.stopPropagation()" muted></video>
   </div>
 
   <div class="phot-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <img src="images/spypitch/BG1.jpg" style="width: 100%; cursor: pointer;" onclick="openModal('images/spypitch/BG1.jpg')" />
+    <img src="assets/images/spypitch/BG1.jpg" style="width: 100%; cursor: pointer;" onclick="openModal('assets/images/spypitch/BG1.jpg')" />
   </div>
 
 </div>
@@ -126,9 +126,9 @@
     </p>
 
 <div style="display: flex; justify-content: center; padding: 2rem;">
-  <img src="images/webp/wireframe-veera.webp" 
+  <img src="assets/images/webp/wireframe-veera.webp" 
        style="max-width: 50%; display: block;" 
-       onclick="openModal('images/webp/wireframe-veera.webp')" />
+       onclick="openModal('assets/images/webp/wireframe-veera.webp')" />
 </div>
 
     <h6 style="color: var(--secondary); margin-bottom:1rem;">
@@ -206,7 +206,7 @@
   </div>
 </section>
 
-<section style="position: relative; padding: 4rem 2rem; background: url('images/ai/filmy.webp') no-repeat center center; background-size: cover;">
+<section style="position: relative; padding: 4rem 2rem; background: url('assets/images/ai/filmy.webp') no-repeat center center; background-size: cover;">
   <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7);"></div> <!-- Black overlay -->
 
   <div style="position: relative; display: flex; flex-direction: column; gap: 2rem; align-items: flex-start; justify-content: space-between;">
@@ -364,7 +364,7 @@
 </style>
 
 <script>
-    fetch('footer.html')
+    fetch('addons/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
@@ -373,7 +373,7 @@
 
 
 <script>
-  fetch('header.html')
+  fetch('addons/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;

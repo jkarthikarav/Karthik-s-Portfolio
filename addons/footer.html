@@ -1,0 +1,182 @@
+<footer id="footer" style="
+  background: url('assets/images/ai/BG.webp') no-repeat center center/cover;
+  color: var(--white);
+  padding: 2rem;
+">
+
+  <!-- Contact Section -->
+  <div class="footer-container">
+    <!-- Left Column -->
+  <div class="footer-contact">
+    <p style="color:var(--white);">Contact</p>
+    <a href="#" onclick="scrollToTop()" class="scroll-top-btn">
+      Scroll To Top
+    </a>
+  </div>
+
+    <!-- Right Column (Table) -->
+    <div class="footer-table">
+      <table style="width: 100%; border-collapse: collapse; color: var(--white);">
+        <tbody>
+          <!-- Email -->
+          <tr>
+            <td style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="mailto:karthikaravindj@gmail.com" class="footer-link">
+                karthikaravindj@gmail.com
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+
+          <!-- LinkedIn -->
+          <tr>
+            <td style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="https://linkedin.com/in/karthikjambunathan" target="_blank" class="footer-link">
+                linkedin.com/in/karthikjambunathan
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+
+          <!-- About Me -->
+          <tr>
+            <td style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="assets/pdfs/Graphic Design.pdf" target="_blank" style="text-align:left;" class="footer-link">
+                View my Graphic Design Portfolio
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+
+          <!-- Case Studies -->
+          <tr>
+            <td style="display: flex; justify-content: space-between; align-items: center;">
+              <a href="work.html" target="_blank" class="footer-link">
+                View All Case Studies
+              </a>
+              <span>↗</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.3); margin: 2rem 0;" />
+
+  <!-- Bottom Info -->
+  <div class="footer-copyright" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin: 0 auto;">
+    <p style="color:var(--white);margin: 0; font-weight: 600;">Karthik Jambunathan</p>
+    <p style="color:var(--white);margin: 0; font-size: 14px; opacity: 0.8;">
+      Coded using HTML5, CSS, JavaScript | Hosted on GitHub | Last Updated 2025.
+    </p>
+  </div>
+
+<style>
+
+  @media (max-width: 768px) {
+    .footer-table td:first-child {
+      font-size: 12px !important;
+    }
+    .footer-link {
+      font-size: 12px !important;
+      font-weight: 600 !important;
+    }
+  }
+
+    @media (max-width: 768px) {
+    .footer-copyright {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align:left !important;
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  .footer-contact {
+    flex: 0 0 200px; /* fixed width */
+    text-align: left; /* ensure left alignment */
+  }
+
+  .scroll-top-btn {
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 16px;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent; /* removed background */
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .scroll-top-btn:hover {
+    background: var(--white);
+    color: var(--black2); /* invert on hover */
+  }
+
+  .footer-table {
+    flex: 0 0 900px; /* fixed width */
+  }
+
+  @media (max-width: 1400px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-contact {
+      flex: unset;
+      width: 100%;
+      max-width: 600px;
+      text-align: left; /* stay left-aligned */
+    }
+
+    .footer-table {
+      flex: unset;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .footer-table table {
+      margin: 0 auto;
+    }
+  }
+
+  .footer-link {
+  color: var(--white);
+  text-decoration: none;
+  transition: font-weight 0.2s ease;
+}
+
+.footer-link:visited,
+.footer-link:active,
+.footer-link:hover {
+  color: var(--white); /* stays white always */
+}
+
+.footer-link:hover {
+  font-weight: 700; /* subtle effect, not color */
+}
+
+/* Remove any row hover background */
+tr:hover {
+  background: transparent !important;
+  cursor: default;
+}
+</style>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</footer>

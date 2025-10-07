@@ -8,12 +8,12 @@
   <!-- Fonts -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+    <link rel="stylesheet" href="css/https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
   </noscript>
 
   <!-- Styles and Scripts -->
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body style="background: var(--white);">
@@ -25,11 +25,11 @@
   <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;">
     
     <div style="width:100%; overflow: hidden; margin: 2rem 0rem;">
-      <img src="logos/eceuoft.png" style="width: 100%; object-fit: fit; display: block;" />
+      <img src="assets/logos/eceuoft.png" style="width: 100%; object-fit: fit; display: block;" />
     </div>
 
       <!-- Title -->
-      <h3 class="post-title" style="color:var(--secondary); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
+      <h3 class="post-title" style="color:var(--black3); line-height:1.25; margin:0 0 1rem; max-width: 80vw;">
         Web Production Design for the ECE Department
       </h3>
 
@@ -49,27 +49,33 @@
       content design using Canva and Figma, stakeholder coordination, and full page builds in WordPress.
       </p>
 
-      <h5 style="color:var(--black); margin-top:1.5rem;">Responsibilities</h5>
-      <p>
-        &nbsp;1.&nbsp;&nbsp;&nbsp;Conducted content reviews and usability checks to identify layout, accessibility, and content issues.<br>
-        &nbsp;2.&nbsp;&nbsp;&nbsp;Built and updated multiple WordPress pages, ensuring accessibility, branding, and responsive design.<br>
-        &nbsp;3.&nbsp;&nbsp;&nbsp;Processed monthly web content/design requests through Asana, preparing assets in Adobe and Canva.
-      </p>
+      <h5 style="color:var(--black); margin-top:1.5rem; margin-bottom: 0.25rem;">Responsibilities</h5>
+      <h6 style="color: var(--secondary); margin-top:0.25rem; margin-bottom: 0.25rem;">
+        Maintain the ECE's public website and their intranet while coordinating with internal stakeholders and teams for content updates.
+      </h6>
 
-		  <h5 style="color:var(--black); margin-top:1.5rem;">
-  			Mockup & Information Design
+		  <h5 style="color:var(--black); margin-top:1.5rem; margin-bottom: 0.25rem;">
+  			What I did 
 		  </h5>
+      <h6 style="color: var(--secondary); margin-top:0.25rem; margin-bottom: 0.25rem;">
+        Building and QA for web, content governance and migration, and identifying issues with website content and performance
+      </h6>
 
   		<p>
     		As part of my role, I frequently created mockups in Figma to visualize and refine design changes before implementating them in WordPress. 
     		These ranged from full-page redesigns to smaller, incremental updates where I adjusted layouts, components, or added new content blocks to existing pages.
 		  </p>
 
-		  <figure style="margin:2rem 0; text-align:center;">
-        <img src="images/blogs/TNFC.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
+      <p style="color:var(--black); margin-top:0.5rem; font-weight: bold;">
+        Rebuilding Key Pages
+      </p>
+
+		  <figure onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank');" style="margin:2rem 0; text-align:center;">
         <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
-          Focus on high priority challenges: Mockup done for TNFC site - Pre-Content Migration.
+          Mockup: TNFC site - Content Migration from pre-existing website for the Nanofabrication lab into the main ECE website
         </figcaption>
+        <img src="assets/images/blogs/TNFC.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
+
       </figure>
 
   		<p>
@@ -77,18 +83,31 @@
     		I helped the department save time on revisions and ship pages that were both user-friendly and visually consistent with U of T's branding guidelines (<a href="https://brand.utoronto.ca/" target="_blank" rel="noopener" style="text-decoration:underline;">available publicly here</a>).
 		  </p>
 
-      <figure style="margin:2rem 0; text-align:center;">
-      <img src="images/blogs/Events.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
+      <figure onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" style="margin:2rem 0; text-align:center;">
       <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
-        Focus on Contextualizing information: Some Pages like the Events (Original - L) were just the WordPress widgets themselves; Mockup I presented (R)
+        Some Pages like the Events (Original - L) were just the WordPress widgets themselves; Mockup I presented (R)
       </figcaption>
+      <img src="assets/images/blogs/Events.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
+      </figure>
+
+      <p>
+        However, unless you are willing to invest time in developing a custom events widget, the limitations of WordPress' default widgets quickly become apparent.
+        While we could have created a new widget to match my mockup, the goal was to contextualize the Events page, not to work on aesthetics without adding function.
+        Hence, what we ended up going with:
+      </p>
+
+      <figure style="margin:2rem 0; text-align:center;">
+      <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
+        Focus on Aesthetics and Function not Aesthetics or Function
+      </figcaption>
+      <img src="assets/images/blogs/Events2.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
       </figure>
 
       <figure style="margin:2rem 0; text-align:center;">
-      <img src="images/blogs/Other.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
       <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
         Other Mockups
       </figcaption>
+      <img src="assets/images/blogs/Other.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
       </figure>
 		  
       <p>
@@ -96,28 +115,28 @@
   			These updates helped keep the site current and engaging for students and visitors.
 		  </p>
 
-		<figure style="margin:2rem 0; text-align:center;">
-      <img src="images/blogs/Grad.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
+      <p style="color:var(--black); margin-top:0.5rem; font-weight: bold;">
+        Focus on real day-to-day requirements
+      </p>
+
+		<figure onclick="window.open('https://www.ece.utoronto.ca/graduates/', '_blank');" style="margin:2rem 0; text-align:center;">
       <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
-        Focus on real day-to-day requirements: Back when the Graduate Programs page needed its layout adjusted to add a photo.
+        Layout Adjustment Mockups
       </figcaption>
+      <img src="assets/images/blogs/Grad.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
     </figure>
 
+    <figure onclick="window.open('https://www.ece.utoronto.ca/ece-latest-news-and-insights/', '_blank');" style="margin:2rem 0; text-align:center;">
+      <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
+        Building the new Blogs page <a href="https://www.ece.utoronto.ca/ece-latest-news-and-insights/" target="_blank">here</a>, I added Blogs (with help from the Marketing Team).
+      </figcaption>
+      <img src="assets/images/blogs/Blog-Post.webp" alt="Supporting Graphic" style="width:100%; height:auto; border-radius:6px;" />
+    </figure>
 
     <h5 style="color:var(--black); margin-top:1.5rem;">Key Pages built</h5>
 
     <!-- Project Showcase -->
     <div class="flex-container" style="text-align:left; display:flex; flex-wrap:wrap; gap:1rem; margin:2rem 0; justify-content:flex-start;">
-
-      <!-- Homepage -->
-      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" 
-        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
-        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">ECE Department’s Home Page ↗</h6>
-        <p style="font-size:0.9rem; margin:0; color:var(--black);">
-          Shipped | January 2025<br>
-          Made it easier for prospective students to explore ECE.
-        </p>
-      </article>
 
       <!-- Events Page -->
       <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" 
@@ -125,7 +144,7 @@
         <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">ECE Events Page ↗</h6>
         <p style="font-size:0.9rem; margin:0; color:var(--black);">
           Shipped | March 2025<br>
-          Improved event discovery beyond the static calendar.
+          Contextualized static Events calendar widget into an informative Events Page.
         </p>
       </article>
 
@@ -134,8 +153,18 @@
         style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
         <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">Toronto Nanofabrication Centre ↗</h6>
         <p style="font-size:0.9rem; margin:0; color:var(--black);">
-          Shipped | Mar–Apr 2025<br>
-          Migrated TNFC into the main ECE website.
+          Shipped | March 2025<br>
+          Migrated the TNFC lab (Before: pre-existing website built using WP template; After: Inside ECE Website - Consistent Layout + ECE at U of T Branding) into the main ECE website.
+        </p>
+      </article>
+
+      <!-- Homepage -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/', '_blank');" 
+        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
+        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">ECE Department’s Home Page ↗</h6>
+        <p style="font-size:0.9rem; margin:0; color:var(--black);">
+          Shipped | January 2025<br>
+          Redesigned to make it easier for prospective students to explore ECE.
         </p>
       </article>
 
@@ -149,15 +178,25 @@
         </p>
       </article>
 
+      <!-- News -->
+      <article onclick="window.open('https://www.ece.utoronto.ca/ece-latest-news-and-insights/', '_blank');" 
+        style="flex:1 1 calc(50% - 1rem); min-width:280px; display:flex; flex-direction:column; background:rgba(0,0,0,0.05); border-radius:12px; padding:1rem; cursor:pointer;">
+        <h6 style="font-size:1rem; margin:0 0 .5rem; color:var(--secondary);">Latest News and Insights ↗</h6>
+        <p style="font-size:0.9rem; margin:0; color:var(--black);">
+          Shipped | December 2024<br>
+          Created a new page to showcase News / Blog posts available on the website.
+        </p>
+      </article>
+
     </div>
 
-    <h5 style="color:var(--black); margin-top:1.5rem;">Read About It</h5>
+    <h5 style="color:var(--black); margin-top:1.5rem;">Read About My UX/UI and Front End Web Dev Process in detail</h5>
 
     <div style="background: var(--black3); border-radius: 20px; margin: 3rem 2rem; padding: 2rem; display: flex; flex-direction: row; align-items: stretch; gap:2rem;">
     
   <!-- Left Image -->
   <div class="caseimage">
-    <img src="images/ai/ece.webp" 
+    <img src="assets/images/ai/ece.webp" 
          alt="ECE Homepage Redesign Preview" 
          style="width:100%; height:100%; object-fit:cover;" />
   </div>
@@ -174,7 +213,7 @@
     </p>
 
     <p>
-      <a href="https://karthikjambunathan.com/eceHome.html" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">
+      <a href="https://karthikjambunathan.com/ecehome.html" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">
         View the Case Study →
       </a>
     </p>
@@ -233,7 +272,7 @@
 
 <script>
   // Fetch and insert footer HTML
-  fetch('footer.html')
+  fetch('addons/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
@@ -243,7 +282,7 @@
 
 <script>
   // Fetch and insert header HTML
-  fetch('header.html')
+  fetch('addons/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;

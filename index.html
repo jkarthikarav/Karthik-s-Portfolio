@@ -8,13 +8,13 @@
   <!-- Fonts -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+    <link rel="stylesheet" href="css/https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
   </noscript>
 
   <!-- Styles and Scripts -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="home-specific-styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home-specific-styles.css">
+  <script src="js/script.js"></script>
   <style>
      /* For screens under 1000px */
   @media (max-width: 1200px) {
@@ -47,12 +47,12 @@
 <!-- Header Placeholder -->
 <div id="header-placeholder"></div>
 
-<section class="hero" style="position: relative;   background: linear-gradient(to bottom, var(--tan) 0%, var(--tan) 80%, var(--white) 100%); display: flex; justify-content: center; align-items: center; height: 100vh; box-sizing: border-box; overflow: hidden;">
+<section class="hero" style="position: relative;   background: linear-gradient(to bottom, var(--tan) 0%, var(--tan) 80%, var(--white) 100%); display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; overflow: hidden;">
 
-  <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align:center;">
+  <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align:center; padding:0.25rem;">
     
     <div style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: center;">
 
       <h5 style="margin:0;">
         <span id="greeting"></span> 👋 I'm 
@@ -68,7 +68,7 @@
        transition: transform 0.3s, box-shadow 0.3s;"
         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <img src="images/about/circle-me.jpg" alt="LinkedIn Profile" 
+        <img src="assets/images/about/circle-me.jpg" alt="LinkedIn Profile" 
          style="width: 100%; height: 100%; object-fit: cover; display: block;">
       </a>
 
@@ -143,19 +143,19 @@
 
   <!-- Logo Badges -->
   <div class="badge logo" style="bottom: 10%; left: 38%;">
-      <img src="icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+      <img src="assets/icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
   </div>
   <div class="badge logo" style="top: 40%; right: 8%;">
-      <img src="icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
+      <img src="assets/icons/Software/WP.png" alt="WordPress" class="badge-icon" style="min-height: 100%;">
   </div>
   <div class="badge logo" style="top: 11%; left: 60%;">
-      <img src="icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
+      <img src="assets/icons/Software/Adobe.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
   </div>
   <div class="badge logo" style="top: 15%; left: 22%;">
-      <img src="icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
+      <img src="assets/icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
   </div>
   <div class="badge logo" style="top: 52%; left: 8%;">
-      <img src="icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+      <img src="assets/icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
   </div>
 
 </section>
@@ -180,9 +180,9 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
       <div style="cursor: pointer; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s;" 
            onmouseover="this.querySelector('img').style.transform='scale(1.01)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
-           onclick="window.open('eceHome.html', '_blank');">
+           onclick="window.open('ecehome.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+          <img src="assets/images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
           <p style="color: var(--bright); font-size: 14px; margin: 0;">Shipped Mar 2025</p>
@@ -204,7 +204,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
            onclick="window.open('mobileUXR.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+          <img src="assets/images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
           <p style="color: var(--bright); font-size: 14px; margin: 0; font-weight: bold;">Presented Dec 2023</p>
@@ -226,7 +226,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
            onclick="window.open('previz.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
-          <img src="images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+          <img src="assets/images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
           <p style="color: var(--bright); font-size: 14px; margin: 0; font-weight: bold;">Implemented July 2023</p>
@@ -244,9 +244,9 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   </div>
 
   <!-- Side-by-side card example (Graphic Design) -->
-  <div class="side-by-side-card" onclick="window.open('pdfs/Graphic Design.pdf', '_blank');">
+  <div class="side-by-side-card" onclick="window.open('assets/pdfs/Graphic Design.pdf', '_blank');">
     <div class="side-image">
-      <img src="images/socialmediastory-reelit.png" alt="Graphic Design">
+      <img src="assets/images/socialmediastory-reelit.png" alt="Graphic Design">
     </div>
 
     <div class="side-text">
@@ -259,7 +259,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   </div>
 
     <!-- Side-by-side card example (Graphic Design) -->
-  <div class="side-by-side-card" onclick="window.open('web-production.html', '_blank');">
+  <div class="side-by-side-card" id="wp" onclick="window.open('web-production.html', '_blank');">
     <div class="side-text" style="max-width: 100%;">
       <h6>Web Production</h6>
       <p>
@@ -269,7 +269,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
     </div>
 
     <div class="side-image" style="background-color: white; padding:20px;">
-      <img src="logos/eceuoft.png" alt="Graphic Design">
+      <img src="assets/logos/eceuoft.png" alt="Graphic Design">
     </div>
   </div>
 
@@ -314,7 +314,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
   for (let i = 1; i <= totalLogos; i++) {
     const img = document.createElement('img');
-    img.src = `logos/Company/Logo_VD_${i}.jpg`;
+    img.src = `assets/logos/Company/Logo_VD_${i}.jpg`;
     img.alt = `Logo ${i}`;
     img.style.height = '100%';       // scale to slider height
     img.style.width = 'auto';        // maintain 1:1 aspect ratio
@@ -325,7 +325,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   // Duplicate for seamless scroll
   for (let i = 1; i <= totalLogos; i++) {
     const img = document.createElement('img');
-    img.src = `logos/Company/Logo_VD_${i}.jpg`;
+    img.src = `assets/logos/Company/Logo_VD_${i}.jpg`;
     img.alt = `Logo ${i} duplicate`;
     img.style.height = '100%';
     img.style.width = 'auto';
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
   // Fetch and insert footer HTML
-  fetch('footer.html')
+  fetch('addons/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
   // Fetch and insert header HTML
-  fetch('header.html')
+  fetch('addons/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
@@ -450,13 +450,13 @@ function changeGreeting() {
 
 <script>
   const link_cards = [  
-    { title: "ECE Homepage Redesign", link: "eceHome.html" },
+    { title: "ECE Homepage Redesign", link: "ecehome.html" },
     { title: "Mobile UX Research for Ticket Deals", link: "mobileUXR.html" },
     { title:"IA Redesign and Navigation Menu Test Strategy Design", link: "tmc.html" },
     { title: "Conversational UX Design: Healthcare AI ChatBot [PPT]", link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" },
     { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "previz.html" },
     { title: "Pitch Deck Website for Film Pre-Production", link: "filmPitchSite.html" },
-    { title: "Graphic Design Portfolio", link: "pdfs/Graphic Design.pdf"},
+    { title: "Graphic Design Portfolio", link: "assets/pdfs/Graphic Design.pdf"},
     { title: "Web Production Work", link: "web-production.html"},
     { title: "Developing Design Guidelines: Canadian Recycling System [PPT]", link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing" },
     { title: "Digitization Critique: Digital Comics Museum Website [PPT]", link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" }

@@ -1,34 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Test Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karthik Jambunathan Portfolio</title>
 
-	<!-- Fonts -->
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
-	</noscript>
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+  </noscript>
 
-	<!-- Stylesheet -->
-	<link rel="stylesheet" href="style.css">
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home-specific-styles.css">
+  <link rel="stylesheet" href="css/graphic-design-specificstyles.css">
+  <script src="js/script.js"></script>
+  <style>
+     /* For screens under 1000px */
+  @media (max-width: 1200px) {
+    h5 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
 
-	<!-- Script -->
-	<script src="script.js" defer></script>
+  /* For mobile (under 600px is a common breakpoint) */
+  @media (max-width: 600px) {
+    h4 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
+  </style>
+
 </head>
 
-<body style="background-color: var(--white);">
+<body style="background-color: #f7f7f7;">
 
-	<!-- Header Placeholder -->
-	<div id="header-placeholder"></div>
+  <div id="header-placeholder"></div>
 
+  <section class="gdhero-section">
+  <div class="gdhero-text">
+
+    <h4>
+      Visual and Graphic Design Showcase
+    </h4> 
+
+    <div>
+
+      <button class="gd-btn" onclick="document.getElementById('dcd').scrollIntoView({behavior: 'smooth'});">
+        View Digital Content Designs ⬇ 
+      </button>
+
+      <button class="gd-btn" onclick="document.getElementById('od').scrollIntoView({behavior: 'smooth'});">
+        View Other Designs ⬇ 
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="gd-title-main" id="dcd">
+    <h6>
+      Digital Media <span style="color:var(--grey2);">Adbee Films - Web Series</span> Content Designs
+    </h6>     
+    
+      <a href="#" onclick="scrollToTop()" class="scroll-top-btn" style="height:fit-content; color: var(--black3);">
+      Scroll To Top
+    </a>
+</section>
+
+<section class="gd-image whitebgimage">
+  <img src="assets/images/gd/AF.png" alt="AF Design">
+</section>
+
+<div class="gd-title">
+    <h6>
+      Digital Media <span style="color:var(--grey2);">Her Choice Fashions - Retail Women's Ethnic Fashion</span> Content Designs</h6>
+</div>
+
+<section class="gd-image">
+  <img src="assets/images/gd/HCF.png" alt="HCF Design">
+</section>
+
+<div class="gd-title">
+    <h6>
+      Digital Media <span style="color:var(--grey2);">Sai Healthcare Foundation - Chain of Physiotherapy Clinics</span> Content Designs</h6>
+</section>
+
+<section class="gd-image whitebgimage">
+  <img src="assets/images/gd/SHF.png" alt="SHF Design">
+</section>
+
+<div class="gd-title">
+    <h6>
+      Digital Media <span style="color:var(--grey2);">Differently with Sole - SLP Coach</span> Content Designs</h6>
+</section>
+
+<section class="gd-image">
+  <img src="assets/images/gd/DWS.png" alt="DWS Design">
+</section>
+
+<div class="gd-title">
+    <h6>
+      Digital Media <span style="color:var(--grey2);">Reelit Media - Sporting Goods and Sports Podcast</span> Content Designs</h6>
+</section>
+
+<section class="gd-image whitebgimage">
+  <img src="assets/images/gd/RM.png" alt="RM Design">
+</section>
+
+<div class="gd-title">
+    <h6>
+      Digital Media <span style="color:var(--grey2);">Fix It In Post - Promotional Posters</span> Content Designs</h6>
+</section>
+
+<section class="gd-image">
+  <img src="assets/images/gd/FIIP1.png" alt="FIIP1 Design">
+</section>
+
+<section class="gd-image whitebgimage">
+  <img src="assets/images/gd/FIIP2.png" alt="FIIP2 Design">
+</section>
+
+<div style="padding: 2rem;"></div>
 
 <div id="footer-placeholder"></div>
 
+<style>
+  
+
+</style>
 <script>
   // Fetch and insert footer HTML
-  fetch('footer.html')
+  fetch('addons/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
@@ -38,7 +152,7 @@
 
 <script>
   // Fetch and insert header HTML
-  fetch('header.html')
+  fetch('addons/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;

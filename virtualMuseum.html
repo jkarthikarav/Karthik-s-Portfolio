@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Virtual Museum: Research to Design</title>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
   <style>
   table tr:hover {
     background: black !important; /* keep rows black */
@@ -23,7 +23,7 @@
   <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;">
     
     <div class="bannerIMG">
-      <img src="images/chlavm/Education and Learning.png" class="bannerIMG-img" />
+      <img src="assets/images/chlavm/Education and Learning.png" class="bannerIMG-img" />
     </div>
 
 
@@ -113,15 +113,15 @@
       </p>
 
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
-        <img src="images/chlavm/Tab Component.png" class="user-journey-image-mrs" style="width:100%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Tab Component.png')">
-        <img src="images/chlavm/Card.png" class="user-journey-image-mrs" style="height:30%; width:30%; cursor: pointer;" onclick="openModal('images/chlavm/Card.png')">
-        <img src="images/chlavm/Title Banner_Page.png" class="user-journey-image-mrs" style="width:60%; height:90%; cursor: pointer;" onclick="openModal('images/chlavm/Title Banner_Page.png')">
-        <img src="images/chlavm/Dropdown_Default.png" class="user-journey-image-mrs" style="width:50%; height:50%; cursor: pointer;" onclick="openModal('images/chlavm/Dropdown_Default.png')">
+        <img src="assets/images/chlavm/Tab Component.png" class="user-journey-image-mrs" style="width:100%; height:auto; cursor: pointer;" onclick="openModal('assets/images/chlavm/Tab Component.png')">
+        <img src="assets/images/chlavm/Card.png" class="user-journey-image-mrs" style="height:30%; width:30%; cursor: pointer;" onclick="openModal('assets/images/chlavm/Card.png')">
+        <img src="assets/images/chlavm/Title Banner_Page.png" class="user-journey-image-mrs" style="width:60%; height:90%; cursor: pointer;" onclick="openModal('assets/images/chlavm/Title Banner_Page.png')">
+        <img src="assets/images/chlavm/Dropdown_Default.png" class="user-journey-image-mrs" style="width:50%; height:50%; cursor: pointer;" onclick="openModal('assets/images/chlavm/Dropdown_Default.png')">
       </div>
 
       <h6 style="color: var(--green); font-size:20px; margin-bottom: 1rem;">Style Guide</h6> 
 
-      <img src="images/chlavm/Contrast grid.png" class="user-journey-image-mrs" style="width:45%; height:auto; cursor: pointer;" onclick="openModal('images/chlavm/Contrast grid.png')">
+      <img src="assets/images/chlavm/Contrast grid.png" class="user-journey-image-mrs" style="width:45%; height:auto; cursor: pointer;" onclick="openModal('assets/images/chlavm/Contrast grid.png')">
 
       <!-- Education and Learning -->
       <h5 style="color: var(--secondary); margin-bottom:1rem;">Education and Learning</h5>
@@ -156,9 +156,9 @@
 
       <!-- Education Image -->
       <div style="display: flex; justify-content: center; padding: 1rem;">
-        <img src="images/chlavm/Education and Learning.png" class="user-journey-image-mrs" 
+        <img src="assets/images/chlavm/Education and Learning.png" class="user-journey-image-mrs" 
              style="max-width: 100%;" 
-             onclick="openModal('images/chlavm/Education and Learning.png')">
+             onclick="openModal('assets/images/chlavm/Education and Learning.png')">
       </div>
 
       <!-- Embassies & Consulates -->
@@ -194,7 +194,7 @@
 
       <!-- Embassies Image -->
       <div style="display: flex; justify-content: center; padding: 1rem;">
-        <img src="images/chlavm/Community_Embassies and Consulates.png" class="user-journey-image-mrs" style="max-width: 100%;" onclick="openModal('images/chlavm/Community_Embassies and Consulates.png')">
+        <img src="assets/images/chlavm/Community_Embassies and Consulates.png" class="user-journey-image-mrs" style="max-width: 100%;" onclick="openModal('assets/images/chlavm/Community_Embassies and Consulates.png')">
       </div>
 
     
@@ -392,7 +392,7 @@
 
 <script>
 
-    fetch('footer.html')
+    fetch('addons/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
@@ -400,7 +400,7 @@
 </script>
 
  <script>
-  fetch('header.html')
+  fetch('addons/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
