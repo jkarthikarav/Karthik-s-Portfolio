@@ -3,10 +3,11 @@
 This repository hosts my personal portfolio website, built with HTML, CSS, and JavaScript.  
 The site is live on GitHub Pages: [https://karthikjambunathan.com](https://karthikjambunathan.com)
 
-## Core Strengths
-
-- Responsive design for desktop and mobile
+- No Templates - Fully built from scratch
+- Animated tidbits showing Interaction Design/JavaScript skills
 - Showcase of projects and work experience
+- Responsive design for desktop and mobile
+- NDA protected projects secured through Password
 
 ## Sitemap (Navigation Flow)
 
