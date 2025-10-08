@@ -19,6 +19,55 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Common base */
+.fade-up,
+.fade-down,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* From bottom → up */
+.fade-up {
+  transform: translateY(20px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* From top → down */
+.fade-down {
+  transform: translateY(-20px);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* From left → right */
+.fade-left {
+  transform: translateX(-20px);
+}
+.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* From right → left */
+.fade-right {
+  transform: translateX(20px);
+}
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero-button-row {
+          display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;
+        }
+
 .stats-summary-container {
   background: rgba(0, 0, 0, 0.15); /* Transparency for glass effect */
   backdrop-filter: blur(12px); /* Blurred background for glass effect */

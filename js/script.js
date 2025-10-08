@@ -17,7 +17,27 @@
         }
       });
     })
-    .catch(err => console.error('Error:', err));d
+    .catch(err => console.error('Error:', err));
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const groups = document.querySelectorAll('.fade-group');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const items = entry.target.querySelectorAll('.fade-right, .fade-up, .fade-down, .fade-left');
+        items.forEach((item, index) => {
+          item.style.transitionDelay = `${index * 0.2}s`; // 0.2s stagger
+          item.classList.add('visible');
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  groups.forEach(group => observer.observe(group));
+});
+
 
 const scrollButton = document.querySelector(".scroll-button");
 
