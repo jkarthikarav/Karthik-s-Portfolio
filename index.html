@@ -243,7 +243,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
 <div style="width: 70vw;">
 
-  <h4 style="color: var(--primary); margin: 1rem 0;"> Want to see my other work?</h4>
+  <h4 style="color: var(--primary); margin: 1rem 0;"> Want to see more?</h4>
   <!-- Filter Buttons -->
   <div id="filterButtons" class="fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
     <button class="contact-btn fade-right" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Presentations', this)">
@@ -464,6 +464,32 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   </div>
 
 </section>
+
+<section style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 5rem; height: fit-content; background-color: var(--black3); padding: 4rem;">
+
+  <!-- LinkedIn Card (Left) -->
+  <div style="display: flex; flex-direction: column; align-items: center; background-color: var(--green2); color: var(--white); padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s, background-color 0.3s; transform: rotate(15deg);" 
+       onmouseover="this.style.backgroundColor='var(--green)'; this.style.transform='rotate(0deg) scale(1.01)';" 
+       onmouseout="this.style.backgroundColor='var(--green2)'; this.style.transform='rotate(15deg) scale(1)';"
+       onclick="window.open('//www.linkedin.com/in/karthikjambunathan/', '_blank')">
+    <h3>LinkedIn</h3>
+    <div style="width: 200px; height: 200px; overflow: hidden; border-radius: 8px; background-color: #ddd; display: flex; justify-content: center; align-items: center;">
+      <img src="assets/images/about/circle-me.jpg" alt="LinkedIn Image" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </div>
+
+  <!-- Mail Card (Right) -->
+  <a href="mailto:karthikaravindj@gmail.com" style="text-decoration: none;">
+    <div style="display: flex; flex-direction: column; align-items: center; background-color: var(--green2); color: var(--white); padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s, background-color 0.3s; transform: rotate(-15deg);" 
+         onmouseover="this.style.backgroundColor='var(--green)'; this.style.transform='rotate(0deg) scale(1.01)';" 
+         onmouseout="this.style.backgroundColor='var(--green2)'; this.style.transform='rotate(-15deg) scale(1)';">
+      <h3>Mail</h3>
+      <p style="color: var(--white);">karthikaravindj@gmail.com</p>
+    </div>
+  </a>
+
+</section>
+
     
 </main>
 
