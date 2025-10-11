@@ -171,7 +171,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
          onclick="window.open('previz.html', '_blank');"
          onmouseover="style.transform='scale(1.01)';"
          onmouseout="style.transform='scale(1)';">
-      <img src="assets/images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="AI-Assisted Film Pre-Production Service Design">
+      <img src="assets/images/ai/movie.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="AI-Assisted Film Pre-Production Service Design">
     </div>
 
     <!-- Card Content -->
@@ -252,21 +252,16 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
     <button class="contact-btn fade-right" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Reports', this)">
       Written Reports
     </button>
-    <button class="contact-btn fade-right"
-          style="background: var(--primary); color: var(--black3); width: fit-content;"
-          onclick="document.getElementById('pdw').scrollIntoView({ behavior: 'smooth' });">
-    View Website work
-  </button>
 
   <button class="contact-btn fade-right"
           style="background: var(--primary); color: var(--black3); width: fit-content;"
-          onclick="document.getElementById('tmc').scrollIntoView({ behavior: 'smooth' });">
+          onclick="document.getElementById('ETBP').scrollIntoView({ behavior: 'smooth' });">
     View Strategy work
   </button>
 
   <button class="contact-btn fade-right"
           style="background: var(--primary); color: var(--black3); width: fit-content;"
-          onclick="document.getElementById('gd').scrollIntoView({ behavior: 'smooth' });">
+          onclick="document.getElementById('GD').scrollIntoView({ behavior: 'smooth' });">
     View Graphic Design work
   </button>
 
@@ -276,9 +271,8 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   <div id="filteredCards" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;"></div>
 </div>
 
-
 <!-- Standard Side-by-Side Card: Pitch Deck Website -->
-<div id="pdw" class="side-by-side-card fade-group" style="max-width:70vw;"> 
+<div id="PDW" class="side-by-side-card fade-group" style="max-width:70vw;"> 
   <!-- Image on Left -->
   <div class="side-image fade-left" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
        onclick="window.open('filmPitchSite.html', '_blank');"
@@ -288,7 +282,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   </div>
 
   <!-- Text on Right -->
-  <div class="side-text fade-right" style="margin: 1rem 0; padding-left: 1rem;">
+  <div class="side-text fade-right" style="padding-left: 1rem;">
     <h6>Pitch Deck Website for Film Pre-Production</h6>
     <p style="margin: 1rem 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
       Presented Aug 2021 • Client Project • Web Design · Interactive UI · Creative Strategy <br>
@@ -306,48 +300,88 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   </div>
 </div>
 
+<div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; max-width: 70vw; justify-content: center; margin-top: 2rem;">
 
-<!-- Flipped Side-by-Side Card: Textile Museum IA Redesign -->
-<div id="tmc" class="side-by-side-card fade-group" style="max-width:70vw;">
-  <!-- Text on Left -->
-  <div class="side-text fade-left" style="margin: 1rem 0; padding-right: 1rem;">
-    <h6>IA Redesign & Navigation Strategy</h6>
-    <p style="margin: 1rem 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
-      Presented Dec 2023 • Academic Project • UX Research · IA Design · Academic Project <br>
-      Phased testing strategy for the Textile Museum of Canada to improve IA and menu usability. Research-driven approach balancing user needs and stakeholder goals.
-    </p>
-    <div style="margin-top: 5px;">
-      <button class="contact-btn" 
-              style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-              onclick="window.open('tmc.html', '_blank');"
-              onmouseover="style.transform='scale(1.01)';"
-              onmouseout="style.transform='scale(1)';">
-        View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
-      </button>
+<div id="ETBP" class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
+  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
+
+    <!-- Clickable Image -->
+    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
+         onclick="window.open('note4u.html', '_blank');"
+         onmouseover="style.transform='scale(1.01)';"
+         onmouseout="style.transform='scale(1)';">
+      <img src="assets/images/ai/music.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="Education Technology Business Plan: Note4U">
     </div>
-  </div>
 
-  <!-- Image on Right -->
-  <div class="side-image fade-right" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
-       onclick="window.open('tmc.html', '_blank');"
-       onmouseover="style.transform='scale(1.01)';"
-       onmouseout="style.transform='scale(1)';">
-    <img src="assets/logos/tmclogo.jpg" alt="IA Redesign for Textile Museum of Canada" style="width: 100%; object-fit: cover; border-radius: 8px;">
+    <!-- Card Content -->
+    <div style="padding: 5px;">
+      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Presented Dec 2024 • Interdepartmental Academic • UX · Research · Business Process Modeling</p>
+      <h6 style="color: var(--primary); margin: 1rem 0;">
+        Education Technology Business Plan: Note4U
+      </h6>
+      <p style="color: var(--grey0); margin: 1rem 0;">
+        Delivered a business plan for an AI-powered product that will aid music education.
+      </p>
+
+      <!-- Single Button -->
+      <div style="margin-top: 5px;">
+        <button class="contact-btn"
+                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
+                onclick="window.open('note4u.html', '_blank');"
+                onmouseover="style.transform='scale(1.01)';"
+                onmouseout="style.transform='scale(1)';">
+          View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Standard Side-by-Side Card: Graphic Design -->
-<div id="gd" class="side-by-side-card fade-group" style="max-width:70vw;"> 
-  <!-- Image on Left -->
-  <div class="side-image fade-left" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
-       onclick="window.open('graphic-design.html', '_blank');"
-       onmouseover="style.transform='scale(1.01)';"
-       onmouseout="style.transform='scale(1)';">
-    <img src="assets/images/gd/JAK/1.jpg" alt="Graphic Design Portfolio" style="width: 100%; object-fit: cover; border-radius: 8px;">
-  </div>
+<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
+  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
 
-  <!-- Text on Right -->
-  <div class="side-text fade-right" style="padding-left: 1rem;">
+    <!-- Clickable Image -->
+    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
+         onclick="window.open('tmc.html', '_blank');"
+         onmouseover="style.transform='scale(1.01)';"
+         onmouseout="style.transform='scale(1)';">
+      <img src="assets/images/ai/textile.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="IA Redesign for Textile Museum of Canada">
+    </div>
+
+    <!-- Card Content -->
+    <div style="padding: 5px;">
+      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Presented Dec 2023 • Academic Project • UX Research · IA Design · Academic Project</p>
+      <h6 style="color: var(--primary); margin: 1rem 0;">
+        IA Redesign & Navigation Strategy
+      </h6>
+      <p style="color: var(--grey0); margin: 1rem 0;">
+        Phased testing strategy for the Textile Museum of Canada to improve IA and menu usability. Research-driven approach balancing user needs and stakeholder goals.
+      </p>
+
+      <!-- Single Button -->
+      <div style="margin-top: 5px;">
+        <button class="contact-btn"
+                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
+                onclick="window.open('tmc.html', '_blank');"
+                onmouseover="style.transform='scale(1.01)';"
+                onmouseout="style.transform='scale(1)';">
+          View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+<!-- Flipped Side-by-Side Card: Graphic Design -->
+<div id="GD" class="side-by-side-card fade-group" style="max-width:70vw;"> 
+  <!-- Text on Left -->
+  <div class="side-text fade-left" style="margin: 1rem 0; padding-right: 1rem;">
     <h6>Graphic Design</h6>
     <p style="margin: 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
       Portfolio of designs across retail goods, sporting goods, fashion, healthcare, podcasts, advertising, feature films, and TV shows.
@@ -361,6 +395,14 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
         View Gallery <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
       </button>
     </div>
+  </div>
+
+  <!-- Image on Right -->
+  <div class="side-image fade-right" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
+       onclick="window.open('graphic-design.html', '_blank');"
+       onmouseover="style.transform='scale(1.01)';"
+       onmouseout="style.transform='scale(1)';">
+    <img src="assets/images/gd/JAK/1.jpg" alt="Graphic Design Portfolio" style="width: 100%; object-fit: cover; border-radius: 8px;">
   </div>
 </div>
 

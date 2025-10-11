@@ -95,8 +95,8 @@
 
     .badge.skill {
       padding: 0.8rem 1.2rem;
-      background: var(--primary);
-      color: var(--black2);
+      background: var(--green);
+      color: var(--grey0);
       box-shadow: 0 0 15px rgba(255,255,255,0.2);
       animation: glowPulse 3s ease-in-out infinite;
     }
