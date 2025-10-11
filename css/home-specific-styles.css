@@ -208,7 +208,6 @@
   padding: 5px;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
   justify-content: space-between;
 }
 
@@ -216,19 +215,14 @@
 .side-by-side-card .side-text h6 {
   margin-top: 1rem;
   margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 600;
   color: var(--primary);
-  line-height: 1.4;
   text-align: left;
 }
 
 /* Paragraph inside text */
 .side-by-side-card .side-text p {
   margin: 0.5rem 0;
-  font-size: 14px;
   color: var(--grey0);
-  line-height: 1.6;
   text-align: left;
 }
 
