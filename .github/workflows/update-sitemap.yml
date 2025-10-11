@@ -3,14 +3,19 @@ name: Update Sitemap
 
 on:
   push:
-    branches: [ main ]  # Run every time you push to main branch
+    branches: [ main ]  # Change if your default branch is not main
+
+permissions:
+  contents: write  # Grants push permission
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Needed for git push to work
 
       - name: Update sitemap.xml <lastmod> date
         run: |
@@ -19,8 +24,12 @@ jobs:
 
       - name: Commit and push sitemap.xml update
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add sitemap.xml
-          git commit -m "Auto-update sitemap lastmod to ${DATE}" || echo "No changes to commit"
-          git push
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit"
+          else
+            git commit -m "Auto-update sitemap lastmod to ${DATE}"
+            git push
+          fi
