@@ -1,0 +1,26 @@
+# .github/workflows/update-sitemap.yml
+name: Update Sitemap
+
+on:
+  push:
+    branches: [ main ]  # Run every time you push to main branch
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update sitemap.xml <lastmod> date
+        run: |
+          DATE=$(date +"%Y-%m-%d")
+          sed -i "s#<lastmod>.*</lastmod>#<lastmod>${DATE}</lastmod>#g" sitemap.xml
+
+      - name: Commit and push sitemap.xml update
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add sitemap.xml
+          git commit -m "Auto-update sitemap lastmod to ${DATE}" || echo "No changes to commit"
+          git push
