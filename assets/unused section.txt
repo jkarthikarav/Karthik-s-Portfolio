@@ -19,7 +19,7 @@
       <div style="cursor: pointer; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s;" 
            onmouseover="this.querySelector('img').style.transform='scale(1.01)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
-           onclick="window.open('ecehome.html', '_blank');">
+           onclick="window.open('eceHome.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
           <img src="assets/images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
@@ -309,7 +309,7 @@ function closeProtectedPage() {
     {
       title: "ECE Homepage Redesign",
       tags: ["Website Development"],
-      link: "ecehome.html"
+      link: "eceHome.html"
     },
     {
       title: "Mobile UX Research for Ticket Deals",
