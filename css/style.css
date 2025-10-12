@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.content-clmn {
+display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: flex-start;
+}
+
 /* Common base */
 .fade-up,
 .fade-down,
@@ -129,6 +133,9 @@ html {
   .stats-summary-container {
     flex-direction: column;
   }
+  .content-clmn {
+  flex-direction: column;
+}
 }
 
 
