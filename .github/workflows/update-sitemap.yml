@@ -1,4 +1,4 @@
-=name: Update Sitemap
+name: Update Sitemap
 
 on:
   push:
