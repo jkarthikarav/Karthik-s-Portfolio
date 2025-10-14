@@ -69,6 +69,12 @@
       overflow: hidden;
     }
 
+    @media (max-width: 1000px) {
+      .bento-section{
+        height: fit-content;
+      }
+    }
+
     .center-container {
       display: flex;
       flex-direction: column;
@@ -355,7 +361,7 @@
 
         .subdesc {
           border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin-top:40px; color:var(--00464F);
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin-top:40px; color: #00464F;
         }
 
         .pulsedot {
