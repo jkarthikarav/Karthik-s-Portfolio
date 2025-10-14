@@ -841,10 +841,12 @@ function changeGreeting() {
       div.style.alignItems = 'center';
 
       const a = document.createElement('a');
-      a.textContent = `View: ${card.title}`;
-      a.style.color = "var(--tan)";
-      a.style.textDecoration = "underline";
-      a.style.cursor = "pointer";
+a.textContent = `View: ${card.title}`;
+a.href = card.link;
+a.target = "_blank"; // open in new tab
+a.style.color = "var(--tan)";
+a.style.textDecoration = "underline";
+a.style.cursor = "pointer";
 
       div.appendChild(a);
       container.appendChild(div);
