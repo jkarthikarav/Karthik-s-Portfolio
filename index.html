@@ -240,226 +240,8 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
 </div>
 
-
-<div style="width: 70vw;">
-
-  <h4 style="color: var(--primary); margin: 1rem 0;"> Want to see more?</h4>
-  <!-- Filter Buttons -->
-  <div id="filterButtons" class="fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Presentations', this)">
-      Presentations
-    </button>
-    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Reports', this)">
-      Written Reports
-    </button>
-
-  <button class="contact-btn fade-right mobile-btn"
-          style="background: var(--primary); color: var(--black3); width: fit-content;"
-          onclick="document.getElementById('ETBP').scrollIntoView({ behavior: 'smooth' });">
-    View Strategy work
-  </button>
-
-  <button class="contact-btn fade-right mobile-btn"
-          style="background: var(--primary); color: var(--black3); width: fit-content;"
-          onclick="document.getElementById('GD').scrollIntoView({ behavior: 'smooth' });">
-    View Graphic Design work
-  </button>
-
-  </div>
-
-  <!-- Filtered Cards Container -->
-  <div id="filteredCards" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;"></div>
-</div>
-
-<!-- Standard Side-by-Side Card: Pitch Deck Website -->
-<div id="PDW" class="side-by-side-card fade-group" style="max-width:70vw;"> 
-  <!-- Image on Left -->
-  <div class="side-image fade-left" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
-       onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');"
-       onmouseover="style.transform='scale(1.01)';"
-       onmouseout="style.transform='scale(1)';">
-    <img src="assets/logos/FIIP.jpg" alt="Pitch Deck Website for Film Pre-Production" style="width: 100%; object-fit: cover; border-radius: 8px;">
-  </div>
-
-  <!-- Text on Right -->
-  <div class="side-text fade-right" style="padding-left: 1rem;">
-    <h6 style="padding-top: 1rem;">Pitch Deck Website for Film Pre-Production</h6>
-    <p style="margin: 1rem 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
-      Presented Aug 2021 • Client Project • Web Design · Interactive UI · Creative Strategy <br>
-      Turning a traditional presentation into a cinematic web experience. Password-protected, interactive website with seamless visuals, music, and transitions.
-    </p>
-    <div style="margin-top: 5px;">
-      <button class="contact-btn mobile-btn" 
-              style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-              onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');"
-              onmouseover="style.transform='scale(1.01)';"
-              onmouseout="style.transform='scale(1)';">
-        View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
-      </button>
-    </div>
-  </div>
-</div>
-
-<div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center; margin-top: 2rem; margin-bottom: 0;">
-
-<div id="ETBP" class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
-  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
-
-    <!-- Clickable Image -->
-    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('/pages/casestudies/note4u.html', '_blank');"
-         onmouseover="style.transform='scale(1.01)';"
-         onmouseout="style.transform='scale(1)';">
-      <img src="assets/images/ai/music.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="Education Technology Business Plan: Note4U">
-    </div>
-
-    <!-- Card Content -->
-    <div style="padding: 5px;">
-      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Presented Dec 2024 • Interdepartmental Academic • UX · Research · Business Process Modeling</p>
-      <h6 style="color: var(--primary); margin: 1rem 0;">
-        Education Technology Business Plan: Note4U
-      </h6>
-      <p style="color: var(--grey0); margin: 1rem 0;">
-        Delivered a business plan for an AI-powered product that will aid music education.
-      </p>
-
-      <!-- Single Button -->
-      <div style="margin-top: 5px;">
-        <button class="contact-btn mobile-btn"
-                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('/pages/casestudies/note4u.html', '_blank');"
-                onmouseover="style.transform='scale(1.01)';"
-                onmouseout="style.transform='scale(1)';">
-          View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
-  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
-
-    <!-- Clickable Image -->
-    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('/pages/casestudies/tmc.html', '_blank');"
-         onmouseover="style.transform='scale(1.01)';"
-         onmouseout="style.transform='scale(1)';">
-      <img src="assets/images/ai/textile.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="IA Redesign for Textile Museum of Canada">
-    </div>
-
-    <!-- Card Content -->
-    <div style="padding: 5px;">
-      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Presented Dec 2023 • Academic Project • UX Research · IA Design · Academic Project</p>
-      <h6 style="color: var(--primary); margin: 1rem 0;">
-        IA Redesign & Navigation Strategy
-      </h6>
-      <p style="color: var(--grey0); margin: 1rem 0;">
-        Phased testing strategy for the Textile Museum of Canada to improve IA and menu usability. Research-driven approach balancing user needs and stakeholder goals.
-      </p>
-
-      <!-- Single Button -->
-      <div style="margin-top: 5px;">
-        <button class="contact-btn mobile-btn"
-                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('/pages/casestudies/tmc.html', '_blank');"
-                onmouseover="style.transform='scale(1.01)';"
-                onmouseout="style.transform='scale(1)';">
-          View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-</div>
-
-<!-- Flipped Side-by-Side Card: Graphic Design -->
-<div id="GD" class="side-by-side-card fade-group" style="max-width:70vw; margin-bottom: 2rem; margin-top: 0;"> 
-
-    <!-- Image on Right -->
-  <div class="side-image fade-right" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
-       onclick="window.open('www.behance.net/gallery/236391313/Graphic-Design-Showcase', '_blank');"
-       onmouseover="style.transform='scale(1.01)';"
-       onmouseout="style.transform='scale(1)';">
-    <img src="assets/images/gd/JAK/1.jpg" alt="Graphic Design Portfolio" style="width: 100%; object-fit: cover; border-radius: 8px;">
-  </div>
-
-  <!-- Text on Left -->
-  <div class="side-text fade-left" style="margin: 1rem 0; padding-right: 1rem;">
-    <h6>Graphic Design</h6>
-    <p style="margin: 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
-      Portfolio of designs across retail goods, sporting goods, fashion, healthcare, podcasts, advertising, feature films, and TV shows.
-    </p>
-    <div style="margin-top: 5px;">
-      <button class="contact-btn" 
-              style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-              onclick="window.open('www.behance.net/gallery/236391313/Graphic-Design-Showcase', '_blank');"
-              onmouseover="style.transform='scale(1.01)';"
-              onmouseout="style.transform='scale(1)';">
-        View Gallery <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
-      </button>
-    </div>
-  </div>
-
-</div>
-
 </section>
 
-<section id="about" class="bento-section fade-group" style="background: var(--white);">
-
-  <div class="center-container fade-up">
-
-    <h6 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color:var(--black3); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--secondary);">Karthik</span> different?</h6>
-
-    <p style="color:var(--black);">
-        I love to turn <span class="highlight">research data to insights to actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
-        <br>
-        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
-        <br>
-        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product delivery and internal team efficiency.
-    </p>
-
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 20%; right: 6%;">
-    <img src="assets/icons/Software/AdobeJO.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-
-  <div class="badge logo fade-up" style="bottom: 10%; right: 8%;">
-    <img src="assets/icons/Software/PPT.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 35%; left: 5%;">
-    <img src="assets/icons/Software/WP.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="bottom: 14%; left: 60%;">
-    <img src="assets/icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 11%; left: 60%;">
-      <img src="assets/icons/Software/AdobePS.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 15%; left: 22%;">
-      <img src="assets/icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="bottom: 10%; left: 30%;">
-      <img src="assets/icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
-  </div>
-
-  <div class="badge logo fade-up" style="bottom: 10%; left: 12%;">
-      <img src="assets/icons/Software/JP.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
-  </div>
-
-</section>
 
 <section class="fade-group" style="background-color: var(--white); height: fit-content; align-items: center; justify-content: center; padding: 2rem;">
 
@@ -525,6 +307,229 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 </div>
   
 </section>
+
+<section id="about" class="bento-section fade-group" style="background: var(--white);">
+
+  <div class="center-container fade-up">
+
+    <h6 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color:var(--black3); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--secondary);">Karthik</span> different?</h6>
+
+    <p style="color:var(--black);">
+        I love to turn <span class="highlight">research data to insights to actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
+        <br>
+        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
+        <br>
+        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product delivery and internal team efficiency.
+    </p>
+
+  </div>
+  
+  <div class="badge logo fade-up" style="top: 20%; right: 6%;">
+    <img src="assets/icons/Software/AdobeJO.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+
+  <div class="badge logo fade-up" style="bottom: 10%; right: 8%;">
+    <img src="assets/icons/Software/PPT.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-up" style="top: 35%; left: 5%;">
+    <img src="assets/icons/Software/WP.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-up" style="bottom: 14%; left: 60%;">
+    <img src="assets/icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-up" style="top: 11%; left: 60%;">
+      <img src="assets/icons/Software/AdobePS.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-up" style="top: 15%; left: 22%;">
+      <img src="assets/icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-up" style="bottom: 10%; left: 30%;">
+      <img src="assets/icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+  </div>
+
+  <div class="badge logo fade-up" style="bottom: 10%; left: 12%;">
+      <img src="assets/icons/Software/JP.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+  </div>
+
+</section>
+
+<section style="position: relative;
+background-color: var(--black3);
+display: flex; flex-direction: column; 
+align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box-sizing: border-box;">
+
+<div style="width: 70vw;">
+
+  <h4 style="color: var(--primary); margin: 1rem 0;"> Want to see more?</h4>
+  <!-- Filter Buttons -->
+  <div id="filterButtons" class="fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
+    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Presentations', this)">
+      Presentations
+    </button>
+    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Reports', this)">
+      Written Reports
+    </button>
+
+  <button class="contact-btn fade-right mobile-btn"
+          style="background: var(--primary); color: var(--black3); width: fit-content;"
+          onclick="document.getElementById('ETBP').scrollIntoView({ behavior: 'smooth' });">
+    View Strategy work
+  </button>
+
+  <button class="contact-btn fade-right mobile-btn"
+          style="background: var(--primary); color: var(--black3); width: fit-content;"
+          onclick="document.getElementById('GD').scrollIntoView({ behavior: 'smooth' });">
+    View Graphic Design work
+  </button>
+
+  </div>
+
+  <!-- Filtered Cards Container -->
+  <div id="filteredCards" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;"></div>
+</div>
+
+<!-- Standard Side-by-Side Card: Pitch Deck Website -->
+<div id="PDW" class="side-by-side-card fade-group" style="max-width:70vw;"> 
+  <!-- Image on Left -->
+  <div class="side-image fade-left" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
+       onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');"
+       onmouseover="style.transform='scale(1.01)';"
+       onmouseout="style.transform='scale(1)';">
+    <img src="assets/logos/FIIP.jpg" alt="Pitch Deck Website for Film Pre-Production" style="width: 100%; object-fit: cover; border-radius: 8px;">
+  </div>
+
+  <!-- Text on Right -->
+  <div class="side-text fade-right" style="padding-left: 1rem;">
+    <h6 style="padding-top: 1rem;">Pitch Deck Website for Film Pre-Production</h6>
+    <p style="margin: 1rem 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
+      Presented Aug 2021 • Client Project • Web Design · Interactive UI · Creative Strategy <br>
+      Turning a traditional presentation into a cinematic web experience. Password-protected, interactive website with seamless visuals, music, and transitions.
+    </p>
+    <div style="margin-top: 5px;">
+      <button class="contact-btn mobile-btn" 
+              style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
+              onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');"
+              onmouseover="style.transform='scale(1.01)';"
+              onmouseout="style.transform='scale(1)';">
+        View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="ETBP"></div>
+<div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center; margin-top: 2rem; margin-bottom: 0;">
+
+<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
+  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
+
+    <!-- Clickable Image -->
+    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
+         onclick="window.open('/pages/casestudies/note4u.html', '_blank');"
+         onmouseover="style.transform='scale(1.01)';"
+         onmouseout="style.transform='scale(1)';">
+      <img src="assets/images/ai/music.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="Education Technology Business Plan: Note4U">
+    </div>
+
+    <!-- Card Content -->
+    <div style="padding: 5px;">
+      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Presented Dec 2024 • Interdepartmental Academic • UX · Research · Business Process Modeling</p>
+      <h6 style="color: var(--primary); margin: 1rem 0;">
+        Education Technology Business Plan: Note4U
+      </h6>
+      <p style="color: var(--grey0); margin: 1rem 0;">
+        Delivered a business plan for an AI-powered product that will aid music education.
+      </p>
+
+      <!-- Single Button -->
+      <div style="margin-top: 5px;">
+        <button class="contact-btn mobile-btn"
+                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
+                onclick="window.open('/pages/casestudies/note4u.html', '_blank');"
+                onmouseover="style.transform='scale(1.01)';"
+                onmouseout="style.transform='scale(1)';">
+          View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
+  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
+
+    <!-- Clickable Image -->
+    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
+         onclick="window.open('/pages/casestudies/tmc.html', '_blank');"
+         onmouseover="style.transform='scale(1.01)';"
+         onmouseout="style.transform='scale(1)';">
+      <img src="assets/logos/TMC.png" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="IA Redesign for Textile Museum of Canada">
+    </div>
+
+    <!-- Card Content -->
+    <div style="padding: 5px;">
+      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Presented Dec 2023 • Academic Project • UX Research · IA Design · Academic Project</p>
+      <h6 style="color: var(--primary); margin: 1rem 0;">
+        IA Redesign & Navigation Strategy
+      </h6>
+      <p style="color: var(--grey0); margin: 1rem 0;">
+        Phased testing strategy for the Textile Museum of Canada to improve IA and menu usability. Research-driven approach balancing user needs and stakeholder goals.
+      </p>
+
+      <!-- Single Button -->
+      <div style="margin-top: 5px;">
+        <button class="contact-btn mobile-btn"
+                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
+                onclick="window.open('/pages/casestudies/tmc.html', '_blank');"
+                onmouseover="style.transform='scale(1.01)';"
+                onmouseout="style.transform='scale(1)';">
+          View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Flipped Side-by-Side Card: Graphic Design -->
+<div id="GD" class="side-by-side-card fade-group" style="max-width:70vw; margin-bottom: 2rem; margin-top: 0;"> 
+
+    <!-- Image on Right -->
+  <div class="side-image fade-right" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
+       onclick="window.open('https://www.behance.net/gallery/236391313/Graphic-Design-Showcase', '_blank');"
+       onmouseover="style.transform='scale(1.01)';"
+       onmouseout="style.transform='scale(1)';">
+    <img src="assets/images/gd/JAK/1.jpg" alt="Graphic Design Portfolio" style="width: 100%; object-fit: cover; border-radius: 8px;">
+  </div>
+
+  <!-- Text on Left -->
+  <div class="side-text fade-left" style="margin: 1rem 0; padding-right: 1rem;">
+    <h6>Graphic Design</h6>
+    <p style="color: var(--grey0); margin: 1rem 0;">
+      Portfolio of designs across retail goods, sporting goods, fashion, healthcare, podcasts, advertising, feature films, and TV shows.
+    </p>
+    <div style="margin-top: 5px;">
+      <button class="contact-btn" 
+              style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
+              onclick="window.open('https://www.behance.net/gallery/236391313/Graphic-Design-Showcase', '_blank');"
+              onmouseover="style.transform='scale(1.01)';"
+              onmouseout="style.transform='scale(1)';">
+        View Gallery <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
 
 <section id="logo-gallery-section" style="background-color: var(--white); padding:2rem; overflow: hidden; display: flex; flex-direction: column;">
 
