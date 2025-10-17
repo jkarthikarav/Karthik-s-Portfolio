@@ -247,7 +247,7 @@ background: linear-gradient(to bottom, var(--tan) 0%, var(--tan) 80%, var(--whit
 display: flex; 
 justify-content: center; 
 align-items: center; 
-min-height: 100vh; 
+height: 100vh; 
 box-sizing: border-box; 
 overflow: hidden;
 padding: 2rem;
@@ -272,7 +272,7 @@ padding: 2rem;
     flex-direction: column-reverse;
   }
  .hero-home {
-  min-height: fit-content;
+  height: fit-content;
  }
 
  .mobile-btn {
