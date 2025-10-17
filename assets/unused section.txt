@@ -3,7 +3,7 @@
     {
       title: "IA and Navigation Menu Redesign",
       tags: ["Information Architecture", "Strategy"],
-      link: "tmc.html"
+      link: "/pages/casestudies/tmc.html"
     },
 
     
@@ -19,9 +19,9 @@
       <div style="cursor: pointer; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s;" 
            onmouseover="this.querySelector('img').style.transform='scale(1.01)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
-           onclick="window.open('eceHome.html', '_blank');">
+           onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
-          <img src="assets/images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+          <img src="../../assets/images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
           <p style="color: var(--bright); font-size: 14px; margin: 0;">Shipped Mar 2025</p>
@@ -41,9 +41,9 @@
       <div style="cursor: pointer; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s;"
            onmouseover="this.querySelector('img').style.transform='scale(1.01)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
-           onclick="window.open('mobileUXR.html', '_blank');">
+           onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
-          <img src="assets/images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+          <img src="../../assets/images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
           <p style="color: var(--bright); font-size: 14px; margin: 0; font-weight: bold;">Presented Dec 2023</p>
@@ -63,9 +63,9 @@
       <div style="cursor: pointer; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s;" 
            onmouseover="this.querySelector('img').style.transform='scale(1.01)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1.5)');"
            onmouseout="this.querySelector('img').style.transform='scale(1)'; this.querySelectorAll('p, h6').forEach(el => el.style.filter='saturate(1)');"
-           onclick="window.open('previz.html', '_blank');">
+           onclick="window.open('/pages/casestudies/previz.html', '_blank');">
         <div style="overflow: hidden; border-radius: 12px;">
-          <img src="assets/images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
+          <img src="../../assets/images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
           <p style="color: var(--bright); font-size: 14px; margin: 0; font-weight: bold;">Implemented July 2023</p>
@@ -91,12 +91,12 @@
   <!-- Fonts -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="css/https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
+    <link rel="stylesheet" href="../../css/https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap">
   </noscript>
 
   <!-- Styles and Scripts -->
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/script.js"></script>
 </head>
 
 <body style="background: var(--white); margin:0; display:flex; flex-direction:column; min-height:100vh;">
@@ -265,7 +265,7 @@ function closeProtectedPage() {
 
 <script>
   // Fetch and insert footer HTML
-  fetch('addons/footer.html')
+  fetch('../../addons/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
@@ -275,7 +275,7 @@ function closeProtectedPage() {
 
 <script>
   // Fetch and insert header HTML
-  fetch('addons/header.html')
+  fetch('../../addons/header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
@@ -304,22 +304,22 @@ function closeProtectedPage() {
     {
       title: "IA Critique: Youtube Music [Docs]",
       tags: ["Reports"],
-      link: "assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
+      link: "../../assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
     },
     {
       title: "ECE Homepage Redesign",
       tags: ["Website Development"],
-      link: "eceHome.html"
+      link: "/pages/casestudies/eceHome.html"
     },
     {
       title: "Mobile UX Research for Ticket Deals",
       tags: ["UXR"],
-      link: "mobileUXR.html"
+      link: "/pages/casestudies/mobileUXR.html"
     },
     {
       title:"IA Redesign and Navigation Menu Test Strategy Design",
       tags: ["UXR", "Strategy"],
-      link: "tmc.html"
+      link: "/pages/casestudies/tmc.html"
     },
     {
       title: "Conversational UX Design: Healthcare AI ChatBot [PPT]",
@@ -345,12 +345,12 @@ function closeProtectedPage() {
     {
       title: "Gen-AI Service Blueprint for Film Pre-Production",
       tags: ["Strategy", "Service Design"],
-      link: "previz.html"
+      link: "/pages/casestudies/previz.html"
     },
     {
       title: "Pitch Deck Website for Film Pre-Production",
       tags: ["Website Development"],
-      link: "filmPitchSite.html"
+      link: "/pages/casestudies/filmPitchSite.html"
     },
     {
       title: "Developing Design Guidelines: Canadian Recycling System [PPT]",

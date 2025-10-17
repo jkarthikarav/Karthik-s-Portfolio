@@ -51,9 +51,9 @@
 
 <!-- Main Content -->
 <main>
-<section class="hero" style="position: relative; background: linear-gradient(to bottom, var(--tan) 0%, var(--tan) 80%, var(--white) 100%); display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; overflow: hidden;">
+<section class="hero-home">
 
-  <div class="fade-group" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align:center; padding:0.25rem;">
+  <div class="fade-group" style="display: flex; flex-direction: column; align-items: center; text-align:center; padding: 1rem;">
     
     <div class="hero-banner-lvl1 fade-up">
 
@@ -91,14 +91,14 @@
     <div class="hero-button-row fade-up">
 
       <!-- Text-style scroll button -->
-      <button class="contact-btn" 
+      <button class="contact-btn mobile-btn" 
       style="background: var(--primary); color: var(--black3); -webkit-box-shadow: none; appearance: none; cursor: pointer;"  
       onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
         View Featured Work ⬇ 
       </button>
 
       <!-- Primary surprise button -->
-      <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" id="surprise-btn">
+      <button class="contact-btn mobile-btn" style="background-color: var(--secondary); color: var(--white);" id="surprise-btn">
         🎁 Surprise Me!
       </button>
 
@@ -108,7 +108,7 @@
 
 </section>
 
-<section id="fw" style=" position: relative;
+<section id="fw" style="position: relative;
 background-color: var(--black3);
 display: flex; flex-direction: column; 
 align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box-sizing: border-box;">
@@ -143,16 +143,16 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
       <!-- Buttons Row -->
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="contact-btn"
+        <button class="contact-btn mobile-btn"
                 style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
                 onclick="window.open('web-production.html', '_blank');"
                 onmouseover="style.transform='scale(1.01)';"
                 onmouseout="style.transform='scale(1)';">
           Work Showcase <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
         </button>
-        <button class="contact-btn"
+        <button class="contact-btn mobile-btn"
                 style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('eceHome.html', '_blank');"
+                onclick="window.open('/pages/casestudies/eceHome.html', '_blank');"
                 onmouseover="style.transform='scale(1.01)';"
                 onmouseout="style.transform='scale(1)';">
           Homepage Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
@@ -168,10 +168,10 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
     
     <!-- Clickable Image -->
     <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('previz.html', '_blank');"
+         onclick="window.open('/pages/casestudies/previz.html', '_blank');"
          onmouseover="style.transform='scale(1.01)';"
          onmouseout="style.transform='scale(1)';">
-      <img src="assets/images/ai/movie.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="AI-Assisted Film Pre-Production Service Design">
+      <img src="assets/logos/FIIP.jpg" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="AI-Assisted Film Pre-Production Service Design">
     </div>
 
     <!-- Card Content -->
@@ -186,9 +186,9 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
-        <button class="contact-btn"
+        <button class="contact-btn mobile-btn"
                 style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('previz.html', '_blank');"
+                onclick="window.open('/pages/casestudies/previz.html', '_blank');"
                 onmouseover="style.transform='scale(1.01)';"
                 onmouseout="style.transform='scale(1)';">
           View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
@@ -204,7 +204,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
     
     <!-- Clickable Image -->
     <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('mobileUXR.html', '_blank');"
+         onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');"
          onmouseover="style.transform='scale(1.01)';"
          onmouseout="style.transform='scale(1)';">
       <img src="assets/images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="UX Research & Mobile App Design for Museum Ticket Deals">
@@ -224,9 +224,9 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
-        <button class="contact-btn"
+        <button class="contact-btn mobile-btn"
                 style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('mobileUXR.html', '_blank');"
+                onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');"
                 onmouseover="style.transform='scale(1.01)';"
                 onmouseout="style.transform='scale(1)';">
           View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
@@ -246,20 +246,20 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   <h4 style="color: var(--primary); margin: 1rem 0;"> Want to see more?</h4>
   <!-- Filter Buttons -->
   <div id="filterButtons" class="fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-    <button class="contact-btn fade-right" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Presentations', this)">
+    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Presentations', this)">
       Presentations
     </button>
-    <button class="contact-btn fade-right" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Reports', this)">
+    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Reports', this)">
       Written Reports
     </button>
 
-  <button class="contact-btn fade-right"
+  <button class="contact-btn fade-right mobile-btn"
           style="background: var(--primary); color: var(--black3); width: fit-content;"
           onclick="document.getElementById('ETBP').scrollIntoView({ behavior: 'smooth' });">
     View Strategy work
   </button>
 
-  <button class="contact-btn fade-right"
+  <button class="contact-btn fade-right mobile-btn"
           style="background: var(--primary); color: var(--black3); width: fit-content;"
           onclick="document.getElementById('GD').scrollIntoView({ behavior: 'smooth' });">
     View Graphic Design work
@@ -275,23 +275,23 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 <div id="PDW" class="side-by-side-card fade-group" style="max-width:70vw;"> 
   <!-- Image on Left -->
   <div class="side-image fade-left" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
-       onclick="window.open('filmPitchSite.html', '_blank');"
+       onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');"
        onmouseover="style.transform='scale(1.01)';"
        onmouseout="style.transform='scale(1)';">
-    <img src="assets/images/ai/filmy.webp" alt="Pitch Deck Website for Film Pre-Production" style="width: 100%; object-fit: cover; border-radius: 8px;">
+    <img src="assets/logos/FIIP.jpg" alt="Pitch Deck Website for Film Pre-Production" style="width: 100%; object-fit: cover; border-radius: 8px;">
   </div>
 
   <!-- Text on Right -->
   <div class="side-text fade-right" style="padding-left: 1rem;">
-    <h6>Pitch Deck Website for Film Pre-Production</h6>
+    <h6 style="padding-top: 1rem;">Pitch Deck Website for Film Pre-Production</h6>
     <p style="margin: 1rem 0; font-size: 14px; line-height: 1.6; color: var(--grey0);">
       Presented Aug 2021 • Client Project • Web Design · Interactive UI · Creative Strategy <br>
       Turning a traditional presentation into a cinematic web experience. Password-protected, interactive website with seamless visuals, music, and transitions.
     </p>
     <div style="margin-top: 5px;">
-      <button class="contact-btn" 
+      <button class="contact-btn mobile-btn" 
               style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-              onclick="window.open('filmPitchSite.html', '_blank');"
+              onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');"
               onmouseover="style.transform='scale(1.01)';"
               onmouseout="style.transform='scale(1)';">
         View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
@@ -300,14 +300,14 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   </div>
 </div>
 
-<div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; max-width: 70vw; justify-content: center; margin-top: 2rem;">
+<div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center; margin-top: 2rem; margin-bottom: 0;">
 
 <div id="ETBP" class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
   <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
 
     <!-- Clickable Image -->
     <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('note4u.html', '_blank');"
+         onclick="window.open('/pages/casestudies/note4u.html', '_blank');"
          onmouseover="style.transform='scale(1.01)';"
          onmouseout="style.transform='scale(1)';">
       <img src="assets/images/ai/music.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="Education Technology Business Plan: Note4U">
@@ -325,9 +325,9 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
-        <button class="contact-btn"
+        <button class="contact-btn mobile-btn"
                 style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('note4u.html', '_blank');"
+                onclick="window.open('/pages/casestudies/note4u.html', '_blank');"
                 onmouseover="style.transform='scale(1.01)';"
                 onmouseout="style.transform='scale(1)';">
           View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
@@ -342,7 +342,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
     <!-- Clickable Image -->
     <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('tmc.html', '_blank');"
+         onclick="window.open('/pages/casestudies/tmc.html', '_blank');"
          onmouseover="style.transform='scale(1.01)';"
          onmouseout="style.transform='scale(1)';">
       <img src="assets/images/ai/textile.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="IA Redesign for Textile Museum of Canada">
@@ -360,9 +360,9 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
-        <button class="contact-btn"
+        <button class="contact-btn mobile-btn"
                 style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('tmc.html', '_blank');"
+                onclick="window.open('/pages/casestudies/tmc.html', '_blank');"
                 onmouseover="style.transform='scale(1.01)';"
                 onmouseout="style.transform='scale(1)';">
           View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
@@ -379,7 +379,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 </div>
 
 <!-- Flipped Side-by-Side Card: Graphic Design -->
-<div id="GD" class="side-by-side-card fade-group" style="max-width:70vw; margin-bottom: 2rem;"> 
+<div id="GD" class="side-by-side-card fade-group" style="max-width:70vw; margin-bottom: 2rem; margin-top: 0;"> 
 
     <!-- Image on Right -->
   <div class="side-image fade-right" style="margin-top: 2rem; cursor: pointer; overflow: hidden; border-radius: 12px; transition: transform 0.3s;"
@@ -702,14 +702,14 @@ function changeGreeting() {
 
 <script>
   const link_cards = [  
-    { title: "ECE Homepage Redesign", link: "eceHome.html" },
-    { title: "Mobile UX Research for Ticket Deals", link: "mobileUXR.html" },
-    { title:"IA Redesign and Navigation Menu Test Strategy Design", link: "tmc.html" },
+    { title: "ECE Homepage Redesign", link: "/pages/casestudies/eceHome.html" },
+    { title: "Mobile UX Research for Ticket Deals", link: "/pages/casestudies/mobileUXR.html" },
+    { title:"IA Redesign and Navigation Menu Test Strategy Design", link: "/pages/casestudies/tmc.html" },
     { title: "Conversational UX Design: Healthcare AI ChatBot [PPT]", link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" },
-    { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "previz.html" },
-    { title: "Pitch Deck Website for Film Pre-Production", link: "filmPitchSite.html" },
+    { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "/pages/casestudies/previz.html" },
+    { title: "Pitch Deck Website for Film Pre-Production", link: "/pages/casestudies/filmPitchSite.html" },
     { title: "Graphic Design Portfolio", link: "https://www.behance.net/gallery/236391313/Graphic-Design-Showcase"},
-    { title: "Note 4 U", link: "note4u.html"},
+    { title: "Note 4 U", link: "/pages/casestudies/note4u.html"},
     { title: "Web Production Work", link: "web-production.html"},
     { title: "Developing Design Guidelines: Canadian Recycling System [PPT]", link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing" },
     { title: "Digitization Critique: Digital Comics Museum Website [PPT]", link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" }

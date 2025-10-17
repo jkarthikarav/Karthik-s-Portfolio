@@ -125,9 +125,6 @@
       .bento-section .badge {
         display: none;
       }
-      .bento-section {
-        height:fit-content;
-      }
     }
 
     @keyframes glowPulse {
@@ -244,6 +241,23 @@
   transform: rotate(-45deg);
 }
 
+.hero-home {
+position: relative; 
+background: linear-gradient(to bottom, var(--tan) 0%, var(--tan) 80%, var(--white) 100%); 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+min-height: 100vh; 
+box-sizing: border-box; 
+overflow: hidden;
+padding: 2rem;
+}
+
+.mobile-btn {
+  min-height: 60px;
+  min-width: 144px;
+}
+
 
   @media (max-width: 1000px) {
     #CaseStudyGrid > div {
@@ -254,11 +268,16 @@
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
-
       #wp {
     flex-direction: column-reverse;
   }
+ .hero-home {
+  min-height: fit-content;
+ }
 
+ .mobile-btn {
+  font-size: 20px;
+ }
 
     .side-by-side-card {
     flex-direction: column;
