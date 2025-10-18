@@ -108,53 +108,42 @@
 
 </section>
 
-<section id="fw" style="position: relative;
-background-color: var(--black3);
-display: flex; flex-direction: column; 
-align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box-sizing: border-box;">
+<section id="fw" class="main-work">
 
-  <h4 class="fade-slide-up" style="color:var(--primary); margin-top:2rem; margin-bottom: 1rem;">
+  <h4 class="fade-slide-up h4-text-on-green">
     My Work
   </h4>
 
-  <div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; max-width: 70vw; justify-content: center;">
+  <div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center;">
 
 <!-- Card: ECE Website Production – University of Toronto -->
-<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
-  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
+<div class="fade-left CaseStudyGrid-item">
+  <div class="CaseStudyGrid-item-inner">
     
     <!-- Clickable Image -->
-    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('web-production.html', '_blank');"
-         onmouseover="style.transform='scale(1.01)';"
-         onmouseout="style.transform='scale(1)';">
-      <img src="assets/logos/Company/Logo_VD_5.jpg" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="ECE Website Production – University of Toronto">
+    <div class="case-study-card-image"
+         onclick="window.open('web-production.html', '_blank');">
+      <img src="assets/logos/Company/Logo_VD_5.jpg" alt="ECE Website Production – University of Toronto">
     </div>
 
     <!-- Card Content -->
-    <div style="padding: 5px;">
-      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">June 2024 – March 2025 • Web Content · UX/UI Design · WordPress</p>
-      <h6 style="color: var(--primary); margin: 1rem 0;">
+    <div class="case-study-content-area">
+      <p>June 2024 – March 2025 • Web Content · UI/UX · WordPress</p>
+      <h6>
         Website Production – ECE, University of Toronto
       </h6>
-      <p style="color: var(--grey0); margin: 1rem 0;">
+      <p class="cntnt">
         Redesigned, updated, and maintained the ECE Department website and intranet, including multiple key pages, content migration, component updates, and the homepage redesign as a detailed showcase of modular, student-focused design.
       </p>
 
       <!-- Buttons Row -->
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="contact-btn mobile-btn"
-                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('web-production.html', '_blank');"
-                onmouseover="style.transform='scale(1.01)';"
-                onmouseout="style.transform='scale(1)';">
+        <button class="contact-btn mobile-btn home-btn"
+                onclick="window.open('web-production.html', '_blank');">
           Work Showcase <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
         </button>
-        <button class="contact-btn mobile-btn"
-                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('/pages/casestudies/eceHome.html', '_blank');"
-                onmouseover="style.transform='scale(1.01)';"
-                onmouseout="style.transform='scale(1)';">
+        <button class="contact-btn mobile-btn home-btn"
+                onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
           Homepage Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
         </button>
       </div>
@@ -163,34 +152,29 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 </div>
 
   <!-- Card: Service Design for Film Pre-Production -->
-<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
-  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
+<div class="fade-left CaseStudyGrid-item">
+  <div class="CaseStudyGrid-item-inner">
     
     <!-- Clickable Image -->
-    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('/pages/casestudies/previz.html', '_blank');"
-         onmouseover="style.transform='scale(1.01)';"
-         onmouseout="style.transform='scale(1)';">
-      <img src="assets/logos/FIIP.jpg" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="AI-Assisted Film Pre-Production Service Design">
+    <div class="case-study-card-image"
+         onclick="window.open('/pages/casestudies/previz.html', '_blank');">
+      <img src="assets/logos/FIIP.jpg" alt="AI-Assisted Film Pre-Production Service Design">
     </div>
 
     <!-- Card Content -->
-    <div style="padding: 5px;">
-      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">Implemented July 2023 • 12 Weeks • Service Design · Generative AI</p>
-      <h6 style="color: var(--primary); margin: 1rem 0;">
+    <div class="case-study-content-area">
+      <p>Implemented July 2023 • 12 Weeks • Service Design · Gen AI</p>
+      <h6>
         Service Design for Film: AI-Assisted Video Creation
       </h6>
-      <p style="color: var(--grey0); margin: 1rem 0;">
+      <p class="cntnt">
         Designed and validated a scalable, AI-assisted workflow for film concept videos, enabling directors to visualize ideas quickly while improving alignment and creating a reusable process for future projects.
       </p>
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
-        <button class="contact-btn mobile-btn"
-                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('/pages/casestudies/previz.html', '_blank');"
-                onmouseover="style.transform='scale(1.01)';"
-                onmouseout="style.transform='scale(1)';">
+        <button class="contact-btn mobile-btn home-btn"
+                onclick="window.open('/pages/casestudies/previz.html', '_blank');">
           View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
         </button>
       </div>
@@ -199,36 +183,31 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 </div>
 
 <!-- Card: UX Research & Mobile App Design -->
-<div class="fade-left" style="flex: 1 1 calc(33.33% - 1rem); min-width: 250px;">
-  <div style="display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;">
+<div class="fade-left CaseStudyGrid-item">
+  <div class="CaseStudyGrid-item-inner">
     
     <!-- Clickable Image -->
-    <div style="overflow: hidden; border-radius: 12px; cursor: pointer; transition: transform 0.3s;"
-         onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');"
-         onmouseover="style.transform='scale(1.01)';"
-         onmouseout="style.transform='scale(1)';">
-      <img src="assets/images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;" alt="UX Research & Mobile App Design for Museum Ticket Deals">
+    <div class="case-study-card-image"
+         onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');">
+      <img src="assets/images/ai/tickets.webp" alt="UX Research & Mobile App Design for Museum Ticket Deals">
     </div>
 
     <!-- Card Content -->
-    <div style="padding: 5px;">
-      <p style="color: var(--bright); font-size: 14px; margin: 1rem 0;">
+    <div class="case-study-content-area">
+      <p>
         Presented Oct–Dec 2023 • UX Research · Mobile Product Design
       </p>
-      <h6 style="color: var(--primary); margin: 1rem 0;">
+      <h6>
         UX Research & Mobile App Design: Museum Ticket Deals
       </h6>
-      <p style="color: var(--grey0); margin: 1rem 0;">
+      <p class="cntnt">
         Conducted research to design a mobile-first platform to centralize museum ticket deals. Conducted UX research, created personas, and developed high-fidelity UI screens.
       </p>
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
-        <button class="contact-btn mobile-btn"
-                style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"
-                onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');"
-                onmouseover="style.transform='scale(1.01)';"
-                onmouseout="style.transform='scale(1)';">
+        <button class="contact-btn mobile-btn home-btn"
+                onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');">
           View Case Study <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
         </button>
       </div>
@@ -242,61 +221,112 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
 </section>
 
+<section id="about" class="bento-section" style="background: var(--white);">
+
+  <div class="center-container fade-group">
+
+    <h6 class="fade-up">What makes <span class="highlight">Karthik</span> special?</h6>
+
+    <p class="fade-up">
+        I love to turn <span class="highlight">research data to insights to actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
+        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
+        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product delivery and internal team efficiency.
+    </p>
+
+    <p class="fade-up">
+      With a <span class="highlight">Master of Information (User Experience Design) from the University of Toronto</span> and <span class="highlight">3+</span> years of experience designing for enterprise and SaaS platforms, my focus is on <span class="highlight">improving usability and driving user engagement</span> through cross-functional collaboration.
+    </p>
+
+  </div>
+  
+  <div class="badge logo fade-slide-up" style="top: 20%; right: 6%;">
+    <img src="assets/icons/Software/AdobeJO.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+
+  <div class="badge logo fade-slide-up" style="bottom: 10%; right: 8%;">
+    <img src="assets/icons/Software/PPT.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-slide-up" style="top: 35%; left: 5%;">
+    <img src="assets/icons/Software/WP.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-slide-up" style="bottom: 4%; left: 60%;">
+    <img src="assets/icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-slide-up" style="top: 11%; left: 60%;">
+      <img src="assets/icons/Software/AdobePS.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-slide-up" style="top: 15%; left: 22%;">
+      <img src="assets/icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
+  </div>
+  
+  <div class="badge logo fade-slide-up" style="bottom: 2%; left: 30%;">
+      <img src="assets/icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+  </div>
+
+  <div class="badge logo fade-slide-up" style="bottom: 10%; left: 12%;">
+      <img src="assets/icons/Software/JP.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
+  </div>
+
+</section>
 
 <section class="fade-group" style="background-color: var(--white); height: fit-content; align-items: center; justify-content: center; padding: 2rem;">
 
 <div class="content-clmn">
-  <div style="flex: 1 1 20%; padding-right: 4rem; margin-top: 40px; justify-items: flex-end;">
-    <h5 class="subtext fade-left">What I do</h5>
+  <div class="fade-left  content-clmn-title">
+    <h5 class="subtext">What I do</h5>
   </div>
 
-  <div class="content-clmn" style="flex: 1 1 60%; padding: 1rem;">
+  <div class="content-clmn" style="flex: 1 1 60%;">
 
     <div style="flex: 1 1 30%;">
 
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         Product Design
-      </p>
+      </h6>      
             
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
-        Workflow Innovation
-      </p>    
+      <h6 class="fade-down">
+        Workflow Design
+      </h6>      
 
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         UX Research
-      </p>
+      </h6>      
 
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         Content Design
-        </p>      
+      </h6>      
       
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         Service Design
-      </p>
+      </h6>      
 
     </div>
 
     <div style="flex: 1 1 30%;">
 
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         UI Prototyping
-      </p>
+      </h6>      
             
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         Graphic Design
-      </p>    
+      </h6>     
 
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
-        Front End Web Development
-      </p>
+      <h6 class="fade-down">
+        Web Front End
+      </h6>      
 
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         Information Architecture
-      </p>      
+      </h6>      
       
-      <p class="fade-down" style="color: var(--black); padding:1rem;">
+      <h6 class="fade-down">
         Strategy Consulting
-      </p>
+      </h6>      
 
     </div>
 
@@ -308,55 +338,46 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   
 </section>
 
-<section id="about" class="bento-section fade-group" style="background: var(--white);">
+<section class="fade-group" style="background-color: var(--white); height: fit-content; align-items: center; justify-content: center; padding: 2rem;">
 
-  <div class="center-container fade-up">
-
-    <h6 style="border: none; padding:1rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
-          backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color:var(--black3); margin-bottom:0;">What makes <span style="font-weight:bold; color:var(--secondary);">Karthik</span> different?</h6>
-
-    <p style="color:var(--black);">
-        I love to turn <span class="highlight">research data to insights to actionable design strategies</span> that create <span class="highlight">tangible business value</span>. 
-        <br>
-        My work always makes <span class="highlight">information accessible and usable</span> for clients and end-users alike, and improves organizational outcomes.
-        <br>
-        I also help perfect or introduce <span class="highlight">workflows, including the use of AI-tools / GenAI</span>, to optimize product delivery and internal team efficiency.
-    </p>
-
+<div class="content-clmn">
+  <div class="fade-left content-clmn-title">
+    <h5 class="subtext">Areas of Impact</h5>
   </div>
+
+  <div class="content-clmn" style="flex: 1 1 60%;">
+
+    <div style="flex: 1 1 30%;">
+
+      <h6 class="fade-down">
+        Design Systems & Workflow Optimization
+      </h6>
+            
+      <h6 class="fade-down">
+        AI-Driven Solutions & Service Design
+      </h6>    
+
+
+    </div>
+
+    <div style="flex: 1 1 30%;">
+
+      <h6 class="fade-down">
+        Enterprise & Problem-Solving UX
+      </h6>
+            
+      <h6 class="fade-down">
+        Driving Business Value
+      </h6>    
+
+    </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
   
-  <div class="badge logo fade-up" style="top: 20%; right: 6%;">
-    <img src="assets/icons/Software/AdobeJO.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-
-  <div class="badge logo fade-up" style="bottom: 10%; right: 8%;">
-    <img src="assets/icons/Software/PPT.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 35%; left: 5%;">
-    <img src="assets/icons/Software/WP.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="bottom: 14%; left: 60%;">
-    <img src="assets/icons/Software/Figma.png" alt="Figma" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 11%; left: 60%;">
-      <img src="assets/icons/Software/AdobePS.png" alt="Adobe" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="top: 15%; left: 22%;">
-      <img src="assets/icons/Software/Miro.png" alt="Miro" class="badge-icon" style="min-height: 100%;">
-  </div>
-  
-  <div class="badge logo fade-up" style="bottom: 10%; left: 30%;">
-      <img src="assets/icons/Software/Jira.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
-  </div>
-
-  <div class="badge logo fade-up" style="bottom: 10%; left: 12%;">
-      <img src="assets/icons/Software/JP.png" alt="Jira" class="badge-icon" style="min-height: 100%;">
-  </div>
-
 </section>
 
 <section style="position: relative;
@@ -369,21 +390,19 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
   <h4 style="color: var(--primary); margin: 1rem 0;"> Want to see more?</h4>
   <!-- Filter Buttons -->
   <div id="filterButtons" class="fade-group" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Presentations', this)">
+    <button class="contact-btn fade-up mobile-btn home-btn" onclick="filterCards('Presentations', this)">
       Presentations
     </button>
-    <button class="contact-btn fade-right mobile-btn" style="background: var(--primary); color: var(--black3); width: fit-content;" onclick="filterCards('Reports', this)">
+    <button class="contact-btn fade-up mobile-btn home-btn" onclick="filterCards('Reports', this)">
       Written Reports
     </button>
 
-  <button class="contact-btn fade-right mobile-btn"
-          style="background: var(--primary); color: var(--black3); width: fit-content;"
+  <button class="contact-btn fade-up mobile-btn home-btn"
           onclick="document.getElementById('ETBP').scrollIntoView({ behavior: 'smooth' });">
     View Strategy work
   </button>
 
-  <button class="contact-btn fade-right mobile-btn"
-          style="background: var(--primary); color: var(--black3); width: fit-content;"
+  <button class="contact-btn fade-up mobile-btn home-btn"
           onclick="document.getElementById('GD').scrollIntoView({ behavior: 'smooth' });">
     View Graphic Design work
   </button>
@@ -530,21 +549,21 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
 
 </section>
 
+<section id="logo-gallery-section" style="background-color: var(--grey0); padding:2rem; overflow: hidden; justify-content: center; display: flex; flex-direction: column; align-items: center; gap: 4rem;">
+  <div class="slider-row" style="width:70vw;">
+    <!-- Header -->
+    <h5 style="color: var(--black3); margin: 0; white-space: nowrap;">Companies worked with</h5>
 
-<section id="logo-gallery-section" style="background-color: var(--white); padding:2rem; overflow: hidden; display: flex; flex-direction: column;">
-
-  <!-- Header -->
-  <h5 style="color: var(--black3); margin-top: 2rem; text-align: center;">Companies/Clients worked with</h5>
-
-  <!-- Slider Container -->
-  <div class="slider-container" style="width: 100%; overflow: hidden; margin-top: 1rem; margin-bottom:2rem; height: 150px;">
-    <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
-      <!-- Logos inserted via JS -->
+    <!-- Slider Container -->
+    <div class="slider-container" style="flex: 1; margin-left: 2rem; height: 150px;">
+      <div class="slider" style="display: flex; gap: 2rem; height: 100%;">
+        <!-- Logos inserted via JS -->
+      </div>
     </div>
   </div>
 
 </section>
-    
+
 </main>
 
 <script>
@@ -597,8 +616,8 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box
       if (entry.isIntersecting) {
         section.classList.add('visible'); // fade-slide-up
         setTimeout(() => {
-          slider.style.animation = 'scroll-left 40s linear infinite';
-        }, 5000);
+          slider.style.animation = 'scroll-left 20s linear infinite';
+        }, 1000);
       }
     });
   }, { threshold: 0.2 });
