@@ -941,7 +941,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
 /* Case Study Styles*/
 
 .post-title {
-  color:var(--secondary); line-height:1.25; margin:0rem; max-width: 80vw;
+  color:var(--secondary); line-height:1.25; margin: 1rem 0 0 0; max-width: 80vw;
 }
 
 
