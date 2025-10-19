@@ -203,11 +203,32 @@
 
 <div class="content-clmn">
 
-  <div style="flex: 1 1 20%;">
+  <style>
+
+    .main-clmn {
+      flex: 1 1 20%;
+    }
+
+    .sub-clmn {
+      flex: 1 1 60%;
+    }
+
+    @media (width: 1074px) {
+      .main-clmn {
+        flex: 1 1 100%;
+      }
+      .sub-clmn {
+        flex: 1 1 100%;
+      }
+    }
+
+  </style>
+
+  <div class="main-clmn">
     <h3 style="color:var(--black); margin-top:1.5rem;">Key Pages built</h3>
 
     <!-- Project Showcase -->
-    <div class="flex-container" style="text-align:left; display:flex; flex-wrap:wrap; gap:1rem; margin:2rem 0; justify-content:flex-start; max-width: 500px;">
+    <div class="flex-container" style="text-align:left; display:flex; flex-wrap:wrap; gap:1rem; margin:2rem 0; justify-content:flex-start; min-width: 500px;">
 
       <!-- Events Page -->
       <article onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank');" 
@@ -269,13 +290,11 @@
         </p>
       </article>
 
-      
-
     </div>
 
     </div>
 
-    <div style="flex: 1 1 60%;">
+    <div class="sub-clmn">
 
     <div onclick="window.open('/pages/casestudies/eceHome.html', '_blank');" onmouseover="style.transform='scale(1.01)';"
        onmouseout="style.transform='scale(1)';" 
