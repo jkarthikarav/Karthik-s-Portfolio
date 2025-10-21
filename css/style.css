@@ -21,50 +21,43 @@ html {
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Sentient', sans-serif;
   margin: 0;
-  background: var(--white);
-  color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.6;
+  margin: 0.3em 0;
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
   font-size: 57px;
   font-weight: 700;
-  margin: 0.3em 0;
-  line-height: 1.6;
 }
 
 h2 {
-  font-family: 'Rubik', sans-serif;
   font-size: 42px;
   font-weight: 700;
-  line-height: 1.6;
 }
 
 h3 {
-  font-family: 'Rubik', sans-serif;
   font-size: 32px;
   font-weight: 500;
-  line-height: 1.6;
 }
 
 h4 {
-  font-family: 'Rubik', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 1.6;
 }
 
 h5 {
-  font-family: 'Rubik', sans-serif;
   font-size: 20px; /* same as h6 */
   font-weight: 700; /* bold */
   line-height: 1.4;
 }
 
 h6 {
-  font-family: 'Rubik', sans-serif;
   font-size: 20px; /* same as h5 */
   font-weight: 500; /* normal */
   line-height: 1.4;
@@ -75,6 +68,7 @@ p {
   color: var(--grey3);
   line-height: 1.4;
 }
+
 
 /* Common base */
 .fade-up,
@@ -765,6 +759,7 @@ padding: 2rem;
   min-height: 60px;
   min-width: 144px;
   font-size: 18px;
+  font-family: 'Oswald', sans-serif;
   line-height: 1.4;
   padding: 0 24px; /* 16px total extra width (8px left + 8px right) */
   border: 1px solid var(--grey3);
