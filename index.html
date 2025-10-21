@@ -139,7 +139,7 @@
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="contact-btn mobile-btn home-btn"
                 onclick="window.open('web-production.html', '_blank');">
-          Work Showcase <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+          View Work <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
         </button>
         <button class="contact-btn mobile-btn home-btn"
                 onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
@@ -274,14 +274,14 @@
 
 <section class="fade-group" style="background-color: var(--white); height: fit-content; align-items: center; justify-content: center; padding: 2rem;">
 
-<div class="content-clmn">
+<div class="content-clmn" style="flex-direction: column; justify-content: center; align-items: center;">
   <div class="fade-left  content-clmn-title">
-    <h3 class="subtext">What I do</h3>
+    <h3 class="subtext">My Skill Sets</h3>
   </div>
 
-  <div class="content-clmn" style="flex: 1 1 60%;">
+  <div class="content-clmn" style="flex: 1 1 100%; flex-direction: row;">
 
-    <div style="flex: 1 1 30%;">
+  <div style="flex: 1 1 calc(50%- 2rem);">
 
       <h4 class="fade-down">
         Product Design
@@ -303,9 +303,9 @@
         Service Design
       </h4>      
 
-    </div>
+  </div>
 
-    <div style="flex: 1 1 30%;">
+  <div style="flex: 1 1 calc(50%- 2rem);">
 
       <h4 class="fade-down">
         UI Prototyping
@@ -329,55 +329,14 @@
 
     </div>
 
-    </div>
   </div>
-</div>
+
+  </div>
 
 </div>
   
 </section>
 
-<section class="fade-group" style="background-color: var(--white); height: fit-content; align-items: center; justify-content: center; padding: 2rem;">
-
-<div class="content-clmn">
-  <div class="fade-left content-clmn-title">
-    <h3 class="subtext">Areas of Impact</h3>
-  </div>
-
-  <div class="content-clmn" style="flex: 1 1 60%;">
-
-    <div style="flex: 1 1 30%;">
-
-      <h4 class="fade-down">
-        Design Systems & Workflow Optimization
-      </h4>
-            
-      <h4 class="fade-down">
-        AI-Driven Solutions & Service Design
-      </h4>    
-
-
-    </div>
-
-    <div style="flex: 1 1 30%;">
-
-      <h4 class="fade-down">
-        Enterprise & Problem-Solving UX
-      </h4>
-            
-      <h4 class="fade-down">
-        Driving Business Value
-      </h4>    
-
-    </div>
-
-    </div>
-  </div>
-</div>
-
-</div>
-  
-</section>
 
 <section style="position: relative;
 background-color: var(--black3);
@@ -717,15 +676,10 @@ function changeGreeting() {
   const link_cards = [  
     { title: "ECE Homepage Redesign", link: "/pages/casestudies/eceHome.html" },
     { title: "Mobile UX Research for Ticket Deals", link: "/pages/casestudies/mobileUXR.html" },
-    { title:"IA Redesign and Navigation Menu Test Strategy Design", link: "/pages/casestudies/tmc.html" },
-    { title: "Conversational UX Design: Healthcare AI ChatBot [PPT]", link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing" },
+    { title: "IA Redesign and Navigation Menu Test Strategy Design", link: "/pages/casestudies/tmc.html" },
     { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "/pages/casestudies/previz.html" },
     { title: "Pitch Deck Website for Film Pre-Production", link: "/pages/casestudies/filmPitchSite.html" },
-    { title: "Graphic Design Portfolio", link: "https://www.behance.net/gallery/236391313/Graphic-Design-Showcase"},
     { title: "Note 4 U", link: "/pages/casestudies/note4u.html"},
-    { title: "Web Production Work", link: "web-production.html"},
-    { title: "Developing Design Guidelines: Canadian Recycling System [PPT]", link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing" },
-    { title: "Digitization Critique: Digital Comics Museum Website [PPT]", link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing" }
   ];
 
   function openRandomLink() {
