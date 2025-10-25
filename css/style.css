@@ -14,6 +14,7 @@
   --green: #2d6a4f;
   --green2: #1F4735;
   --tan: #fffbf4;
+  --muted: #1e2324;
 }
 
 html {
@@ -68,6 +69,36 @@ p {
   color: var(--grey3);
   line-height: 1.4;
 }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
 
 
 /* Common base */
@@ -922,15 +953,15 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
 }
 
 
-
-
-
 /* Case Study Styles*/
 
 .post-title {
   color:var(--secondary); line-height:1.25; margin: 1rem 0 0 0; max-width: 80vw;
 }
 
+.post-meta {
+  color:var(--muted); 
+}
 
 .post-content {
   max-width: 80vw; color:var(--black); margin:0 auto; line-height:1.6;
@@ -1012,26 +1043,6 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
     }
 
 
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 20px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    h1 {
-      font-size: 32px;
-    }
-    p {
-      font-size: 15px;
-    }
-  }
 
   .contentgrid {
     display: flex;
@@ -1075,3 +1086,50 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
       width: 100% !important;
     }
   }
+
+
+  /* Web production styles*/
+
+  .wp-post {
+    display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; max-width: 80vw;
+  }
+
+.stylized-num {
+  font-size: 18px; text-decoration: wavy; font-style: oblique; font-weight: bold;
+}
+
+
+.lazy-image {
+  filter: blur(10px);            /* initial blurred placeholder */
+  transition: filter 0.5s ease;  /* smooth un-blur */
+}
+
+.lazy-image.loaded {
+  filter: blur(0);               /* remove blur once real image loads */
+}
+
+.wp-fig-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;         /* allow wrapping on smaller screens */
+  gap: 1rem;               /* space between items */
+}
+
+.wp-fig-flex .wp-fig-item {
+  flex: 1 1 33%;           /* each figure takes ~50% width */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.wp-fig-flex .wp-fig-item img {
+  width: 100%;             /* image fills its container */
+  height: auto;
+  aspect-ratio: 4/3;
+  border-radius: 6px;
+}
+
+.wp-fig-flex .wp-fig-item figcaption {
+  color: var(--black);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
