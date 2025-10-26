@@ -194,7 +194,7 @@
     <!-- Card Content -->
     <div class="case-study-content-area">
       <p>
-        Presented Oct–Dec 2023 • UX Research · Mobile Product Design
+        Presented Oct–Dec 2023 • UXR · Mobile Product Design
       </p>
       <h4>
         UX Research & Mobile App Design: Museum Ticket Deals
@@ -214,9 +214,16 @@
   </div>
 </div>
 
-
-
 </div>
+
+</section>
+
+<section class="extra-work-btn" onclick="document.getElementById('extra-work').scrollIntoView({behavior: 'smooth'});"
+  onmouseover="style.backgroundColor='var(--black2)';" onmouseout="style.backgroundColor='var(--black3)';">
+
+  <h6 style="color: var(--grey0);">
+    View More Case Studies <span style="display: inline-block; transform: rotate(90deg); margin-left: 3px;">→</span>
+  </h6>
 
 </section>
 
@@ -274,10 +281,7 @@
 
 <section style="padding: 2rem;"></section>
 
-<section style="position: relative;
-background-color: var(--black3);
-display: flex; flex-direction: column; 
-align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; box-sizing: border-box;">
+<section class="extra-work" id="extra-work">
 
 <div style="width: 70vw;">
 
@@ -308,14 +312,16 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; bo
 
   <!-- Text on Left -->
   <div class="side-text fade-left" style="margin: 1rem 0; padding-right: 1rem;">
-          <p style="color: var(--bright); font-size: 14px; margin: 1rem 0 0 0;">
+    <p style="color: var(--bright); font-size: 14px; margin: 1rem 0 0 0;">
       Presented Aug 2021 • Client Project • Web Design · Interactive UI · Creative Strategy
-          </p>
-              <h4>Pitch Deck Website for Film Pre-Production</h4>
+    </p>
+          
+    <h4>Pitch Deck Website for Film Pre-Production</h4>
 
-          <p style="color: var(--grey0); margin: 1rem 0;">
+    <p class="cntnt">
       Turning a traditional presentation into a cinematic web experience. Password-protected, interactive website with seamless visuals, music, and transitions.
     </p>
+
     <div style="margin-top: 5px;">
       <button class="contact-btn" 
               style="background: var(--primary); color: var(--black3); transition: transform 0.3s;"

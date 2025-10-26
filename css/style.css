@@ -521,7 +521,6 @@ th {
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
     }
 
     @media (max-width: 1000px) {
@@ -725,7 +724,6 @@ th {
 }
 
 .hero-home {
-position: relative; 
 background: linear-gradient(to bottom, var(--tan) 0%, var(--tan) 80%, var(--white) 100%); 
 display: flex; 
 justify-content: center; 
@@ -870,19 +868,29 @@ padding: 2rem;
         }
         
         .main-work {
-          position: relative;
-background-color: var(--black3);
-display: flex; flex-direction: column; 
-align-items: center; justify-content: flex-start; width: 100%; padding: 2rem;box-sizing: border-box;
+          background-color: var(--black3);
+          display: flex; flex-direction: column; 
+          align-items: center; justify-content: flex-start; width: 100%; padding: 1rem; box-sizing: border-box; min-height: 90vh;
         }
 
         .h2-text-on-green {
           color:var(--primary); margin-top:2rem; margin-bottom: 1rem;
         }
 
-        .CaseStudyGrid-item {
-          flex: 1 1 calc(33.33% - 3rem); min-width: 250px;
-        }
+.extra-work-btn {
+  padding: 1rem; max-height: 10vh; background-color: var(--black3); justify-items: center; align-items: center; cursor: pointer; margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+.extra-work {
+background-color: var(--black3);
+display: flex; flex-direction: column; 
+align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; box-sizing: border-box;
+}
+
+.CaseStudyGrid-item {
+  flex: 1 1 calc(33.33% - 3rem); min-width: 250px;
+}
 
 .CaseStudyGrid-item-inner {
         display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s; max-width: 800px;
@@ -1086,6 +1094,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
       width: 100% !important;
     }
   }
+
 
 
   /* Web production styles*/
