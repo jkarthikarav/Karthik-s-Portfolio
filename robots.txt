@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /netBanking.html
+
+Sitemap: https://jkarthikarav.github.io/Karthik-s-Portfolio/sitemap.xml
