@@ -1129,3 +1129,9 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+.ed-qual {
+  font-size: 15px;
+  color: var(--black);
+  line-height: 1.4;
+}
