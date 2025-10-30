@@ -1,5 +1,27 @@
+<section class="banner">
+  <div class="scroll-wrapper">
+    <h1 class="scroll-text">
+      I make Interactions feel Effortless and Intentional&nbsp;&nbsp;I make Interactions feel Effortless and Intentional
+    </h1>
+  </div>
+</section>
 
-
+<script>
+  const text = document.querySelector('.banner-text');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        text.classList.add('in-view');
+      } else {
+        text.classList.remove('in-view');
+      }
+    });
+  });
+  observer.observe(text);
+</script>
+   
+   
+   
     {
       title: "IA and Navigation Menu Redesign",
       tags: ["Information Architecture", "Strategy"],
@@ -24,11 +46,11 @@
           <img src="../../assets/images/ai/ece.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
-          <p style="color: var(--bright); font-size: 14px; margin: 0;">Shipped Mar 2025</p>
+          <p style="color: var(--primary-light); font-size: 14px; margin: 0;">Shipped Mar 2025</p>
           <h4 style="font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4; margin: 0;">
             ECE Homepage Redesign (UX/UI to Web Dev)
           </h4>
-          <p style="color: var(--grey0); font-size: 14px; line-height: 1.6; margin: 0;">
+          <p style="color: var(--neutral-main); font-size: 14px; line-height: 1.6; margin: 0;">
             Transformed a dense academic homepage into a student recruitment portal. Delivered responsive mockups and WordPress development.
             <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study <span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
           </p>
@@ -46,11 +68,11 @@
           <img src="../../assets/images/ai/tickets.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
-          <p style="color: var(--bright); font-size: 14px; margin: 0; font-weight: bold;">Presented Dec 2023</p>
+          <p style="color: var(--primary-light); font-size: 14px; margin: 0; font-weight: bold;">Presented Dec 2023</p>
           <h4 style="font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4; margin: 0;">
             UX Research: Mobile App for Ticket Deals (UXR to Hi Fidelity)
           </h4>
-          <p style="color: var(--grey0); font-size: 14px; line-height: 1.6; margin: 0;">
+          <p style="color: var(--neutral-main); font-size: 14px; line-height: 1.6; margin: 0;">
             Academic project focused on uncovering barriers to museum ticket discounts in Toronto. Delivered a mobile-first concept.
             <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study <span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
           </p>
@@ -68,11 +90,11 @@
           <img src="../../assets/images/ai/PREVIZ.webp" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;">
         </div>
         <div style="padding: 5px;">
-          <p style="color: var(--bright); font-size: 14px; margin: 0; font-weight: bold;">Implemented July 2023</p>
+          <p style="color: var(--primary-light); font-size: 14px; margin: 0; font-weight: bold;">Implemented July 2023</p>
           <h4 style="font-size: 18px; font-weight: 600; color: var(--primary); line-height: 1.4; margin: 0;">
             Gen-AI Service Blueprint for Film Pre-Production (Service Design)
           </h4>
-          <p style="color: var(--grey0); font-size: 14px; line-height: 1.6; margin: 0;">
+          <p style="color: var(--neutral-main); font-size: 14px; line-height: 1.6; margin: 0;">
             Designed an AI-assisted workflow to streamline the video creation process -- Enabling directors to visualize stories faster.
             <br><span style="font-weight: bold; color: var(--primary);">Click to Read Case Study <span style="display: inline-block; transform: rotate(-45deg);">→</span></span>
           </p>
@@ -108,7 +130,7 @@
   <main style="flex:1; ">
     <section id="quickExploreSection" 
              style="display:flex; flex-direction:column; background: none; padding:2rem; flex:1; justify-content: center; align-items: center;">
-      <h1 style="color: var(--secondary); font-weight: bold; margin-bottom: 2rem;">
+      <h1 style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 2rem;">
         Explore My Work
       </h1>
 
@@ -203,7 +225,7 @@
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
-  border: 1px solid var(--grey0);
+  border: 1px solid var(--neutral-main);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   margin-bottom: 2rem;
@@ -219,7 +241,7 @@
   .contact-btn {
               color: var(--primary);
               width: 100%;
-              background: var(--black3);
+              background: var(--tertiary-dark);
               border: none;
               cursor: pointer;
               display: inline-flex;
@@ -377,7 +399,7 @@ function closeProtectedPage() {
 
     // Highlight clicked button
     clickedBtn.style.background = 'var(--white)';
-    clickedBtn.style.color = 'var(--secondary)';
+    clickedBtn.style.color = 'var(--tertiary-dark)';
 
     // Add close button
     const closeBtn = document.createElement('button');

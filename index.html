@@ -27,6 +27,9 @@
     p {
       font-size: 15px;
     }
+    .ed-qual {
+      display:none;
+    }
   }
 
   /* For mobile (under 600px is a common breakpoint) */
@@ -39,6 +42,9 @@
     }
     h4 {
       font-size: 16px;
+    }
+    .ed-qual {
+      display:none;
     }
   }
   </style>
@@ -86,13 +92,13 @@
 
       <!-- Text-style scroll button -->
       <button class="contact-btn" 
-      style="background: var(--primary); color: var(--black3); -webkit-box-shadow: none; appearance: none; cursor: pointer;"  
+      style="background: var(--primary); color: var(--tertiary-dark); -webkit-box-shadow: none; appearance: none; cursor: pointer;"  
       onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
         View Featured Work ⬇ 
       </button>
 
       <!-- Primary surprise button -->
-      <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" id="surprise-btn">
+      <button class="contact-btn" style="background-color: var(--tertiary-dark); color: var(--white);" id="surprise-btn">
         View Random Project
       </button>
 
@@ -108,10 +114,6 @@
     Featured Work
   </h2>
 
-  <h4 class="fade-up h2-text-on-green" style="margin: 0.25rem 0 1rem 0;">
-    I make Interactions feel Effortless and Intentional
-  </h4>
-
   <div class="hero-button-row2 fade-down">
     <button class="contact-btn"
       style="background: none; color: var(--white); border: none;"
@@ -123,7 +125,7 @@
     </button>
   </div>
 
-  <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center;">
+  <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 80vw; justify-content: center;">
 
 <!-- Card: ECE Website Production – University of Toronto -->
 <div class="fade-left CaseStudyGrid-item">
@@ -224,9 +226,13 @@
   </div>
 </div>
 
+<div class="fade-left CaseStudyGrid-item">
+</div>
+
 </div>
 
 </section>
+
 
 <!-- 
 
@@ -247,8 +253,8 @@
     </div>
 
     <div class="case-study-content-area">
-      <p style="color: var(--green2);">Presented Nov 2023 • 6 Weeks • UXR · IA Design</p>
-      <h4 style="color: var(--secondary);">
+      <p style="color: var(--tertiary-dark);">Presented Nov 2023 • 6 Weeks • UXR · IA Design</p>
+      <h4 style="color: var(--tertiary-dark);">
         IA Redesign & Navigation Strategy
       </h4>
       <p class="cntnt" style="color: var(--black);">
@@ -274,8 +280,8 @@
     </div>
 
     <div class="case-study-content-area">
-      <p style="color: var(--green2);">Shipped Aug 2021 • 8 Weeks • Web Design · Creative Strategy</p>
-      <h4 style="color: var(--secondary);">
+      <p style="color: var(--tertiary-dark);">Shipped Aug 2021 • 8 Weeks • Web Design · Creative Strategy</p>
+      <h4 style="color: var(--tertiary-dark);">
         Pitch Deck Website for Film Pre-Production
       </h4>
       <p class="cntnt" style="color: var(--black);">
@@ -301,8 +307,8 @@
     </div>
 
     <div class="case-study-content-area">
-      <p style="color: var(--green2);">Presented Dec 2024 • UXR · Business Process Modeling</p>
-      <h4 style="color: var(--secondary);">
+      <p style="color: var(--tertiary-dark);">Presented Dec 2024 • UXR · Business Process Modeling</p>
+      <h4 style="color: var(--tertiary-dark);">
         EdTech Design: Note4U
       </h4>
       <p class="cntnt" style="color: var(--black);">
@@ -342,29 +348,11 @@
 
   <div id="filteredCards" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;"></div>
 </div>
- -->
 
 </section>
+ -->
 
 </main>
-
-<script>
-      const badges = document.querySelectorAll('.badge');
-
-      badges.forEach(badge => {
-        // Random default rotation (-20 to 20 degrees)
-        const defaultDeg = Math.random() * 40 - 20;
-        badge.style.transform = `rotate(${defaultDeg}deg)`;
-
-        // Hover: straighten and scale up
-        badge.addEventListener('mouseover', () => {
-          badge.style.transform = 'rotate(0deg) scale(1.1)';
-        });
-
-        badge.addEventListener('mouseout', () => {
-          badge.style.transform = `rotate(${defaultDeg}deg) scale(1)`;
-        }); });
-</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -565,12 +553,12 @@ function changeGreeting() {
     const buttons = document.querySelectorAll('#filterButtons .contact-btn');
     buttons.forEach(btn => {
       btn.style.background = 'var(--primary)';
-      btn.style.color = 'var(--black3)';
+      btn.style.color = 'var(--tertiary-dark)';
     });
 
     // Highlight clicked button
-    clickedBtn.style.background = 'var(--bright)';
-    clickedBtn.style.color = 'var(--black3)';
+    clickedBtn.style.background = 'var(--primary-light)';
+    clickedBtn.style.color = 'var(--tertiary-dark)';
 
     // Add close button
     const closeBtn = document.createElement('button');
@@ -587,7 +575,7 @@ function changeGreeting() {
       // Reset all buttons
       buttons.forEach(btn => {
         btn.style.background = 'var(--primary)';
-        btn.style.color = 'var(--black3)';
+        btn.style.color = 'var(--tertiary-dark)';
       });
     };
     container.appendChild(closeBtn);
@@ -604,7 +592,7 @@ function changeGreeting() {
 a.textContent = `View: ${card.title}`;
 a.href = card.link;
 a.target = "_blank"; // open in new tab
-a.style.color = "var(--tan)";
+a.style.color = "var(--neutral-alt)";
 a.style.textDecoration = "underline";
 a.style.cursor = "pointer";
 
