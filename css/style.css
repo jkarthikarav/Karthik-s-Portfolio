@@ -154,6 +154,10 @@ p {
   display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 0.5rem 0 2rem 0;
 }
 
+.hero-button-row2 {
+  display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 0.5rem 0 2rem 0;
+}
+
 @media (max-width: 768px) {
   .content-clmn {
   flex-direction: column;
