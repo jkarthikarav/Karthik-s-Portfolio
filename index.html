@@ -93,26 +93,37 @@
 
       <!-- Primary surprise button -->
       <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" id="surprise-btn">
-        🎁 Surprise Me!
+        View Random Project
       </button>
 
-      <!-- Primary surprise button -->
-      <button class="contact-btn" style="background-color: var(--secondary); color: var(--white);" onclick="window.open('about.html', '_blank');">
-        About Me
-      </button>
     </div>
 
   </div>
 
 </section>
 
-<section id="fw" class="main-work">
+<section id="fw" class="main-work fade-group">
 
-  <h2 class="fade-slide-up h2-text-on-green">
-    My Work
+  <h2 class="fade-up h2-text-on-green">
+    Featured Work
   </h2>
 
-  <div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center;">
+  <h4 class="fade-up h2-text-on-green" style="margin: 0.25rem 0 1rem 0;">
+    I make Interactions feel Effortless and Intentional
+  </h4>
+
+  <div class="hero-button-row2 fade-down">
+    <button class="contact-btn"
+      style="background: none; color: var(--white); border: none;"
+      onclick="window.open('work.html', '_blank');"
+      onmouseover="this.querySelector('.label').style.textDecoration='underline'"
+      onmouseout="this.querySelector('.label').style.textDecoration='none'">
+      <span class="label">View All Work</span>
+      <span style="display: inline-block; transform: rotate(-45deg); margin-left: 3px;">→</span>
+    </button>
+  </div>
+
+  <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center;">
 
 <!-- Card: ECE Website Production – University of Toronto -->
 <div class="fade-left CaseStudyGrid-item">
@@ -217,31 +228,33 @@
 
 </section>
 
+<!-- 
+
 <section class="extra-work">
+
+  <h2 class="fade-slide-up">
+    Other Work
+  </h2>
 
 <div id="CaseStudyGrid" class="grid-wrapper fade-group" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 70vw; justify-content: center;">
 
-<!-- Card: IA Redesign – Textile Museum of Canada -->
 <div class="fade-left CaseStudyGrid-item">
   <div class="CaseStudyGrid-item-inner">
     
-    <!-- Clickable Image -->
     <div class="case-study-card-image"
          onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
       <img src="assets/logos/TMC.png" alt="IA Redesign for Textile Museum of Canada">
     </div>
 
-    <!-- Card Content -->
     <div class="case-study-content-area">
-      <p>Presented Nov 2023 • 6 Weeks • UXR · IA Design</p>
-      <h4>
+      <p style="color: var(--green2);">Presented Nov 2023 • 6 Weeks • UXR · IA Design</p>
+      <h4 style="color: var(--secondary);">
         IA Redesign & Navigation Strategy
       </h4>
-      <p class="cntnt">
+      <p class="cntnt" style="color: var(--black);">
         Phased testing strategy for the Textile Museum of Canada to improve IA and menu usability.
       </p>
 
-      <!-- Buttons Row -->
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="contact-btn home-btn"
                 onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
@@ -252,27 +265,23 @@
   </div>
 </div>
 
-<!-- Card: Pitch Deck Website – Film Pre-Production -->
 <div class="fade-left CaseStudyGrid-item">
   <div class="CaseStudyGrid-item-inner">
     
-    <!-- Clickable Image -->
     <div class="case-study-card-image"
          onclick="window.open('/pages/casestudies/previz.html', '_blank');">
       <img src="assets/logos/FIIP.jpg" alt="AI-Assisted Film Pre-Production Service Design">
     </div>
 
-    <!-- Card Content -->
     <div class="case-study-content-area">
-      <p>Shipped Aug 2021 • 8 Weeks • Web Design · Creative Strategy</p>
-      <h4>
+      <p style="color: var(--green2);">Shipped Aug 2021 • 8 Weeks • Web Design · Creative Strategy</p>
+      <h4 style="color: var(--secondary);">
         Pitch Deck Website for Film Pre-Production
       </h4>
-      <p class="cntnt">
+      <p class="cntnt" style="color: var(--black);">
         Turning a PPT into a website. Password-protected, interactive website with visuals, music, and transitions.
       </p>
 
-      <!-- Buttons Row -->
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="contact-btn home-btn"
                 onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');">
@@ -283,27 +292,23 @@
   </div>
 </div>
 
-<!-- Card: Note4U Education Technology Business Plan -->
 <div class="fade-left CaseStudyGrid-item">
   <div class="CaseStudyGrid-item-inner">
     
-    <!-- Clickable Image -->
     <div class="case-study-card-image"
          onclick="window.open('/pages/casestudies/note4u.html', '_blank');">
       <img src="assets/images/ai/music.webp" alt="Education Technology Business Plan: Note4U">
     </div>
 
-    <!-- Card Content -->
     <div class="case-study-content-area">
-      <p>Presented Dec 2024 • UXR · Business Process Modeling</p>
-      <h4>
+      <p style="color: var(--green2);">Presented Dec 2024 • UXR · Business Process Modeling</p>
+      <h4 style="color: var(--secondary);">
         EdTech Design: Note4U
       </h4>
-      <p class="cntnt">
+      <p class="cntnt" style="color: var(--black);">
         Delivered a business plan and strategy for an AI-powered product that will aid music education.
       </p>
 
-      <!-- Buttons Row -->
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="contact-btn home-btn"
                 onclick="window.open('/pages/casestudies/note4u.html', '_blank');">
@@ -314,16 +319,15 @@
   </div>
 </div>
 
-
-
-
 </div>
+
+</section>
 
 
 <div style="width: 70vw;">
 
   <h2 style="color: var(--primary); margin: 1rem 0;"> Want to see more?</h2>
-  <!-- Filter Buttons -->
+
   <div id="filterButtons" class="fade-group" style="display: flex; flex-direction: row; gap: 1rem; margin-top: 5px;">
     <button class="contact-btn fade-up home-btn" onclick="filterCards('Presentations', this)">
       Presentations
@@ -336,10 +340,9 @@
     </button>
   </div>
 
-  <!-- Filtered Cards Container -->
   <div id="filteredCards" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;"></div>
 </div>
-
+ -->
 
 </section>
 
