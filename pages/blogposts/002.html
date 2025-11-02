@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redesigning Beneficiary Management in Netbanking</title>
+    <link rel="icon" href="https://jkarthikarav.github.io/assets/favicon.ico">
+
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Sentient:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Sentient:wght@400;700&display=swap">
+</noscript>  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/script.js"></script>
+</head>
+
+<body style="background: var(--neutral-main);">
+<div id="header-placeholder"></div>
+
+<section style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
+
+<div class="wp-post" style="padding: 2rem 2rem 0 2rem;">
+
+    <!-- Title -->
+    <h1 class="post-title">
+      Redesigning Beneficiary Management in Netbanking
+    </h1>
+
+    <h3 class="post-subtitle">
+      How showing all beneficiaries and their transaction types can simplify transfers and prevent failed transactions
+    </h3>
+
+    <!-- Meta: date / author / categories -->
+    <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+      <a class="circle-me" href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank"
+        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+        <img src="../../assets/images/about/circle-me.jpg" alt="LinkedIn Profile" style="width: 100%; height: 100%; object-fit: cover; display: block;"/>
+      </a>
+      <time style="color:var(--muted);">&nbsp;&nbsp;&nbsp;&nbsp;May 19th, 2025</time>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-client" style="color:var(--muted);">Fintech, Product, SaaS, Banking, B2C</span>
+    </div>
+
+    <blockquote class="wp-block-quote">
+        <p>
+          <strong>Summary:</strong> This article covers my redesign which makes it easy for users to see every beneficiary, 
+          understand allowed transactions, and manage money without guesswork.
+        </p>
+    </blockquote>
+
+</div>
+          
+<img src="../../assets/images/ai/Bank.webp" style="width: 100%; height: 60vh; object-fit: cover; display: block; object-position: top;" />
+
+<div class="wp-post" style="padding: 2rem;">
+
+<div class="post-content">
+    
+    <p>
+      Online banking makes money transfer simple, but managing beneficiaries can be confusing. 
+      In many Indian netbanking platforms, users cannot see all their beneficiaries at once, or know which transactions are allowed for each person. 
+      Users need this information because it helps them avoid failed transactions, and without a clear overview, 
+      it is hard to know which transactions are allowed or whether a transfer will succeed.
+    </p>
+
+    <p>
+      As an HDFC customer, I decided to poke around their netbanking platform to see if this headache had been fixed, and, it had.... not.
+    </p>
+
+    <p>
+    I examined the interface to see how it could be made clearer and easier to use. 
+    The goal was to show all beneficiaries and make transaction types visible.
+    </p>
+
+    <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, what was the Problem?</h3>
+
+    <p>
+      In the version available to me (pictured below), beneficiaries were separated by transaction type and hidden behind large filter cards. Users had to click a button labeled View to see the table update below.
+    </p>
+
+    <div class="phot-item">
+
+      <div style="overflow: hidden; max-width:600px;">
+        <img src="../../assets/images/hdfc/before-bene-list.png" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      </div>
+
+    </div>
+
+    <P>
+      They basically took the transfer menu (pictured below), copy-pasted it into the beneficiary section, and changed the Go button to View. That was it. All they had to do was create a table with usable filters.
+    </P>
+
+    <div class="phot-item">
+
+      <div style="overflow: hidden; max-width:600px;">
+        <img src="../../assets/images/hdfc/Funds.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      </div>
+
+    </div>
+
+    <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">And, why is this important?</h3>
+
+    <p>
+      This is important in India. Adding a new beneficiary requires OTP authentication, small transfers up to fifty thousand rupees may work immediately, full transfer limits take thirty minutes to twenty-four hours depending on transaction type and account, and transfers to beneficiaries who are not active always fail. The old interface did not make any of this obvious, leaving users confused and prone to failed transactions.
+    </p>
+
+    <p>
+      Essentially, when you implement something in a country, you need to be mindful of the general bank regulations and ways things are done there. No one can implement a banking software in a Middle Eastern bank without properly understanding Islamic banking.
+    </p>
+
+    <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, what did you do?</h3>
+
+    <P>
+      I redesigned the screen -- a conceptual design; I am not associated with HDFC Bank, other than as a customer for a very very very long time. The new design shows all beneficiaries in a single, sortable table by default. Each row has a smart chip showing which transactions are allowed and whether the beneficiary is active. Filters are still there, but now follow a dashboard-style SaaS layout. Users can narrow results without hiding information.
+    </P>
+
+    <div class="phot-item">
+
+      <div style="overflow: hidden; max-width: 900px;">
+        <img src="../../assets/images/hdfc/Step 3.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      </div>
+
+    </div>
+
+    <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Why This Works</h3>
+
+    <h6 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
+      <span class="stylized-num">01&nbsp;</span> Showing all items at once helps users avoid extra clicks and confusion.
+    </h6>
+    <h6 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
+      <span class="stylized-num">02&nbsp;</span> Smart visual indicators like chips make permissions clear at a glance.
+    </h6>
+    <h6 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
+      <span class="stylized-num">03&nbsp;</span> Copying interactions from unrelated screens can hurt usability. Context matters.
+    </h6>
+    <h6 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
+      <span class="stylized-num">04&nbsp;</span> A clean dashboard-style layout makes even complex rules intuitive.
+    </h6>
+
+    <p>
+      This project focuses on one minor change that improved a screen’s clarity and usability. 
+      It reflects my approach to product design, where small, deliberate adjustments are guided by user needs and context. 
+      I’m exploring similar improvements across different SaaS products, each informed by careful observation and reasoning. 
+      Together, these projects demonstrate how thoughtful design decisions can create more intuitive and satisfying user experiences.
+    </p>
+
+
+
+    </div>
+  </section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+
+    fetch('../../addons/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+
+<script>
+  fetch('../../addons/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+
+</html>
