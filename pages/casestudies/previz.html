@@ -66,95 +66,101 @@
 
     <div class="post-content">
 
+      <h2 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+        Gen-AI dropped in Adobe Beta in May 2023; by July, we were making money with it.
+      </h2>
 
-      <h3 style="color: var(--tertiary-dark); margin-bottom: 20px;">Project Context</h3>
+      <p>
+        I had been part of Fix It In Post Studios since 2020 and left in Aug 2021 to start my own UX consulting company. I returned to the studio in June 2023 for a short term freelance service design project.
+        This project felt like stepping into the future of pre-production. 
+        The challenge was to explore Adobe Photoshop's Generative AI tool and design a workflow that could make concept videos faster and more precisely; 
+        while keeping humans at the center of the creative process.
+      </p>
 
-      <h4 style="color: var(--tertiary-dark); margin-bottom:1rem;">Problem Definition and Goals</h4>
+      <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+        By July 2023, we had a working AI-assisted workflow and had completed a client project.
+      </h5>
+
+      <p>
+        Some might read through this and say, “This isn’t a fully automated AI workflow; what use is it?”
+      </p>
+
+      <p>
+        But even if it were fully automated, clients are often vague with instructions, and we would still have to spend hours reviewing the 
+        outputs and finetuning it.
+        Reading some current research from 2025, we know that entirely AI-generated work is more time-consuming unless prompt design and 
+        output quality are optimized.
+        (<a href="https://mitrix.io/blog/prompt-engineering-or-why-consistent-ai-results-require-tweaking/" target="_blank">MITRIX, 2025</a>; <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" style="color: var(--dark blue);">METR, 2025</a>).
+        What I’m proposing is removing the tedious task of creating generic background visuals that no one notices, 
+        so designers can focus on what matters most: the main characters and foreground elements.
+      </p>
+
+      <h3 style="color: var(--tertiary-dark); margin-bottom: 20px;">Understanding the Challenge</h3>
     
       <p>
-        As part of the Studio's Pre-Production support services for Film directors (including other services I created like online pitch deck microsites such as <a href="/pages/casestudies/filmPitchSite.html" target="_blank" style="color: var(--dark blue);">this</a>), I led the development of a scalable, AI-assisted pitch video workflow. The goal: make pitching story concepts to producers easy, fast, and visually clear for directors; directly linking creative steps with sharable, impactful outputs.
-        <br><br>Traditionally, Indian film concept videos are developed iteratively with evolving concepts, unclear end goals, and numerous client revisions which prolong delivery timelines.
-        <br><br>If a concept video for an Indian movie/tv show/creative IP was made, it would have been likely done in the following manner:
+        As part of the Studio's Pre-Production support services for Film directors (including other services I created like pitch deck websites such as <a href="/pages/casestudies/filmPitchSite.html" target="_blank" style="color: var(--dark blue);">this</a>), I led the development of a scalable, AI-assisted pitch video workflow.
+      </p>
+
+      <p>
+        When it comes to Indian film concept videos, the traditional process can feel like a maze. Ideas evolve constantly, goals remain unclear, and each round of client feedback can send the team back to square one. Timelines stretch out, frustration builds, and even the most talented directors and creatives struggle to stay aligned.
+      </p> 
+        
+      <p>  
+        Having done this before with a lot of directors, a typical project followed this process:
       </p>
 
       <img src="../../assets/images/previz/swimlane-b.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/swimlane-b.png')">
 
-      <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">What We Did</h4>
+      <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+        Our goal was to change that. We wanted a process that moved faster and kept everyone on the same page, while also experimenting with AI to replace the mundane.
+      </h5>
 
-      <div class="contentgrid">
+      <h3 style="color: var(--tertiary-dark); margin-bottom: 20px;">Designing the Workflow</h3>
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">1. Ecosystem Mapping</p>
-    <p style="margin-top: 0;">Mapped all stakeholders, systems, and touchpoints to understand the complexity and interrelationships of the pitch video service environment.</p>
-</div>
+      <p>
+        We began by mapping the ecosystem; identifying stakeholders, systems, and touchpoints to understand the complexity of the pitch video environment.
+      </p>
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">2. Initial Concept Development</p>
-    <p style="margin-top: 0;">Started with a small idea for the workflow, providing a baseline for iterative exploration rather than a fixed upfront design.</p>
-</div>
+      <p>
+        Next, we created an initial concept workflow; small and testable. Real-time collaboration with a client allowed us to observe challenges directly and adjust processes immediately.
+      </p>
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">3. Real-Time Client Collaboration</p>
-    <p style="margin-top: 0;">Developed the workflow alongside the client in real-time, observing challenges and adjusting processes immediately.</p>
-</div>
+      <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">Logical Service Flow</h4>
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">4. Iterative Service Blueprinting</p>
-    <p style="margin-top: 0;">Continuously refined a service blueprint based on live testing and feedback, documenting workflows, roles, and handoffs.</p>
-</div>
+      <img src="../../assets/images/previz/swimlane.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/swimlane.png')">
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">5. Role Clarification and Task Definition</p>
-    <p style="margin-top: 0;">Defined clear responsibilities for directors, editors, designers, and coordinators to ensure alignment and understanding of deliverables.</p>
-</div>
+      <p>
+        Over multiple iterations, we refined a service blueprint; clarifying internal roles for directors, editors, designers, and coordinators, establishing clear handoffs, export conventions, and feedback loops, and continuously validating through observational research and team feedback.
+      </p>
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">6. Establishing Transparent Processes</p>
-    <p style="margin-top: 0;">Made handoffs, export conventions, and feedback loops explicit to improve team alignment, efficiency, and quality control.</p>
-</div>
+      <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+      This project was focused primarily on internal service design, refining workflows, roles, and a pilot application of this workflow, 
+      serving as both a deliverable for Fix It In Post Studios and a validation of the AI-assisted process for their clients (Film and TV Directors, for the time being).
+    </h>
+      
+      <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">At the Design level</h4>
+      <span style="margin-top: 0rem; font-size: 14px;">
+        Sample Images used in Case Study are for representative purposes only. They were selected based on what could best explain the process well.
+      </span>
 
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">7. Validation through Observational Studies</p>
-    <p style="margin-top: 0;">Used observational research and team feedback to identify bottlenecks and adjust the workflow as needed.</p>
-</div>
-
-<div style="padding: 1rem; display: flex; flex-direction: column; align-items: center; margin-top: 0;">
-  <p style="color: var(--tertiary-dark); font-weight: bold; margin-bottom: 0.5rem;">8. Finalizing a Flexible Blueprint</p>
-    <p style="margin-top: 0;">Delivered a tested, adaptable service blueprint balancing creative freedom with operational discipline, reusable for future projects.</p>
-</div>
-
-</div>
-
-
-    <h3 style="color: var(--tertiary-dark); margin-bottom: 20px;">Design Process</h3>
-
-    <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">Ecosystem Map</h4>
-
-    <img src="../../assets/images/previz/ecosystem.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/ecosystem.png')">
-
-    <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">Logical Service Flow</h4>
-
-    <img src="../../assets/images/previz/swimlane.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/swimlane.png')">
-
-    <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">Sample Flow</h4>
 
     <!-- Director + Editor -->
     <p style="margin-bottom: 1rem;">
-      Director + Editor: Select visual references and define tone/pacing.
+      Director + Editor: selected visual references and defined tone and pacing. 
     </p>
 
     <img src="../../assets/images/previz/clientref.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('../../assets/images/previz/clientref.png')">
 
     <!-- Design Team Lead -->
     <p style="margin-top: 2rem; margin-bottom: 1rem;">
-      PM/Design Team Lead: Defined work roles and assignments for designers between asset breakdown and sketching/generation.<br>
+      PM & Design Team Lead: assigned work roles, breaking down assets and tasks for designers. Here, Red is to be removed, Green is to be kept.<br>
     </p>
 
     <img src="../../assets/images/previz/layer-break.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('../../assets/images/previz/layer-break.png')">
 
     <!-- Designer -->
     <p style="margin-top: 2rem; margin-bottom: 1rem;">
-      Designers: Sketch Artist make the characters and Graphic Designers generate backgrounds/foreground elements using Gen-AI, including physical objects, non-diegetic light sources, and environmental effects and phenomena.
+      Designers: used Gen-AI to mass-produce options and variants for environments, effects, and usable props while Sketch Artists made foreground elements and designed characters.
     </p>
 
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
@@ -164,7 +170,7 @@
 
     <!-- All -->
     <p style="margin-top: 2rem; margin-bottom: 1rem;">
-      Design team Lead: Composits various passes to assess Quality,  then provides Export organized, ready-to-animate file sets to the editor.
+      Design Lead: provided complete sets of composited images to PM; and provided organized, ready-to-animate file sets for the video editor.
     </p>
 
     <!-- Row 2: Mini div of three images in a row -->
@@ -177,51 +183,41 @@
     <h3 style="color: var(--tertiary-dark); margin-bottom: 20px;">Service Blueprint</h3>
 
     <p style="text-align:left; margin-bottom: 1rem;">
-      This image represents the initial service blueprint I developed for the AI-assisted video production workflow. It was created following extensive testing with both test users and varied employees at our various internal departments, and was finalized based on insights gathered during a real-time client project.
-      <br><br>
-      The process depicted here has been rigorously validated over a 2.5-month period through research, observational studies, and collaborative feedback sessions. Since its formal adoption, the workflow continues to be used in practice with minor changes due to evolving software integrations, tech updates, and niche requirements encountered during projects.
-      <br><br>
-      This blueprint therefore reflects a thoroughly tested, real-world process. It provides a stable foundation while remaining flexible enough to accommodate the dynamic needs of current/future projects.
+      The final blueprint reflects a tested system that balances operational discipline with creative freedom. 
+      The process depicted here has been rigorously validated over a 2.5-month period through research, observational studies, 
+      and workshops I facilitated. 
+      It documents workflows, responsibilities, handoffs, and AI integration in a human-centered way. 
+      Since its adoption, it has been actively used with minor updates to accommodate AI tool improvements and project-specific needs.
     </p>
 
     <img src="../../assets/images/previz/Service.webp" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/Service.png')">
     
     <h3 style="color: var(--tertiary-dark); margin-bottom: 20px;">Impact & Future Considerations</h3>
 
-<div class="contentgrid">
+    <p>
+      The outcomes were tangible:
+    </p>
+
+<div id="ExpGrid" class="contentgrid">
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="margin-top:1rem; text-align:center;">
-      Directors can genuinely participate in visualizing with limited funding.
-    </h4>
+    <h6 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">
+      Directors could visualize concepts efficiently, even on limited budgets.
+    </h6>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="margin-top:1rem; text-align:center;">
-      Teams work aligned and efficiently with fewer revisions.
-    </h4>
+    <h6 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">
+      Teams worked more aligned and efficiently, reducing revisions.
+    </h6>
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="margin-top:1rem; text-align:center;">
-      Reusable foundation for future director-focused services
-    </h4>
+    <h6 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">
+      A reusable foundation for future pre-production services.
+    </h6>
   </div>
 
-</div>
-
-    <h4 style="color: var(--tertiary-dark); margin-bottom: 1rem;">Considerations for the Future</h4>
-
-<div class="contentgrid">
-
-<div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-<h4 style="margin-bottom:1rem;">Continuous tech updates and niche project needs will require minor workflow adaptations.
-</h4>
-</div>
-
-<div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-<h4 style="margin-bottom:1rem;">Plans included expanding existing resources, integrating more AI tools, and extending the blueprint to related pre-production services.</h4>
-</div>
 </div>
 
   </div>
@@ -237,8 +233,17 @@
     <div style="min-width: 300px; padding: 2rem; background-color: transparent;">
       <h2 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h2>
       <p style="color: var(--white); margin-bottom: 0;">
-        This project focused on a clear, repeatable workflow creation that lets creators/ideators turn ideas quickly into videos using the help of a skilled design team plus AI without relying too much on either. An unhealthy balance on either might be harmless at first, but when something goes wrong or you have to redo from scratch, directors often end up with a financial as well as a mental strain.
-      </p>
+  Experimenting early with Gen-AI reinforced a key lesson; innovation only succeeds when paired with belief, iterative testing, and human-centered design.
+</p>
+
+<p style="color: var(--white); margin-bottom: 0;">
+  Returning to the studio allowed me to apply both UX and service design skills entirely within internal processes, delivering measurable impact in a short timeframe and successfully completing a project that validated the approach.
+</p>
+
+<p style="color: var(--white); margin-bottom: 0;">
+  This project focused on a clear, repeatable workflow creation that lets creators/ideators turn ideas quickly into videos using the help of a skilled design team assisted by AI.
+</p>
+
     </div>
   </div>
 </section>
