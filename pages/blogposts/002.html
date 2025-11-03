@@ -80,7 +80,7 @@
 <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, what was the Problem?</h3>
 
 <h4 style="color: var(--black);">
-  In the version available to me (pictured below), beneficiaries were separated by transaction type and hidden behind large filter cards. Users had to click a button labeled View to see the table update below.
+In the version available to me (pictured below), beneficiaries were separated by transaction type and hidden behind large filter cards. Users had to click a button labeled View to see the table update below. I’m still not sure what TPT is supposed to stand for.
 </h4>
 
 <div class="phot-item">
@@ -90,7 +90,11 @@
 </div>
 
 <h4 style="color: var(--black);">
-  They basically took the transfer menu (pictured below), copy-pasted it into the beneficiary section, and changed the Go button to View. That was it. All they had to do was create a table with usable filters.
+  They basically took the transfer menu (pictured below), copy-pasted it into the beneficiary section, and changed the Go button to View. That was it. But... But... All they had to do was create a table with filters like pretty much every dashboard I've ever used.
+</h4>
+
+<h4 style="color: var(--black);">
+However, havign spent many afternoons debating the effects of cognitive biases on experience designers, I decided to put my idea to the test.
 </h4>
 
 <div class="phot-item">
@@ -103,21 +107,43 @@
 <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">And, why is this important?</h3>
 
 <h4 style="color: var(--black);">
-  This is important in India. Adding a new beneficiary requires OTP authentication, small transfers up to fifty thousand rupees may work immediately, full transfer limits take thirty minutes to twenty-four hours depending on transaction type and account, and transfers to beneficiaries who are not active always fail. The old interface did not make any of this obvious, leaving users confused and prone to failed transactions.
+I live in Toronto, where creating a recipient and sending an e-transfer takes less than five minutes. In India and many other countries, the process is far more complex. Many Indian nationals living abroad still need to manage funds in their Indian bank accounts. Adding a new beneficiary requires OTP authentication. Small transfers up to fifty thousand rupees may work immediately, but full transfer limits can take anywhere from thirty minutes to twenty-four hours depending on the transaction type and account. Transfers to inactive beneficiaries always fail. The old interface offered no guidance on these rules, leaving users confused and prone to failed transactions.
 </h4>
 
 <h4 style="color: var(--black);">
-  Essentially, when you implement something in a country, you need to be mindful of the general bank regulations and ways things are done there. No one can implement a banking software in a Middle Eastern bank without properly understanding Islamic banking.
+Even if I had added a beneficiary a long time ago, I might not remember whether I could only make an IMPS, RTGS, or NEFT transfer, or whether their account is in the same bank as mine.
 </h4>
 
 <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, what did I do?</h3>
 
 <h4 style="color: var(--black);">
-  I redesigned the screen. A conceptual design; I am not associated with HDFC Bank, other than as a customer for a very very very long time. The new design shows all beneficiaries in a single, sortable table by default. Each row has a smart chip showing which transactions are allowed and whether the beneficiary is active. Filters are still there, but now follow a dashboard-style SaaS layout. Users can narrow results without hiding information.
+  I redesigned the screen. A conceptual design; I am not associated with HDFC Bank, other than as a customer for a very very very long time. 
+  The new design shows all beneficiaries in a single, sortable table by default. 
+  Each row has a smart chip showing which transactions are allowed and whether the beneficiary is active. 
+  Filters are still there, but now follow a dashboard-style SaaS layout. 
+  Tooltips on the Transact cards provide contextual guidance, letting users know which actions are possible and prompting them to check activation status.
 </h4>
+    
+    <h4 style="color: var(--black);">  
+      To test it, I built an interactive prototype with a short task to keep things engaging. 
+      Participants were asked to transfer funds to A. Balan (beneficiary no. 3, highlighted in the mockup). Five of the eight clicked the tooltip first, then checked whether the person was activated. 
+      The tooltip led them to the Request tab on the sidebar: the same place the original app stores the List of Beneficiaries.
+    </h4>
+
+    <div class="phot-item" style="margin: 2rem 0;">
+
+      <div style="overflow: hidden; max-width: 900px;">
+        <img src="../../assets/images/hdfc/Step 2.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      </div>
+
+    </div> 
+
+    <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+      From here, they could access the List of Beneficiaries.
+    </h5>
 
 
-    <div class="phot-item">
+    <div class="phot-item" style="margin: 2rem 0;">
 
       <div style="overflow: hidden; max-width: 900px;">
         <img src="../../assets/images/hdfc/Step 3.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
@@ -125,34 +151,52 @@
 
     </div>
 
-    <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Why This Works</h3>
+    <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+      After confirming activation, they returned and clicked Transfer Now, knowing exactly which transaction type would succeed.
+    </h5>
+
+    <h4 style="color: var(--black);">  
+      To mimic the banking process, I had set something up. 
+      In my prototype, a beneficiary would only turn active if the participant opened the View/Delete Beneficiaries section and waited a few seconds. 
+      The Transfer Now button stayed disabled until that happened, mimicking the real delay logic.
+    </h4>
+
+    <h4 style="color: var(--black);">  
+      It worked as a concept (helped by the tooltip feature I’d added, which the real app never had).
+      Two of the eight said they wouldn’t have checked otherwise. 
+      That revealed something I was not looking for: users rarely troubleshoot inactive beneficiaries unless prompted. 
+      A small contextual nudge can close that awareness gap far better than a major redesign.
+    </h4>
+    
+    
+      <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, Why does my Idea Work?</h3>
 
     <h4 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
-  <span class="stylized-num">01&nbsp;</span> Showing all items at once helps users avoid extra clicks and confusion.
+  <span class="stylized-num">01&nbsp;</span> Fewer clicks mean fewer chances to get lost.
 </h4>
 <h4 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
-  <span class="stylized-num">02&nbsp;</span> Smart visual indicators like chips make permissions clear at a glance.
+  <span class="stylized-num">02&nbsp;</span> Smart visual cues clarify permissions.
 </h4>
 <h4 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
-  <span class="stylized-num">03&nbsp;</span> Copying interactions from unrelated screens can hurt usability. Context matters.
+  <span class="stylized-num">03&nbsp;</span> Context matters more than consistency.
 </h4>
 <h4 style="color: var(--tertiary-dark); margin-top:0.25rem; margin-bottom: 0.25rem;">
-  <span class="stylized-num">04&nbsp;</span> A clean dashboard-style layout makes even complex rules intuitive.
+  <span class="stylized-num">04&nbsp;</span> A clean, dashboard-style layout makes rules feel simple.
 </h4>
 
-
-    <div style="padding: 2rem;"></div>
+<h4 style="color: var(--black); margin-bottom:1rem; font-weight: bold;">
+  Minor changes work. This project shows that small, deliberate adjustments, such as adding a filtered table or contextual tooltips, can make the interface more clear and usable while boosting user confidence. Thoughtful tweaks grounded in real user behavior and context often have an outsized impact, proving that a complete overhaul is not always necessary to make an experience more intuitive and satisfying.
+</h4>
 
     <hr style="border: none; height: 2px; background-color: var(--border-light); margin: 2rem auto 4rem auto;">
 
 
-    <h4>
-      This project focuses on one minor change that improved a screen’s clarity and usability. 
-      Yes, in this particular scenario, the app was aesthetically unpleasing so I changed that as well; nevertheless, done with input from multiple banking software functional systems design and implementation specialists.
-      However, the minor change, of making a table with filters, as opposed to whatever it is that you call what they already had, reflects my approach to product design, where small, deliberate adjustments are guided by user needs and context. 
-      I’m exploring similar improvements across different SaaS products, each informed by careful observation and reasoning. 
-      Together, these projects demonstrate how thoughtful design decisions can create more intuitive and satisfying user experiences.
-    </h4>
+    <p>
+      I say "minor changes," but in this particular situation, I felt the app could do with the makeover. 
+      The key improvement, creating a table with filters instead of the original layout & creating tool tips, reflects my approach to product design, where small, deliberate adjustments are informed by user needs and context. 
+      I’m looking at different SaaS products and will be showing how even minor changes can lead to major impact; 
+      for I believe in "Making Everyday interactions feel Effortless and Intentional". 
+    </p>
 
     <div style="padding: 2rem;"></div>
 
@@ -171,7 +215,7 @@
 
     <p style="color: var(--black); margin-bottom: 1rem;">
       Buoy AI's chatbot had problems; not with understanding and assessing me, but with getting the correct data from me:
-       Breaking atleast 3 of Nelson's Usability Heuristics. Read how I found and solved it.
+       Breaking atleast 3 of Nelson's Usability Heuristics. Read how I found and solved it. Another Minor change for Major impact!
     </p>
 
     <button button class="contact-btn" 
