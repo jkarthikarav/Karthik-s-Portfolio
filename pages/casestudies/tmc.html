@@ -108,25 +108,6 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
   </div>
 
   <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">6 of 8</h4>
-    <p style="text-align:center; margin-top:0;">Participants consistently grouped general museum information under About Us or similar categories.</p>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">2</h4>
-    <p style="text-align:center; margin-top:0;">Participants hesitated with ambiguous pages like <em>TXTilecity</em> and <em>Cloth Clay</em>, indicating the need for clearer labeling or context.</p>
-  </div>
-
-</div>
-
-<div class="contentgrid">
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">32</h4>
-    <p style="text-align:center; margin-top:0;">Pages audited, revealing issues with organization, outdated information, and inconsistent titles.</p>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">3</h4>
     <p style="text-align:center; margin-top:0;">Areas with incomplete or unclear information: volunteer positions, job/internship opportunities, and health & safety updates.</p>
   </div>
@@ -137,30 +118,6 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
   </div>
 
 </div>
-
-<h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Key Findings</h3>
-
-<div class="contentgrid"> 
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">Overlapping categories and vague menu labels</h4>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">Struggled to locate subpages</h4>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">Hamburger menu obscured navigation</h4>
-  </div>
-
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
-    <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">Accessibility issues with color contrast</h4>
-  </div>
-
-</div>
-
-      
 
   </div>
   </div>
@@ -212,7 +169,7 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
     <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Testing out the IA</h3>
 
     <p>
-      To validate our proposed Information Architecture, we conducted a small-scale tree test using OptimalSort with 10 participants who completed 6 navigation tasks. 
+      To validate our proposed Information Architecture, we conducted tests using OptimalSort and Treejack with 10 participants who completed 6 navigation tasks. 
       Our goal was to understand how users interpreted and located content within the proposed structure, separate from the website’s existing menu design. 
     </p>
 
@@ -237,9 +194,33 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
 
 </div>
 
-      <h2 style="color: var(--tertiary-dark); margin-bottom:1rem;">And this all we were supposed to do!</h2>
+  <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">But, was the IA, the real issue on the website?</h3>
 
+  <p>
+    Our attention moved to the Hamburger Menu on the website's desktop version. 
+    A Hamburger menu is quite common on mobile, but for desktop? 
+    Way back in 2016/17, articles/videos by the Nielsen Norman Group told us this:
+  </p>
 
+  <p>
+    &nbsp;&nbsp;•&nbsp;&nbsp;A Hamburger menu is “more likely to reduce content discoverability on desktop”; and
+  </p> 
+
+  <p>
+    &nbsp;&nbsp;•&nbsp;&nbsp;Mega Menus are an “excellent design choice for accommodating a large number of options or for revealing lower-level site pages at a glance”.
+  </p>
+
+  <h4 style="color: var(--tertiary-dark); margin-bottom:1rem;">Therefore we opted to convert the navigation menu into a mega menu.</h4>
+
+  <p>
+    But, the Mental Models of the Textile Museum’s users are probably made up by now, and a drastic change such as the mega menu could be counter-intuitive.
+  </p>
+
+  <p>
+    We were making mid-fidelity wireframes to showcase our IA for the presentation, so I thought it would be better to isolate cause and effect 
+    by <strong>implementing the IA separately from the navigation menu’s switch into a mega menu</strong>. 
+    This would help us (and the Textile Museum) attribute improvements in user success to the correct intervention.
+  </p>
     </div>
   </div>
 </section>
@@ -250,10 +231,10 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
   <!-- Section Header -->
   <div style="max-width: 80vw;">
 
-    <h3 style="color: var(--primary);margin-bottom:1rem;">Visual Designing</h3>
+    <h3 style="color: var(--primary);margin-bottom:1rem;">Designing the Solution</h3>
 
   <p style="color: var(--neutral-main); margin-bottom: 20px;">
-    We used Balsamiq to create Mid-Fidelity Wireframes for the Desktop and Mobile versions of the Textile Museum of Canada website.
+    We used Balsamiq to create Mid-Fidelity Wireframes for the Desktop and Mobile versions.
   </p>
 
   <div class="image-row-tmc">
@@ -266,7 +247,7 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
      style="cursor: pointer;" />  </div>
 
   <p style="color: var(--neutral-main); margin-bottom: 20px;">
-    Both sets of High fidelity UI screens were designed by myself, with input from Coral and Milica (My team members).
+    Both sets of High fidelity UI screens for the desktop were designed in Figma.
   </p>
 
   <!-- Single image: full width -->
@@ -362,55 +343,27 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
 
 </section>
 
-<section style="padding:2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
-
-  <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start;">
-
-    <div class="post-content">
-
-<h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Ensuring Data-Driven Adjustments after Implementation</h3>
-
-    
-    <p>
-      This is why I proposed a phased implementation and testing strategy:
-    </p>
-    
-    <p>
-      While the card sort and tree testing were done by the entire team, I personally created the visual navigation menus, informed by our research.
-      While aiming to isolate cause and effect, I could get genuinely actionable next steps for stakeholders.
-      By implementing IA separately from the navigation menu's redesign, we can attribute improvements in user success to the correct intervention. 
-      This approach, while more complex, prevents wasted resources, builds client trust, and ensures that future design decisions are always data-driven.
-    </p>
-
-
-
-
-
-    </div>
-  </div>
-</section>
-
-<section style="position: relative; padding: 4rem 2rem; background-color: var(--tertiary-dark);">
+<section class="learn">
   <!-- Black overlay -->
-  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7);"></div>
+  <div class="black-over"></div>
 
   <!-- Main content container -->
-  <div style="position: relative; display: flex; flex-direction: column; gap: 2rem; align-items: flex-start; justify-content: space-between;">
+  <div class="mcc">
 
-    <div style="min-width: 300px; padding: 2rem; background-color: transparent;">
-      <h2 style="color: var(--primary); margin-bottom: 1rem;">What I Learned</h2>
-      <p style="color: var(--white); margin-bottom: 2rem;">
+    <div class="mmc-content">
+      <h2>What I Learned</h2>
+      <h4>
         The goal of this project was to create a clear, accessible IA to help people discover and navigate the Textile Museum of Canada’s collections, exhibitions, and events.
-        <br><br>
-        The project strengthened my ability to prioritize features and content for maximum impact, showing that building trust online comes from a simple and transparent digital experience.
-      </p>
+      </h4>
 
         <!-- Takeaway -->
-        <div class="takeaway" style="padding: 1rem; background-color: transparent;">
-          <p style="color: var(--primary); font-size: 16px; margin-bottom: 0;">Key Takeaway: User Needs AND Business Goals, not OR</p>
-          <div style="height: 1px; background-color: var(--neutral-main); width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;"></div>
-          <p style="color: var(--white);">
-            A phased plan ensured user needs and business goals were met, with measurable improvements clearly linked to specific changes.
+        <div class="takeaway">
+          <h5>
+            Key Takeaway: Avoid Cognitive Biases and the Need for Real-time Data to test out Ideas</h5>
+          <div></div>
+          <p>
+            I realized that what seemed clear to us as designers wasn’t always clear to users.
+            Only by testing the IA, without the visual design of the Textile Museum's branding guide, did I see where our assumptions might fail.
           </p>
         </div>
 

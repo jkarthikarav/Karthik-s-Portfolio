@@ -80,90 +80,128 @@
 <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, what was the Problem?</h3>
 
 <h4 style="color: var(--black);">
-In the version available to me (pictured below), beneficiaries were separated by transaction type and hidden behind large filter cards. Users had to click a button labeled View to see the table update below. I’m still not sure what TPT is supposed to stand for.
+In the version available to me (pictured below), beneficiaries were separated by transaction type and hidden behind large filter cards. 
+Users had to click a button labeled View to see the table update below. 
+I’m still not sure what 'TPT' is supposed to stand for.
 </h4>
 
-<div class="phot-item">
-  <div style="overflow: hidden; max-width:600px;">
-    <img src="../../assets/images/hdfc/before-bene-list.png" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-  </div>
-</div>
+<div class="wp-fig-flex">
+  <figure class="wp-fig-item">
+    <img 
+      src="../../assets/images/hdfc/before-bene-list.png" 
+      alt="Supporting Graphic" 
+      style="width:100%; height:auto; border-radius:6px;" 
+    />
+    <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
+      List of Beneficiaries Screen - original
+    </figcaption>
+  </figure>
 
-<h4 style="color: var(--black);">
-  They basically took the transfer menu (pictured below), copy-pasted it into the beneficiary section, and changed the Go button to View. That was it. But... But... All they had to do was create a table with filters like pretty much every dashboard I've ever used.
-</h4>
-
-<h4 style="color: var(--black);">
-However, havign spent many afternoons debating the effects of cognitive biases on experience designers, I decided to put my idea to the test.
-</h4>
-
-<div class="phot-item">
-  <div style="overflow: hidden; max-width:600px;">
-    <img src="../../assets/images/hdfc/Funds.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-  </div>
+  <figure class="wp-fig-item"></figure> <!-- Unfilled Dummy for ensuring flex dimensions -->
 </div>
 
 
-<h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">And, why is this important?</h3>
-
 <h4 style="color: var(--black);">
-I live in Toronto, where creating a recipient and sending an e-transfer takes less than five minutes. In India and many other countries, the process is far more complex. Many Indian nationals living abroad still need to manage funds in their Indian bank accounts. Adding a new beneficiary requires OTP authentication. Small transfers up to fifty thousand rupees may work immediately, but full transfer limits can take anywhere from thirty minutes to twenty-four hours depending on the transaction type and account. Transfers to inactive beneficiaries always fail. The old interface offered no guidance on these rules, leaving users confused and prone to failed transactions.
+  They basically took the transfer menu (pictured below), copy-pasted it into the beneficiary section, and changed the Go button to View. 
+  That was it. 
+  But... But... All they had to do was create a table with filters like pretty much every dashboard that ever exists. Way to go with the 
+  <a href="https://www.nngroup.com/videos/mental-models/" target="_blank">Mental Model</a> here, eh?
 </h4>
 
 <h4 style="color: var(--black);">
-Even if I had added a beneficiary a long time ago, I might not remember whether I could only make an IMPS, RTGS, or NEFT transfer, or whether their account is in the same bank as mine.
+  However, having spent many afternoons debating the effects of cognitive biases on experience designers, I decided to put my idea to the test.
+</h4>
+
+<div class="wp-fig-flex">
+  <figure class="wp-fig-item">
+    <img 
+      src="../../assets/images/hdfc/Funds.webp" 
+      alt="Funds Transfer Screen - Original" 
+      style="width:100%; height:auto; border-radius:6px;" 
+    />
+    <figcaption style="color:var(--black); font-size:0.9rem; margin-top:0.5rem;">
+      Funds Transfer Screen - Original
+    </figcaption>
+  </figure>
+
+  <figure class="wp-fig-item"></figure> <!-- Unfilled Dummy for ensuring flex dimensions -->
+</div>
+
+
+<h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Before we go into this, Karthik, Why is this important?</h3>
+
+<h4 style="color: var(--black);">
+In India and many other countries, the process is needlessly complex. 
+
+Adding a new beneficiary requires OTP authentication. 
+
+Small transfers up to fifty thousand rupees may work immediately, but full transfer limits can take anywhere from thirty minutes to twenty-four hours depending on the bank and transaction type. 
+
+Transfers to inactive beneficiaries always fail. <strong>The existing interface offers no guidance on these rules</strong>, except as a small note in the List of Beneficiaries screen (and not in the Funds Transfer screen, where it is really necessary?).
+</h4>
+
+<h4 style="color: var(--black);">
+A Simple pop up or tool tip on the Funds Transfer screen to remind the user to check whether their intended recipient is activated/enabled or not would be nice, wouldn't it?
+</h4>
+
+<h4 style="color: var(--black);">
+I live in Toronto, Canada and in any Canadian bank, say RBC (which I use), will let me add a recipient for an e-transfer instantly and send money to them, the literal moment after I create them.
+</h4>
+
+<h4 style="color: var(--black);">
+I also use HDFC bank regularly and I did know of the thirty minute cooldown before. However, Even if I had added a beneficiary a long time ago, I might not remember whether I could only make an IMPS transaction or whether their account is in the same bank as mine.
 </h4>
 
 <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">So, what did I do?</h3>
 
 <h4 style="color: var(--black);">
-  I redesigned the screen. A conceptual design; I am not associated with HDFC Bank, other than as a customer for a very very very long time. 
+  I redesigned the screen. A conceptual design; I am not associated with HDFC Bank, other than as a customer. 
   The new design shows all beneficiaries in a single, sortable table by default. 
   Each row has a smart chip showing which transactions are allowed and whether the beneficiary is active. 
   Filters are still there, but now follow a dashboard-style SaaS layout. 
-  Tooltips on the Transact cards provide contextual guidance, letting users know which actions are possible and prompting them to check activation status.
+  Meanwhile, Tooltips on the Transact cards provide contextual guidance, letting users know which actions are possible and prompting them to check activation status.
 </h4>
     
     <h4 style="color: var(--black);">  
       To test it, I built an interactive prototype with a short task to keep things engaging. 
-      Participants were asked to transfer funds to A. Balan (beneficiary no. 3, highlighted in the mockup). Five of the eight clicked the tooltip first, then checked whether the person was activated. 
-      The tooltip led them to the Request tab on the sidebar: the same place the original app stores the List of Beneficiaries.
+      Participants who had never used HDFC's app before and therefore did not know of the HDFC bank's cooldown were picked. 
+      They were asked to transfer funds to A. Balan (beneficiary no. 3, highlighted in the mockup). 
+      Five of the eight, realized that they didn't know what kind of bank account the recipient had. 
+      Clicking the tooltip led them to the Request tab on the sidebar: the same place the original netbanking app contains the List of Beneficiaries screen.
     </h4>
 
-    <div class="phot-item" style="margin: 2rem 0;">
-
-      <div style="overflow: hidden; max-width: 900px;">
-        <img src="../../assets/images/hdfc/Step 2.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-      </div>
-
-    </div> 
-
-    <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+<div class="wp-fig-flex">
+  <figure class="wp-fig-item">
+    <img 
+      src="../../assets/images/hdfc/Step 2.webp" 
+      alt="From here, they could access the List of Beneficiaries." 
+      style="width:100%; height:auto; border-radius:6px;" 
+    />
+    <figcaption style="color:var(--tertiary-dark); font-size:0.9rem; margin-top:0.5rem;">
       From here, they could access the List of Beneficiaries.
-    </h5>
+    </figcaption>
+  </figure>
 
-
-    <div class="phot-item" style="margin: 2rem 0;">
-
-      <div style="overflow: hidden; max-width: 900px;">
-        <img src="../../assets/images/hdfc/Step 3.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-      </div>
-
-    </div>
-
-    <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+  <figure class="wp-fig-item">
+    <img 
+      src="../../assets/images/hdfc/Step 3.webp" 
+      alt="After confirming activation, they returned and clicked Transfer Now, knowing exactly which transaction type would succeed." 
+      style="width:100%; height:auto; border-radius:6px;" 
+    />
+    <figcaption style="color:var(--tertiary-dark); font-size:0.9rem; margin-top:0.5rem;">
       After confirming activation, they returned and clicked Transfer Now, knowing exactly which transaction type would succeed.
-    </h5>
+    </figcaption>
+  </figure>
+</div>
 
     <h4 style="color: var(--black);">  
       To mimic the banking process, I had set something up. 
-      In my prototype, a beneficiary would only turn active if the participant opened the View/Delete Beneficiaries section and waited a few seconds. 
-      The Transfer Now button stayed disabled until that happened, mimicking the real delay logic.
+      In my prototype, the beneficiaries would only turn active if the participant opened the View/Delete Beneficiaries section and waited a few seconds. 
+      The correct Transfer Now button for their target transaction stayed disabled until that happened.
     </h4>
 
     <h4 style="color: var(--black);">  
-      It worked as a concept (helped by the tooltip feature I’d added, which the real app never had).
-      Two of the eight said they wouldn’t have checked otherwise. 
+      My experiment was successful, Two of the eight said they wouldn’t have checked otherwise. 
       That revealed something I was not looking for: users rarely troubleshoot inactive beneficiaries unless prompted. 
       A small contextual nudge can close that awareness gap far better than a major redesign.
     </h4>
@@ -185,7 +223,7 @@ Even if I had added a beneficiary a long time ago, I might not remember whether 
 </h4>
 
 <h4 style="color: var(--black); margin-bottom:1rem; font-weight: bold;">
-  Minor changes work. This project shows that small, deliberate adjustments, such as adding a filtered table or contextual tooltips, can make the interface more clear and usable while boosting user confidence. Thoughtful tweaks grounded in real user behavior and context often have an outsized impact, proving that a complete overhaul is not always necessary to make an experience more intuitive and satisfying.
+  Minor changes work. This experiment shows that small, deliberate adjustments, such as adding a filtered table or contextual tooltips, can make the interface more clear and usable while boosting user confidence. Thoughtful tweaks grounded in real user behavior and context often have an outsized impact, proving that a complete overhaul is not always necessary to make an experience more intuitive and satisfying.
 </h4>
 
     <hr style="border: none; height: 2px; background-color: var(--border-light); margin: 2rem auto 4rem auto;">
