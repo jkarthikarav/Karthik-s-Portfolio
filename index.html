@@ -21,12 +21,6 @@
   <style>
      /* For screens under 1000px */
   @media (max-width: 1200px) {
-    h3 {
-      font-size: 24px;
-    }
-    p {
-      font-size: 15px;
-    }
     .ed-qual {
       display:none;
     }
@@ -34,15 +28,6 @@
 
   /* For mobile (under 600px is a common breakpoint) */
   @media (max-width: 600px) {
-    h2 {
-      font-size: 24px;
-    }
-    h3 {
-      font-size: 18px;
-    }
-    h4 {
-      font-size: 16px;
-    }
     .ed-qual {
       display:none;
     }
@@ -64,11 +49,11 @@
     
     <div class="hero-banner-lvl1 fade-up">
 
-      <h3>
+      <h1>
         <span id="greeting"></span> 👋 I'm 
         <span class="nametag">Karthik Jambunathan</span>
         <span class="ed-qual">MI, MSc</span>
-      </h3>
+      </h1>
 
       <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank"
         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
@@ -102,6 +87,13 @@
         View Random Project
       </button>
 
+      <button class="contact-btn"
+      style="background: var(--tertiary-light); color: var(--neutral-main); border: none;"
+      onclick="window.open('work.html', '_blank');">
+      <span class="label">View All Work</span>
+      <span style="display: inline-block; margin-left: 3px;">→</span>
+    </button>
+
     </div>
 
   </div>
@@ -114,102 +106,125 @@
     Featured Work
   </h2>
 
-  <div class="hero-button-row2 fade-down">
-    <button class="contact-btn"
-      style="background: none; color: var(--white); border: none;"
-      onclick="window.open('work.html', '_blank');"
-      onmouseover="this.querySelector('.label').style.textDecoration='underline'"
-      onmouseout="this.querySelector('.label').style.textDecoration='none'">
-      <span class="label">View All Work</span>
-      <span style="display: inline-block; margin-left: 3px;">→</span>
-    </button>
-  </div>
+<div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; padding: 0 2rem;">
 
-  <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 80vw; justify-content: center;">
+<!-- Clickable Image -->
+<div class="phot-item fade-left" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
+
+  <a href="/pages/casestudies/eceHome.html" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/hero-banners/ece.webp" style="width: 100%; height: auto; object-fit: contain; display: block;" />
+  </a>
+
+</div>
 
 <!-- Card: ECE Website Homepage Redesign – University of Toronto -->
-<div class="fade-left CaseStudyGrid-item">
-  <div class="CaseStudyGrid-item-inner">
-    
-    <!-- Clickable Image -->
-    <div class="case-study-card-image"
-         onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
-      <img src="assets/logos/Company/Logo_VD_5.jpg" alt="ECE Website Production University of Toronto">
-    </div>
-
-    <!-- Card Content -->
-    <div class="case-study-content-area">
-      <p>Shipped January 2025 • Web Dev · UI/UX</p>
-      <h4>
+<div class="fade-left CaseStudyGrid-item-home">
+  <div class="case-study-content-area">
+    <p>UX/UI Designer & Web Developer • Shipped Jan 2025 · Iterative Updates made Mar 2025 • Worked with department admin and marketing teams</p>
+    <h3>
         ECE Homepage Redesign: University of Toronto, ECE Department
-      </h4>
-      <p class="cntnt">
-      Homepage redesign project, including mockups and implementation, for improving accessibility, usability, and visual consistency.
-      </p>
+    </h3>
 
-      <!-- Buttons Row -->
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
+    <p class="cntnt">
+      Turning an academic homepage into a student recruitment portal
+    </p>
+
+
+    <h4>
+      Overview
+    </h4>
+
+    <p class="cntnt">
+      Redesigned and implemented the University of Toronto ECE Department homepage. 
+      Conducted UX research, created wireframes and mockups in Figma, iterated with stakeholders, and built the final modular site on WordPress 
+      with animations and custom CSS/JS. 
+      The goal was to modernize content, highlight programs and research, and create an engaging experience for prospective students.
+    </p>
+
+    <p class="cntnt">
+      #UIUXDesign #WebDevelopment
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="contact-btn home-btn"
                 onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
           View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
         </button>
-      </div>
     </div>
   </div>
 </div>
 
-  <!-- Card: Service Design for Film Pre-Production -->
-<div class="fade-left CaseStudyGrid-item">
-  <div class="CaseStudyGrid-item-inner">
+<!-- TMC IA Redesign -->
+<div class="phot-item fade-left" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
+  <a href="/pages/casestudies/tmc.html" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/hero-banners/tmc-banner.webp"
+         style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+         alt="Textile Museum IA Redesign" />
+  </a>
+</div>
+
+  <!-- Card: Textile Museum -->
+<div class="fade-left CaseStudyGrid-item-home">
     
-    <!-- Clickable Image -->
-    <div class="case-study-card-image"
-         onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
-      <img src="assets/logos/TMC.png" alt="IA Redesign for Textile Museum of Canada">
-    </div>
+  <div class="case-study-content-area">
+    <p>UX Researcher (Team Project) • Presented Nov 2023 • Worked with a small team, and presenting our insights and designs to museum staff including CEO Kirsten Kamper and Caitlin Donnelly</p>
 
-    <!-- Card Content -->
-    <div class="case-study-content-area">
-      <p>Presented Nov 2023 • 6 Weeks • UXR · IA</p>
-      <h4>
-        IA and Navigation Menu Redesign: Textile Museum
-      </h4>
-      <p class="cntnt">
-        Redesign of the Textile Museum of Canada Website’s Information Architecture and Navigation, which was presented to The Textile Museum Board.
-      </p>
+<h3>IA and Navigation Menu Redesign: Textile Museum of Canada</h3>
 
-      <!-- Single Button -->
-      <div style="margin-top: 5px;">
-        <button class="contact-btn home-btn"
-                onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
-          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
-        </button>
-      </div>
+<p class="cntnt">
+  Redesigned the Information Architecture to improve content discoverability, accessibility, and user engagement
+</p>
+
+<h4>Overview</h4>
+<p class="cntnt">
+  Redesigned the website’s information architecture to make key content easier to find, streamline navigation, and support ticketing, donations, and program discovery. Conducted card sorting, content audits, and tree testing to validate the structure. Designed mid- and high-fidelity wireframes for desktop and mobile, and proposed a phased implementation separating IA changes from navigation redesign to gather actionable insights.
+</p>
+
+<p class="cntnt">
+  #UXResearch #InformationArchitecture
+</p>
+
+
+    <!-- Single Button -->
+    <div style="margin-top: 5px;">
+      <button class="contact-btn home-btn"
+        onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
+        View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+      </button>
     </div>
   </div>
+</div>
+
+<!-- Mobile App for Ticket Deals -->
+<div class="phot-item fade-left" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
+  <a href="/pages/casestudies/mobileUXR.html" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/hero-banners/exptor-banner.webp"
+         style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+         alt="Mobile App for Ticket Deals" />
+  </a>
 </div>
 
 <!-- Card: UX Research & Mobile App Design -->
-<div class="fade-left CaseStudyGrid-item">
-  <div class="CaseStudyGrid-item-inner">
-    
-    <!-- Clickable Image -->
-    <div class="case-study-card-image"
-         onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');">
-      <img src="assets/images/exptor/exptor-card-banner.webp" alt="UX Research & Mobile App Design for Museum Ticket Deals">
-    </div>
+<div class="fade-left CaseStudyGrid-item-home">    
 
-    <!-- Card Content -->
     <div class="case-study-content-area">
-      <p>
-        Presented Dec 2023 • Mobile · Product Design
-      </p>
-      <h4>
-        Mobile App for Ticket Deals
-      </h4>
-      <p class="cntnt">
-        Conducted research to design a mobile-first platform to centralize museum ticket deals. Conducted UX research, created personas, and developed high-fidelity UI.
-      </p>
+          <p>UX Researcher (Team Project + Solo UI Design) • Presented Dec 2023 • Team of 6 UX/UI designers collaborating on research, ideation, and low-to-high fidelity designs</p>
+
+<h3>IA and Navigation Menu Redesign: Textile Museum of Canada</h3>
+
+<p class="cntnt">
+  From research to high-fidelity UI, designed a mobile-first platform that centralized discovery of discounted and free museum tickets.
+</p>
+
+<h4>Overview</h4>
+<p class="cntnt">
+  Toronto is rich in cultural heritage, yet many residents miss out on museum experiences due to fragmented information about deals and free admission. Our project aimed to reduce this friction by centralizing ticket discovery through a mobile-first experience. I led user research, persona development, design prioritization, and the translation of insights into interactive Figma prototypes, iterating from low to high fidelity with feedback from peers and senior UX researchers.
+</p>
+
+<p class="cntnt">
+  #AndroidMobileApp #ProductDesign
+</p>
+
 
       <!-- Single Button -->
       <div style="margin-top: 5px;">
@@ -222,18 +237,18 @@
   </div>
 </div>
 
-<div class="fade-left CaseStudyGrid-item">
 </div>
 
-</div>
+<div style="padding: 2rem;"></div>
+
 
 </section>
 
 <section class="extra-work fade-group">
 
-  <h4 class="subtext fade-up" style="color: var(--tertiary-light); font-weight:800; margin: 2rem auto;">
+  <h3 class="subtext fade-up" style="color: var(--tertiary-light); font-weight:800; margin: 2rem auto;">
     Explore my Design thinking through these presentations and articles
-  </h4>
+  </h3>
 
 <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 80vw; justify-content: center;">
 
@@ -255,7 +270,7 @@
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="contact-btn home-btn"
                 onclick="window.open('web-production.html', '_blank');">
-          Read Article <span style="display: inline-block; margin-left: 3px;">→</span>
+          Read <span style="display: inline-block; margin-left: 3px;">→</span>
         </button>
       </div>
     </div>
@@ -266,7 +281,7 @@
   <div class="fade-left CaseStudyGrid-item">
     <div class="CaseStudyGrid-item-inner">
       <div class="case-study-card-image" onclick="window.open('pages/blogposts/002.html', '_blank');">
-        <img src="assets/images/ai/Bank.webp" alt="Case Study 1">
+        <img src="assets/logos/hdfc.png" alt="Case Study 1">
       </div>
       <div class="case-study-content-area-on-yt">
         <h4>Redesigning Beneficiary Management in Netbanking [2025]</h4>

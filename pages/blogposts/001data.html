@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Effect of Collaboration on Charting Probability and Chart Rank</title>
+    <link rel="icon" href="https://jkarthikarav.github.io/assets/favicon.ico">
+
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Sentient:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Sentient:wght@400;700&display=swap">
+</noscript>  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/script.js"></script>
+</head>
+
+<body style="background: var(--neutral-main);">
+<div id="header-placeholder"></div>
+
+<section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
+
+<div class="wp-post">
+
+    <!-- Title -->
+    <h1 class="post-title">
+      The Effect of Collaboration on Charting Probability and Rank
+    </h1>
+
+    <h3 class="post-subtitle">
+        An Analysis of the Billboard Music Top 100 Charts from 2003-2023
+    </h3>
+
+    <!-- Meta: date / author / categories -->
+    <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+      <time style="color:var(--muted);">August 12th, 2024</time>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-role" style="color:var(--muted);">Originally Submitted for INF1340H-Programming for Data Science, an elective course at the Faculty of Information, University of Toronto</span>
+      <span style="margin: 0 0.5rem;">•</span>
+      <span class="post-client" style="color:var(--muted);">Using Python</span>
+    </div>
+
+    <div style="overflow: hidden;">
+        <img src="../../assets/images/ai/billboard.webp" style="width: 100%; object-fit: cover; display: block;" />
+    </div>
+
+
+</div>
+
+<div class="post-content">
+    
+    <p>
+        The process of “charting” (i.e., making an appearance on the BIllboard Top 100 music charts in the USA) is a very highly sought outcome for musicians and their record labels. Some musicians’ careers are boosted by their charting prowess and the more songs on the chart, the more successful an artist’s album is deemed to be by critics and fans alike. While such a feat is based on multiple factors, this study seeks to learn whether the effect of collaboration in the song production process would have any effect on charting probability final end of year chart position. The study also seeks to learn whether “dominance” (i.e., multiple entries in the chart for a specific year) is helped by collaboration.
+    </p>
+
+    <p>
+      I used the dataset “Top 100 Songs & Lyrics By Year 1959 - 2023 (USA)” collected by Brian Blakely, from Kaggle - <a href="/pages/casestudies/filmPitchSite.html" target="_blank" style="color: var(--dark blue);">link</a>
+    </p>
+
+    <p>
+    The study will focus on three important factors whose values will be calculated and explored through the usage of data analysis and visualisation techniques including relational plots, scatterplots, box plots, and logistic & linear regression models. These are: 
+    <br>1. Charting Probability - the ability of a song to enter (i.e., chart) the Top 100 chart.
+    <br>2. Dominance - Multiple entries on the Top 100 chart.
+    <br>3. Rank - the chart position of an artist’s song, studied with a focus on whether they were solo or collaborative efforts.
+    <br><br>
+    Correlation does not imply causation -- however, people are prone to repeating what is visibly prone to provide results, irrespective of whether it is the most accurate cause of a favourable effect. Dominance of an artist is subjective: Does appearing multiple times on a music chart really mean that that artist was the cultural phenomenon of that year? Maybe. The real significance of this dataset and this project is that by analysing the chart ranks, we can seek and understand the patterns that exist in these charts. The findings, I believe, will potentially inform strategic business decisions made by artists and record labels and look at collaborations as a data driven and business strategy decision rather than a purely creative one.
+    </p>
+
+    <h4 style="color: var(--tertiary-dark); margin-bottom:1rem;">Results and Discussion of Exploratory Data Analysis</h4>
+
+    <p>
+        Now, when we look at the dataset, it has many columns including Lyrics which are not of any use to us. Therefore, we will modify it to take only the columns of interest : 'Year', 'Song Title', 'Artist', 'Rank', 'Featured Artists'. Now the dataset (Table 1) starts to look a little concise, but it still needs cleaning up.
+    </p>
+
+    </div>
+  </section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+
+    fetch('../../addons/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+
+<script>
+  fetch('../../addons/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+
+</html>
