@@ -25,7 +25,7 @@
 
 <section style="padding:2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
 
-  <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;">
+  <div class="post">
     
     <!-- Title -->
     <h1 class="post-title">
@@ -37,12 +37,11 @@
     </h3>
 
     <!-- Meta: date / author / categories -->
-    <div class="post-meta" style="color:var(--muted); font-size:0.875rem; margin-bottom:2rem;">
+    <div class="post-meta">
         <a class="circle-me" href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank"
         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <img src="../../assets/images/about/circle-me.jpg" alt="LinkedIn Profile" 
-         style="width: 100%; height: 100%; object-fit: cover; display: block;"/>
+        <img src="../../assets/images/about/circle-me.jpg" alt="LinkedIn Profile"/>
         </a>
         <time>&nbsp;&nbsp;&nbsp;&nbsp;Presented Nov 2023</time>
       <span style="margin: 0 0.5rem;">•</span>
@@ -79,12 +78,12 @@
         Success metrics for the redesign include reduced bounce rate and increased online ticketing and donations.
       </p>
 
-      <h5 style="color: var(--tertiary-dark); margin-bottom:1rem;">
+      <h5>
         We approached the problem by asking: How can the museum’s website structure better support discovery, engagement, and action?
       </h5>
       
 
-<h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Understanding Users</h3>
+<h3>Understanding Users</h3>
 
 <p>
 We began with a card sorting exercise. Eight participants grouped forty pages, from general information to events and programs, into categories that made sense to them. We used Optimal Workshop to collect data and observe patterns in user expectations.
@@ -98,21 +97,21 @@ Results showed shared expectations and areas of confusion. Pages like Privacy Po
 We also conducted a content audit of thirty-two pages. Each was evaluated for audience relevance, user expectation, recency, and clarity of calls to action. We found outdated information, inconsistent labeling, and unclear guidance for volunteers, job seekers, and museum visitors. These insights highlighted where IA and navigation redesign would have the most impact.
 </p>
 
-<h4 style="color: var(--tertiary-dark); margin-bottom:1rem;">Key Data</h4>
+<h4>Key Data</h4>
 
 <div class="contentgrid">
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">8</h4>
     <p style="text-align:center; margin-top:0;">Average number of categories created by participants, ranging from 4 to 10, showing both diversity and emerging patterns in content organization.</p>
   </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">3</h4>
     <p style="text-align:center; margin-top:0;">Areas with incomplete or unclear information: volunteer positions, job/internship opportunities, and health & safety updates.</p>
   </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">1</h4>
     <p style="text-align:center; margin-top:0;">Key page (“Visit”) lacked a clear call to action to encourage visitors to book tickets or explore membership options.</p>
   </div>
@@ -166,35 +165,35 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
 
     <div class="post-content">
 
-    <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">Testing out the IA</h3>
+    <h3>Testing out the IA</h3>
 
     <p>
       To validate our proposed Information Architecture, we conducted tests using OptimalSort and Treejack with 10 participants who completed 6 navigation tasks. 
       Our goal was to understand how users interpreted and located content within the proposed structure, separate from the website’s existing menu design. 
     </p>
 
-    <h4 style="color: var(--tertiary-dark); margin-bottom:1rem;">Results</h4>
+    <h4>Results</h4>
 
 <div class="contentgrid">
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">30%</h4>
     <p style="text-align:center; margin-top:0;">of users located the <em>Collection Gallery</em> under “Explore,” suggesting that section was too deep and complex.</p>
   </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">80%</h4>
     <p style="text-align:center; margin-top:0;">of users achieved indirect success when identifying “past” content, showing ambiguity between similar categories.</p>
   </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <h4 style="color: var(--tertiary-dark); margin-top:0; text-align:center;">40%</h4>
     <p style="text-align:center; margin-top:0;">of users selected <em>Ways to Donate</em> instead of <em>Donate Your Textiles</em>, indicating unclear naming conventions.</p>
   </div>
 
 </div>
 
-  <h3 style="color: var(--tertiary-dark); margin-bottom:1rem;">But, was the IA, the real issue on the website?</h3>
+  <h3>But, was the IA, the real issue on the website?</h3>
 
   <p>
     Our attention moved to the Hamburger Menu on the website's desktop version. 
@@ -210,7 +209,7 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
     &nbsp;&nbsp;•&nbsp;&nbsp;Mega Menus are an “excellent design choice for accommodating a large number of options or for revealing lower-level site pages at a glance”.
   </p>
 
-  <h4 style="color: var(--tertiary-dark); margin-bottom:1rem;">Therefore we opted to convert the navigation menu into a mega menu.</h4>
+  <h4>Therefore we opted to convert the navigation menu into a mega menu.</h4>
 
   <p>
     But, the Mental Models of the Textile Museum’s users are probably made up by now, and a drastic change such as the mega menu could be counter-intuitive.
@@ -300,7 +299,7 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
 
 <div class="contentgrid"> 
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <p style="color: var(--primary); margin-top:0; text-align:center; font-weight:bold;">
       Phase 1: Test New IA in Existing Menu
     </p>
@@ -309,7 +308,7 @@ We also conducted a content audit of thirty-two pages. Each was evaluated for au
     </p>
   </div>
 
-  <div class="content-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
+  <div class="content-item">
     <p style="color: var(--primary); margin-top:0; text-align:center; font-weight:bold;">
       Phase 2: Test New Navigation Menu Design
     </p>
