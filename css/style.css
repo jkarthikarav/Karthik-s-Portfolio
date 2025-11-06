@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  color: var(--black);
   font-family: 'Sentient', sans-serif;
   margin: 0;
 }
@@ -52,13 +53,11 @@ h4 {
 h5 {
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.4;
 }
 
 h6 {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.4;
 }
 
 p {
@@ -66,7 +65,7 @@ p {
   color: var(--black);
   line-height: 1.4;
   font-family: 'Sentient', sans-serif;
-  margin: 0;
+  margin: 1em 0;
 }
 
 /* Common base */
@@ -1119,6 +1118,7 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    margin: 2rem 0;
 }
 
 .responsive-flex > .phot-item {
