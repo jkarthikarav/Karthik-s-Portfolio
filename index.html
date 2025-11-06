@@ -85,7 +85,7 @@
       <!-- Text-style scroll button -->
       <button class="primary-btn" 
       onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-        View Featured Work ⬇ 
+        View Showcase ⬇ 
       </button>
 
       <!-- Primary surprise button -->
@@ -95,9 +95,8 @@
 
       <button class="tertiary-btn"
       onclick="window.open('work.html', '_blank');">
-      <span class="label">View All Work</span>
-      <span style="display: inline-block; margin-left: 3px;">→</span>
-    </button>
+        View All Case Studies →
+      </button>
 
     </div>
 
@@ -108,7 +107,7 @@
 <section id="fw" class="main-work fade-group">
 
   <h2 class="fade-up text-on-green">
-    Featured Work
+    Showcase
   </h2>
 
 <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; padding: 0 2rem;">
@@ -151,7 +150,7 @@
 
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
         <button class="primary-btn" onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
-          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+          View Case Study →</span>
         </button>
     </div>
   </div>
@@ -192,7 +191,7 @@
     <div style="margin-top: 5px;">
       <button class="primary-btn" 
         onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
-        View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+        View Case Study →</span>
       </button>
     </div>
   </div>
@@ -233,7 +232,7 @@
       <div style="margin-top: 5px;">
         <button class="primary-btn" 
                 onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');">
-          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+          View Case Study →</span>
         </button>
       </div>
     </div>
@@ -251,6 +250,11 @@
   <h3 class="subtext fade-up" style="color: var(--tertiary-light); font-weight:800; margin: 2rem auto;">
     Explore my Design thinking through these presentations and articles
   </h3>
+
+  <button class="tertiary-btn fade-up"
+      onclick="window.open('work.html#articles', '_blank');">
+        Read All Articles →
+  </button>
 
 <div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 80vw; justify-content: center;">
 
@@ -270,10 +274,7 @@
       </h4>
       <!-- Buttons Row -->
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="secondary-btn"
-                onclick="window.open('web-production.html', '_blank');">
-          Read <span style="display: inline-block; margin-left: 3px;">→</span>
-        </button>
+        <button class="secondary-btn" onclick="window.open('web-production.html', '_blank');">Read →</button>
       </div>
     </div>
   </div>
@@ -294,21 +295,6 @@
     </div>
   </div>
 
-  <!-- Card 2 -->
-  <div class="fade-left CaseStudyGrid-item">
-    <div class="CaseStudyGrid-item-inner">
-      <div class="case-study-card-image" onclick="window.open('https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing', '_blank');">
-        <img src="assets/images/blogs/INF2228.png" alt="Case Study 2">
-      </div>
-      <div class="case-study-content-area-on-yt">
-        <h4>Digitization critique of the Digital Comics Museum website [2024]</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-          <button class="secondary-btn" onclick="window.open('https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing', '_blank');">Read →</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Card 3 -->
   <div class="fade-left CaseStudyGrid-item">
     <div class="CaseStudyGrid-item-inner">
@@ -319,36 +305,6 @@
         <h4>Conversational UX Design for Healthcare AI: Buoy AI Chatbot [2025]</h4>
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
           <button class="secondary-btn" onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">Read →</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="fade-left CaseStudyGrid-item">
-    <div class="CaseStudyGrid-item-inner">
-      <div class="case-study-card-image" onclick="window.open('assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf', '_blank');">
-        <img src="assets/logos/YTMUSIC.png" alt="Case Study 4">
-      </div>
-      <div class="case-study-content-area-on-yt">
-        <h4>Information Architecture Critique: Youtube Music [2023]</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-          <button class="secondary-btn" onclick="window.open('assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf', '_blank');">Read →</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Card 5 -->
-  <div class="fade-left CaseStudyGrid-item">
-    <div class="CaseStudyGrid-item-inner">
-      <div class="case-study-card-image" onclick="window.open('https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing', '_blank');">
-        <img src="assets/images/blogs/INF2169.png" alt="Case Study 5">
-      </div>
-      <div class="case-study-content-area-on-yt">
-        <h4>Developing Design Guidelines for Canadian Recycling System [2024]</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-          <button class="secondary-btn" onclick="window.open('https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing', '_blank');">Read →</button>
         </div>
       </div>
     </div>
