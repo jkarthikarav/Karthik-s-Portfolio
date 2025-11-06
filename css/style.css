@@ -121,6 +121,21 @@ p {
   display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 0.5rem 0;
 }
 
+.hero-button-row-main {
+  display: flex;
+  flex-direction: column; /* stack h5 and buttons container */
+  align-items: center;
+  gap: 1rem; /* space between heading and buttons */
+  margin: 2rem 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* buttons wrap together */
+  justify-content: center;
+}
+
 /* Header */
 .site-header {
   top: 1rem;
@@ -879,6 +894,14 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; bo
   flex: 1 1 calc(33.33% - 3rem); min-width: 250px;
 }
 
+.CaseStudyGrid-item-art {
+  flex: 1 1 calc(100% - 3rem); min-width: 250px;
+}
+
+.CaseStudyGrid-item-art > .case-study-content-area-on-yt {
+  width: 100% !important;
+}
+
 .CaseStudyGrid-item-home {
   flex: 1 1 calc(100% - 3rem);
   justify-items: center;
@@ -1309,6 +1332,32 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
   border: 2px solid var(--secondary);
 }
  
+.text-btn {
+  background-color: inherit;
+  border: none;
+  color: var(--black); 
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 144px;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.4;
+  padding: 8px 24px;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.text-btn .btn-text {
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.text-btn:hover .btn-text {
+  text-decoration: underline;
+}
 
 
 /* What I Learned Section */

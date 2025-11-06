@@ -81,24 +81,28 @@
     </h6>
 
     <div class="hero-button-row fade-up">
+      <h5>Quick Access:</h5>
 
-      <!-- Text-style scroll button -->
-      <button class="primary-btn" 
-      onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-        View Showcase ⬇ 
-      </button>
+      <div class="hero-buttons">
+        <button class="text-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
+          <span class="btn-text">View Showcase</span>
+        </button>
 
-      <!-- Primary surprise button -->
-      <button class="secondary-btn" id="surprise-btn">
-        View Random Project
-      </button>
+        <button class="text-btn" id="surprise-btn">
+          <span class="btn-text">View Random Case Study</span>
+        </button>
 
-      <button class="tertiary-btn"
-      onclick="window.open('work.html', '_blank');">
-        View All Case Studies →
-      </button>
+        <button class="text-btn" onclick="window.open('work.html', '_blank');">
+          <span class="btn-text">View All Case Studies</span>
+        </button>
+
+        <button class="text-btn" onclick="window.open('articles.html', '_blank');">
+          <span class="btn-text">View All Articles & Presentations</span>
+        </button>
+      </div>
 
     </div>
+
 
   </div>
 
@@ -242,75 +246,6 @@
 </div>
 
 <div style="padding: 2rem;"></div>
-
-</section>
-
-<section class="extra-work fade-group">
-
-  <h3 class="subtext fade-up" style="color: var(--tertiary-light); font-weight:800; margin: 2rem auto;">
-    Explore my Design thinking through these presentations and articles
-  </h3>
-
-  <button class="tertiary-btn fade-up"
-      onclick="window.open('work.html#articles', '_blank');">
-        Read All Articles →
-  </button>
-
-<div id="CaseStudyGrid" class="grid-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 80vw; justify-content: center;">
-
-  <div class="fade-left CaseStudyGrid-item">
-  <div class="CaseStudyGrid-item-inner">
-    
-    <!-- Clickable Image -->
-    <div class="case-study-card-image"
-         onclick="window.open('web-production.html', '_blank');">
-      <img src="assets/logos/Company/Logo_VD_5.jpg" alt="ECE Website Production University of Toronto">
-    </div>
-
-    <!-- Card Content -->
-    <div class="case-study-content-area-on-yt">
-      <h4>
-        Website Production Design: University of Toronto, ECE Department
-      </h4>
-      <!-- Buttons Row -->
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="secondary-btn" onclick="window.open('web-production.html', '_blank');">Read →</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Card 1 -->
-  <div class="fade-left CaseStudyGrid-item">
-    <div class="CaseStudyGrid-item-inner">
-      <div class="case-study-card-image" onclick="window.open('pages/blogposts/002.html', '_blank');">
-        <img src="assets/logos/hdfc.png" alt="Case Study 1">
-      </div>
-      <div class="case-study-content-area-on-yt">
-        <h4>Redesigning Beneficiary Management in Netbanking [2025]</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-          <button class="secondary-btn" onclick="window.open('pages/blogposts/002.html', '_blank');">Read →</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="fade-left CaseStudyGrid-item">
-    <div class="CaseStudyGrid-item-inner">
-      <div class="case-study-card-image" onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">
-        <img src="assets/images/webp/Buoy-Title.webp" alt="Case Study 3">
-      </div>
-      <div class="case-study-content-area-on-yt">
-        <h4>Conversational UX Design for Healthcare AI: Buoy AI Chatbot [2025]</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-          <button class="secondary-btn" onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">Read →</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
 
 </section>
 
