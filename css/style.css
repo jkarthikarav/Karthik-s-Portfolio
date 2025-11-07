@@ -145,6 +145,10 @@ p {
   box-shadow: 4px 4px 20px var(--black);
 }
 
+hr {
+  border: none; height: 2px; background-color: var(--border-light); margin: 0 auto;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -211,7 +215,7 @@ p {
 }
 
 .no-hov {
-  color: var(--tertiary-dark);
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -614,6 +618,12 @@ th {
   padding-bottom: 3rem;
 }
 
+.grid-wrapper-art {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
 /* Container */
 .side-by-side-card {
   display: flex;
@@ -905,6 +915,10 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; bo
   width: 100% !important;
 }
 
+.button-row-art {
+  display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;
+}
+
 .CaseStudyGrid-item-home {
   flex: 1 1 calc(100% - 3rem);
   justify-items: center;
@@ -1006,6 +1020,10 @@ width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;
   color: var(--neutral-main); margin: 1rem 0; font-size: 20px;
 }
 
+.case-study-content-area-on-yt {
+  padding: 5px;
+}
+
 .case-study-content-area-on-yt p {
   color: var(--tertiary-dark);
   font-size: 14px;
@@ -1013,7 +1031,7 @@ width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;
 }
 
 .case-study-content-area-on-yt h4 {
-  color: var(--tertiary-dark);
+  color: var(--tertiary-light);
   font-weight: bold;
   margin: 1rem 0;
 }
@@ -1362,6 +1380,23 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
   text-decoration: underline;
 }
 
+.disabled-btn {
+  background: var(--neutral-alt);
+  color: var(--black); 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 144px;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.4;
+  padding: 8px 24px;
+  border: 1px solid var(--neutral-main);
+  border-radius: 16px;
+  flex: 0 0 auto;
+}
+
 
 /* What I Learned Section */
 
@@ -1397,14 +1432,14 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 }
 
 .mmc-content {
-  min-width: 300px; padding: 2rem; background-color: transparent; max-width: 800px;
+  min-width: 300px; padding: 2rem; background-color: transparent; max-width: 1200px;
 }
 
 .mmc-content h2 {
   color: var(--primary); margin-bottom: 1rem;
 }
 
-.mmc-content h4 {
+.mmc-content h3 {
   color: var(--white); margin-bottom: 2rem;
 }
 
