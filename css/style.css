@@ -144,23 +144,19 @@ p {
   background: var(--secondary);
 }
 
-/* Inner layout with Flexbox */
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 48px;
   height: 72px;
-  padding: 0 24px;
+  padding: 0px 10px 0px 48px;
 }
 
-/* Logo */
 .logo img {
   height: 20px;
 }
 
-/* Navigation */
 .main-nav {
-  flex-grow: 1;
   margin: 0 32px;
 }
 
@@ -170,8 +166,13 @@ p {
   list-style: none;
 }
 
+.dropdown-toggle {
+  color: var(--white); font-weight: bold;
+  font-size: 20px;
+}
+
 .nav-item > a {
-  color: var(--white);  /* Color for nav menu items */
+  color: var(--white);
   text-decoration: none;
   font-size: 16px;
   font-family: 'Sentient', sans-serif;
@@ -183,16 +184,17 @@ p {
 /* Dropdown Styling */
 .dropdown-menu {
   position: absolute;
-  background: var(--secondary);  /* White background for dropdown */
+  background: var(--white);  /* White background for dropdown */
   list-style: none;
   padding: 8px 0;
-  margin-top: 0.5rem;
-  min-width: 240px;
+  margin: 0.5rem 0rem;
+  min-width: 280px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 1000;
+  box-shadow: 4px 4px 20px var(--black);
 }
 
 .dropdown-menu li {
@@ -202,18 +204,18 @@ p {
 }
 
 .dropdown-menu li a {
-  color: var(--white);  /* Color for submenu items */
+  color: var(--tertiary-light);  /* Color for submenu items */
   text-decoration: none;
   display: block;
 }
 
 .no-hov {
-  color: var(--primary);
+  color: var(--tertiary-dark);
   font-weight: bold;
 }
 
 .dropdown-menu li:hover:not(.no-hov) {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Show the dropdown menu when hovered or focused */
@@ -1426,7 +1428,6 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 @media (max-width: 768px) {
   .content-clmn { flex-direction: column; }
   .button-flex { flex-direction: column; }
-  .main-nav { display: none; }
   .main-nav.open { display: block; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); padding: 1rem; }
   .nav-list { flex-direction: column; }
   .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; }
