@@ -1428,6 +1428,7 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 @media (max-width: 768px) {
   .content-clmn { flex-direction: column; }
   .button-flex { flex-direction: column; }
+  .main-nav { display: none !important;}
   .main-nav.open { display: block; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); padding: 1rem; }
   .nav-list { flex-direction: column; }
   .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; }
