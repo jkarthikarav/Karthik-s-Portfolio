@@ -56,6 +56,9 @@
 
   <div style="display: flex; flex-direction: column; align-items: center; text-align:center; padding: 1rem;">
     
+    <img src="assets/images/about/circle-me.jpg" alt="LinkedIn Profile" 
+    style="border-radius: 100%; width: 100px; height: 100px; object-fit: cover; display: block;" />
+    
     <div class="hero-banner-lvl1">
 
       <h1>
@@ -64,46 +67,49 @@
         <span class="ed-qual">MI, MSc</span>
       </h1>
 
-      <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank"
-        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
-        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <img src="assets/images/about/circle-me.jpg" alt="LinkedIn Profile" 
-         style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      </a>
-
     </div>
 
-    <h5 class="subtext">Data-driven UX/Product Designer</h5>
+    <h3 class="subtext">Data-driven UX/Product Designer</h3>
 
-    <h5 class="subtext">Fintech, Healthcare, and Creative Industries</h5>
+    <h3 class="subtext">Fintech, Healthcare, and Creative Industries</h3>
 
     <h6 class="subdesc">
       <span id="pulseDot" class="pulsedot"></span>
       Open to UX/Product Roles in Canada
     </h6>
 
-    <div class="hero-button-row">
-      <h5>Quick Access:</h5>
-
-      <div class="hero-buttons">
-        <button class="text-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-          <span class="btn-text">View Showcase</span>
-        </button>
-
-        <button class="text-btn" id="surprise-btn">
-          <span class="btn-text">View Random Case Study</span>
-        </button>
-
-        <button class="text-btn" onclick="window.open('work.html', '_blank');">
-          <span class="btn-text">View All Case Studies</span>
-        </button>
-
-        <button class="text-btn" onclick="window.open('articles.html', '_blank');">
-          <span class="btn-text">View All Articles & Presentations</span>
-        </button>
-      </div>
-
+<div class="hero-buttons-container">
+  <div class="hero-button-row">
+    <h5>Quick Access:</h5>
+    <div class="hero-buttons">
+      <button class="text-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
+        <span class="btn-text">View Showcase</span>
+      </button>
+      <button class="text-btn" id="surprise-btn">
+        <span class="btn-text">Random Case Study</span>
+      </button>
+      <button class="text-btn" onclick="window.open('pages/articles/web-production.html', '_blank');">
+        <span class="btn-text">Read Article: Website Production Design</span>
+      </button>
     </div>
+  </div>
+
+  <div class="hero-button-row">
+    <h5>View Collections:</h5>
+    <div class="hero-buttons">
+      <button class="text-btn" onclick="window.open('casestudies.html', '_blank');">
+        <span class="btn-text">View All Case Studies</span>
+      </button>
+      <button class="text-btn" onclick="window.open('articles.html', '_blank');">
+        <span class="btn-text">View All Articles</span>
+      </button>
+      <button class="text-btn" onclick="window.open('https://www.behance.net/gallery/236391313/Graphic-Design-Showcase', '_blank');">
+        <span class="btn-text">View Graphic Design Showcase</span>
+      </button>
+    </div>
+  </div>
+</div>
+
 
 
   </div>

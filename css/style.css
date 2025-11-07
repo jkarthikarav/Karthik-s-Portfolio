@@ -114,11 +114,7 @@ p {
 }
 
 .hero-button-row {
-  display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;
-}
-
-.hero-button-row2 {
-  display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 0.5rem 0;
+  display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 0.25rem auto;
 }
 
 .hero-button-row-main {
@@ -126,7 +122,7 @@ p {
   flex-direction: column; /* stack h5 and buttons container */
   align-items: center;
   gap: 1rem; /* space between heading and buttons */
-  margin: 2rem 0;
+  margin: 0.25rem 0;
 }
 
 .hero-buttons {
@@ -134,6 +130,12 @@ p {
   gap: 1.5rem;
   flex-wrap: wrap; /* buttons wrap together */
   justify-content: center;
+}
+
+.hero-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem; /* space between the rows */
 }
 
 /* Header */
@@ -152,7 +154,7 @@ hr {
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 8px;
   height: 72px;
   padding: 0px 10px 0px 48px;
 }
@@ -700,6 +702,41 @@ height: 100vh;
 box-sizing: border-box; 
 overflow: hidden;
 padding: 2rem;
+}
+
+.next-case {
+background: linear-gradient(to bottom, var(--neutral-alt) 0%, var(--neutral-alt) 80%, var(--white) 100%); 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+box-sizing: border-box; 
+padding: 6rem;
+}
+
+.next-case > div {
+  display: flex; flex-direction: column; align-items: center; gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .next-case h4 {
+    font-size: 24px;
+  }
+}
+
+.next-case .text-btn {
+  background-color: inherit;
+  border: none;
+  color: var(--black); 
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.4;
+  padding: 8px;
+  flex: 0 0 auto;
+  gap: 8px;
 }
 
 @media (max-width: 1000px) {
