@@ -20,7 +20,7 @@ html {
 
 body {
   color: var(--black);
-  font-family: 'Sentient', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
 }
 
@@ -64,7 +64,7 @@ p {
   font-size: 18px;
   color: var(--black);
   line-height: 1.4;
-  font-family: 'Sentient', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 1em 0;
 }
 
@@ -182,7 +182,7 @@ hr {
   color: var(--white);
   text-decoration: none;
   font-size: 16px;
-  font-family: 'Sentient', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
   padding: 8px;
   display: inline-block;
@@ -206,7 +206,7 @@ hr {
 
 .dropdown-menu li {
   padding: 8px 16px;
-  font-family: 'Sentient', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
 }
 
