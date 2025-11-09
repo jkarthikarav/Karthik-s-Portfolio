@@ -322,15 +322,23 @@ as well as information about museum programs and events. We identified three pri
   <div class="post" style="display: flex; flex-direction:column; justify-content: center; align-items: center; margin: 1rem auto;">
   <!-- Section Header -->
   <div style="max-width: 80vw;">
-      <h3 style="color: var(--primary); margin-bottom: 20px;">Designing the experience (UI Design - Low Fidelity)</h3>
+    <h2 style="color: var(--primary); margin-bottom: 20px;">Designing the experience (Low Fidelity)</h3>
       
     <p style="color: var(--neutral-main); margin-bottom: 20px;">
       We began sketching flows and layouts that would translate these needs into a mobile UI.
     </p>
 
     <p style="color: var(--white); margin-bottom: 2rem;">
+      Firstly, We drew up a task flow:
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
+      <img src="../../assets/images/exptor/taskflow.webp" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/taskflow.png')" />
+    </div>
+
+    <p style="color: var(--white); margin-bottom: 2rem;">
       Our low-fidelity prototype, designed in Figma, was presented to a panel of senior UX researchers through the University of Toronto’s iSchool during our course INF1602 Design Playback sessions. 
-      Their feedback guided our next iteration.
+      For this version, we conducted an <a href="#valid" style="color: var(--primary-light);">evaluation</a><span style="color: var(--primary-light);"> ⬇</span>. 
     </p>
 
     <div class="progress-images" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
@@ -343,52 +351,129 @@ as well as information about museum programs and events. We identified three pri
         <img src="../../assets/images/MTDoldcard-open.png" style="max-width: 200px; cursor: pointer;" onclick="openModal('../../assets/images/MTDoldcard-open.png')" />
       </div>
     </div>
-
+  
     <p style="color: var(--white); margin-bottom: 2rem;">
-      We drew up a task flow:
+      After the internal and panel reviews, I revisited the mid-fidelity stage individually using the feedback. 
+      One key change was removing the Map functionality of the Map page. 
+      While people loved the idea, it just led to more confusion on the prospective information systems design; instead, I made it the search function.
     </p>
 
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
-      <img src="../../assets/images/exptor/taskflow.webp" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/taskflow.png')" />
+      <img src="../../assets/images/exptor/LF/LF.webp" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/LF/LF.png')" />
     </div>
+    
+    <h2 style="color: var(--primary); margin: 4rem 0 0 0;">
+      Key Components
+    </h2>
 
-    <p style="color: var(--white); margin-bottom: 2rem;">
-      and we conducted an <a href="#valid" style="color: var(--primary-light);">evaluation</a><span style="color: var(--primary-light);"> ⬇</span>. 
-    </p>
-  
-    <p style="color: var(--white); margin-bottom: 2rem;">
-      After the internal and panel reviews, I revisited the design individually. Having prior experience with Android Studio, I leaned toward Material Design for feasibility and consistency.
-      <br><br>
-      One key change was removing the Map page. While people loved the idea, it just led to more questions and confusion on the functioning side; in its place, I introduced an AI-based search results page.
-    </p>
+    <img src="../../assets/images/exptor/Comp/Component Design - Low Fidelity.webp" style="margin: 4rem 0 0 0; width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/Comp/Component Design - Low Fidelity.webp')" />
+    
+    <img src="../../assets/images/exptor/Comp/Component Design - High Fidelity.webp" style="margin: 4rem 0 0 0; width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/Comp/Component Design - High Fidelity.webp')" />
 
-
-
-    <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
-      <img src="../../assets/images/exptor/LF/LF.webp" style="width: 100%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/LF/LF.png')" />
-    </div>
-  
-    <p style="color: var(--white); margin: 2rem 0rem;">
-      UI Component Library before (during Low-Fidelity Process) and after (based on Google's Material design guidelines).
-    </p>
-
-      <div>
-        <img src="../../assets/images/webp/comp-bef-aft.webp" style="width: 100%; height: auto; display: block;" />
-      </div>
-
-    <h3 style="color: var(--primary);margin-bottom: 3rem;">
-      Bringing it to life (UI Design - High Fidelity)
+    <h3 style="color: var(--primary); margin: 4rem 0 0 0;">
+      Component Design - Tabs
     </h3>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; justify-content: center; margin-bottom: 2rem;">
-      <img src="../../assets/images/exptor/HF/HF.png" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/HF/HF.webp')" />
-      <img src="../../assets/images/exptor/HF/Disc.png" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/HF/Disc.webp')" />
-      <img src="../../assets/images/exptor/HF/Tick.png" style="width: 80%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/HF/Tick.webp')" />
+    <h4 style="color: var(--primary); margin-bottom: 0.25srem;">The user needs to view their recommendations and sort them by saving them.</h5>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Component:</strong> Tabs</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Placement:</strong> Always at the top of the screen's content section, fixed and visible even when the user scrolls.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Surface:</strong> Tickets Page</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Content guidelines:</strong> Labels limited to one or two words. Each tab has two states: selected and unselected. Only one tab can be selected per group.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Purpose:</strong> To allow users to switch between saved and recommended tickets without leaving the page.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Interaction:</strong> Selecting a tab updates the visible content within the same screen. The active tab visually indicates selection.</p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: flex-start;">
+
+        <img src="../../assets/images/exptor/Comp/Tabs.webp" style="width: 80%; height: auto; cursor: pointer;"
+          onclick="openModal('../../assets/images/exptor/Comp/Tabs.webp')" />
+
     </div>
+
+    <h3 style="color: var(--primary); margin: 4rem 0 0 0;">
+      Component Design - Horizontal Card
+    </h3>
+
+    <h4 style="color: var(--primary); margin-bottom: 0.25rem;">The user needs to easily browse available ticket deals and explore related offers from specific museums.</h4>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Component:</strong> Horizontal Card</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Placement:</strong> Appears within content areas of the page and is always populated in a vertical scrolling grid layout.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Surface:</strong> Tickets Page and Discover Page (search results after searching for a deal)</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;">
+      <strong>
+        Content guidelines:
+      </strong> The card displays either the museum name or the deal name. 
+      Cards may include tags such as <em>Deals Available</em> (clickable) or <em>Exploring Deals</em> (active state). 
+      Deal text in the Exploring Deals variant can have up to three lines describing the offer, e.g., “Save 35% with Toronto CityPASS®.” 
+      Card titles are limited to one line. Buttons for Save and Share are always visible and might have different states activated based on user's input.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Purpose:</strong> To display ticket deals from museums and provide an entry point to explore multiple offers from the same museum.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Interaction:</strong> Clicking a card with the <em>Deals Available</em> tag opens an expanded variant showing all available deals for that museum. Users can save or share any deal from both the base and expanded variants.</p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: flex-start;">
+      <img src="../../assets/images/exptor/Comp/HorizontalCard.webp" style="width: 80%; height: auto; cursor: pointer;"
+        onclick="openModal('../../assets/images/exptor/Comp/HorizontalCard.webp')" />
+    </div>
+
+    <h3 style="color: var(--primary); margin: 4rem 0 0 0;">
+      Component Design - Toggle Buttons
+    </h3>
+
+    <h4 style="color: var(--primary); margin-bottom: 0.25rem;">The user needs to perform quick save and share actions directly within cards, and manage saved selections efficiently.</h4>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Component:</strong> Toggle Buttons</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Placement:</strong> Positioned inside cards, typically below deal information or aligned beside content actions.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Surface:</strong> Within Horizontal Card components on the Tickets and Discover pages.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Content guidelines:</strong> Labels can vary (e.g., Quick Save, Save All, Save Selected). Each button has one of four distinct states:<br><br>
+      1.&nbsp;&nbsp;<strong>Toggle-Standard-BGWhiteFill:</strong> Default toggleable buttons such as Quick Save or Save All.<br>
+      2.&nbsp;&nbsp;<strong>Toggle-MultiSelect-Checked-BGWhiteFill:</strong> Activates only when at least one deal is selected in the Exploring Deals variant (e.g., Save Selected).<br>
+      3.&nbsp;&nbsp;<strong>Toggle-MultiSelect-Unchecked-BGWhiteFill:</strong> Unchecked version of the previous variant.<br>
+      4.&nbsp;&nbsp;<strong>Toggle-Selected-BGPrimaryFill:</strong> Indicates the result of toggling. The card must have a toggle button in this state to be populated under the Saved tabs option.
+    </p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Purpose:</strong> To enable quick, contextual actions without leaving the card, providing feedback for saving and selection states.</p>
+    <p style="color: var(--white); margin-bottom: 0.75rem;">
+      <strong>Interaction:</strong> Clicking a toggle changes its state and updates visual feedback accordingly. 
+      Toggle variants persist their state and affect card data (e.g., saving or unsaving content).
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: flex-start;">
+      <img src="../../assets/images/exptor/Comp/ToggleButtons.webp" style="width: 80%; height: auto; cursor: pointer;"
+      onclick="openModal('../../assets/images/exptor/Comp/ToggleButtons.webp')" />
+    </div>
+
+    <h3 style="color: var(--primary); margin: 4rem 0 0 0;">
+  Component Design - Navigation Bar
+</h3>
+
+<h4 style="color: var(--primary); margin-bottom: 0.25rem;">The user needs a clear and consistent way to navigate between main sections of the app.</h4>
+<p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Component:</strong> Navigation Bar</p>
+<p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Placement:</strong> Fixed horizontally at the bottom of the app screen, always visible for quick access.</p>
+<p style="color: var(--white); margin-bottom: 0.75rem;"><strong>Surface:</strong> Global component present across all primary app pages.</p>
+
+<p style="color: var(--white); margin-bottom: 0.75rem;">
+  <strong>Content guidelines:</strong> Contains three icons with labels below each, following Material Design standards: 
+  with 3 or fewer items, all labels should be visible. In case of future page additions, only active page to show label.
+  The active page has a low-opacity underlay to indicate selection.</p>
+
+<p style="color: var(--white); margin-bottom: 0.75rem;">
+  <strong>Purpose:</strong> To provide primary navigation between key app sections.</p>
+<p style="color: var(--white); margin-bottom: 0.75rem;">
+  <strong>Interaction:</strong> Tapping an icon navigates to the respective section. 
+  The selected icon updates visually with an underlay, and only one section can be active at a time.</p>
+
+<div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: flex-start;">
+  <img src="../../assets/images/exptor/Comp/NavigationBar.webp" style="width: 80%; height: auto; cursor: pointer;"
+    onclick="openModal('../../assets/images/exptor/Comp/NavigationBar.webp')" />
+</div>
+
+    <h2 style="color: var(--primary); margin: 4rem 0 3rem 0;">
+      Bringing it to life (High Fidelity)
+    </h2>
 
     <P style="color: var(--white); margin: 2rem 0rem;">
       Users could now explore, save, and share museum deals from one unified feed, or plan their visit visually through a calendar-based planner. The design balanced information density with hierarchy, keeping Mary (and users like her) in mind throughout.
     </P>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; justify-content: center; margin-bottom: 2rem;">
+      <img src="../../assets/images/exptor/HF/HF.png" style="width: 95%; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/HF/HF.webp')" />
+    </div>
+
   </div>
 
   <!-- Modal Viewer -->
@@ -401,7 +486,7 @@ as well as information about museum programs and events. We identified three pri
 
 <section id="valid" style="padding:2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
 
-  <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start;">
+  <div class="post" style="max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: fit-content;">
 
     <div class="post-content">
 
@@ -415,9 +500,7 @@ as well as information about museum programs and events. We identified three pri
       We collected both quantitative performance data and qualitative feedback to identify friction points.
     </p>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
-      <img src="../../assets/images/exptor/data-validation.webp" style="max-width: 450px; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/data-validation.png')" />
-    </div>
+    <img src="../../assets/images/exptor/data-validation.webp" style="width: 350px; height: auto; cursor: pointer;" onclick="openModal('../../assets/images/exptor/data-validation.png')" />
 
     </div>
   </div>
