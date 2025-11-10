@@ -7,7 +7,6 @@
   --border-dark: #505050;
   --primary: #F6BD60;
   --primary-light: #ff9d00;
-  --tertiary-dark: #00464F;
   --tertiary-light: #2d6a4f;
   --tertiary-dark: #1F4735;
   --neutral-alt: #fffbf4;
@@ -22,6 +21,7 @@ body {
   color: var(--black);
   font-family: 'Lato', sans-serif;
   margin: 0;
+  background:var(--white);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -918,7 +918,7 @@ padding: 6rem;
 }
         
 .main-work {
-  background-color: var(--secondary);
+  background-color: var(--white);
           display: flex; flex-direction: column; 
           align-items: center; justify-content: flex-start; width: 100%; padding: 1rem; box-sizing: border-box; min-height: 100vh;
 }
@@ -1063,11 +1063,11 @@ width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;
 
 .case-study-content-area-on-yt p {
   color: var(--tertiary-dark);
-  font-size: 14px;
+  font-weight: bold;
   margin: 1rem 0;
 }
 
-.case-study-content-area-on-yt h4 {
+.case-study-content-area-on-yt h3 {
   color: var(--tertiary-light);
   font-weight: bold;
   margin: 1rem 0;
@@ -1075,6 +1075,28 @@ width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;
 
 .case-study-content-area-on-yt .cntnt {
   color: black;
+  margin: 1rem 0;
+  font-size: 16px;
+}
+
+.case-study-content-area-on-yt-home {
+  padding: 5px;
+}
+
+.case-study-content-area-on-yt-home h5 {
+  color: var(--tertiary-light);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.case-study-content-area-on-yt-home h3 {
+  color: var(--secondary);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.case-study-content-area-on-yt-home .cntnt {
+  color: var(--black);
   margin: 1rem 0;
   font-size: 16px;
 }
@@ -1144,6 +1166,24 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
   margin-top: 0rem; font-size: 18px; font-weight: 400;
 }
 
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facts-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 .contentgrid {
   display: flex;
@@ -1517,8 +1557,6 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 @media (max-width: 768px) {
   h1 { font-size: 20px; }
   h2 { font-size: 18px; }
-  h3 { font-size: 16px; }
-  h4 { font-size: 16px; }
   p  { font-size: 14px; }
 }
 
@@ -1526,4 +1564,18 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
   h1 { font-size: 32px; }
   h2 { font-size: 30px; }
   p  { font-size: 15px; }
+}
+
+.persona {
+  display: flex; flex-wrap: wrap; flex-direction: row; gap: 1rem;
+}
+
+.persona-content {
+  flex: 1 1 auto;
+}
+
+.persona img {
+  flex: 0 1 auto;
+  height: auto;
+  max-width: 33%;
 }
