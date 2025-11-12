@@ -1,28 +1,13 @@
-<!-- Card: Note4U Education Technology Business Plan -->
-<div class="CaseStudyGrid-item">
+
+<!-- Article: Buoy AI -->
+<div class="CaseStudyGrid-item-art">
   <div class="CaseStudyGrid-item-inner">
-    
-    <!-- Clickable Image -->
-    <div class="case-study-card-image"
-         onclick="window.open('/pages/casestudies/note4u.html', '_blank');">
-      <img src="assets/images/note/figma-make-preview.PNG" alt="Education Technology Business Plan: Note4U">
-    </div>
-
-    <!-- Card Content -->
     <div class="case-study-content-area-on-yt">
-      <p>Presented Dec 2024 • UXR · Business Process Modeling</p>
-      <h4>
-        EdTech Design: Note4U
-      </h4>
-      <p class="cntnt">
-        Read how I used UX to build a business proposal for an AI tool to help music students learn sheet music.
-      </p>
-
-      <!-- Buttons Row -->
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="primary-btn"
-                onclick="window.open('/pages/casestudies/note4u.html', '_blank');">
-          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+      <p>December 17, 2025 • Conversational UX · Healthcare</p>
+      <h4>Conversational UX for AI Chatbot: Buoy AI</h4>
+      <div class="button-row-art">
+        <button class="disabled-btn">
+          Article Under Construction →
         </button>
       </div>
     </div>
@@ -30,36 +15,6 @@
 </div>
 
 
-<!-- Card: Pitch Deck Website – Film Pre-Production -->
-<div class="CaseStudyGrid-item">
-  <div class="CaseStudyGrid-item-inner">
-    
-    <!-- Clickable Image -->
-    <div class="case-study-card-image"
-         onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');">
-      <img src="assets/logos/FIIP.jpg" alt="AI-Assisted Film Pre-Production Service Design">
-    </div>
-
-    <!-- Card Content -->
-    <div class="case-study-content-area-on-yt">
-      <p>Shipped Aug 2021 • Web Dev · Creative Strategy</p>
-      <h4>
-        Pitch Deck Website for Film Pre-Production
-      </h4>
-      <p class="cntnt">
-        Explore my thinking behind turning a pitch deck into an interactive website with visuals, music, and security.
-      </p>
-
-      <!-- Buttons Row -->
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="primary-btn"
-                onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');">
-          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
