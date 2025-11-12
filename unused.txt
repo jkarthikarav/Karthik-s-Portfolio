@@ -1,0 +1,114 @@
+<!-- Card: Note4U Education Technology Business Plan -->
+<div class="CaseStudyGrid-item">
+  <div class="CaseStudyGrid-item-inner">
+    
+    <!-- Clickable Image -->
+    <div class="case-study-card-image"
+         onclick="window.open('/pages/casestudies/note4u.html', '_blank');">
+      <img src="assets/images/note/figma-make-preview.PNG" alt="Education Technology Business Plan: Note4U">
+    </div>
+
+    <!-- Card Content -->
+    <div class="case-study-content-area-on-yt">
+      <p>Presented Dec 2024 • UXR · Business Process Modeling</p>
+      <h4>
+        EdTech Design: Note4U
+      </h4>
+      <p class="cntnt">
+        Read how I used UX to build a business proposal for an AI tool to help music students learn sheet music.
+      </p>
+
+      <!-- Buttons Row -->
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
+        <button class="primary-btn"
+                onclick="window.open('/pages/casestudies/note4u.html', '_blank');">
+          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Card: Pitch Deck Website – Film Pre-Production -->
+<div class="CaseStudyGrid-item">
+  <div class="CaseStudyGrid-item-inner">
+    
+    <!-- Clickable Image -->
+    <div class="case-study-card-image"
+         onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');">
+      <img src="assets/logos/FIIP.jpg" alt="AI-Assisted Film Pre-Production Service Design">
+    </div>
+
+    <!-- Card Content -->
+    <div class="case-study-content-area-on-yt">
+      <p>Shipped Aug 2021 • Web Dev · Creative Strategy</p>
+      <h4>
+        Pitch Deck Website for Film Pre-Production
+      </h4>
+      <p class="cntnt">
+        Explore my thinking behind turning a pitch deck into an interactive website with visuals, music, and security.
+      </p>
+
+      <!-- Buttons Row -->
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
+        <button class="primary-btn"
+                onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');">
+          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    { title: "Pitch Deck Website for Film Pre-Production", link: "/pages/casestudies/filmPitchSite.html" },
+    { title: "Note 4 U", link: "/pages/casestudies/note4u.html"},
+
+
+    
+
+<!-- TMC IA Redesign -->
+<div class="phot-item" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
+  <a href="/pages/casestudies/tmc.html" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/hero-banners/tmc-banner.webp"
+       style="width: 100%; height: 100%; object-fit: contain; display: block;" 
+       alt="Textile Museum of Canada IA and Navigation Menu Redesign Case Study Banner" />
+  </a>
+</div>
+
+
+  <!-- Card: TMC IA Redesign -->
+<div class="CaseStudyGrid-item-home">
+    
+  <div class="case-study-content-area-on-yt-home">
+    <h5>UX Researcher (Team Project) • Presented Nov 2023 • Team of 4 UX Researchers; Presented our insights and designs to museum staff CEO Kirsten Kamper and Caitlin Donnelly</h5>
+
+    <h3>IA Redesign & implementation Strategy: Textile Museum of Canada</h3>
+
+    <p class="cntnt">
+      Redesigned the IA; Created a Visual design and Analytics-focused Phased testing strategy for Web Implementation
+    </p>
+
+    <h4>Overview</h4>
+
+    <p class="cntnt">
+      We redesigned the website’s information architecture to make key content easier to 
+      find, streamline navigation, and support ticketing, donations, and program discovery. 
+      Conducted card sorting, content audits, and tree testing to validate the structure. 
+      Designed mid- and high-fidelity wireframes for desktop and mobile, 
+      and I proposed a phased implementation to gather real-time actionable insights.
+    </p>
+
+    <p class="cntnt">
+      #UXResearch #InformationArchitecture #ImplementationStrategy #VisualDesign
+    </p>
+    <!-- Single Button -->
+    <div style="margin-top: 5px;">
+      <button class="primary-btn" onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
+        View Case Study →
+      </button>
+    </div>
+  </div>
+</div>

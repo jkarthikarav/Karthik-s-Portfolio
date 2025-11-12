@@ -11,6 +11,7 @@
   --tertiary-dark: #1F4735;
   --neutral-alt: #fffbf4;
   --muted: #1e2324;
+  --neutral-slits: #fcfcfc;
 }
 
 html {
@@ -117,6 +118,10 @@ p {
   display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 0.25rem auto;
 }
 
+.hero-button-row h5{
+  color: var(--black);
+}
+
 .hero-button-row-main {
   display: flex;
   flex-direction: column; /* stack h5 and buttons container */
@@ -129,7 +134,7 @@ p {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap; /* buttons wrap together */
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero-buttons-container {
@@ -613,11 +618,11 @@ th {
 
 /* Default Flexbox Layout (3 items per row) */
 .grid-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  display: flex; flex-wrap: wrap; gap: 3rem; margin: 1rem auto; justify-content: center; padding: 2rem 2rem;
+}
+
+.grid-wrapper-2 {
+  display: flex; flex-wrap: wrap; gap: 2rem; margin: 0.25rem auto; justify-content: center;
 }
 
 .grid-wrapper-art {
@@ -901,7 +906,7 @@ padding: 6rem;
 }
 
 .subtext {
-          margin:10px 0;
+  margin:10px 0; color: var(--muted);
 }
 
 .subdesc {
@@ -920,7 +925,7 @@ padding: 6rem;
 .main-work {
   background-color: var(--white);
           display: flex; flex-direction: column; 
-          align-items: center; justify-content: flex-start; width: 100%; padding: 1rem; box-sizing: border-box; min-height: 100vh;
+          align-items: center; justify-content: flex-start; width: 100%; padding: 1rem; box-sizing: border-box;
 }
 
 .work {
@@ -944,9 +949,15 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; bo
   flex: 1 1 calc(33.33% - 3rem); min-width: 250px;
 }
 
-.CaseStudyGrid-item-art {
-  flex: 1 1 calc(100% - 3rem); min-width: 250px;
+#CaseStudyGrid .CaseStudyGrid-item {
+  flex: 1 1 calc(50% - 3rem); justify-items: center;
 }
+
+.CaseStudyGrid-item-art {
+  flex: 0 0 33%;
+  box-sizing: border-box;
+}
+
 
 .CaseStudyGrid-item-art > .case-study-content-area-on-yt {
   width: 100% !important;
@@ -998,6 +1009,14 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; bo
 
 .case-study-card-image img {
 width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;
+}
+
+.grid-wrapper-2 .case-study-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: auto;
+  border-radius: 8px;
 }
 
 .case-study-content-area {
@@ -1138,7 +1157,7 @@ display: flex; flex-direction: row; flex-wrap: wrap; gap: 2rem; align-items: fle
 /* Case Study Styles*/
 
 .post {
-max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; min-height: 100vh;
+display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; padding: 2rem 4rem;
 }
 
 .post-title {
@@ -1151,7 +1170,7 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 }
 
 .post-content {
-  max-width: 80vw; color:var(--black); margin:0 auto; line-height:1.6;
+  max-width: 80vw; color:var(--black); margin: 1rem auto; line-height: 1.6;
 }
 
 .post-content > h1, h2, h3, h4, h5, h6 {
@@ -1464,7 +1483,7 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 .text-btn {
   background-color: inherit;
   border: none;
-  color: var(--black); 
+  color: var(--tertiary-light); 
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -1480,12 +1499,12 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
 }
 
 .text-btn .btn-text {
-  text-decoration: none;
+  text-decoration: underline;
   transition: text-decoration 0.2s;
 }
 
 .text-btn:hover .btn-text {
-  text-decoration: underline;
+  color: var(--tertiary-dark);
 }
 
 .disabled-btn {
@@ -1589,6 +1608,7 @@ max-width: 80vw; display: flex; flex-direction:column; justify-content: flex-sta
   h1 { font-size: 20px; }
   h2 { font-size: 18px; }
   p  { font-size: 14px; }
+  .post {padding: 2rem; }
 }
 
 @media (max-width: 1200px) {
