@@ -920,8 +920,7 @@ padding: 6rem;
         
 .main-work {
   background-color: var(--white);
-          display: flex; flex-direction: column; 
-          align-items: center; justify-content: flex-start; width: 100%; padding: 1rem; box-sizing: border-box;
+  width: 100%; padding: 1rem; box-sizing: border-box;
 }
 
 .work {
@@ -1656,12 +1655,27 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
 
 /* Case Studies Page */
 
+.work-csp {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers the container horizontally */
+  gap: 2rem;
+  width: 100%;
+}
+
+.work-csp .content-wrapper {
+  width: 80vw; /* same as grid */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .grid-wrapper-3-csp {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding: 1rem 2rem;
-  justify-content: space-between;
+  justify-items: flex-start;
+  width: 80vw;
 }
 
 .CaseStudyGrid-item-csp {
@@ -1692,8 +1706,4 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
 
 .spec-box-csp {
   margin-bottom: 2rem;
-}
-
-.main-work-csp {
-  padding: 2rem 0;
 }
