@@ -14,11 +14,116 @@
   </div>
 </div>
 
+<script>
+  // Array of card data
+  const cards = [
+    {
+      title: "Information Sciences Research Proposal + Lit Review: Translation as Cognitive Authority [Docs]",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1ARf3zDGp-LZjc6jdzZr2RXjDqugFo-bvWgJq33EbalQ/edit?usp=sharing"
+    },
+    {
+      title: "Paper Review: Cognitive Authorities of COVID-19 Information [Docs]",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing"
+    },
+    { 
+      title: "Research Method Review: Digital Fanfic in Negotiation [Docs]",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing"
+    },
+    {
+      title: "IA Critique: Youtube Music [Docs]",
+      tags: ["Reports"],
+      link: "assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
+    },
+    {
+      title: "Conversational UX Design: Healthcare AI ChatBot [PPT]",
+      tags: ["Presentations"],
+      link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing"
+    },
+    {
+      title: "Speculative Product Design (Essay + Design Workbook): Frameworks for Creative Media Control [Docs]",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing"
+    },
+    {
+      title: "Data Analytics Report (using Python) – Ranking on Billboard Top100 Charts [Docs]",
+      tags: ["Reports"],
+      link: "https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing"
+    },
+    {
+      title: "Developing Design Guidelines: Canadian Recycling System [PPT]",
+      tags: ["Presentations"],
+      link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing"
+    },
+    {
+      title: "Digitization Critique: Digital Comics Museum Website [PPT]",
+      tags: ["Presentations"],
+      link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing"
+    }
+  ];
+
+  function filterCards(tag, clickedBtn) {
+    const container = document.getElementById('filteredCards');
+    container.innerHTML = ''; // clear previous filtered content
+
+    // Reset all buttons
+    const buttons = document.querySelectorAll('#filterButtons .contact-btn');
+    buttons.forEach(btn => {
+      btn.style.background = 'var(--primary)';
+      btn.style.color = 'var(--tertiary-dark)';
+    });
+
+    // Highlight clicked button
+    clickedBtn.style.background = 'var(--primary-light)';
+    clickedBtn.style.color = 'var(--tertiary-dark)';
+
+    // Add close button
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = 'Clear Content';
+    closeBtn.style.alignSelf = 'flex-start';
+    closeBtn.style.background = 'maroon';
+    closeBtn.style.color = 'white';
+    closeBtn.style.border = 'none';
+    closeBtn.style.borderRadius = '4px';
+    closeBtn.style.padding = '0.25rem 0.5rem';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.onclick = () => {
+      container.innerHTML = '';
+      // Reset all buttons
+      buttons.forEach(btn => {
+        btn.style.background = 'var(--primary)';
+        btn.style.color = 'var(--tertiary-dark)';
+      });
+    };
+    container.appendChild(closeBtn);
+
+    // Filter and add links
+    const filtered = cards.filter(card => card.tags.includes(tag));
+    filtered.forEach(card => {
+      const div = document.createElement('div');
+      div.style.display = 'flex';
+      div.style.gap = '1rem';
+      div.style.alignItems = 'center';
+
+      const a = document.createElement('a');
+a.textContent = `View: ${card.title}`;
+a.href = card.link;
+a.target = "_blank"; // open in new tab
+a.style.color = "var(--neutral-alt)";
+a.style.textDecoration = "underline";
+a.style.cursor = "pointer";
+
+      div.appendChild(a);
+      container.appendChild(div);
+    });
+  }
+</script>
 
 
 
-
-    { title: "Pitch Deck Website for Film Pre-Production", link: "/pages/casestudies/filmPitchSite.html" },
+    ,
     { title: "Note 4 U", link: "/pages/casestudies/note4u.html"},
 
 

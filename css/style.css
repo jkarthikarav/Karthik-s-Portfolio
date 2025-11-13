@@ -923,6 +923,13 @@ padding: 6rem;
   width: 100%; padding: 1rem; box-sizing: border-box;
 }
 
+.main-work-2 {
+  background-color: var(--white);
+  width: 100%; padding: 1rem; box-sizing: border-box;
+  display: flex; flex-direction: column; 
+          align-items: center; justify-content: flex-start; width: 100%; padding: 1rem;
+}
+
 .work {
   background-color: var(--secondary);
           display: flex; flex-direction: column; 
@@ -965,6 +972,7 @@ align-items: center; justify-content: flex-start; width: 100%; padding: 2rem; bo
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
+  width: 80vw;
 }
 
 .CaseStudyGrid-item-article {

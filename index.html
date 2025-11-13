@@ -102,7 +102,7 @@
 
 </section>
 
-<section id="fw" class="main-work">
+<section id="fw" class="main-work-2">
 
 <h2>
   Showcase
@@ -204,7 +204,7 @@
 
 </section>
 
-<section id="art" class="main-work">
+<section id="art" class="main-work-2">
 
 <h2>
   Design Thinking in Action
@@ -236,7 +236,7 @@
   <div class="CaseStudyGrid-item-inner">
     <div class="case-study-content-area-on-yt">
       <p>November 12, 2025 • UX Design · Fintech</p>
-      <h4>Redesigning Beneficiary Management: HDFC</h4>
+      <h4>Redesigning Beneficiary Management Flow in Indian Netbanking</h4>
       <div class="button-row-art">
         <button class="primary-btn" onclick="window.open('https://www.linkedin.com/pulse/redesigning-beneficiary-management-flow-indian-web-apps-jambunathan-x1koe', '_blank');">
           Read Article →
@@ -251,7 +251,7 @@
   <div class="CaseStudyGrid-item-inner">
     <div class="case-study-content-area-on-yt">
       <p>September 29, 2025 • Web Production · Education</p>
-      <h4>Website Production: ECE at U of T</h4>
+      <h4>Website Production Design: ECE at U of T</h4>
       <div class="button-row-art">
         <button class="primary-btn"
                 onclick="window.open('/pages/articles/web-production.html', '_blank');">
@@ -277,6 +277,23 @@
     </div>
   </div>
 </div>
+
+<!-- Article: BUOYAI -->
+<div class="CaseStudyGrid-item-article">
+  <div class="CaseStudyGrid-item-inner">
+    <div class="case-study-content-area-on-yt">
+      <p>December 17, 2025 • Conversational UX · Healthcare</p>
+      <h4>Conversational UX Design for Healthcare AI: Buoy AI Chatbot</h4>
+      <div class="button-row-art">
+        <button class="primary-btn"
+          onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">
+          View Presentation →
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 </div>
@@ -379,25 +396,53 @@ function changeGreeting() {
 </script>
 
 <script>
-  const link_cards = [  
-    { title: "ECE Homepage Redesign", link: "/pages/casestudies/eceHome.html" },
-    { title: "Mobile UX Research for Ticket Deals", link: "/pages/casestudies/mobileUXR.html" },
-    { title: "IA Redesign and Navigation Menu Test Strategy Design", link: "/pages/casestudies/tmc.html" },
-    { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "/pages/casestudies/previz.html" },
-  ];
+const link_cards = [  
+  { title: "ECE Homepage Redesign", link: "/pages/casestudies/eceHome.html" },
+  { title: "Mobile UX Research for Ticket Deals", link: "/pages/casestudies/mobileUXR.html" },
+  { title: "IA Redesign and Navigation Menu Test Strategy Design", link: "/pages/casestudies/tmc.html" },
+  { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "/pages/casestudies/previz.html" },
+  { title: "Pitch Deck Website for Film Pre-Production", link: "/pages/casestudies/filmPitchSite.html" }
+];
 
-  function openRandomLink() {
-    const randomIndex = Math.floor(Math.random() * link_cards.length);
-    const randomLink = link_cards[randomIndex].link;
-    window.open(randomLink, "_blank");
+let shuffledIndices = [];
+let currentIndex = 0;
+
+// Fisher-Yates shuffle
+function shuffle(array) {
+  let a = array.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// initialize shuffled indices
+function initShuffle() {
+  shuffledIndices = shuffle([...Array(link_cards.length).keys()]);
+  currentIndex = 0;
+}
+
+function openRandomLink() {
+  if (shuffledIndices.length === 0 || currentIndex >= shuffledIndices.length) {
+    initShuffle(); // reshuffle when all links have been used
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const surpriseButton = document.getElementById("surprise-btn");
-    if (surpriseButton) {
-      surpriseButton.addEventListener("click", openRandomLink);
-    }
-  });
+  const link = link_cards[shuffledIndices[currentIndex]].link;
+  currentIndex++;
+  window.open(link, "_blank");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const surpriseButton = document.getElementById("surprise-btn");
+  if (surpriseButton) {
+    surpriseButton.addEventListener("click", openRandomLink);
+  }
+});
+
+// initial shuffle
+initShuffle();
+
 </script>
 
 <script>
@@ -416,113 +461,6 @@ function changeGreeting() {
           }
           dot.style.transform = `scale(${scale})`;
         }, 100);
-</script>
-
-<script>
-  // Array of card data
-  const cards = [
-    {
-      title: "Information Sciences Research Proposal + Lit Review: Translation as Cognitive Authority [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1ARf3zDGp-LZjc6jdzZr2RXjDqugFo-bvWgJq33EbalQ/edit?usp=sharing"
-    },
-    {
-      title: "Paper Review: Cognitive Authorities of COVID-19 Information [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing"
-    },
-    { 
-      title: "Research Method Review: Digital Fanfic in Negotiation [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing"
-    },
-    {
-      title: "IA Critique: Youtube Music [Docs]",
-      tags: ["Reports"],
-      link: "assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
-    },
-    {
-      title: "Conversational UX Design: Healthcare AI ChatBot [PPT]",
-      tags: ["Presentations"],
-      link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing"
-    },
-    {
-      title: "Speculative Product Design (Essay + Design Workbook): Frameworks for Creative Media Control [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing"
-    },
-    {
-      title: "Data Analytics Report (using Python) – Ranking on Billboard Top100 Charts [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing"
-    },
-    {
-      title: "Developing Design Guidelines: Canadian Recycling System [PPT]",
-      tags: ["Presentations"],
-      link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing"
-    },
-    {
-      title: "Digitization Critique: Digital Comics Museum Website [PPT]",
-      tags: ["Presentations"],
-      link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing"
-    }
-  ];
-
-  function filterCards(tag, clickedBtn) {
-    const container = document.getElementById('filteredCards');
-    container.innerHTML = ''; // clear previous filtered content
-
-    // Reset all buttons
-    const buttons = document.querySelectorAll('#filterButtons .contact-btn');
-    buttons.forEach(btn => {
-      btn.style.background = 'var(--primary)';
-      btn.style.color = 'var(--tertiary-dark)';
-    });
-
-    // Highlight clicked button
-    clickedBtn.style.background = 'var(--primary-light)';
-    clickedBtn.style.color = 'var(--tertiary-dark)';
-
-    // Add close button
-    const closeBtn = document.createElement('button');
-    closeBtn.textContent = 'Clear Content';
-    closeBtn.style.alignSelf = 'flex-start';
-    closeBtn.style.background = 'maroon';
-    closeBtn.style.color = 'white';
-    closeBtn.style.border = 'none';
-    closeBtn.style.borderRadius = '4px';
-    closeBtn.style.padding = '0.25rem 0.5rem';
-    closeBtn.style.cursor = 'pointer';
-    closeBtn.onclick = () => {
-      container.innerHTML = '';
-      // Reset all buttons
-      buttons.forEach(btn => {
-        btn.style.background = 'var(--primary)';
-        btn.style.color = 'var(--tertiary-dark)';
-      });
-    };
-    container.appendChild(closeBtn);
-
-    // Filter and add links
-    const filtered = cards.filter(card => card.tags.includes(tag));
-    filtered.forEach(card => {
-      const div = document.createElement('div');
-      div.style.display = 'flex';
-      div.style.gap = '1rem';
-      div.style.alignItems = 'center';
-
-      const a = document.createElement('a');
-a.textContent = `View: ${card.title}`;
-a.href = card.link;
-a.target = "_blank"; // open in new tab
-a.style.color = "var(--neutral-alt)";
-a.style.textDecoration = "underline";
-a.style.cursor = "pointer";
-
-      div.appendChild(a);
-      container.appendChild(div);
-    });
-  }
 </script>
 
 </body>
