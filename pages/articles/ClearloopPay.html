@@ -28,92 +28,115 @@
 
       <!-- Title -->
       <h1 class="wp-post-title">
-        UI Design Showcase: NFC Payment App Screens
+        UI Designs: NFC Payment App Screens
       </h1>
 
-      <!-- Meta: date / author / categories -->
       <div class="post-meta" style="font-size:0.875rem; margin: 2rem 0;">
-        <a class="circle-me" href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank"
-        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
-        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <img src="../../assets/images/about/circle-me.jpg" alt="LinkedIn Profile" 
-         style="width: 100%; height: 100%; object-fit: cover; display: block;"/>
-        </a>
-        <time>&nbsp;&nbsp;&nbsp;&nbsp;November 8, 2025</time>
-        <span style="margin: 0 0.5rem;">•</span>
-        <span class="post-author">UI Design, Figma, Mobile Design, UX, Fintech</span>
-      </div>
+  <span class="post-meta-image">
+    <a class="circle-me" href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank"
+       onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.3)';"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+      <img src="../../assets/images/about/circle-me.jpg" alt="LinkedIn Profile"
+           style="width: 100%; height: 100%; object-fit: cover; display: block;"/>
+    </a>
+  </span>
+
+  <div class="post-meta-text">
+    <p>November 8, 2025</p>
+    <p>UI Design, Figma, Mobile Design, UX, Fintech</p>
+  </div>
+</div>
 
     <div class="wp-post-content">
-    
-      <p>   
-        Clearloop Pay is a concept mobile app built to show how employees can manage company expenses. 
-        My Brother previously worked in the employee expense department and his work in assessing the bills and reimbursements requests
-        seemed interesting enough for me to think of a way to make that process simpler for him.
-      </p>
 
-      <p>
-        An employee is given a company card for expenses, true in many parts of the world. But they are for different levels of employees and different purposes.
-        But in this day and age, NFC is very common -- so is pre-paying for everything digitally. But are there any expenses which cannot be done online AND needs to be a physical card tap?
-      </p>
+      <img src="../../assets/images/hero-banners/clearloop-banner.webp" style="width: 100%;"/>
 
       <h2 style="color: var(--tertiary-dark);">
-        Design Planning
+        Introduction
       </h2>
 
       <p>
-        I shortlisted these down to Meals and Dining expenses, Gas, and Parking ticket payments. 
-        Restaurant dining bill amounts, unlike Doordash orders, aren't known beforehand and you have to pay for them phsyically. 
-        Gas at the gas station is the same, and unlike Uber/Lyft, we don't all know how much the gas for the trip is going to cost us.
-        And for when you travel on company business, you'll surely have to park somewhere where parking can be paid with a physical tap.
+        Managing work-related expenses can be time-consuming and error-prone. 
+        Clearloop Pay is a native mobile application that helps employees handle company reimbursements efficiently. Users can:
+      </p>
+
+      <div class="facts-grid">
+        <img src="../../assets/images/uiwork/Extras/1.webp" />
+        <img src="../../assets/images/uiwork/Extras/2.webp" />
+        <img src="../../assets/images/uiwork/Extras/3.webp" />
+      </div>
+    
+      <h2 style="color: var(--tertiary-dark);">
+        Designing for Real-World Employee Expenses
+      </h2>
+
+      <p>   
+        Clearloop Pay is a mobile concept to show how employees can use a company cards via NFC. 
+        A relative who worked in employee reimbursement management once told me how people often forgot to attach files that would make their approval process so much easier.
       </p>
 
       <p>
-        Now, I know that for Parking, you get a receipt after you pay as it depends on how long you park. 
-        But for restaurant dining and gas, you can see the amount before you pay. Technically there are some minor exceptions, some parking lots do charge flat rates, or if its a catered event at a restaurant, etc, but we are looking at the broader and more recurring categories.
+        Employees are given company cards, often with limits and purposes depending on their role.
+        While NFC and digital prepayments are common, some expenses still require physical card taps. 
       </p>
 
       <p>
-        Based on all of this thinking, I designed the UI for the app using Material Design and a minimal color palette. 
-        It is displayed using the Restaurant dining expense flow.
+        I narrowed it down to meals, gas, and parking. 
+        Restaurant and gas expenses must be paid physically since amounts aren’t known beforehand, unlike Doordash or Uber/Lyft.
+        Also, Business travel often requires parking with meters that accept physical card payments (which one would probably reimburse later).
+      </p>
+
+      <p>
+        While parking receipts depend on duration and some exceptions exist for flat rates or catered events, restaurant and gas expenses are the most common recurring cases.
       </p>
         
-
       <h2 style="color: var(--tertiary-dark);">
-       My UI Designs
+       High Fidelity UI Screens
       </h2>
 
-      <p>
-        The screens are:<br>
+      <p style="margin: 2rem 0;">
         1. Home/Spend - Dashboard with recent transactions, summaries, and statuses, as well an option to add a new transaction.<br>
+      </p>
+
+      <div class="facts-grid">
+
+        <img src="../../assets/images/Clearloop Pay/Spend Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/Intermediate Frame Spend FAB Tap.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/Intermediate Frame Spend List Drag.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/Intermediate Frame Spend Banner Close.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/Spend Screen Actions Needed Tab.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+
+      </div>
+
+      <p style="margin: 2rem 0;">
         2. Photo screen and confirmation – to capture bill image, and to retake/upload.<br>
+      </p>
+
+      <div class="facts-grid">
+
+        <img src="../../assets/images/Clearloop Pay/Photo Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/Confirm Photo Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+
+      </div>
+
+      <p style="margin: 2rem 0;">
         3. Verification screen - OCR extracts details such as vendor, date, and amount for confirmation or editing; option to subit to HR with the bill image.<br>
+      </p>
+
+      <div class="facts-grid">
+        
+        <img src="../../assets/images/Clearloop Pay/Verify Details Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+      
+      </div>
+
+      <p style="margin: 2rem 0;">
         4. NFC screens - allows employee to acesss the Company's NFC-enabled credit card to complete payment.<br>
       </p>
 
       <div class="facts-grid">
 
-      <img src="../../assets/images/Clearloop Pay/Spend Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-      <img src="../../assets/images/Clearloop Pay/Intermediate Frame Spend FAB Tap.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-      <img src="../../assets/images/Clearloop Pay/Photo Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-
-      </div>
-
-      <div class="facts-grid">
-
-      <img src="../../assets/images/Clearloop Pay/Confirm Photo Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-      <img src="../../assets/images/Clearloop Pay/Verify Details Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-      <img src="../../assets/images/Clearloop Pay/NFC Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-
-      </div>
-
-      <h3>Other Screens</h3>
-
-      <div class="facts-grid">
-
-      <img src="../../assets/images/Clearloop Pay/Intermediate Frame Spend List Drag.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-      <img src="../../assets/images/Clearloop Pay/NFC Success Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
-      <img src="../../assets/images/Clearloop Pay/Spend Screen Actions Needed Tab.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/NFC Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+        <img src="../../assets/images/Clearloop Pay/NFC Success Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
 
       </div>
       
