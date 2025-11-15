@@ -41,7 +41,7 @@
   </span>
 
   <div class="post-meta-text">
-    <p>Designed/Ongoing Use since July 2023 (Project Duration 12 weeks)</p>
+    <p>Designed/Ongoing Use since July 2023 (Project Duration 8 weeks)</p>
     <p>Role: Service Design</p>
     <p>Client: Fix It In Post Studios</p>
     <p>Service Blueprints using FigJam, Adobe Suite</p>
@@ -293,11 +293,7 @@
 
 
 <script>
-  fetch('../../addons/header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
+fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
 </script>
 </body>
 </html>

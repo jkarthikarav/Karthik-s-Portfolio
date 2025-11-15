@@ -102,6 +102,9 @@
           <button class="text-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
             <span class="btn-text">Scroll down to view Showcase</span> ↓
           </button>
+          <button class="text-btn" onclick="document.getElementById('abt').scrollIntoView({behavior: 'smooth'});">
+            <span class="btn-text">Learn More About Me</span> ↓
+          </button>
           <button class="text-btn" onclick="document.getElementById('art').scrollIntoView({behavior: 'smooth'});">
             <span class="btn-text">View my Design Thinking in action</span> ↓
           </button>
@@ -118,114 +121,186 @@
 
 </section>
 
-<section id="fw" class="main-work-2">
+<section id="fw" class="main-work">
 
 <h2>
   Showcase
 </h2>
 
-<div id="CaseStudyGrid" class="grid-wrapper">
-
-<!-- ECE Website Homepage Redesign – University of Toronto -->
-<div class="phot-item" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
-
-  <a href="/pages/casestudies/eceHome.html" target="_blank" rel="noopener noreferrer">
-    <img src="assets/images/hero-banners/ece.webp" alt="ECE Homepage Redesign Case Study Banner" style="width: 100%; height: auto; object-fit: contain; display: block;" />
-  </a>
-
-</div>
-
-<!-- Card: ECE Website Homepage Redesign – University of Toronto -->
-<div class="CaseStudyGrid-item-home">
-  <div class="case-study-content-area-on-yt-home">
-    <h3>
-      ECE Homepage Redesign: University of Toronto, ECE Department
-    </h3>
-
-    <h5>UI/UX and Web Developer • Shipped Jan 2025 • Worked within department admin and marketing team</h5>
-
-    <p class="cntnt">
-      Revamped a website's home page to suit company narratives and business goals.
-    </p>
-
-    <h5>
-      Overview
-    </h5>
-
-    <p class="cntnt">
-      🔸 Redesigned and implemented the homepage with the goal to highlight programs, research, and industry opportunities, and engage prospective students. 
-      <br><br>🔹 Conducted UX research, created wireframes and mockups in Figma, iterated with stakeholders, 
-      and built the final modular site on WordPress with animations and custom CSS/JS. 
-      <br><br>🔹 The goal was to modernize .
-    </p>
-
-    <p class="hashtags">
-      #UIUXDesign #WebDevelopment #Accessibility #WebLayout #WebContent
-    </p>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 5px;">
-        <button class="primary-btn" onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
+<div class="section-showc">
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <h6 style="color: var(--tertiary-light);">Web Development • Shipped Jan 2025</h6>
+        <h3 class="subtitle-showc">Homepage Redesign: ECE at U of T</h3>
+        <p class="description-showc">
+          Designed an information narrative and implemented using WordPress with the goal to engage prospective students. 
+        </p>
+        <p class="hashtags">
+          #UIUXDesign #WebDevelopment #Accessibility #WebLayout #WebContent
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+              UX Research & Design Planning
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+              UI Mockups and Stakeholder Presentations
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+              WordPress Implementation & Refining Build
+            </dt>
+          </div>
+        </dl>
+        <button class="primary-btn" onclick="window.open('/pages/casestudies/eceHome.html', '_blank');" style="width: fit-content;">
           View Case Study →</span>
         </button>
+      </div>
+
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/ece.webp" alt="Product screenshot" class="img-showc" />
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Mobile App for Ticket Deals -->
-<div class="phot-item" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
-  <a href="/pages/casestudies/mobileUXR.html" target="_blank" rel="noopener noreferrer">
-    <img src="assets/images/hero-banners/exptor-banner.webp"
-       style="width: 100%; height: 100%; object-fit: contain; display: block;" 
-       alt="UX/UI Research: Mobile App for Ticket Deals" />
-  </a>
-</div>
+<div class="section-showc">
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <h6 style="color: var(--tertiary-light);">Mobile Product Design • Oct-Dec 2023 • Team: 6 UXers</h6>
+        <h3 class="subtitle-showc">Mobile App for Ticket Deals</h3>
+        <p class="description-showc">
+          Toronto is rich in heritage, yet many residents miss out due to lack of centralized ticket discovery experience.
+        </p>
+        <p class="hashtags">
+          #AndroidMobileApp #ProductDesign #DesignSystem #UXResearch #UIDesign
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+              UX Research & Design Planning
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+              User Testing and Product Pitches
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+              Android Components & High Fidelity UI
+            </dt>
+          </div>
+        </dl>
+        <button class="primary-btn" onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+      </div>
 
-<!-- Card: Mobile App for Ticket Deals -->
-<div class="CaseStudyGrid-item-home">    
-
-  <div class="case-study-content-area-on-yt-home">
-    <h3>Mobile App for Ticket Deals: End-to-End UX/UI Design</h3>
-
-    <h5>UX Researcher and UI Designer • Conceptualized Oct-Dec 2023 • Team Project of 6 UX designers</h5>
-
-    <p class="cntnt">
-      We designed a mobile-first platform that centralizes discovery of discounted and free museum tickets.
-    </p>
-
-    <h5>Overview</h5>
-
-    <p class="cntnt">
-      🔸 Toronto is rich in heritage, yet many residents miss out on experiencing it due to the absence of a 
-      centralized ticket discovery experience. 
-      <br><br>🔹 We conducted user research, persona creation, and low fidelity prototype design. 
-      <br><br>🔹 Later, based on research insights, validation of low fidelity prototype, and feedback from peers and senior UX researchers, 
-      <br><br>🔹 I iterated from low- to high-fidelity, building a design system and style guide adhering to Material Design guidelines.
-    </p>
-
-    <p class="hashtags">
-      #AndroidMobileApp #ProductDesign #DesignSystem #UXResearch #UIDesign
-    </p>
-
-    <!-- Single Button -->
-    <div style="margin-top: 5px;">
-      <button class="primary-btn" onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');">
-        View Case Study →
-      </button>
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/Exp-Tor.webp" alt="Product screenshot" class="img-showc" />
+      </div>
     </div>
   </div>
 </div>
-
-</div>
-</div>
-
-
 </section>
 
 
+<section id="abt" class="section-mesa">
+  <div class="container-mesa">
+    <h2 class="title-mesa">About Me</h2>
 
-<section id="art" class="main-work-2">
+    <div class="grid-mesa">
 
-  <div class="blog-section-designthinking">
+      <!-- Mobile friendly -->
+      <div class="card-mesa mobile-mesa">
+        <div class="card-inner-mesa">
+          <div>
+            <h3 class="card-title-mesa">Studio Karthik</h3>
+            <p class="card-text-special-mesa">Since Feb 2018</p>
+            <p class="card-text-mesa">
+              Boutique design studio delivering UX, web site, and digital media designs across APAC, EMEA, and NATAM.
+            </p>
+          </div>
+          <div class="card-image-wrapper-mesa">
+            <img src="/assets/logos/JAK.png" alt="Mobile friendly" class="card-image-mesa">
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance -->
+      <div class="card-mesa performance-mesa">
+        <div class="card-inner-mesa">
+          <div>
+            <h5 class="card-title-mesa">Currently at</h5>
+            <h3 class="card-text-special-2-mesa">Copywriting Creatives</h3>
+            <p class="card-text-special-mesa">Solutions Designer</p>
+            <p class="card-text-special-mesa">Since Apr 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="card-mesa security-mesa">
+        <div class="card-inner-mesa">
+          <div>
+            <h5 class="card-title-mesa">Previously at</h5>
+            <p class="card-text-special-mesa">ECE Department, University of Toronto. Web Production Design, Jun '24 to Mar '25.</p>
+            <p class="card-text-special-mesa">JKR Business Consultancy. Co-Founder / UX Consultant, Sep '21 to Aug '23.</p>
+            <p class="card-text-special-mesa">Fix It In Post Studios. UX and Visual Design, Aug '20 to Aug '21.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powerful APIs -->
+      <div class="card-mesa powerful-mesa">
+        <div class="card-inner-mesa">
+          <h3 class="card-title-mesa">Education</h3>
+          <div>
+            <h6 class="card-text-mesa">Master of Information, UX Design</h6>
+            <p class="card-text-special-mesa">Sep '23 to Jun '25. Faculty of Information, University of Toronto, St. George Campus.</p>
+          </div> 
+          <div>
+            <h6 class="card-text-mesa">Master of Science, Electronic Media</h6>
+            <p class="card-text-special-mesa">Aug '16 to Jul '21 (Bachelors + Masters). Department of Media Sciences, Anna University, CEG Campus.</p>
+          </div> 
+          <h3 class="card-title-mesa">Certifications</h3>
+          <div>
+            <h6 class="card-text-mesa">Career Essentials in Business Analysis</h6>
+            <p class="card-text-special-mesa">May '25. Microsoft through LinkedIn Learning.</p>
+          </div> 
+          <div>
+            <h6 class="card-text-mesa">TCPS 2: Ethical Conduct for Research Involving Humans</h6>
+            <p class="card-text-special-mesa">Jan '24. Government of Canada.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-compa-2">
+    <h4 class="title-compa">Software I use often</h4>
+    <div class="logo-grid-compa">
+      <img src="/assets/icons/Software/Adobe.png" alt="Adobe logo" class="logo-grid-img-compa"/>
+      <img src="/assets/icons/Software/Figma.png" alt="Figma logo" class="logo-grid-img-compa"/>
+      <img src="/assets/icons/Software/PPT.png" alt="Educational Solutions Company" class="logo-grid-img-compa"/>
+      <img src="/assets/icons/Software/WP.png" alt="Educational Solutions Company" class="logo-grid-img-compa"/>
+    </div>
+  </div>
+</section>
+
+
+<section id="art" class="blog-section-designthinking">
   <div class="container-designthinking">
     <div class="header-designthinking">
       <h2>Design Thinking in Action</h2>
@@ -277,12 +352,25 @@
 </div>
 
 </div>
-</div>
 
 <div style="padding: 2rem;"></div>
-
 </section>
 
+<section class="section-compa">
+  <div class="container-compa">
+    <h4 class="title-compa">Trusted by various teams in varied sectors across the globe</h4>
+    <div class="logo-grid-compa">
+      <img src="/assets/logos/Companies/Panchanathan Fishnets.webp" alt="Fishing Net Manufacturing Company" />
+      <img src="/assets/logos/Companies/Reelit Media.webp" alt="Digital Media Agency" />
+      <img src="/assets/logos/Companies/IMG.webp" alt="Educational Solutions Company" />
+      <img src="/assets/logos/Companies/Differently with Sole.webp" alt="Wellness Educator" />
+      <img src="/assets/logos/Companies/ThinkTech.webp" alt="IT Solutions Company" />
+      <img src="/assets/logos/Companies/SHF.webp" alt="Healthcare Organization" />
+      <img src="/assets/logos/Companies/epitome.webp" alt="Recruitment Company" />
+      <img src="/assets/logos/Companies/FIIP.webp" alt="Post Production Solutions Company" />
+    </div>
+  </div>
+</section>
 
 </main>
 
@@ -299,13 +387,7 @@
 </script>
 
 <script>
-  // Fetch and insert header HTML
-  fetch('addons/header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error("Error loading header:", error));
+fetch('addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
 </script>
 
 <script>
