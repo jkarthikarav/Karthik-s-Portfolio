@@ -127,7 +127,18 @@ a.style.cursor = "pointer";
     { title: "Note 4 U", link: "/pages/casestudies/note4u.html"},
 
 
-    
+    <div class="CaseStudyGrid-item-article-csp">
+      <div class="case-study-content-area-on-yt">
+        <p>May 25, 2025 • Conversational UX · Healthcare</p>
+        <h4>Conversational UX Design for Healthcare AI: Buoy AI Chatbot</h4>
+        <div class="button-row-art-csp">
+          <button class="primary-btn"
+           onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">
+            View Presentation →
+          </button>
+        </div>
+      </div>
+    </div>
 
 <!-- TMC IA Redesign -->
 <div class="phot-item" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">

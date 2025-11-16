@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Error: 404</title>
+
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap">
+  </noscript>
+
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+
+</head>
+
+<body style="background-color: var(--white);"> 
+
+<div id="header-placeholder"></div>
+
+<main class="main-404">
+  <div class="text-center-404">
+    <h2 class="text-base-404">Error 404</h2>
+    <h1 class="heading-404">Page not found</h1>
+    <h5 class="paragraph-404">Sorry there. I must have shared the wrong link or you must have mistyped it.</h5>
+    <div class="actions-404">
+      <button onclick="window.open('/', '_blank');" class="secondary-btn">Go back home</button>
+    </div>
+  </div>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script>
+    fetch('../../addons/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+
+<script>
+fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+</body>
+</html>

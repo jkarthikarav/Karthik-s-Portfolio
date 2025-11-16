@@ -177,7 +177,6 @@ hr {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
   gap: 16px;
   list-style: none;
   padding: 1rem;
@@ -1229,7 +1228,7 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
 }
 
 .post-title {
-  color:var(--tertiary-dark); line-height:1.25; margin: 1rem 0 0 0; max-width: 80vw;
+  color:var(--tertiary-dark); line-height: 1.6; margin: 1rem 0; max-width: 80vw;
 }
 
 .post-meta {
@@ -1468,7 +1467,7 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
 }
 
 .wp-post-title {
-  color:var(--tertiary-dark); line-height:1.25; margin: 1rem 0 0 0; width: 100%; 
+  color:var(--tertiary-dark); line-height:1.6; margin: 1rem 0 0 0; width: 100%; 
 }
 
 .wp-block-quote {
@@ -1967,7 +1966,9 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
 
 .card-text-special-2-mesa {
   margin: 0.5rem 0;
-  color: var(--tertiary-dark);
+  background: linear-gradient(-25deg, var(--tertiary-dark), var(--tertiary-light), var(--tertiary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-image-wrapper-mesa {
@@ -2166,4 +2167,51 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
   .text-block-showc {
     padding: 0; /* smaller screens already have spacing */
   }
+}
+
+
+.main-404 {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  background-image: url('/assets/images/ai/BG.webp'); 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  position: relative;          
+}
+
+.main-404::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+
+.text-center-404 {
+  position: relative;  
+  z-index: 1;
+  text-align: center;
+}
+
+.text-base-404 {
+  color: var(--neutral-main);
+}
+
+.heading-404 {
+  margin-top: 1rem;
+  color: var(--white);
+}
+
+.paragraph-404 {
+  margin-top: 0rem;
+  color: var(--white);
+}
+
+.actions-404 {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
