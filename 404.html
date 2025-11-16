@@ -19,8 +19,6 @@
 
 <body style="background-color: var(--white);"> 
 
-<div id="header-placeholder"></div>
-
 <main class="main-404">
   <div class="text-center-404">
     <h2 class="text-base-404">Error 404</h2>
@@ -31,20 +29,6 @@
     </div>
   </div>
 </main>
-
-<div id="footer-placeholder"></div>
-
-<script>
-    fetch('../../addons/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-</script>
-
-<script>
-fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
-</script>
 
 </body>
 </html>

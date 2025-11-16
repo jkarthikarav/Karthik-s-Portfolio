@@ -71,12 +71,12 @@
     // Reset all buttons
     const buttons = document.querySelectorAll('#filterButtons .contact-btn');
     buttons.forEach(btn => {
-      btn.style.background = 'var(--primary)';
+      btn.style.background = 'var(--accent-600)';
       btn.style.color = 'var(--tertiary-dark)';
     });
 
     // Highlight clicked button
-    clickedBtn.style.background = 'var(--primary-light)';
+    clickedBtn.style.background = 'var(--accent-300)';
     clickedBtn.style.color = 'var(--tertiary-dark)';
 
     // Add close button
@@ -93,7 +93,7 @@
       container.innerHTML = '';
       // Reset all buttons
       buttons.forEach(btn => {
-        btn.style.background = 'var(--primary)';
+        btn.style.background = 'var(--accent-600)';
         btn.style.color = 'var(--tertiary-dark)';
       });
     };
