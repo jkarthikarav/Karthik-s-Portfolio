@@ -1,5 +1,5 @@
 
-fetch('../../addons/header.html')
+fetch('/addons/header.html')
   .then(response => {
     if (!response.ok) throw new Error('Failed to load header');
     return response.text();
@@ -37,4 +37,23 @@ function closeModal() {
   // Hide the modal
   modal.style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const footerPlaceholder = document.getElementById('footer-placeholder');
+
+  fetch('/addons/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      footerPlaceholder.innerHTML = data;
+
+      // Wait a tick to ensure HTML is rendered
+      const btn = footerPlaceholder.querySelector(".tertiary-btn");
+      if (btn) {
+        btn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    })
+    .catch(error => console.error("Error loading footer:", error));
+});
 
