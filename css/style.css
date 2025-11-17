@@ -1056,7 +1056,7 @@ width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px;
 }
 
 .hashtags {
-  color: var(--black-300); margin: 1rem 0; font-size: 14px; font-style: italic; font-weight: bold;
+  color: var(--black-300); margin: 0; font-size: 14px; font-style: italic; font-weight: bold;
 }
 
 .case-study-content-area h3 {
@@ -1750,18 +1750,11 @@ display: flex; flex-direction:column; justify-content: flex-start; align-items: 
 
 .term-services {
   color: var(--brand-neutral-600);
-  font-family: 'Oswald', sans-serif;
-  line-height: 1.6;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .detail-services {
   margin-top: 0.5rem;
   color: var(--black-600);
-  font-family: 'Lato', sans-serif;
-  line-height: 1.4;
-  font-size: 18px;
   font-weight: bold;
 }
 
