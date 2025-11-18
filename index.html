@@ -20,103 +20,117 @@
   <!-- Styles and Scripts -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
-  <style>
-     /* For screens under 1000px */
-  @media (max-width: 1200px) {
-    .ed-qual {
-      display:none;
-    }
-  }
-
-  /* For mobile (under 600px is a common breakpoint) */
-  @media (max-width: 600px) {
-    .ed-qual {
-      display:none;
-    }
-  }
-  </style>
 
 </head>
 
 <body style="background-color: var(--white);">  
 
-<section class="banner-bann">
-  
-  <div class="banner-content-bann">
-    <p style="font-size: small; text-decoration: none; color: inherit; cursor: pointer;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeQR0N12Zjr4V8RZwCZIaQ_lOpHy0tax0rLV4I_VTHl1Bkjgw/viewform', '_blank');">
-      <strong>Open for Freelance/Contract Collabs</strong> 🔹
-      Use this form to share a quick brief about your project. 
-    </p>
-  </div>
-
-  <div class="banner-close-bann">
-    <button type="button">
-      <p style="font-size: small;"><strong>Dismiss</strong></p>
-    </button>
-  </div>
-
-</section>
-
-<!-- Header Placeholder -->
-<div id="header-placeholder"></div>
-
-<!-- Main Content -->
 <main>
- 
-<section class="hero-home">
 
-  <div style="display: flex; flex-direction: column; align-items: center; text-align:center; padding: 1rem; margin: 2rem;">
-    
-    <img src="assets/images/about/circle-me.jpg" alt="LinkedIn Profile" 
-    style="border-radius: 100%; width: 200px; height: 200px; object-fit: cover; display: block;" />
-    
-    <div class="hero-banner-lvl1">
+<section class="two-box-section">
 
-      <h1>
-        <span id="greeting"></span> 👋 I'm 
+  <div class="box-one">
+
+    <div class="down-arrow">
+      <img src="/assets/icons/home/Down.svg" alt="Down arrow" width="32" height="32" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">
+    </div>
+
+    <div class="box-one-top">
+
+      <div class="contact-row">
+        <div class="contact-item locale">
+          <img src="/assets/icons/home/Globe.svg" alt="Globe icon" width="16" height="16">
+          <p>Toronto</p>
+        </div>
+        <div class="contact-item" style="cursor: pointer;" onclick="window.open{'https://www.linkedin.com/in/karthikjambunathan/', '_blank'}">
+          <img src="/assets/icons/home/LI.svg" alt="LinkedIn" width="16" height="16">
+          <p>Connect</p>
+        </div>
+      </div>
+
+      <div class="logo-div"><img src="/assets/logos/Karthik Aravind.png" alt="Logo" class="logo-img"></div>
+
+      <!-- Hamburger button -->
+      <div class="contact-row-2" style="justify-content: flex-end;">
+        <button class="hamburger-btn" id="hamburger-btn">Menu</button>
+      </div>
+      
+    <div>
+        
+      </div>
+  
+    </div>
+
+    <div class="box-one-bottom">
+      <h6><span id="greeting"></span> 👋 I'm 
         <span class="nametag">Karthik Jambunathan</span>
         <span class="ed-qual">MI, MSc</span>
-      </h1>
-
-    </div>
-
-    <h5 class="subtext">From UI/UX Design to Product Strategy, Expert on Information Flows & Design</h5>
-
-    <div class="hero-banner-lvl1">
-
-    <h6 class="subdesc" style="cursor: pointer;" 
-      onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeQR0N12Zjr4V8RZwCZIaQ_lOpHy0tax0rLV4I_VTHl1Bkjgw/viewform', '_blank');">
-      Open For Freelance Collaborations ⤴︎
-    </h6>
-
-    <h6 class="subdesc" style="cursor: pointer;" onclick="window.open('mailto:karthikaravindj@gmail.com', '_blank');">
-      <span id="pulseDot" class="pulsedot"></span>
-      Open to UX/Product Roles in Canada
-    </h6>
-
-    </div>
-
-    <div class="hero-button-row">
-        <h5>Quick Access:</h5>
-        <div class="hero-buttons">
-          <button class="text-btn" onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-            <span class="btn-text">Scroll down to view Showcase</span> ↓
-          </button>
-          <button class="text-btn" onclick="window.open('casestudies.html', '_blank');">
-            <span class="btn-text">View All UI/UX Case Studies </span> ⤴︎
-          </button>
-          <button class="text-btn" id="surprise-btn">
-            <span class="btn-text">Open a Random Case Study</span> 🎲
-          </button>
-        </div>
+      </h6>
+      <h1>Driving business value through UX/Product research and strategy</h1>
     </div>
 
   </div>
 
+  <div class="box-two">
+
+    <div class="availability" style="cursor: pointer;" onclick="window.open('mailto:karthikaravindj@gmail.com', '_blank');">
+      <span class="status-dot"></span>
+      <h6>Open to Freelance/Contract/Full Time UX & Product Roles </h6>
+    </div>
+
+    <div class="main-button-row">
+      <button class="primary-btn"
+              onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
+        Showcase
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'});">
+        Services
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('abt').scrollIntoView({behavior: 'smooth'});">
+        About
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('art').scrollIntoView({behavior: 'smooth'});">
+        Design Thinking
+      </button>
+
+      <button class="primary-btn" id="surprise-btn">
+        Random Project 🎲
+      </button>
+    </div>
+
+  </div> 
+
+<div id="hamburger-modal" class="modal">
+  <div class="modal-content two-column-modal">
+    <button class="close-btn" id="close-btn">×</button>
+
+    <div class="modal-left">
+      <a class="main-page-link" href="casestudies.html" target="_blank">All Case Studies <img src="/assets/icons/home/page.svg"  width="16" height="16"/></a>
+      <h3 class="collapsible" data-section="web">Web</h3>
+      <h3 class="collapsible" data-section="mobile">Mobile</h3>
+      <h3 class="collapsible" data-section="ux">UX Research & Strategy</h3>
+      <h3 class="collapsible" data-section="design">Design Thinking</h3>
+      <a class="main-page-link" href="https://www.behance.net/gallery/236391313/Graphic-Design-Showcase" target="_blank">Graphic Design on Behance <img src="/assets/icons/home/link.svg"  width="16" height="16"/></a>
+    </div>
+
+    <div class="modal-right" id="modal-right">
+      <!-- Links will populate here when a heading is clicked -->
+    </div>
+  </div>
+</div>
+
+
 </section>
 
-<section class="section-services">
+<section id="services" class="section-services">
   <div class="container-services">
+
     <div class="intro-services">
       <h2 class="title-services">My Services</h2>
       <p class="description-services">
@@ -228,21 +242,21 @@
         <dl class="dl-showc">
           <div>
             <dt class="dt-showc">
-              UX Research & Design Planning
+            ↦ UX Research & Design Planning
             </dt>
           </div>
           <div>
             <dt class="dt-showc">
-              UI Mockups and Stakeholder Presentations
+            ↦ UI Mockups and Stakeholder Presentations
             </dt>
           </div>
           <div>
             <dt class="dt-showc">
-              WordPress Implementation & Refining Build
+            ↦ WordPress Implementation & Refining Build
             </dt>
           </div>
         </dl>
-        <button class="primary-btn" onclick="window.open('/pages/casestudies/eceHome.html', '_blank');" style="width: fit-content;">
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/eceHome.html', '_blank');" style="width: fit-content;">
           View Case Study →</span>
         </button>
       </div>
@@ -270,21 +284,21 @@
         <dl class="dl-showc">
           <div>
             <dt class="dt-showc">
-              UX Research & Design Planning
+            ↦ UX Research & Design Planning
             </dt>
           </div>
           <div>
             <dt class="dt-showc">
-              User Testing and Product Pitches
+            ↦ User Testing and Product Pitches
             </dt>
           </div>
           <div>
             <dt class="dt-showc">
-              Android Components & High Fidelity UI
+            ↦ Android Components & High Fidelity UI
             </dt>
           </div>
         </dl>
-        <button class="primary-btn" onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');" style="width: fit-content;">
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/mobileUXR.html', '_blank');" style="width: fit-content;">
           View Case Study →
         </button>
       </div>
@@ -296,43 +310,134 @@
     </div>
   </div>
 
-<div class="casa-grid">
-  <div class="casa-card">
-    <img src="/assets/images/hero-banners/pitchdeck-banner.webp" alt="Pitch Deck Website">
-    <p class="smallp">Shipped Aug 2021 • UI-UX/Web Dev · Creative Industries</p>
-    <h5>Pitch Deck Website for Film Fundraising</h5>
-    <p>Explore my thinking behind turning a PPT pitch deck into a fully functional website with music, visuals, and interaction-based systems design.</p>
-    <button class="primary-btn" onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');" style="width: fit-content;">
-      View Case Study →
-    </button>
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <h6 style="color: var(--brand-neutral-100);"><strong>Gen-AI Service Blueprint for Film Pre-Visualization </strong>• Implemented July 2023</h6>
+        <h3 class="subtitle-showc">Mapping Information Systems and Designing a Creative Workflow</h3>
+        <p>
+         Gen-AI dropped in Adobe Beta in May 2023. 
+         By July 2023, we had a working AI-assisted workflow and had delivered a client project.
+        </p>
+        <p class="hashtags">
+          #InformationDesign #ServiceDesign #WorkflowOptimization #UXStrategy #CreativeSystems
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+            ↦ Stakeholder Mapping & Ecosystem Analysis
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Establishing Guidelines & Employee Training
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Real-Time Deploy & Refinement
+            </dt>
+          </div>
+        </dl>
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/previz.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+      </div>
+
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/previz/Service.webp" alt="Product screenshot" class="img-showc" />
+      </div>
+    </div>
   </div>
 
-  <div class="casa-card">
-    <img src="/assets/images/hero-banners/GENAI-banner.webp" alt="Gen-AI Service Blueprint">
-    <p class="smallp">Implemented July 2023 • Service Design · Creative Industries</p>
-    <h5>Gen-AI Service Blueprint for Film Pre-Visualization</h5>
-    <p>Learn how I used Adobe GenAI (beta version, May 2023) in a successful pilot project to speed up pre-visualization video workflows.</p>
-    <button class="primary-btn" onclick="window.open('/pages/casestudies/previz.html', '_blank');" style="width: fit-content;">
-      View Case Study →
-    </button>
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <h6 style="color: var(--brand-neutral-100);"><strong>Pitch Deck Website for Film Fundraising </strong>• Shipped Aug 2021</h6>
+        <h3 class="subtitle-showc">Transforming Film Pitch Decks into Interactive, Information-Rich Websites</h3>
+        <p>
+         Traditional pitch decks and presentations struggled to capture a director’s vision and fail to engage memorably.  
+         Why? Because at the end of the day, it is a person with a PPT talking.
+        </p>
+        <p class="hashtags">
+          #WebDevelopment #UIUXDesign #InformationDesign #InvestorExperience #PresentationDesign
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+            ↦ UX Research & Visual Planning
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Interactive Prototype Development & Testing
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Iterative Refinement & Web Development
+            </dt>
+          </div>
+        </dl>
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+      </div>
+
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/spypitch/wireframe.webp" alt="Product screenshot" class="img-showc" style="object-position: top;" />
+      </div>
+    </div>
   </div>
 
-  <div class="casa-card">
-    <img src="/assets/images/hero-banners/tmc-banner.webp" alt="Textile Museum IA Redesign">
-    <p class="smallp">Study Conducted Oct-Nov 2023 • UI-UX/Web · Public Sector</p>
-    <h5>IA Redesign & Implementation Strategy: Textile Museum of Canada</h5>
-    <p>
-      See how the website's IA was restructured, 
-      and my thinking behind suggesting an implementation strategy.
-    </p>
-    <button class="primary-btn" onclick="window.open('/pages/casestudies/tmc.html', '_blank');" style="width: fit-content;">
-      View Case Study →
-    </button>
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <h6 style="color: var(--brand-neutral-100);">
+          <strong>Information Architecture Redesign & Implementation Strategy: Textile Museum of Canada </strong>• Study Conducted Oct-Nov 2023</h6>
+        <h3 class="subtitle-showc">Improving Discoverability of Website Content through an Information Architecture redesign</h3>
+        <p>
+         IA 
+         By July 2023, we had a working AI-assisted workflow and had delivered a client project.
+        </p>
+        <p class="hashtags">
+          #InformationArchitecture #UXResearch #VisualDesign #TestingStrategy
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+            ↦ Content Audits & Card Sorting
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Information Architecture & Tree Testing
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Navigation Design & Strategy Development
+            </dt>
+          </div>
+        </dl>
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+      </div>
+
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/tmc.webp" alt="Product screenshot" class="img-showc" />
+      </div>
+    </div>
   </div>
-</div>
 
 </section>
-
 
 <section id="abt" class="section-mesa">
   <div class="container-mesa">
@@ -463,8 +568,6 @@
 <div style="padding: 2rem;"></div>
 </section>
 
-
-
 </main>
 
 <div id="footer-placeholder"></div>
@@ -479,9 +582,6 @@
     .catch(error => console.error("Error loading footer:", error));
 </script>
 
-<script>
-fetch('addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
-</script>
 
 <script>
     const greetings = ["Hello", "Ciao", "Hola", "привіт", "வணக்கம்", "नमस्ते", "Bonjour", "안녕", "你好"];
@@ -602,36 +702,6 @@ initShuffle();
 </script>
 
 <script>
-        // Pulsing green dot effect
-        const dot = document.getElementById('pulseDot');
-        let scale = 1;
-        let growing = true;
-
-        setInterval(() => {
-          if (growing) {
-            scale += 0.05;
-            if (scale >= 1.4) growing = false;
-          } else {
-            scale -= 0.05;
-          if (scale <= 1) growing = true;
-          }
-          dot.style.transform = `scale(${scale})`;
-        }, 100);
-</script>
-
-<script>
-  function setHeroHeight() {
-    const header = document.getElementById('header-placeholder');
-    const hero = document.querySelector('.hero-home');
-    const headerHeight = header.offsetHeight; // actual height of the header
-    hero.style.minHeight = `calc(100vh - ${headerHeight}px)`;
-  }
-
-  window.addEventListener('load', setHeroHeight);
-  window.addEventListener('resize', setHeroHeight); // recalc on resize
-</script>
-
-<script>
 document.addEventListener("DOMContentLoaded", function() {
   const banner = document.querySelector(".banner-bann");
   const dismissBtn = banner.querySelector(".banner-close-bann button");
@@ -646,6 +716,68 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+<script>
+// Modal open/close
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const modal = document.getElementById('hamburger-modal');
+const closeBtn = document.getElementById('close-btn');
+
+hamburgerBtn.addEventListener('click', () => {
+  modal.classList.add('show');
+  document.body.style.overflow = 'hidden'; // prevent scroll behind
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('show');
+  document.body.style.overflow = ''; // restore scroll
+});
+
+// Populate right column
+const sections = {
+  web: [
+    { text: "Homepage Redesign: ECE at UofT", href: "/pages/casestudies/eceHome.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Pitch Deck Website for Film Fundraising", href: "/pages/casestudies/filmPitchSite.html", icon: "/assets/icons/home/page.svg" }
+  ],
+  mobile: [
+    { text: "Mobile App for Ticket Deals", href: "/pages/casestudies/mobileUXR.html", icon: "/assets/icons/home/page.svg" },
+    { text: "NFC Payment App: Concept Design", href: "/pages/articles/ClearloopPay.html", icon: "/assets/icons/home/page.svg" }
+  ],
+  ux: [
+    { text: "IA Redesign & Implementation Strategy", href: "/pages/casestudies/tmc.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Gen-AI Service Blueprint for Pre-Visualization", href: "/pages/casestudies/previz.html", icon: "/assets/icons/home/page.svg" }
+  ],
+  design: [
+    { text: "Web Production Design: ECE at UofT", href: "/pages/articles/web-production.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Newsletter", href: "https://www.linkedin.com/newsletters/7393569508403294208/", icon: "/assets/icons/home/link.svg" }
+  ]
+};
+
+document.querySelectorAll('.collapsible').forEach(h3 => {
+  h3.addEventListener('click', () => {
+    const section = h3.dataset.section;
+    const container = document.getElementById('modal-right');
+    container.innerHTML = ''; // clear previous content
+
+    // Create a heading element showing what was clicked
+    const heading = document.createElement('h3');
+    heading.textContent = h3.textContent.trim(); // the header text
+    heading.style.marginBottom = '1rem';
+    heading.style.color = 'var(--accent-100)'; // optional styling
+    container.appendChild(heading);
+
+    // Add the links for this section
+    sections[section].forEach(link => {
+      const a = document.createElement('a');
+      a.href = link.href;
+      a.target = "_blank";
+      a.className = "collapsible-links-a";
+      a.innerHTML = `${link.text} <img src="${link.icon}" class="link-icon">`;
+      container.appendChild(a);
+    });
+  });
+});
+
+</script>
 
 </body>
 </html>
