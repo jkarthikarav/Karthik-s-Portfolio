@@ -1,185 +1,41 @@
-
-<!-- Article: Buoy AI -->
-<div class="CaseStudyGrid-item-art">
-  <div class="CaseStudyGrid-item-inner">
-    <div class="case-study-content-area-on-yt">
-      <p>December 17, 2025 • Conversational UX · Healthcare</p>
-      <h4>Conversational UX for AI Chatbot: Buoy AI</h4>
-      <div class="button-row-art">
-        <button class="disabled-btn">
-          Article Under Construction →
+<div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <h6 style="color: var(--brand-100);">Gen-AI Service Blueprint for Film Pre-Visualization </strong>• Implemented July 2023</h6>
+        <h2 class="subtitle-showc">Mapping Information Systems and Designing a Creative Workflow</h2>
+        <p>
+         Gen-AI dropped in Adobe Beta in May 2023. 
+         By July 2023, we had a working AI-assisted workflow and had delivered a client project.
+        </p>
+        <p class="hashtags">
+          #InformationDesign #ServiceDesign #WorkflowOptimization #UXStrategy #CreativeSystems
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+            ↦ Stakeholder Mapping & Ecosystem Analysis
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Establishing Guidelines & Employee Training
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Real-Time Deploy & Refinement
+            </dt>
+          </div>
+        </dl>
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/previz.html', '_blank');" style="width: fit-content;">
+          View Case Study →
         </button>
       </div>
-    </div>
-  </div>
-</div>
 
-<script>
-  // Array of card data
-  const cards = [
-    {
-      title: "Information Sciences Research Proposal + Lit Review: Translation as Cognitive Authority [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1ARf3zDGp-LZjc6jdzZr2RXjDqugFo-bvWgJq33EbalQ/edit?usp=sharing"
-    },
-    {
-      title: "Paper Review: Cognitive Authorities of COVID-19 Information [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1YlxxaiTenDyrAfkTLk9rMP7jEuyyzmaigihJ1YMgYxs/edit?usp=sharing"
-    },
-    { 
-      title: "Research Method Review: Digital Fanfic in Negotiation [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1EbSekaQ4YSfsVieVAL2vYNNTOjPkFVYxoi0F4x1gTKM/edit?usp=sharing"
-    },
-    {
-      title: "IA Critique: Youtube Music [Docs]",
-      tags: ["Reports"],
-      link: "assets/pdfs/Youtube Music_ Critique of Mobile Information Architecture and Navigation.pdf"
-    },
-    {
-      title: "Conversational UX Design: Healthcare AI ChatBot [PPT]",
-      tags: ["Presentations"],
-      link: "https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing"
-    },
-    {
-      title: "Speculative Product Design (Essay + Design Workbook): Frameworks for Creative Media Control [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1pcJc3EWQZsK--1NYoy28tKiN8MC17Hf7kfsT-KCHG3s/edit?usp=sharing"
-    },
-    {
-      title: "Data Analytics Report (using Python) – Ranking on Billboard Top100 Charts [Docs]",
-      tags: ["Reports"],
-      link: "https://docs.google.com/document/d/1NkxgrqcYZULoEngW_RXaRCDZKg4dSIqpP76fPNviayQ/edit?usp=sharing"
-    },
-    {
-      title: "Developing Design Guidelines: Canadian Recycling System [PPT]",
-      tags: ["Presentations"],
-      link: "https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing"
-    },
-    {
-      title: "Digitization Critique: Digital Comics Museum Website [PPT]",
-      tags: ["Presentations"],
-      link: "https://docs.google.com/presentation/d/1ek_vuxMGPd8APFHL_mc-dGsidAcXrejG7NOf08lDBwg/edit?usp=sharing"
-    }
-  ];
-
-  function filterCards(tag, clickedBtn) {
-    const container = document.getElementById('filteredCards');
-    container.innerHTML = ''; // clear previous filtered content
-
-    // Reset all buttons
-    const buttons = document.querySelectorAll('#filterButtons .contact-btn');
-    buttons.forEach(btn => {
-      btn.style.background = 'var(--neutrals-300)';
-      btn.style.color = 'var(--tertiary-dark)';
-    });
-
-    // Highlight clicked button
-    clickedBtn.style.background = 'var(--neutrals-600)';
-    clickedBtn.style.color = 'var(--tertiary-dark)';
-
-    // Add close button
-    const closeBtn = document.createElement('button');
-    closeBtn.textContent = 'Clear Content';
-    closeBtn.style.alignSelf = 'flex-start';
-    closeBtn.style.background = 'maroon';
-    closeBtn.style.color = 'white';
-    closeBtn.style.border = 'none';
-    closeBtn.style.borderRadius = '4px';
-    closeBtn.style.padding = '0.25rem 0.5rem';
-    closeBtn.style.cursor = 'pointer';
-    closeBtn.onclick = () => {
-      container.innerHTML = '';
-      // Reset all buttons
-      buttons.forEach(btn => {
-        btn.style.background = 'var(--neutrals-300)';
-        btn.style.color = 'var(--tertiary-dark)';
-      });
-    };
-    container.appendChild(closeBtn);
-
-    // Filter and add links
-    const filtered = cards.filter(card => card.tags.includes(tag));
-    filtered.forEach(card => {
-      const div = document.createElement('div');
-      div.style.display = 'flex';
-      div.style.gap = '1rem';
-      div.style.alignItems = 'center';
-
-      const a = document.createElement('a');
-a.textContent = `View: ${card.title}`;
-a.href = card.link;
-a.target = "_blank"; // open in new tab
-a.style.color = "var(--neutral-alt)";
-a.style.textDecoration = "underline";
-a.style.cursor = "pointer";
-
-      div.appendChild(a);
-      container.appendChild(div);
-    });
-  }
-</script>
-
-
-
-    ,
-    { title: "Note 4 U", link: "/pages/casestudies/note4u.html"},
-
-
-    <div class="CaseStudyGrid-item-article-csp">
-      <div class="case-study-content-area-on-yt">
-        <p>May 25, 2025 • Conversational UX · Healthcare</p>
-        <h4>Conversational UX Design for Healthcare AI: Buoy AI Chatbot</h4>
-        <div class="button-row-art-csp">
-          <button class="primary-btn"
-           onclick="window.open('https://docs.google.com/presentation/d/17aFWzBesqtXghZFxJG1Y6ivm9Ix29yD3OXbv9aCEEd4/edit?usp=sharing', '_blank');">
-            View Presentation →
-          </button>
-        </div>
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/previz/Service.webp" alt="Product screenshot" class="img-showc" />
       </div>
     </div>
-
-<!-- TMC IA Redesign -->
-<div class="phot-item" style="width: 100%; aspect-ratio: 12/5; margin-top: 1rem;">
-  <a href="/pages/casestudies/tmc.html" target="_blank" rel="noopener noreferrer">
-    <img src="assets/images/hero-banners/tmc-banner.webp"
-       style="width: 100%; height: 100%; object-fit: contain; display: block;" 
-       alt="Textile Museum of Canada IA and Navigation Menu Redesign Case Study Banner" />
-  </a>
-</div>
-
-
-  <!-- Card: TMC IA Redesign -->
-<div class="CaseStudyGrid-item-home">
-    
-  <div class="case-study-content-area-on-yt-home">
-    <h5>UX Researcher (Team Project) • Presented Nov 2023 • Team of 4 UX Researchers; Presented our insights and designs to museum staff CEO Kirsten Kamper and Caitlin Donnelly</h5>
-
-    <h3>IA Redesign & implementation Strategy: Textile Museum of Canada</h3>
-
-    <p class="cntnt">
-      Redesigned the IA; Created a Visual design and Analytics-focused Phased testing strategy for Web Implementation
-    </p>
-
-    <h4>Overview</h4>
-
-    <p class="cntnt">
-      We redesigned the website’s information architecture to make key content easier to 
-      find, streamline navigation, and support ticketing, donations, and program discovery. 
-      Conducted card sorting, content audits, and tree testing to validate the structure. 
-      Designed mid- and high-fidelity wireframes for desktop and mobile, 
-      and I proposed a phased implementation to gather real-time actionable insights.
-    </p>
-
-    <p class="cntnt">
-      #UXResearch #InformationArchitecture #ImplementationStrategy #VisualDesign
-    </p>
-    <!-- Single Button -->
-    <div style="margin-top: 5px;">
-      <button class="primary-btn" onclick="window.open('/pages/casestudies/tmc.html', '_blank');">
-        View Case Study →
-      </button>
-    </div>
   </div>
-</div>
