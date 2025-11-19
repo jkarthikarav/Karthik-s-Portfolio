@@ -42,7 +42,7 @@
           <img src="/assets/icons/home/Globe.svg" alt="Globe icon" width="16" height="16">
           <p>Toronto</p>
         </div>
-        <div class="contact-item" style="cursor: pointer;" onclick="window.open{'https://www.linkedin.com/in/karthikjambunathan/', '_blank'}">
+        <div class="contact-item" style="cursor: pointer;" onclick="window.open('https://www.linkedin.com/in/karthikjambunathan/', '_blank')">
           <img src="/assets/icons/home/LI.svg" alt="LinkedIn" width="16" height="16">
           <p>Connect</p>
         </div>
@@ -62,7 +62,8 @@
     </div>
 
     <div class="box-one-bottom">
-      <h6><span id="greeting"></span> 👋 I'm 
+      <h6>
+        <span id="greeting"></span> 👋 I'm 
         <span class="nametag">Karthik Jambunathan</span>
         <span class="ed-qual">MI, MSc</span>
       </h6>
@@ -703,21 +704,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // initial shuffle
 initShuffle();
 
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const banner = document.querySelector(".banner-bann");
-  const dismissBtn = banner.querySelector(".banner-close-bann button");
-
-  // Show banner on page load
-  banner.style.display = "flex";
-
-  // Hide banner on dismiss click
-  dismissBtn.addEventListener("click", function() {
-    banner.style.display = "none";
-  });
-});
 </script>
 
 <script>
