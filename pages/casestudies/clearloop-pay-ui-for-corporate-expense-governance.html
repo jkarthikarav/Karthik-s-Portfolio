@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clearloop Pay: Strategic UI for Corporate Expense Governance</title>
+    
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+<div id="header-placeholder"></div>
+
+<section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
+    
+    <div class="wp-post">
+
+        <h1 class="post-title">
+            Clearloop Pay: UI for NFC Expense Governance
+        </h1>
+
+        <div class="post-meta">
+        <div class="post-meta-text">
+            <p>November 8, 2025</p>
+            <p>Tags: Fintech Strategy, UI Design, Mobile Governance, Information Flow</p>
+        </div>
+        </div>
+
+        <img src="/assets/images/hero-banners/clearloop-banner.webp" style="width: 100%;"/>
+        
+    </div>
+
+    <div class="post">
+
+        <h1 style="color: var(--brand-100);">
+            Is there Friction in the Corporate Expense Loop?
+        </h1>
+
+        <p>
+            Managing work-related expenses has two major friction points for both employees and HR: 
+            security risk from physical corporate cards and rejection of requests due to receipt attachments being blurry/forgotten. 
+            Employees might delay submitting receipts, leading to audit risks and significant lag for HR.
+        </p>
+
+        <p>
+            I propose an app: Clearloop Pay, a native mobile application designed to address this gap by changing it into a secure, single-app loop. 
+            The design strategy was to simplify the employee's workflow while providing the company with control. Users can:
+        </p>
+
+        <div class="facts-grid">
+            <img src="/assets/images/uiwork/Extras/1.webp" />
+            <img src="/assets/images/uiwork/Extras/2.webp" />
+            <img src="/assets/images/uiwork/Extras/3.webp" />
+        </div>
+
+        <h1 style="color: var(--brand-100);">
+            Designing Components
+        </h1>
+
+        <p>
+            The interface was designed around managing status and actions. 
+            The main dashboard component was prioritized to give the employee immediate information on recent transactions & reimbursement statuses.
+        </p>
+
+        <img src="/assets/images/Clearloop Pay/Main-Component.webp" style="cursor: pointer; width: 100%;" onclick="openModal(this.src)" />
+
+        <p>
+            Other essential components, such as primary and secondary buttons, 
+            photo captures, and text inputs were developed to maintain consistency across the user journey.
+        </p>
+        
+        <img src="/assets/images/Clearloop Pay/Other-Components.webp" style="cursor: pointer; width: 100%;" onclick="openModal(this.src)" />
+              
+        <h1 style="color: var(--brand-100);">
+            NFC Payment Flow 💳
+        </h1>
+
+        <p>
+            The NFC feature is the core feature of Clearloop Pay. 
+            By replacing physical cards with a digital, NFC-enabled virtual card, 
+            companies gain remote control. 
+            They can instantly issue access and revoke without the hassle or risk associated with lost physical cards.
+        </p>
+
+        <p style="margin: 2rem 0;">
+            These screens below provides the tap-to-pay interface for authorized business expenses. 
+            The transaction status is immediately reflected in the app's main dashboard on the Spend screen.
+        </p>
+
+        <div class="facts-grid">
+
+            <img src="/assets/images/Clearloop Pay/NFC Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/NFC Success Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+
+        </div>
+
+        <h2 style="margin-top: 3rem;">
+            Enforcing Documentation at Point of Purchase
+        </h2>
+
+        <p style="margin: 2rem 0;">
+            1. Home/Spend screen: Dashboard provides summary of recent transactions, status updates, and a CTA for making new transactions.
+        </p>
+
+        <div class="facts-grid">
+
+            <img src="/assets/images/Clearloop Pay/Spend Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/Intermediate Frame Spend FAB Tap.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/Intermediate Frame Spend List Drag.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/Intermediate Frame Spend Banner Close.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/Spend Screen Actions Needed Tab.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+
+        </div>
+
+        <p style="margin: 2rem 0;">
+            2. Photo screens: I designed it to require immediate capture of the receipt before the payment (for restaurant expenses), crucial to eliminate errors (like forgotten attachments) 
+            and ensure the option to pay is enabled. 
+        </p>
+
+        <div class="facts-grid">
+
+            <img src="/assets/images/Clearloop Pay/Photo Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/Confirm Photo Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+
+        </div>
+
+        <p style="margin: 2rem 0;">
+            3. Verification screen: OCR extracts details (vendor, date, amount) for confirmation or editing. 
+            By requiring confirmation before submission, we reduce delays for HR, and reduce any instances of invoice fraud.
+        </p>
+
+        <div class="facts-grid">
+            
+            <img src="/assets/images/Clearloop Pay/Verify Details Screen.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            <img src="/assets/images/Clearloop Pay/Verify Details Screen-2.webp" style="cursor: pointer;" onclick="openModal(this.src)" />
+            
+        </div>
+
+        <h1 style="color: var(--brand-100); margin-top: 4rem;">
+            The Screens in Action
+        </h1>
+
+        <p>
+            The app's is very simple to train employees to use; the flow below shows the core feature of the app (enable Card and use NFC payment) in action.
+            This is only for restaurant expenses, the gas and parking expenses would go directly to the NFC card and you would get the photo and verification screens after payment.
+        </p>
+
+        <img src="/assets/images/Clearloop Pay/1.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+        <img src="/assets/images/Clearloop Pay/2.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+        <img src="/assets/images/Clearloop Pay/3.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+
+        <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
+            <img id="modalImage" style="max-width: 90%; max-height: 90%;">
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="footer-placeholder"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const lazyImages = document.querySelectorAll(".lazy-image");
+
+    lazyImages.forEach(img => {
+        const realSrc = img.dataset.src;
+        if (!realSrc) return;
+
+        // Preload the real image in the background
+        const tempImg = new Image();
+        tempImg.src = realSrc;
+
+        // Once loaded, wait 0.5s before replacing the placeholder
+        tempImg.onload = () => {
+            setTimeout(() => {
+                img.src = realSrc;
+                img.classList.add("loaded"); // optional: remove blur if CSS used
+            }, 500); // 500ms delay
+        };
+    });
+});
+</script>
+
+
+<script>
+    // Fetch and insert footer HTML
+    fetch('/addons/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+</script>
+
+<script>
+fetch('/addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+</body>
+</html>
