@@ -122,3 +122,28 @@
       </div>
     </div>
   </div>
+
+  <h1 style="color: var(--brand-100);">
+        Designing for Real-World Employee Expenses
+      </h1>
+
+      <p>   
+        Clearloop Pay is a mobile concept to show how employees can use company cards via NFC. 
+        A relative who worked in employee reimbursement management once told me how people often forgot to attach files that would make their approval process so much easier.
+      </p>
+
+      <p>
+        Employees are given company cards, often with limits and purposes depending on their role.
+        While digital prepayments are common, some expenses still require physical card taps. 
+      </p>
+
+      <p>
+        I narrowed it down to meals, gas, and parking. 
+        Restaurant and gas expenses must be paid physically since amounts aren’t known beforehand, unlike Doordash or Uber/Lyft.
+        Also, Business travel often requires parking with meters that accept physical card payments (which one would probably reimburse later).
+      </p>
+
+      <p>
+        While some exceptions exist for flat rates or catered events, 
+        restaurant, parking, and gas expenses are the most common recurring cases.
+      </p>

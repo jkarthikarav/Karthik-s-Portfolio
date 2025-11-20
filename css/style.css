@@ -934,7 +934,7 @@ max-width: 75vw;
 }
 
 .section-services {
-  background-color: var(--brand-600);
+  background-color: var(--white);
   padding: 3rem 2rem;
 }
 
@@ -949,13 +949,13 @@ max-width: 75vw;
 }
 
 .title-services {
-  color: var(--neutral-100);
+  color: var(--brand-600);
   margin-top: 1rem;
 }
 
 .description-services {
   margin-top: 1.5rem;
-  color: var(--neutral-600);
+  color: var(--black-400);
 }
 
 .list-wrapper-services {
@@ -970,7 +970,6 @@ max-width: 75vw;
   justify-content: center;
   gap: 2rem;
   margin-top: 1rem;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1107,7 +1106,7 @@ max-width: 75vw;
 }
 
 .section-mesa {
-  background-color: var(--brand-600);
+  background-color: var(--brand-100);
   padding: 6rem 2rem;
   display: flex;
   justify-content: center;
@@ -1117,6 +1116,10 @@ max-width: 75vw;
 
 .container-mesa {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0;
   max-width: 1200px;
 }
@@ -1190,7 +1193,8 @@ max-width: 75vw;
 
 .card-image-mesa {
   width: 100%;
-  margin: 0;
+  max-width: 350px;
+  margin: 1rem;
   height: auto; /* preserves rectangle aspect ratio */
   object-fit: cover;
 }
@@ -1240,7 +1244,11 @@ max-width: 75vw;
 
 
 .text-block-showc h3.subtitle-showc {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+}  
+
+.text-block-showc p {
+  margin: 0.5rem 0;
 }
 
 .dl-showc {
@@ -1252,7 +1260,7 @@ max-width: 75vw;
 
 .dt-showc {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--brand-100);
 }
 

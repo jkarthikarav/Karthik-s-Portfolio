@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gen-AI Service Blueprint</title>
+  <title>Operationalizing Generative AI | Service Design</title>
     <link rel="icon" href="https://jkarthikarav.github.io/assets/favicon.ico">
 
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -20,25 +20,23 @@
 <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
   <div class="wp-post">
 
-    <!-- Title -->
     <h1 class="post-title">
-      Gen-AI Service Blueprint for Film Pre-Visualization
+      Operationalizing Generative AI: Service Blueprinting for Creative Pipelines
     </h1>
 
 <div class="post-meta">
 
   <div class="post-meta-text">
     <p>Implemented July 2023</p>
-    <p>Role: Service Design</p>
+    <p>Role: Service Designer & Workflow Architect</p>
     <p>Client: Fix It In Post Studios</p>
-    <p>FigJam, Adobe Suite</p>
+    <p>Methods: Service Blueprinting, Rapid Prototyping, Pilot Implementation</p>
   </div>
 </div>
 
     <blockquote class="wp-block-quote">
         <p>
-          <strong>Summary:</strong> Case Study detailing the Service Design of a Gen-AI-assisted 
-          Film Pre-Production workflow for Fix It In Post Studios, presented to studio directors.
+          <strong>Summary:</strong> I developed and validated a "Human-in-the-Loop" AI workflow for a production studio. By integrating Generative AI, we solved the "blank canvas" problem for directors.
         </p>
     </blockquote>
 
@@ -56,116 +54,99 @@
     <div class="post">
 
       <h1>
-        Gen-AI dropped in Adobe Beta in May 2023; by July, we were making money with it.
+        Integrating GenAI tools into a rigid production schedule.
       </h1>
 
       <p>
-        I worked with the studio in summer 2023 for a short term freelance service design project.
-        The challenge was to explore Adobe Photoshop's Generative AI tool and design a workflow that could make concept videos faster and more precisely; 
-        while keeping humans at the center of the creative process. 
+        In May 2023, Adobe released Generative Fill (in their Beta release). The client, aka my former Boss, saw potential for efficiency 
+        but lacked a strategy to deploy it.
+      </p>
+
+      <p>
+        The requirement was not just to "use AI," but to design a service layer that made AI reliable & billable. 
+        We needed to move from ad-hoc experimentation to a standardized operational workflow within 8 weeks.
       </p>
 
       <h4>
-        By July 2023, we had a working AI-assisted workflow and had delivered a client project.
+        Our Problem: Creativity is Subjective
       </h4>
 
       <p>
-        <strong>Disclaimer:</strong> The workflow was applied on a live client project, serving as a pilot to validate the AI-assisted process with 
-        real-time feedback from clients, design teams, editor, studio heads, and the accounts manager.
+        The traditional "Pre-viz" process was ambiguous at best. 
+        Directors struggled to articulate their vision, leading to vague briefs, excessive revisions, and friction between creative teams and the Directors.
       </p>
-
-      <h2>Understanding the Challenge</h2>
-    
-      <p>
-        As part of the Studio's Pre-Production support services for Film directors (including other services I created like pitch deck websites such as <a href="/pages/casestudies/filmPitchSite.html" target="_blank" style="color: var(--dark blue);">this</a>), I led the development of a scalable, AI-assisted pitch video workflow.
-      </p>
-
-      <p>
-        When it comes to Indian film concept videos, the traditional process can feel like a maze. Ideas evolve constantly, goals remain unclear, and each round of client feedback can send the team back to square one. Timelines stretch out, frustration builds, and even the most talented directors and creatives struggle to stay aligned.
-      </p> 
         
       <p>  
-        Having spoken to a lot of directors and video editors, a typical project followed this process:
+        Ergo: A process where feedback was slow and costly.
       </p>
 
       <img src="../../assets/images/previz/swimlane-b.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/swimlane-b.png')">
+      <p class="caption-text" style="font-size: small;">Fig 1. The "As-Is" workflow where the Director retained Creative control, and the headaches.</p>
 
-      <h4>
-        Our goal was to change that. We wanted a process that moved faster and kept everyone on the same page, while also experimenting with AI to replace the mundane.
-      </h4>
+      <h2>My Strategic Approach</h2>
 
       <p>
-        Some might read through this and say, “This isn’t a fully automated AI workflow.... What use is it?” But that is exactly why it matters.
+        Fully automated workflows were too risky due to the lack of control. Instead, I proposed a Human-in-the-Loop (HITL) system.
       </p>
 
       <p>
-        Fully automated AI workflows were impractical, as clients often provided vague instructions, requiring hours of review and fine-tuning on the designer-side. 
-        My approach focused on using AI to reduce time spent on tedious tasks, allowing the team to concentrate on creative priorities. 
-        Research from 2025 confirms that entirely AI-generated work can be more time-consuming without optimized prompts and output quality
-        (<a href="https://mitrix.io/blog/prompt-engineering-or-why-consistent-ai-results-require-tweaking/" target="_blank">MITRIX, 2025</a>; <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" style="color: var(--dark blue);">METR, 2025</a>).
+        This approach made AI do all the "heavy lifting" of asset generation (textures, backgrounds, props) while human talent would work on composition, logic, and final polishes. 
+        Despite making this decision in 2023, this aligns with recent 2025 findings that hybrid workflows are better than full automation for creative tasks (<a href="https://mitrix.io/blog/prompt-engineering-or-why-consistent-ai-results-require-tweaking/" target="_blank">MITRIX, 2025</a>).
       </p>
 
-      <h2>Designing the Workflow</h2>
+      <h2>Process Engineering</h2>
 
       <p>
-        We began by mapping the ecosystem; identifying stakeholders, systems, and touchpoints to understand the complexity of the pitch video environment.
+        I mapped the ecosystem to identify where AI could reduce friction without affecting time and quality. 
+        This involved defining roles, conventions, and handoff procedures.
       </p>
 
-      <p>
-        Next, we created an initial concept workflow; small and testable. Real-time collaboration with a client allowed us to observe challenges directly and adjust processes immediately.
-      </p>
-
-      <h3>Logical Service Flow</h3>
+      <h3>The "To-Be" Logical Flow</h3>
 
       <img src="../../assets/images/previz/swimlane.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/swimlane.png')">
 
       <p>
-        Over multiple iterations, we refined a service blueprint. We clarified internal roles for directors, editors, designers, and coordinators. 
-        We also established clear handoffs, export conventions, and feedback loops, validating the workflow through observational research and team feedback.
+        This flow clarified the new operational standard:
       </p>
+      <div>
+  <dt class="dt-showc">
+    ↦ Defined exact file formats and layer structures
+  </dt>
+</div>
 
-      <h4>
-      This project was focused primarily on internal service design, refining workflows, roles, and a pilot application of this workflow, 
-      serving as both a deliverable for Fix It In Post Studios and a validation of the AI-assisted process for their clients (Film and TV Directors, for the time being).
-    </h>
+<div>
+  <dt class="dt-showc">
+    ↦ Shift from Design Team Lead to Prompt Engineer
+  </dt>
+</div>
 
-    <h3>At the Studio-Client level</h3>
+<div>
+  <dt class="dt-showc">
+    ↦ Created specific "Check-ins" before high-fidelity work began.
+  </dt>
+</div>
+
+
+    <h3>Operational Implementation</h3>
 
     <p>
-      In the typical process mentioned earlier, the Filmmaker retains a lot of creative control, as well as the headaches. 
-      This is mostly due to a lack of trust and the various inconsistencies in the interactions which freelance editors might provide/have provided them in the past. 
-      The studio must maintain control while building client confidence to ensure satisfaction and repeat projects. 
-      The traditional process could also affect employee morale and influence perceptions of design skill (despite this being a customer choice). 
-      To deliver a trust-inducing customer experience, we had to focus on the breadth, depth, and consistency of interactiosns provided by the studio teams. 
-      This informed the logical flow outlined above.
-    </p>
-      
-    <h3>At the Employee level</h3>
-    <span style="margin-top: 0rem; font-size: 14px;">
-      Sample Images used in Case Study are for representative purposes only.
-    </span>
-
-    <p>
-      After a few weeks of brainstorming and iterative refinement, the Studio Head, Design Team Lead, and I defined employee responsibilities and began the training process.
+      A theoretical blueprint is useless without adoption. I facilitated workshops to train the Design team on the new protocols.
     </p>
 
-    <!-- Director + Editor -->
     <p style="margin-bottom: 1rem;">
-      Editor (Collaborating with the Client): selected visual references and defined tone and pacing. 
+      The Editor and Client align on tone, eliminating the "guessing game."
     </p>
 
     <img src="../../assets/images/previz/clientref.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('../../assets/images/previz/clientref.png')">
 
-    <!-- Design Team Lead -->
     <p style="margin-top: 2rem; margin-bottom: 1rem;">
-      PM & Design Team Lead: assigned work roles, breaking down assets and tasks for designers. Here, Red is to be removed, Green is to be kept.<br>
+      The Project Manager/Design Team Lead break the scene into assets that need AI (Backgrounds, Textures) vs. those that needed Humans (Logos, Text, Specific Characters).
     </p>
 
     <img src="../../assets/images/previz/layer-break.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('../../assets/images/previz/layer-break.png')">
 
-    <!-- Designer -->
     <p style="margin-top: 2rem; margin-bottom: 1rem;">
-      Designers: used Gen-AI to mass-produce options and variants for environments, effects, and usable props while Sketch Artists made foreground elements and designed characters.
+      While the Sketch Artists worked on the characters, the Designers use Gen-AI to mass-produce assets, refining the best assets through further image manipulation on Photoshop.
     </p>
 
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
@@ -173,55 +154,40 @@
     <img src="../../assets/images/previz/F45 BG.png" class="user-journey-image-mrs" style="background:white; max-width:35%;" onclick="openModal('../../assets/images/previz/F45 BG.png')">
     </div>
 
-    <!-- All -->
     <p style="margin-top: 2rem;">
-      Design Team Lead: provided complete sets of composited images to PM; and provided organized, ready-to-animate file sets for the video editor.
+      The final image is sent for approval, and barring changes, is sent as mutliple passes to the editor for use in their video edit. Sending passes enables further animation on the edit side.
     </p>
 
-    <p style="margin-bottom: 1rem; margin-top: 0;">
-      I prepared the passes for the image below. The ICU sign was done by hand in Photoshop as the AI was not good at Text Gen. 
-      The Apollo Hospitals logo and text in the image above were also not done using AI.
-    </p>
-
-    <!-- Row 2: Mini div of three images in a row -->
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
         <img src="../../assets/images/previz/F48 BG.png" class="user-journey-image-mrs" style="background:white; max-width: 30%; cursor: pointer;" onclick="openModal('../../assets/images/previz/F48 BG.png')">
         <img src="../../assets/images/previz/F48 FILL.png" class="user-journey-image-mrs" style="background:white; max-width: 30%; cursor: pointer;" onclick="openModal('../../assets/images/previz/F48 FILL.png')">
         <img src="../../assets/images/previz/F48 OUTLINE.png" class="user-journey-image-mrs" style="background:white; max-width: 30%; cursor: pointer;" onclick="openModal('../../assets/images/previz/F48 OUTLINE.png')">
     </div>
 
-    <h2>Service Blueprint</h2>
+    <h2>Final Service Blueprint</h2>
 
     <p style="text-align:left; margin-bottom: 1rem;">
-      The final blueprint reflects a tested system that balances operational discipline with creative freedom. 
-      The process depicted here has been rigorously validated over a 2.5-month period through research, observational studies, 
-      and workshops I facilitated. 
-      It documents workflows, responsibilities, handoffs, and AI integration in a human-centred way. 
-      Since its adoption, it has been actively used with minor updates to accommodate AI tool improvements and project-specific needs.
+      The resulting document below is the operational manual for the studio. It has been rigorously validated over the pilot program, and barring project-specific requirements, has been used As-Is.
     </p>
 
     <img src="../../assets/images/previz/Service.webp" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/Service.png')">
     
-    <h2>Impact & Future Considerations</h2>
+    <h2>Business Impact</h2>
 
-    <p>
-      The outcomes were tangible:
-    </p>
-
-<dl class="dl-showc">
+    <dl class="dl-showc">
   <div>
     <dt class="dt-showc">
-      ↦ Directors could visualize concepts efficiently, even on limited budgets.
+      ↦ Conceptualization dropped from days to hours, allowing for more within the same budget.
     </dt>
   </div>
   <div>
     <dt class="dt-showc">
-      ↦ Teams worked more aligned and efficiently, reducing revisions.
+      ↦ Showing "near-final" visuals earlier significantly reduced client anxiety and last-minute changes.
     </dt>
   </div>
   <div>
     <dt class="dt-showc">
-      ↦ A reusable foundation for future pre-production services.
+      ↦ The workflow naturally resulted in a library of reusable assets, including prompt libraries, decreasing the cost & time of future projects.
     </dt>
   </div>
 </dl>
@@ -235,23 +201,20 @@
 <section class="learn">
 
 
-  <!-- Main content container -->
   <div class="mcc">
 
     <div class="mmc-content">
       <h1>What I Learned</h1>
       <h5>
-        I delivered an AI-assisted workflow for a service offering that let creators turn ideas into videos was established. 
-        It involved me using core tenets and processes from UX research, service design, CX design, and more to create a service offering which is human-centred in process and output from start to finish.
+        This project showed how Service Design is necessary for AI adoption. 
+        The technology itself is easily available, but making it useful in a business context requires rigor.
       </h5>
 
-      <!-- Takeaways -->
       <div class="takeaway">
-        <h4>Key Takeaway: Applying UX and Service Design in AI-assisted Workflows</h4>
+        <h4>The non-Textbook Service Design Aspect</h4>
         <div></div>
         <p>
-          This project allowed me to apply UX and service design skills entirely within business development and internal workflow processes;
-          a context I hadn’t considered before, as service design is often taught for real-time, physical services (like restaurants, POS kiosks, or in-person interactions).
+          Service design, primarily taught in Design schools for physical interactions such as Kiosks and CX, was used here for designing internal workflows and shape a service offering.
         </p>
       </div>
 
@@ -264,7 +227,7 @@
 
   <div>
 
-    <h3>What to Do Next:</h3>
+    <h3>Explore More Work:</h3>
     <div class="hero-buttons">
       <button class="primary-btn" onclick="window.open('../../casestudies.html', '_blank');">
         <span class="btn-text">View All Case Studies</span>
@@ -276,8 +239,7 @@
 </section>
 
 
-   <!-- Modal Viewer -->
-  <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
+   <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
     <img id="modalImage" style="max-width: 90%; max-height: 90%;">
   </div>
 

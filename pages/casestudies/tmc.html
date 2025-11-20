@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Textile Museum IA: Phased Redesign Strategy</title>
+  <title>Phased IA Rollout Strategy | Textile Museum</title>
     
 
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -20,25 +20,25 @@
 <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
   <div class="wp-post">
     
-    <!-- Title -->
     <h1 class="post-title">
-      Information Architecture Redesign & Implementation Strategy: Textile Museum of Canada
+      Isolating Variables: A Phased Rollout Strategy for IA Redesign
     </h1>
 
     <div class="post-meta">
 
   <div class="post-meta-text">
     <p>Conducted Oct-Nov 2023</p>
-    <p>Role: UX Researcher</p>
+    <p>Role: UX Strategist & Researcher (team of 4 UXRs)</p>
     <p>Client: Textile Museum of Canada</p>
-    <p>Miro, OptimalSort, Adobe Suite</p>
+    <p>Tools: OptimalSort, Treejack, Miro</p>
   </div>
 </div>
 
     <blockquote class="wp-block-quote">
         <p>
-          <strong>Summary:</strong> Case Study detailing the Redesign of the Textile Museum of Canada Website’s Information Architecture and 
-          Navigation, which was presented to CEO Kirsten Kamper, and Caitlin Donnelly of The Textile Museum.
+          <strong>Summary:</strong> The museum needed to improve their site's content discoverability. 
+          While the conventional solution was a UI overhaul, I proposed a phased implementation strategy to isolate 
+          improvements, ensuring the right attribution.
         </p>
     </blockquote>
       
@@ -56,40 +56,34 @@
     <div class="post">
 
       <h1>
-        How can the museum’s website structure better support discovery, engagement, and action?
+        Every site needs to ensure their content doesn't go from a "Ah! There it is!" to "Is this even there?"
       </h1>
 
       <p>
-        The Textile Museum of Canada approached our MI cohort to help redesign the information architecture of its website to better promote key offerings. The focus was on improving the website’s information architecture to make content more accessible, highlight the museum’s values, and serve its target audiences.
-        During an information session on October 24, 2023, museum staff highlighted key issues: difficulty finding tickets and group tours, challenges accessing archived events, and a desire to showcase post-pandemic hands-on programs. 
-        Success metrics for the redesign include reduced bounce rate and increased online ticketing and donations.
+        The Textile Museum of Canada faced a disconnect between their rich content library and user engagement. 
       </p>
-      
 
-<h2>Understanding Users</h2>
+      <p>
+        The initial request to our MI cohort was broad: "Fix the architecture." 
+        However, the underlying risk was that changing the structure with input from test users without understanding the real user's mental model could alienate the existing loyal user base.
+        We could get real users to test the IA, but what if their users have a workaround in place for any problematic architecture? 
+        Doing so would result in existing patterns and behaviours clouding the test results, making the Museum feel like the Titanic.
+      </p>
+
+<h2>Understanding the Mental Model</h2>
 
 <p>
-We began with a card sorting exercise. Eight participants grouped forty pages, from general information to events and programs, into categories that made sense to them. We used Optimal Workshop to collect data and observe patterns in user expectations.
+Before proposing solutions, we needed to validate the problem. We utilized open card sorting (n=8) and tree testing to map the existing architecture.
 </p>
 
 <dl class="dl-showc">
-  <dt class="dt-showc">1. Results showed shared expectations and areas of confusion.</dt>
-  <dt class="dt-showc">2. Pages like Privacy Policy and Meet the Team consistently grouped under About Us.</dt>
-  <dt class="dt-showc">3. Donation-related pages were separated.</dt>
-  <dt class="dt-showc">4. Ambiguous pages such as TXTilecity and Cloth Clay caused hesitation, showing the need for clearer labeling.</dt>
-</dl>
-
-<p>
-We also conducted a content audit of thirty-two pages.
-</p>
-
-<dl class="dl-showc">
-  <dt class="dt-showc">↦ Each was evaluated for audience relevance, user expectation, recency, and clarity of calls to action.</dt>
-  <dt class="dt-showc">↦ We found outdated information, inconsistent labeling, and unclear guidance for volunteers, job seekers, and museum visitors.</dt>
+  <dt class="dt-showc">↦ Users consistently grouped "Privacy Policy" and "Team" under "About Us," validating usual conventions.</dt>
+  <dt class="dt-showc">↦ Abstract labels like "TXTilecity" and "Cloth Clay" had high failure rates; their jargon was blocking discovery.</dt>
+  <dt class="dt-showc">↦ Users expected donation pathways to be distinct from browsing, suggesting a need for a two-tiered navigation menu.</dt>
 </dl>
 
 
-<h3>Key Data</h3>
+<h3>Audit & Data Gathering</h3>
 
 
       <div class="facts-grid">
@@ -105,14 +99,19 @@ We also conducted a content audit of thirty-two pages.
     <div class="post">
 
 
-      <h2>Testing the IA</h2>
+      <h2>Benchmarking</h2>
 
     <p>
-      We tested the existing IA to understand user expectations, which guided the design of the new IA. We conducted tests using OptimalSort and Treejack with 10 participants who completed 6 navigation tasks. 
-      Our goal was to understand how users interpreted and located content within the proposed structure, separate from the website’s existing menu design. 
+      To prove that the issue was structural, we conducted Tree Testing on the existing site's IA. 
+    </p>
+    <p>
+      We stripped away all visual design, testing labels and hierarchy only. This ensured that the failures recorded were purely semantic.
     </p>
 
-    <h3>Results</h3>
+    <h3>Our Diagnosis</h3>
+    <p>
+        Our data confirmed the hypothesis: The IA itself was broken. Even without the restrictive hamburger menu, users could not find key information.
+    </p>
 
     <div class="facts-grid">
 
@@ -126,29 +125,35 @@ We also conducted a content audit of thirty-two pages.
 
     <div class="post">
 
-    <h2>But, would changing the IA fix the perceived content discovery issue on the site?</h2>
+    <h2>The Strategic Recommendation</h2>
 
   <p>
-    Our attention moved to the Hamburger Menu on the website's desktop version. Was it the design of the menu? Well, we did have data from our test of the existing IA that said the IA had its issues. But were both changes needed?
-    A Hamburger menu is quite common on mobile, but for desktop? 
-    Way back in 2016/17, the Nielsen Norman Group found this:
+    Based on the data, we developed a new Information Architecture. However, simply handing it was not enough for us. 
+    My teammate Coral and I had a disussion where we felt like we needed to ensure this was practical and not theoretical.
+  </p>
+
+  <h3>The Risk of a Overhaul</h3>
+
+  <p>
+    The conventional wisdom that most of our Cohort mates also suggested (other teams working on the same issue) was to launch the New IA inside a new "Mega Menu" UI 
+    simultaneously. I advised the clients against this due to the risk of misunderstanding what actually works.
+  </p>
+
+  <p>
+    If metrics changed after a simultaneous launch, no one could attribute the change to the structure (IA) or the interface (UI).
+  </p>
+
+  <h3>What I proposed</h3>
+
+  <p>
+    I designed a phased A/B testing roadmap with interface mockups. 
+    This strategy allows them to validate our proposed IA before committing to development.
   </p>
 
   <dl class="dl-showc">
-    <dt class="dt-showc">1. A Hamburger menu is “more likely to reduce content discoverability on desktop”.</dt>
-    <dt class="dt-showc">2. Mega Menus are an “excellent design choice for accommodating a large number of options or for revealing lower-level site pages at a glance”.</dt>
+    <dt class="dt-showc"><strong>Phase A (Validation):</strong> Implement the New IA labels within the existing menu design to reduce UI bias.
+    <dt class="dt-showc"><strong>Phase B (Optimization):</strong> Once the IA is validated, roll out the Mega Menu UI.
   </dl>
-
-  <h3>Therefore we opted to convert the navigation menu into a mega menu.</h3>
-
-  <p>
-    But, the Mental Models of the Textile Museum’s users are probably made up by now, and a drastic change such as the mega menu could be counter-intuitive.
-  </p>
-
-  <p>
-    We were creating mid-fidelity wireframes to showcase the proposed new IA (that we developed) for the presentation. To isolate cause and effect, 
-    we proposed that the museum's development team implement the new IA separately from the navigation menu change, allowing improvements in user success to be attributed to the correct intervention.
-  </p>
 
     </div>
   </div>
@@ -158,11 +163,10 @@ We also conducted a content audit of thirty-two pages.
 <section id="context" style="background: var(--brand-600); display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
 
   <div class="post">
-  <!-- Section Header -->
-    <h1 style="color: var(--white); margin-bottom: 20px;">Information Architecture</h1>
+  <h1 style="color: var(--white); margin-bottom: 20px;">The Solution</h1>
       
     <p style="color: var(--neutral-600); margin-bottom: 20px;">
-      The IA we designed as a team:
+      The New Information Architecture:
     </p>
   
 <img src="../../assets/images/webp/tmc-ia-0.webp"
@@ -170,7 +174,7 @@ We also conducted a content audit of thirty-two pages.
      style="min-width:100%; cursor: pointer;"
      onclick="window.open('../../assets/images/webp/tmc-ia-0.webp', '_blank')"><br><br>
 
-    <p style="color: var(--neutral-600); margin-bottom: 20px;">Select sections of the IA:</p>
+    <p style="color: var(--neutral-600); margin-bottom: 20px;">Specific sub-trees:</p>
 
   <div class="image-row-tmc">
 
@@ -186,10 +190,10 @@ We also conducted a content audit of thirty-two pages.
 
   </div>
   
- <h1 style="color: var(--white); margin-bottom:1rem;">Visual Design</h1>
+ <h1 style="color: var(--white); margin-bottom:1rem;">The Phased Rollout</h1>
 
   <p style="color: var(--neutral-600); margin-bottom: 20px;">
-    We used Balsamiq to create Mid-Fidelity Wireframes for the Desktop and Mobile versions.
+    To demonstrate the feasibility of the strategy, we wireframed both phases for the stakeholders. While my team worked on the low fidelity, I worked on the high fidelity.
   </p>
 
   <div class="image-row-tmc">
@@ -202,40 +206,20 @@ We also conducted a content audit of thirty-two pages.
      style="cursor: pointer;" />  
   </div>
 
+  <h2 style="color: var(--white);margin-bottom:1rem;">Strategy Phase A</h2>
   <p style="color: var(--neutral-600); margin-bottom: 20px;">
-    Both sets of High fidelity UI screens for the desktop were designed in Figma. While the first style was the existing style menu, the second was the Mega Menu we proposed.
+    Since the Hamburger is preferred for the mobile navigation, my focus was on the web version. 
   </p>
-
-  <div class="image-row-tmc">
-    <img src="../../assets/images/webp/tmc-op1-1.webp"
-    style="cursor: pointer;" />
-
-    <img src="../../assets/images/webp/tmc-op2-1.webp"
-    style="cursor: pointer;" />  
-  </div>
-
-
-  <h1 style="color: var(--white); margin-bottom: 20px;">Strategy in Action</h1>
-
-  <div class="facts-grid-flat">
-
-    <img src="../../assets/images/exptor/Extra/10.webp"/>
-    <img src="../../assets/images/exptor/Extra/11.webp"/>
-
-  </div>
-
-  <h2 style="color: var(--white);margin-bottom:1rem;">Phase 1:</h2>
-
-  <!-- Single image: full width -->
+  <p class="caption-text" style="color: var(--neutral-600); font-size: small;">Click on the image to see the menu in action.</p>
   <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
     <img id="tmcImage" src="../../assets/images/webp/tmc-op1-1.webp"
        style="width: 100%; height: auto; cursor: pointer;" />
   </div>
 
-  <h2 style="color: var(--white);margin-bottom:1rem;">Phase 2:</h2>
+  <h2 style="color: var(--white);margin-bottom:1rem;">Strategy Phase B</h2>
+  <p class="caption-text" style="color: var(--neutral-600); font-size: small;">Click on the image to see the menu in action.</p>
 
-<!-- Single image: full width -->
-  <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+<div style="display: flex; justify-content: center; margin-bottom: 2rem;">
     <img id="tmcImage2" src="../../assets/images/webp/tmc-op2-1.webp"
        style="width: 100%; height: auto; cursor: pointer;" />
   </div>
@@ -243,26 +227,22 @@ We also conducted a content audit of thirty-two pages.
 </section>
 
 <section class="learn">
-  <!-- Black overlay -->
   <div class="black-over"></div>
 
-  <!-- Main content container -->
   <div class="mcc">
 
     <div class="mmc-content">
       <h1>What I Learned</h1>
       <h5>
-        The goal of this project was to create a clear, accessible IA to help people discover and navigate the Textile Museum of Canada’s collections, exhibitions, and events.
+        This project reinforced that how we implement is just as important as the change itself.
       </h5>
 
-        <!-- Takeaway -->
         <div class="takeaway">
-          <h4>
-            Key Takeaway: Avoid Cognitive Biases and the Need for Real-time Data to test out Ideas</h4>
+          <h4>The Scientific Method</h4>
           <div></div>
           <p>
-            I realized that what seemed clear to us as designers wasn’t always clear to users.
-            Only by testing the IA, without the visual design of the Textile Museum's branding guide, did I see where our assumptions might fail.
+            By testing the Information Architecture separate from the Visual Design, we created a way to attribute impact to the right change. 
+            If metrics improved in Phase A, we credit the IA. In Phase B, we credit the UI.
           </p>
         </div>
 
@@ -276,7 +256,7 @@ We also conducted a content audit of thirty-two pages.
 
   <div>
 
-    <h3>What to Do Next:</h3>
+    <h3>Explore More Work:</h3>
     <div class="hero-buttons">
       <button class="primary-btn" onclick="window.open('../../casestudies.html', '_blank');">
         <span class="btn-text">View All Case Studies</span>
@@ -341,4 +321,3 @@ fetch('../../addons/header.html') .then(response => response.text()) .then(data 
 </body>
 
 </html>
-

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Film Deck: Non-Traditional UX/UI</title>
+  <title>Interactive Capital Raising Deck</title>
     
 
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -19,24 +19,22 @@
 <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
   <div class="wp-post">
     
-    <!-- Title -->
     <h1 class="post-title">
-      Pitch Deck Website for Film Fundraising
+      Interactive Web Experience for Capital Raising
     </h1>
 
 <div class="post-meta">
   <div class="post-meta-text">
     <p>Shipped Aug 2021</p>
-    <p>Role: Presentation Designer</p>
-    <p>Employer: Fix It In Post Studios</p>
-    <p>Adobe Suite, Web CMS</p>
+    <p>Role: Product Designer & Developer</p>
+    <p>Work for: Fix It In Post Studios</p>
+    <p>Tech Stack: HTML/CSS/JS, Figma, Adobe Suite</p>
   </div>
 </div>
 
     <blockquote class="wp-block-quote">
         <p>
-          <strong>Summary:</strong> Case Study detailing the transformation of a film director’s vision into a 
-          cinematic, interactive website, presented to producers and stakeholders.
+          <strong>Summary:</strong> I translated a static pitch deck into a responsive web application. This project solved the "engagement drop-off" typical of PDF/PPT formats through narrative-led interaction design.
         </p>
     </blockquote>
 
@@ -54,36 +52,36 @@
   <div class="post">
 
     <h1>
-        Traditional pitch decks and presentations struggled to capture a director’s vision and fail to engage memorably. 
+      Static presentations failed to capture the complexity of the product vision.
     </h1>
       
     <p>
-        Why? Because at the end of the day, it is a person with a PPT or some other visual material talking for hours on end.
+      In a high-stakes fundraising environment, our client found that standard slide decks were failing to retain investor attention or convey the emotional weight of the film's narrative.
     </p>
 
     <dl class="dl-showc">
-        <dt class="dt-showc">↦ Investors had difficulty connecting with the content of traditional decks.</dt>
-        <dt class="dt-showc">↦ The visual storytelling needed to maintain narrative continuity and cinematic pacing. Also, Music!</dt>
+        <dt class="dt-showc">↦ Investors were disinterested and failed to understand the project.</dt>
+        <dt class="dt-showc">↦ Without guided pacing, the "story" was lost.</dt>
     </dl>
 
-    <h3>Context</h3>
+    <h3>Context & Scope</h3>
     
     <p>
-      This was a client project at Fix It In Post Studios, a part of the services we offered for Film Pre-production.
-      Here, we transformed a film director's pitch deck into an interactive website with continuous music, cinematic visuals, and spy-inspired branding.
-      Why? While the story and visual content were strong, the delivery format needed to be elevated. I reframed the solution entirely: not a deck, but a cinematic web experience.
+      Our client at Fix It In Post Studios needed a solution that would differentiate their film project and their directorial style in a saturated market. 
+      I proposed changing the medium: moving from a static deck to a linear web experience. 
+      This allowed us to control the pacing of information and ensure the user experienced the pitch exactly as intended.
     </p>
     
 
     <h3>
-      Challenges that shaped my design decisions:
+      Solving the Problem:
     </h3>
 
     <div class="facts-grid-flat">
 
-      <img src="../../assets/images/uiwork/Extras/8.webp" />
-      <img src="../../assets/images/uiwork/Extras/9.webp" />
-      <img src="../../assets/images/uiwork/Extras/10.webp" />
+      <img src="../../assets/images/uiwork/Extras/8.webp" alt="Constraint 1" />
+      <img src="../../assets/images/uiwork/Extras/9.webp" alt="Constraint 2" />
+      <img src="../../assets/images/uiwork/Extras/10.webp" alt="Constraint 3" />
       
     </div>
 
@@ -91,18 +89,19 @@
 
     <div class="post">
 
-    <h2>What did I do?</h2>
+    <h2>The Solution</h2>
     
     <p>
-      I designed and developed a password-protected, fully responsive website for the film pitch, 
-      focused on cinematic pacing, minimal UI, and uninterrupted music playback.
+      I architected and built a password-protected single-page application focused on minimalist UI and immersive atmosphere. 
+      The design priority was to remove cognitive load, allowing the content to take center stage.
     </p>
 
     <h3>
-      Visual & UX Research
+      Visual Strategy & Moodboarding
     </h3>
     <p>
-      Conducted research and created graphic and visual content, high fidelity mockups thematically inspired by movies in the same genre (Cold War Era, WW2, Neo-Noir, Spy).
+      To align with the product's "Cold War / Spy" genre, I established a design system and created visuals based on redacted documents and retro typography. 
+      This ensured that the UI reinforced the narrative.
     </p>
 
 <div class="contentgrid">
@@ -118,17 +117,16 @@
 </div>
 
     <h3>
-      Prospective User Journey
+      User Flow & Information Architecture
     </h3>
     <p>
-      Visitors began with a login screen leading to a blank dark interface, all to keep the mystery intact. 
-      Below is the investor's user journey flow to access the website's content.
+      To maintain exclusivity (a key psychological driver for investors), the site begins with a secure login, leading into an "invisible ink" environment.
     </p>
 
     <div class="facts-grid-flat">
 
-      <img src="../../assets/images/uiwork/Extras/4.webp"/>
-      <img src="../../assets/images/uiwork/Extras/5.webp"/>
+      <img src="../../assets/images/uiwork/Extras/4.webp" alt="Flow Step 1"/>
+      <img src="../../assets/images/uiwork/Extras/5.webp" alt="Flow Step 2"/>
     
     </div>
 
@@ -141,18 +139,19 @@
     </div>
 
     <h3>
-      The Hero section: the first thing users see
+      Front-End Implementation
     </h3>
     <p>
-      The first thing users see is the hero section and nothing but it. Akin to invisible ink, only on clicking the stylized button 
-      does the background music get triggered and transition to reveal the pitch content.
+      The hero section is the symbolic "curtain raise." 
+      I utilized JavaScript to handle the transition states, ensuring that audio playback was triggered after the core user interaction (unveiling the "invisible ink" information), 
+      complying with most browsers' autoplay policies.
     </p>
 
     <div class="contentgrid">
 
 <div style="display: flex; justify-content: center; padding: 2rem; flex-direction: column; align-items: center;">
   <p style="margin: 1rem;"> 
-      Wireframe
+      <strong>Wireframe</strong>
   </p>
   <img src="../../assets/images/webp/wireframe-veera.webp" 
        style="width: 100%; display: block;" 
@@ -161,7 +160,7 @@
 
 <div style="display: flex; justify-content: center; padding: 2rem; flex-direction: column; align-items: center;">
   <p style="margin: 1rem;"> 
-      Implementation
+      <strong>Final Build</strong>
   </p>
   <video src="../../assets/videos/Landing_2.mp4" style="width: 100%; height: 100%;" muted loop autoplay></video>
 </div>
@@ -173,48 +172,48 @@
     <div class="post">
 
     <h3>
-      Responsive Web Development
+      Development & Handoff
     </h3>
     <p>
-      The final step was to develop, test for bugs and usability, and ship the website. It was built with custom JavaScript to ensure performance across all web devices.
+      The site was built using custom vanilla JavaScript to ensure lightweight performance across devices. Cross-browser testing was critical to ensure the atmospheric audio and transition effects functioned consistently on both desktop and mobile viewports.
     </p>
 
     <p>
-      Due to an NDA and the film currently being in production, I am only able to share a low fidelity prototype with all identifying information scrapped through the figma link below: 
+      <em>Note: Due to strict NDA compliance regarding the intellectual property, the live link is redacted. A sanitized low-fidelity prototype is available below.</em> 
     </p>
 
     <button class="text-btn" onclick="window.open('https://www.figma.com/proto/tg5cvrcFSUp7ii3AfvfEpp/Pitch-Deck-Website-Low-Fidelity?node-id=1-2&t=7YK40lxWMMB6exxP-9&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2', '_blank');">
-      <span class="btn-text">Figma Prototype Link - Low Fidelity </span> ⤴︎
+      <span class="btn-text">Launch Figma Prototype (Low-Fi) </span> ⤴︎
     </button>
 
-    <h2>What I Delivered:</h2>
+    <h2>Deliverables</h2>
 
     <div class="facts-grid">
 
-      <img src="../../assets/images/uiwork/Extras/11.webp"/>
-      <img src="../../assets/images/uiwork/Extras/12.webp"/>
-      <img src="../../assets/images/uiwork/Extras/13.webp"/>
+      <img src="../../assets/images/uiwork/Extras/11.webp" alt="Deliverable 1"/>
+      <img src="../../assets/images/uiwork/Extras/12.webp" alt="Deliverable 2"/>
+      <img src="../../assets/images/uiwork/Extras/13.webp" alt="Deliverable 3"/>
 
     </div>
 
     <h2>
-      The Impact
+      Business Impact
     </h2>
 
     <dl class="dl-showc">
   <div>
     <dt class="dt-showc">
-      ↦ The director presented the website in producer meetings, resulting in follow-ups
+      ↦ The interactive format successfully differentiated the pitch in high-level producer meetings.
     </dt>
   </div>
   <div>
     <dt class="dt-showc">
-      ↦ The format impressed producers and stood out from traditional slides
+      ↦ stakeholders spent significantly longer engaging with the narrative compared to previous static deck iterations.
     </dt>
   </div>
   <div>
     <dt class="dt-showc">
-      ↦ Led to continued collaborations on future film-related projects
+      ↦ The project established a new offering for the studio's pre-production packages, leading to return clients.
     </dt>
   </div>
 </dl>
@@ -223,8 +222,7 @@
 </div>
 
 
-   <!-- Modal Viewer -->
-  <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
+   <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
     <img id="modalImage" style="max-width: 90%; max-height: 90%;">
   </div>
 </section>
@@ -232,30 +230,29 @@
 <section class="learn">
 
 
-  <!-- Main content container -->
   <div class="mcc">
 
     <div class="mmc-content">
-      <h1>What I Learned</h1>
+      <h1>What I learned</h1>
       <h5>
-        The most valuable part of this project was understanding how design and storytelling must adapt to technical limitations in the real world, especially around autoplay and format stability.
+        This project reinforced that we, as Product Specialists, still have a lot to do in Creative UX. 
+        The biggest challenge and success was engineering that audio-visual flow that bypassed browser autoplay restrictions without disrupting user immersion.
       </h5>
 
       <div class="mmc-row">
-        <!-- Takeaways -->
         <div class="takeaway">
-          <h4>Key Takeaway: UX for Creative Industries</h4>
+          <h4>Design for Non-Traditional Contexts</h4>
           <div></div>
           <p>
-            Designing outside of traditional apps or e-commerce expands how UX can solve problems in storytelling, pitching, and entertainment.
+            Applying UX principles to fundraising tells us that user-centered design can solve for communication problems, not just SaaS or E-Commerce.
           </p>
         </div>
 
         <div class="takeaway">
-          <h4>Key Takeaway: Design within technical boundaries</h4>
+          <h4>Technical Constraints as Creative Drivers</h4>
           <div></div>
           <p>
-            Autoplay restrictions and cross-device behavior taught me that innovation isn’t just about vision; it’s about solving within constraints.
+            Understanding the browser and media policies allowed me to create something that was both technically accurate and thematically on-point.
           </p>
         </div>
       </div>
@@ -269,7 +266,7 @@
 
   <div>
 
-    <h3>What to Do Next:</h3>
+    <h3>Explore More Work:</h3>
     <div class="hero-buttons">
       <button class="primary-btn" onclick="window.open('../../casestudies.html', '_blank');">
         <span class="btn-text">View All Case Studies</span>
