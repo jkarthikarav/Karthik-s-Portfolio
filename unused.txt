@@ -2,8 +2,8 @@
     <div class="grid-showc">
       <!-- Text block -->
       <div class="text-block-showc">
-        <h6 style="color: var(--brand-100);">Gen-AI Service Blueprint for Film Pre-Visualization </strong>• Implemented July 2023</h6>
-        <h2 class="subtitle-showc">Mapping Information Systems and Designing a Creative Workflow</h2>
+        <p class="faux-h5" style="color: var(--brand-100);">Gen-AI Service Blueprint for Film Pre-Visualization </strong>• Implemented July 2023</h5>
+        <h1 class="subtitle-showc">Mapping Information Systems and Designing a Creative Workflow</h1>
         <p>
          Gen-AI dropped in Adobe Beta in May 2023. 
          By July 2023, we had a working AI-assisted workflow and had delivered a client project.
@@ -36,6 +36,89 @@
       <!-- Image block -->
       <div class="image-block-showc">
         <img src="/assets/images/previz/Service.webp" alt="Product screenshot" class="img-showc" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <p class="faux-h5" style="color: var(--brand-100);">Pitch Deck Website for Film Fundraising </strong>• Shipped Aug 2021</h5>
+        <h1 class="subtitle-showc">Transforming Film Pitch Decks into Interactive, Information-Rich Websites</h1>
+        <p>
+         Traditional pitch decks and presentations struggled to capture a director’s vision and fail to engage memorably.  
+         Why? Because at the end of the day, it is a person with a PPT talking.
+        </p>
+        <p class="hashtags">
+          #WebDevelopment #UIUXDesign #InformationDesign #InvestorExperience #PresentationDesign
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+            ↦ UX Research & Visual Planning
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Interactive Prototype Development & Testing
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Iterative Refinement & Web Development
+            </dt>
+          </div>
+        </dl>
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+      </div>
+
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/spypitch/wireframe.webp" alt="Product screenshot" class="img-showc" style="object-position: top;" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container-showc">
+    <div class="grid-showc">
+      <!-- Text block -->
+      <div class="text-block-showc">
+        <p class="faux-h5" style="color: var(--brand-100);">Information Architecture Redesign & Implementation Strategy: Textile Museum of Canada </strong>• Study Conducted Oct-Nov 2023</h5>
+        <h1 class="subtitle-showc">Improving Content Discoverability through an Information Architecture redesign</h1>
+        <p>
+         The Textile Museum approached our MI cohort to redesign the information architecture of its website to make content more accessible. 
+        </p>
+        <p class="hashtags">
+          #InformationArchitecture #UXResearch #VisualDesign #TestingStrategy
+        </p>
+        <dl class="dl-showc">
+          <div>
+            <dt class="dt-showc">
+            ↦ Content Audits & Card Sorting
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Information Architecture & Tree Testing
+            </dt>
+          </div>
+          <div>
+            <dt class="dt-showc">
+            ↦ Navigation Design & Strategy Development
+            </dt>
+          </div>
+        </dl>
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+      </div>
+
+      <!-- Image block -->
+      <div class="image-block-showc">
+        <img src="/assets/images/tmc.webp" alt="Product screenshot" class="img-showc" />
       </div>
     </div>
   </div>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX for Operations and Workflows</title>
+  
+
+
+  <!-- Fonts -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
+</noscript>
+
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js"></script>
+</head>
+
+<body style="background: var(--white);">
+
+<div id="header-placeholder"></div>
+
+<main class="service-page-ser">
+
+  <!-- Service Header -->
+  <section class="service-header-ser">
+    <h1>UX for Operations and Workflows</h1>
+    <p>Research-driven analysis to streamline internal processes, enhance team workflows, and improve operational efficiency.</p>
+  </section>
+
+  <!-- Key Offerings Cards -->
+  <section class="key-offerings-ser">
+    <h1>Key Offerings</h1>
+    <div class="cards-container-ser">
+
+      <div class="offering-card-ser">
+        <h2>Stakeholder Interviews</h2>
+        <p>Conducted interviews to uncover insights and identify process inefficiencies.</p>
+      </div>
+
+      <div class="offering-card-ser">
+        <h2>Workflow Mapping</h2>
+        <p>Visualized team workflows to spot bottlenecks and areas for improvement.</p>
+      </div>
+
+      <div class="offering-card-ser">
+        <h2>Tool Evaluation</h2>
+        <p>Analyzed current systems and suggested better-aligned software and platforms.</p>
+      </div>
+
+      <div class="offering-card-ser">
+        <h2>Pilot Projects</h2>
+        <p>Implemented small-scale pilots to validate workflow improvements before scaling.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section class="case-studies-ser">
+    <h1>Case Studies</h1>
+    <div class="grid-wrapper-ser">
+
+      <!-- Gen-AI Service Blueprint -->
+      <div class="case-study-card-ser">
+        <div class="case-study-inner-ser">
+          <div class="case-study-image-ser"
+            onclick="window.open('/pages/casestudies/previz.html', '_blank');">
+            <img src="/assets/images/hero-banners/GENAI-banner.webp" alt="AI-Assisted Film Pre-Production Service Design">
+          </div>
+          <div class="case-study-content-ser">
+            <p class="smallp">Implemented July 2023 • Service Design · Creative Industries</p>
+            <h4>Gen-AI Service Blueprint for Film Pre-Visualization</h4>
+            <p class="cntnt-ser">
+              Learn how I used Adobe GenAI (beta version, May 2023) in a successful pilot project to speed up pre-visualization video workflows.
+            </p>
+            <div class="button-row-ser">
+              <button class="primary-btn"
+                onclick="window.open('/pages/casestudies/previz.html', '_blank');">
+                View Case Study <span style="margin-left: 3px;">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-study-card-ser-none"></div>
+
+    </div>
+  </section>
+
+</main>
+
+
+      
+
+
+<div id="footer-placeholder"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyImages = document.querySelectorAll(".lazy-image");
+
+  lazyImages.forEach(img => {
+    const realSrc = img.dataset.src;
+    if (!realSrc) return;
+
+    // Preload the real image in the background
+    const tempImg = new Image();
+    tempImg.src = realSrc;
+
+    // Once loaded, wait 0.5s before replacing the placeholder
+    tempImg.onload = () => {
+      setTimeout(() => {
+        img.src = realSrc;
+        img.classList.add("loaded"); // optional: remove blur if CSS used
+      }, 500); // 500ms delay
+    };
+  });
+});
+</script>
+
+
+<script>
+  // Fetch and insert footer HTML
+  fetch('/addons/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+</script>
+
+<script>
+fetch('/addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+</body>
+</html>

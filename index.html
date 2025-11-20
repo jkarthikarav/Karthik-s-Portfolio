@@ -46,9 +46,13 @@
           <img src="/assets/icons/home/LI.svg" alt="LinkedIn" width="16" height="16">
           <p>Connect</p>
         </div>
+        <div class="contact-item" style="cursor: pointer;" onclick="window.open('mailto:karthikaravindj@gmail.com', '_blank')">
+          <img src="/assets/icons/home/Mail.svg" alt="LinkedIn" width="16" height="16">
+          <p>Email</p>
+        </div>
       </div>
 
-      <div class="logo-div"><img src="/assets/logos/Karthik Aravind.png" alt="Logo" class="logo-img"></div>
+      <div class="logo-div"><img src="/assets/logos/Karthik Aravind.png" alt="Karthik's Logo" class="logo-img"></div>
 
       <!-- Hamburger button -->
       <div class="contact-row-2" style="justify-content: flex-end;">
@@ -62,11 +66,11 @@
     </div>
 
     <div class="box-one-bottom">
-      <h6>
+      <p style="color: var(--white);">
         <span id="greeting"></span> 👋 I'm 
         <span class="nametag">Karthik Jambunathan</span>
         <span class="ed-qual">MI, MSc</span>
-      </h6>
+      </p>
       <h1>Driving business value through UX/Product research and strategy</h1>
     </div>
 
@@ -76,7 +80,7 @@
 
     <div class="availability" style="cursor: pointer;" onclick="window.open('mailto:karthikaravindj@gmail.com', '_blank');">
       <span class="status-dot"></span>
-      <h6>Open to Freelance/Contract/Full Time UX & Product Roles </h6>
+      <p class="faux-h5">Open to Freelance/Contract/Full Time UX & Product Roles</p>
     </div>
 
     <div class="main-button-row">
@@ -112,12 +116,12 @@
     <button class="close-btn" id="close-btn">×</button>
 
     <div class="modal-left">
-      <a class="main-page-link" href="casestudies.html" target="_blank">All Case Studies <img src="/assets/icons/home/page.svg"  width="16" height="16"/></a>
-      <h3 class="collapsible" data-section="web">Web</h3>
-      <h3 class="collapsible" data-section="mobile">Mobile</h3>
-      <h3 class="collapsible" data-section="ux">UX Research & Strategy</h3>
-      <h3 class="collapsible" data-section="design">Design Thinking</h3>
-      <a class="main-page-link" href="https://www.behance.net/gallery/236391313/Graphic-Design-Showcase" target="_blank">Graphic Design on Behance <img src="/assets/icons/home/link.svg"  width="16" height="16"/></a>
+      <a class="main-page-link" href="casestudies.html" target="_blank">All Case Studies <img src="/assets/icons/home/page.svg" alt="Page icon" width="16" height="16"/></a>
+      <h2 class="collapsible" data-section="web">Web</h2>
+      <h2 class="collapsible" data-section="mobile">Mobile</h2>
+      <h2 class="collapsible" data-section="ux">UX Research & Strategy</h2>
+      <h2 class="collapsible" data-section="design">Design Thinking</h2>
+      <a class="main-page-link" href="https://www.behance.net/gallery/236391313/Graphic-Design-Showcase" target="_blank">Graphic Design on Behance <img src="/assets/icons/home/link.svg" alt="External Link icon" width="16" height="16"/></a>
     </div>
 
     <div class="modal-right" id="modal-right">
@@ -143,94 +147,67 @@
     </div>
 
     <div class="list-wrapper-services">
-      <dl class="list-services">
+    <dl class="list-services">
 
-        <div class="item-services">
-          <div class="image-crop">
-            <img src="/assets/images/ai/fractional-uiux-support.webp" alt="AI Redesign">
-          </div>
-          <h3 class="term-services">
-            Fractional UI/UX Support
-          </h3>
-          <p class="detail-services">
-            Ongoing design involvement provided on a part-time or limited-hours basis.
-          </p>
-          <dl class="dl-showc">
-            <dt class="dt-showc">1. Monthly Sprints → Feature Refinement</dt>
-            <dt class="dt-showc">2. Part-Time Designer → Usability Improvements</dt>
-            <dt class="dt-showc">3. On-Call Support → Rapid UI Audits</dt>
-            <dt class="dt-showc">4. Design QA → Consistent Implementation</dt>
-          </dl>
-        </div>
+    <div class="rect-card-ser" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 100%), url('/assets/images/ai/fractional-uiux-support.webp');">
+      <div class="rect-card-content-ser">
+        <h3>Fractional UI/UX Support</h3>
+        <button class="primary-btn"
+          onclick="window.open('/pages/services/fractionaluxui.html', '_blank');">
+          Learn More
+        </button>
+      </div>
+    </div>
 
-        <div class="item-services">
-          <div class="image-crop">
-            <img src="/assets/images/ai/web-production-design.webp" alt="Web Production Design">
-          </div>
-          <h3 class="term-services">
-            Web Production Design
-          </h3>
-          <p class="detail-services">
-            Execution-ready digital assets created for websites, campaigns, and content updates.
-          </p>
-          <dl class="dl-showc">
-            <dt class="dt-showc">1. Page Layouts → High-Fidelity Mockups</dt>
-            <dt class="dt-showc">2. Component Prep → Developer-Ready Assets</dt>
-            <dt class="dt-showc">3. CMS Graphics → Platform-Optimized Visuals</dt>
-            <dt class="dt-showc">4. CMS Maintenance → Ongoing Content Updates</dt>
-          </dl>
-        </div>
+    <div class="rect-card-ser" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 100%), url('/assets/images/ai/web-production-design.webp');">
+      <div class="rect-card-content-ser">
+        <h3>Web Production Design</h3>
+        <button class="primary-btn"
+          onclick="window.open('/pages/services/webpd.html', '_blank');">
+          Learn More
+        </button>
+      </div>
+    </div>
 
-        <div class="item-services">
-          <div class="image-crop">
-            <img src="/assets/images/ai/workflow-design.webp" alt="Workflow Design">
-          </div>
-          <h3 class="term-services">
-            UX for Operations and Workflows
-          </h3>
-          <p class="detail-services">
-            Research-driven analysis to streamline internal processes, enhance team workflows, and improve operational efficiency.
-          </p>
-          <dl class="dl-showc">
-            <dt class="dt-showc">1. Stakeholder Interviews → Process Insights</dt>
-            <dt class="dt-showc">2. Workflow Mapping → Bottleneck Identification</dt>
-            <dt class="dt-showc">3. Tool Evaluation → Better System Alignment</dt>
-            <dt class="dt-showc">4. Pilot Projects → Validated Workflow Improvements</dt>
-          </dl>
-        </div>
+    <div class="rect-card-ser" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 100%), url('/assets/images/ai/workflow-design.webp');">
+      <div class="rect-card-content-ser">
+        <h3>UX for Operations and Workflows</h3>
+        <button class="primary-btn"
+          onclick="window.open('/pages/services/workflows.html', '_blank');">
+          Learn More
+        </button>
+      </div>
+    </div>
 
-        <div class="item-services">
-          <div class="image-crop">
-            <img src="/assets/images/ai/pitch-deck-and-fundraising.webp" alt="Pitch Deck and Fundraising">
-          </div>
-          <h3 class="term-services">
-            Fundraising and Pitch Deck Creation
-          </h3>
-          <p class="detail-services">
-            Creating investor-ready materials using AI-assisted content generation and web-based interactive decks.
-          </p>
-          <dl class="dl-showc">
-            <dt class="dt-showc">1. AI Content Generation → Compelling Narratives</dt>
-            <dt class="dt-showc">2. Web-Based Decks → Interactive Investor Experience</dt>
-            <dt class="dt-showc">3. Data Visualization → Insightful Metrics</dt>
-            <dt class="dt-showc">4. Iterative Refinement → Optimized Messaging</dt>
-          </dl>
-        </div>
+    <div class="rect-card-ser" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 100%), url('/assets/images/ai/pitch-deck-and-fundraising.webp');">
+      <div class="rect-card-content-ser">
+        <h3>Fundraising and Pitch Deck Creation</h3>
+        <button class="primary-btn"
+          onclick="window.open('/pages/services/pitchdeck.html', '_blank');">
+          Learn More
+        </button>
+      </div>
+    </div>
 
-      </dl>
+    </dl>
     </div>
   </div>
 </section>
 
 <section id="fw" class="main-work">
 
-<h2>
+<h2 style="margin: 1rem auto 0rem;">
   Showcase
 </h2>
 
 <p>
   A Collection of my projects in UX/UI & Strategy
 </p>
+
+<button class="primary-btn"
+  onclick="window.open('casestudies.html', '_blank');">  
+  View All
+</button>
 
 </section>
 
@@ -241,8 +218,8 @@
     <div class="grid-showc">
       <!-- Text block -->
       <div class="text-block-showc">
-        <h6 style="color: var(--brand-100);">Homepage Redesign: ECE at U of T </strong>• Shipped Jan 2025</h6>
-        <h2 class="subtitle-showc">Applying User-Centered Information Design for Prospective Student Engagement</h2>
+        <p class="faux-h5" style="color: var(--brand-100);">Homepage Redesign: ECE at U of T </strong>• Shipped Jan 2025</p>
+        <h3 class="subtitle-showc">Applying User-Centered Information Design for Prospective Student Engagement</h3>
         <p>
           Designed a narrative and responsive web layout to engage prospective students, ensuring contextual & visual consistency amongst fellow university departments. 
         </p>
@@ -273,7 +250,7 @@
 
       <!-- Image block -->
       <div class="image-block-showc">
-        <img src="/assets/images/ece.webp" alt="Product screenshot" class="img-showc" />
+        <img src="/assets/images/ece.webp" alt="Web Mockup" class="img-showc" />
       </div>
     </div>
   </div>
@@ -282,8 +259,8 @@
     <div class="grid-showc">
       <!-- Text block -->
       <div class="text-block-showc">
-        <h6 style="color: var(--brand-100);">Mobile App for Ticket Deals: Product Research & Design </strong>• Oct-Dec 2023</h6>
-        <h2 class="subtitle-showc">Improving Discoverability of Toronto’s Museum experiences through Product Research & Design</h2>
+        <p class="faux-h5" style="color: var(--brand-100);">Mobile App for Ticket Deals: Product Research & Design </strong>• Oct-Dec 2023</p>
+        <h3 class="subtitle-showc">Improving Discoverability of Toronto’s Museum experiences through Product Research & Design</h3>
         <p>
          Toronto, is a city rich in cultural heritage institutions. 
          Yet many residents hesitate to visit them, not because of disinterest, but because of the lack of centralized ticket discovery experience.
@@ -315,90 +292,7 @@
 
       <!-- Image block -->
       <div class="image-block-showc">
-        <img src="/assets/images/Exp-Tor.webp" alt="Product screenshot" class="img-showc" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container-showc">
-    <div class="grid-showc">
-      <!-- Text block -->
-      <div class="text-block-showc">
-        <h6 style="color: var(--brand-100);">Pitch Deck Website for Film Fundraising </strong>• Shipped Aug 2021</h6>
-        <h2 class="subtitle-showc">Transforming Film Pitch Decks into Interactive, Information-Rich Websites</h2>
-        <p>
-         Traditional pitch decks and presentations struggled to capture a director’s vision and fail to engage memorably.  
-         Why? Because at the end of the day, it is a person with a PPT talking.
-        </p>
-        <p class="hashtags">
-          #WebDevelopment #UIUXDesign #InformationDesign #InvestorExperience #PresentationDesign
-        </p>
-        <dl class="dl-showc">
-          <div>
-            <dt class="dt-showc">
-            ↦ UX Research & Visual Planning
-            </dt>
-          </div>
-          <div>
-            <dt class="dt-showc">
-            ↦ Interactive Prototype Development & Testing
-            </dt>
-          </div>
-          <div>
-            <dt class="dt-showc">
-            ↦ Iterative Refinement & Web Development
-            </dt>
-          </div>
-        </dl>
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/filmPitchSite.html', '_blank');" style="width: fit-content;">
-          View Case Study →
-        </button>
-      </div>
-
-      <!-- Image block -->
-      <div class="image-block-showc">
-        <img src="/assets/images/spypitch/wireframe.webp" alt="Product screenshot" class="img-showc" style="object-position: top;" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container-showc">
-    <div class="grid-showc">
-      <!-- Text block -->
-      <div class="text-block-showc">
-        <h6 style="color: var(--brand-100);">Information Architecture Redesign & Implementation Strategy: Textile Museum of Canada </strong>• Study Conducted Oct-Nov 2023</h6>
-        <h2 class="subtitle-showc">Improving Content Discoverability through an Information Architecture redesign</h2>
-        <p>
-         The Textile Museum approached our MI cohort to redesign the information architecture of its website to make content more accessible. 
-        </p>
-        <p class="hashtags">
-          #InformationArchitecture #UXResearch #VisualDesign #TestingStrategy
-        </p>
-        <dl class="dl-showc">
-          <div>
-            <dt class="dt-showc">
-            ↦ Content Audits & Card Sorting
-            </dt>
-          </div>
-          <div>
-            <dt class="dt-showc">
-            ↦ Information Architecture & Tree Testing
-            </dt>
-          </div>
-          <div>
-            <dt class="dt-showc">
-            ↦ Navigation Design & Strategy Development
-            </dt>
-          </div>
-        </dl>
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc.html', '_blank');" style="width: fit-content;">
-          View Case Study →
-        </button>
-      </div>
-
-      <!-- Image block -->
-      <div class="image-block-showc">
-        <img src="/assets/images/tmc.webp" alt="Product screenshot" class="img-showc" />
+        <img src="/assets/images/Exp-Tor.webp" alt="Mobile App Mockup" class="img-showc" />
       </div>
     </div>
   </div>
@@ -416,12 +310,9 @@
         <div class="card-inner-mesa">
           <div>
             <h3 class="card-title-mesa">Studio Karthik</h3>
-            <p class="card-text-special-mesa">Since Feb 2018</p>
+            <p class="card-text-mesa">Since Feb 2018</p>
             <p class="card-text-mesa">
               Boutique design studio delivering UX and Digital media solutions across the globe.
-            </p>
-            <p class="card-text-mesa">
-              Send me an Email: <span style="font-weight: bold; text-decoration: underline; color: var(--brand-100);">karthikaravindj@gmail.com</span>
             </p>
           </div>
           <div class="card-image-wrapper-mesa">
@@ -434,10 +325,9 @@
       <div class="card-mesa performance-mesa">
         <div class="card-inner-mesa">
           <div>
-            <h5 class="card-title-mesa">Currently at</h5>
-            <h3 class="card-text-special-2-mesa">Copywriting Creatives</h3>
-            <p class="card-text-special-mesa">Solutions Designer, since Apr 2025.</p>
-            <p class="card-text-special-mesa"></p>
+            <h3 class="card-text-special-2-mesa">Current Company</h3>
+            <h4 class="card-text-mesa">Copywriting Creatives</h4>
+            <p class="card-text-mesa">Solutions Designer, since Apr 2025.</p>
           </div>
         </div>
       </div>
@@ -446,8 +336,8 @@
       <div class="card-mesa security-mesa">
         <div class="card-inner-mesa">
           <div>
-            <h5 class="card-title-mesa">Previously at</h5>
-            <p class="card-text-special-mesa">ECE Department, University of Toronto. Web Production Design, Jun '24 to Mar '25.</p>
+            <h3 class="card-title-mesa">Previously at</h3>
+            <h4 class="card-text-mesa">ECE Department, University of Toronto. Web Production Design, Jun '24 to Mar '25.</p>
             <p class="card-text-special-mesa">JKR Business Consultancy. Co-Founder / UX Consultant, Sep '21 to Aug '23.</p>
             <p class="card-text-special-mesa">Fix It In Post Studios. UX/Visual Design, Aug '20 to Aug '21.</p>
           </div>
@@ -459,11 +349,11 @@
         <div class="card-inner-mesa">
           <h3 class="card-title-mesa">Education</h3>
           <div>
-            <h6 class="card-text-mesa">Master of Information, UX Design</h6>
+            <h4 class="card-text-mesa">Master of Information, UX Design</h4>
             <p class="card-text-special-mesa">Sep '23 to Jun '25. Faculty of Information, University of Toronto, St. George Campus.</p>
           </div> 
           <div>
-            <h6 class="card-text-mesa">Master of Science, Electronic Media</h6>
+            <h4 class="card-text-mesa">Master of Science, Electronic Media</h4>
             <p class="card-text-special-mesa">Aug '16 to Jul '21 (Bachelors + Masters). Department of Media Sciences, Anna University, CEG Campus.</p>
           </div> 
         </div>
@@ -475,60 +365,32 @@
 
 </section>
 
-<section id="art" class="blog-section-designthinking">
-  <div class="container-designthinking">
-    <div class="header-designthinking">
-      <h2>Design Thinking in Action</h2>
-      <p>Explore my design thinking through these articles. Also available through subscribing to my newsletter:</p>
-      <button class="primary-btn" onclick="window.open('https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7393569508403294208', '_blank');">
-        Subscribe to Newsletter
-      </button> 
+<section class="design-thinking-dta">
+
+  <h2>Design Thinking</h2>
+  <p>
+    Explore my design thinking through these articles. Also available through subscribing to my newsletter:
+  </p>
+  <button class="primary-btn"
+    onclick="window.open('https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7393569508403294208', '_blank');">
+    Subscribe to Newsletter
+  </button>
+
+  <div class="articles-container-dta">
+
+    <div class="article-card-dta" onclick="window.open('https://www.linkedin.com/pulse/redesigning-beneficiary-management-flow-indian-web-apps-jambunathan-x1koe', '_blank')">
+      <h3>Redesigning the Beneficiary Management Flow in Indian Netbanking Web Apps</h3>
+      <p class="article-date-dta">Nov 12, 2025 ·<span class="article-tags-dta"> Fintech, UI/UX</span></p>
     </div>
 
-    <div class="articles-designthinking">
-      <article class="article-designthinking" 
-      onclick="window.open('https://www.linkedin.com/pulse/redesigning-beneficiary-management-flow-indian-web-apps-jambunathan-x1koe', '_blank')">
-        <div class="meta-designthinking">
-          <time datetime="2020-03-16">Nov 12, 2025</time>
-          <a href="#" class="tag-designthinking">Fintech, UI/UX</a>
-        </div>
-        <div class="content-designthinking">
-          <h3>
-            <a href="https://www.linkedin.com/pulse/redesigning-beneficiary-management-flow-indian-web-apps-jambunathan-x1koe" target="_blank">
-              Redesigning the Beneficiary Management Flow in Indian Netbanking Web Apps
-            </a>
-          </h3>
-          <p>
-            A large population of Indians are used to India's UPI system, but traditional online banking still plays a significant role. However, Online banking makes money transfer simple, but managing beneficiaries can be confusing.
-          </p>
-        </div>
-      </article>
-
-      <article class="article-designthinking" 
-      onclick="window.open('/pages/articles/web-production.html', '_blank')">
-        <div class="meta-designthinking">
-          <time datetime="2020-03-16">Sep 29, 2025</time>
-          <a href="#" class="tag-designthinking">Education, Web Production</a>
-        </div>
-        <div class="content-designthinking">
-          <h3>
-            <a href="/pages/articles/web-production.html" target="_blank">
-              Website Production Design: University of Toronto, ECE Department
-            </a>
-          </h3>
-          <p>
-            I worked at the University of Toronto’s ECE Department, redesigning and managing their public-facing website and intranet, combining accessibility auditing, content and visual design in Figma, stakeholder coordination, and end-to-end WordPress implementation. Overall, my core responsibilities were to: Maintain the ECE's public website and their intranet while coordinating with internal stakeholders and teams for content updates.
-          </p>
-        </div>
-      </article>
-
+    <div class="article-card-dta" onclick="window.open('pages/articles/web-production.html', '_blank')">
+      <h3>Website Production Design: University of Toronto, ECE Department</h3>
+      <p class="article-date-dta">Sep 29, 2025 ·<span class="article-tags-dta"> Education, Web Production</span></p>
     </div>
+
   </div>
-</div>
 
-</div>
 
-<div style="padding: 2rem;"></div>
 </section>
 
 </main>
@@ -544,7 +406,6 @@
     })
     .catch(error => console.error("Error loading footer:", error));
 </script>
-
 
 <script>
     const greetings = ["Hello", "Ciao", "Hola", "привіт", "வணக்கம்", "नमस्ते", "Bonjour", "안녕", "你好"];
@@ -700,15 +561,15 @@ const sections = {
   ]
 };
 
-document.querySelectorAll('.collapsible').forEach(h3 => {
-  h3.addEventListener('click', () => {
-    const section = h3.dataset.section;
+document.querySelectorAll('.collapsible').forEach(h2 => {
+  h2.addEventListener('click', () => {
+    const section = h2.dataset.section;
     const container = document.getElementById('modal-right');
     container.innerHTML = ''; // clear previous content
 
     // Create a heading element showing what was clicked
-    const heading = document.createElement('h3');
-    heading.textContent = h3.textContent.trim(); // the header text
+    const heading = document.createElement('h2');
+    heading.textContent = h2.textContent.trim(); // the header text
     heading.style.marginBottom = '1rem';
     heading.style.color = 'var(--neutrals-100)'; // optional styling
     container.appendChild(heading);
@@ -719,12 +580,11 @@ document.querySelectorAll('.collapsible').forEach(h3 => {
       a.href = link.href;
       a.target = "_blank";
       a.className = "collapsible-links-a";
-      a.innerHTML = `${link.text} <img src="${link.icon}" class="link-icon">`;
+      a.innerHTML = `${link.text} <img src="${link.icon}" class="link-icon" alt="Icon">`;
       container.appendChild(a);
     });
   });
 });
-
 </script>
 
 </body>
