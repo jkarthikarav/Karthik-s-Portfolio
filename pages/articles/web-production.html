@@ -18,31 +18,25 @@
   <script src="../../js/script.js"></script>
 </head>
 
-<body style="background: var(--white);">
+<body>
+<div id="header-placeholder"></div>
 
-  <div id="header-placeholder"></div>
-
-  <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center;">
-
+<section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
+  
   <div class="wp-post">
 
       <!-- Title -->
-      <h1 class="wp-post-title">
+      <h1 class="post-title">
         Website Production Design: University of Toronto, ECE Department
       </h1>
 
-          <h5 class="post-subtitle">A Work Highlights Discussion</h5>
-
-
-<div class="post-meta">
-  <div class="post-meta-text">
-    <p>September 29, 2025</p>
-    <p>Work Highlights (June 2024 - March 2025)</p>
-    <p>Web Design, UX, WordPress, Figma</p>
-  </div>
-</div>
-
-    <div class="wp-post-content">
+      <div class="post-meta">
+      <div class="post-meta-text">
+        <p>September 29, 2025</p>
+        <p>Work Highlights (June 2024 - March 2025)</p>
+        <p>Web Design, UX, WordPress, Figma</p>
+      </div>
+      </div>
 
       <blockquote class="wp-block-quote">
         <p>
@@ -51,6 +45,10 @@
           aligning key page content with administrative goals -- while designing on Figma and implementing on WordPress.
         </p>
       </blockquote>
+      
+  </div>
+
+    <div class="post">
     
       <p>   
         I worked at the University of Toronto’s ECE Department, redesigning and managing 
@@ -311,28 +309,20 @@
 
     <h2 style="color:var(--black-600); margin-top:1.5rem;">Related Case Studies</h2>
 
-    <div class="related-case-card" onclick="window.open('../../pages/casestudies/eceHome.html', '_blank');" onmouseover="style.transform='scale(1.01)';"
-       onmouseout="style.transform='scale(1)';">
-
-      <div class="rcc-c">
-        <h4>
-          ECE Homepage Redesign
-        </h4>
-
-        <p>
-          Discover the full homepage redesign project, including mockups, design iterations, and implementation process. 
-          This case study highlights how I improved accessibility, usability, and visual consistency across the department’s main landing page.
-        </p>
-
-        <button class="primary-btn">
-          View Case Study <span style="display: inline-block; margin-left: 3px;">→</span>
-        </button>
-
+      <div class="case-study-inner-ser">
+        <div class="case-study-content-ser">
+          <p class="smallp">Shipped Jan 2025 • UI-UX/Web Dev · Education</p>
+          <h4>Homepage Redesign: University of Toronto, ECE Department</h4>
+          <div class="button-row-ser">
+            <button class="primary-btn"
+              onclick="window.open('/pages/casestudies/eceHome.html', '_blank');">
+              View Case Study →
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
 
-</div>
-
+  </div>
 
 </section>
 

@@ -484,7 +484,7 @@ padding: 6rem;
 
 .spec-box p {
   color: var(--black-400);
-}
+}    
 
 .post {
 display: flex; flex-direction:column; justify-content: flex-start; align-items: flex-start; padding: 2rem 4rem;
