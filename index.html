@@ -85,13 +85,18 @@
 
     <div class="main-button-row">
       <button class="primary-btn"
+              onclick="document.getElementById('int').scrollIntoView({behavior: 'smooth'});">
+        Introduction
+      </button>
+      
+      <button class="primary-btn"
               onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
         Showcase
       </button>
 
       <button class="primary-btn"
-              onclick="document.getElementById('abt').scrollIntoView({behavior: 'smooth'});">
-        About
+              onclick="document.getElementById('lab').scrollIntoView({behavior: 'smooth'});">
+        Experimentation
       </button>
 
       <button class="primary-btn"
@@ -128,6 +133,63 @@
     </div>
   </div>
 </div>
+
+</section>
+
+<section id="int" class="main-work" style="background-color: var(--brand-100);">
+
+<div class="casestudy-section">
+        <div class="casestudy-main-column">
+          <h1 class="casestudy-main-text" style="color: var(--neutral-100);">
+            Introduction
+          </h1>
+        </div>
+
+        <div class="casestudy-side-column">
+          <div class="casestudy-feature-card">
+            <h3 style="margin-top: 1rem; color: var(--white);">
+              I love being Karthik, a dynamic force of research, design, and strategy. 
+              I use every ounce of my passion, purpose, and creativity to create solutions grounded in real human needs.
+            </h3>
+          </div>
+          <div class="casestudy-feature-card">
+            <p style="color: var(--neutral-100);">
+              Every decision I make, every process I follow, 
+              is based on research and experience with real customers and focused on building systems and experiences that solve real problems 
+              rather than chasing trends or appearances.
+            </p>
+          </div>
+          <div class="casestudy-feature-card">
+            <p style="color: var(--neutral-100);">
+            <strong>
+              My design philosophy is simple:
+            </strong>
+              Research-driven, purpose-built systems outperform hype every time.
+            </p>
+          </div>
+        </div>
+  </div>
+
+  <div class="container-stats">
+            
+            <!-- Column 1: Time Saved -->
+            <div style="flex: 1 1 33%; text-align: center; padding-right: 1rem;">
+                <h1 style="color: var(--white);">20% Lesser</h1>
+                <p style="font-size: small; color: var(--black-100);">Average Reduction in Design-to-dev discrepancies</p>
+            </div>
+            
+            <!-- Column 2: Governance -->
+            <div style="flex: 1 1 33%; text-align: center; padding: 0 1rem;">
+                <h1 style="color: var(--white);">$24K+ USD</h1>
+                <p style="font-size: small; color: var(--black-100);">Additional Weekly Revenue Generated for Client through Strategy</p>
+            </div>
+            
+            <!-- Column 3: Error Reduction -->
+            <div style="flex: 1 1 33%; text-align: center; padding-left: 1rem;">
+                <h1 style="color: var(--white);">$400K+ USD</h1>
+                <p style="font-size: small; color: var(--black-100);">Capital secured by designing microsites and investor experiences</p>
+            </div>
+  </div>
 
 
 </section>
@@ -197,7 +259,7 @@
     </div>
 </div>
 
-<h2>Select Research & Shipped Projects</h2>
+<h2 style="margin-top: 3rem;">Select Research & Shipped Projects</h2>
 
 <div class="articles-container-dta" style="max-width: 900px;">
 
@@ -231,11 +293,53 @@
       <div class="card-mesa mobile-mesa">
         <div class="card-inner-mesa">
           <div>
-            <h3 class="card-title-mesa">Who am I?</h3>
-            <p class="card-text-mesa">
-              I am a Product Designer & UX Strategist, skilled in bridging the gap between complex business requirements and human-centred user experiences.
+            <h3 class="card-text-special-2-mesa">Currently at</h3>
+            <h4 class="card-text-mesa">Copywriting Creatives</h4>
+            <p class="card-text-special-mesa" style="font-size: medium;">Formerly Known as: Copywriting Matters.</p>
+            <p class="card-text-mesa">Solutions Designer (Marketing & CX), since Apr 2025.</p>
+          </div>
+          <div>
+            <h3 class="card-text-special-2-mesa">Previously at</h3>
+            <h4 class="card-text-mesa">ECE, University of Toronto. Web Production Design, Jun '24 to Mar '25.</p>
+            <p class="card-text-special-mesa" style="font-size: medium;">JKR Business Consultancy. Co-Founder / UX Solutions Consultant (Strategy & Design), Sep '21 to Aug '23.</p>
+            <p class="card-text-special-mesa" style="font-size: medium;">Fix It In Post Studios. Solutions Designer (UX & Visual Design), Aug '20 to Aug '21.</p>
+            <p class="card-text-special-mesa" style="font-size: medium;">Caterpillar. UX Design Co Op, Dec '19 to Jan '20.</p>
+            <p class="card-text-special-mesa" style="font-size: medium;">and multiple Freelance/Contract roles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance -->
+      <div class="card-mesa performance-mesa">
+        <div class="card-inner-mesa" style="justify-content: flex-start;">
+          <div>
+            <h4 class="card-title-mesa" style="margin-top: 1rem;">Skills</h4>
+            <p class="card-text-special-mesa">
+              Product Design. UX Research & Testing. Interaction Design. Wireframing & Prototyping. Design Systems. Accessibility. 
+              Workflow Optimization. HTML/CSS. Website Design.
             </p>
-            <h4 class="card-title-mesa" style="margin-top: 1rem;">Education</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="card-mesa security-mesa">
+        <div class="card-inner-mesa" style="justify-content: flex-start;">
+          <div>
+            <h4 class="card-title-mesa" style="margin-top: 1rem;">Tech Stack</h4>
+            <p class="card-text-special-mesa">
+              Figma. Adobe Creative Suite. Microsoft Tools. Tableau. Optimal Workshop. Dovetail. 
+              Qualtrics. Jira. Miro. Google Workspace. WAVE. Lighthouse. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Powerful APIs -->
+      <div class="card-mesa powerful-mesa">
+        <div class="card-inner-mesa">
+          <div>
+            <h4 class="card-title-mesa" style="margin-top: 1rem;">Education</h4>
             <div>
               <h5 class="card-text-mesa">Master of Information, UXD</h4>
               <p class="card-text-special-mesa" style="font-size: small;">Sep '23 to Jun '25. Faculty of Information, University of Toronto, St. George Campus.</p>
@@ -245,38 +349,15 @@
               <p class="card-text-special-mesa" style="font-size: small;">Aug '16 to Jul '21 (Bachelors + Masters). Department of Media Sciences, Anna University, Chennai-CEG Campus.</p>
             </div>
           </div>
-          
-        </div>
-      </div>
-
-      <!-- Performance -->
-      <div class="card-mesa performance-mesa">
-        <div class="card-inner-mesa">
           <div>
-            <h3 class="card-text-special-2-mesa">Current Company</h3>
-            <h4 class="card-text-mesa">Copywriting Creatives</h4>
-            <p class="card-text-mesa">Solutions Designer, since Apr 2025.</p>
+            <h4 class="card-title-mesa" style="margin-top: 1rem;">Certifications</h4>
+            <div>
+              <p class="card-text-special-mesa" style="font-size: medium;">Career Essentials in Business Analysis by Microsoft</p>
+              <p class="card-text-special-mesa" style="font-size: medium;">Google Analytics Certification by Google Digital Academy (Skillshop)</p>
+              <p class="card-text-special-mesa" style="font-size: medium;">TCPS 2: Ethical Conduct for Research Involving Humans by Govt. of Canada</p>
+              <p class="card-text-special-mesa" style="font-size: medium;">Test Automation Professional Certificate by LambdaTest</p>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Security -->
-      <div class="card-mesa security-mesa">
-        <div class="card-inner-mesa">
-          <div>
-            <h3 class="card-title-mesa">Previously at</h3>
-            <h4 class="card-text-mesa">ECE, University of Toronto. Web Production Design, Jun '24 to Mar '25.</p>
-            <p class="card-text-special-mesa" style="font-size: medium;">JKR Business Consultancy. Co-Founder / UX Consultant, Sep '21 to Aug '23.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Powerful APIs -->
-      <div class="card-mesa powerful-mesa">
-        <div class="card-inner-mesa">
-          <h3 class="card-title-mesa">What makes me different?</h3>
-          <p class="card-text-mesa">Every decision I make, even the most taxing, is focused on delivering experiences that result in efficiency. This approach allows me to shape information flows and product narratives.</p>
-          <h4 class="card-text-mesa"><strong>My design philosophy is simple:</strong> if you deliver complexity, you are no better than reality. </h4>
         </div>
       </div>
 

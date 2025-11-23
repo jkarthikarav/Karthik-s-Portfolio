@@ -926,8 +926,10 @@ max-width: 75vw;
   padding: 2rem;
   flex: 1;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   height: 100%;
+  justify-content: space-around;
 }
 
 .card-title-mesa {
@@ -1541,6 +1543,10 @@ max-width: 75vw;
   color: var(--brand-100);
 }
 
+.casestudy-feature-card h1, h2, h3, h4, h5, h6, p {
+  margin: 0.25rem auto;
+}
+
 
 @media (max-width: 768px) {
   .casestudy-section {
@@ -1554,4 +1560,16 @@ max-width: 75vw;
       order: 2; 
       gap: 1rem; 
   }
+  .container-stats {
+    flex-direction: column;
+  }
+}
+
+hr {
+  border: 1px solid rgba(197, 197, 197, 0.25);
+  width: 100%;
+}
+
+.container-stats {
+  margin: 1rem auto 3rem; display: flex; justify-content: center; gap: 1rem; padding: 2rem 0; width: 100%; max-width: 1200px;
 }
