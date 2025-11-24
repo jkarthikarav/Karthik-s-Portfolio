@@ -1133,13 +1133,18 @@ max-width: 75vw;
   width: 35%;
   padding-right: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  align-items: stretch;
 }
 
 .modal-right {
   width: 65%;
   display: flex;
   flex-direction: column;
+}
+
+.modal-right h2{
+  width: 100%;
 }
 
 .collapsible-links-a {
@@ -1159,6 +1164,7 @@ max-width: 75vw;
 .collapsible {
   color: var(--neutrals-300);
   cursor: pointer;
+  width: 100%;
 }
 
 .main-page-link {
@@ -1504,8 +1510,12 @@ max-width: 75vw;
 }
 
 .casestudy-body-headline {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 2rem; 
+}
+
+.casestudy-body-text {
+  margin: 1rem 0;
 }
 
 /* Optional: Mobile adjustments */
