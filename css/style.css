@@ -1,6 +1,12 @@
 :root {
   --brand-600: #07121e;
   --brand-100: #203349;
+  --brand-500: #1d4a7c;
+  --brand-400: #2968ae;
+  --brand-50-1000: #eaf2fa;
+  --brand-50-500: rgba(234, 242, 250, 0.5);
+  --brand-200: #2b70ba;
+  --brand-300: #183e67;
   --neutral-100: #fcfcfc; 
   --neutral-600: #f0f0f0;
   --black-100: #e4e4e4;
@@ -64,6 +70,9 @@ p {
 @media (max-width: 768px) {
   h1 { font-size: 24px; }
   h1 { font-size: 20px; }  
+  #art-banner .container-stats-2 {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -411,10 +420,17 @@ padding: 6rem;
   align-items: center; justify-content: flex-start; width: 100%; padding: 2.5rem;
 }
 
+.intro {
+  box-sizing: border-box; background: linear-gradient(45deg, var(--brand-300), var(--brand-100));
+  display: flex; flex-direction: column; 
+  align-items: center; justify-content: flex-start; width: 100%; padding: 2rem 2rem 2rem;
+  gap: 0.25rem;
+}
+
 .showcase {
   background-color: var(--neutrals-100); box-sizing: border-box;
   display: flex; flex-direction: column; 
-  align-items: center; justify-content: flex-start; width: 100%; padding: 2rem 2rem 6rem;
+  align-items: center; justify-content: flex-start; width: 100%; padding: 2rem 2rem 2rem;
   gap: 0.25rem;
 }
 
@@ -1221,10 +1237,8 @@ max-width: 75vw;
   position: relative;
   height: 70vh;
   padding: 1rem 2rem;
-  background-image: 
-  linear-gradient(to top, rgba(0,0,0,0) 90%, rgba(0,0,0,0.4) 100%), 
-  linear-gradient(to bottom, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 100%), 
-  url('/assets/images/about/banner-bg-2.webp');
+
+  background: linear-gradient(25deg, var(--brand-300), var(--brand-600));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1320,13 +1334,9 @@ max-width: 75vw;
     max-width: 1200px;
   }
 
-  .box-one-bottom h5 {
-  margin-bottom: 0.3em;    color: white;
-  max-width: 600px;
-  }
 
   .box-one-bottom h1 {
-  margin-top: 0; 
+  margin-top: 0; margin-bottom: 2.5rem;
   max-width: 1200px;    color: white;
   }
 
@@ -1419,10 +1429,14 @@ max-width: 75vw;
   width: 100%;
 }
 
+.articles-container-dta h3:first-of-type {
+  color: var(--brand-600);
+}
+
 .article-card-dta {
-  padding: 1rem 0;
+  padding: 2rem;
   cursor: pointer;
-  border-bottom: 1px solid var(--black-200);
+  background-color: var(--brand-50-1000);
   transition: transform 0.3s ease;
 }
 
@@ -1430,8 +1444,9 @@ max-width: 75vw;
   transform: translateY(-5px);
 }
 
-.article-card-dta h5 {
+.article-card-dta h4 {
   margin: 0 0 0.25rem 0;
+  color: var(--brand-200);
 }
 
 .article-date-dta {
@@ -1468,6 +1483,7 @@ max-width: 75vw;
 .heading {
     margin-top: 0;
     margin-bottom: 20px;
+    color: var(--brand-400);
 }
 
 .body-copy {
@@ -1581,5 +1597,78 @@ hr {
 }
 
 .container-stats {
-  margin: 1rem auto 3rem; display: flex; justify-content: center; gap: 1rem; padding: 2rem 0; width: 100%; max-width: 1200px;
+display: flex; justify-content: center; gap: 3rem; padding: 2rem;
+}
+
+
+.container {
+ background: linear-gradient(45deg, var(--brand-300), var(--brand-100)); display: flex; gap: 1rem; padding: 2rem; flex-direction: column;
+}
+
+.container-stats h1 {
+  color: var(--neutral-100);
+}
+
+.container-stats p {
+  color: var(--white);
+}
+
+.container h2 {
+  color: var(--white);
+  margin-bottom: 0rem;
+  margin-top: 3rem;
+}
+
+
+.container-stats-2 {
+  margin: 0 auto; display: flex; justify-content: flex-start; gap: 1rem;
+  background: none; padding: 0; width: 100%; align-items: center;
+}
+
+.container-stats-2 h1 {
+  color: var(--neutral-100);
+}
+
+.container-stats-2 p {
+  color: var(--white);
+}
+
+.casestudy-main-text {
+  color: var(--brand-300);
+}
+
+.casestudy-body-headline {
+  color: var(--brand-300);
+}
+
+.cta-section {
+    margin: 0;
+    padding: 8rem 3rem;
+    background: linear-gradient(45deg, var(--brand-300), var(--brand-100));
+    color: var(--white); 
+}
+
+.cta-headline {
+    margin-bottom: 1rem;
+    color: var(--neutral-100); 
+}
+
+.cta-description {
+    margin-bottom: 2rem;
+    color: var(--white); 
+}
+
+
+.cta-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+  .cta-buttons-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
