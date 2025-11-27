@@ -1,12 +1,13 @@
 :root {
-  --brand-600: #07121e;
-  --brand-100: #203349;
-  --brand-500: #1d4a7c;
-  --brand-400: #2968ae;
   --brand-50-1000: #eaf2fa;
   --brand-50-500: rgba(234, 242, 250, 0.5);
+  --brand-100: #203349;
   --brand-200: #2b70ba;
-  --brand-300: #183e67;
+  --brand-300: #1d4a7c;
+  --brand-400: #2968ae;
+  --brand-500: #1d4a7c;
+  --brand-600: #07121e;
+  --accent-1: #effbff;
   --neutral-100: #fcfcfc; 
   --neutral-600: #f0f0f0;
   --black-100: #e4e4e4;
@@ -1436,7 +1437,7 @@ max-width: 75vw;
 .article-card-dta {
   padding: 2rem;
   cursor: pointer;
-  background-color: var(--brand-50-1000);
+  background-color: var(--accent-1);
   transition: transform 0.3s ease;
 }
 
@@ -1603,6 +1604,10 @@ display: flex; justify-content: center; gap: 3rem; padding: 2rem;
 
 .container {
  background: linear-gradient(45deg, var(--brand-300), var(--brand-100)); display: flex; gap: 1rem; padding: 2rem; flex-direction: column;
+}
+
+.container-2 {
+ background-color: var(--black-600); display: flex; gap: 1rem; padding: 2rem; flex-direction: column;
 }
 
 .container-stats h1 {
