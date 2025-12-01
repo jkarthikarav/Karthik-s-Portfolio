@@ -1470,6 +1470,11 @@ max-width: 75vw;
     padding: 30px; 
 }
 
+#gds {
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
 .card-text {
     padding-right: 40px;
 }
@@ -1500,8 +1505,13 @@ max-width: 75vw;
 
 @media (max-width: 1024px) {
     .split-card-section {
-        grid-template-columns: 1fr;
-        padding: 20px; 
+      grid-template-columns: 1fr;
+      padding: 20px; 
+    }
+
+    #gds {
+      grid-template-columns: 1fr;
+      padding: 20px;
     }
 
     .image-block-showc {
