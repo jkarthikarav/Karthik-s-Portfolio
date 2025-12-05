@@ -84,29 +84,24 @@
     </div>
 
     <div class="main-button-row">
-      <button class="primary-btn"
-              onclick="document.getElementById('int').scrollIntoView({behavior: 'smooth'});">
-        Introduction
-      </button>
       
       <button class="primary-btn"
               onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-        UI/UX Showcase
+        Showcase
       </button>
 
       <button class="primary-btn"
-              onclick="document.getElementById('pbs').scrollIntoView({behavior: 'smooth'});">
-        Problem Solving
+              onclick="window.open('/uiwork.html', '__blank')">
+        UI Design
       </button>
 
-
       <button class="primary-btn"
-              onclick="document.getElementById('art').scrollIntoView({behavior: 'smooth'});">
-        Design Thinking
+              onclick="window.open('/designwork.html', '__blank')">
+        Visual Design
       </button>
 
       <button class="primary-btn" id="surprise-btn">
-        Random Project 🎲
+        Open Random Case Study🎲
       </button>
     </div>
 
@@ -540,11 +535,13 @@ function changeGreeting() {
 
 <script>
 const link_cards = [  
-  { title: "ECE Homepage Redesign", link: "/pages/casestudies/ece-homepage-redesign.html" },
-  { title: "Mobile UX Research for Ticket Deals", link: "/pages/casestudies/experience-toronto-the-discoverability-app.html" },
-  { title: "IA Redesign and Navigation Menu Test Strategy Design", link: "/pages/casestudies/data-driven-ia-restructuring-and-phased-rollout-strategy.html" },
-  { title: "Gen-AI Service Blueprint for Film Pre-Production", link: "/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html" },
-  { title: "Pitch Deck Website for Film Pre-Production", link: "/pages/casestudies/interactive-web-experience-for-capital-raising.html" }
+  { title: "ECE Homepage", link: "/pages/casestudies/ece-homepage-redesign.html" },
+  { title: "Mobile UX Research", link: "/pages/casestudies/experience-toronto-the-discoverability-app.html" },
+  { title: "IA Design", link: "/pages/casestudies/data-driven-ia-restructuring-and-phased-rollout-strategy.html" },
+  { title: "Gen-AI", link: "/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html" },
+  { title: "Clearloop", link: "/pages/casestudies/clearloop-pay-ui-for-corporate-expense-governance.html" },
+  { title: "Caterpillar", link: "/pages/casestudies/design-guidelines-for-construction-site-management.html" },
+  { title: "Pitch Deck", link: "/pages/casestudies/interactive-web-experience-for-capital-raising.html" }
 ];
 
 let shuffledIndices = [];
