@@ -553,11 +553,21 @@ max-width: 75vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 1rem;
+  margin: 2rem 1rem;
+}
+
+.facts-grid-doublet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 1rem;
 }
 
 @media (max-width: 768px) {
   .facts-grid {
+    grid-template-columns: 1fr;
+  }
+  .facts-grid-doublet {
     grid-template-columns: 1fr;
   }
   .facts-grid img {
@@ -571,11 +581,17 @@ max-width: 75vw;
   object-fit: cover;
 }
 
+.facts-grid-doublet img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .facts-grid-flat {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 1rem;
+  margin: 2rem 1rem;
 }
 
 @media (max-width: 1250px) {
@@ -1189,7 +1205,7 @@ max-width: 75vw;
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
-  margin: 1rem 0;
+  margin: 1rem 0 0.25rem;
   font-family: 'League Spartan', sans-serif;
   line-height: 1.6;
   text-decoration: none;
