@@ -87,17 +87,17 @@
       
       <button class="primary-btn"
               onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-        Showcase
+        Showcase&nbsp;<img src="/assets/icons/home/Down.svg" alt="Down arrow" width="12" height="12">
       </button>
 
       <button class="primary-btn"
               onclick="window.open('/uiwork.html', '__blank')">
-        UI Design
+        UI Design&nbsp;<img src="/assets/icons/home/page.svg" alt="Link icon" width="12" height="12">
       </button>
 
       <button class="primary-btn"
               onclick="window.open('/designwork.html', '__blank')">
-        Visual Design
+        Visual Design&nbsp;<img src="/assets/icons/home/page.svg" alt="Link icon" width="12" height="12">
       </button>
 
       <button class="primary-btn" id="surprise-btn">
@@ -322,8 +322,8 @@
         </button>
     </div>
 
-    <div class="image-block-showc" style="border: 1px solid var(--black-200);">
-      <img src="/assets/images/uiwork/UI-2-thumb.webp" alt="Art Mockup" class="img-showc" />
+    <div class="image-block-showc">
+      <img src="/assets/images/uiwork/VisaMockups.webp" alt="Art Mockup" class="img-showc" />
     </div>
   </div>
 
@@ -541,6 +541,10 @@ const link_cards = [
   { title: "Gen-AI", link: "/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html" },
   { title: "Clearloop", link: "/pages/ui-cases/clearloop-pay-mobile-app-ui-design.html" },
   { title: "Caterpillar", link: "/pages/casestudies/design-guidelines-for-construction-site-management.html" },
+  { title: "Bordier", link: "/pages/ui-cases/bordier-cie-website-homepage-redesign.html" },
+  { title: "VISA", link: "/pages/ui-cases/visa-merchant-signage-website-redesign.html" },
+  { title: "Selenium", link: "/pages/ui-cases/selenium-website-redesign.html" },
+  { title: "CC", link: "/pages/ui-cases/cc-website.html" },
   { title: "Pitch Deck", link: "/pages/casestudies/interactive-web-experience-for-capital-raising.html" }
 ];
 
@@ -605,7 +609,11 @@ closeBtn.addEventListener('click', () => {
 const sections = {
   web: [
     { text: "ECE Homepage Redesign: Rebuilding Information Flow for Recruitment", href: "/pages/casestudies/ece-homepage-redesign.html", icon: "/assets/icons/home/page.svg" },
-    { text: "Interactive Web Experience for Capital Raising", href: "/pages/casestudies/interactive-web-experience-for-capital-raising.html", icon: "/assets/icons/home/page.svg" }
+    { text: "Interactive Web Experience for Capital Raising", href: "/pages/casestudies/interactive-web-experience-for-capital-raising.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Visa: Merchant Signage Website Redesign", href: "/pages/ui-cases/visa-merchant-signage-website-redesign.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Selenium.Dev: Website Homepage Redesign", href: "/pages/ui-cases/selenium-website-redesign.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Cinema Closet: Website Design", href: "/pages/ui-cases/cc-website.html", icon: "/assets/icons/home/page.svg" },
+    { text: "Bordier: Banking Website Homepage Redesign", href: "/pages/ui-cases/bordier-cie-website-homepage-redesign.html", icon: "/assets/icons/home/page.svg" }
   ],
   mobile: [
     { text: "Discoverability App: Structuring Information Flow for Cultural Access", href: "/pages/casestudies/experience-toronto-the-discoverability-app.html", icon: "/assets/icons/home/page.svg" },
@@ -619,6 +627,8 @@ const sections = {
   ],
   design: [
     { text: "Website Production Design: University of Toronto, ECE Department", href: "/pages/articles/web-production.html", icon: "/assets/icons/home/page.svg" },
+    { text: "HDFC: Netbanking App Redesign - UI", href: "/pages/ui-cases/hdfc.html", icon: "/assets/icons/home/page.svg" },
+    { text: "HDFC: Netbanking App Redesign - Article", href: "https://www.linkedin.com/pulse/redesigning-beneficiary-management-flow-indian-web-apps-jambunathan-x1koe", icon: "/assets/icons/home/link.svg" },
     { text: "View my Newsletter", href: "https://www.linkedin.com/newsletters/7393569508403294208/", icon: "/assets/icons/home/link.svg" }
   ]
 };
