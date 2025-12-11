@@ -1513,6 +1513,12 @@ max-width: 75vw;
     padding-right: 50px; 
 }
 
+.body-copy-impact {
+  margin-bottom: 30px;
+  padding-right: 50px;
+  font-size: 16px; color: var(--brand-500); font-weight: bold;
+}
+
 .media-diagram-placeholder {
     width: 100%;
     min-height: 400px; 
