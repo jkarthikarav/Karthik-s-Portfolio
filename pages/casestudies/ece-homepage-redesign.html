@@ -11,54 +11,40 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
 </noscript>  <link rel="stylesheet" href="../../css/style.css">
   <script src="../../js/script.js"></script>
-
 </head>
 
 <body>
-<div id="header-placeholder"></div>
+<!--<div id="header-placeholder"></div>-->
+
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
+
 
 <section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
   
-  <div class="wp-post">
+  <img id="first_impressions" src="../../assets/images/hero-banners/ece-banner-2.webp" alt="ECE Homepage Redesign Case Study Banner" style="width: 100%; height: 100%;" />
 
-    <h1 class="post-title">
+  <div class="casestudy-body-container">
+    <h1 class="casestudy-body-headline">
       ECE Homepage Redesign: Rebuilding Information Flow for Recruitment
     </h1>
-
-
-    <div class="post-meta">
-      <div class="post-meta-text">
-        <p>Shipped Jan 2025</p>
-        <p>Role: UI/UX and Web Developer</p>
-        <p>Employer: ECE Department, University of Toronto</p>
-        <p>Tools: Figma, WordPress</p>
-      </div>
-    </div>
-
-
     <blockquote class="wp-block-quote">
-      <p>
+      <p class="casestudy-body-text">
         <strong>Summary:</strong> 
         Case study detailing the ECE homepage redesign, focused on rebuilding the information hierarchy to engage students.
       </p>
     </blockquote>
-
-    <div class="phot-item">
-
-      <div style="overflow: hidden;">
-        <img src="../../assets/images/hero-banners/ece.webp" alt="ECE Homepage Redesign Case Study Banner"
-        style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-      </div>
-
-    </div>
-
   </div>
 
   <div class="casestudy-section">
         <div class="casestudy-main-column">
-          <h1 class="casestudy-main-text">
+          <h2 class="casestudy-main-text">
             The ECE department wanted a homepage that could engage with prospective students while accurately reflecting its identity.
-          </h1>
+          </h2>
         </div>
 
         <div class="casestudy-side-column">
@@ -179,9 +165,6 @@
     <h2 class="casestudy-body-headline">
       Designing the UI & WordPress Implementation
     </h2>
-    <p class="casestudy-body-text">
-      The key sections are:
-    </p>
   </div>
 
   <div class="casestudy-section">
@@ -369,10 +352,11 @@
 
   </div>
 
+  
+
 </section>
 
 <section class="learn">
-
 
   <!-- Main content container -->
   <div class="mcc">
@@ -387,6 +371,7 @@
     </div>
 
   </div>
+
 </section>
 
 <div id="footer-placeholder"></div>
@@ -403,6 +388,43 @@
 <script>
 fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
 </script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
+</script>
+
 </body>
 
 </html>
