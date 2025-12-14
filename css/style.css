@@ -1557,6 +1557,15 @@ max-width: 75vw;
   padding: 6rem 2rem 2rem;
 }
 
+.casestudy-body-container-img {
+  max-width: 1600px;
+  margin: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex; flex-direction: column; justify-content: center;
+  justify-items: center; align-items: center;
+}
+
 .casestudy-body-headline {
   margin-top: 1rem;
   margin-bottom: 2rem; 
