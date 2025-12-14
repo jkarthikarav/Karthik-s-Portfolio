@@ -1295,6 +1295,38 @@ max-width: 75vw;
   .logo-div {
     justify-content: center;
   }
+
+  .logo-div-alt {
+    justify-content: flex-start;
+  }
+
+  .logo-div-alt .logo-img {
+    height: 60px;
+    margin: 0;
+    display: block;
+  }
+
+  .logo-div-alt-3 {
+    justify-content: flex-start;
+  }
+
+  .logo-div-alt-3 .logo-img {
+    height: 120px;
+    margin: 0;
+    display: block;
+  }
+
+
+  .logo-div-alt-2 {
+    justify-content: flex-start;
+  }
+
+  .logo-div-alt-2 .logo-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
   
   .hamburger-btn {
     background: none;
