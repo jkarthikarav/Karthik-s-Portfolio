@@ -15,40 +15,30 @@
 </head>
 
 <body>
+
 <div id="header-placeholder"></div>
 
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
+
 <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
-  <div class="wp-post">
+  <img id="first_impressions" src="/assets/images/hero-banners/GENAI-banner-2.webp" alt="TMC IA Redesign Case Study Banner" style="width: 100%; height: 100%;" />
 
-    <h1 class="post-title">
-      Operationalizing Generative AI: Service Blueprinting for Creative Pipelines
+  <div class="casestudy-body-container">
+    <h1 class="casestudy-body-headline">
+      Operationalizing Generative AI for FIIP Studios: Service Blueprinting for Creative Pipelines
     </h1>
-
-<div class="post-meta">
-
-  <div class="post-meta-text">
-    <p>Implemented July 2023</p>
-    <p>Role: Service Designer & Workflow Architect</p>
-    <p>Client: Fix It In Post Studios</p>
-    <p>Methods: Service Blueprinting, Rapid Prototyping, Pilot Implementation</p>
-  </div>
-</div>
-
     <blockquote class="wp-block-quote">
-        <p>
-          <strong>Summary:</strong> I developed and validated a "Human-in-the-Loop" AI workflow for a production studio. By integrating Generative AI, we solved the "blank canvas" problem for directors.
-        </p>
+      <p class="casestudy-body-text">
+        <strong>Summary:</strong> 
+        I developed and validated a Human-in-the-Loop workflow for the studio. 
+        By integrating Generative AI, we solved a problem for directors.
+      </p>
     </blockquote>
-
-    <div class="phot-item">
-
-        <div style="overflow: hidden;">
-          <img src="../../assets/images/hero-banners/GENAI-banner.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-
-    </div>
-
-    
   </div>
 
   <div class="casestudy-section">
@@ -93,9 +83,14 @@
     </p>
     <p class="casestudy-body-text">
       Ergo: A process where feedback was slow and costly.
-    </p>
-    <img src="../../assets/images/previz/swimlane-b.png" class="user-journey-image-mrs" style="max-width:100%;" onclick="openModal('../../assets/images/previz/swimlane-b.png')">
-    <p class="caption-text" style="font-size: small;">Fig 1. The "As-Is" workflow where the Director retained Creative control, and the headaches.</p>
+    </p>    
+  </div>
+
+  <div class="casestudy-body-container-img">
+
+    <img src="/assets/images/previz/swimlane-b.png" style="width: 100%;"/>
+    <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">Fig 1. The "As-Is" workflow where the Director retained Creative control, and the headaches.</p>
+
   </div>
 
   <div class="casestudy-body-container">
@@ -116,17 +111,18 @@
           <h1 class="casestudy-main-text">
             Process Engineering
           </h1>
-
-          <p>
-            I mapped the ecosystem to identify where AI could reduce friction without affecting time and quality. This involved defining roles, conventions, and handoff procedures.
-          </p>
-
         </div>
 
         <div class="casestudy-side-column">
           <div class="casestudy-feature-card">
             <p>
-              The "To-Be" Logical Flow was then mapped out. This flow clarified the new operational standard.
+              I mapped the ecosystem to identify where AI could reduce friction without affecting time and quality. 
+              This involved defining roles, conventions, and handoff procedures.
+            </p>
+          </div>
+          <div class="casestudy-feature-card">
+            <p>
+              The "To-Be" Logical Flow was then mapped out.
             </p>
           </div>
           <div class="casestudy-feature-card">
@@ -142,10 +138,14 @@
               </dt>
             </dl>
           </div>
-          <div class="casestudy-feature-card">
-            <img src="../../assets/images/previz/swimlane.png" class="user-journey-image-mrs" style="width:100%;" onclick="openModal('../../assets/images/previz/swimlane.png')">
-          </div>
         </div>
+  </div>
+
+  <div class="casestudy-body-container-img">
+
+    <img src="/assets/images/previz/swimlane.png" style="width: 100%;"/>
+    <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">Fig 1. The "As-Is" workflow where the Director retained Creative control, and the headaches.</p>
+
   </div>
 
   <div class="casestudy-body-container">
@@ -190,12 +190,13 @@
         <div class="casestudy-side-column">
           <div class="casestudy-feature-card">
             <p>
-              The resulting document below is the operational manual for the studio. It has been rigorously validated over the pilot program, and barring project-specific requirements, has been used As-Is.
+              The resulting document below is the operational manual for the studio. 
             </p>
           </div>
           <div class="casestudy-feature-card">
-            <img src="../../assets/images/previz/Service.webp" class="user-journey-image-mrs" style="width:100%;" onclick="openModal('../../assets/images/previz/Service.png')">
-          </div>
+            <p>
+              It has been rigorously validated over the pilot program, and barring project-specific requirements, has been used As-Is.
+            </p>          </div>
           <div class="casestudy-feature-card">
 
             <dl class="dl-showc">
@@ -212,6 +213,12 @@
           </div>
           
         </div>
+  </div>
+
+  <div class="casestudy-body-container-img">
+
+    <img src="/assets/images/previz/Service.webp" style="width: 100%;"/>
+
   </div>
   
 </section>
@@ -260,6 +267,42 @@
 
 <script>
 fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
 </script>
 </body>
 </html>

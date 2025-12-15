@@ -1625,6 +1625,15 @@ max-width: 75vw;
   padding: 20px;
 }
 
+
+.intro .casestudy-section {
+  display: flex;
+  gap: 3rem; 
+  max-width: 1600px; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
 .casestudy-main-column {
   flex: 1; 
 }
@@ -1679,7 +1688,7 @@ hr {
 
 .container-stats {
 display: flex; justify-content: center; gap: 3rem; padding: 2rem;
-margin-bottom: 2rem; max-width: 1200px;
+margin-bottom: 2rem; max-width: 1600px;
 }
 
 

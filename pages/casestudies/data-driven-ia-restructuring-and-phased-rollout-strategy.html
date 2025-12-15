@@ -16,46 +16,30 @@
 
 <div id="header-placeholder"></div>
 
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
 
 <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
-  <div class="wp-post">
-    
-    <h1 class="post-title">
-      Isolating Variables: A Phased Rollout Strategy for IA Redesign
+  <img id="first_impressions" src="/assets/images/hero-banners/tmc-banner-2.webp" alt="TMC IA Redesign Case Study Banner" style="width: 100%; height: 100%;" />
+
+  <div class="casestudy-body-container">
+    <h1 class="casestudy-body-headline">
+      Textile Museum of Canada: Isolating Variables for a Phased IA Redesign Rollout Strategy 
     </h1>
-
-    <div class="post-meta">
-
-  <div class="post-meta-text">
-    <p>Delivered Nov 2023</p>
-    <p>Role: UX Strategist & Researcher (team of 4 UXRs)</p>
-    <p>Client: Textile Museum of Canada</p>
-    <p>Tools: OptimalSort, Treejack, Miro</p>
-  </div>
-</div>
-
     <blockquote class="wp-block-quote">
-        <p>
-          <strong>Summary:</strong> The museum needed to improve their site's content discoverability. 
-          While the conventional solution was a UI overhaul, I proposed a phased implementation strategy to isolate 
-          improvements, ensuring the right attribution.
-        </p>
+      <p class="casestudy-body-text">
+        <strong>Summary:</strong> 
+        The museum needed to improve their site's content discoverability. While the conventional solution was a UI overhaul, 
+        I proposed a phased implementation strategy to isolate improvements, ensuring the right attribution.
+      </p>
     </blockquote>
-      
-    <div class="phot-item">
-
-        <div style="overflow: hidden;">
-          <img src="../../assets/images/hero-banners/tmc-banner.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-
-    </div>
-
-    
   </div>
 
-    <div class="post">
-
-      <div class="casestudy-section">
+    <div class="casestudy-section">
         <div class="casestudy-main-column">
           <h1 class="casestudy-main-text">
             The Textile Museum of Canada faced a disconnect between their rich content library and user engagement.
@@ -81,7 +65,7 @@
             </p>
           </div>
         </div>
-  </div>
+    </div>
 
 <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
@@ -95,16 +79,23 @@
       <dt class="dt-showc">↦ Abstract labels like "TXTilecity" and "Cloth Clay" had high failure rates; their jargon was blocking discovery.</dt>
       <dt class="dt-showc">↦ Users expected donation pathways to be distinct from browsing, suggesting a need for a two-tiered navigation menu.</dt>
     </dl>
+</div>
 
-    <h3 class="casestudy-body-headline">Audit & Data Gathering</h3>
+<div class="casestudy-body-container">
 
-    <div class="facts-grid">
+  <h3 class="casestudy-body-headline">Audit & Data Gathering</h3>
 
-      <img src="../../assets/images/exptor/Extra/7.webp"/>
-      <img src="../../assets/images/exptor/Extra/8.webp"/>
-      <img src="../../assets/images/exptor/Extra/9.webp"/>
+</div>
 
-    </div>
+<div class="casestudy-body-container-img">
+
+  <div class="facts-grid">
+
+    <img src="../../assets/images/exptor/Extra/7.webp"/>
+    <img src="../../assets/images/exptor/Extra/8.webp"/>
+    <img src="../../assets/images/exptor/Extra/9.webp"/>
+
+  </div>
 
 </div>
 
@@ -112,17 +103,22 @@
 
   <h2 class="casestudy-body-headline">Our Diagnosis</h2>
 
-    <p class="casestudy-body-text">
-      To prove that the issue was structural, we conducted Tree Testing on the existing site's IA. 
-    </p>
-    <p class="casestudy-body-text">
-      We stripped away all visual design, testing labels and hierarchy only. This ensured that the failures recorded were purely semantic.
-    </p>
+  <p class="casestudy-body-text">
+    To prove that the issue was structural, we conducted Tree Testing on the existing site's IA. 
+  </p>
 
   <p class="casestudy-body-text">
-      Our data confirmed the hypothesis: The IA itself was broken. Even without the restrictive hamburger menu, users could not find key information.
+    We stripped away all visual design, testing labels and hierarchy only. This ensured that the failures recorded were purely semantic.
+  </p>
+
+  <p class="casestudy-body-text">
+    Our data confirmed the hypothesis: The IA itself was broken. Even without the restrictive hamburger menu, users could not find key information.
   </p>
     
+</div>
+
+<div class="casestudy-body-container-img">
+
   <div class="facts-grid">
 
     <img src="../../assets/images/exptor/Extra/12.webp"/>
@@ -134,7 +130,6 @@
 </div>
 
 <div class="casestudy-body-container">
-
     <h2 class="casestudy-body-headline">
       The Recommendation
     </h2>
@@ -142,8 +137,10 @@
       Based on the data, we developed a new Information Architecture. However, simply handing it was not enough for us. 
       My teammates and I had a disussion where we felt like we needed to ensure this was practical and not theoretical.
     </p>
+</div>
 
-    <h3 class="casestudy-body-headline">The Risk of a Overhaul</h3>
+<div class="casestudy-body-container">
+  <h3 class="casestudy-body-headline">The Risk of a Overhaul</h3>
 
   <p class="casestudy-body-text">
     The conventional wisdom that most of our Cohort mates also suggested (other teams working on the same issue) was to launch the New IA inside a new "Mega Menu" UI 
@@ -155,6 +152,8 @@
   </p>
 
 </div>
+
+
 
 <div class="casestudy-body-container">
 
@@ -328,6 +327,42 @@
   <script>
 fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
   </script>
+
+  <script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
+</script>
 
 </body>
 

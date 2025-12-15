@@ -16,37 +16,27 @@
 <body>
 <div id="header-placeholder"></div>
 
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
+
 <section style="padding: 2rem; display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
-  <div class="wp-post">
-    
-    <h1 class="post-title">
-      Interactive Web Experience for Capital Raising
+  <img id="first_impressions" src="/assets/images/hero-banners/pitchdeck-banner-2.webp" alt="Pitch Deck Website Case Study Banner" style="width: 100%; height: 100%;" />
+
+  <div class="casestudy-body-container">
+    <h1 class="casestudy-body-headline">
+      FIIP Studios Film Director Client: Interactive Web Experience for Capital Raising
     </h1>
-
-<div class="post-meta">
-  <div class="post-meta-text">
-    <p>Shipped Aug 2021</p>
-    <p>Role: Product Designer & Developer</p>
-    <p>Work for: Fix It In Post Studios</p>
-    <p>Tech Stack: HTML/CSS/JS, Figma, Adobe Suite</p>
-  </div>
-</div>
-
     <blockquote class="wp-block-quote">
-        <p>
-          <strong>Summary:</strong> I translated a static pitch deck into a responsive web application. This project solved the "engagement drop-off" typical of PDF/PPT formats through narrative-led interaction design.
-        </p>
+      <p class="casestudy-body-text">
+        <strong>Summary:</strong> 
+        I translated a static pitch deck into a responsive web application.
+        This project solved the engagement drop-off, typical of PDF/PPT formats through narrative-led interaction design.
+      </p>
     </blockquote>
-
-    <div class="phot-item">
-
-        <div style="overflow: hidden;">
-          <img src="../../assets/images/hero-banners/pitchdeck-banner.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-        </div>
-
-      </div>
-
-    
   </div>
 
   <div class="casestudy-section">
@@ -85,9 +75,13 @@
       I proposed changing the medium: moving from a static deck to a linear web experience. 
       This allowed us to control the pacing of information and ensure the user experienced the pitch exactly as intended.
     </p>
-    <h3 class="casestudy-body-headline">
-      The Thought Process behind moving from a PPT to a Website
-    </h3>
+    <p class="casestudy-body-text">
+      The Thought Process behind moving from a PPT to a Website:
+    </p>
+  </div>
+
+  <div class="casestudy-body-container-img">
+
     <div class="facts-grid-flat">
 
       <img src="../../assets/images/uiwork/Extras/8.webp" alt="Constraint 1" />
@@ -95,6 +89,7 @@
       <img src="../../assets/images/uiwork/Extras/10.webp" alt="Constraint 3" />
       
     </div>
+    
   </div>
 
   <div class="casestudy-body-container">
@@ -112,6 +107,9 @@
       To align with the product's "Cold War / Spy" genre, I established a design system and created visuals based on redacted documents and retro typography. 
       This ensured that the UI reinforced the narrative.
     </p>
+  </div>
+
+  <div class="casestudy-body-container-img">
     <div class="contentgrid">
       <div class="phot-item" style="padding: 1rem; display: flex; flex-direction: column; align-items: center;">
         <video src="../../assets/videos/Pitchdeck_History_4.mp4" style="width: 100%; height: 100%;" muted loop autoplay></video>
@@ -120,13 +118,21 @@
         <img src="../../assets/images/spypitch/BG1.jpg" style="width: 100%; cursor: pointer;" onclick="openModal('../../assets/images/spypitch/BG1.jpg')" />
       </div>
     </div>
+    
+  </div>
+
+  <div class="casestudy-body-container">
     <h3 class="casestudy-body-headline" style="margin-top: 2rem;">
       User Flow & Information Architecture
     </h3>
     <p class="casestudy-body-text">
       To maintain exclusivity (a key psychological driver for investors), the site begins with a secure login, leading into an "invisible ink" environment.
     </p>
-    <div class="facts-grid-flat">
+  </div>
+
+  <div class="casestudy-body-container-img">
+
+    <div class="facts-grid-doublet">
       <img src="../../assets/images/uiwork/Extras/4.webp" alt="Flow Step 1"/>
       <img src="../../assets/images/uiwork/Extras/5.webp" alt="Flow Step 2"/>
     </div>
@@ -135,6 +141,8 @@
         <img src="../../assets/images/spypitch/user journey flow.png" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
       </div>
     </div>
+
+
   </div>
 
   <div class="casestudy-body-container">
@@ -145,20 +153,29 @@
       The site was built using custom vanilla JavaScript to ensure lightweight performance across devices. 
       Cross-browser testing was critical to ensure the atmospheric audio and transition effects functioned consistently on different viewports.
     </p>
+  </div>
+
+  <div class="casestudy-body-container">
     <h3 class="casestudy-body-headline" style="margin-top: 2rem;">
       Final Deliverables
     </h3>
-    <div class="facts-grid">
-      <img src="../../assets/images/uiwork/Extras/11.webp" alt="Deliverable 1"/>
-      <img src="../../assets/images/uiwork/Extras/12.webp" alt="Deliverable 2"/>
-      <img src="../../assets/images/uiwork/Extras/13.webp" alt="Deliverable 3"/>
-    </div>
     <p class="casestudy-body-text">
       <em>Note: Due to strict NDA compliance regarding the intellectual property, the live link is redacted. A sanitized low-fidelity prototype is available below.</em> 
     </p>
     <button class="text-btn" onclick="window.open('https://www.figma.com/proto/tg5cvrcFSUp7ii3AfvfEpp/Pitch-Deck-Website-Low-Fidelity?node-id=1-2&t=7YK40lxWMMB6exxP-9&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2', '_blank');">
       <span class="btn-text" style="text-decoration: underline;">Launch Figma Prototype (Low-Fi) </span> ⤴︎
     </button>
+  </div>
+
+  <div class="casestudy-body-container-img">
+    <div class="facts-grid">
+      <img src="../../assets/images/uiwork/Extras/11.webp" alt="Deliverable 1"/>
+      <img src="../../assets/images/uiwork/Extras/12.webp" alt="Deliverable 2"/>
+      <img src="../../assets/images/uiwork/Extras/13.webp" alt="Deliverable 3"/>
+    </div>
+  </div>
+
+  <div class="casestudy-body-container">
     <h3 class="casestudy-body-headline" style="margin-top: 2rem;">
       Front-End Implementation
     </h3>
@@ -167,6 +184,11 @@
       I utilized JavaScript to handle the transition states, ensuring that audio playback was triggered after the core user interaction (unveiling the "invisible ink" information), 
       complying with most browsers' autoplay policies.
     </p>
+
+    </div>
+
+
+  <div class="casestudy-body-container-img">
     <div class="contentgrid">
       <div style="display: flex; justify-content: center; padding: 2rem; flex-direction: column; align-items: center;">
         <p style="margin: 1rem;"> 
@@ -182,6 +204,8 @@
         <video src="../../assets/videos/Landing_2.mp4" style="width: 100%; height: 100%;" muted loop autoplay></video>
       </div>
     </div>
+  </div>
+  <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
       Business Impact
     </h2>
@@ -198,7 +222,6 @@
 </section>
 
 <section class="learn">
-
 
   <div class="mcc">
 
@@ -248,6 +271,42 @@
 
 <script>
 fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
 </script>
 </body>
 </html>
