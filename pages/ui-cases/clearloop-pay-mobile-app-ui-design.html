@@ -17,25 +17,27 @@
 <body>
 <div id="header-placeholder"></div>
 
-<section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
-    
-    <div class="wp-post">
+<section class="header-card-ui">
+  <div class="banner-ui">
+    <img src="/assets/images/hero-banners/clearloop-banner.webp" alt="Banner image" class="banner-img-ui" />
+  </div>
 
-        <h1 class="post-title">
-            Clearloop Pay: Mobile App UI Design
-        </h1>
+  <div class="content-container-ui">
+    <p class="label-ui">UI DESIGN</p> <p class="label-ui">FINTECH</p>
+    <h1>Clearloop Pay: Mobile App UI Design</h1>
 
-        <div class="post-meta">
-        <div class="post-meta-text">
-            <p>November 8, 2025</p>
-            <p>HR and Employee Management</p>
-        </div>
-        </div>
-
-        <img src="/assets/images/hero-banners/clearloop-banner.webp" style="width: 100%;"/>
-        
+    <div class="author-profile-ui">
+      <img src="/assets/images/about/circle-me.jpg" alt="Author headshot" class="avatar-ui" />
+      <div class="author-info-ui">
+        <p class="author-name-ui">Karthik Jambunathan</p>
+        <p class="published-date-ui">Published Nov 8, 2025</p>
+      </div>
     </div>
+  </div>
+</section>
 
+<section class="page-container">
+    
     <div class="casestudy-section">
         <div class="casestudy-main-column">
           <h1 class="casestudy-main-text">
@@ -181,7 +183,7 @@
     <img src="/assets/images/Clearloop Pay/2.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
     <img src="/assets/images/Clearloop Pay/3.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
 
-    <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 999; align-items: center; justify-content: center;">
+    <div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 999; align-items: center; justify-content: center;">
         <img id="modalImage" style="max-width: 90%; max-height: 90%;">
     </div>
 

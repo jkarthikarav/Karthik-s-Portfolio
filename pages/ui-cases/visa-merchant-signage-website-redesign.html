@@ -17,24 +17,26 @@
 <body>
 <div id="header-placeholder"></div>
 
-<section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
-    
-    <div class="wp-post">
+<section class="header-card-ui">
+  <div class="banner-ui">
+    <img src="/assets/images/hero-banners/VisaMockups-3.webp" alt="Banner image" class="banner-img-ui" />
+  </div>
 
-        <h1 class="post-title">
-           Visa: Merchant Signage Website Redesign
-        </h1>
+  <div class="content-container-ui">
+    <p class="label-ui">UI DESIGN</p> <p class="label-ui">E-COMMERCE</p>
+    <h1>Visa: Merchant Signage Website Redesign</h1>
 
-        <div class="post-meta">
-        <div class="post-meta-text">
-            <p>Designed 2025</p>
-            <p>E-Commerce</p>
-        </div>
-        </div>
-
-        <img src="/assets/images/uiwork/VisaMockups-1.webp" style="width: 100%;"/>
-        
+    <div class="author-profile-ui">
+      <img src="/assets/images/about/circle-me.jpg" alt="Author headshot" class="avatar-ui" />
+      <div class="author-info-ui">
+        <p class="author-name-ui">Karthik Jambunathan</p>
+        <p class="published-date-ui">Published Dec 12, 2025</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="page-container">
 
 <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
@@ -66,28 +68,29 @@
 
     </div>
 
+    </div>
+
     <div class="casestudy-section">
         <div class="casestudy-main-column">
-          <h1 class="casestudy-main-text">
-            What does the Website's Homepage convey to its Visitors?
-          </h1>
+          <h3 class="casestudy-main-text">
+            What did I observe?
+          </h3>
         </div>
 
         <div class="casestudy-side-column">
           <div class="casestudy-feature-card">
             <p>
-                Content-wise it isn't at fault. But everything else could be so much better.
+                Content-wise, it isn't at fault.
             </p>
           </div>
           <div class="casestudy-feature-card">
             <p>
-                Accessibility. Gold Buttons with White Labels? While the colors are taken from Visa's guidelines, Visa does have a broad Figma-based Component Library that hasn't been used.
+                Accessibility. Yellow-Gold Buttons with White Labels? While the colors are from Visa's guidelines, Visa uses black on Yellow-Gold, not white.
             </p>
           </div>
           <div class="casestudy-feature-card">
             <p>
-                Layouts and the use of Redundant site page templates. 
-                I know its just 10-20 items that need to be sold, but its too many clicks to even view a product, nevertheless buy it.
+                Cannot Quick Add item to Cart. The User needs to go from Home > Merchant Signage (or View all and then scroll to item) > Click on item to open product page > Add to Cart.
             </p>
           </div>
         </div>
@@ -114,18 +117,47 @@
 
     </div>
 
-    <div class="facts-grid">
+    <div class="facts-grid" style="flex-wrap: wrap;">
 
       <img src="/assets/images/uiwork/Visa-Home.webp"/>
       <img src="/assets/images/uiwork/Visa-Home-fr.webp"/>
       <img src="/assets/images/uiwork/Visa-Signin.webp"/>
       <img src="/assets/images/uiwork/Visa-MerchantSignage-1.webp"/>
-      <img src="/assets/images/uiwork/Visa-ViewAll-1.png"/>
+      <img src="/assets/images/uiwork/Visa-ViewAll-1.webp"/>
       <img src="/assets/images/uiwork/Visa-ViewAll-2.webp"/>
       <img src="/assets/images/uiwork/Visa-Cart.webp"/>
 
     </div>
 
+</div>
+
+<div class="casestudy-body-container">
+    <h2 class="casestudy-body-headline">
+      Core Screens
+    </h2>
+
+    <img src="/assets/images/uiwork/Visa-Home.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+    <img src="/assets/images/uiwork/Visa-MerchantSignage-1.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+    <img src="/assets/images/uiwork/Visa-Cart.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" /> 
+
+</div>
+
+<div class="casestudy-body-container">
+    <h2 class="casestudy-body-headline">
+      Other Screens
+    </h2>
+
+    <p class="casestudy-body-text">
+        In the existing page, the user has to scroll vertically and there are no Filters; I've used Pagination and Filters to make this process easier.
+    </p>
+
+    <img src="/assets/images/uiwork/Visa-ViewAll-1.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+    <img src="/assets/images/uiwork/Visa-ViewAll-2.webp" style="cursor: pointer; width: 100%; margin: 1rem auto 1.5rem auto;" onclick="openModal(this.src)" />
+
+</div>
+
+<div id="imageModal" onclick="closeModal()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 999; align-items: center; justify-content: center;">
+  <img id="modalImage" style="max-width: 90%; max-height: 90%;">
 </div>
 
 </section>

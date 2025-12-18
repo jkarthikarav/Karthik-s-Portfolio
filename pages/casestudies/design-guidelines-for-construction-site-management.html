@@ -17,28 +17,34 @@
 <body>
 <div id="header-placeholder"></div>
 
-<section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
-    
-    <div class="wp-post">
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
 
-    <h1 class="post-title">
-      Design Guidelines for Construction Site Management products (Caterpillar Co-op)
-    </h1>
 
+<section class="header-card-ui">
+  <div class="banner-ui">
+    <img src="/assets/images/hero-banners/cat.webp" alt="Banner image" class="banner-img-ui" />
+  </div>
 
-    <div class="post-meta">
-      <div class="post-meta-text">
-        <p>Conducted Dec 2019 - Jan 2021</p>
-        <p>Role: User Experience Researcher</p>
-        <p>Employer: Co-op Project at Caterpillar Inc.</p>
-        <p>Tools: Audio Recorder, Microsoft Tools</p>
+  <div class="content-container-ui">
+    <p class="label-ui">UXR</p> <p class="label-ui">DESIGN GUIDELINES</p> <p class="label-ui">PROJECT MANAGEMENT</p> <p class="label-ui">CONSTRUCTION</p>
+    <h1>Design Guidelines for Construction Site Management products</h1>
+
+    <div class="author-profile-ui">
+      <div class="author-info-ui">
+        <p class="author-name-ui">Co-Op project at Caterpillar</p>
+        <p class="published-date-ui">Study Conducted Dec 2019</p>
       </div>
     </div>
 
-        <img src="/assets/images/hero-banners/cat.webp" style="width: 100%;"/>
-        
-    </div>
+  </div>
+</section>
 
+<section class="page-container">
     <div class="casestudy-section">
         <div class="casestudy-main-column">
           <h1 class="casestudy-main-text">
@@ -288,6 +294,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
 fetch('/addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
 </script>
 
 </body>

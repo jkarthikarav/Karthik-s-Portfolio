@@ -21,32 +21,41 @@
 <body>
 <div id="header-placeholder"></div>
 
-<section style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; justify-items: center;">
-  
-  <div class="wp-post">
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
 
-      <!-- Title -->
-      <h1 class="post-title">
-        Website Production Design: University of Toronto, ECE Department
-      </h1>
 
-      <div class="post-meta">
-      <div class="post-meta-text">
-        <p>Last Updated: September 9, 2025</p>
-        <p>Work Highlights (June 2024 - March 2025)</p>
-        <p>Web Design, UX, WordPress, Figma, Accessibility (WCAG)</p>
-      </div>
-      </div>
-
-      <blockquote class="wp-block-quote">
-        <p>
-          <strong>Summary:</strong> Led end-to-end production design and WordPress implementation for the U of T ECE website and the Intranet portal, 
-          improving usability, standardizing components, and ensuring accessibility compliance to meet key business goals.
-        </p>
-      </blockquote>
-      
+<section class="header-card-ui">
+  <div class="banner-ui">
+    <img src="/assets/images/hero-banners/ECE-WPD.webp" alt="Banner image" class="banner-img-ui" />
   </div>
 
+  <div class="content-container-ui">
+    <p class="label-ui">UI/UX</p> <p class="label-ui">PRODUCTION DESIGN</p> <p class="label-ui">FIGMA</p> <p class="label-ui">WORDPRESS</p> <p class="label-ui">EDUCATION</p>
+    <h1>Website Production Design</h1>
+
+    <div class="author-profile-ui">
+      <div class="author-info-ui">
+        <p class="author-name-ui">For: University of Toronto, ECE Department</p>
+        <p class="published-date-ui">Work Highlights (June 2024 - March 2025)</p>
+      </div>
+    </div>
+
+    <blockquote class="wp-block-quote">
+      <p class="casestudy-body-text">
+        <strong>Summary:</strong> 
+        I led end-to-end production design and WordPress implementation for the U of T ECE website and the Intranet portal, 
+        improving usability, standardizing components, and ensuring accessibility compliance to meet key business goals.
+      </p>
+    </blockquote>
+  </div>
+</section>
+
+<section class="page-container">
   <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
       Context
@@ -335,6 +344,43 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 fetch('../../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
 </script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
+</script>
+
 
 </body>
 </html>
