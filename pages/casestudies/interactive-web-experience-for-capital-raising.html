@@ -32,7 +32,6 @@
     <nav aria-label="Breadcrumb">
       <ol class="breadcrumb-list">
         <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-        <li class="breadcrumb-item nopage">Fix It In Post Studios</li>
         <li class="breadcrumb-item active" aria-current="page">Interactive Web Experience</li>
       </ol>
     </nav>
@@ -49,7 +48,7 @@
 
     <blockquote class="wp-block-quote">
       <p class="casestudy-body-text">
-        <strong>Summary:</strong> 
+        <span>Summary:</span> 
         I translated a static pitch deck into a responsive web application to help differentiate project in saturated market.
         I solved for the engagement drop-off typical of PDF/PPT formats through narrative-led interaction design.
       </p>
@@ -88,6 +87,33 @@
 
   <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
+      Jump to Section
+    </h2>
+    <p class="casestudy-body-text">
+      Use these to jump to a section you are interested in:
+    </p>
+    <div class="main-button-row">
+
+      <button class="primary-btn"
+              onclick="document.getElementById('thep').scrollIntoView({behavior: 'smooth'});">
+        The Problem
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('thes').scrollIntoView({behavior: 'smooth'});">
+        My Solution
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('thed').scrollIntoView({behavior: 'smooth'});">
+        Development & Handoff
+      </button>
+
+    </div>
+  </div>
+
+  <div class="casestudy-body-container" id="thep">
+    <h2 class="casestudy-body-headline">
       Solving the Problem
     </h2>
     <p class="casestudy-body-text">
@@ -111,7 +137,7 @@
     
   </div>
 
-  <div class="casestudy-body-container">
+  <div class="casestudy-body-container" id="thes">
     <h2 class="casestudy-body-headline">
       The Solution
     </h2>
@@ -164,7 +190,7 @@
 
   </div>
 
-  <div class="casestudy-body-container">
+  <div class="casestudy-body-container" id="thed">
     <h2 class="casestudy-body-headline">
       Development & Handoff
     </h2>

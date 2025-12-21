@@ -34,7 +34,6 @@
     <nav aria-label="Breadcrumb">
       <ol class="breadcrumb-list">
         <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-        <li class="breadcrumb-item nopage">Master of Information at the iSchool, University of Toronto</li>
         <li class="breadcrumb-item active" aria-current="page">Ticket Discoverability App</li>
       </ol>
     </nav>
@@ -50,7 +49,7 @@
 
     <blockquote class="wp-block-quote">
       <p class="casestudy-body-text">
-        <strong>Summary:</strong> 
+        <span>Summary:</span> 
         Mobile app to centralize ticket discovery and reduce affordability barriers for Toronto residents accessing GLAM institutions.
       </p>
     </blockquote>
@@ -83,18 +82,42 @@
             </p>
           </div>
           <div class="casestudy-feature-card">
-            <p>
-              
-            </p>
-            <p style="font-weight: bold; color: var(--jka-color-theme);">
+          <p style="font-weight: bold; color: var(--jka-color-theme-strong);">
             We reasoned: If awareness is the problem, the solution must centralize discovery.
           </p>
           </div>
         </div>
   </div>
 
-
   <div class="casestudy-body-container">
+    <h2 class="casestudy-body-headline">
+      Jump to Section
+    </h2>
+    <p class="casestudy-body-text">
+      Use these to jump to a section you are interested in:
+    </p>
+    <div class="main-button-row">
+
+      <button class="primary-btn"
+              onclick="document.getElementById('UXR').scrollIntoView({behavior: 'smooth'});">
+        UX Research
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('SOL').scrollIntoView({behavior: 'smooth'});">
+        Our Solution
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('HF').scrollIntoView({behavior: 'smooth'});">
+        UI Designs
+      </button>
+
+    </div>
+  </div>
+
+
+  <div class="casestudy-body-container" id="UXR">
     <h2 class="casestudy-body-headline">
       Asking the right questions
     </h2>
@@ -136,7 +159,7 @@
     </div>
   </div>
 
-  <div class="casestudy-body-container">
+  <!--<div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
       Pay Heed to Mary's Story
     </h2>
@@ -153,54 +176,57 @@
       Her experience mirrors the challenges many Torontonians face, highlighting the barriers to affordable GLAM access.
       Her story guides our Product design process.
     </p>
-  </div>
-
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/exptor/Persona.webp" style="width: 100%;" alt="Mary, the Museum Go-er" />
-
-  </div>
+  </div>-->
 
   <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
       Turning research into design priorities
     </h2>
+    
+    <img src="/assets/images/exptor/Persona.webp" style="width: 100%;" alt="Mary, the Museum Go-er" />
+
     <p class="casestudy-body-text">
       To convert insights into features, our team used an Impact vs. Feasibility matrix to prioritize ideas.
     </p>
-  </div>
-
-  <div class="casestudy-body-container-img">
 
     <img src="/assets/images/webp/Priority.webp" style="width: 100%;" alt="Mary, the Museum Go-er" />
 
   </div>
 
-  <div class="casestudy-body-container">
-    <h3 class="casestudy-body-text">
-      From Mary’s pain points, we defined key design directions:      
-    </h3>
+</section>
+
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+  <div style="width: 100%; text-align: center;"><h2>Key Design Directions</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>Ease of Access</h1>
+    <p>Users want one-stop access to all available deals.</p>
   </div>
 
-  <div class="casestudy-body-container-img">
-    <div class="facts-grid">
-      <img src="../../assets/images/exptor/Extra/19.webp"/>
-      <img src="../../assets/images/exptor/Extra/20.webp"/>
-      <img src="../../assets/images/exptor/Extra/22.webp"/>
-    </div>
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>Plan & Share</h1>
+    <p>Mary and her friends plan their visits in advance, so share function and calendar views matter.</p>
   </div>
 
-  <div class="casestudy-body-container">
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>Recommendations</h1>
+    <p>Because Personalization encourages repeat app use.</p>
+  </div>
+</div>
+
+</section>
+
+<section class="page-container">
+
+  <div class="casestudy-body-container" id="SOL">
     <h2 class="casestudy-body-headline">
       Designing the experience
     </h2>
-  </div>
-  <div class="casestudy-body-container-img">
-    <img src="/assets/images/hero-banners/exptor-banner.webp" style="width: 100%;" alt="Mary, the Museum Go-er" />
-  </div>
-  
-  <div class="casestudy-body-container">
     <h3 class="casestudy-body-text">
       User Flows    
     </h3>
@@ -262,7 +288,7 @@
 
   </div>
 
-  <div class="casestudy-body-container">
+  <div class="casestudy-body-container" id="HF">
     <h2 class="casestudy-body-headline">
       Bringing it to life (High Fidelity)
     </h2>
@@ -270,36 +296,80 @@
       My guiding principle for the App's color system was "Content is King." 
       This philosophy prioritizes the visibility, readability, and prominence of the content above all else.
     </p>
-    <dl class="dl-showc">
-      <dt class="dt-showc">1. Brand is expressed through a strong, single primary color.</dt>
-      <dt class="dt-showc">2. All interactive/content elements maintain maximum readability and accessibility.</dt>
-      <dt class="dt-showc">3. Grey and accent colors are used to establish visual hierarchy without introducing unnecessary secondary hues.</dt>
-    </dl>
   </div>
 
-  <div class="casestudy-body-container-img">
+  </section>
 
-    <img src="/assets/images/exptor/Color-Styles.webp" style="width: 100%;"/>
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
 
+<div style="width: 100%; text-align: center;"><h2>Monochromatic Color Palette and Design</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>Midnight Green</h1>
+    <p>allows vivid museum imagery to stand out, aligning with museums, culture, and serious outings over cheap coupons.</p>
   </div>
+
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>Azure accent</h1>
+    <p>clearly signals loading states without secondary hues or confusing messaging.</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>Neutrals for the rest</h1>
+    <p>ensure all interactive/content elements meet maximum readability and WCAG accessibility.</p>
+  </div>
+</div>
+
+<img src="/assets/images/exptor/Color-Styles.webp" style="width: 100%;"/>
+
+</section>
+
+<section class="page-container">
 
   <div class="casestudy-body-container">
     <h3 class="casestudy-body-text">
       Designing Components based on User Needs  
     </h3>
-  </div>
 
-  <div class="casestudy-body-container-img">
-    <img src="../../assets/images/exptor/Comp/Component-Design-0.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;"/> 
-    <img src="../../assets/images/exptor/Comp/Component-Design-1.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;"/> 
-    <img src="../../assets/images/exptor/Comp/Component-Design-2.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;"/> 
-    <img src="../../assets/images/exptor/Comp/Component-Design-3.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;"/> 
-    <img src="../../assets/images/exptor/Comp/Component-Design-4.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;"/>
-  </div>
+<div class="tab-buttons">
+  <button class="tab-btn active" data-tab="components-all">All Components</button>
+  <button class="tab-btn" data-tab="components-tabs">Tabs</button>
+  <button class="tab-btn" data-tab="components-card">Horizontal Card</button>
+  <button class="tab-btn" data-tab="components-toggle">Toggle Buttons</button>
+  <button class="tab-btn" data-tab="components-nav">Navigation Bar</button>
+</div>
+<hr>
+
+<div class="tab-content active" id="components-all">
+  <img src="../../assets/images/exptor/Comp/Component-Design-0.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;" />
+</div>
+
+<div class="tab-content" id="components-tabs">
+  <img src="../../assets/images/exptor/Comp/Component-Design-1.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;" />
+</div>
+
+<div class="tab-content" id="components-card">
+  <img src="../../assets/images/exptor/Comp/Component-Design-2.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;" />
+</div>
+
+<div class="tab-content" id="components-toggle">
+  <img src="../../assets/images/exptor/Comp/Component-Design-3.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;" />
+</div>
+
+<div class="tab-content" id="components-nav">
+  <img src="../../assets/images/exptor/Comp/Component-Design-4.webp" style="margin: 1.5rem 0 0 0; width: 100%; height: auto;" />
+</div>
+
+</div>
+
 
   <div class="casestudy-body-container">
     <p class="casestudy-body-text">
-      Users could now explore, save, and share museum deals from one unified feed, or plan their visit visually through a calendar-based planner. 
+      Users can now explore, save, and share museum deals from one unified feed, or plan their visit visually through a calendar-based planner. 
       The design balanced information density with hierarchy, keeping Mary (and users like her) in mind throughout.
     </p>
   </div>
@@ -325,9 +395,12 @@
     <div class="mmc-content">
       <h1>What I Learned</h1>
       <h5>
-        While designing a mobile product to simplifies museum ticket discovery, I had to learn how to design information systems to better judge the feasibility of our ideas. 
-        I also learnt features like an AI-powered recommendations engine can provide immense user value when the feature and the user's needs align; 
-        AI has shown to be effective at helping users search for and discover information.
+        While designing a mobile product to simplifies museum ticket discovery, I had to learn how to design information systems to better judge the feasibility of our ideas.
+      </h5>
+      <h5>
+        Working Iteratively, and with a focus on what the participants were talking about, we were able to find solutions that actual users could use instead of
+        what potential users thought they wanted. They wanted to know of discounts and share them, they could do so by subscribing to every newsletter available and a messenger app.
+        But their need was to plan trips together and explore, not follow up on one single institution.
       </h5>
 
     </div>
@@ -385,5 +458,22 @@ fetch('../../addons/header.html') .then(response => response.text()) .then(data 
     .getElementById("floatingImage")
     .addEventListener("click", scrollToTop);
 </script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
+</script>
+
 </body>
 </html>

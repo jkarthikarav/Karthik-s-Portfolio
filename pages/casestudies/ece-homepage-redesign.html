@@ -36,7 +36,7 @@
         <li class="breadcrumb-item active" aria-current="page">ECE Homepage Redesign</li>
       </ol>
     </nav>
-    <p class="label-ui">UI/UX</p> <p class="label-ui">WEB DESIGN</p> <p class="label-ui">FIGMA</p> <p class="label-ui">WORDPRESS</p> <p class="label-ui">EDUCATION</p>
+    <p class="label-ui">UI/UX</p> <p class="label-ui">WEB DESIGN</p> <p class="label-ui">FIGMA</p> <p class="label-ui">WORDPRESS</p> <p class="label-ui">EDUCATIONAL INSTITUTION</p>
     <h1>ECE Homepage Redesign</h1>
     <h2>Rebuilding Information Flow for Recruitment</h2>
 
@@ -49,7 +49,7 @@
 
     <blockquote class="wp-block-quote">
       <p class="casestudy-body-text">
-        <strong>Summary:</strong> 
+        <span>Summary:</span> 
         Case study detailing the ECE homepage redesign, focused on rebuilding the information hierarchy to engage students.
       </p>
     </blockquote>
@@ -79,7 +79,7 @@
             </p>
           </div>
           <div class="casestudy-feature-card">
-            <p style="font-size: small;">
+            <p style="font-size: var(--jka-font-size-sm);">
             <strong>
               Disclaimer:
             </strong>
@@ -92,15 +92,43 @@
 
   <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
+      Jump to Section
+    </h2>
+    <p class="casestudy-body-text">
+      Use these to jump to a section you are interested in:
+    </p>
+    <div class="main-button-row">
+
+      <button class="primary-btn"
+              onclick="document.getElementById('ecedn').scrollIntoView({behavior: 'smooth'});">
+        Designing a Narrative
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('eceds').scrollIntoView({behavior: 'smooth'});">
+        Designing the Website UI
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('eceimp').scrollIntoView({behavior: 'smooth'});">
+        Implementation on CMS
+      </button>
+
+    </div>
+  </div>
+
+  </section>
+
+<section class="page-container">
+
+  <div class="casestudy-body-container">
+    <h2 class="casestudy-body-headline">
       My Process
     </h2>
     <p class="casestudy-body-text">
-      The homepage required a redesign to modernize its structure, improve content visibility, and introduce interactive features.
+      The homepage required a redesign to modernize its structure, improve content visibility, and introduce interactive features. I started with a content audit and secondary research.
     </p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-    <div class="facts-grid-flat">
+    <div class="facts-grid-doublet">
 
       <img src="../../assets/images/exptor/Extra/15.webp"/>
       <img src="../../assets/images/exptor/Extra/16.webp"/>
@@ -110,69 +138,7 @@
     </div>
   </div>
 
-  <div class="casestudy-body-container">
-
-    <p class="casestudy-body-text">
-        Here's what the page looked like before I worked on it:
-    </p>
-
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <a href="../../assets/images/webp/ece-old-homepage.webp" target="_blank" rel="noopener noreferrer">
-      <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Old Homepage Thumbnail" style="width: 100%;"/>
-    </a>
-
-  </div>
-
-  <div class="casestudy-body-container">
-    <h2 class="casestudy-body-headline">
-      Design Thinking
-    </h2>
-  </div>
-
-  <div class="casestudy-section">
-        <div class="casestudy-main-column">
-          <h3 class="casestudy-main-text">
-            Design decisions and tradeoffs
-          </h3>
-        </div>
-
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <p>Reduce Time-to-value for first-time users over information density to accelerate user orientation</p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>Treat prospective students as the Primary user segment over researchers, faculty, and partners for better acquisition</p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>Minimize cognitive load and vertical scroll over immediate discoverability in favor of progressive disclosure</p>
-          </div>
-        </div>
-  </div>
-
-  <div class="casestudy-section">
-        <div class="casestudy-main-column">
-          <h3 class="casestudy-main-text">
-            What We Didn't Do with the Homepage
-          </h3>
-        </div>
-
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <p>We did not optimize the homepage for exhaustive discovery, i,e, treated it as a secondary task</p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>We did not preserve existing content order and section prominence, i.e, not treated as fixed requirements</p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>We did not position the page as a neutral index for all audiences, i.e, preventing dilution of our primary user's journey</p>
-          </div>
-        </div>
-  </div>
-
-  <div class="casestudy-body-container">
+  <div class="casestudy-body-container" id="ecedn">
     <h2 class="casestudy-body-headline">
       Designing the Homepage Narrative
     </h2>
@@ -180,6 +146,12 @@
       Collaborated with department admins and stakeholders from co-op, undergraduate, graduate, and events teams to 
       define the homepage structure and Content Architecture, shaping it as an "Access Hub".
     </p>
+    <p class="casestudy-body-text">
+        Here's what the page looked like before I worked on it:
+    </p>
+    <a href="../../assets/images/webp/ece-old-homepage.webp" target="_blank" rel="noopener noreferrer">
+      <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Old Homepage Thumbnail" style="width: 50%;"/>
+    </a>
   </div>
     
   <div class="casestudy-body-container">
@@ -194,198 +166,161 @@
 
   </div>
 
-  <div class="casestudy-section">
-        <div class="casestudy-main-column">
-          <h3 class="casestudy-main-text">
-            Key homepage sections:
-          </h3>
-        </div>
-
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">1. Hero Section → Highlights departmental identity and key resources</dt>
-              <dt class="dt-showc">2. Programs → Showcases undergraduate and graduate programs</dt>
-              <dt class="dt-showc">3. Events → Provides easy access to student life information</dt>
-              <dt class="dt-showc">4. Research & Industry Opportunities → Connects prospective students and partners to research opportunities</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>
-              The Events section initially only featured a message from the Department Chair, 
-              and I later updated it to include an events calendar, improving student access to upcoming events.
-            </p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>
-              Each homepage section was designed modularly, allowing updates to research/program information, 
-              images, or content without affecting the rest of the layout, ensuring long-term accessibility and usability.
-            </p>
-          </div>
-        </div>
-  </div>
-
-
-  <div class="casestudy-body-container">
-    <h2 class="casestudy-body-headline">
-      Designing the UI & CMS Implementation
-    </h2>
-  </div>
-
-  <div class="casestudy-section">
-        <div class="casestudy-main-column">
-          <h3 class="casestudy-main-text">
-            Hero Section
-          </h3>
-          <p>
-            Prospective students and partners need to quickly understand the department’s identity and access key resources.
-          </p>
-          <p style="font-size: small;">* Pages I built</p>
-        </div>
-
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">The hero section communicates departmental identity visually and highlights campaigns.</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">Key statistics reinforce credibility and showcase achievements.</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">A resources bar improves navigation to top content: News*, Faculty, Teaching Labs, and Events*.</dt>
-            </dl>
-          </div>
-        </div>
-  </div>
-
-  <div class="casestudy-body-container">
-    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/webp/Hero-Section-old-lofi.webp" alt="ECE Old Homepage Thumbnail" style="width: 100%;"/>
-
-  </div>
-
-  <div class="casestudy-body-container">
-    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/webp/Hero-Section-highfid.webp" alt="ECE Old Homepage Thumbnail" style="width: 100%;"/>
-
-  </div>
-
-
-  <div class="casestudy-section">
-        <div class="casestudy-main-column">
-          <h3 class="casestudy-main-text">
-            Programs Section
-          </h3>
-          <p>
-            Students need an engaging way to explore undergraduate and graduate programs.
-          </p>
-        </div>
-
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">Modular cards highlight each program with images and CTAs, guiding students to detailed program pages.</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">The design replaces dense text with scannable cards, making information easier to absorb and action-oriented</dt>
-            </dl>
-          </div>
-        </div>
-  </div>
-
-  <div class="casestudy-body-container">
-    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/webp/Programs-Section-old-lofi.webp" style="width: 100%;"/>
-
-  </div>
-
-  <div class="casestudy-body-container">
-    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/webp/Programs-Section-highfid.webp" style="width: 100%;"/>
-
-  </div>
-
-  <div class="casestudy-section">
-        <div class="casestudy-main-column">
-          <h3 class="casestudy-main-text">
-            Research and Industry Opportunities Section
-          </h3>
-          <p>
-            Students and industry partners need a clear way to discover Research Opportunities and Industry Opportunities*.
-          </p>
-          <p>
-            
-          </p>
-          <p style="font-size: small;">* Pages I built</p>
-        </div>
-
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">This was a critical information architecture decision: eliminating eight redundant links and consolidating content.</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">Two modular cards consolidate information, eliminating redundancy and providing clear actions.</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">The section makes it easier for visitors to access relevant research and partnership opportunities.</dt>
-            </dl>
-          </div>
-        </div>
-  </div> 
-
-  <div class="casestudy-body-container">
-    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/webp/Research-Section-old-lofi.webp" style="width: 100%;"/>
-
-  </div>
-
-  <div class="casestudy-body-container">
-    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
-  </div>
-
-  <div class="casestudy-body-container-img">
-
-    <img src="/assets/images/webp/Research-Section-highfid.webp" style="width: 100%;"/>
-
-  </div>
-
   <div class="casestudy-body-container">
     <h3 class="casestudy-body-headline">
-      Live Build
+      Key homepage sections:
     </h3>
     <p class="casestudy-body-text">
-      After building it out on WordPress, the homepage now communicates the department’s identity while providing access to programs, events, and research opportunities.
+      Each homepage section was designed modularly, allowing updates to research/program information, 
+      images, or content without affecting the rest of the layout, ensuring long-term accessibility and usability.
+    </p>
+    <dl class="dl-showc">
+      <dt class="dt-showc">1. Hero Section → Highlights departmental identity and key resources</dt>
+      <dt class="dt-showc">2. Programs → Showcases undergraduate and graduate programs</dt>
+      <dt class="dt-showc">3. Events → Provides easy access to student life information</dt>
+      <dt class="dt-showc">4. Research & Industry Opportunities → Connects prospective students and partners to research opportunities</dt>
+    </dl>
+    <p class="casestudy-body-text">
+      The Events section initially only featured a message from the Department Chair, 
+      and I later updated it to include an events calendar and linked it to the Events page I created, improving student access to upcoming events.
+    </p>
+  </div>
+
+  </section>
+
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+  <div style="width: 100%; text-align: center;"><h2>Core Design decisions and tradeoffs</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>Faster Time-to-Value</h1>
+    <p>for first-time users over information density to accelerate user orientation</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>Clear Primary User</h1>
+    <p>Positioned prospective students as the Primary user segment over researchers, faculty, and partners for better acquisition</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>Lower Cognitive Load</h1>
+    <p>and vertical scroll over immediate discoverability in favor of progressive disclosure</p>
+  </div>
+</div>
+
+</section>
+
+<section class="page-container">
+
+  <div class="casestudy-body-container" id="eceds">
+    <h2 class="casestudy-body-headline">
+      UI Design: Exploring the Page's Sections
+    </h2>
+    <p class="casestudy-body-text">
+      Click through each tab to see designs.
+    </p>
+  </div>
+
+  <div class="casestudy-tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="hero">Hero Section</button>
+    <button class="tab-btn" data-tab="programs">Programs Section</button>
+    <button class="tab-btn" data-tab="research">Research & Industry</button>
+  </div>
+  <hr>
+
+  <div class="tab-content active" id="hero">
+    <h3>Hero Section</h3>
+    <p class="desc">Prospective students and partners need to quickly understand the department’s identity and access key resources.</p>
+
+      <dl class="dl-showc">
+        <dt class="dt-showc">The hero section communicates departmental identity visually and highlights campaigns.</dt>
+        <dt class="dt-showc">Key statistics reinforce credibility and showcase achievements.</dt>
+        <dt class="dt-showc">A resources bar improves navigation to top content: News*, Faculty, Teaching Labs, and Events*.</dt>
+      </dl>  
+        
+    <p class="disc">* Pages I built</p>
+
+    <p class="captions">Pictured below: What it looked Like(L) and Wireframe(R)</p>
+    <img src="/assets/images/webp/Hero-Section-old-lofi.webp" style="width:100%;" />
+    <p class="captions">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
+    <img src="/assets/images/webp/Hero-Section-highfid.webp" style="width:100%;" />
+  </div>
+
+  <div class="tab-content" id="programs">
+    <h3>Programs Section</h3>
+    <p>Students need an engaging way to explore undergraduate and graduate programs.</p>
+
+    <dl class="dl-showc">
+      <dt class="dt-showc">Modular cards highlight each program with images and CTAs, guiding students to detailed program pages.</dt>
+      <dt class="dt-showc">The design replaces dense text with scannable cards, making information easier to absorb and action-oriented</dt>
+    </dl>
+
+    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
+    <img src="/assets/images/webp/Programs-Section-old-lofi.webp" style="width:100%;" />
+    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
+    <img src="/assets/images/webp/Programs-Section-highfid.webp" style="width:100%;" />
+  </div>
+
+  <div class="tab-content" id="research">
+    <h3>Research & Industry Section</h3>
+    <p>Students and industry partners need a clear way to discover Research Opportunities and Industry Opportunities*.</p>
+
+    <dl class="dl-showc">
+      <dt class="dt-showc">This was a critical information architecture decision: eliminating eight redundant links and consolidating content.</dt>
+      <dt class="dt-showc">Two modular cards consolidate information, eliminating redundancy and providing clear actions.</dt>
+      <dt class="dt-showc">The section makes it easier for visitors to access relevant research and partnership opportunities.</dt>
+    </dl>
+
+    <p style="font-size: small;">* Pages I built</p>
+
+    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
+    <img src="/assets/images/webp/Research-Section-old-lofi.webp" style="width:100%;" />
+    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
+    <img src="/assets/images/webp/Research-Section-highfid.webp" style="width:100%;" />
+  </div>
+</div>
+
+</section>
+
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+  <div style="width: 100%; text-align: center;"><h2>What We Didn't Do</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>Introduce, Not Discover</h1>
+    <p>Focused on Introduction, Not Intentionally treated discovery as task for the secondary pages.</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>No Legacy Content</h1>
+    <p>Did not preserve legacy content. Exception: "Hear from the Chair," was combined with Events.</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>Not a Neutral Index</h1>
+    <p>Avoided to prevent dilution of the primary user journey: Prospective student discovering the department.</p>
+  </div>
+</div>
+
+</section>
+
+<section class="page-container">
+
+  <div class="casestudy-body-container" id="eceimp">
+    <h2 class="casestudy-body-headline">
+      Implementation using the CMS
+    </h2>
+    <p class="casestudy-body-text">
+      Building it out on WordPress, I ensured the homepage now communicates the department’s identity while providing access to programs, events, and research opportunities.
       Content and structure guide students through the site, reinforcing credibility and engagement.
       The design remains functional and adaptable, ensuring long-term value for both the department and students.
     </p>
@@ -406,14 +341,14 @@
     <video src="../../assets/videos/ECE/ece-animations.mp4"   alt="ECE homepage animations" 
       style="width: calc(50% - 1rem); border-radius: 1rem; object-fit: cover;" autoplay loop muted playsinline></video>
 
-    <p class="casestudy-body-text">
-      Click the images below to view the intially approved mockups.
-    </p>
-
   </div>
 
 
   <div class="casestudy-body-container-img">
+
+    <p class="captions">
+      Click on the images below to view the intially approved mockups.
+    </p>
     <div class="responsive-flex">
 
       <div class="phot-item" style="max-width: 700px;">
@@ -466,6 +401,10 @@
       <h5>
         Unlike pages I built for the department entirely from scratch, this project involved rethinking and refining the information flow. 
         Every component had to earn its place by contributing to that flow and improving decision-making.
+      </h5>
+      <h5>
+        A Department website has a wide range of visitors and purposes. By prioritizing segments using data, we were able to position the website
+        as an Access hub for Information and as a peek into student life and opportunities.
       </h5>
 
     </div>
@@ -523,6 +462,22 @@ fetch('../../addons/header.html') .then(response => response.text()) .then(data 
   document
     .getElementById("floatingImage")
     .addEventListener("click", scrollToTop);
+</script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
 </script>
 
 </body>
