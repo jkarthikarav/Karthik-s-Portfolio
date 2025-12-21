@@ -403,7 +403,7 @@
 
 </section>
 
-<section class="cta-section container">
+<section class="cta-section">  
     <h2 class="cta-headline">Ready to Build an Experience grounded in Research, not Hype?</h2>
 
     <p class="cta-description">
@@ -423,11 +423,14 @@
             Send a Quick Message
         </button>
     </div>
-</section>
 
+  <div class="footer-content" style="padding-right: 0; padding-left: 0;">
+    <p>Karthik Jambunathan &copy; 2025</p>
+    <button class="tertiary-btn" onclick="scrollToTop()">Scroll to Top</button>
+  </div>
+</section>
 </main>
 
-<div id="footer-placeholder"></div>
 
 <script>
   // Fetch and insert footer HTML
@@ -442,3 +445,15 @@
 <script>
 fetch('/addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
 </script>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+</body>
+</html>

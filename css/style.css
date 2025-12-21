@@ -985,7 +985,8 @@ article > p {
   }
 
   .logo-div-alt-3 .logo-img {
-    height: 120px;
+    height: auto;
+    width: 70%;
     margin: 0;
     display: block;
   }
@@ -1340,7 +1341,7 @@ margin-bottom: 2rem; max-width: 1600px;
 
 .cta-section {
     margin: 0;
-    padding: 8rem 3rem;
+    padding: 8rem 3rem 2rem;
     background-color: var(--jka-surface-accent);
     align-items: center;
 }
