@@ -43,7 +43,7 @@
     <div class="author-profile-ui">
       <div class="author-info-ui">
         <p class="author-name-ui">For: University of Toronto, ECE Department</p>
-        <p class="published-date-ui">Shipped Jan, 2025</p>
+        <p class="published-date-ui">Shipped Jan, 2025 (Iterated through March 2025)</p>
       </div>
     </div>
 
@@ -53,12 +53,42 @@
         Case study detailing the ECE homepage redesign, focused on rebuilding the information hierarchy to engage students.
       </p>
     </blockquote>
+  
+    <h2 class="casestudy-body-headline">
+      Jump to Section
+    </h2>
+    <p class="casestudy-body-text">
+      Use these to jump to a section you are interested in:
+    </p>
+    <div class="main-button-row">
+
+      <button class="primary-btn"
+              onclick="document.getElementById('ecepc').scrollIntoView({behavior: 'smooth'});">
+        Project Context
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('ecedn').scrollIntoView({behavior: 'smooth'});">
+        Designing a Narrative
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('eceds').scrollIntoView({behavior: 'smooth'});">
+        Designing the Website UI
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('eceimp').scrollIntoView({behavior: 'smooth'});">
+        Implementation on CMS
+      </button>
+
+    </div>
   </div>
 </section>
 
 <section class="page-container">
 
-  <div class="casestudy-section">
+  <div class="casestudy-section" id="ecepc">
         <div class="casestudy-main-column">
           <h2 class="casestudy-main-text">
             The ECE department wanted a homepage that could engage with prospective students while accurately reflecting its identity.
@@ -92,37 +122,6 @@
 
   <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
-      Jump to Section
-    </h2>
-    <p class="casestudy-body-text">
-      Use these to jump to a section you are interested in:
-    </p>
-    <div class="main-button-row">
-
-      <button class="primary-btn"
-              onclick="document.getElementById('ecedn').scrollIntoView({behavior: 'smooth'});">
-        Designing a Narrative
-      </button>
-
-      <button class="primary-btn"
-              onclick="document.getElementById('eceds').scrollIntoView({behavior: 'smooth'});">
-        Designing the Website UI
-      </button>
-
-      <button class="primary-btn"
-              onclick="document.getElementById('eceimp').scrollIntoView({behavior: 'smooth'});">
-        Implementation on CMS
-      </button>
-
-    </div>
-  </div>
-
-  </section>
-
-<section class="page-container">
-
-  <div class="casestudy-body-container">
-    <h2 class="casestudy-body-headline">
       My Process
     </h2>
     <p class="casestudy-body-text">
@@ -147,15 +146,26 @@
       define the homepage structure and Content Architecture, shaping it as an "Access Hub".
     </p>
     <p class="casestudy-body-text">
+      Most key design decisions were guided by stakeholder queries and requests. 
+      The site needed to serve students while being represented, managed, and maintained by staff.
+    </p>
+    <h3 class="casestudy-body-headline">
+      Key discussions that steered the Narrative
+    </h3>
+    <dl class="dl-showc">
+      <dt class="dt-showc">"We've been asked to make a few more (content) changes (to the homepage)... here's a link to (what) we're looking (for)."</dt>
+      <dt>From the Admin.</dt>
+      <dt class="dt-showc">"Can we also replace the background photo (for the hero banner, regularly)?"</dt>
+      <dt>from the Marketing Team regarding post-build processes for updating the homepage.</dt>
+      <dt class="dt-showc">"Not sure what (the button should) lead out to..."</dt>
+      <dt>Discussions regarding content architecture and where each section linked to.</dt>
+    </dl>
+    <p class="casestudy-body-text">
         Here's what the page looked like before I worked on it:
     </p>
     <a href="../../assets/images/webp/ece-old-homepage.webp" target="_blank" rel="noopener noreferrer">
-      <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Old Homepage Thumbnail" style="width: 50%;"/>
+      <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Old Homepage Thumbnail" style="width: 50%; margin-bottom: 2rem;"/>
     </a>
-  </div>
-    
-  <div class="casestudy-body-container">
-
     <h3 class="casestudy-body-headline">Content Architecture</h3>
 
     <div class="facts-grid-doublet">
@@ -177,7 +187,7 @@
     <dl class="dl-showc">
       <dt class="dt-showc">1. Hero Section → Highlights departmental identity and key resources</dt>
       <dt class="dt-showc">2. Programs → Showcases undergraduate and graduate programs</dt>
-      <dt class="dt-showc">3. Events → Provides easy access to student life information</dt>
+      <dt class="dt-showc">3. Events → Provides easy access to student life information (Originally the Hear from the Chair section)</dt>
       <dt class="dt-showc">4. Research & Industry Opportunities → Connects prospective students and partners to research opportunities</dt>
     </dl>
     <p class="casestudy-body-text">
@@ -245,9 +255,9 @@
         
     <p class="disc">* Pages I built</p>
 
-    <p class="captions">Pictured below: What it looked Like(L) and Wireframe(R)</p>
+    <p class="captions">Pictured below: What it looked Like(L) and What I Proposed(R)</p>
     <img src="/assets/images/webp/Hero-Section-old-lofi.webp" style="width:100%;" />
-    <p class="captions">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
+    <p class="captions">Pictured below: Approved High Fidelity Wireframe for Initial Go-Live(L) and Iterative Change Post Go-Live(R)</p>
     <img src="/assets/images/webp/Hero-Section-highfid.webp" style="width:100%;" />
   </div>
 
@@ -260,9 +270,9 @@
       <dt class="dt-showc">The design replaces dense text with scannable cards, making information easier to absorb and action-oriented</dt>
     </dl>
 
-    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
+    <p class="captions">Pictured below: What it looked Like(L) and What I Proposed(R)</p>
     <img src="/assets/images/webp/Programs-Section-old-lofi.webp" style="width:100%;" />
-    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
+    <p class="captions">Pictured below: Approved High Fidelity Wireframe for Initial Go-Live(L) and Iterative Change Post Go-Live(R)</p>
     <img src="/assets/images/webp/Programs-Section-highfid.webp" style="width:100%;" />
   </div>
 
@@ -276,11 +286,11 @@
       <dt class="dt-showc">The section makes it easier for visitors to access relevant research and partnership opportunities.</dt>
     </dl>
 
-    <p style="font-size: small;">* Pages I built</p>
+    <p class="disc">* Pages I built</p>
 
-    <p style="font-size: small;">Pictured below: What it looked Like(L) and Wireframe(R)</p>
+    <p class="captions">Pictured below: What it looked Like(L) and What I Proposed(R)</p>
     <img src="/assets/images/webp/Research-Section-old-lofi.webp" style="width:100%;" />
-    <p style="font-size: small;">Pictured below: Approved High Fidelity Wireframe(L) and Variation Implemented(R)</p>
+    <p class="captions">Pictured below: Approved High Fidelity Wireframe for Initial Go-Live(L) and Iterative Change Post Go-Live(R)</p>
     <img src="/assets/images/webp/Research-Section-highfid.webp" style="width:100%;" />
   </div>
 </div>
@@ -319,6 +329,14 @@
     <h2 class="casestudy-body-headline">
       Implementation using the CMS
     </h2>
+
+  <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <h3 class="casestudy-body-headline">
+      “(Department Chair) signed off on the design. She's a fan!”
+    </h3>
+  </blockquote>
+
+     
     <p class="casestudy-body-text">
       Building it out on WordPress, I ensured the homepage now communicates the department’s identity while providing access to programs, events, and research opportunities.
       Content and structure guide students through the site, reinforcing credibility and engagement.
@@ -340,11 +358,6 @@
 
     <video src="../../assets/videos/ECE/ece-animations.mp4"   alt="ECE homepage animations" 
       style="width: calc(50% - 1rem); border-radius: 1rem; object-fit: cover;" autoplay loop muted playsinline></video>
-
-  </div>
-
-
-  <div class="casestudy-body-container-img">
 
     <p class="captions">
       Click on the images below to view the intially approved mockups.
