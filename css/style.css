@@ -1344,6 +1344,12 @@ margin-bottom: 2rem; max-width: 1600px;
   margin-top: 3rem;
 }
 
+.container p {
+  color: var(--jka-color-text-inv-muted);
+  margin-bottom: 0rem;
+  margin-top: 3rem;
+}
+
 .container-stats-2 {
   display: flex; 
   background: none; padding: 0; width: 100%; align-items: center;

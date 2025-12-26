@@ -53,15 +53,51 @@
         I proposed a phased implementation strategy to isolate improvements, ensuring the right attribution.
       </p>
     </blockquote>
+
+    <h2 class="casestudy-body-headline">
+      Jump to Section
+    </h2>
+    <p class="casestudy-body-text">
+      Use these to jump to a section you are interested in:
+    </p>
+    <div class="main-button-row">
+
+      <button class="primary-btn"
+              onclick="document.getElementById('tmcpc').scrollIntoView({behavior: 'smooth'});">
+        Project Context
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('tmcuxr').scrollIntoView({behavior: 'smooth'});">
+        UX Research & Findings
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('tmcstr').scrollIntoView({behavior: 'smooth'});">
+        UX Strategizing
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('tmcui').scrollIntoView({behavior: 'smooth'});">
+        Our UI/UX Solution
+      </button>
+
+      <button class="primary-btn"
+              onclick="document.getElementById('ppf').scrollIntoView({behavior: 'smooth'});">
+        Post-Presentation Feedback
+      </button>
+
+    </div>
+
   </div>
 </section>
 
 <section class="page-container">
-    <div class="casestudy-section">
+    <div class="casestudy-section" id="tmcpc">
         <div class="casestudy-main-column">
-          <h1 class="casestudy-main-text">
+          <h2 class="casestudy-main-text">
             The Textile Museum of Canada faced a disconnect between their rich content library and user engagement.
-          </h1>
+          </h2>
         </div>
 
         <div class="casestudy-side-column">
@@ -72,41 +108,44 @@
           </div>
           <div class="casestudy-feature-card">
             <p>
-              However, the underlying risk was that changing the structure with input from test users 
-              without understanding the real user's mental model could alienate the existing loyal user base.
+              The focus of this project is to redesign the website's information architecture and navigational design to promote the museum's values better and 
+              showcase information for their targeted audiences in an accessible way.
             </p>
           </div>
           <div class="casestudy-feature-card">
             <p>
-              We could get real users to test the IA, but what if their users have a workaround in place for any problematic architecture? 
-              Doing so would result in existing patterns and behaviours clouding the test results.
+              The museum needed to make ticket sales, donations, and archived events easier to find, 
+              while also highlighting the return of in-person and hands-on programs post-pandemic.
             </p>
           </div>
         </div>
     </div>
 
-<div class="casestudy-body-container">
+<div class="casestudy-body-container" id="tmcuxr">
     <h2 class="casestudy-body-headline">
       Understanding the Mental Model
     </h2>
     <p class="casestudy-body-text">
-      Before proposing solutions, we needed to validate the problem. We utilized open card sorting (n=8) and tree testing to map the existing architecture.
+      Before proposing solutions, we needed to validate the problem. 
+      We used open card sorting and tree testing to study the existing architecture. 
+      We selected entirely new users because testing with existing users could be misleading. 
+      If existing users had workarounds for problematic architecture, their patterns and behaviors would cloud the test results.
     </p>
-    <dl class="dl-showc">
-      <dt class="dt-showc">↦ Users consistently grouped "Privacy Policy" and "Team" under "About Us," validating usual conventions.</dt>
-      <dt class="dt-showc">↦ Abstract labels like "TXTilecity" and "Cloth Clay" had high failure rates; their jargon was blocking discovery.</dt>
-      <dt class="dt-showc">↦ Users expected donation pathways to be distinct from browsing, suggesting a need for a two-tiered navigation menu.</dt>
-    </dl>
-</div>
 
-<div class="casestudy-body-container">
+    <p class="casestudy-body-text">
+      Abstract labels like "TXTilecity" and "Cloth Clay" had high failure rates. The issue wasn't the jargon itself, 
+      but a lack of context, i.e, descriptive context to persuade users to explore or discover what these sections contained.
+    </p>
+    <p class="casestudy-body-text">
+      Users consistently grouped "Privacy Policy" and "Team" under "About Us," validating standard web conventions.
+    </p>
 
   <h3 class="casestudy-body-headline">Audit & Data Gathering</h3>
 
-</div>
-
-<div class="casestudy-body-container-img">
-
+  <p class="casestudy-body-text">
+    Our initial audit and card sorting highlighted that the museum's digital presence was hampered by organizational inconsistency and a lack of clear direction.
+  </p>
+    
   <div class="facts-grid">
 
     <img src="../../assets/images/exptor/Extra/7.webp"/>
@@ -115,28 +154,17 @@
 
   </div>
 
-</div>
-
-<div class="casestudy-body-container">
-
-  <h2 class="casestudy-body-headline">Our Diagnosis</h2>
+  <h3 class="casestudy-body-headline">Our Diagnosis</h2>
 
   <p class="casestudy-body-text">
-    To prove that the issue was structural, we conducted Tree Testing on the existing site's IA. 
+    To assess whether the issue was structural, we conducted Tree Testing on the existing site’s IA, 
+    stripping away all visual design to ensure failures were purely semantic.
   </p>
 
   <p class="casestudy-body-text">
-    We stripped away all visual design, testing labels and hierarchy only. This ensured that the failures recorded were purely semantic.
-  </p>
-
-  <p class="casestudy-body-text">
-    Our data confirmed the hypothesis: The IA itself was broken. Even without the restrictive hamburger menu, users could not find key information.
+    Our data confirmed that deep hierarchy, navigational ambiguity, and label conflicts were actively blocking the user journey:
   </p>
     
-</div>
-
-<div class="casestudy-body-container-img">
-
   <div class="facts-grid">
 
     <img src="../../assets/images/exptor/Extra/12.webp"/>
@@ -147,12 +175,12 @@
 
 </div>
 
-<div class="casestudy-body-container">
+<div class="casestudy-body-container" id="tmcstr">
     <h2 class="casestudy-body-headline">
       The Recommendation
     </h2>
     <p class="casestudy-body-text">
-      Based on the data, we developed a new Information Architecture. However, simply handing it was not enough for us. 
+      Based on the data, we developed a new Information Architecture. However, simply handing an IA map was not enough for us. 
       My teammates and I had a disussion where we felt like we needed to ensure this was practical and not theoretical.
     </p>
 
@@ -166,13 +194,10 @@
   <p class="casestudy-body-text">
     If metrics changed after a simultaneous launch, no one could attribute the change to the structure (IA) or the interface (UI).
   </p>
-</div>
 
-<div class="casestudy-body-container">
-
-    <h2 class="casestudy-body-headline">
+    <h3 class="casestudy-body-headline">
       What I proposed
-    </h2>
+    </h3>
     <p class="casestudy-body-text">
       I designed a phased A/B testing roadmap with interface mockups. 
       This strategy allows them to validate our proposed IA before committing to development.
@@ -187,51 +212,88 @@
 
 </section>
 
+<section class="page-container" style="background: var(--jka-surface-accent);">
 
+<div class="casestudy-body-container" id="tmcui">
 
-<section id="context" style="background: var(--jka-surface-accent); display: flex; flex-direction:column; justify-content: center; align-items: center; justify-items:center;">
-
-<div class="casestudy-body-container" style="max-width: 1200px; width: fit-content;">
-
-    <h2 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
-      The Solution
-    </h2>
-    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
-      The New Information Architecture:
-    </p>
+  <h2 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
+    The Solution
+  </h2>
+  <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+    The New Information Architecture:
+  </p>
 
   <img src="../../assets/images/webp/tmc-ia-0.webp"
-     class="user-journey-image-mrs"
-     style="width:75%; cursor: pointer;"
-     onclick="window.open('../../assets/images/webp/tmc-ia-0.webp', '_blank')"><br><br>
+    class="user-journey-image-mrs"
+    style="width:100%; cursor: pointer; margin-bottom: 2rem;"
+    onclick="window.open('../../assets/images/webp/tmc-ia-0.webp', '_blank')"><br><br>
 
-    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">Specific sub-trees:</p>
+  <h3 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
+    Explore how our IA addressed stakeholder objectives
+  </h3>
 
-<div class="image-row-tmc">
+  <div class="casestudy-tabs">
+    <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="plan-visit">Plan Your Visit</button>
+    <button class="tab-btn" data-tab="explore">Explore</button>
+  </div>
+  <hr>
 
-<img src="../../assets/images/webp/tmc-ia-1.webp"
-     class="user-journey-image-mrs"
-     style="cursor: pointer;"
-     onclick="window.open('../../assets/images/webp/tmc-ia-1.webp', '_blank')">
-
-<img src="../../assets/images/webp/tmc-ia-2.webp"
-     class="user-journey-image-mrs"
-     style="cursor: pointer;"
-     onclick="window.open('../../assets/images/webp/tmc-ia-2.webp', '_blank')">
-
-</div>
-
-</div>
-
-
-  <div class="casestudy-body-container" style="max-width: 1200px; width: fit-content;">
-    <h2 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
-      The Phased Rollout Strategy
-    </h2>
+  <div class="tab-content active" id="plan-visit">
+    <h4 style="color: var(--jka-color-surface-default);">Plan Your Visit</h4>
     <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
-      To demonstrate the feasibility of the strategy, we wireframed both phases for the stakeholders. While my team worked on the low fidelity, I worked on the high fidelity.
+      We restructured the IA sub-tree for "Plan Your Visit" to provide direct paths to revenue actions: 
+      Admissions and Book a Group Tour. The existing site relied on a single "Visit" page with an in-page anchor menu. This forced users to scroll through eight sections:
+      Admissions, Holiday Hours, Upcoming Programming, Members, Getting Here, Community Access, Accessibility, and Tour, to find the information they needed. 
+      The sub-level content shows the items users were most likely trying to access.
     </p>
 
+    <p class="captions">Pictured below: Plan Your Visit Section</p>
+    <img src="../../assets/images/webp/tmc-ia-1.webp" class="user-journey-image-mrs" 
+    style="width:50%; cursor:pointer; background-color: var(--jka-color-surface-default);" 
+    onclick="window.open('../../assets/images/webp/tmc-ia-1.webp','_blank')">
+    
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      The new structure elevates Admissions and Book a Group Tour to primary sub-levels and links directly to the corresponding conversion forms. 
+      This supports the stakeholders’ goal of making logistical information easily accessible, particularly for older audiences, 
+      by replacing long, anchor-link pages with a clear, shallow hierarchy that separates logistics from exploration.
+    </p>
+  </div>
+
+  <div class="tab-content" id="explore">
+    <h4 style="color: var(--jka-color-surface-default);">Explore</h4>
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      We restructured the IA sub-tree for "Explore" to provide direct paths to "Current," "Upcoming," and "Past" exhibitions and events. 
+      The existing site relied on a single "What's On" menu item, forcing users to filter through paginated months and tags on one page to find specific content. 
+      The sub-level content shows the items users might be looking at.
+    </p>
+
+    <p class="captions">Pictured below: Explore Section</p>
+    <img src="../../assets/images/webp/tmc-ia-2.webp" class="user-journey-image-mrs" 
+    style="width:50%; cursor:pointer; background-color: var(--jka-color-surface-default);"
+    onclick="window.open('../../assets/images/webp/tmc-ia-2.webp','_blank')">
+    
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      The new structure allows each menu item to link directly to a pre-filtered results page, supporting the stakeholders' goal of faster event discovery and booking. 
+      By building the IA around the museum's existing tag and filter logic, the navigation can automatically update as new exhibits are added. 
+      This reduces technical maintenance and allows the team to focus on content creation rather than navigation upkeep.
+    </p>
+
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      This design satisfies the museum's requirement for better archival visibility by providing a dedicated home for Past Events, making them "easily accessible" without the need for manual filtering.
+    </p>
+  </div>
+  </div>
+  
+  <h3 class="casestudy-body-headline" style="color: var(--jka-color-surface-default); margin-top: 3rem;">
+    The Phased Rollout Strategy
+  </h3>
+
+  <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+    To demonstrate the feasibility of the strategy, we wireframed both phases for the stakeholders. While my team and I worked on the low fidelity, I worked alone on the high fidelity.
+  </p>
+
+  <h4 style="color: var(--jka-color-surface-default);">Low-Fidelity UI Screens</h4>
   <div class="image-row-tmc">
     <img src="../../assets/images/exptor/Desktop Main Menu.webp"
      onclick="window.open('../../assets/images/exptor/Desktop Main Menu.png', '_blank')"
@@ -242,53 +304,60 @@
      style="cursor: pointer;" />  
   </div>
 
-  <h3 style="color: var(--jka-color-surface-default);margin-bottom:1rem;">Strategy Phase A</h3>
+  <h4 style="color: var(--jka-color-surface-default);margin-bottom:1rem;">Strategy Phase A</h4>
   <p style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
-    Since the Hamburger is preferred for the mobile navigation, my focus was on the web version. 
+    Since the Hamburger is preferred for the mobile navigation, my focus was on the high fidelity for the web version. 
   </p>
-  <p class="caption-text" style="color: var(--jka-color-surface-muted); font-size: small;">Click on the image to see the menu in action.</p>
+  <p class="captions" style="color: var(--jka-color-surface-muted); font-size: small;">Click on the image to see the menu in action.</p>
   <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
-    <img id="tmcImage" src="../../assets/images/webp/tmc-op1-1.webp"
-       style="width: 100%; height: auto; cursor: pointer;" />
+    <img id="tmcImage" src="../../assets/images/webp/tmc-op1-1.webp" style="width: 100%; height: auto; cursor: pointer;" />
   </div>
+
+  <h4 style="color: var(--jka-color-surface-default);margin-bottom:1rem;">Strategy Phase B</h4>
+  <p class="captions" style="color: var(--jka-color-surface-muted); font-size: small;">Click on the image to see the menu in action.</p>
+  <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+    <img id="tmcImage2" src="../../assets/images/webp/tmc-op2-1.webp" style="width: 100%; height: auto; cursor: pointer;" />
+  </div>
+
+</div>
   
- <h3 style="color: var(--jka-color-surface-default);margin-bottom:1rem;">Strategy Phase B</h3>
-  <p class="caption-text" style="color: var(--jka-color-surface-muted); font-size: small;">Click on the image to see the menu in action.</p>
-
-<div style="display: flex; justify-content: center; margin-bottom: 2rem;">
-    <img id="tmcImage2" src="../../assets/images/webp/tmc-op2-1.webp"
-       style="width: 100%; height: auto; cursor: pointer;" />
-  </div>
-
-
 </section>
 
-<section class="learn">
+<section class="learn" id="ppf">
   <div class="mcc">
 
     <div class="mmc-content">
-      <h1>What I Learned</h1>
+      <h1>Post-Presentation Feedback</h1>
       <h5>
-        This project reinforced that how we implement is just as important as the change itself.
+        Our IA course instructor told us that our two-phased approach "stood out" among all groups -- context: this was a group project for all UX students in our year.
+        Standing out was not easy, as we presented later in the schedule and we knew that the Textile Museum Board members had already seen multiple groups discuss their suggestions for revamping the IA.
       </h5>
 
-        <div class="takeaway">
-          <h4>The Scientific Method</h4>
-          <div></div>
-          <p>
-            By testing the Information Architecture separate from the Visual Design, we created a way to attribute impact to the right change. 
-            If metrics improved in Phase A, we credit the IA. In Phase B, we credit the UI.
-          </p>
-        </div>
+      <h5>
+        Part of why we were noticed was because we provided stakeholders with a handout summarizing our research findings and navigation suggestions on the day of the presentation -- right before our slot, allowing them to review and take the insights home.
+      </h5>
+
+      <h5>
+        We were also told that we were "the first group" to study the current navigation menu in depth, identifying why it wasn't accessible, 
+        why it was not suited for content discovery, as well as identifying risks in a full UI overhaul 
+        and showing how it could be detrimental to content discovery.
+      </h5>
+
+      <div class="takeaway">
+        <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
+          <h3 class="casestudy-body-headline" style="color: var(--jka-color-text-inv-default);">
+            “Loved giving us multiple options; to give us a short-term solution, really thoughtful for our current situation.”
+          </h3>
+          <p class="casestudy-body-text" style="color: var(--jka-color-text-inv-muted);">
+            -- Textile Museum Board, feedback delivered to our group through the Professor
+            </p>
+          </blockquote>
+      </div>
 
     </div>
 
   </div>
 </section>
-
-
-
-
 
   <div id="footer-placeholder"></div>
 
@@ -373,6 +442,23 @@ fetch('../../addons/header.html') .then(response => response.text()) .then(data 
   document
     .getElementById("floatingImage")
     .addEventListener("click", scrollToTop);
+</script>
+
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
 </script>
 
 </body>
