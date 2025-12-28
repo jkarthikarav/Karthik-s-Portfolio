@@ -1,0 +1,140 @@
+<div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Information Architecture • Institutional Web • Accessibility (AODA) </strong>• Shipped Jan 2025
+        </p>
+        <h3 class="heading">ECE Homepage Redesign: Rebuilding Information Flow for Recruitment
+        </h3>
+        
+        <p class="body-copy">
+          Fragmented information flow was hindering student recruitment and departmental engagement. I led the restructuring in Figma and personally handled the WordPress implementation. 
+        </p>
+        
+        <p class="body-copy-impact">
+          Business Impact: Solved the recruitment drop-off by ensuring high-value traffic was routed to the Program and Research pages.
+        </p>
+
+        <p class="body-copy-impact">
+          User Impact: Reduced the time-to-value for students by reorganizing content into an accessible architecture.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →</span>
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/ece.webp" alt="Web Mockup" class="img-showc" />
+    </div>
+</div>
+
+<div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2C Mobile • Product Discovery • Market Research </strong>• Oct-Dec 2023
+        </p>
+        <h3 class="heading">Ticket Discoverability App: Structuring Information Flow for Cultural Access
+        </h3>
+        
+        <p class="body-copy">
+          People struggled to find existing GLAM (Galleries, Libraries, Archives, and Museums) discounts in Toronto.
+          Conducted product research, then prototyped a mobile solution focused on information flow and social sharing.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected Business Impact: Increases institutional revenue by converting interest into attendance through a centralized deal discovery.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected User Impact: Reduces pain points relating to search part of the user's process.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/experience-toronto-the-discoverability-app.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/Exp-Tor.webp" alt="Mobile App Mockup" class="img-showc" />
+    </div>
+</div>
+
+
+<div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2B Website • Information Architecture </strong>• Oct-Nov 2023
+        </p>
+        <h3 class="heading">Textile Museum of Canada Website: IA Redesign & Strategy
+        </h3>
+        
+        <p class="body-copy">
+          Our team aimed to improve the site's content discoverability. We didn't stop there, as I proposed an 
+          implementation testing strategy to validate changes before a UI overhaul.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected Business Impact: Increase in conversion rates for high-value actions such as ticket purchases, donations, and group tour bookings.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected User Impact: Reduced cognitive load and faster access to essential information.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc-ia-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/tmc.webp" alt="Textile Museum Project Mockup" class="img-showc" />
+    </div>
+</div>
+
+<div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Service Design • AI Integration • Operational Strategy </strong>• Implemented Jul 2023
+        </p>
+        <h3 class="heading">Fix It In Post Studios: Operationalizing Generative AI for Creative Pipelines
+        </h3>
+        
+        <p class="body-copy">
+          The studio needed to transition from ad-hoc AI experimentation to a billable service. I developed a service blueprint that 
+          integrated GenAI into the pre-visualization process.
+        </p>
+
+        <p class="body-copy-impact">
+          Business Impact: Increased revenue by approx. 30–40% through repeat projects and increased organizational credibility.
+        </p>
+
+        <p class="body-copy-impact">
+          User Impact: Reduced client anxiety, revision loops, and AI-fueled employee morale decreases.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/hero-banners/GENAI.webp" alt="GenAI Service Blueprint Mockup" class="img-showc" />
+    </div>
+</div>
+    <!--<a href="/pages/casestudies/interactive-web-experience-for-capital-raising.html" class="case-study-card-link-list" target="_blank">
+      <div class="case-study-card-list">
+        <div class="case-study-card-content-list">
+          <h4>Fix It In Post Studios: Interactive Web Experience for Capital Raising</h4>
+          <div class="case-study-meta-list">
+            <p>Shipped Aug 2021</p>
+            <span>·</span>
+            <p>Investor Experience, Narrative UI, Market Differentiation, High-Fidelity Prototyping</p>
+            <span>·</span>
+            <p>
+              Designed and developed an immersive, interactive web experience, focusing on narrative-driven UI, 
+              to successfully differentiate the director and the project to help secure capital.
+            </p>
+          </div>
+        </div>
+        <div class="case-study-card-action-list">
+          <button class="text-btn">View →</button>
+        </div>
+      </div>
+    </a>
+  </div>-->

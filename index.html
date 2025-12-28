@@ -52,13 +52,6 @@
           <p>Email</p>
         </div>
       </div>
-
-      <!--<div class="logo-div">        <img src="/assets/logos/Karthik Aravind.png" alt="Karthik's Logo" class="logo-img"></div>-->
-
-      <!-- Hamburger button -->
-      <div class="contact-row-2" style="justify-content: flex-end;">
-        <button class="hamburger-btn" id="hamburger-btn">Menu</button>
-      </div>
       
     <div>
         
@@ -88,43 +81,17 @@
       
       <button class="primary-btn"
               onclick="document.getElementById('fw').scrollIntoView({behavior: 'smooth'});">
-        Showcase
+        UI/UX Design Projects
       </button>
 
-      <button class="primary-btn"
+      <button class="secondary-btn" 
               onclick="window.open('uivd.html', '_blank')">
-        UI & Visual Design
+        UI & Visual Design →
       </button>
 
-      <button class="primary-btn" id="surprise-btn">
-        Open Random Case Study
-      </button>
     </div>
 
   </div> 
-
-<div id="hamburger-modal" class="modal">
-  <div class="modal-content two-column-modal">
-    <button class="close-btn" id="close-btn">×</button>
-
-    <div class="modal-left">
-      <!--<a class="main-page-link" href="casestudies.html" target="_blank">All Case Studies <img src="/assets/icons/home/page.svg" alt="Page icon" width="16" height="16"/></a>
-      -->
-      <h2 class="collapsible" data-section="web">Web <img src="/assets/icons/home/Down.svg" alt="Down arrow" style="rotate: -90deg;" width="20" height="20"></h2>
-      <h2 class="collapsible" data-section="mobile">Mobile <img src="/assets/icons/home/Down.svg" alt="Down arrow" style="rotate: -90deg;" width="20" height="20"></h2>
-      <h2 class="collapsible" data-section="ux">UX Research & Strategy <img src="/assets/icons/home/Down.svg" alt="Down arrow" style="rotate: -90deg;" width="20" height="20">
-      </h2>
-      <h2 class="collapsible" data-section="design">Design Thinking <img src="/assets/icons/home/Down.svg" alt="Down arrow" style="rotate: -90deg;" width="20" height="20"></h2>
-      <a class="main-page-link" href="/uivd.html" target="_blank" style="text-decoration: underline;">
-        Explore UI & Visual Designs
-      </a>
-    </div>
-
-    <div class="modal-right" id="modal-right">
-      <!-- Links will populate here when a heading is clicked -->
-    </div>
-  </div>
-</div>
 
 </section>
 
@@ -164,14 +131,25 @@
 <section id="fw" class="main-work">
 
 <h2 style="margin: 1rem auto 0rem; color: var(--jka-color-theme-strong);">
-  Showcase
+  UI/UX Design Projects
 </h2>
 
 <p style="margin: 1rem auto 2rem;">
   The following case studies demonstrate how I bridge the gap between human sensemaking and business results.
 </p>
 
-<div class="split-card-section">
+<div class="casestudy-tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="showcase">Showcase</button>
+    <button class="tab-btn" data-tab="all">All Projects (Latest to Old)</button>
+    <button class="tab-btn" data-tab="academic">Academic</button>
+    <button class="tab-btn" data-tab="research">Research & Strategy</button>
+    <button class="tab-btn" data-tab="uxdeliverables">Specific UX Deliverables</button>
+  </div>
+  <hr>
+
+  <div class="tab-content active" id="showcase">
+    <div class="split-card-section">
     <div class="card-text">
         <p class="eyebrow"><strong>Information Architecture • Institutional Web • Accessibility (AODA) </strong>• Shipped Jan 2025
         </p>
@@ -198,9 +176,69 @@
     <div class="image-block-showc">
       <img src="/assets/images/ece.webp" alt="Web Mockup" class="img-showc" />
     </div>
-</div>
+    </div>
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Service Design • AI Integration • Operational Strategy </strong>• Implemented Jul 2023
+        </p>
+        <h3 class="heading">Fix It In Post Studios: Operationalizing Generative AI for Creative Pipelines
+        </h3>
+        
+        <p class="body-copy">
+          The studio needed to transition from ad-hoc AI experimentation to a billable service. I developed a service blueprint that 
+          integrated GenAI into the pre-visualization process.
+        </p>
 
-<div class="split-card-section">
+        <p class="body-copy-impact">
+          Business Impact: Increased revenue by approx. 30–40% through repeat projects and increased organizational credibility.
+        </p>
+
+        <p class="body-copy-impact">
+          User Impact: Reduced client anxiety, revision loops, and AI-fueled employee morale decreases.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/hero-banners/GENAI.webp" alt="GenAI Service Blueprint Mockup" class="img-showc" />
+    </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="all">
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Information Architecture • Institutional Web • Accessibility (AODA) </strong>• Shipped Jan 2025
+        </p>
+        <h3 class="heading">ECE Homepage Redesign: Rebuilding Information Flow for Recruitment
+        </h3>
+        
+        <p class="body-copy">
+          Fragmented information flow was hindering student recruitment and departmental engagement. I led the restructuring in Figma and personally handled the WordPress implementation. 
+        </p>
+        
+        <p class="body-copy-impact">
+          Business Impact: Solved the recruitment drop-off by ensuring high-value traffic was routed to the Program and Research pages.
+        </p>
+
+        <p class="body-copy-impact">
+          User Impact: Reduced the time-to-value for students by reorganizing content into an accessible architecture.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →</span>
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/ece.webp" alt="Web Mockup" class="img-showc" />
+    </div>
+    </div>
+
+    <div class="split-card-section">
     <div class="card-text">
         <p class="eyebrow"><strong>B2C Mobile • Product Discovery • Market Research </strong>• Oct-Dec 2023
         </p>
@@ -217,119 +255,229 @@
         </p>
 
         <p class="body-copy-impact">
-          Projected User Impact: Eliminates search tax for users by providing a single source for cultural access.
+          Projected User Impact: Reduces pain points relating to search part of the user's process.
         </p>
         
         <button class="secondary-btn" onclick="window.open('/pages/casestudies/experience-toronto-the-discoverability-app.html', '_blank');" style="width: fit-content;">
           View Case Study →
         </button>
-    </div>
+      </div>
 
-    <div class="image-block-showc">
+      <div class="image-block-showc">
       <img src="/assets/images/Exp-Tor.webp" alt="Mobile App Mockup" class="img-showc" />
+      </div>
     </div>
-</div>
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2B Website • Information Architecture </strong>• Oct-Nov 2023
+        </p>
+        <h3 class="heading">Textile Museum of Canada Website: IA Redesign & Strategy
+        </h3>
+        
+        <p class="body-copy">
+          Our team aimed to improve the site's content discoverability. We didn't stop there, as I proposed an 
+          implementation testing strategy to validate changes before a UI overhaul.
+        </p>
 
-</section>
+        <p class="body-copy-impact">
+          Projected Business Impact: Increase in conversion rates for high-value actions such as ticket purchases, donations, and group tour bookings.
+        </p>
 
-<section class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <p class="body-copy-impact">
+          Projected User Impact: Reduced cognitive load and faster access to essential information.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc-ia-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+    <div class="image-block-showc">
+      <img src="/assets/images/tmc.webp" alt="Textile Museum Project Mockup" class="img-showc" />
+    </div>
+    </div>
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Service Design • AI Integration • Operational Strategy </strong>• Implemented Jul 2023
+        </p>
+        <h3 class="heading">Fix It In Post Studios: Operationalizing Generative AI for Creative Pipelines
+        </h3>
+        
+        <p class="body-copy">
+          The studio needed to transition from ad-hoc AI experimentation to a billable service. I developed a service blueprint that 
+          integrated GenAI into the pre-visualization process.
+        </p>
 
-  <div style="width: 100%; text-align: center;"><h2>Real-World Results Delivered</h2></div>
+        <p class="body-copy-impact">
+          Business Impact: Increased revenue by approx. 30–40% through repeat projects and increased organizational credibility.
+        </p>
 
-  <div class="container-stats">
-            <!-- Column 1: Time Saved -->
-            <div style="padding-right: 1rem;">
-                <h1>Lowered by 20%</h1>
-                <p>Lowered design-to-dev discrepancies by implementing standardized documentation, saving teams weeks of rework.</p>
-            </div>
-            
-            <!-- Column 2: Governance -->
-            <div style="padding: 0 1rem;">
-                <h1>$24K+ USD/week</h1>
-                <p>Generated recurring revenue for an industrial manufacturing client by redesigning their conversion funnel.</p>
-            </div>
-            
-            <!-- Column 3: Error Reduction -->
-            <div style="padding-left: 1rem;">
-                <h1>$400K+ USD</h1>
-                <p>Designed investor microsites that successfully differentiated brands in saturated markets to close funding.</p>
-            </div>
+        <p class="body-copy-impact">
+          User Impact: Reduced client anxiety, revision loops, and AI-fueled employee morale decreases.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+    <div class="image-block-showc">
+      <img src="/assets/images/hero-banners/GENAI.webp" alt="GenAI Service Blueprint Mockup" class="img-showc" />
+    </div>
   </div>
-</section>
+  </div>
 
-<section id="pbs" class="case-studies-list">
+  <div class="tab-content" id="academic">
+   
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2C Mobile • Product Discovery • Market Research </strong>• Oct-Dec 2023
+        </p>
+        <h3 class="heading">Ticket Discoverability App: Structuring Information Flow for Cultural Access
+        </h3>
+        
+        <p class="body-copy">
+          People struggled to find existing GLAM (Galleries, Libraries, Archives, and Museums) discounts in Toronto.
+          Conducted product research, then prototyped a mobile solution focused on information flow and social sharing.
+        </p>
 
-  <!-- Column 1 -->
-  <div class="case-studies-column-list">
-    <h3>UX Research and Strategy</h3>
+        <p class="body-copy-impact">
+          Projected Business Impact: Increases institutional revenue by converting interest into attendance through a centralized deal discovery.
+        </p>
 
-    <a href="/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html" class="case-study-card-link-list" target="_blank">
-      <div class="case-study-card-list">
-        <div class="case-study-card-content-list">
-          <h4>Textile Museum of Canada: IA Redesign & Strategy</h4>
-          <div class="case-study-meta-list">
-            <p>Presented Nov 2023</p>
-            <span>·</span>
-            <p>Data-Driven IA, Web Development Strategy</p>
-            <span>·</span>
-            <p>
-              Conducted a comprehensive audit of the museum’s website to solve for navigation bottlenecks, if any. 
-              Developed Information Architecture (IA) and a phased rollout strategy for implementation, designed to convert visitors into active participants.
-            </p>
-          </div>
-        </div>
-        <div class="case-study-card-action-list">
-          <button class="text-btn">View →</button>
-        </div>
+        <p class="body-copy-impact">
+          Projected User Impact: Reduces pain points relating to search part of the user's process.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/experience-toronto-the-discoverability-app.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
       </div>
-    </a>
 
-    <a href="/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html" class="case-study-card-link-list" target="_blank">
-      <div class="case-study-card-list">
-        <div class="case-study-card-content-list">
-          <h4>Fix It In Post Studios: Operationalizing GenAI for Creative Pipelines</h4>
-          <div class="case-study-meta-list">
-            <p>Shipped Jul 2023</p>
-            <span>·</span>
-            <p>Service Blueprinting, AI Integration, Operational Strategy, Workflow Optimization</p>
-            <span>·</span>
-            <p>
-              Developed a Service Blueprint that increased organizational credibility and accelerated innovation speed by 
-              standardizing how AI tools support employees.
-            </p>
-          </div>
-        </div>
-        <div class="case-study-card-action-list">
-          <button class="text-btn">View →</button>
-        </div>
+      <div class="image-block-showc">
+      <img src="/assets/images/Exp-Tor.webp" alt="Mobile App Mockup" class="img-showc" />
       </div>
-    </a>
+    </div>
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2B Website • Information Architecture </strong>• Oct-Nov 2023
+        </p>
+        <h3 class="heading">Textile Museum of Canada Website: IA Redesign & Strategy
+        </h3>
+        
+        <p class="body-copy">
+          Our team aimed to improve the site's content discoverability. We didn't stop there, as I proposed an 
+          implementation testing strategy to validate changes before a UI overhaul.
+        </p>
 
-    <!--<a href="/pages/casestudies/interactive-web-experience-for-capital-raising.html" class="case-study-card-link-list" target="_blank">
-      <div class="case-study-card-list">
-        <div class="case-study-card-content-list">
-          <h4>Fix It In Post Studios: Interactive Web Experience for Capital Raising</h4>
-          <div class="case-study-meta-list">
-            <p>Shipped Aug 2021</p>
-            <span>·</span>
-            <p>Investor Experience, Narrative UI, Market Differentiation, High-Fidelity Prototyping</p>
-            <span>·</span>
-            <p>
-              Designed and developed an immersive, interactive web experience, focusing on narrative-driven UI, 
-              to successfully differentiate the director and the project to help secure capital.
-            </p>
-          </div>
-        </div>
-        <div class="case-study-card-action-list">
-          <button class="text-btn">View →</button>
-        </div>
+        <p class="body-copy-impact">
+          Projected Business Impact: Increase in conversion rates for high-value actions such as ticket purchases, donations, and group tour bookings.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected User Impact: Reduced cognitive load and faster access to essential information.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc-ia-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+    <div class="image-block-showc">
+      <img src="/assets/images/tmc.webp" alt="Textile Museum Project Mockup" class="img-showc" />
+    </div>
+    </div>
+
+  </div>
+
+  <div class="tab-content" id="research">
+
+  <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Service Design • AI Integration • Operational Strategy </strong>• Implemented Jul 2023
+        </p>
+        <h3 class="heading">Fix It In Post Studios: Operationalizing Generative AI for Creative Pipelines
+        </h3>
+        
+        <p class="body-copy">
+          The studio needed to transition from ad-hoc AI experimentation to a billable service. I developed a service blueprint that 
+          integrated GenAI into the pre-visualization process.
+        </p>
+
+        <p class="body-copy-impact">
+          Business Impact: Increased revenue by approx. 30–40% through repeat projects and increased organizational credibility.
+        </p>
+
+        <p class="body-copy-impact">
+          User Impact: Reduced client anxiety, revision loops, and AI-fueled employee morale decreases.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+    <div class="image-block-showc">
+      <img src="/assets/images/hero-banners/GENAI.webp" alt="GenAI Service Blueprint Mockup" class="img-showc" />
+    </div>
+  </div>
+
+  <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2C Mobile • Product Discovery • Market Research </strong>• Oct-Dec 2023
+        </p>
+        <h3 class="heading">Ticket Discoverability App: Structuring Information Flow for Cultural Access
+        </h3>
+        
+        <p class="body-copy">
+          People struggled to find existing GLAM (Galleries, Libraries, Archives, and Museums) discounts in Toronto.
+          Conducted product research, then prototyped a mobile solution focused on information flow and social sharing.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected Business Impact: Increases institutional revenue by converting interest into attendance through a centralized deal discovery.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected User Impact: Reduces pain points relating to search part of the user's process.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/experience-toronto-the-discoverability-app.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
       </div>
-    </a>
-  </div>-->
 
-  <!-- Column 2 -->
-  <div class="case-studies-column-list">
-    <h3>Select UI/UX Deliverables</h3>
+      <div class="image-block-showc">
+      <img src="/assets/images/Exp-Tor.webp" alt="Mobile App Mockup" class="img-showc" />
+      </div>
+    </div>
+    <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>B2B Website • Information Architecture </strong>• Oct-Nov 2023
+        </p>
+        <h3 class="heading">Textile Museum of Canada Website: IA Redesign & Strategy
+        </h3>
+        
+        <p class="body-copy">
+          Our team aimed to improve the site's content discoverability. We didn't stop there, as I proposed an 
+          implementation testing strategy to validate changes before a UI overhaul.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected Business Impact: Increase in conversion rates for high-value actions such as ticket purchases, donations, and group tour bookings.
+        </p>
+
+        <p class="body-copy-impact">
+          Projected User Impact: Reduced cognitive load and faster access to essential information.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc-ia-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →
+        </button>
+    </div>
+    <div class="image-block-showc">
+      <img src="/assets/images/tmc.webp" alt="Textile Museum Project Mockup" class="img-showc" />
+    </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="uxdeliverables">
 
     <a href="/pages/casestudies/design-guidelines-for-construction-site-management.html" class="case-study-card-link-list" target="_blank">
       <div class="case-study-card-list">
@@ -361,28 +509,11 @@
 
   </div>
 
-</section>
-
-<section id="uiw" class="container-2">
-
-<div class="container-stats-2">
-
-<div>
-  <h4>
-    UI & Visual Design Showcase
-  </h4>
-</div>
-
-<button class="tertiary-btn" onclick="window.open('uivd.html', '_blank');">
-  View UI & Visual Designs
-</button>
-
 </div>
 
 </section>
 
-
-<section id="edu" class="intro">
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
 
   <div class="casestudy-section">
         <div class="casestudy-main-column">
@@ -399,20 +530,47 @@
             </h3>
           </div>
           <div class="casestudy-feature-card">
-            <p style="color: var(--jka-color-text-inv-subtle);">
+            <p style="color: var(--jka-color-text-inv-subtle); margin: 0.25rem 0; padding: 0;">
               This academic background, combined with 7+ years of contract and freelance work, allows me to approach UI/UX as a science.
             </p>
           </div>
           <div class="casestudy-feature-card">
-            <p style="color: var(--jka-color-text-inv-subtle);">
+            <p style="color: var(--jka-color-text-inv-subtle); margin: 0.25rem 0; padding: 0;">
               I design with a focus on how people process information and make decisions, not just on visual appeal.
             </p>
           </div>
         </div>
   </div>
 
-</section>
+  <div class="facts-grid" style="max-width: 1200px;">
+    <img src="/assets/images/about/1602.webp" style="height: auto;"/>
+    <img src="/assets/images/about/AUSophomore.webp" style="height: 100%;"/>
+    <img src="/assets/images/about/NCSCM.webp" style="height: 100%;"/>    
+  </div>
 
+  <div style="width: 100%; text-align: center;"><h2>Real-World Results Delivered</h2></div>
+
+  <div class="container-stats">
+            <!-- Column 1: Time Saved -->
+            <div style="padding-right: 1rem;">
+                <h1>Lowered by 20%</h1>
+                <p>Lowered design-to-dev discrepancies by implementing standardized documentation, saving teams weeks of rework.</p>
+            </div>
+            
+            <!-- Column 2: Governance -->
+            <div style="padding: 0 1rem;">
+                <h1>$24K+ USD/week</h1>
+                <p>Generated recurring revenue for an industrial manufacturing client by redesigning their conversion funnel.</p>
+            </div>
+            
+            <!-- Column 3: Error Reduction -->
+            <div style="padding-left: 1rem;">
+                <h1>$400K+ USD</h1>
+                <p>Designed investor microsites that successfully differentiated brands in saturated markets to close funding.</p>
+            </div>
+  </div>
+
+</section>
 
 <section id="art" class="main-work">
 
@@ -581,114 +739,19 @@ function changeGreeting() {
 </script>
 
 <script>
-const link_cards = [  
-  { title: "ECE Homepage", link: "/pages/casestudies/ece-homepage-redesign.html" },
-  { title: "Mobile UX Research", link: "/pages/casestudies/experience-toronto-the-discoverability-app.html" },
-  { title: "IA Design", link: "/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html" },
-  { title: "Gen-AI", link: "/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html" }//,
-  //{ title: "Pitch Deck", link: "/pages/casestudies/interactive-web-experience-for-capital-raising.html" }
-];
+  const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
 
-let shuffledIndices = [];
-let currentIndex = 0;
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
 
-// Fisher-Yates shuffle
-function shuffle(array) {
-  let a = array.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-// initialize shuffled indices
-function initShuffle() {
-  shuffledIndices = shuffle([...Array(link_cards.length).keys()]);
-  currentIndex = 0;
-}
-
-function openRandomLink() {
-  if (shuffledIndices.length === 0 || currentIndex >= shuffledIndices.length) {
-    initShuffle(); // reshuffle when all links have been used
-  }
-
-  const link = link_cards[shuffledIndices[currentIndex]].link;
-  currentIndex++;
-  window.open(link, "_blank");
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const surpriseButton = document.getElementById("surprise-btn");
-  if (surpriseButton) {
-    surpriseButton.addEventListener("click", openRandomLink);
-  }
-});
-
-// initial shuffle
-initShuffle();
-
-</script>
-
-<script>
-// Modal open/close
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const modal = document.getElementById('hamburger-modal');
-const closeBtn = document.getElementById('close-btn');
-
-hamburgerBtn.addEventListener('click', () => {
-  modal.classList.add('show');
-  document.body.style.overflow = 'hidden'; // prevent scroll behind
-});
-
-closeBtn.addEventListener('click', () => {
-  modal.classList.remove('show');
-  document.body.style.overflow = ''; // restore scroll
-});
-
-// Populate right column
-const sections = {
-  web: [
-    { text: "ECE Homepage Redesign: Rebuilding Information Flow for Recruitment", href: "/pages/casestudies/ece-homepage-redesign.html", icon: "/assets/icons/home/page.svg" }//,
-    //{ text: "Interactive Web Experience for Capital Raising", href: "/pages/casestudies/interactive-web-experience-for-capital-raising.html", icon: "/assets/icons/home/page.svg" }
-  ],
-  mobile: [
-    { text: "Discoverability App: Structuring Information Flow for Cultural Access", href: "/pages/casestudies/experience-toronto-the-discoverability-app.html", icon: "/assets/icons/home/page.svg" },
-  ],
-  ux: [
-    { text: "Data-Driven IA redesign & Phased Rollout Strategy", href: "/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html", icon: "/assets/icons/home/page.svg" },
-    { text: "Operationalizing Generative AI: A Service Blueprint", href: "/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html", icon: "/assets/icons/home/page.svg" }
-  ],
-  design: [
-    { text: "Website Production Design: University of Toronto, ECE Department", href: "/pages/articles/web-production.html", icon: "/assets/icons/home/page.svg" },
-    { text: "View my Newsletter", href: "https://www.linkedin.com/newsletters/7393569508403294208/", icon: "/assets/icons/home/link.svg" }
-  ]
-};
-
-document.querySelectorAll('.collapsible').forEach(h2 => {
-  h2.addEventListener('click', () => {
-    const section = h2.dataset.section;
-    const container = document.getElementById('modal-right');
-    container.innerHTML = ''; // clear previous content
-
-    // Create a heading element showing what was clicked
-    const heading = document.createElement('h2');
-    heading.textContent = h2.textContent.trim(); // the header text
-    heading.style.marginBottom = '1rem';
-    heading.style.color = 'var(--jka-color-surface-subtle)'; // optional styling
-    container.appendChild(heading);
-
-    // Add the links for this section
-    sections[section].forEach(link => {
-      const a = document.createElement('a');
-      a.href = link.href;
-      a.target = "_blank";
-      a.className = "collapsible-links-a";
-      a.innerHTML = `${link.text} <img src="${link.icon}" class="link-icon" alt="Icon">`;
-      container.appendChild(a);
-    });
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
   });
 });
+
 </script>
 
 <script>

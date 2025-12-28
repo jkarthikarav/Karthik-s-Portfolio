@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash; // e.g., #fw?tab=all
+
+  if (hash.startsWith("#fw")) {
+    const section = document.querySelector("#fw");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Extract the tab from the hash
+    const tabMatch = hash.match(/tab=(\w+)/);
+    if (tabMatch) {
+      const tabName = tabMatch[1];
+      const buttons = document.querySelectorAll(".tab-btn");
+      const contents = document.querySelectorAll(".tab-content");
+
+      buttons.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.tab === tabName);
+      });
+
+      contents.forEach(content => {
+        content.style.display = content.id === tabName ? "block" : "none";
+      });
+    }
+  }
+});
+
 
 fetch('/addons/header.html')
   .then(response => {

@@ -122,7 +122,7 @@
   <h2 class="casestudy-body-headline">Our Problem: Creativity is Subjective</h2>
   <p class="casestudy-body-text">
     The traditional "Pre-viz" process was ambiguous at best. 
-    Directors struggled to articulate their vision, leading to vague briefs, excessive revisions, and friction between creative teams and the Directors.
+    Directors struggled to articulate their vision, leading to vague briefs, excessive revisions, and delivery delays between creative teams and the Directors.
   </p>
 
   <img src="/assets/images/previz/swimlane-b.png" style="width: 100%;"/>
@@ -196,32 +196,44 @@
   </div>
 </div>
 
-</section>
+<div style="width: 100%; text-align: center;"><h3>Workflow explained through the Pilot Program</h3></div>
 
-<section class="page-container">
+<div class="casestudy-tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="ta">Tone Alignment</button>
+    <button class="tab-btn" data-tab="sb">Scene Breakdown</button>
+    <button class="tab-btn" data-tab="dwa">Designing with AI</button>
+    <button class="tab-btn" data-tab="qace">QA, Approval, Compositing, Pass to Edit</button>
+  </div>
+  <hr>
 
-  <div class="casestudy-body-container">
-    <h2 class="casestudy-body-headline">
-      Sample Outputs from Pilot Program
-    </h2>
-    
-    <p class="casestudy-body-text" style="margin-top: 2rem;">
-      The Editor and Client align on tone, eliminating the "guessing game."
+  <div class="tab-content active" id="ta">
+    <p class="casestudy-body-text" style="margin-top: 2rem; color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      The Editor and Client align on tone at the beginning.
     </p>
     <img src="../../assets/images/previz/clientref.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('../../assets/images/previz/clientref.png')">
-    <p class="casestudy-body-text" style="margin-top: 2rem;">
+  </div>
+
+  <div class="tab-content" id="sb">
+    <p class="casestudy-body-text" style="margin-top: 2rem; color: var(--jka-color-surface-muted); margin-bottom: 20px;">
       The Project Manager/Design Team Lead break the scene into assets that need AI (Backgrounds, Textures) vs. those that needed Humans (Logos, Text, Specific Characters).
     </p>
     <img src="../../assets/images/previz/layer-break.png" class="user-journey-image-mrs" style="max-width:50%;" onclick="openModal('../../assets/images/previz/layer-break.png')">
-    <p class="casestudy-body-text" style="margin-top: 2rem;">
+  </div>
+
+  <div class="tab-content" id="dwa">
+    <p class="casestudy-body-text" style="margin-top: 2rem; color: var(--jka-color-surface-muted); margin-bottom: 20px;">
       While the Sketch Artists worked on the characters, the Designers use Gen-AI to mass-produce assets, refining the best assets through further image manipulation on Photoshop.
     </p>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
       <img src="../../assets/images/previz/F20 OUTLINE.png" class="user-journey-image-mrs" style="background:white; max-width:35%; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F20 OUTLINE.png')">
       <img src="../../assets/images/previz/F45 BG.png" class="user-journey-image-mrs" style="background:white; max-width:35%; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F45 BG.png')">
     </div>
-    <p class="casestudy-body-text" style="margin-top: 2rem;">
-      The final image is sent for approval, and barring changes, is sent as mutliple passes to the editor for use in their video edit. Sending passes enables further animation on the edit side.
+  </div>
+
+  <div class="tab-content" id="qace">
+    <p class="casestudy-body-text" style="margin-top: 2rem; color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      The final images are sent for approval, and barring changes, is sent as mutliple passes to the editor for use in their video edit. Sending passes enables further animation on the edit side.
     </p>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
       <img src="../../assets/images/previz/F48 BG.png" class="user-journey-image-mrs" style="background:white; max-width: 30%; cursor: pointer; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F48 BG.png')">
@@ -229,6 +241,12 @@
       <img src="../../assets/images/previz/F48 OUTLINE.png" class="user-journey-image-mrs" style="background:white; max-width: 30%; cursor: pointer; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F48 OUTLINE.png')">
     </div>
   </div>
+
+  </div>
+
+</section>
+
+<section class="page-container">
 
   <div class="casestudy-body-container" id="gafsai">
     <h2 class="casestudy-body-headline">
@@ -337,5 +355,23 @@ fetch('../../addons/header.html') .then(response => response.text()) .then(data 
     .getElementById("floatingImage")
     .addEventListener("click", scrollToTop);
 </script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('active'));
+
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
+</script>
+
+
 </body>
 </html>
