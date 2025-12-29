@@ -50,8 +50,9 @@
     <blockquote class="wp-block-quote">
       <p class="casestudy-body-text">
         <span>Summary:</span> 
-        I performed service design to develop a Human-in-the-Loop workflow for the studio. 
-        By integrating Generative AI, we solved major issues in creative production: Client Anxiety and Last-Minute Changes.
+        I performed service design to transition the studio from a reactive, freelance-style collaboration into a proactive production project. 
+        By building the Back Stage infrastructure to support a Human-in-the-Loop AI workflow, 
+        I gave the studio total control over the production timeline.
       </p>
     </blockquote>
     <h2 class="casestudy-body-headline">
@@ -121,44 +122,59 @@
   <div class="casestudy-body-container">
   <h2 class="casestudy-body-headline">Our Problem: Creativity is Subjective</h2>
   <p class="casestudy-body-text">
-    The traditional "Pre-viz" process was ambiguous at best. 
-    Directors struggled to articulate their vision, leading to vague briefs, excessive revisions, and delivery delays between creative teams and the Directors.
+    The traditional "Pre-viz" process was an operational bottleneck. 
+    It kept the studio in an reactive/freelance collaboration-esque environment, as seen in the As-Is workflow, where the studio 
+    couldn't move until the Director did the heavy lifting.    
   </p>
+
+  <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
+    <h4 id="summary-box-key-information">Key Pain Points</h4>
+    <p>• If a Director couldn't articulate their vision, the studio remained idle.</p>
+    <p>• Without a clear division between environment and character assets, any creative change required a total restart.</p>
+    <p>• Vague briefs and long silences led to excessive last-minute changes.</p>
+  </div>
 
   <img src="/assets/images/previz/swimlane-b.png" style="width: 100%;"/>
   <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">Fig 1. The "As-Is" workflow where the Director retained Creative control, and the headaches.</p>
   </div>
 
-  <div class="casestudy-body-container">
-    <h2 class="casestudy-body-headline">
-      My Approach
-    </h2>
-    <p class="casestudy-body-text">
-      Fully automated workflows were too risky due to the lack of control. Instead, I proposed a Human-in-the-Loop (HITL) system.
-    </p>
-    <p class="casestudy-body-text">
-      This approach made AI do all the "heavy lifting" of asset generation (textures, backgrounds, props) while human talent would work on composition, logic, and final polishes. 
-      Despite having made this decision in 2023 when AI was breaking through the commercial technology market, this aligns with recent 2025 findings that hybrid workflows are better than full automation for creative tasks (<a href="https://mitrix.io/blog/prompt-engineering-or-why-consistent-ai-results-require-tweaking/" target="_blank">MITRIX, 2025</a>).
-    </p>
-  </div>
-
   <div class="casestudy-body-container" id="gape">
   <h2 class="casestudy-body-headline">Process Engineering</h2>
+  <p class="casestudy-body-text">
+    Fully automated workflows were too risky due to the lack of control. Instead, I proposed a Human-in-the-Loop (HITL) system.
+  </p>
+  <p class="casestudy-body-text">
+    This approach made AI do all the "heavy lifting" of asset generation (textures, backgrounds, props) while human talent would work on composition, logic, and final polishes. 
+    Despite having made this decision in 2023 when AI was breaking through the commercial technology market, this aligns with recent 2025 findings that hybrid workflows are better than full automation for creative tasks (<a href="https://mitrix.io/blog/prompt-engineering-or-why-consistent-ai-results-require-tweaking/" target="_blank">MITRIX, 2025</a>).
+  </p>
   <p class="casestudy-body-text">
     The core task was designing the infrastructure that allows the studio to function with AI, rather than just using it for one-off tasks.
   </p>
 
-  <h3 class="casestudy-body-headline">Designing the Human-in-the-Loop (HITL) Framework</h3>
-  <p class="casestudy-body-text">
-    I established strict protocols for file formats and layer structures to ensure AI-generated assets remained editable. 
-    I also introduced "Alignment Check-ins," ensuring client approval on tone before any destructive design processes began.
-  </p>
-  <p class="casestudy-body-text">
-    Here, we benefitted from generating multiple backgrounds and having our sketch artist design the foreground characters so that we could quickly alternate between different choices with the client. This ensured that they would settle on something instead of endless revision loops.
-  </p>
+  <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
+    <h4 id="summary-box-key-information">Key Decisions</h4>
+    <p>• Shifted the technical burden from the Director to the Studio. High-Level Creative Decisions: The Director, Technical Know-How: The Studio.</p>
+    <p>• Established strict protocols for file formats and layer structures.</p>
+    <p>• Alternate between choices quickly, forcing decisions and ending the needless revision loops.</p>
+    <p>• Ensured the studio vetted AI outputs for quality and tone before any destructive design processes began.</p>
+  </div>
 
   <img src="/assets/images/previz/swimlane.png" style="width: 100%;"/>
-  <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">Fig 1. The "To-Be" workflow where I provided the studio with more control over their output.</p>
+  <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">Fig 2. The "To-Be" workflow where I provided the studio with more control over their output.</p>
+
+  <h2 class="casestudy-body-headline" style="margin: 2rem 0 0;">Maintaining Visual Cohesion</h2>
+  <p class="casestudy-body-text">
+    As the AI tool was literally launched two weeks before we started on the project, we were faced with an inherent GenAI issue that doesn't exist in a human artist's work: Style Drift. 
+    Unlike a human artist, AI could produce lighting, style, and color that varied wildly from one prompt to the next: one frame might look like Rembrandt while the next, like a Picasso.
+  </p>
+  <p class="casestudy-body-text">
+    We (the Studio Lead and I) solved that by tasking the Graphic Designers with using strict prompt structures and a confirmed post-generation color grading to lock-in the visual identity.
+  </p>
+  <p class="casestudy-body-text">
+    Because AI creates errors we now call "uncanny," the QA part ensured what was stylistically and physically logical.
+  </p>
+
+  
 
   </div>
 
@@ -171,32 +187,11 @@
 
   <div style="width: 50%; text-align: center;">
     <p>
-      I managed a pilot program to test the new workflow using a live project.
-      This served as a training implementation where I coached the team through the transition to AI generation and compositing.
+      I managed a pilot program to test the new workflow using a live project, ensuring the "Human-in-the-Loop" logic worked in a high-pressure environment.
     </p>
   </div>
 
-<div class="container-stats">
-  <!-- Column 1 -->
-  <div style="padding-right: 1rem;">
-    <h1>Communicating Value</h1>
-    <p>Studio could understand and allocate resources effectively.</p>
-  </div>
-
-  <!-- Column 2 -->
-  <div style="padding: 0 1rem;">
-    <h1>AI vs Human Work</h1>
-    <p>Taught the team to break scenes into AI-generated assets (BG/Textures) vs. Human-led assets.</p>
-  </div>
-
-  <!-- Column 3 -->
-  <div style="padding-left: 1rem;">
-    <h1>Multiple Passes</h1>
-    <p>to deliver assets in layers that the editor could animate.</p>
-  </div>
-</div>
-
-<div style="width: 100%; text-align: center;"><h3>Workflow explained through the Pilot Program</h3></div>
+<div style="width: 100%; text-align: center;"><h3>Visual Workflow Explanation</h3></div>
 
 <div class="casestudy-tabs">
   <div class="tab-buttons">
@@ -227,13 +222,13 @@
     </p>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
       <img src="../../assets/images/previz/F20 OUTLINE.png" class="user-journey-image-mrs" style="background:white; max-width:35%; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F20 OUTLINE.png')">
-      <img src="../../assets/images/previz/F45 BG.png" class="user-journey-image-mrs" style="background:white; max-width:35%; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F45 BG.png')">
+      <img src="../../assets/images/previz/F20 BG.png" class="user-journey-image-mrs" style="background:white; max-width:35%; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F45 BG.png')">
     </div>
   </div>
 
   <div class="tab-content" id="qace">
     <p class="casestudy-body-text" style="margin-top: 2rem; color: var(--jka-color-surface-muted); margin-bottom: 20px;">
-      The final images are sent for approval, and barring changes, is sent as mutliple passes to the editor for use in their video edit. Sending passes enables further animation on the edit side.
+      The final images are sent for approval, and barring changes, is sent as multiple passes to the editor for use in their video edit. Sending passes enables further animation on the edit side.
     </p>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: start;">
       <img src="../../assets/images/previz/F48 BG.png" class="user-journey-image-mrs" style="background:white; max-width: 30%; cursor: pointer; border: 1px solid var(--jka-color-theme);" onclick="openModal('../../assets/images/previz/F48 BG.png')">
@@ -254,7 +249,9 @@
     </h2>
     
     <p class="casestudy-body-text" style="margin-top: 2rem;">
-      The resulting document below is the operational manual for the studio. 
+      The resulting document is more than a workflow; it is the operational manual that moved the studio from a reactive model to a proactive, studio-led service. 
+      By establishing the Back Stage infrastructure, including GenAI prompts and QA, the studio now controls the quality of output and delivery regardless of client ambiguity. 
+      They could bring on a new freelancer and have them productive in hours rather than days.
     </p>
 
     <img src="/assets/images/previz/Service.webp" style="width: 100%;"/>
@@ -287,6 +284,10 @@
       <h5>
         In 2023, when Generative AI was just emerging, this project showed that AI adoption depends on workflow design. 
         Human-in-the-Loop workflows built team confidence and reduced revision cycles. 
+      </h5>
+      <h5>
+        By serving as both the Service Designer and the Project Manager (for the Pilot), I was able to do real-time iterations on the workflow. 
+        This design as we do approach allowed us to identify technical pain points that a purely theoretical blueprint would have missed.
       </h5>
       <h5>
         Through this, the Studio Increased organizational credibility by getting a head-start on new GenAI tools, resulting in approximately 30–40% revenue growth from repeat projects and client referrals.
