@@ -517,7 +517,7 @@ article > p {
 .lazy-image.loaded {
   filter: blur(0);               
 }
-
+  
 .wp-block-quote {
   border-left: 2px solid var(--jka-color-theme-weaker); padding-left: 1rem; margin-bottom: 2rem;
 }
