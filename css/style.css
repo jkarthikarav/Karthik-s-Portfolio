@@ -277,7 +277,7 @@ article:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-article > h3 {
+article > h4 {
     margin: 0 0 0.5rem; color: var(--jka-color-theme-stronger);
 }
 
@@ -1136,6 +1136,10 @@ article > p {
 .body-copy {
     margin-bottom: 30px;
     padding-right: 50px; 
+}
+
+.case-study-card-content-list .body-copy {
+  margin: 1rem 0;
 }
 
 .body-copy-impact {
