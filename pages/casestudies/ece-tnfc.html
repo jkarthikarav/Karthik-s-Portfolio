@@ -36,7 +36,7 @@
         <li class="breadcrumb-item active" aria-current="page">ECExToronto Nanofabrication Centre</li>
       </ol>
     </nav>
-    <p class="label-ui">UI Design</p> <p class="label-ui">WEB DESIGN</p> <p class="label-ui">FIGMA</p> <p class="label-ui">WORDPRESS</p> <p class="label-ui">EDUCATIONAL INSTITUTION</p>
+    <p class="label-ui">UI DESIGN</p> <p class="label-ui">WEB DESIGN</p> <p class="label-ui">ACCESSIBILITY</p> <p class="label-ui">CONTENT DESIGN</p> <p class="label-ui">EDUCATIONAL INSTITUTION</p>
     <h1>ECExToronto Nanofabrication Centre</h1>
     <h2>Migrating a Website, Simplifying Access</h2>
 
@@ -63,18 +63,18 @@
     <div class="main-button-row">
 
       <button class="primary-btn"
-              onclick="document.getElementById('ecepc').scrollIntoView({behavior: 'smooth'});">
+              onclick="document.getElementById('pc').scrollIntoView({behavior: 'smooth'});">
         Project Context
       </button>
 
       <button class="primary-btn"
-              onclick="document.getElementById('eceds').scrollIntoView({behavior: 'smooth'});">
+              onclick="document.getElementById('uid').scrollIntoView({behavior: 'smooth'});">
         UI Design
       </button>
 
       <button class="primary-btn"
-              onclick="document.getElementById('eceimp').scrollIntoView({behavior: 'smooth'});">
-        Web Development
+              onclick="document.getElementById('prjimp').scrollIntoView({behavior: 'smooth'});">
+        Project Impact
       </button>
 
     </div>
@@ -83,7 +83,7 @@
 
 <section class="page-container">
 
-  <div class="casestudy-section" id="ecepc">
+  <div class="casestudy-section" id="pc">
         <div class="casestudy-main-column">
           <h2 class="casestudy-main-text">
             The ECE department had a slowly bubbling up concern: the TNFC lab.
@@ -94,16 +94,18 @@
           <div class="casestudy-feature-card">
             <p>
               Although the TNFC lab is known to be a department-operated lab, its digital presence still conveyed a lack of connection. 
-              Their standalone website did not clearly communicate how the lab fit within the department’s research ecosystem.
+              The core problem was not visual. 
+              The TNFC website suffered from content fragmentation, unclear language, and buried compliance requirements that made access difficult.
             </p>
           </div>
           <div class="casestudy-feature-card">
             <p>
-              This was my final project at ECE. I was responsible for auditing, repurposing, and consolidating TNFC’s content to migrate it into ECE's site.
+             My primary responsibility was restructuring and rewriting existing content. UI design was used to support these content decisions.
             </p>
           </div>
           <div class="casestudy-feature-card">
             <p style="font-size: var(--jka-font-size-sm);">
+              This was my final project at ECE. <br>
             <strong>
               Disclaimer:
             </strong>
@@ -119,29 +121,48 @@
       My Integration Strategy
     </h2>
     <p class="casestudy-body-text">
-      Before opening Figma, I opened their previous website and a word document in a new tab.
+      Before opening Figma, I conducted a content audit of the existing TNFC website. 
+    </p>
+    <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">The Original Website's Homepage</p>
+    <img src="/assets/images/webp/tnfc-home-ori.webp" alt="ECE TNFC Main page full"
+      style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+    <p class="casestudy-body-text">
+      Each page was reviewed for purpose, audience, and required user action, with a focus on simplifying wherever procedural and compliance information was written, sequenced, and surfaced. 
     </p>
     <p class="casestudy-body-text">
-      I audited the TNFC website to understand its structure and content. 
-      The site had roughly twenty pages and five top-level navigation headings, but much was unnecessarily split across multiple pages due to the WordPress template. 
-      Users had to click through subpages to access related information that could have simply been presented together, making it harder to 
-      understand the lab’s offerings and access process.
+      Much of the content assumed prior knowledge or existed only to fill inherited WordPress templates.
+    </p>
+    <p class="casestudy-body-text">
+      The site contained roughly fifteen pages across five top-level navigation items, but critical information was fragmented across multiple subpages. 
+      Users were required to click repeatedly to understand how to access the lab, what training was mandatory, and which forms were required. 
+      This structure obscured the lab’s value and increased the risk of users missing required steps.
     </p>
 
-    <p>
-      After the audit, I consolidated the content into two pages within the ECE site: a TNFC overview page and a dedicated how to access subpage. 
-      Our Marketing team also made the decision to switch the lab's news into the department’s central “Latest News & Insights” section.
-      In my word doc, I rewrote all website content, reorganizing layouts to quickly use pre-existing departmental components and patterns. 
-      These patterns were mostly card groups and grids that I'd created during the course of my work at the department. 
-      This ensured the lab pages felt like it belonged rather than appearing as a separate, standalone property that was inserted without thought.
+    <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">The Original Website's User Access Pages</p>
+    <img src="/assets/images/webp/tnfc-access-orig1.webp" alt="ECE TNFC Main page full"
+    style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+    
+    <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">The Original Website's User Access Sub Page</p>
+    <img src="/assets/images/webp/tnfc-access-orig2.webp" alt="ECE TNFC Main page full"
+    style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+
+    <p class="casestudy-body-text">
+      All the first level navigation items were in the same template as the User Access page, and the sub pages in the same template. 
+      I was led to understand that these were a generic blog style template available on WordPress.
+    </p>
+    
+    <p class="casestudy-body-text">
+      Content consolidation was driven by simplifying user intent. 
+      Descriptive content answering what TNFC is, what it offers, and who it serves was grouped into a single overview page.
+      Procedural content answering how to gain access, including forms, fees, training, and billing, was rewritten and consolidated into a dedicated User access page.
     </p>
 
     <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
       <h4 id="summary-box-key-information">Key Findings from the Audit</h4>
-      <p>• Content was unnecessarily divided across multiple pages, fragmenting the user journey.</p>
-      <p>• Navigation was deep and inconsistent, making it difficult to find key information about access and facilities.</p>
-      <p>• News and updates about TNFC existed in a separate page, disconnected from overall departmental communications.</p>
-      <p>• Visual design and layouts did not align with ECE standards.</p>
+      <p>• Content was written as descriptive narrative & unnecessarily divided across multiple pages.</p>
+      <p>• Navigation was deep, burying important actions within paragraphs rather than surfacing them.</p>
+      <p>• Pages mixed audiences without signaling which content applied to which users.</p>
+      <p>• Visual design, Language, and Site Layouts reflected internal organizational decisions, not ECE or UofT guidelines.</p>
     </div>
 
   </div>
@@ -177,16 +198,22 @@
 
 <section class="page-container">
 
-  <div class="casestudy-body-container" id="eceds">
+  <div class="casestudy-body-container" id="uid">
     <h2 class="casestudy-body-headline">
       UI Design
     </h2>
+
+    <p class="casestudy-body-text">
+      The original TNFC website relied heavily on long-form paragraphs and unecessarily deep navigation to display their user access requirements. 
+      Mandatory steps such as agreements, forms, and training videos were embedded within hyperlinked text, making it easy for users to miss them. 
+      These are the three most crucial things I aimed to address directly through both the rewritten content and the UI. 
+    </p>
 
     <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
       <h4 id="summary-box-key-information">Key UI Decisions - TNFC (Main Page)</h4>
       <p>• The hero immediately communicates TNFC’s scale, cleanroom environment, and technical sophistication.</p>
       <p>• Structured sections (intro, research areas, facility highlights) allow users to quickly understand the lab’s scope and capabilities.</p>
-      <p>• Sidebar CTAs (“User Access,” “Client Services,” “Contact TNFC”) guide users toward actionable next steps.</p>
+      <p>• Additional CTAs (“User Access,” “Client Services,” “Contact TNFC”) use action-oriented language.</p>
       <p>• Including contact details for faculty and technical staff supports engagement.</p>
     </div>
 
@@ -206,7 +233,7 @@
               style="width: 100%; height: 100%; object-fit: contain; display: block;" />
   </div>
 
-  <div class="casestudy-body-container" id="eceimp">
+  <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
       Web Development
     </h2>
@@ -234,11 +261,9 @@
 
   </div>
 
-  
-
 </section>
 
-<section class="learn">
+<section class="learn" id="prjimp">
 
   <!-- Main content container -->
   <div class="mcc">
@@ -246,27 +271,27 @@
     <div class="mmc-content">
       <h1>Why This Page Mattered</h1>
       <h5>
-        Some would say I designed a webpage for a research lab, but this was so much more.
+        This was not just a webpage for a research lab. This project was about designing language and structure that made the website more usable.
       </h5>
       <h5>
-        TNFC had historically existed as an independent digital entity, and its website reflected that independence: 
-        over twenty pages spread critical information across multiple subpages, forcing users to click through to find what mattered. 
-        In 2025, it was essential that its digital presence finally told a story that aligned with the ECE department.
+        TNFC had long existed as a separate digital entity. 
+        Its website reflected this with its own independent news and blog feed.
       </h5>
       <h5>
-        I was given this project in February 2025, and by the first week of April, the pages were live. 
-        No fancy focus groups, no surveys: just careful content auditing and stakeholder workshopping.
-        I determined what content was essential and what could be consolidated. By reducing more than twenty pages to just two core pages, I was able to tell more with less.
-        Each section, from key research areas to facility highlights and access requirements, 
-        was positioned strategically to communicate TNFC’s scale without overwhelming the visitor. 
+        I was assigned this, my last project for the department, in February 2025. The pages went live by late March/early April. 
+        My work relied on content auditing and stakeholder workshops. 
+        I identified what mattered, consolidated what did not, and reduced more than fifteen pages into two core pages that communicated more with less.
       </h5>
-
       <h5>
-        Not every UX process is necessary for every project. 
-        Here, every decision was informed by compliance and regulation: user access, mandatory training, billing, and safety protocols had to be accurate and actionable. 
-        At the same time, the pages needed to feel like a natural part of ECE, visually and structurally, while letting TNFC’s value shine. 
-        The result is the lab’s story: positioning TNFC as an integral, high-value research facility/laboratory within the department.
+        Every design decision was driven by compliance and regulation, including access, training, billing, and safety. 
+        At the same time, the pages were designed to feel native to ECE while clearly articulating TNFC’s value. 
+        The result positions TNFC as a core, high-value research facility within the department.
       </h5>
+      <h5>
+        A Humble Brag: The pages were built with modular, reusable components to support future migrations across ECE research labs, if any.
+        Long after my departure, they launched the Grid Modernization Centre page, which reused multiple components and the 
+        custom hero banner originally designed for TNFC, demonstrating the strength of my designs and my forward-looking systems design.
+      </h5> 
     </div>
 
   </div>
