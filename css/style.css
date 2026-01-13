@@ -71,12 +71,28 @@ h6 {
   color: var(--jka-color-theme);
 }
 
-p {
+a, p {
   font-family: var(--jka-font-family-body);
   font-size: var(--jka-font-size-md);
   line-height: var(--jka-line-height-body);
   color: var(--jka-color-text-default);
   margin: 1em 0;
+}
+
+.text-large {
+  font-family: var(--jka-font-family-body);
+  font-size: var(--jka-font-size-2xl);
+  line-height: var(--jka-line-height-body);
+  font-weight: 700;
+  color: var(--jka-color-theme);
+  margin: 1em 0;
+}
+
+.text-mid {
+  font-family: var(--jka-font-family-body);
+  font-size: var(--jka-font-size-md);
+  font-weight: 600;
+  line-height: var(--jka-line-height-body);
 }
 
 @media (max-width: 768px) {
@@ -1025,8 +1041,14 @@ article > p {
     color: var(--jka-color-text-inv-default);
   }
 
-  .contact-item p:hover {
+  .contact-item a:hover {
     color: var(--jka-color-theme);
+  }
+
+  .contact-item a {
+    color: var(--jka-color-text-inv-default);
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .contact-item.locale {
@@ -1197,7 +1219,7 @@ article > p {
 }
 
 .casestudy-body-headline {
-  margin-top: 0.25rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem; 
   color: var(--jka-color-theme-strong);
 }
@@ -1512,6 +1534,7 @@ margin-bottom: 2rem; max-width: 1200px;
 
 .case-study-card-list:hover {
   background-color: var(--jka-color-surface-subtle);
+  cursor: pointer;
 }
 
 .case-study-card-content-list {

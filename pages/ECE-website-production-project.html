@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Production Design</title>
+  
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
+  </noscript>
+
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+<div id="header-placeholder"></div>
+
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
+
+<section class="header-card-ui">
+
+  <div class="banner-ui">
+    <img src="/assets/images/hero-banners/ECE-WPD.webp" alt="Banner image" class="banner-img-ui" />
+  </div>
+
+  <div class="content-container-ui">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Web Production at ECE, U of T</li>
+    </ol>
+  </nav>
+
+  <h1>Website Production Design</h1>
+
+  <div class="author-profile-ui">
+    <div class="author-info-ui">
+      <p class="author-name-ui">For: the University of Toronto, The Edward S. Rogers Sr. Department of Electrical and Computer Engineering (ECE at U of T)</p>
+      <p class="published-date-ui">Work Highlights (June 2024 - March 2025)</p>
+    </div>
+  </div>
+
+  <p class="casestudy-body-text">
+    I led production design and WordPress implementation, 
+    delivering a more accessible experience through standardized sections/components and improved usability in support of key business objectives.
+  </p>
+
+  <p class="casestudy-body-text">
+    I navigated the full redesign and ongoing management of pages on both the public website and a restricted intranet, 
+    covering site audits, Figma-based wireframing from low to high fidelity, stakeholder collaboration, and hands-on WordPress delivery.
+    Alongside production work, I supported content strategy and information architecture, 
+    shaping page hierarchies and navigation patterns that kept information easy for teams to manage.
+  </p>
+
+  <p class="casestudy-body-text">
+    My phase reflected a shift in the department’s digital presence, highlighting their research and academic impact, 
+    showcasing events and learning opportunities intentionally, and tailoring content for both prospective students, faculty, and staff. 
+    Maintaining both platforms allowed the department to stay agile with updates while ensuring a forward-looking online experience.
+  </p>
+
+  <p class="casestudy-body-text" style="font-size: var(--jka-font-size-sm);">
+    <strong>
+      Disclaimer:
+    </strong>
+      As this public website continues to evolve, the pages may differ from the versions shown in the case studies.
+      I have since left the organization, and any updates made thereafter are at their discretion.
+  </p>
+
+  <h3 class="casestudy-body-headline" style="margin-top: 2rem;">Related Case Studies</h3>
+  
+  <p class="captions">Click on Each Case Study to view them.</p>
+
+  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Read: ECExToronto Nanofabrication Centre: Migrating a Website, Simplifying Access</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Although the TNFC lab is known to be a department-operated lab, its digital presence still conveyed a lack of connection. 
+        Their standalone website did not clearly communicate how the lab fit within the department’s research ecosystem.
+      </p>
+      <p>Shipped Mar 2025</p>
+    </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Read: ECE Homepage Redesign: Rebuilding Information Flow for Recruitment</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Fragmented information flow was hindering student recruitment and departmental engagement. I led the restructuring in Figma and personally handled the WordPress implementation.
+      </p>
+      <p>Shipped Jan 2025</p>
+    </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/ece-industry-opportunities.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Read: ECE Industry Opportunities: Building for Industry Partners ↗</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        The ECE department had an immediate gap on their website: Industry engagement. 
+        Marketing needed a dedicated Industry Opportunities page that could support sponsorship discussions and augment outreach.
+      </p>
+      <p>Shipped Dec 2024</p>
+    </div>
+  </div>
+
+  <h3 class="casestudy-body-headline">
+    My Approach
+  </h3>
+  <p class="casestudy-body-text">
+    My approach centered on grounding all production work in real user needs while aligning closely with departmental goals and priorities.
+  </p>
+
+  <ol class="process-list">
+      <li class="process-list-item">
+        <h3 class="process-list-heading">Understand</h3>
+        <p>
+          I reviewed the website through UX research and stakeholder meetings to learn how students, faculty, and visitors navigate and make decisions online. 
+          This insight helped streamline information paths, enabling users to find what they need more quickly and with greater ease.
+        </p>
+      </li>
+
+      <li class="process-list-item">
+        <h3 class="process-list-heading">Examine</h3>
+        <p>
+          I audited existing content and layouts to understand how design patterns affected engagement. 
+          By improving content, I reduced cognitive load and made more thoughtful design decisions.
+        </p>
+      </li>
+
+      <li class="process-list-item">
+        <h3 class="process-list-heading">Reframe</h3>
+        <p>
+          I designed and iterated using continuous feedback, with a focus on interactions. 
+          This mindset guided both implementation and post-launch refinements to ensure the experience remained effective.
+        </p>
+      </li>
+  </ol>
+
+  <h2 class="casestudy-body-headline">
+    What I did 
+  </h2>
+    <h3 class="casestudy-body-headline">
+      Building and QA for web
+    </h3>
+    <p class="casestudy-body-text">
+      I created Figma mockups to visualize design updates before moving into WordPress implementation. 
+      These ranged from full page redesigns to targeted refinements, such as adjusting layouts, components, or introducing new content blocks.
+    </p>
+    <p class="casestudy-body-text">
+      I prioritized standardizing UI, which reduced design-to-development gaps and helped speed up delivery timelines. 
+      In parallel, I managed weekly content update workflow through an Asana form, allowing staff and faculty requests to be prioritized and implemented.
+    </p>
+    <p class="casestudy-body-text" style="margin: 0 0 2rem;">
+      This approach gave stakeholders early visibility into proposed changes before development began. By iterating through mockups first, 
+      I minimized rework while remaining aligned with University of Toronto branding standards (<a href="https://brand.utoronto.ca/" target="_blank" rel="noopener" style="text-decoration:underline;">available publicly here</a>).
+    </p>
+    <img src="/assets/images/blogs/Grad.webp" style="width: 100%; height: 100%; object-fit: contain; display: block; max-width: 1200px;" />
+    <p class="caption-text" style="font-size: small; margin: 1rem 0;">Fig. 1: Layout Adjustment Mockups</p>
+    <p class="casestudy-body-text" style="margin: 2rem 0;">
+      The Events page best showcases this shift in production thinking. 
+      Previously, it relied on the default WordPress calendar widget. 
+      While functional, it offered little support for helping users understand information. 
+      The redesign transformed the page into a more contextual experience that made upcoming events easier to find and understand.
+    </p>
+    <img src="/assets/images/blogs/Events.webp" style="width: 100%; height: 100%; object-fit: contain; display: block; max-width: 1200px;" />
+    <p class="caption-text" style="font-size: small; margin: 1rem 0;">Fig. 2: Events page Mockup I presented</p>
+    <p class="casestudy-body-text" style="margin: 2rem 0;">
+      Being told that the UI needed a refresh, in my earliest Figma mockup (pictured above), I focused on developing a highly customized component 
+      that would have required building a new widget from the ground up. 
+      Through further stakeholder and technical team discussions, I realized that enhancing the existing widget would solve our problem faster. 
+      This approach reduced development effort, improved discoverability and usability without over-engineering.
+    </p>
+    <img src="/assets/images/blogs/Events2.webp" style="width: 100%; height: 100%; object-fit: contain; display: block; max-width: 1200px;" />
+    <p class="caption-text" style="font-size: small; margin: 1rem 0;">Fig. 3: Events page that I implemented</p>
+    <p class="casestudy-body-text" style="margin: 2rem 0 0;">
+      Guided by a focus on inclusive design, I conducted accessibility and content audits/reviews across departmental web pages to assess 
+      alignment with WCAG standards and UofT guidelines. 
+      Using WAVE and Google Lighthouse, I personally checked the accessibility scores of pages I had built to ensure the CMS reflected the clear hierarchy defined in Figma.
+    </p>
+    <p class="casestudy-body-text">
+      For instance, the Events page scored 95 out of 100, and the Toronto Nanofabrication Centre (TNFC) site scored 99 out of 100. 
+      These checks served as self-validation of build quality and confirmed that the implementations met high accessibility and web standards.
+    </p>
+
+  <h3 class="casestudy-body-headline">
+    Key Pages built
+  </h3>
+
+  <p class="captions">Click on Each Page to open them.</p>
+
+  <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">ECE Events ↗</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Contextualized static events widget into an informative page.
+      </p>
+      <p>Original Page | Shipped | March 2025</p>
+    </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/', '_blank')">
+      <div class="case-study-card-content-list">
+        <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Toronto Nanofabrication Centre ↗</p>
+        <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+          Migrated independent TNFC lab website into the main ECE site.
+        </p>
+        <p>Original Page | Shipped | March 2025</p>
+      </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/', '_blank')">
+      <div class="case-study-card-content-list">
+        <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">ECE Department’s Home Page ↗</p>
+        <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+          Led homepage redesign to better engage prospective students.
+        </p>
+        <p>Redesign | Shipped | January 2025</p>
+      </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/industry-opportunities/', '_blank')">
+      <div class="case-study-card-content-list">
+        <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Industry Opportunities ↗</p>
+        <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+          Created a new marketing page to showcase partnership opportunities targeting Industry Partners.
+        </p>
+        <p>Original Page | Shipped | December 2024</p>
+      </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/research/studentresearchopportunities/', '_blank')">
+      <div class="case-study-card-content-list">
+        <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Student Research Opportunities ↗</p>
+        <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+          Developed a new research sub page to proide students with access to research opportunities.
+        </p>
+        <p>Original Page | Shipped | December 2024</p>
+      </div>
+  </div>
+
+  <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/ece-latest-news-and-insights/', '_blank')">
+      <div class="case-study-card-content-list">
+        <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Latest News and Insights ↗</p>
+        <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+          Created a new page to showcase news and blog posts on the website.
+        </p>
+        <p>Original Page (Implementation Only) | Shipped | December 2024</p>
+      </div>
+  </div>
+
+  </div>
+
+</section>
+
+  <div class="learn" style="background-color: var(--jka-color-surface-default);">
+    
+  </div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyImages = document.querySelectorAll(".lazy-image");
+
+  lazyImages.forEach(img => {
+    const realSrc = img.dataset.src;
+    if (!realSrc) return;
+
+    // Preload the real image in the background
+    const tempImg = new Image();
+    tempImg.src = realSrc;
+
+    // Once loaded, wait 0.5s before replacing the placeholder
+    tempImg.onload = () => {
+      setTimeout(() => {
+        img.src = realSrc;
+        img.classList.add("loaded"); // optional: remove blur if CSS used
+      }, 500); // 500ms delay
+    };
+  });
+});
+</script>
+
+
+<script>
+  // Fetch and insert footer HTML
+  fetch('/addons/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+</script>
+
+<script>
+fetch('../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
+</script>
+
+
+</body>
+</html>
