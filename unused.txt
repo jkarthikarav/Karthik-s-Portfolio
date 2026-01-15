@@ -78,7 +78,7 @@
           Projected User Impact: Reduced cognitive load and faster access to essential information.
         </p>
         
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/tmc-ia-redesign.html', '_blank');" style="width: fit-content;">
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html', '_blank');" style="width: fit-content;">
           View Case Study →
         </button>
     </div>

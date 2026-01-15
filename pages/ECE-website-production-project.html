@@ -76,40 +76,91 @@
       I have since left the organization, and any updates made thereafter are at their discretion.
   </p>
 
+  <div class="case-study-page-selector">
+  <select id="caseStudySelect">
+    <option value="" selected disabled>-- Select a Page --</option>
+    <option value="https://www.ece.utoronto.ca/events/">ECE Events</option>
+    <option value="https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/">Toronto Nanofabrication Centre</option>
+    <option value="https://www.ece.utoronto.ca/">ECE Department’s Home Page</option>
+    <option value="https://www.ece.utoronto.ca/industry-opportunities/">Industry Opportunities</option>
+    <option value="https://www.ece.utoronto.ca/research/studentresearchopportunities/">Student Research Opportunities</option>
+    <option value="https://www.ece.utoronto.ca/ece-latest-news-and-insights/">Latest News and Insights</option>
+  </select>
+
+  <button
+    class="primary-btn"
+    type="button"
+    onclick="openSelectedCaseStudy()"
+  >
+    Open
+  </button>
+  </div>
+
   <h3 class="casestudy-body-headline" style="margin-top: 2rem;">Related Case Studies</h3>
   
-  <p class="captions">Click on Each Case Study to view them.</p>
+  <div class="collection-card">
 
-  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank')">
+  <div class="banner-ui banner-collection-specific">
+    <img src="/assets/images/hero-banners/ECE-TNFC.webp" alt="Banner image" class="banner-img-ui"/>
+  </div>
+
+  <div class="content-container-ui card-collection-specific" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank')">
     <div class="case-study-card-content-list">
-      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Read: ECExToronto Nanofabrication Centre: Migrating a Website, Simplifying Access</p>
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">ECExToronto Nanofabrication Centre: Migrating a Website, Simplifying Access ↗</p>
       <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
         Although the TNFC lab is known to be a department-operated lab, its digital presence still conveyed a lack of connection. 
         Their standalone website did not clearly communicate how the lab fit within the department’s research ecosystem.
       </p>
       <p>Shipped Mar 2025</p>
+      <button class="text-btn">
+        Read Case Study →
+      </button>
     </div>
   </div>
 
-  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank')">
+  </div>
+
+  <div class="collection-card">
+
+  <div class="banner-ui banner-collection-specific">
+    <img src="/assets/images/hero-banners/ECE_2.webp" alt="Banner image" class="banner-img-ui"/>
+  </div>
+
+  <div class="content-container-ui card-collection-specific" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank')">
     <div class="case-study-card-content-list">
-      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Read: ECE Homepage Redesign: Rebuilding Information Flow for Recruitment</p>
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">ECE Homepage Redesign: Rebuilding Information Flow for Recruitment ↗</p>
       <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
         Fragmented information flow was hindering student recruitment and departmental engagement. I led the restructuring in Figma and personally handled the WordPress implementation.
       </p>
       <p>Shipped Jan 2025</p>
+      <button class="text-btn">
+        Read Case Study →
+      </button>
     </div>
   </div>
 
-  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/ece-industry-opportunities.html', '_blank')">
+  </div>
+
+  <div class="collection-card">
+
+  <div class="banner-ui banner-collection-specific">
+    <img src="/assets/images/hero-banners/ECE-IO.webp" alt="Banner image" class="banner-img-ui" style="object-position: center;"/>
+  </div>
+
+  <div class="content-container-ui card-collection-specific" onclick="window.open('/pages/casestudies/ece-industry-opportunities.html', '_blank')">
     <div class="case-study-card-content-list">
-      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Read: ECE Industry Opportunities: Building for Industry Partners ↗</p>
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">ECE Industry Opportunities: Building for Industry Partners ↗</p>
       <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
         The ECE department had an immediate gap on their website: Industry engagement. 
         Marketing needed a dedicated Industry Opportunities page that could support sponsorship discussions and augment outreach.
       </p>
       <p>Shipped Dec 2024</p>
+      <button class="text-btn">
+        Read Case Study →
+      </button>
     </div>
+  </div>
+
   </div>
 
   <h3 class="casestudy-body-headline">
@@ -194,8 +245,6 @@
   <h3 class="casestudy-body-headline">
     Key Pages built
   </h3>
-
-  <p class="captions">Click on Each Page to open them.</p>
 
   <div class="case-study-card-list" onclick="window.open('https://www.ece.utoronto.ca/events/', '_blank')">
     <div class="case-study-card-content-list">
@@ -327,6 +376,18 @@ fetch('../addons/header.html') .then(response => response.text()) .then(data => 
   });
 </script>
 
+<script>
+  function openSelectedCaseStudy() {
+    const select = document.getElementById('caseStudySelect');
+    const url = select.value;
+
+    if (!url) {
+      return;
+    }
+
+    window.open(url, '_blank');
+  }
+</script>
 
 <script>
   function scrollToTops() {

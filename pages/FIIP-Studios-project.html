@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Website & Pitch Deck Design</title>
+  
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
+  </noscript>
+
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+<div id="header-placeholder"></div>
+
+<img
+  src="/assets/icons/back-to-top.png"
+  alt="floating image button"
+  id="floatingImage"
+  onclick="scrollToTops()"
+/>
+
+<section class="header-card-ui">
+
+  <div class="banner-ui">
+    <img src="/assets/images/hero-banners/FIIP.webp" alt="Banner image" class="banner-img-ui" />
+  </div>
+
+  <div class="content-container-ui">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Fix It In Post Studios</li>
+    </ol>
+  </nav>
+
+  <h1>Marketing Website & Pitch Deck Design</h1>
+
+  <div class="author-profile-ui">
+    <div class="author-info-ui">
+      <p class="author-name-ui">For: Fix It In Post Studios</p>
+      <p class="published-date-ui">Work Highlights (Aug 2020 - Aug 2021, Jun – Aug 2023)</p>
+    </div>
+  </div>
+
+  <p class="casestudy-body-text">
+    The company was a Film & Video Production Solutions Studio providing customized Video editing, VFX, and advertising solutions for clients on a case-by-case basis.
+  </p>
+
+  <p class="casestudy-body-text">
+    As an early team member, I contributed video and visual design expertise to media and advertising projects. 
+    I supported investor-facing and marketing initiatives, then specialized in producing instructional videos, corporate content, and motion graphics. 
+    I worked closely with production houses, internal design teams, and client stakeholders to deliver clear, audience-ready media.
+  </p>
+
+  <div class="collection-card">
+
+  <div class="banner-ui banner-collection-specific">
+    <img src="/assets/images/hero-banners/PDW.webp" alt="Banner image" class="banner-img-ui"/>
+  </div>
+
+  <div class="content-container-ui card-collection-specific" onclick="window.open('/pages/casestudies/interactive-web-experience-for-capital-raising.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Fix It In Post Studios: Interactive Web Experience for Capital Raising ↗</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Helped Client in Film Pre-Production phase differentiate their project during funding rounds. The approached us with a PPT deck request and we created the most apt solution for their requirements.
+      </p>
+      <p>Shipped Aug 2021</p>
+      <button class="text-btn">
+        Read Case Study →
+      </button>
+    </div>
+  </div>
+
+  </div>
+
+  <p class="casestudy-body-text">
+    Almost Two years after leaving the company, I was re-hired for a short term project. 
+    They needed help transitioning the studio from experimenting with GenAI tools to executing it as a service.
+    Their ask was simple: Design a service layer to make GenAI-assisted production billable.
+  </p>
+
+  <div class="collection-card">
+
+  <div class="banner-ui banner-collection-specific">
+    <img src="/assets/images/hero-banners/GENAI.webp" alt="Banner image" class="banner-img-ui"/>
+  </div>
+
+  <div class="content-container-ui card-collection-specific" onclick="window.open('/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Fix It In Post Studios: Operationalizing Generative AI for Creative Pipelines ↗</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        The studio needed to transition from ad-hoc AI experimentation to a billable service. 
+        I developed a service blueprint that integrated GenAI into the pre-visualization process.
+      </p>
+      <p>Implemented Jul 2023</p>
+      <button class="text-btn">
+        Read Case Study →
+      </button>
+    </div>
+  </div>
+
+  </div>
+
+
+  </div>
+
+</section>
+
+  <div class="learn" style="background-color: var(--jka-color-surface-default);">
+    
+  </div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyImages = document.querySelectorAll(".lazy-image");
+
+  lazyImages.forEach(img => {
+    const realSrc = img.dataset.src;
+    if (!realSrc) return;
+
+    // Preload the real image in the background
+    const tempImg = new Image();
+    tempImg.src = realSrc;
+
+    // Once loaded, wait 0.5s before replacing the placeholder
+    tempImg.onload = () => {
+      setTimeout(() => {
+        img.src = realSrc;
+        img.classList.add("loaded"); // optional: remove blur if CSS used
+      }, 500); // 500ms delay
+    };
+  });
+});
+</script>
+
+
+<script>
+  // Fetch and insert footer HTML
+  fetch('/addons/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+</script>
+
+<script>
+fetch('../addons/header.html') .then(response => response.text()) .then(data => { document.getElementById('header-placeholder').innerHTML = data; }) .catch(error => console.error("Error loading header:", error));
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const floatingImage = document.getElementById("floatingImage");
+    const learnSection = document.querySelector(".learn");
+
+    if (!floatingImage || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floatingImage.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+<script>
+  function openSelectedCaseStudy() {
+    const select = document.getElementById('caseStudySelect');
+    const url = select.value;
+
+    if (!url) {
+      return;
+    }
+
+    window.open(url, '_blank');
+  }
+</script>
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("floatingImage")
+    .addEventListener("click", scrollToTop);
+</script>
+
+
+</body>
+</html>
