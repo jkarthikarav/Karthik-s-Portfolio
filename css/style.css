@@ -43,6 +43,7 @@
   --jka-letter-spacing-tight: -0.03px;
 }
 
+
 h1, h2, h3, h4, h5 {
   font-family: var(--jka-font-family-heading);
   line-height: var(--jka-line-height-heading);
@@ -107,9 +108,15 @@ a, p {
   #mary-persona {
     display: none;
   }
+  .desktop1024 {
+    display: none;
+  }
+  .desktop1440 {
+    display: none;
+  }  
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .root {
     --jka-font-size-sm: 14px;
 --jka-font-size-md: 16px;
@@ -118,7 +125,21 @@ a, p {
 --jka-font-size-4xl: 28px;
 --jka-font-size-6xl: 36px;
   }
-  
+  .mobile768 {
+    display: none;
+  }
+  .desktop1440 {
+    display: none;
+  }  
+}
+
+@media (max-width: 1440px) {
+  .mobile768 {
+    display: none;
+  }
+  .desktop1024 {
+    display: none;
+  }
 }
 
 html {

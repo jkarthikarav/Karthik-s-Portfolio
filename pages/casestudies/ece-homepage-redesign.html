@@ -68,6 +68,11 @@
       </button>
 
       <button class="primary-btn"
+              onclick="document.getElementById('impact').scrollIntoView({behavior: 'smooth'});">
+        Project Impact
+      </button>
+
+      <button class="primary-btn"
               onclick="document.getElementById('ecedn').scrollIntoView({behavior: 'smooth'});">
         UX Research
       </button>
@@ -82,47 +87,52 @@
         Web Development
       </button>
 
+      <button class="primary-btn"
+              onclick="document.getElementById('learn').scrollIntoView({behavior: 'smooth'});">
+        What I Learned
+      </button>
+
     </div>
   </div>
 </section>
 
 <section class="page-container">
 
-  <div class="casestudy-section" id="ecepc">
-        <div class="casestudy-main-column">
-          <h2 class="casestudy-main-text">
-            The ECE department wanted a homepage that could engage with prospective students while accurately reflecting its identity.
-          </h2>
-        </div>
+  <div class="casestudy-body-container" id="ecepc">
+      <h2 class="casestudy-body-headline">
+        The Challenge
+      </h2>
+        
+      <p class="casestudy-body-text">
+        ECE at U of T maintained a web presence that had become outdated and unfocused, featuring legacy content, competing calls to action, and a lack of clear departmental identity.
+      </p>
+      <p class="casestudy-body-text">
+        The department’s initial objective was a homepage that could better engage prospective students while more accurately reflecting its academic identity.
+      </p>
+      <p class="casestudy-body-text">
+        It became clear that the department required a comprehensive redesign focused on addressing these three pain points:
+      </p>
+      <dl class="dl-showc">
+        <dt class="dt-showc">The presence of legacy, outdated content.</dt>
+        <dt class="dt-showc">Fractured user journey for students seeking essential academic information and career opportunities.</dt>
+        <dt class="dt-showc">Lack of visual and structural alignment with University of Toronto and FASE* branding.</dt>
+      </dl>
+      <p style="font-size: var(--jka-font-size-sm);">
+        *The ECE Department falls under the University of Toronto's Faculty of Applied Sciences and Engineering (FASE). 
+      </p>
+      <p class="casestudy-body-text">
+        I led the redesign, improving information flow and accessibility across the homepage and funneling that into pages that provided most value.
+      </p>
+      <p style="font-size: var(--jka-font-size-sm); margin-top: 1rem;">
+        <strong>
+          Disclaimer:
+        </strong>
+        As this public website continues to evolve, the page may differ from the versions shown below.
+        I have since left the organization, and any updates made thereafter are at their discretion.
+      </p>
 
-        <div class="casestudy-side-column">
-          <div class="casestudy-feature-card">
-            <dl class="dl-showc">
-              <dt class="dt-showc">Previous content was outdated.</dt>
-              <dt class="dt-showc">Students struggled to find programs, events, or co-op opportunities, which I addressed across the homepage and related pages like Events and Industry Opportunities.</dt>
-              <dt class="dt-showc">The homepage needed to be aligned closer with university branding.</dt>
-            </dl>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>
-              I led the redesign, improving information flow and accessibility across the homepage and related student engagement pages.
-            </p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p style="font-size: var(--jka-font-size-sm);">
-            <strong>
-              Disclaimer:
-            </strong>
-              As this public website continues to evolve, the page may differ from the versions shown.
-              I have since left the organization, and any updates made thereafter are at their discretion.
-            </p>
-          </div>
-        </div>
-  </div>
-
-  <div class="casestudy-body-container">
     <h2 class="casestudy-body-headline">
-      My Process
+      My Approach
     </h2>
     <p class="casestudy-body-text">
       The homepage required a redesign to modernize its structure, improve content visibility, and introduce interactive features. I started with a content audit and secondary research.
@@ -130,39 +140,69 @@
 
     <ol class="process-list">
       <li class="process-list-item">
-        <h3 class="process-list-heading">Content Audit & Discovery Research</h3>
+        <h3 class="process-list-heading">Examine</h3>
         <p>
-          Reviewed fellow faculty sites and other engineering websites to spot outdated content, missing CTAs, and hierarchy issues.
+          Content Audit & Discovery Research: Reviewed fellow faculty sites and other engineering websites to define industry-standard patterns, establish a hierarchy, and identify content gaps.
         </p>
       </li>
 
       <li class="process-list-item">
-        <h3 class="process-list-heading">Synthesizing Insights, Ideating, Mockups</h3>
+        <h3 class="process-list-heading">Reframe</h3>
         <p>
-          Created wireframes and mockups to map content flow and guide users through key information.
+          Synthesizing Insights, Ideating, Mockups: Created wireframes and user flows to map content flow and guide users through key information.
         </p>
       </li>
 
       <li class="process-list-item">
-        <h3 class="process-list-heading">Stakeholder Presentations & Refining</h3>
+        <h3 class="process-list-heading">Refine</h3>
         <p>
-          Shared designs with leadership and iterated based on feedback from admins, students, and marketing.
+          Stakeholder Presentations: Shared designs with leadership and iterated based on feedback from admins, students, and marketing.
         </p>
       </li>
 
       <li class="process-list-item">
-        <h3 class="process-list-heading">Complete Build to LIVE site</h3>
+        <h3 class="process-list-heading">Build</h3>
         <p>
-          Built modular sections in WordPress, added animations, and custom code where needed.
+          WordPress Development: Built modular sections in WordPress, added animations, and custom code where needed.
         </p>
       </li>
     </ol>
 
   </div>
 
+</section>
+
+<section class="container" style="display: flex; flex-direction: column; align-items: center;" id="impact">
+
+<div style="width: 100%; text-align: center;"><h2>Project Impact</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>Improved Discovery</h1>
+    <p>Improved site-wide discovery, resulting in longer session times and stronger traffic flow to internal pages.</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>Reduced Time-to-Value</h1>
+    <p>Optimized the user journey to significantly reduce time-to-value for critical academic and program information.</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>Positive Impact on Marketing</h1>
+    <p>Transformed the homepage into a marketing asset, allowing staff to promote student life-focused media content and departmental events.</p>
+  </div>
+</div>
+
+</section>
+
+<section class="page-container">
+
   <div class="casestudy-body-container" id="ecedn">
     <h2 class="casestudy-body-headline">
-      Research: Designing the Homepage Narrative
+      Examining
     </h2>
     <p class="casestudy-body-text">
       Collaborated with department admins and stakeholders from co-op, undergraduate, graduate, and events teams to 
@@ -179,6 +219,73 @@
     <a href="../../assets/images/webp/ece-old-homepage.webp" target="_blank" rel="noopener noreferrer">
       <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Old Homepage Thumbnail" style="width: 50%; margin-bottom: 2rem;"/>
     </a>
+
+    <p class="casestudy-body-text">
+      And this is what the other Engineering departments under the University of Toronto looked like:
+    </p>
+    <button class="text-btn" onclick="window.open('https://www.engineering.utoronto.ca/', '_blank');">
+      <span class="btn-text">Faculty of Applied Science and Engineering Website Home </span> ⤴︎
+    </button>
+    <button class="text-btn" onclick="window.open('http://www.chem-eng.utoronto.ca/', '_blank');">
+      <span class="btn-text">Chemical Engineering Department Website Home </span> ⤴︎
+    </button>
+    <button class="text-btn" onclick="window.open('https://bme.utoronto.ca/', '_blank');">
+      <span class="btn-text">Biomedical Department Website Home </span> ⤴︎
+    </button>
+    <button class="text-btn" onclick="window.open('https://www.mie.utoronto.ca/', '_blank');">
+      <span class="btn-text">Mechanical Department Website Home </span> ⤴︎
+    </button>
+    <button class="text-btn" onclick="window.open('https://mse.utoronto.ca/', '_blank');">
+      <span class="btn-text">Material Sciences Department Website Home </span> ⤴︎
+    </button>
+    <button class="text-btn" onclick="window.open('https://www.utias.utoronto.ca/', '_blank');">
+      <span class="btn-text">Aerospace Department Website Home </span> ⤴︎
+    </button>
+
+    <p class="casestudy-body-text">
+      Simply comparing the site to its peers across the university confirmed that the branding was inconsistent and needed alignment.
+    </p>
+
+    <p class="casestudy-body-text">
+      Additionally, I reviewed other North American engineering department/faculty websites to understand industry-standard 
+      content design principles, CTAs, and information hierarchy.
+    </p>
+
+  </section>
+
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+  <div style="width: 100%; text-align: center;"><h2>Core Design Decisions & Priorities</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>Faster Time-to-Value</h1>
+    <p>for first-time users over information density to accelerate user orientation</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>Clear Primary User</h1>
+    <p>Positioned prospective students as the Primary user segment over researchers, faculty, and partners for better acquisition</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>Lower Cognitive Load</h1>
+    <p>and focus on an extended vertical scroll over immediate discoverability in favor of progressive disclosure</p>
+  </div>
+</div>
+
+</section>
+
+<section class="page-container">
+
+  <div class="casestudy-body-container" id="eceds">
+
+    <h2 class="casestudy-body-headline">
+      Reframing
+    </h2>
 
     <h3 class="casestudy-body-headline">
       Key homepage sections
@@ -202,95 +309,26 @@
       </p>
     </blockquote>
     <p class="casestudy-body-text">
-      The message from the Department Chair was later updated to include an events calendar and 
-      linked with the Events page I built a month later.
+      The section featuring the Department Chair was later updated to include an events calendar and 
+      linked with the Events page I built.
     </p>
 
     <h3 class="casestudy-body-headline">
       Content Architecture
     </h3>
-        
-    <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
-      <h4 class="casestudy-body-headline">
-        “(We're) not sure what (the button should) lead out to...”
-      </h4>
-      <p class="casestudy-body-text">
-        -- Discussions regarding content architecture.
-      </p>
-    </blockquote>
 
     <div class="facts-grid-doublet">
 
       <div>
         <img src="/assets/images/webp/ECECA.webp"/>
-        <p class="caption-text" style="font-size: small; margin: 1rem 0;">Content Architecture</p>
+        <p class="caption-text" style="font-size: small; margin: 1rem 0;">Pictured Above: Content Architecture</p>
       </div>
 
     </div>
 
     <h3 class="casestudy-body-headline">
-      Did Stakeholders Influence the UI?
-    </h3>
-
-    <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
-      <h4 class="casestudy-body-headline">
-        “(Can you make it so that we can) we can also replace the background photo regularly?”
-      </h4>
-      <p class="casestudy-body-text">
-        -- Marketing Team, regarding the hero banner
-      </p>
-    </blockquote>
-
-    <div class="facts-grid-doublet">
-
-      <div>
-        <img src="/assets/images/webp/HOME-WIREFRAME-LO-FI.webp"/>
-        <p class="caption-text" style="font-size: small; margin: 1rem 0;">Resulted in this Wireframe</p>
-      </div>
-
-    </div>
-
-    <p class="casestudy-body-text">
-      A request was also made, between low fidelity and high fidelity wireframing process, to change the Big Number 
-      (denoted by the X in the wireframe) into an Icon to support the statistics.
-    </p>
-
-  </div>
-
-  </section>
-
-<section class="container" style="display: flex; flex-direction: column; align-items: center;">
-
-  <div style="width: 100%; text-align: center;"><h2>Core Design decisions and tradeoffs</h2></div>
-
-<div class="container-stats">
-  <!-- Column 1 -->
-  <div style="padding-right: 1rem;">
-    <h1>Faster Time-to-Value</h1>
-    <p>for first-time users over information density to accelerate user orientation</p>
-  </div>
-
-  <!-- Column 2 -->
-  <div style="padding: 0 1rem;">
-    <h1>Clear Primary User</h1>
-    <p>Positioned prospective students as the Primary user segment over researchers, faculty, and partners for better acquisition</p>
-  </div>
-
-  <!-- Column 3 -->
-  <div style="padding-left: 1rem;">
-    <h1>Lower Cognitive Load</h1>
-    <p>and vertical scroll over immediate discoverability in favor of progressive disclosure</p>
-  </div>
-</div>
-
-</section>
-
-<section class="page-container">
-
-  <div class="casestudy-body-container" id="eceds">
-    <h2 class="casestudy-body-headline">
       UI Design: Exploring the Page's Sections
-    </h2>
+    </h3>
     <p class="casestudy-body-text">
       Click through each tab to see designs.
     </p>
@@ -354,31 +392,63 @@
     <p class="caption-text" style="font-size: small; margin: 1rem 0;">Pictured below: Approved High Fidelity Wireframe for Initial Go-Live(L) and Iterative Change Post Go-Live(R)</p>
     <img src="/assets/images/webp/Research-Section-highfid.webp" style="width:100%;" />
   </div>
-</div>
+
+    <h2 class="casestudy-body-headline">
+      Refining
+    </h2>
+
+    <h3 class="casestudy-body-headline">
+      Did Stakeholders Influence the UI?
+    </h3>
+
+    <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
+      <h4 class="casestudy-body-headline">
+        “(Can you make it so that we can) we can also replace the background photo regularly?”
+      </h4>
+      <p class="casestudy-body-text">
+        -- Marketing Team, regarding the hero banner
+      </p>
+    </blockquote>
+
+    <div class="facts-grid-doublet">
+
+      <div>
+        <img src="/assets/images/webp/HOME-WIREFRAME-LO-FI.webp"/>
+        <p class="caption-text" style="font-size: small; margin: 1rem 0;">Resulted in this Wireframe</p>
+      </div>
+
+    </div>
+
+    <p class="casestudy-body-text">
+      A request was also made, between low fidelity and high fidelity wireframing process, to change the Big Number 
+      (denoted by the X in the wireframe) into an Icon instead.
+    </p>
+
+  </div>
 
 </section>
 
 <section class="container" style="display: flex; flex-direction: column; align-items: center;">
 
-  <div style="width: 100%; text-align: center;"><h2>What We Didn't Do</h2></div>
+  <div style="width: 100%; text-align: center;"><h2>What this Design Wasn't</h2></div>
 
 <div class="container-stats">
   <!-- Column 1 -->
   <div style="padding-right: 1rem;">
-    <h1>Introduce, Not Discover</h1>
-    <p>Focused on Introduction, Not Intentionally treated discovery as task for the secondary pages.</p>
+    <h1>A Discover-All</h1>
+    <p>We intentionally Focused on Introduction, and treated discovery as a task for the secondary pages.</p>
   </div>
 
   <!-- Column 2 -->
   <div style="padding: 0 1rem;">
-    <h1>No Legacy Content</h1>
-    <p>Did not preserve legacy content. Exception: "Hear from the Chair," was combined with Events.</p>
+    <h1>Recycled Content</h1>
+    <p>We did not preserve legacy content and focused on fresh content perspectives and visuals.</p>
   </div>
 
   <!-- Column 3 -->
   <div style="padding-left: 1rem;">
-    <h1>Not a Neutral Index</h1>
-    <p>Avoided to prevent dilution of the primary user journey: Prospective student discovering the department.</p>
+    <h1>A Site-For-All</h1>
+    <p>We focused on Prospective students discovering the department, any content for other audiences had to primarily serve Students.</p>
   </div>
 </div>
 
@@ -397,32 +467,10 @@
     </h3>
   </blockquote>
 
-     
-    <p class="casestudy-body-text">
-      Building it out on WordPress, I ensured the homepage now communicates the department’s identity while providing access to programs, events, and research opportunities.
-      Content and structure guide students through the site, reinforcing credibility and engagement.
-      The design remains functional and adaptable, ensuring long-term value for both the department and students.
-    </p>
-
-    <p class="casestudy-body-text" style="font-size: small;">
-      <strong>Disclaimer:</strong> 
-      As the public website evolves, the live page may differ from the versions shown in this case study.
-    </p>
-
-    <button class="text-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
-      <span class="btn-text">ECE Department Website Home </span> ⤴︎
-    </button>
-
-    <p class="casestudy-body-text">
-      I also added UI animations.
-    </p>
-
-    <video src="../../assets/videos/ECE/ece-animations.mp4"   alt="ECE homepage animations" 
-      style="width: calc(50% - 1rem); border-radius: 1rem; object-fit: cover;" autoplay loop muted playsinline></video>
-
-    <p class="caption-text" style="font-size: small; margin: 1rem 0;">
+  <p class="caption-text" style="font-size: small; margin: 1rem 0;">
       Click on the images below to view the intially approved mockups.
     </p>
+
     <div class="responsive-flex">
 
       <div class="phot-item" style="max-width: 700px;">
@@ -457,15 +505,34 @@
 
     </div>
 
-  </div>
+    <p class="casestudy-body-text">
+      Building it out on WordPress, I ensured the homepage now communicates the department’s identity while providing access to programs, events, and research opportunities.
+      Content and structure guide students through the site, reinforcing credibility and engagement.
+      The design remains functional and adaptable, ensuring long-term value for both the department and students.
+    </p>
+
+    <p class="casestudy-body-text" style="font-size: small;">
+      <strong>Disclaimer:</strong> 
+      As the public website evolves, the live page may differ from the versions shown in this case study.
+    </p>
+
+    <button class="text-btn" onclick="window.open('https://www.ece.utoronto.ca/', '_blank');">
+      <span class="btn-text">ECE Department Website Home </span> ⤴︎
+    </button>
+
+    <p class="casestudy-body-text">
+      I also added UI animations.
+    </p>
+
+    <video src="../../assets/videos/ECE/ece-animations.mp4"  alt="ECE homepage animations" style="width: calc(50% - 1rem); border-radius: 1rem; object-fit: cover;" autoplay loop muted playsinline></video>
 
   </div>
 
-  
+  </div>
 
 </section>
 
-<section class="learn">
+<section class="learn" id="learn">
 
   <!-- Main content container -->
   <div class="mcc">
@@ -474,12 +541,13 @@
       <h1>What I Learned</h1>
       <h5>
         This project required rethinking and refining the homepage to focus on the primary audience: prospective students. 
-        Prioritizing this audience justifies design decisions and requires being unable to do some things, but, It prevents content dilution while providing clear direction.
+        Prioritizing a single audience justifies design decisions and disqualifies some, but that is a caveat of design strategy and choosing design direction. 
       </h5>
       <h5>
-        Every homepage component must justify its existence through user decision-making. 
+        Every homepage component had to justify its existence through user decision-making. 
         For example, eight buttons previously leading to the Research page were consolidated into Two buttons directing users to the Research page and the Industry Opportunities page (which I built). 
-        While this primarily benefits the department through sponsorship visibility, I learned that students also perceive it as a signal that the department invests in their success. 
+        While the inclusion of the latter page primarily benefits the department through sponsorship visibility, 
+        I learned that students also perceive it as a signal that the department invests in their success. 
         Even features not directly targeting them can enhance their experience when thoughtfully integrated.
       </h5>
       <h5>
