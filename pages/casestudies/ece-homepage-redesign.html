@@ -4,12 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ECE Homepage Redesign: Rebuilding for Recruitment</title>
-    
-
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
-</noscript>  <link rel="stylesheet" href="../../css/style.css">
+  <meta property="og:title" content="ECE Homepage Redesign: Rebuilding for Recruitment" />
+  <meta property="og:description" content="Case study detailing the ECE homepage redesign, focused on rebuilding the information hierarchy to engage students." />
+  <meta property="og:image" content="assets/images/ece.webp" />
+  <meta property="og:url" content="https://karthikjambunathan.com/pages/casestudies/ece-homepage-redesign.html" />
+  <meta property="og:type" content="website" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
+  </noscript>  
+  <link rel="stylesheet" href="../../css/style.css">
   <script src="../../js/script.js"></script>
 </head>
 
@@ -64,7 +68,7 @@
 
       <button class="primary-btn"
               onclick="document.getElementById('ecepc').scrollIntoView({behavior: 'smooth'});">
-        Project Context
+        Challenge [Problem]
       </button>
 
       <button class="primary-btn"
@@ -74,17 +78,17 @@
 
       <button class="primary-btn"
               onclick="document.getElementById('ecedn').scrollIntoView({behavior: 'smooth'});">
-        UX Research
+        Examine [UXR]
       </button>
 
       <button class="primary-btn"
               onclick="document.getElementById('eceds').scrollIntoView({behavior: 'smooth'});">
-        UI Design
+        Reframe [Solution]
       </button>
 
       <button class="primary-btn"
               onclick="document.getElementById('eceimp').scrollIntoView({behavior: 'smooth'});">
-        Web Development
+        Build [Implementation]
       </button>
 
       <button class="primary-btn"
@@ -217,7 +221,7 @@
       For context, here's what the page looked like before:
     </p>
     <a href="../../assets/images/webp/ece-old-homepage.webp" target="_blank" rel="noopener noreferrer">
-      <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Old Homepage Thumbnail" style="width: 50%; margin-bottom: 2rem;"/>
+      <img src="../../assets/images/webp/ece-old-homepage-thumb.webp" alt="ECE Home page Before" style="width: 50%; margin-bottom: 2rem;"/>
     </a>
 
     <p class="casestudy-body-text">
@@ -290,28 +294,17 @@
     <h3 class="casestudy-body-headline">
       Key homepage sections
     </h3>
+
     <p class="casestudy-body-text">
-      Each homepage section was designed modularly, allowing updates to research/program information, 
-      images, or content without affecting the rest of the layout, ensuring long-term accessibility and usability.
+      The page was restructured into a component-based architecture, ensuring that updates to media assets remain independent of the global layout. 
+      This modularity supports long-term scalability and ensures the site remains maintainable for non-technical administrators.
     </p>
     <dl class="dl-showc">
-      <dt class="dt-showc">1. Hero Section → Highlights departmental identity and key resources</dt>
-      <dt class="dt-showc">2. Programs → Showcases undergraduate and graduate programs</dt>
-      <dt class="dt-showc">3. Hear from the Chair → Welcome message from the Department Chair</dt>
-      <dt class="dt-showc">4. Research & Industry Opportunities → Connects prospective students and partners to research opportunities</dt>
+      <dt class="dt-showc">1. Hero Section → A flexible primary component designed to showcase rotating marketing campaigns and high priority site pages</dt>
+      <dt class="dt-showc">2. Programs → A dedicated information block focused on academic pathways</dt>
+      <dt class="dt-showc">3. Hear from the Chair → A dedicated content section for the Chair's welcome message</dt>
+      <dt class="dt-showc">4. Research & Industry Opportunities → A section for prospective students, industry partners, and the internal research ecosystem</dt>
     </dl>
-    <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
-      <h4 class="casestudy-body-headline">
-        We'd like you to rework the Events page and connect it here.
-      </h4>
-      <p class="casestudy-body-text">
-        -- Admin Team
-      </p>
-    </blockquote>
-    <p class="casestudy-body-text">
-      The section featuring the Department Chair was later updated to include an events calendar and 
-      linked with the Events page I built.
-    </p>
 
     <h3 class="casestudy-body-headline">
       Content Architecture
@@ -320,7 +313,7 @@
     <div class="facts-grid-doublet">
 
       <div>
-        <img src="/assets/images/webp/ECECA.webp"/>
+        <img src="/assets/images/webp/ECECA.webp" alt="Content Architecture showing where and how the Home Page connects to the rest of the site."/>
         <p class="caption-text" style="font-size: small; margin: 1rem 0;">Pictured Above: Content Architecture</p>
       </div>
 
@@ -344,15 +337,14 @@
 
   <div class="tab-content active" id="hero">
     <h3>Hero Section</h3>
-    <p class="desc">Prospective students and partners need to quickly understand the department’s identity and access key resources.</p>
+    <p class="desc">Students require immediate information and access to core academic resources.</p>
 
       <dl class="dl-showc">
-        <dt class="dt-showc">The hero section communicates departmental identity visually and highlights campaigns.</dt>
-        <dt class="dt-showc">Key statistics reinforce credibility and showcase achievements.</dt>
-        <dt class="dt-showc">A resources bar improves navigation to top content: News*, Faculty, Teaching Labs, and Events*.</dt>
+        <dt class="dt-showc">A dynamic container to support rotating marketing campaigns and seasonal recruitment highlights without structural layout changes.</dt>
+        <dt class="dt-showc">Features a dedicated navigation component to reduce click-depth for essential nodes: News*, Faculty, Teaching Labs, and Events*.</dt>
       </dl>  
         
-    <p class="disc">* Pages I built</p>
+    <p class="disc">* Pages I built for the Department</p>
 
     <p class="caption-text" style="font-size: small; margin: 1rem 0;">Pictured below: What it looked Like(L) and What I Proposed(R)</p>
     <img src="/assets/images/webp/Hero-Section-old-lofi.webp" style="width:100%;" />
@@ -362,11 +354,11 @@
 
   <div class="tab-content" id="programs">
     <h3>Programs Section</h3>
-    <p>Students need an engaging way to explore undergraduate and graduate programs.</p>
+    <p>Students require a scannable method to explore and differentiate between undergraduate and graduate pathways.</p>
 
     <dl class="dl-showc">
-      <dt class="dt-showc">Modular cards highlight each program with images and CTAs, guiding students to detailed program pages.</dt>
-      <dt class="dt-showc">The design replaces dense text with scannable cards, making information easier to absorb and action-oriented</dt>
+      <dt class="dt-showc">Replaces text-only, non-descript cards with images to improve engagement and provides stark visual differentiation between programs.</dt>
+      <dt class="dt-showc">Each updated module utilizes refreshed, action-oriented content and specific CTAs to streamline the user journey from discovery to recruitment.</dt>
     </dl>
 
     <p class="caption-text" style="font-size: small; margin: 1rem 0;">Pictured below: What it looked Like(L) and What I Proposed(R)</p>
@@ -377,15 +369,14 @@
 
   <div class="tab-content" id="research">
     <h3>Research & Industry Section</h3>
-    <p>Students and industry partners need a clear way to discover Research Opportunities and Industry Opportunities*.</p>
+    <p>Students and industry partners require an intuitive interface to discover Research and Industry Opportunities*.</p>
 
     <dl class="dl-showc">
-      <dt class="dt-showc">This was a critical information architecture decision: eliminating eight redundant links and consolidating content.</dt>
-      <dt class="dt-showc">Two modular cards consolidate information, eliminating redundancy and providing clear actions.</dt>
-      <dt class="dt-showc">The section makes it easier for visitors to access relevant research and partnership opportunities.</dt>
+      <dt class="dt-showc">Synthesizes eight redundant links into two modular cards, significantly reducing visual noise and cognitive load.</dt>
+      <dt class="dt-showc">Employs a unified component design that bridges the gap between internal student research pathways and external industry partnership ecosystems.</dt>
     </dl>
 
-    <p class="disc">* Pages I built</p>
+    <p class="disc">* Pages I built for the Department</p>
 
     <p class="caption-text" style="font-size: small; margin: 1rem 0;">Pictured below: What it looked Like(L) and What I Proposed(R)</p>
     <img src="/assets/images/webp/Research-Section-old-lofi.webp" style="width:100%;" />
@@ -393,20 +384,20 @@
     <img src="/assets/images/webp/Research-Section-highfid.webp" style="width:100%;" />
   </div>
 
-    <h2 class="casestudy-body-headline">
+      <h2 class="casestudy-body-headline">
       Refining
     </h2>
 
     <h3 class="casestudy-body-headline">
-      Did Stakeholders Influence the UI?
+      How did Stakeholders Influence the UI?
     </h3>
 
     <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
       <h4 class="casestudy-body-headline">
-        “(Can you make it so that we can) we can also replace the background photo regularly?”
+        “(Will we be able to)... replace the background photo and spotlight video regularly?”
       </h4>
       <p class="casestudy-body-text">
-        -- Marketing Team, regarding the hero banner
+        -- Marketing Team
       </p>
     </blockquote>
 
@@ -414,53 +405,32 @@
 
       <div>
         <img src="/assets/images/webp/HOME-WIREFRAME-LO-FI.webp"/>
-        <p class="caption-text" style="font-size: small; margin: 1rem 0;">Resulted in this Wireframe</p>
+        <p class="caption-text" style="font-size: small; margin: 1rem 0;">Was crucial in creating the Hero Section's Layout</p>
       </div>
 
     </div>
 
     <p class="casestudy-body-text">
-      A request was also made, between low fidelity and high fidelity wireframing process, to change the Big Number 
-      (denoted by the X in the wireframe) into an Icon instead.
+      A request was also made to change the Big Number (denoted by the X in the wireframe) into an Icon instead.
     </p>
 
-  </div>
+    <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
+      <h4 class="casestudy-body-headline">
+        We'd like you to rework the Events page and connect it here.
+      </h4>
+      <p class="casestudy-body-text">
+        -- Departmental Admin
+      </p>
+    </blockquote>
+    <p class="casestudy-body-text">
+      The section featuring the Department Chair was later updated to include an events calendar and 
+      linked with the Events page I built.
+    </p>
 
-</section>
-
-<section class="container" style="display: flex; flex-direction: column; align-items: center;">
-
-  <div style="width: 100%; text-align: center;"><h2>What this Design Wasn't</h2></div>
-
-<div class="container-stats">
-  <!-- Column 1 -->
-  <div style="padding-right: 1rem;">
-    <h1>A Discover-All</h1>
-    <p>We intentionally Focused on Introduction, and treated discovery as a task for the secondary pages.</p>
-  </div>
-
-  <!-- Column 2 -->
-  <div style="padding: 0 1rem;">
-    <h1>Recycled Content</h1>
-    <p>We did not preserve legacy content and focused on fresh content perspectives and visuals.</p>
-  </div>
-
-  <!-- Column 3 -->
-  <div style="padding-left: 1rem;">
-    <h1>A Site-For-All</h1>
-    <p>We focused on Prospective students discovering the department, any content for other audiences had to primarily serve Students.</p>
-  </div>
-</div>
-
-</section>
-
-<section class="page-container">
-
-  <div class="casestudy-body-container" id="eceimp">
-    <h2 class="casestudy-body-headline">
-      Web Development
-    </h2>
-
+  <h3 class="casestudy-body-headline">
+    Finalized Designs
+  </h3>
+    
   <blockquote class="wp-block-quote" style="padding-top: 1rem; padding-bottom: 1rem;">
     <h3 class="casestudy-body-headline">
       “(Department Chair) signed off on the design. She's a fan!”
@@ -504,6 +474,47 @@
       </div> 
 
     </div>
+
+  </div>
+
+</section>
+
+<section class="container" style="display: flex; flex-direction: column; align-items: center;">
+
+  <div style="width: 100%; text-align: center;"><h2>What this Design Wasn't</h2></div>
+
+<div class="container-stats">
+  <!-- Column 1 -->
+  <div style="padding-right: 1rem;">
+    <h1>A Discover-All</h1>
+    <p>We intentionally focused on Introduction, and treated discovery as a task for the secondary pages.</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div style="padding: 0 1rem;">
+    <h1>Recycled Content</h1>
+    <p>We did not preserve legacy content and focused on fresh content perspectives and visuals.</p>
+  </div>
+
+  <!-- Column 3 -->
+  <div style="padding-left: 1rem;">
+    <h1>A Site-For-All</h1>
+    <p>We focused on Prospective students discovering the department, any content for other audiences had to primarily serve Students.</p>
+  </div>
+</div>
+
+</section>
+
+<section class="page-container">
+
+  <div class="casestudy-body-container" id="eceimp">
+    <h2 class="casestudy-body-headline">
+      Building
+    </h2>
+
+    <h3 class="casestudy-body-headline">
+      Web Development
+    </h3>
 
     <p class="casestudy-body-text">
       Building it out on WordPress, I ensured the homepage now communicates the department’s identity while providing access to programs, events, and research opportunities.
