@@ -108,7 +108,7 @@
           User Impact: Reduced client anxiety, revision loops, and AI-fueled employee morale decreases.
         </p>
         
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/operationalizing-generative-ai-service-blueprinting-for-creative-pipelines.html', '_blank');" style="width: fit-content;">
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/genai-studio-transformation.html', '_blank');" style="width: fit-content;">
           View Case Study →
         </button>
     </div>

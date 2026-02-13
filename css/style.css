@@ -1806,3 +1806,15 @@ margin-bottom: 2rem; max-width: 1200px;
   select > option {
     font-size: var(--jka-font-size-sm);
   }
+
+  .grid-quotes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-quotes {
+    grid-template-columns: 1fr;
+  }
+}
