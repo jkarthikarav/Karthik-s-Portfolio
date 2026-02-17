@@ -1810,7 +1810,8 @@ margin-bottom: 2rem; max-width: 1200px;
   .grid-quotes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem 1.5rem;
+  margin: 2rem 0rem;
 }
 
 @media (max-width: 1024px) {
