@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: var(--jka-letter-spacing-tight);
   font-weight: 700;
   margin: 1em 0;
-  color: var(--jka-color-theme);
+  color: var(--jka-color-theme-mid);
 }
 
 h1 { font-size: var(--jka-font-size-6xl); }
@@ -69,7 +69,7 @@ h6 {
   line-height: 1;
   letter-spacing: var(--jka-letter-spacing-tight);
   margin: 0;
-  color: var(--jka-color-theme);
+  color: var(--jka-color-theme-mid);
 }
 
 a, p {
@@ -107,13 +107,7 @@ a, p {
   }
   #mary-persona {
     display: none;
-  }
-  .desktop1024 {
-    display: none;
-  }
-  .desktop1440 {
-    display: none;
-  }  
+  } 
 }
 
 @media (max-width: 1024px) {
@@ -131,6 +125,7 @@ a, p {
   .desktop1440 {
     display: none;
   }  
+  
 }
 
 @media (max-width: 1440px) {
@@ -956,22 +951,21 @@ article > p {
 
 .box-one {
   position: relative;
-  height: 60vh;
   padding: 1rem 2rem;
-  background: linear-gradient(5deg, var(--jka-color-surface-inv-subtle) 50%, var(--jka-color-surface-inv-default) 100%);
+  background: var(--jka-color-theme-stronger);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed; /* enables basic parallax */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* separates top and bottom regions */
+  justify-content: flex-start; /* separates top and bottom regions */
 }
 
 .down-arrow {
   position: absolute;
-  bottom: 0.5rem; /* distance from bottom of box */
+  bottom: 0.2rem; /* distance from bottom of box */
   left: 50%;     /* center horizontally */
   transform: translateX(-50%);
   cursor: pointer;
@@ -987,8 +981,6 @@ article > p {
   .box-one-top {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
     justify-content: space-between;
   }
 
@@ -1096,12 +1088,17 @@ article > p {
 
   .box-one-bottom h1 {
   margin-top: 0; margin-bottom: 2.5rem;
-  max-width: 1200px;    color: var(--jka-color-text-inv-default)
+  max-width: 1200px;    color: var(--jka-color-text-inv-default);
+  }
+
+  .box-one-bottom h2 {
+  margin-top: 0; margin-bottom: 2.5rem;
+  max-width: 1200px;    color: var(--jka-color-text-inv-default);
   }
 
   .box-one-bottom p {
   margin-top: 0; margin-bottom: 0.5rem;
-  max-width: 1200px;    color: var(--jka-color-text-inv-default)
+  max-width: 1200px;    color: var(--jka-color-text-inv-default);
   }
 
   .box-two {
@@ -1120,7 +1117,7 @@ article > p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.1rem;
   }
 
   .availability h6 {
@@ -1622,7 +1619,7 @@ margin-bottom: 2rem; max-width: 1200px;
 .casestudy-tabs {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .tab-buttons {
@@ -1818,4 +1815,197 @@ margin-bottom: 2rem; max-width: 1200px;
   .grid-quotes {
     grid-template-columns: 1fr;
   }
+}
+
+.header-hero-main {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 2rem 6rem;
+  box-sizing: border-box;
+}
+
+.nav-hero-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-main {
+  position: relative;
+  height: 100vh;
+  background-color: var(--jka-color-theme-stronger);
+  display: flex;
+  color: var(--jka-color-text-inv-default);
+  align-items: center;
+}
+
+.hero-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/images/about/Karthik-4x3.png");
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0);
+  z-index: 0;
+  pointer-events: none;
+  will-change: transform; 
+}
+
+@media (max-width: 768px) {
+  .hero-main::before {
+    display: none;
+  }
+  .right1440 {
+    width: 100%; margin: 2rem 0;
+  }
+  .meta-hero-main {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .content-hero-main {                 
+    margin-left: 2rem !important;
+  }
+  .header-hero-main {
+    padding-left: 2rem !important;
+  }
+  .NOTmobile {
+    display: none;
+  }
+}
+
+@media (width > 768px) {
+  .NOTdesktop {
+    display: none;
+  }
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem 0 4rem;
+  padding: 2rem;
+}
+
+/* Top corners using pseudo-elements */
+.testimonial::before,
+.testimonial::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--jka-color-theme-strong);
+}
+
+.testimonial::before { /* Top-left */
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.testimonial::after { /* Top-right */
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+/* Bottom corners using actual span elements */
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--jka-color-theme-strong);
+}
+
+.corner.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.corner.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.overlay-hero-main {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+.content-hero-main {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin-left: 6rem;
+}
+
+.eyebrow-hero-main {
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--jka-color-text-inv-default);
+}
+
+.title-hero-main {
+  margin: 0 0 2rem 0;
+  line-height: 1.1;
+  color: var(--jka-color-text-inv-default-strong);
+}
+
+.meta-hero-main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.date-hero-main {
+  opacity: 0.9;
+}
+
+.home-section {
+  display: flex; align-items: flex-end; width: 100%; max-width: 1200px; margin: 2rem auto; flex-direction: column;
+}
+
+.right1440 {
+  width: 60%; margin: 2rem 0 4rem; font-weight: bold;
+}
+
+.logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .logos-img { width: 80px; height: 80px; object-fit: cover; opacity: 0.8; transition: opacity 0.3s; }
+    .logo-link:hover .logos-img { opacity: 1; }
+    .logo-text { max-width: 150px; font-size: var(--jka-font-size-sm); color: var(--jka-color-text-inv-subtle)}
+
+    .logo-section {
+  width: 100%;
+  display: flex;
+  background-color: var(--jka-color-theme-strong);
+  justify-content: center; 
+  padding: 2rem 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 40px; 
 }
