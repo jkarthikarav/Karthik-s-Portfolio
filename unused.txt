@@ -138,3 +138,66 @@
       </div>
     </a>
   </div>-->
+
+
+
+  <div class="split-card-section">
+    <div class="card-text">
+      <p class="eyebrow"><strong>Strategic Foresight • Service Design • Workflow Optimization </strong><br> Implemented Jul 2023</p>
+
+      <h3 class="heading">Leading a GenAI Studio Transformation for Fix It In Post Studios</h3>
+    
+      <p class="body-copy">
+      Led the Strategic Foresight initiative and designed a Human-in-the-Loop workflow to operationalize generative AI for pre-visualization services, embedding structured workflows, 
+      QA protocols, and operational controls into studio practice.
+      </p>
+    
+      <p class="body-copy-impact">
+        Business Impact: Achieved approx. 30–40% revenue growth, reducing project timelines by ~2 weeks.
+      </p>
+
+      <p class="body-copy-impact">
+        User Impact: Reduced client revision loops and increased confidence in AI-enabled creative practice.
+      </p>
+
+      <button class="secondary-btn" onclick="window.open('/pages/casestudies/genai-studio-transformation.html', '_blank');" style="width: fit-content;">
+        View Case Study →</span>
+      </button>
+
+      </div>
+
+      <div class="image-block-showc">
+        <img src="/assets/images/hero-banners/GENAI.webp" alt="Mockup image of GenAI Service Blueprint." class="img-showc" />
+      </div>
+  </div>
+
+
+  
+  <div class="split-card-section">
+    <div class="card-text">
+        <p class="eyebrow"><strong>Information Architecture • Institutional Web • Accessibility (AODA) </strong><br> Shipped Jan 2025
+        </p>
+        <h3 class="heading">ECE Homepage Redesign: Rebuilding Information Flow for Recruitment
+        </h3>
+        
+        <p class="body-copy">
+          Fragmented information flow was hindering student recruitment and departmental engagement. I restructured through Figma and handled WordPress implementation. 
+        </p>
+        
+        <p class="body-copy-impact">
+          Business Impact: Solved recruitment drop-off by ensuring high-value traffic was routed to core site pages.
+        </p>
+
+        <p class="body-copy-impact">
+          User Impact: Reduced time-to-value for students by reorganizing content into accessible architecture.
+        </p>
+        
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank');" style="width: fit-content;">
+          View Case Study →</span>
+        </button>
+    </div>
+
+    <div class="image-block-showc">
+      <img src="/assets/images/ece.webp" alt="Mockup image of ECE department's Homepage." class="img-showc" />
+    </div>
+  </div>

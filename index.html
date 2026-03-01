@@ -73,6 +73,12 @@
   <div class="overlay-hero-main"></div>
 
   <div class="content-hero-main">
+    <div style="width: fit-content; align-items: center;
+    display: flex; gap: 0.25rem; margin: 1rem 0; background: var(--jka-color-theme-faint); padding: 4px 8px; border-radius: 16px;">
+      <p class="status-dot"></p>
+      <p style="color: var(--jka-color-text-default);">Open to UX/Product Roles</p>
+    </div>
+
     <p class="eyebrow-hero-main"><span id="greeting"></span></p>
 
     <h1 class="title-hero-main">
@@ -137,38 +143,96 @@
     While content and accessibility were my main tasks, I did manage the entire digital lifecycle for both the public website and the intranet.
   </p>
 
-  <div class="split-card-section">
-    <div class="card-text">
-        <p class="eyebrow"><strong>Information Architecture • Institutional Web • Accessibility (AODA) </strong><br> Shipped Jan 2025
-        </p>
-        <h3 class="heading">ECE Homepage Redesign: Rebuilding Information Flow for Recruitment
-        </h3>
-        
-        <p class="body-copy">
-          Fragmented information flow was hindering student recruitment and departmental engagement. I restructured through Figma and handled WordPress implementation. 
-        </p>
-        
-        <p class="body-copy-impact">
-          Business Impact: Solved recruitment drop-off by ensuring high-value traffic was routed to core site pages.
-        </p>
+</div>
 
-        <p class="body-copy-impact">
-          User Impact: Reduced time-to-value for students by reorganizing content into accessible architecture.
-        </p>
-        
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank');" style="width: fit-content;">
-          View Case Study →</span>
-        </button>
+<section class="NC-section">
+  <div class="NC-grid">
+    
+    <!-- Left Column. Image -->
+    <div class="NC-image-col">
+      <img src="/assets/images/ece.webp" alt="Mockup image of ECE department's Homepage." class="NC-image">
     </div>
 
-    <div class="image-block-showc">
-      <img src="/assets/images/ece.webp" alt="Mockup image of ECE department's Homepage." class="img-showc" />
+    <!-- Right Column. Content -->
+    <div class="NC-content-col">
+      <div class="NC-content-wrapper">
+
+        <!-- Header Group -->
+        <div class="NC-header-group">
+          <p class="NC-tagline">Information Architecture • Institutional Web • Accessibility (AODA) </strong>• Shipped Jan 2025</p>
+          <h3 class="NC-heading text-super">ECE Homepage Redesign: Rebuilding Information Flow for Recruitment</h3>
+        </div>
+
+        <!-- Informational Group -->
+        <div class="NC-info-group">
+          <p>
+            Fragmented information flow was hindering student recruitment and departmental engagement.
+            I restructured through Figma and handled WordPress implementation. 
+          </p>
+
+          <ul class="NC-list">
+            <li class="NC-list-item">
+              <span class="NC-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--jka-color-text-strong)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17L4 12" stroke="none"/>
+                </svg>
+              </span>
+              <span>Business Impact: Solved recruitment drop-off by ensuring high-value traffic was routed to core site pages.</span>
+            </li>
+
+            <li class="NC-list-item">
+              <span class="NC-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--jka-color-text-strong)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17L4 12" stroke="none"/>
+                </svg>
+              </span>
+              <span>User Impact: Reduced time-to-value for students by reorganizing content into accessible architecture.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CTA Group -->
+        <div class="NC-cta-group">
+          <button class="primary-btn" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank');">View Case Study →</button>
+        </div>
+
+      </div>
     </div>
+
   </div>
-  
+</section>
+
+<div class="home-section" style="display: flex; justify-content: flex-end; width: 100%; max-width: 1200px; margin: 2rem auto;">
+
   <p style="width: 100%; margin: 2rem 0;">
     To look at other work and explore my process in detail for the ECE department, <a href="/pages/ECE-website-production-project.html">check out this page</a>.
   </p>
+
+</div>
+
+<div class="home-section" style="display: flex; justify-content: flex-end; width: 100%; max-width: 1200px; margin: 0.5rem auto;">
+
+<div style="width: 100%; text-align: center; margin-top: 2rem;"><h2>Real-World Results Delivered</h2></div>
+
+<div class="container-stats" style="margin-bottom: 2rem;">
+            <!-- Column 1: Time Saved -->
+            <div style="padding-right: 1rem;">
+                <h1 style="color: var(--jka-color-theme-mid);">Lowered by 20%</h1>
+                <p style="color: var(--jka-color-text-default);">Lowered design-to-dev discrepancies by implementing standardized documentation, saving teams weeks of rework.</p>
+            </div>
+            
+            <!-- Column 2: Governance -->
+            <div style="padding: 0 1rem;">
+                <h1 style="color: var(--jka-color-theme-mid);">$24K+ USD/week</h1>
+                <p style="color: var(--jka-color-text-default);">Generated recurring revenue for an industrial manufacturing client by redesigning their conversion funnel.</p>
+            </div>
+            
+            <!-- Column 3: Error Reduction -->
+            <div style="padding-left: 1rem;">
+                <h1 style="color: var(--jka-color-theme-mid);">$400K+ USD</h1>
+                <p style="color: var(--jka-color-text-default);">Designed investor microsites that successfully differentiated brands in saturated markets to close funding.</p>
+            </div>
+</div>
 
 </div>
 
@@ -200,70 +264,99 @@
   <p style="width: 100%; margin-bottom: 2rem;">
     My journey hasn't been defined by a single UX specialization, but by a relentless desire to solve riddles across the entire UX spectrum.
     Below, you can explore a major GenAI studio transformation I led, 
-    followed by a <a href="#tabs">curated list of the various projects</a> I’ve tackled throughout my career.
+    followed by a recent <a href="#tabs">list of various projects</a> I’ve tackled.
   </p> 
 
-  <div class="split-card-section">
-    <div class="card-text">
-      <p class="eyebrow"><strong>Strategic Foresight • Service Design • Workflow Optimization </strong><br> Implemented Jul 2023</p>
+</div>
 
-      <h3 class="heading">Leading a GenAI Studio Transformation for Fix It In Post Studios</h3>
+<section class="NC-section">
+  <div class="NC-grid">
     
-      <p class="body-copy">
-      Led the Strategic Foresight initiative and designed a Human-in-the-Loop workflow to operationalize generative AI for pre-visualization services, embedding structured workflows, 
-      QA protocols, and operational controls into studio practice.
-      </p>
-    
-      <p class="body-copy-impact">
-        Business Impact: Achieved approx. 30–40% revenue growth, reducing project timelines by ~2 weeks.
-      </p>
+    <!-- Left Column. Image -->
+    <div class="NC-image-col">
+      <img src="/assets/images/hero-banners/GENAI-banner.webp" alt="Mockup image of GenAI Service Blueprint." class="NC-image">
+    </div>
 
-      <p class="body-copy-impact">
-        User Impact: Reduced client revision loops and increased confidence in AI-enabled creative practice.
-      </p>
+    <!-- Right Column. Content -->
+    <div class="NC-content-col">
+      <div class="NC-content-wrapper">
 
-      <button class="secondary-btn" onclick="window.open('/pages/casestudies/genai-studio-transformation.html', '_blank');" style="width: fit-content;">
-        View Case Study →</span>
-      </button>
+        <!-- Header Group -->
+        <div class="NC-header-group">
+          <p class="NC-tagline">Strategic Foresight • Service Design • Workflow Optimization </strong>• Implemented Jul 2023</p>
+          <h3 class="NC-heading text-super">Leading a GenAI Studio Transformation for FIIP Studios</h3>
+        </div>
+
+        <!-- Informational Group -->
+        <div class="NC-info-group">
+          <p>
+            Led the Strategic Foresight initiative and designed a Human-in-the-Loop workflow to 
+            operationalize generative AI for pre-visualization services, embedding structured workflows, 
+            QA protocols, and operational controls into studio practice.
+          </p>
+
+          <ul class="NC-list">
+            <li class="NC-list-item">
+              <span class="NC-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--jka-color-text-strong)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17L4 12" stroke="none"/>
+                </svg>
+              </span>
+              <span>Business Impact: Achieved approx. 30–40% revenue growth.</span>
+            </li>
+
+            <li class="NC-list-item">
+              <span class="NC-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--jka-color-text-strong)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17L4 12" stroke="none"/>
+                </svg>
+              </span>
+              <span>Business Impact: Reduced project timelines by ~2 weeks.</span>
+            </li>
+
+            <li class="NC-list-item">
+              <span class="NC-icon-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--jka-color-text-strong)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17L4 12" stroke="none"/>
+                </svg>
+              </span>
+              <span>User Impact: Reduced client revision loops and increased confidence in AI-enabled creative practice.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CTA Group -->
+        <div class="NC-cta-group">
+          <button class="primary-btn" onclick="window.open('/pages/casestudies/genai-studio-transformation.html', '_blank');">View Case Study →</button>
+        </div>
 
       </div>
+    </div>
 
-      <div class="image-block-showc">
-        <img src="/assets/images/hero-banners/GENAI.webp" alt="Mockup image of GenAI Service Blueprint." class="img-showc" />
-      </div>
+  </div>
+</section>
+
+<div class="tabs-section-main" id="tabs">
+  
+  <div class="case-study-card-list" style="cursor: default;">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">
+        South Shore Youth Organization (SSYO): Website Redesign & Redevelopment</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Maximizing visibility & reducing administrative workload through accessibility- & content-focused UX/UI overhaul and web development.
+      </p>
+      <p>Feb 2026 – Ongoing</p>
+      <p style="font-style: italic;">Project In-Progress - Through Copywriting Creatives</p>
+    </div>
   </div>
 
-<div style="width: 100%; text-align: center; margin-top: 2rem;"><h2>Real-World Results Delivered</h2></div>
-
-<div class="container-stats" style="margin-bottom: 2rem;">
-            <!-- Column 1: Time Saved -->
-            <div style="padding-right: 1rem;">
-                <h1 style="color: var(--jka-color-theme-mid);">Lowered by 20%</h1>
-                <p style="color: var(--jka-color-text-default);">Lowered design-to-dev discrepancies by implementing standardized documentation, saving teams weeks of rework.</p>
-            </div>
-            
-            <!-- Column 2: Governance -->
-            <div style="padding: 0 1rem;">
-                <h1 style="color: var(--jka-color-theme-mid);">$24K+ USD/week</h1>
-                <p style="color: var(--jka-color-text-default);">Generated recurring revenue for an industrial manufacturing client by redesigning their conversion funnel.</p>
-            </div>
-            
-            <!-- Column 3: Error Reduction -->
-            <div style="padding-left: 1rem;">
-                <h1 style="color: var(--jka-color-theme-mid);">$400K+ USD</h1>
-                <p style="color: var(--jka-color-text-default);">Designed investor microsites that successfully differentiated brands in saturated markets to close funding.</p>
-            </div>
-</div>
-
-</div>
-
-<div style="align-items: flex-start; width: 100%; max-width: 1200px; margin: 2rem auto;" id="tabs">
+  <hr>
   
   <div class="case-study-card-list" style="cursor: default;">
     <div class="case-study-card-content-list">
       <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Humber River Family Health Team Website: Website Migration & UX Redesign</p>
       <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
-        Streamlining content discoverability and hospital website UI through patient-focused research and content design. 
+        Maximized website discoverability and overhauled the UI by restructuring global navigation, rewriting content, and executing a full front-end redesign. 
       </p>
       <p>Dec–Feb 2026</p>
       <p style="font-style: italic;">Page under construction - Through Copywriting Creatives</p>
@@ -272,31 +365,7 @@
 
   <hr>
 
-  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/experience-toronto-the-discoverability-app.html', '_blank')">
-    <div class="case-study-card-content-list">
-      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Ticket Discoverability App: Structuring Information Flow for Cultural Access ↗</p>
-      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
-        Conducted product research and prototyped a mobile solution to surface GLAM discounts through clearer information flow and social sharing.
-      </p>
-      <p>Oct–Dec 2023</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html', '_blank')">
-    <div class="case-study-card-content-list">
-      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Textile Museum of Canada Website: IA Redesign & Strategy ↗</p>
-      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
-        Improved content discoverability through an IA redesign and proposed an implementation testing strategy ahead of UI overhaul.
-      </p>
-      <p>Oct–Nov 2023</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="case-study-card-list" style="cursor: default;">
+  <!--<div class="case-study-card-list" style="cursor: default;">
     <div class="case-study-card-content-list">
       <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Industrial Manufacturing Client: Financial and Operational Workflow Design</p>
       <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
@@ -320,15 +389,49 @@
     </div>
   </div>
 
-  <hr>
+  <hr>-->
 
   <div class="case-study-card-list" onclick="window.open('/pages/casestudies/interactive-web-experience-for-capital-raising.html', '_blank')">
     <div class="case-study-card-content-list">
-      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Fix It In Post Studios: Interactive Web Experience for Capital Raising ↗</p>
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Fix It In Post Studios: Interactive Web Experience for Capital Raising</p>
       <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
         Helped Client in Film Pre-Production phase differentiate their project during funding rounds.
       </p>
       <p>Shipped Aug 2021</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="home-section" style="display: flex; justify-content: flex-end; width: 100%; max-width: 1200px; margin: 2rem auto;">
+
+  <p style="width: 100%; margin-bottom: 2rem;">
+    While I was at the University of Toronto, I worked on a variety of academic projects that counted towards my Master's degree - most of which were with real clients, working on real stakeholder pain points.
+  </p> 
+
+</div>
+
+<div class="tabs-section-default">
+
+  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/experience-toronto-the-discoverability-app.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Ticket Discoverability App: Structuring Information Flow for Cultural Access</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Conducted product research and prototyped a mobile solution to surface GLAM discounts through clearer information flow and social sharing.
+      </p>
+      <p>Oct–Dec 2023</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="case-study-card-list" onclick="window.open('/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html', '_blank')">
+    <div class="case-study-card-content-list">
+      <p class="text-mid" style="color: var(--jka-color-theme-strong); font-weight: bold;">Textile Museum of Canada Website: IA Redesign & Strategy</p>
+      <p class="text-mid" style="color: var(--jka-color-surface-inv-subtle); font-style: italic;">
+        Improved content discoverability through an IA redesign and proposed an implementation testing strategy ahead of UI overhaul.
+      </p>
+      <p>Oct–Nov 2023</p>
     </div>
   </div>
 
