@@ -49,153 +49,72 @@
     <blockquote class="wp-block-quote">
       <p class="casestudy-body-text">
         <span>Summary:</span> 
-        The museum needed to improve their site's content discoverability. While the conventional solution was a UI overhaul, 
-        I proposed a phased implementation strategy to isolate improvements, ensuring the right attribution.
+        We aimed to improve content discoverability through an IA redesign, additionally proposing an implementation testing strategy ahead of 
+        UI overhaul necessary to implement said-IA redesign.
       </p>
     </blockquote>
-
-    <h2 class="casestudy-body-headline">
-      Jump to Section
-    </h2>
-    <p class="casestudy-body-text">
-      Use these to jump to a section you are interested in:
-    </p>
-    <div class="main-button-row">
-
-      <button class="primary-btn"
-              onclick="document.getElementById('tmcpc').scrollIntoView({behavior: 'smooth'});">
-        Project Context
-      </button>
-
-      <button class="primary-btn"
-              onclick="document.getElementById('tmcuxr').scrollIntoView({behavior: 'smooth'});">
-        UX Research & Findings
-      </button>
-
-      <button class="primary-btn"
-              onclick="document.getElementById('tmcstr').scrollIntoView({behavior: 'smooth'});">
-        UX Strategy
-      </button>
-
-      <button class="primary-btn"
-              onclick="document.getElementById('tmcui').scrollIntoView({behavior: 'smooth'});">
-        Our UI/UX Solution
-      </button>
-
-      <button class="primary-btn"
-              onclick="document.getElementById('ppf').scrollIntoView({behavior: 'smooth'});">
-        Post-Presentation Feedback
-      </button>
-
-    </div>
 
   </div>
 </section>
 
 <section class="page-container">
-    <div class="casestudy-section" id="tmcpc">
+
+  <div class="casestudy-body-container" id="tmcpc">
+      <h2 class="casestudy-body-headline">
+        The Challenge
+      </h2>
+        
+      <p class="casestudy-body-text">
+        The Textile Museum of Canada faced a disconnect between their rich content library and user engagement. The initial request to our MI cohort was broad: "Fix the architecture." 
+        The museum needed to make ticket sales, donations, and archived events easier to find, while also highlighting the return of in-person and hands-on programs post-pandemic.
+      </p>
+      <p class="casestudy-body-text">
+        The focus of this project is to redesign the website's information architecture and navigational design to promote the museum's values better and 
+        showcase information for their targeted audiences in an accessible way.
+      </p>
+
+    <h2 class="casestudy-body-headline">
+      Understanding the Mental Model
+    </h2>
+
+    <div class="casestudy-section" style="padding: 0;">
         <div class="casestudy-main-column">
           <h2 class="casestudy-main-text">
-            The Textile Museum of Canada faced a disconnect between their rich content library and user engagement.
+            Before proposing solutions, we needed to validate the problem.
           </h2>
+          <p class="casestudy-main-text">
+              We used open card sorting and tree testing to study the existing architecture. 
+              We selected entirely new users because existing users might have workarounds for problematic architecture, therefore clouding test results.
+              Our test data showed us that the issue wasn't the jargon itself, but a lack of context.
+          </p>
         </div>
 
         <div class="casestudy-side-column">
           <div class="casestudy-feature-card">
-            <p>
-              The initial request to our MI cohort was broad: "Fix the architecture." 
+            <p class="casestudy-body-text">
+              Our initial audit and card sorting highlighted organizational inconsistency and a lack of clear direction.
+              To assess whether this was structural, we conducted Tree Testing on the existing site’s IA. 
             </p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>
-              The focus of this project is to redesign the website's information architecture and navigational design to promote the museum's values better and 
-              showcase information for their targeted audiences in an accessible way.
-            </p>
-          </div>
-          <div class="casestudy-feature-card">
-            <p>
-              The museum needed to make ticket sales, donations, and archived events easier to find, 
-              while also highlighting the return of in-person and hands-on programs post-pandemic.
-            </p>
+            <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
+              <h4 id="summary-box-key-information">Key Card Sorting Data</h4>
+              <p>• 4-10 categories created on average by participants, showing diversity in content organization.</p>
+              <p>• Key page (“Visit”) lacked a clear call to action to encourage visitors to book tickets or explore membership options.</p>
+            </div>
+            <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
+              <h4 id="summary-box-key-information">Key Tree Testing Data</h4>
+              <p>• 30% of test users located the Collection Gallery under Explore.</p>
+              <p>• 40% of test users were confused by “Ways to Donate” & “Donate Your Textiles” - We renamed the latter to “Making a Textile Donation”</p>
+            </div>
           </div>
         </div>
     </div>
-
-<div class="casestudy-body-container" id="tmcuxr">
-    <h2 class="casestudy-body-headline">
-      Research: Understanding the Mental Model
-    </h2>
+    
     <p class="casestudy-body-text">
-      Before proposing solutions, we needed to validate the problem. 
-      We used open card sorting and tree testing to study the existing architecture. 
-      We selected entirely new users because testing with existing users could be misleading. 
-      If existing users had workarounds for problematic architecture, their patterns and behaviors would cloud the test results.
+      Based on the data, we developed a new Information Architecture. However, simply handing an IA map did not feel like enough. 
+      Most other groups working on this project suggested a new "Mega Menu" UI. 
+      What I felt was that if navigation improved, no one could attribute the change to the structure (IA) or the interface (UI).
     </p>
 
-    <p class="casestudy-body-text">
-      Abstract labels like "TXTilecity" and "Cloth Clay" had high failure rates. The issue wasn't the jargon itself, 
-      but a lack of context, i.e, descriptive context to persuade users to explore or discover what these sections contained.
-    </p>
-    <p class="casestudy-body-text">
-      Users consistently grouped "Privacy Policy" and "Team" under "About Us," validating standard web conventions.
-    </p>
-
-  <h3 class="casestudy-body-headline">Audit & Data Gathering</h3>
-
-  <p class="casestudy-body-text">
-    Our initial audit and card sorting highlighted that the museum's digital presence was hampered by organizational inconsistency and a lack of clear direction.
-  </p>
-
-  <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
-    <h4 id="summary-box-key-information">Key Data</h4>
-    <p>• 4-10 categories created on average by participants, showing diversity in content organization.</p>
-    <p>• 3 areas with incomplete or unclear information: volunteering, job/internships, and health & safety.</p>
-    <p>• Key page (“Visit”) lacked a clear call to action to encourage visitors to book tickets or explore membership options.</p>
-  </div>
-
-  <h3 class="casestudy-body-headline">Testing the Existing Information Architecture</h2>
-
-  <p class="casestudy-body-text">
-    To assess whether the issue was structural, we conducted extensive Tree Testing on the existing site’s IA, 
-    stripping away all visual design to ensure failures were purely semantic.
-  </p>
-
-  <p class="casestudy-body-text">
-    Our data confirmed that deep hierarchy, navigational ambiguity, and label conflicts were actively blocking the user journey:
-  </p>
-
-  <div class="summary-box" role="region" aria-labelledby="summary-box-key-information">
-    <h4 id="summary-box-key-information">Key Data</h4>
-    <p>• 30% of test users located the Collection Gallery under Explore.</p>
-    <p>• 80% of test users achieved indirect success when identifying Past content.</p>
-    <p>• 40% of test users were confused by “Ways to Donate” & “Donate Your Textiles” - We renamed the latter to “Making a Textile Donation”</p>
-  </div>
-
-</div>
-
-<div class="casestudy-body-container" id="tmcstr">
-    <h2 class="casestudy-body-headline">
-      Strategy: The Recommendation
-    </h2>
-    <p class="casestudy-body-text">
-      Based on the data, we developed a new Information Architecture. However, simply handing an IA map was not enough for us. 
-      My teammates and I had a disussion where we felt like we needed to ensure this was practical and not theoretical.
-    </p>
-
-    <h3 class="casestudy-body-headline">The Risk of a Overhaul</h3>
-
-  <p class="casestudy-body-text">
-    The conventional wisdom that most of our Cohort mates also suggested (other teams working on the same issue) was to launch the New IA inside a new "Mega Menu" UI 
-    simultaneously. I advised against this due to the risk of misunderstanding what actually works.
-  </p>
-
-  <p class="casestudy-body-text">
-    If metrics changed after a simultaneous launch, no one could attribute the change to the structure (IA) or the interface (UI).
-  </p>
-
-    <h3 class="casestudy-body-headline">
-      What I proposed
-    </h3>
     <p class="casestudy-body-text">
       I designed a phased A/B testing roadmap with interface mockups. 
       This strategy allows them to validate our proposed IA before committing to development.
@@ -212,9 +131,9 @@
 
 <section class="page-container" style="background: var(--jka-color-surface-inv-default);">
 
-<div class="casestudy-body-container" id="tmcui">
+<div class="casestudy-body-container" id="tmcui" style="padding-top: 0;">
 
-  <h2 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
+  <!--<h2 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
     Our UI/UX Solution
   </h2>
   <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
@@ -227,7 +146,7 @@
     onclick="window.open('../../assets/images/webp/tmc-ia-0.webp', '_blank')"><br><br>
 
   <h3 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
-    Explore how our IA addressed stakeholder objectives
+    Specific sections of our New IA
   </h3>
 
   <div class="casestudy-tabs">
@@ -281,9 +200,9 @@
       This design satisfies the museum's requirement for better archival visibility by providing a dedicated home for Past Events, making them "easily accessible" without the need for manual filtering.
     </p>
   </div>
-  </div>
+  </div>-->
   
-  <h3 class="casestudy-body-headline" style="color: var(--jka-color-surface-default); margin-top: 3rem;">
+  <h3 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
     The Phased Rollout Strategy
   </h3>
 
