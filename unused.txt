@@ -201,3 +201,72 @@
       <img src="/assets/images/ece.webp" alt="Mockup image of ECE department's Homepage." class="img-showc" />
     </div>
   </div>
+
+  <h2 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
+    Our UI/UX Solution
+  </h2>
+  <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+    The New Information Architecture:
+  </p>
+
+  <img src="../../assets/images/webp/tmc-ia-0.webp"
+    class="user-journey-image-mrs"
+    style="width:100%; cursor: pointer; margin-bottom: 2rem;"
+    onclick="window.open('../../assets/images/webp/tmc-ia-0.webp', '_blank')"><br><br>
+
+  <h3 class="casestudy-body-headline" style="color: var(--jka-color-surface-default);">
+    Specific sections of our New IA
+  </h3>
+
+  <div class="casestudy-tabs">
+    <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="plan-visit">Plan Your Visit</button>
+    <button class="tab-btn" data-tab="explore">Explore</button>
+  </div>
+  <hr>
+
+  <div class="tab-content active" id="plan-visit">
+    <h4 style="color: var(--jka-color-surface-default);">Plan Your Visit</h4>
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      We restructured the IA sub-tree for "Plan Your Visit" to provide direct paths to revenue actions: 
+      Admissions and Book a Group Tour. The existing site relied on a single "Visit" page with an in-page anchor menu. This forced users to scroll through eight sections:
+      Admissions, Holiday Hours, Upcoming Programming, Members, Getting Here, Community Access, Accessibility, and Tour, to find the information they needed. 
+      The sub-level content shows the items users were most likely trying to access.
+    </p>
+
+    <p class="caption-text" style="font-size: small; margin: 1rem 0; color: var(--jka-color-text-inv-default);">Pictured below: Plan Your Visit Section</p>
+    <img src="../../assets/images/webp/tmc-ia-1.webp" class="user-journey-image-mrs" 
+    style="width:50%; cursor:pointer; background-color: var(--jka-color-surface-default);" 
+    onclick="window.open('../../assets/images/webp/tmc-ia-1.webp','_blank')">
+    
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      The new structure elevates Admissions and Book a Group Tour to primary sub-levels and links directly to the corresponding conversion forms. 
+      This supports the stakeholders’ goal of making logistical information easily accessible, particularly for older audiences, 
+      by replacing long, anchor-link pages with a clear, shallow hierarchy that separates logistics from exploration.
+    </p>
+  </div>
+
+  <div class="tab-content" id="explore">
+    <h4 style="color: var(--jka-color-surface-default);">Explore</h4>
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      We restructured the IA sub-tree for "Explore" to provide direct paths to "Current," "Upcoming," and "Past" exhibitions and events. 
+      The existing site relied on a single "What's On" menu item, forcing users to filter through paginated months and tags on one page to find specific content. 
+      The sub-level content shows the items users might be looking at.
+    </p>
+
+    <p class="caption-text" style="font-size: small; margin: 1rem 0; color: var(--jka-color-text-inv-default);">Pictured below: Explore Section</p>
+    <img src="../../assets/images/webp/tmc-ia-2.webp" class="user-journey-image-mrs" 
+    style="width:50%; cursor:pointer; background-color: var(--jka-color-surface-default);"
+    onclick="window.open('../../assets/images/webp/tmc-ia-2.webp','_blank')">
+    
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      The new structure allows each menu item to link directly to a pre-filtered results page, supporting the stakeholders' goal of faster event discovery and booking. 
+      By building the IA around the museum's existing tag and filter logic, the navigation can automatically update as new exhibits are added. 
+      This reduces technical maintenance and allows the team to focus on content creation rather than navigation upkeep.
+    </p>
+
+    <p class="casestudy-body-text" style="color: var(--jka-color-surface-muted); margin-bottom: 20px;">
+      This design satisfies the museum's requirement for better archival visibility by providing a dedicated home for Past Events, making them "easily accessible" without the need for manual filtering.
+    </p>
+  </div>
+  </div>

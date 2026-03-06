@@ -44,7 +44,6 @@
   --jka-letter-spacing-tight: -0.03px;
 }
 
-
 h1, h2, h3, h4, h5 {
   font-family: var(--jka-font-family-heading);
   line-height: var(--jka-line-height-heading);
@@ -73,12 +72,21 @@ h6 {
   color: var(--jka-color-theme-mid);
 }
 
-a, p {
+p {
   font-family: var(--jka-font-family-body);
   font-size: var(--jka-font-size-md);
   line-height: var(--jka-line-height-body);
   color: var(--jka-color-text-default);
   margin: 1em 0;
+}
+
+a {
+  font-family: var(--jka-font-family-body);
+  font-size: var(--jka-font-size-md);
+  line-height: var(--jka-line-height-body);
+  color: var(--jka-color-theme-strong);
+  margin: 1em 0;
+  font-weight: 700;
 }
 
 .text-super {
@@ -127,6 +135,9 @@ a, p {
   #mary-persona {
     display: none;
   } 
+  .text-super {
+    font-size: var(--jka-font-size-lg);
+  }
 }
 
 @media (max-width: 1080px) {
@@ -151,7 +162,9 @@ a, p {
   .desktop1440 {
     display: none;
   }  
-  
+  .text-super {
+    font-size: var(--jka-font-size-4xl);
+  }
 }
 
 @media (max-width: 1440px) {
@@ -536,14 +549,23 @@ article > p {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 2rem;
+    gap: 2rem;
 }
 
 .image-row-tmc img {
     width: 48%; 
     height: auto;
     cursor: pointer;
+}
+
+.image-row-tmc > div {
+    width: 48%; 
+    height: auto;
+    padding: 24px 28px;
+    background-color: var(--jka-color-accent);
+    border: 1px solid var(--jka-color-border-default);
+    border-radius: 6px;
 }
 
 .responsive-flex {
@@ -1253,6 +1275,14 @@ article > p {
   margin: 0;
   width: 100%;
   padding: 6rem 2rem 2rem;
+}
+
+.top-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem 2rem 2rem;
 }
 
 .casestudy-body-container-img {
@@ -2038,15 +2068,6 @@ margin-bottom: 2rem; max-width: 1200px;
   width: 100%;
 }
 
-
-@media (max-width: 768px) {
-
-  .NC-heading {
-    font-size: var(--jka-font-size-lg);
-  }
-
-}
-
 .NC-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2092,12 +2113,6 @@ margin-bottom: 2rem; max-width: 1200px;
 .NC-tagline {
   color: var(--jka-color-theme-strong);
   width: 100%;
-}
-
-.NC-heading {
-  color: var(--jka-color-text-strong);
-  width: 100%;
-  font-size: var(--jka-font-size-super);
 }
 
 /* Info Group */
@@ -2158,4 +2173,169 @@ margin-bottom: 2rem; max-width: 1200px;
 .tabs-section-main {
   align-items: flex-start; width: 100%; max-width: 1200px; margin: 0.5rem auto 2rem; 
   border-bottom: solid 2px var(--jka-color-theme-strong); padding-bottom: 2rem;
+}
+
+.NS-split-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 2rem 0;
+}
+
+.NS-top-block {
+  flex: 1;
+  display: flex;
+}
+
+.NS-top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.NS-content-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.NS-bottom-block {
+}
+
+.NS-boxes-grid {
+  display: grid;
+}
+
+.NS-info-box {
+  border: 1px solid var(--jka-color-accent);
+  min-height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+
+  .NS-split-section {
+    min-height: auto;
+  }
+
+  .NS-boxes-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* 769px – 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .NS-boxes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* 1201px and above */
+@media (min-width: 1201px) {
+
+  .NS-boxes-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.NS-text {
+  margin-top: 0rem;
+  font-weight: 600;
+}
+
+.NS-cap {
+  font-weight: 600;
+  color: var(--jka-color-text-weakest);
+}
+
+/* Element 1: Eyebrow + Text */
+.BC-element1 {
+  width: 60%;
+  margin: 2rem auto 2rem 0; /* bottom gap for separation */
+}
+
+@media (max-width: 1024px) {
+  .BC-element1 {
+    width: 100%;
+  }
+}
+
+/* Element 2: Two-column text grid */
+.BC-element2 {
+  width: 100%;
+}
+
+.BC-text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .BC-text-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Grid setup */
+.BC-process-list .BC-text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .BC-process-list .BC-text-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Each process item: horizontal layout */
+.BC-process-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem; /* spacing between circle and content */
+}
+
+/* Numbered circle */
+.BC-process-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--jka-color-theme-mid);
+  background: var(--jka-color-surface-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--jka-font-size-2xl);
+  font-family: var(--jka-font-family-heading);
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+/* Content stacked next to circle */
+.BC-process-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: spacing between heading and paragraph */
+.BC-process-content .process-list-heading {
+  margin: 0 0 0.5rem 0;
 }
