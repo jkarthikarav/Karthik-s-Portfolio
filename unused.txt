@@ -78,7 +78,7 @@
           Projected User Impact: Reduced cognitive load and faster access to essential information.
         </p>
         
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/data-driven-ia-redesign-and-phased-rollout-strategy.html', '_blank');" style="width: fit-content;">
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/information-architecture.html', '_blank');" style="width: fit-content;">
           View Case Study →
         </button>
     </div>
@@ -108,7 +108,7 @@
           User Impact: Reduced client anxiety, revision loops, and AI-fueled employee morale decreases.
         </p>
         
-        <button class="secondary-btn" onclick="window.open('/pages/casestudies/genai-studio-transformation.html', '_blank');" style="width: fit-content;">
+        <button class="secondary-btn" onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank');" style="width: fit-content;">
           View Case Study →
         </button>
     </div>
@@ -160,7 +160,7 @@
         User Impact: Reduced client revision loops and increased confidence in AI-enabled creative practice.
       </p>
 
-      <button class="secondary-btn" onclick="window.open('/pages/casestudies/genai-studio-transformation.html', '_blank');" style="width: fit-content;">
+      <button class="secondary-btn" onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank');" style="width: fit-content;">
         View Case Study →</span>
       </button>
 
