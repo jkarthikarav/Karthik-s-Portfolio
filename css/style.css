@@ -1527,6 +1527,15 @@ margin-bottom: 2rem; max-width: 1200px;
   object-position: top left;
 }
 
+.content-section {
+  width: 100%;
+  justify-content: center; align-items: center; justify-items: center;
+}
+
+.content-section .content-container-ui {
+  margin-top: 0;
+}
+
 .content-container-ui {
   position: relative;
   background-color: var(--jka-color-surface-default);
