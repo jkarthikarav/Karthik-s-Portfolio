@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div id="header-placeholder"></div>
+<div id="header-placeholder" class="NOTmobile"></div>
 
 <img
   src="../../assets/icons/back-to-top.png"
@@ -33,6 +33,10 @@
         <p class="label-ui">UI/UX</p> <p class="label-ui">MOBILE APP DESIGN</p> <p class="label-ui">FIGMA</p> <p class="label-ui">ARTS & CULTURE</p>
       </div>
       <h1 class="text-super" style="margin-top: 0.25rem; margin-bottom: 0.25rem;">Ticket Discoverability App<br>Structuring Information Flow for Cultural Access</h1>
+      <p>
+        A ticket discoverability app for Toronto's GLAM sector: built from mixed-methods research, 
+        architected around real constraints, and finished with a component system designed for scanability.
+      </p>
       <nav aria-label="Breadcrumb" style="margin-top: 0.25rem;">
         <ol class="breadcrumb-list">
         <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
@@ -74,28 +78,51 @@
 
 <section class="header-card-ui">
   <div class="banner-ui">
-    <img src="../../assets/images/hero-banners/EXPTOR.webp" alt="Banner image" class="banner-img-ui" />
+    <img src="../../assets/images/hero-banners/EXPTOR.webp" alt="Banner image" class="banner-img-ui" style="object-position: bottom;"/>
   </div>
 
   <div class="content-container-ui">
 
-  <h4 class="casestudy-body-headline">
-    Like most academic group projects, I was sorted into a group on random for my UX Design Fundamentals course. 
-    Luckily all of us were passionate about the Arts. 
-    Therefore, our group decided to focus on the Arts and Culture domain, the GLAM sector in particular.
-  </h4>
-  <p class="casestudy-body-text">
-    The focus of this project was to create a solution (either physical or digital) to solve a public sector issue. We opted to create a solution that catered to Event Discovery, which is a very important part of running a GLAM organization.
-  </p>
 
-<!-- Element 1: Eyebrow + Text -->
+        <div class="gallery-layout-12" id="start">
+          <aside>
+            <div class="logo-link" style="margin: 20px 0;">
+              <img src="/assets/icons/sections/challenge.png" class="logos-img" style="border: none;">
+            </div>
+            <h6 style="text-transform: uppercase; color: var(--jka-color-text-weakest);">The Context</h6>
+            <p style="font-style: italic;">
+                The problem we found wasn't that Toronto lacked cultural programming.
+                It was that the information about it was everywhere and nowhere at once.
+            </p>
+          </aside>
+          <main>
+            <h2>
+              Six UX students. One shared passion for the Arts. One very fragmented problem.
+            </h2>
+            <div class="text-grid-12">
+              <div>
+                <p>
+                  This started as an academic group project for a UX course to design a solution for a public sector issue. 
+                </p>
+              </div>
+              <div>
+                <p>
+                  Our group landed on the GLAM sector (Galleries, Libraries, Archives, and Museums) because all six of us cared about it genuinely.
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+        
+        <!-- Element 1: Eyebrow + Text -->
 <div class="BC-element1">
-  <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">The Challenge</p>
+  <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Mixed-Methods Research</p>
   <h2 class="BC-text">
-    Toronto Residents struggle to book GLAM events due to systemic information fragmentation.
+    We didn't assume the problem. 
   </h2>
   <p class="casestudy-body-text">
-    <strong>Our Solution:</strong> We aimed to centralize discovery via a mobile app, simplifying access to GLAM discounts and events.
+    36 survey participants. 12 interviews. Market data spanning pre- and post-pandemic attendance. 
+    Three sources pointing to the same pain point. 
   </p>
 </div>
 
@@ -104,148 +131,66 @@
   <div class="BC-text-grid">
 
     <p class="casestudy-body-text">
-      Market research showed us that while Free and discounted admissions do exist, they remain underutilized.
-      We surveyed 42 participants (36 valid responses) and conducted 12 in-depth interviews to understand how 
-      people discover tickets. 
+      The research didn't just confirm that ticket prices were a barrier, it revealed that the real problem was in the discovery.
     </p>
 
     <div>
     <p class="casestudy-body-text">
-      Our focal questions were:
+      Discount programs already existed; people simply couldn't find them. 
     </p>
-    <dl class="dl-showc">
-      <dt class="dt-showc">1. How can museum admission information be made more visible?</dt>
-      <dt class="dt-showc">2. How do people feel about ticket prices?</dt>
-      <dt class="dt-showc">3. How aware are they of discount programs?</dt>
-      <dt class="dt-showc">4. How do accessibility and affordability influence attendance?</dt>
-    </dl>
+    <p class="casestudy-body-text">
+      <strong>From our Data:</strong> 24 respondents said they'd visit museums more often, if discount information were simply easier to find.
+    </p>
     </div>
     
   </div>
 </div>
 
-  <div class="image-row-tmc">
-    <div role="region" aria-labelledby="summary-box-key-information" style="height: 100%;">
-      <h4 id="summary-box-key-information">Market Research Findings</h4>
-      <p>• ▲ CA$ 30.00+ (Ticket prices) at major museums like the ROM and AGO, limiting attendance and audience reach.</p>
-      <p>• 350,000 ▼ was the attendance at The ROM in 2022, compared to 1.2Mn in 2019, suggesting post-pandemic challenges.</p>
-      <p>• Many Torontonians are unaware of free admission times because the information is scattered across sources.</p>
-    </div>
 
-    <div role="region" aria-labelledby="summary-box-key-information" style="height: 100%;">
-      <h4 id="summary-box-key-information">Primary Research Findings</h4>
-      <p>• 25 of 36 Survey Participants find ticket and discount information online, showing demand for easily accessible content.</p>
-      <p>• 18 of 36 Survey Participants would visit the museum more frequently if discount information were easier to access.</p>
-      <p>• 6 of 12 Interview Participants identified challenges in accessing discount information, highlighting usability issues.</p>
-    </div>
-  </div>
 
 <!-- Element 1: Eyebrow + Text -->
 <div class="BC-element1">
-  <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Key Insight</p>
+  <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Information Architecture</p>
   <h2 class="BC-text">
-    If <span class="special-text3">awareness</span> is the problem, the solution must centralize <span class="special-text3">discovery</span>.
+    The Map tested well. We cut it because to make the app technically feasible, we'd have 
+    to depend on infrastructure that didn't exist.
   </h2>
 </div>
 
 <!-- Element 2: Two-column text grid -->
 <div class="BC-element2">
   <div class="BC-text-grid">
-
-    <div>
-    <p class="casestudy-body-text">
-      User Story
-    </p>
-    <ol class="process-list">
-      <li class="process-list-item">
-        <h3 class="process-list-heading">Mary, the Museum-Goer is a busy student who tries to visit museums whenever she can.</h3>
-      </li>
-
-      <li class="process-list-item">
-        <h3 class="process-list-heading">She finds discounted tickets frustrating to locate, and the effort often outweighs the benefits.</h3>
-      </li>
-
-      <li class="process-list-item">
-        <h3 class="process-list-heading">This difficulty sometimes causes her to exceed her budget, limiting her museum visits.</h3>
-      </li>
-    </ol>
-    </div>
-
-    <div>
-    <p class="casestudy-body-text">
-      Her experience mirrors the challenges many Torontonians face, highlighting the barriers to affordable GLAM access guiding our Product design process.
-      To convert insights into features, I created an Impact vs. Feasibility matrix to prioritize ideas.
-    </p>
-
-    <img src="../../assets/images/webp/Priority.webp" style="width: 100%;" alt="Mary, the Museum Go-er" />
-    </div>
-    
-  </div>
-</div>
-
-<!-- Element 1: Eyebrow + Text -->
-<div class="BC-element1">
-  <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Design Directions</p>
-  <dl class="dl-showc">
-    <dt class="dt-showc">1. Ensure Ease of Access: Mary needs one-stop access to all available deals.</dt>
-    <dt class="dt-showc">2. Enable Plan & Share: Mary and her friends plan their visits together and in advance.</dt>
-  </dl>
-</div>
-
-<!-- Element 2: Two-column text grid -->
-<div class="BC-element2">
-  <div class="BC-text-grid">
-
-    <div>
-    <p class="casestudy-body-text">
-      After this we (team member Rebecca, primarily) designed <a href="../../assets/images/exptor/taskflow.webp" target="_blank">task flows</a>, ensuring Mary could transition from finding a deal to planning her visit. 
-    </p>
-    <p class="casestudy-body-text">
-      We (Myself and team member Kyle with verbal input from other group members) designed it in Figma
-      during a virtual group working session. View Low-Fidelity Designs here - <a href="../../assets/images/MTDoldhome.png" target="_blank">Home</a>, 
-      <a href="../../assets/images/MTDolddiscover.png" target="_blank">Discover Page</a>, and 
-      <a href="../../assets/images/MTDoldcard.png" target="_blank">Card Component</a>, and its 
-      <a href="../../assets/images/MTDoldcard-open.png" target="_blank">variant</a>.
-    </p>
-    </div>
 
     <div>
       <p class="casestudy-body-text">
-        The final requirement for our project was to make a low-fidelity prototype that was later presented to a panel of senior UX 
-        researchers during our course INF1602 Design Playback sessions. 
+        A map interface looked right in lo-fi and received positive feedback at the Design Playback; but it was a distraction, 
+        adding visual clutter that didn't address the problem. View the original Lo-Fi we made through the links below:
       </p>
-    
-      <div class="facts-grid-doublet">
-      
-        <div>
-          <img src="../../assets/images/about/Education-3.webp"/>
-          <p class="caption-text" style="font-size: small; margin: 1rem 0;">
-            Photo by Brian C., Fellow Coursemate. Pictured Above (From L-R): 
-            Presenting our Prototype - Rebecca Ding, Quinn Kavaner, Ankush Sood, and Myself.
-          </p>
-        </div>
-
-        <div>
-          <img src="/assets/images/about/Education-2.webp"/>
-          <p class="caption-text" style="font-size: small; margin: 1rem 0;">
-            Pictured Above (From L-R): Ticket Discoverability App project team members and our UXD Professor
-             - Vivian Zhang, Rebecca Ding, Ankush Sood, Prof. St-Cyr, Kyle Thomas, Quinn Kavaner, and Myself.</p>
-        </div>
-
-      </div>
-
+      <div class="meta-hero-main">
+      <button class="secondary-btn"
+              onclick="window.open('../../assets/images/exptor/MTDoldhome.png', '_blank')">
+        Home Page
+      </button>
+      <button class="secondary-btn" 
+              onclick="window.open('../../assets/images/exptor/MTDolddiscover.png', '_blank')">
+        Discover Page with Map feature
+      </button>
+    </div>
     </div>
 
+    <div>
+    <p class="casestudy-body-text">
+      The pivot to search-first was an IA decision that matched the product's technical constraints 
+      while directly serving what research confirmed users actually wanted.
+    </p>
+    </div>
+    
   </div>
 </div>
 
-<!-- Element 1: Eyebrow + Text -->
-<div class="BC-element1">
-  <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Beyond Academics</p>
-  <h2 class="BC-text">
-    After the course ended, I revisited the UI design stage individually using the feedback.
-  </h2>
-</div>
+  <h3 class="BC-text" style="margin-top: 2rem;">
+    High Fidelity Designs 
+  </h3>
 
 <img src="../../assets/images/exptor/HF/HF.webp" style="width: 100%; height: auto; cursor: pointer; margin: 2rem 0;" onclick="openModal('../../assets/images/exptor/HF/HF.png')" />
 
@@ -253,8 +198,14 @@
 <div class="BC-element1">
   <p class="caption-text NS-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Component Design</p>
   <h2 class="BC-text">
-    The component design focuses on high readability to help users plan visits effortlessly.
+    Every component had one job: reduce number of clicks to information of high value.
+    
   </h2>
+  <p>
+    The focus was on guiding the user between opening the app and knowing what to do next.
+    The high-fidelity component system was built by myself individually after the course ended, using lo-fi feedback as the brief. 
+    Tabs, toggles, cards, and navigation were each scoped to the flows that our research confirmed users actually needed.
+  </p>
 </div>
 
 <div class="tab-buttons">
@@ -298,21 +249,12 @@
     <div class="mmc-content">
       <h1>What I Learned</h1>
       <h5>
-        Mary, the Museum Go-er, (our persona) guided the design from the start. 
-        She expressed her wants clearly: “I want to know where the discounts are,” “I want my friends to come with me,” “I want it easier on my phone.”
+        Design decisions made purely from user preference can be fragile. 
+        Decisions made purely from technical constraint can miss the point entirely. 
+        This project showed what it looks like when both validate each other.
       </h5>
       <h5>
-        Her actual needs centered on clarity and quicker planning. 
-        We planned features like a unified feed, calendar-based planning, and effortless sharing.
-        But this wasn't us translating her wants into needs, they were direct solutions to the mental barriers preventing her visits.
-      </h5>
-      <h5>
-        A clear learning moment came from the Discover section. 
-        While the Map feature in the low fidelity UI tested positively, 
-        it conflicted with Mary’s preference for less visual clutter and more direct answers.
-      </h5>
-      <h5> 
-        Converting the Discover section into a search-first page simplified the experience and addressed her needs more effectively.
+        Coming back to rebuild the UI after the course also told me something simpler: a prototype good enough to present isn't the same as work that's actually finished.
       </h5>
 
       <div class="takeaway">
@@ -321,7 +263,7 @@
             “I don't want to build an app whose functionality could be easily replicated in Google Maps as a plugin.”
           </h3>
           <p class="casestudy-body-text" style="color: var(--jka-color-text-inv-muted);">
-            -- Actual statement I made during this project.
+            -- What I said to my peers during the original project. I still believe in my instincts.
             </p>
           </blockquote>
       </div>
