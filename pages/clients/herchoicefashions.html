@@ -15,28 +15,23 @@
 
 <body>
 
-<img
-  src="/assets/icons/back-to-top.png"
-  alt="floating image button"
-  id="floatingImage"
-  onclick="scrollToTops()"
-/>
+      <div id="header-placeholder" class="NOTmobile"></div>
+
 
 <section class="header-card-ui">
   <div class="banner-ui">
-    <img src="/assets/images/hero-banners/client-work.webp" alt="Banner image" class="banner-img-ui" />
+    <img src="/assets/images/gd/HCF/Tag.webp" alt="Banner image" class="banner-img-ui" style="object-position: center;"/>
   </div>
 
   <div class="content-container-ui">
     <nav aria-label="Breadcrumb">
       <ol class="breadcrumb-list">
         <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="/visualdesigns.html">Visual Designs</a></li>
         <li class="breadcrumb-item active" aria-current="page">Her Choice Fashions</li>
       </ol>
     </nav>
     <h1>Her Choice Fashions</h1>
-    <h2>Women's Ethnic wear</h2>
+    <h2>Marketing Strategy for a Women's Ethnic wear Retailer</h2>
 
     <div class="author-profile-ui">
       <div class="author-info-ui">
@@ -105,18 +100,15 @@ fetch('../../addons/header.html') .then(response => response.text()) .then(data 
 </script>
 
 
-<script>
-  function scrollToTops() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
 
-  document
-    .getElementById("floatingImage")
-    .addEventListener("click", scrollToTop);
-</script>
+    <script>
+      fetch('../../addons/header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+    </script>
 
 <script>
   const tabs = document.querySelectorAll('.tab-btn');
