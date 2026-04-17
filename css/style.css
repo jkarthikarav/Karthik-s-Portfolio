@@ -753,7 +753,16 @@ article > p {
 }
 
 .callout-content {
-  width: 100%; padding: 3rem auto 2rem; max-width: 1200px; margin: 2rem auto;
+  width: 100%; padding: 3rem 2rem 2rem; max-width: 1200px; margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.callout-content h4 {
+  width: 100%;
 }
 
 .callout-content h2 {
@@ -761,7 +770,7 @@ article > p {
 }
 
 .callout-content img {
-  width:50%; height: auto; margin: 0.5rem auto 0.25rem;
+  width: 50%; height: auto; margin: 0.5rem 0 0.25rem;
 }
 
 .callout-content p {
@@ -774,6 +783,14 @@ article > p {
 
 .callout-content a {
   text-decoration: none;
+}
+
+.cs-image {
+  width: 100%; height: auto; margin: 0.5rem auto 0.25rem;
+}
+
+.cs-image-caption {
+  font-style: oblique; font-size: small; margin: 0; max-width: 1200px; width: 100%;
 }
 
 .mcc {
