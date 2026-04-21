@@ -2060,6 +2060,10 @@ margin-bottom: 2rem; max-width: 1200px;
     margin-left: 0;
     margin-right: auto;
   }
+  .meta-hero-about {
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .content-hero-main {                 
     margin-left: 2rem !important;
   }
@@ -2084,7 +2088,7 @@ margin-bottom: 2rem; max-width: 1200px;
   position: relative;
   width: 100%;
   padding: 4rem;
-  background-color: var(--jka-color-theme-faint);
+  background-color: var(--jka-color-accent-light);
 }
 
 .testimonial .h2 {
@@ -2138,6 +2142,17 @@ margin-bottom: 2rem; max-width: 1200px;
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.meta-hero-about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0 2rem;
+}
+
+.meta-hero-about > .label-ui {
+  width: fit-content;
 }
 
 .date-hero-main {
@@ -2252,7 +2267,7 @@ margin-bottom: 2rem; max-width: 1200px;
 .NC-icon-box {
   width: 32px;
   height: 32px;
-  background-color: var(--jka-color-border-default);
+  background-color: var(--jka-color-accent);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -2409,6 +2424,25 @@ margin-bottom: 2rem; max-width: 1200px;
   padding-bottom: 2rem;
 }
 
+.main-container-about {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  padding: 2rem;
+  align-items: center;
+}
+
+.about-text {
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+}
+
+.about-headline {
+  margin-top: 3rem;
+}
+
+
 .main-container h2 {
   margin: 1rem auto 2rem; width: fit-content;
 }
@@ -2447,6 +2481,7 @@ margin-bottom: 2rem; max-width: 1200px;
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
+  max-width: 768px;
   padding: 1rem;
   border-bottom: solid 1px var(--jka-color-border-subtle);
   margin: 1rem 0 2rem;
@@ -2459,6 +2494,7 @@ margin-bottom: 2rem; max-width: 1200px;
   flex-shrink: 0;
   margin: 1rem 0;
   font-weight: 600;
+  width: max-content;
 }
 
 .BC-process-logo-single {
