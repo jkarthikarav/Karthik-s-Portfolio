@@ -11,6 +11,8 @@
 
   --jka-color-accent: #F1F2E3;
   --jka-color-accent-light: #fbfbf7;
+  --jka-color-accent-dark: #f1f5b7; 
+  --jka-color-accent-10: rgba(241, 245, 183, 0.1);
   
   --jka-color-surface-default: #FFFFFF;
   --jka-color-surface-subtle: #fcfcfc; 
@@ -129,6 +131,26 @@ a {
 
 .special-text3 {
   font-style: oblique; color: var(--jka-color-theme-strong); font-weight:600;
+}
+
+.special-text4 {
+  color: var(--jka-color-text-inv-default); margin: 4rem auto 2rem; text-align: center;
+}
+
+.special-text4 > span {
+  color: #f1f5b7;
+}
+
+.accent {
+  color: var(--jka-color-accent-dark);
+}
+
+.accent-alt {
+  color: var(--jka-color-accent-light);
+}
+
+.white {
+  color: var(--jka-color-text-inv-default);
 }
 
 @media (max-width: 768px) {
@@ -457,6 +479,15 @@ article > p {
   display: flex; flex-direction: column; 
   align-items: center; justify-content: flex-start; width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.alt-section {
+  background-color: var(--jka-color-theme-stronger); box-sizing: border-box;
+  display: flex; flex-direction: column; 
+  align-items: center; justify-content: center; width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .callout-work {
@@ -2171,7 +2202,7 @@ margin-bottom: 2rem; max-width: 1200px;
 }
 
 .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
-    .logos-img { width: 100px; height: 100px; object-fit: cover; opacity: 1; transition: opacity 0.3s; border: 1px solid var(--jka-color-accent); }
+    .logos-img { width: 100px; height: 100px; object-fit: cover; opacity: 1; transition: opacity 0.3s;}
     .logo-text { max-width: 150px; font-size: var(--jka-font-size-sm); color: var(--jka-color-text-subtle)}
 
     .logo-section {
@@ -2188,6 +2219,7 @@ margin-bottom: 2rem; max-width: 1200px;
   flex-wrap: wrap; 
   justify-content: center; 
   gap: 40px; 
+  padding: 0 1rem;
 }
 
 .NC-section {
@@ -2268,6 +2300,17 @@ margin-bottom: 2rem; max-width: 1200px;
   width: 32px;
   height: 32px;
   background-color: var(--jka-color-accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-color: var(--jka-color-accent-light);
   border-radius: 8px;
   display: flex;
   align-items: center;
