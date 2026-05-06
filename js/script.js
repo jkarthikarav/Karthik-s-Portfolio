@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tabMatch = hash.match(/tab=(\w+)/);
     if (tabMatch) {
       const tabName = tabMatch[1];
-      const buttons = document.querySelectorAll(".tab-btn");
-      const contents = document.querySelectorAll(".tab-content");
+      const buttons = document.querySelectorAll(".jka-tab-button");
+      const contents = document.querySelectorAll(".jka-tab-content");
 
       buttons.forEach(btn => {
         btn.classList.toggle("active", btn.dataset.tab === tabName);
