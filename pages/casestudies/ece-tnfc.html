@@ -11,7 +11,8 @@
   <title>ECE x Toronto NanoFabrication Centre (TNFC)</title>
 
   <!-- Fonts -->
-  <link rel="preload" as="style"
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap" rel="stylesheet" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -27,326 +28,251 @@
 
 <body>
   <div id="header-placeholder" class="NOTmobile"></div>
-
-  <img src="/assets/icons/back-to-top.png" alt="floating image button" id="backtotopbutton" onclick="scrollToTops()" />
-
-  <section class="jka-casestudy-hero-split-section">
-
-    <div class="jka-casestudy-hero-top-block">
-      <div class="jka-casestudy-hero-content-wrap jka-casestudy-hero-top-inner">
-        <div style="margin-bottom: 0.25rem;">
-          <p class="jka-hashtags">UI/UX</p>
-          <p class="jka-hashtags">WEB DESIGN</p>
-          <p class="jka-hashtags">FIGMA</p>
-          <p class="jka-hashtags">WORDPRESS</p>
-          <p class="jka-hashtags">EDUCATIONAL INSTITUTION</p>
-        </div>
-        <h1 class="text-super" style="margin-top: 0.25rem; margin-bottom: 0.25rem;">The Toronto NanoFabrication Centre
-          (TNFC)<br>
-          Unifying a Reopened Lab with ECE at U of T
-        </h1>
-        <p>
-          A digital overhaul for a reopened research lab:
-          fifteen fragmented pages consolidated into two pages through structured UI,
-          and a modular build so reusable it supported the department's next big project after I left.
-        </p>
-        <nav aria-label="jka-breadcrumb" style="margin-top: 0.25rem;">
-          <ol class="jka-breadcrumb-list">
-            <li class="jka-breadcrumb-item"><a href="/index.html">Home</a></li>
-            <li class="jka-breadcrumb-item active" aria-current="page">Toronto NanoFabrication Centre</li>
-          </ol>
+  
+  <section class="jka-about-section-outer" 
+    style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('/assets/images/blogs/TNFC.webp'); background-size: contain; background-position: center;">
+    
+    <div class="jka-about-section-wrapper" id="startnfc" style="background: rgba(255,255,255,0.7);">
+ 
+      <!-- COL 1: Sticky navigation -->
+      <div class="jka-about-section-col1">
+        <p class="text-btn" style="margin: 0.75rem 0 0 0;" onclick="window.open('/','_blank');">← <span class="btntext">Back to Home</span></p> 
+        <nav class="jka-about-section-nav">
+          <p class="jka-about-section-nav-heading" style="margin: 0.75rem 0 0 0;">The Toronto NanoFabrication Centre (TNFC)</p>
+          <button class="jka-about-section-btn primary-btn" data-target="jka-about-section-section-1">Context</button>
+          <p class="jka-about-section-nav-label" style="margin: 0.75rem 0 0 0;">The Karthik Approach</p>
+          <button class="jka-about-section-btn tertiary-btn" data-target="jka-about-section-section-2">Content Audit & Restructuring</button>
+          <button class="jka-about-section-btn tertiary-btn" data-target="jka-about-section-section-3">Key Priorities</button>
+          <button class="jka-about-section-btn tertiary-btn" data-target="jka-about-section-section-4">Designing the new UI</button>
+          <button class="jka-about-section-btn tertiary-btn" data-target="jka-about-section-section-5">Exceeding Stakeholder Expectations</button>
+          <button class="jka-about-section-btn tertiary-btn" data-target="jka-about-section-section-6">What I Learned</button>
         </nav>
       </div>
-    </div>
-
-    <div class="jka-casestudy-hero-bottom-block">
-      <div class="jka-casestudy-hero-content-wrap">
-        <div class="jka-casestudy-hero-boxes-grid">
-
-          <div class="jka-casestudy-hero-info-box">
-            <p class="caption-text jka-casestudy-hero-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Client</p>
-            <p class="jka-casestudy-hero-text">ECE at U of T</p>
-          </div>
-
-          <div class="jka-casestudy-hero-info-box">
-            <p class="caption-text jka-casestudy-hero-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Shipped</p>
-            <p class="jka-casestudy-hero-text">Mar 2025</p>
-          </div>
-
-          <div class="jka-casestudy-hero-info-box">
-            <p class="caption-text jka-casestudy-hero-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Role</p>
-            <p class="jka-casestudy-hero-text">Lead Designer & Front-End Developer</p>
-          </div>
-
-          <div class="jka-casestudy-hero-info-box">
-            <p class="caption-text jka-casestudy-hero-cap" style="font-size: small; margin: 0.5rem auto 0rem;">Tools Used</p>
-            <p class="jka-casestudy-hero-text">Figma, WordPress</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="jka-subpage-section-primary">
-    <div class="jka-subpage-banner">
-      <img src="/assets/images/hero-banners/ECE-TNFC.webp" alt="Banner image" class="jka-subpage-banner-image"
-        style="object-position: center;" />
-    </div>
-    <div class="jka-container-secondary">
-
-<div class="jka-section jka-section--split">
-  <aside class="jka-section__aside">
-    <div class="jka-aside-icon">
-      <img src="/assets/icons/sections/challenge.png" class="jka-logos-img" alt="icon">
-    </div>
-    <h6 class="jka-aside-label">The Context</h6>
-    <p class="jka-aside-phrase">
-      A lab reopening without a modernized digital presence.
-    </p>
-  </aside>
-  <main class="jka-section__main">
-    <h2 class="jka-heading">
-      The TNFC lab had reopened, but its website hadn't evolved with it.
-    </h2>
-    <div class="jka-section__body">
-      <div class="jka-col">
-        <p class="jka-body-text">
-          The Toronto Nanofabrication Centre underwent a renovation and reopened in November 2023.
-          Despite this renewal, in February 2025, its digital presence remained outdated and disconnected from the
-          ECE website & intranet.
-        </p>
-        <p class="jka-body-text">
-          This is the page I built:
+ 
+      <!-- COL 2: Sections -->
+      <div class="jka-about-section-col2" id="jka-about-section-col2">
+ 
+        <div class="jka-about-section-section jka-about-section-section--active" id="jka-about-section-section-1">
+          <p class="mobile-only jka-about-section-heading">
+            This case study focuses on how I consolidated TNFC lab's standalone website into a two-page section within the ECE site, improving discoverability and reducing site management overhead.
+          </p>
+          <h2 style="margin: 10px auto -1rem; width: 100%;">
+            Context
+          </h2>
+          <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
+          <p style="width: 100%; margin: 0 0 12px;">
+            The Toronto Nanofabrication Centre (TNFC) reopened in November 2023 after a renovation, but its separately-run website was still outdated. 
+            When ECE at U of T's Admin reviewed digital priorities a year later, the site stood out as a problem.
+          </p>
+          <p style="width: 100%; margin: 0 0 12px;">
+            I had been working on content updates and UI standardisation across the ECE website, so I was also assigned to research the TNFC site and assess options. 
+          </p>
+          <p style="width: 100%; margin: 0 0 12px;">
+            I submitted my proposal in November 2024, got the green light in February 2025, and shipped in late March 2025, after wrapping up higher-priority ECE website work first.
+            This is the page I built:
           <a href="https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/" target="_blank"
             rel="noopener noreferrer">
             Toronto Nanofabrication Centre
           </a>.
-        </p>
-      </div>
-      <div class="jka-col">
-        <p class="jka-body-text">
-          Information was split-up across multiple pages, requirements were buried in hyperlinks and academic
-          language,
-          and the site operated in isolation rather than as an integrated part of ECE's digital presence.
-        </p>
-        <p class="jka-body-text">
-          The primary task was restructuring and rewriting existing content to modernize the digital experience.
-        </p>
-      </div>
-    </div>
-  </main>
-</div>
+          </p>
+          <p style="width: 100%; margin: 0; font-size: var(--jka-font-size-sm);">
+            <strong>
+              Disclaimer:
+            </strong>
+            As this public website continues to evolve, the page may differ from the versions shown.
+            I have since left the organization, and any updates made thereafter are at their discretion.
+          </p>
 
-      <p class="jka-paragraph-default" style="font-size: var(--jka-font-size-sm);">
-        <strong>
-          Disclaimer:
-        </strong>
-        As this public website continues to evolve, the page may differ from the versions shown.
-        I have since left the organization, and any updates made thereafter are at their discretion.
+          <div class="article-grid-13">
+
+  <a class="article-entry-13" style="cursor: default;">
+    <div class="article-content-13">
+      <p class="text-mid-13">
+        UX Research:
+        <span>Nov 2024 – Dec 2025</span>
       </p>
+      <p class="text-mid-13">
+        Design & Front-End Dev:
+        <span>Mar 2025</span>
+      </p>
+    </div>
+  </a>
 
-      <div class="callout-box-13">
-        <p class="eyebrow-13">
-          <span style="display: inline-block; transform: scaleX(2); margin-right: 5px;">&mdash;</span>
-          What Stakeholders Wanted
-        </p>
-        <h2 class="hero-hook-13">
-          Key priorities identified through stakeholder alignment:
-        </h2>
-        <div class="container-stats-13" style="display: flex; justify-content: space-between;">
-          <div style="padding-right: 1rem; flex: 1;">
-            <h3>Clear Lab Identity</h3>
-            <p>Position TNFC clearly within ECE, showing it as an integral research facility rather than a standalone
-              lab.</p>
+  <a class="article-entry-13" style="cursor: default;">
+    <div class="article-content-13">
+      <p class="text-mid-13">
+        Shipped:
+        <span>March 2025</span>
+      </p>
+    </div>
+  </a>
+
           </div>
-          <div style="padding: 0 1rem; flex: 1;">
-            <h3>Easy Access</h3>
-            <p>How could users quickly find usage policies, educational resources, and regulations?</p>
-          </div>
-          <div style="padding-left: 1rem; flex: 1;">
-            <h3>Content & Design</h3>
-            <p>Were critical. Asked to prioritize content rewrites and layouts to match ECE’s design.</p>
-          </div>
+    
         </div>
-      </div>
+ 
+        <div class="jka-about-section-section" id="jka-about-section-section-2">
 
+          <h2 style="margin: 10px auto -1rem; width: 100%;">
+            Content Audit & Restructuring
+          </h2>
+          <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
+          <p style="width: 100%; margin: 0;">
+            TNFC's website had five top-level navigation items - User Access being one of them - with auto-generated landing pages for each top-level item with hyperlinked text to subpages.
+            Only User Access needed a dedicated page. The other four could live on the home page or User Access page as concise grid- or card-based sections.
+          </p>
+          <button class="secondary-btn" style="margin: 12px 1rem 12px 0;" onclick="window.open('/assets/images/webp/tnfc-access-orig1.webp', '_blank')">
+            TNFC's User Access Page
+          </button>
+          <button class="secondary-btn" style="margin: 12px 1rem 12px 0;" onclick="window.open('/assets/images/webp/tnfc-access-orig2.webp', '_blank')">
+            TNFC's Access Forms Page
+          </button>
+          <p style="width: 100%; margin: 0;">
+            The original design used long paragraphs to explain access requirements, with easy-to-miss mandatory steps such as agreements, forms, training videos, etc, buried as hyperlinks in body text.
+          </p>
+          <button class="secondary-btn" style="margin: 12px 1rem 12px 0;" onclick="window.open('/assets/images/webp/tnfc-home-ori.webp', '_blank')">
+            TNFC's Home Page
+          </button>
 
-      </div>
+        </div>
+ 
+        <div class="jka-about-section-section" id="jka-about-section-section-3">
 
-  </section>
+          <h2 style="margin: 10px auto -1rem; width: 100%;">
+            Key Priorities
+          </h2>
+          <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
+          <p style="width: 100%; margin: 0 0 12px;">
+            These were identified through stakeholder alignment, and were the criterion upon which the site's worth would be judged.
+          </p>
+          <div class="article-grid-13">
 
-  <section class="jka-content-section" style="margin-bottom: 2rem;">
-<div class="jka-container-secondary" style="background-color: var(--jka-color-accent-light);">
-
-<div class="jka-section">
-  <div class="jka-section__header">
-    <p class="jka-eyebrow">Content Audit & Restructuring</p>
-    <h2 class="jka-heading">
-      Mapped fifteen fragmented pages into a consolidated two-page structure.
-    </h2>
-  </div>
-  <div class="jka-section__body">
-    <div class="jka-col">
-      <p class="jka-body-text">
-        The original TNFC website contained roughly fifteen pages across five top-level navigation items. A full
-        content audit revealed a repetitive pattern.
-      </p>
-      <p class="jka-body-text">
-        Users had to click repeatedly just to understand how to get started. Below are the original pages:
-      </p>
-      <button class="secondary-btn" style="margin-top: 1rem;"
-        onclick="window.open('/assets/images/webp/tnfc-home-ori.webp', '_blank')">
-        TNFC's Home Page
-      </button>
-      <button class="secondary-btn" style="margin-top: 1rem;"
-        onclick="window.open('/assets/images/webp/tnfc-access-orig1.webp', '_blank')">
-        TNFC's User Access Page
-      </button>
-      <button class="secondary-btn" style="margin-top: 1rem;"
-        onclick="window.open('/assets/images/webp/tnfc-access-orig2.webp', '_blank')">
-        TNFC's Access Forms Page
-      </button>
+  <a class="article-entry-13" style="cursor: default;">
+    <div class="article-thumb-13" style="display: flex; align-items: center; justify-content: center;">
+      <h3 class="text-super">1</h3>
     </div>
-    <div class="jka-col">
-      <p class="jka-body-text">
-        I recognized that content was written as long-form narrative and unnecessarily divided.
-        Important actions were buried within hyperlinked text rather than highlighted as a
-        Call-to-action for users to take.
-      </p>
-    </div>
-  </div>
-</div>     
-
-
-  </div>
-
-  </section>
-
-  <section class="jka-content-section">
-      <div class="jka-container-secondary">
-  
-
-<div class="jka-section">
-  <div class="jka-section__header">
-    <p class="jka-eyebrow">UI Design</p>
-    <h2 class="jka-heading">
-      Designed structured layouts to surface compliance requirements and guide user actions.
-    </h2>
-  </div>
-  <div class="jka-section__body">
-    <div class="jka-col">
-      <p class="jka-body-text">
-        The original design relied on descriptive paragraphs to communicate user access requirements.
-        Mandatory steps like agreements, forms, and training videos, were embedded as hyperlinks within body text.
-      </p>
-      <p class="jka-body-text">
-        This meant users could easily overlook what was actually required of them before they could use the lab.
-        View my mockups below:
+    <div class="article-content-13">
+      <p class="text-mid-13">
+        Clear Lab Identity: 
+        <span>
+          Position TNFC clearly within ECE, showing it as an integral research facility rather than a standalone lab.
+        </span>
       </p>
     </div>
-    <div class="jka-col">
-      <p class="jka-body-text">
-        The redesigned pages used intentional layout hierarchy to prioritize user needs.
-        The TNFC homepage hero immediately communicates scale,
-        with structured sections (intro, research areas, facility highlights) allowing users to quickly understand scope.
-      </p>
-      <p class="jka-body-text">
-        The Access page listed mandatory forms and related documents as clickable buttons that opened PDFs.
+  </a>
+
+  <a class="article-entry-13" style="cursor: default;">
+    <div class="article-thumb-13" style="display: flex; align-items: center; justify-content: center;">
+      <h3 class="text-super">2</h3>
+    </div>
+    <div class="article-content-13">
+      <p class="text-mid-13">
+        Easy Access: 
+        <span>
+          How could users quickly find usage policies, educational resources, and regulations?
+        </span>
       </p>
     </div>
-  </div>
-</div>
+  </a>
 
-<div class="jka-section">
-  <div class="jka-section__body">
-    <div class="jka-col" style="max-height: 450px; overflow: hidden;">
-      <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">
+  <a class="article-entry-13" style="cursor: default;">
+    <div class="article-thumb-13" style="display: flex; align-items: center; justify-content: center;">
+      <h3 class="text-super">3</h3>
+    </div>
+    <div class="article-content-13">
+      <p class="text-mid-13">
+        Content & Design: 
+        <span>
+          Were critical. Asked to prioritize content rewrites and layouts to match ECE’s design.
+        </span>
+      </p>
+    </div>
+  </a>
+
+          </div>
+          
+        </div>
+
+        <div class="jka-about-section-section" id="jka-about-section-section-4">
+
+          <h2 style="margin: 10px auto -1rem; width: 100%;">
+            Designing the new UI
+          </h2>
+          <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
+          <p style="width: 100%; margin: 0 0 12px;">
+            I designed structured layouts and a simplified information architecture to guide user actions.
+          </p>
+          <p style="width: 100%; margin: 0;">
+            The homepage explains what TNFC offers, with content from the original's top-level pages condensed into structured sections. 
+            The Access page lists all required forms and processes, with related documents available.
+          </p>
+
+          <div class="jka-section__body">
+    <div class="jka-col" style="max-height: 250px; overflow: hidden;">
+      <p class="caption-text" style="font-size: small; margin: 10px 0 0;">
         Fig 1. My TNFC page Mockup
       </p> 
       <img src="/assets/images/webp/TNFC-Main.webp" style="width: 100%; cursor: pointer; margin-top: 1rem;" 
-      onclick="window.open('this.src', '_blank')"/>
+      onclick="window.open('/assets/images/webp/TNFC-Main.webp', '_blank')"/>
       </p>
     </div>
-    <div class="jka-col" style="max-height: 450px; overflow: hidden;">
-      <p class="caption-text" style="font-size: small; margin: 1rem 0 0;">
+    <div class="jka-col" style="max-height: 250px; overflow: hidden;">
+      <p class="caption-text" style="font-size: small; margin: 10px 0 0;">
         Fig 2. My TNFC User Access page Mockup
       </p> 
       <img src="/assets/images/webp/TNFC-Access.webp" style="width: 100%; cursor: pointer; margin-top: 1rem;" 
-      onclick="window.open('this.src', '_blank')"/>
+      onclick="window.open('/assets/images/webp/TNFC-Access.webp', '_blank')"/>
     </div>
-  </div>
-</div>
+          </div>
 
+        </div>
+
+        <div class="jka-about-section-section" id="jka-about-section-section-5">
+
+          <h2 style="margin: 10px auto -1rem; width: 100%;">
+            Exceeding Stakeholder Expectations
+          </h2>
+          <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
+          <p style="width: 100%; margin: 0 0 12px;">
+            The transition from design to development required building with scalability in mind. Pages were structured using reusable components and patterns that could be extracted and applied beyond TNFC.
+          </p>
+          <p style="width: 100%; margin: 0 0 12px;">
+            The impact of that architectural work became clear after my departure from the organization (This was my last project for ECE).
+          </p>
+          <p style="width: 100%; margin: 0 0 12px;">
+            The <a href="https://www.ece.utoronto.ca/grid-modernization-centre/" target="_blank">Grid Modernization Centre</a> was developed using the same hero banner and page patterns originally designed for TNFC.
+            This reuse, I believe, validates the robustness of my designs.
+          </p>
+          
+        </div>
+
+         <div class="jka-about-section-section" id="jka-about-section-section-6">
+
+          <h2 style="margin: 10px auto -1rem; width: 100%;">
+            What I Learned
+          </h2>
+          <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
+          <p style="width: 100%; margin: 0 0 12px;">
+            This was not just a webpage for a research lab.
+            This project was about designing language and structure that made the process easier and reduced
+            administrative work.
+          </p>
+          <p style="width: 100%; margin: 0 0 12px;">
+            TNFC had previously existed as a separate digital entity; Not anymore.
+            Its website reflected this with its own independent news and blog feed. The pages I built went live by the end
+            of March; User Access in early April.
+          </p>
+          <p style="width: 100%; margin: 0 0 12px;">
+            Every design decision was driven by compliance and regulation, including access, training, billing, and safety.
+            At the same time, the pages were designed to feel native to ECE while clearly articulating TNFC’s value.
+            The result positions TNFC as a core, high-value research facility within the department.
+          </p>
+          
+        </div>
+ 
       </div>
-
-  </section>
-
-<section class="jka-content-section" style="margin-bottom: 2rem;">
-<div class="jka-container-secondary" style="background-color: var(--jka-color-accent-light);">
-
-<div class="jka-section">
-  <div class="jka-section__header">
-    <p class="jka-eyebrow">Front-End Development & Design-to-Dev</p>
-    <h2 class="jka-heading">
-      Built with modular architecture to scale across ECE's public website.
-    </h2>
-  </div>
-  <div class="jka-section__body">
-    <div class="jka-col">
-      <p class="jka-body-text">
-        The transition from design to development required building with scalability in mind.
-        Pages were structured using reusable components and patterns that could be extracted and applied beyond TNFC.
-      </p>
     </div>
-    <div class="jka-col">
-      <p class="jka-body-text">
-        The impact of that architectural work became clear after my departure from the organization (This was my last project for ECE).
-        The <a href="https://www.ece.utoronto.ca/grid-modernization-centre/" target="_blank">Grid Modernization Centre</a> was developed using the same hero banner and page patterns originally designed for TNFC.
-      </p>
-      <p class="jka-body-text">
-        The reuse validates the robustness of my designs.
-      </p>
-    </div>
-  </div>
-</div>
-
-</div>
-
 </section>
-
-  <section class="learn" id="prjimp">
-
-    <!-- Main content container -->
-    <div class="mcc">
-
-      <div class="mmc-content">
-        <h1>Why This Page Mattered</h1>
-        <h5>
-          This was not just a webpage for a research lab.
-          This project was about designing language and structure that made the process easier and reduced
-          administrative work.
-        </h5>
-        <h5>
-          TNFC had previously existed as a separate digital entity; Not anymore.
-          Its website reflected this with its own independent news and blog feed. The pages I built went live by the end
-          of March; User Access in early April.
-        </h5>
-        <h5>
-
-        </h5>
-        <h5>
-          Every design decision was driven by compliance and regulation, including access, training, billing, and
-          safety.
-          At the same time, the pages were designed to feel native to ECE while clearly articulating TNFC’s value.
-          The result positions TNFC as a core, high-value research facility within the department.
-        </h5>
-      </div>
-
-    </div>
-
-  </section>
 
   <div id="footer-placeholder"></div>
 
@@ -362,29 +288,6 @@
   <script>
     fetch('../../addons/header.html').then(response => response.text()).then(data => { document.getElementById('header-placeholder').innerHTML = data; }).catch(error => console.error("Error loading header:", error));
   </script>
-
-  <script>
-    window.addEventListener("load", () => {
-      const backtotopbutton = document.getElementById("backtotopbutton");
-      const learnSection = document.querySelector(".learn");
-
-      if (!backtotopbutton || !learnSection) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          backtotopbutton.style.display = entry.isIntersecting ? "none" : "block";
-        },
-        {
-          root: null,
-          threshold: 0,
-          rootMargin: "0px"
-        }
-      );
-
-      observer.observe(learnSection);
-    });
-  </script>
-
 
   <script>
     function scrollToTops() {
@@ -413,6 +316,36 @@
       });
     });
 
+  </script>
+
+  <script>
+    (function () {
+ 
+      const buttons = document.querySelectorAll('.jka-about-section-btn');
+      const sections = document.querySelectorAll('.jka-about-section-section');
+      const col2 = document.getElementById('jka-about-section-col2');
+ 
+      function setActive(targetId) {
+        buttons.forEach(function (btn) {
+          const isActive = btn.dataset.target === targetId;
+          btn.classList.toggle('primary-btn', isActive);
+          btn.classList.toggle('tertiary-btn', !isActive);
+        });
+ 
+        sections.forEach(function (section) {
+          section.classList.toggle('jka-about-section-section--active', section.id === targetId);
+        });
+ 
+        col2.scrollTop = 0;
+      }
+ 
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setActive(btn.dataset.target);
+        });
+      });
+ 
+    })();
   </script>
 
 </body>
