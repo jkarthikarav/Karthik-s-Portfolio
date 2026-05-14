@@ -248,7 +248,7 @@ a {
 .jka-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
 }
 
 .jka-section__header {
@@ -260,6 +260,12 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+}
+
+.jka-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .jka-section--split {
@@ -825,6 +831,27 @@ a {
 }
 
 .text-btn:hover .btntext {
+  text-decoration: underline;
+}
+
+.back-btn {
+  margin: 0.75rem 0 0 0;
+  text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.back-btn:visited {
+  color: inherit;
+}
+
+.back-btn .btntext {
+  text-decoration: none;
+}
+
+.back-btn:hover .btntext {
   text-decoration: underline;
 }
 
@@ -1524,7 +1551,7 @@ a {
 .jka-tabs-section {
   max-width: 1200px;
   width: 100%;
-  margin: 2rem auto;
+  margin: 20px auto;
 }
 
 .jka-tab-buttons {
@@ -1819,7 +1846,7 @@ hr {
   }
   .jka-section__body {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 0px;
   }
   .jka-section--split {
     grid-template-columns: 1fr;
@@ -2176,16 +2203,30 @@ hr {
       }
 
       .jka-hero-text-section {
-        min-height: fit-content;
-        height: fit-content;
+        height: auto !important;
+        min-height: 0 !important;
+      }
+
+      .jka-section {
+        margin: 0 auto;
+        padding: 0 20px 20px;
       }
 
       .jka-hero-text-section__bg-text {
-        display: none;
+        display: none !important;
+        height: 0 !important;
+        visibility: hidden;
+        overflow: hidden;
       }
 
       .jka-hero-text-section__content {
         margin: 0 auto;
+        padding: 0 60px !important;
+      }
+
+      .jka-hero-text-section__content >div {
+        justify-content: flex-start !important;
+        padding: 40px 60px 20px !important;
       }
     }
 
