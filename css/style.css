@@ -1642,6 +1642,10 @@ hr {
   /* shown on mobile, hidden on desktop via media query */
 }
 
+.desktop-only { display: block; }
+  @media (max-width: 1024px) { .desktop-only { display: none !important; } }
+
+
 .right1440 {
   /* layout helper for wide screens */
 }
@@ -2320,3 +2324,107 @@ hr {
       background-color: var(--jka-color-accent-light);
       border-radius: 24px;
     }
+    /* ----------------------------------------
+       JKA PROJECT GRID SECTION
+       Lives inside .jka-section-primary > .jka-container
+    ---------------------------------------- */
+ 
+    .jka-project-grid {
+      display: grid;
+      grid-template-columns: 37% 57%;
+      gap: 40px;
+      padding: 30px auto 20px;
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    /* ----------------------------------------
+       VARIANT 2 — single full-width column
+    ---------------------------------------- */
+ 
+    .jka-project-grid--single {
+      grid-template-columns: 1fr;
+      min-height: 900px;
+      height: auto;
+    }
+ 
+    /* ----------------------------------------
+       COLUMN — background image box
+    ---------------------------------------- */
+ 
+    .jka-project-grid__col {
+      border-radius: 24px;
+      overflow: hidden;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 12px;
+      transition: background-size 0.4s ease;
+    }
+
+    .jka-project-grid__col--1:hover {
+      background-size: 160%;
+      border: solid 2px var(--jka-color-theme);
+    }
+
+    .jka-project-grid__col--2:hover {
+      background-size: 200%;
+      border: solid 2px var(--jka-color-theme);
+    }
+ 
+    /* ----------------------------------------
+       BOTTOM INFO BOX
+    ---------------------------------------- */
+ 
+    .jka-project-grid__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+ 
+    .jka-project-grid__tags {
+      margin: 20px 0 4px;
+      width: 100%;
+      font-style: italic;
+      color: var(--jka-color-accent-dark);
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+    }
+ 
+    .jka-project-grid__title {
+      color: var(--jka-color-accent);
+      margin: 0;
+      text-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    .jka-project-grid__title h2 {
+      color: var(--jka-color-accent);
+      margin: 0;
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+    }
+ 
+    .jka-project-grid__dates {
+      margin: 8px 0 10px;
+      color: var(--jka-color-accent-dark);
+      width: 100%;
+      font-size: var(--jka-font-size-sm);
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+    }
+
+    .jka-project-card-btn {
+      margin-bottom: 12px;
+      color: var(--jka-color-accent-dark);
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    }
+ 
