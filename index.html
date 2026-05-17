@@ -92,9 +92,9 @@
               onclick="document.getElementById('consult').scrollIntoView({behavior: 'smooth'});">
         Consulting
       </button>
-      <button class="primary-btn"
-              onclick="document.getElementById('all').scrollIntoView({behavior: 'smooth'});">
-        All Solutions
+      <button class="secondary-btn"
+              onclick="window.open('/pages/all-projects.html', '_blank')">
+        All Solutions →
       </button>
       <button class="secondary-btn" 
               onclick="window.open('about.html', '_blank')">
@@ -259,20 +259,39 @@
 
 </section>
 
+<section class="jka-section-primary">
+
+<div class="jka-container">
+  
+  <h2 style="margin: 3rem auto 2rem;">
+    What People Have to Say
+  </h2>
+
+  <h2 style="margin: 2rem auto 0; max-width: 1200px; background-color: var(--jka-color-accent-light); padding: 2rem 1rem 0;">
+    Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare leader in design and implementation work! He came in as a knight in shining armor making the impossible, possible.
+  </h2>
+  <p class="captions" style="font-style: oblique; margin: 0 auto 3rem; max-width: 1200px; background-color: var(--jka-color-accent-light); padding: 2rem 1rem;">
+    &mdash; Kyle Thomas<br>Founder & Creative Director<br>Copywriting Creatives
+  </p>
+
+</div>
+</section>
+
+
 <section id="consult" class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark); background-color: var(--jka-color-accent-10);">
 
   <div class="jka-container">
 
     <h1 class="jka-highlighter-dark-large">
-      Meet a different kind of <span>Consulting</span>
+      Meet a different kind of <span style="color: var(--jka-color-theme-mid)">Consulting</span>
     </h1>
     
     <h2 style="color: var(--jka-color-text-default); margin: 3rem auto 2rem; text-align: center;">
       In 2021, I co-founded JKR Business Consultancy for problems where I could stay from diagnosis through to delivery, 
       working until it is solved.
       Outside of JKR, I've taken on independent projects where the 
-      same principle applies: own the problem, build the solution, 
-      stay until it works.
+      same applies: own, build, 
+      and stay till it works.
     </h2>
 
   </div>
@@ -365,220 +384,8 @@
 
 </section>
 
-<section class="jka-section-primary" id="all">
+<section style="background-color: var(--jka-color-theme-stronger);">
 
-  <div class="jka-container">
-
-    <h2 style="margin: 3rem auto 0; width: 100%;">
-      All Solutions
-    </h2>
-
-    <h2 style="width: 100%; margin-top:0;">&mdash;</h2>
-
-    <p style="width: 100%; margin: 0 0 2rem;">
-      Explore the full range of solutions I've delivered across design, 
-      consulting, and creative production.
-    </p>
-
-    <p style="font-size: var(--jka-font-size-sm); margin-bottom: 12px; width:100%;" id="allcases">
-    <strong>Disclaimer:</strong> 
-    The Copywriting Creatives projects are to be published on the Copywriting Creatives website. Other Case Study pages are active. 
-  </p>
-
-
-      <div class="jka-project-grid desktop-only">
- 
-        <!-- Col 1: 27%, normal h3 -->
-        <div class="jka-project-grid__col jka-project-grid__col--2" 
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), 
-          url('/assets/images/grid/SBC.webp');">
-          <div class="jka-project-grid__info">
-            <p class="jka-project-grid__tags">At Copywriting Creatives</p>
-            <h3 class="jka-project-grid__title">Improving the UX of Support Black Charities's Website & Directory.</h3>
-            <p class="jka-project-grid__dates">Ongoing</p>
-          </div>
-        </div>
- 
-        <!-- Col 2: 67%, h3 with text-super -->
-        <div class="jka-project-grid__col jka-project-grid__col--1"  
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-          url('/assets/images/grid/SSYO.webp');">
-          <div class="jka-project-grid__info">
-            <p class="jka-project-grid__tags">At Copywriting Creatives</p>
-            <h3 class="jka-project-grid__title" style="margin: 0;">
-              Maximizing visibility & reducing admin workload for South Shore Youth Organization's website.
-            </h3>
-            <p class="jka-project-grid__dates">Ongoing</p>
-          </div>
-        </div>
- 
-      </div>
-
-      <div class="jka-project-grid desktop-only" style="grid-template-columns: 57% 37%;">
- 
-        <!-- Col 1: 27%, normal h3 -->
-        <div class="jka-project-grid__col jka-project-grid__col--1" 
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-          url('/assets/images/grid/tnfc.webp');">
-          <div class="jka-project-grid__info">
-            <p class="jka-project-grid__tags">At ECE at U of T</p>
-            <h3 class="jka-project-grid__title">
-              Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's web environment.
-            </h3>
-            <p class="jka-project-grid__dates">Nov 2024 - Mar 2025</p>
-            <button class="text-btn jka-project-card-btn" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank');">
-              View Case Study →
-            </button>
-          </div>
-        </div>
- 
-        <!-- Col 2: 67%, h3 with text-super -->
-        <div class="jka-project-grid__col jka-project-grid__col--2"  
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-          url('/assets/images/grid/TMC.webp');">
-          <div class="jka-project-grid__info">
-            <p class="jka-project-grid__tags">At U of T</p>
-            <h3 class="jka-project-grid__title" style="margin: 0;">
-              Redesign of Textile Museum of Canada's navigation 
-              menu and IA.
-            </h3>
-            <p class="jka-project-grid__dates">Oct – Dec 2023</p>
-            <button class="text-btn jka-project-card-btn" onclick="window.open('/pages/casestudies/textile-museum-of-canada.html', '_blank');">
-              View Case Study →
-            </button>
-          </div>
-        </div>
- 
-      </div>
-
-      <div class="jka-project-grid desktop-only">
- 
-        <!-- Col 1: 27%, normal h3 -->
-        <div class="jka-project-grid__col jka-project-grid__col--2" 
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), 
-          url('/assets/images/grid/EXPTO.webp');">
-          <div class="jka-project-grid__info">
-            <p class="jka-project-grid__tags">At U of T</p>
-            <h3 class="jka-project-grid__title">Designed an App for discovering discounts to Toronto-based Galleries, Libraries, Archives, and Museums.</h3>
-            <p class="jka-project-grid__dates">Oct – Dec 2023</p>
-            <button class="text-btn jka-project-card-btn" onclick="window.open('/pages/casestudies/experience-toronto.html', '_blank');">
-              View Case Study →
-            </button>
-          </div>
-        </div>
- 
-        <!-- Col 2: 67%, h3 with text-super -->
-        <div class="jka-project-grid__col jka-project-grid__col--1"  
-          style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-          url('/assets/images/grid/pitch.webp');">
-          <div class="jka-project-grid__info">
-            <p class="jka-project-grid__tags">At Fix It In Post</p>
-            <h3 class="jka-project-grid__title" style="margin: 0;">
-              Delivered a Web-based Pitchdeck for Pre-Production capital raising.
-            </h3>
-            <p class="jka-project-grid__dates">Jun 2021 - Aug 2021</p>
-            <button class="text-btn jka-project-card-btn" onclick="window.open('/pages/casestudies/the-pitch-deck-website.html', '_blank');">
-              View Case Study →
-            </button>
-          </div>
-        </div>
- 
-      </div>
-
-  <div class="article-grid-13 mobile-only">
-    <a class="article-entry-13" style="cursor: default;">
-      <img src="/assets/logos/sbc-logo.png" alt="" class="article-thumb-13">
-      <div class="article-content-13">
-        <p class="text-mid-13">
-          Improving the UX of Support Black Charities's Website & Directory Listing Tool. 
-        </p>
-        <p class="article-date-13">At Copywriting Creatives</p>
-        <p class="article-date-13">Ongoing</p>
-      </div>
-    </a>
-
-    <a class="article-entry-13" style="cursor: default;">
-      <img src="/assets/logos/ssyo-logo.png" alt="" class="article-thumb-13">
-      <div class="article-content-13">
-        <p class="text-mid-13">
-          Maximizing visibility & reducing admin workload for South Shore Youth Organization's website.
-        </p>
-        <p class="article-date-13">At Copywriting Creatives</p>
-        <p class="article-date-13">Ongoing</p>
-      </div>
-    </a>
-
-    <a class="article-entry-13" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank')">
-      <img src="/assets/logos/uoft-ece-logo.jpg" alt="" class="article-thumb-13">
-      <div class="article-content-13">
-        <p class="text-mid-13">
-          Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's web environment.
-        </p>
-        <p class="article-date-13">At ECE at U of T</p>
-        <p class="article-date-13">Nov 2024 - Mar 2025</p>
-      </div>
-    </a>
-
-    <a href="/pages/casestudies/textile-museum-of-canada.html" class="article-entry-13" target="_blank">
-        <img src="/assets/logos/TMC-logo.png" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Redesign of Textile Museum of Canada's navigation 
-              menu and IA.
-          </p>
-          <p class="article-date-13">At U of T</p>
-          <p class="article-date-13">Oct – Dec 2023</p>
-        </div>
-      </a>
-      
-      <a href="/pages/casestudies/experience-toronto.html" class="article-entry-13" target="_blank">
-        <img src="/assets/logos/uoft-info-logo.png" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Designed an App for discovering discounts to Toronto-based Galleries, Libraries, Archives, and Museums.
-          </p>
-          <p class="article-date-13">At U of T</p>
-          <p class="article-date-13">Oct – Dec 2023</p>
-        </div>
-      </a>
-
-    <a href="/pages/casestudies/the-pitch-deck-website.html" class="article-entry-13" target="_blank">
-      <img src="/assets/logos/LOGO_9.jpg" alt="" class="article-thumb-13">
-      <div class="article-content-13">
-        <p class="text-mid-13">
-          Delivered a Web-based Pitchdeck for Pre-Production capital raising.
-        </p>
-        <p class="article-date-13">At Fix It In Post</p>
-        <p class="article-date-13">Jun 2021 - Aug 2021</p>
-      </div>
-    </a>
-  </div>
-
-  </div>
-
-  </div>
-
-</section>
-
-<section class="jka-section-primary">
-
-<div class="jka-container">
-  
-  <h2 style="margin: 3rem auto 2rem;">
-    What People Have to Say
-  </h2>
-
-  <h2 style="margin: 2rem auto 0; max-width: 1200px; background-color: var(--jka-color-accent-light); padding: 2rem 1rem 0;">
-    Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare leader in design and implementation work! He came in as a knight in shining armor making the impossible, possible.
-  </h2>
-  <p class="captions" style="font-style: oblique; margin: 0 auto 3rem; max-width: 1200px; background-color: var(--jka-color-accent-light); padding: 2rem 1rem;">
-    &mdash; Kyle Thomas<br>Founder & Creative Director<br>Copywriting Creatives
-  </p>
-
-</div>
-</section>
-
-<!-- Newsletter -->
 <section class="jka-popup-bar">
 
 <div class="jka-popup-text-group">
@@ -600,6 +407,9 @@
 </div>
 
 </section>
+
+</section>
+
 
 <!-- CTA -->
 <section class="jka-cta">

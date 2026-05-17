@@ -26,6 +26,13 @@
 
  <div id="header-placeholder" class="NOTmobile"></div>
 
+ <img
+      src="/assets/icons/back-to-top.png"
+      alt="floating image button"
+      id="backtotopbutton"
+      onclick="scrollToTops()"
+    />
+
 <section class="jka-intro">
  
   <div class="jka-intro__col1">
@@ -389,6 +396,41 @@
  
     })();
   </script>
+
+  <script>
+      window.addEventListener("load", () => {
+        const backtotopbutton = document.getElementById("backtotopbutton");
+        const learnSection = document.querySelector(".learn");
+
+        if (!backtotopbutton || !learnSection) return;
+
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            backtotopbutton.style.display = entry.isIntersecting ? "none" : "block";
+          },
+          {
+            root: null,
+            threshold: 0,
+            rootMargin: "0px"
+          }
+        );
+
+        observer.observe(learnSection);
+      });
+    </script>
+
+    <script>
+      function scrollToTops() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+
+      document
+        .getElementById("backtotopbutton")
+        .addEventListener("click", scrollToTops);
+    </script>
  
 </body>
  

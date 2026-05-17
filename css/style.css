@@ -2397,6 +2397,16 @@ hr {
       background-size: 200%;
       border: solid 2px var(--jka-color-theme);
     }
+
+    .jka-project-grid__col--1.no-hover:hover {
+      background-size: cover;
+      border: none;
+    }
+
+    .jka-project-grid__col--2.no-hover:hover {
+      background-size: cover;
+      border: none;
+    }
  
     /* ----------------------------------------
        BOTTOM INFO BOX
