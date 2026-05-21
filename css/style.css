@@ -621,6 +621,7 @@ a {
 .status-text {
   font-weight: 600;
   color: var(--jka-color-text-default);
+  margin: 0;
 }
 
 .title-hero-main {
@@ -1678,15 +1679,15 @@ hr {
 .status-dot {
   width: 10px;
   height: 10px;
-  background: var(--jka-color-theme-weaker);
+  background-color: firebrick;
   border-radius: 50%;
   animation: pulse 1.5s infinite ease-in-out;
 }
 
 @keyframes pulse {
-  0%   { transform: scale(1);   opacity: 1;   }
-  50%  { transform: scale(1.5); opacity: 0.5; }
-  100% { transform: scale(1);   opacity: 1;   }
+  0%   { transform: scale(0.9);   opacity: 1;   }
+  50%  { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(0.9);   opacity: 1;   }
 }
 
 .lazy-image {
