@@ -42,11 +42,13 @@
   <div class="jka-intro__col1">
     <div class="jka-intro__content">
       <p class="jka-eyebrow">Website Migration and Content Design</p>
-      <h1 style="margin: 10px auto -1rem; width: 100%;">Migrating Toronto Nanofabrication Centre from its standalone website into the ECE site</h1>
+      <h1 style="margin: 10px auto -1rem; width: 100%;">
+        Migrating a standalone website into a standardized environment
+      </h1>
       <h2 style="width: 100%; margin-top: 0;">&mdash;</h2>
       <p style="width: 75%; margin: 0 0 12px;">
-        The Toronto Nanofabrication Centre (TNFC) reopened in November 2023 after a renovation, but its website was outdated and existed separately of ECE at U of T.
-        Originally working on Content and UI standardisation on the ECE website, I was asked to assess options for the TNFC website. 
+        ECE at U of T's Toronto Nanofabrication Centre (TNFC) had a website that existed separately of ECE's web and digital ecosystem.
+        I rebuilt the TNFC site as a special research lab section inside of ECE's own digital environment to directly solve this source of confusion.
       </p>
     </div>
   </div>
@@ -64,9 +66,7 @@
     </h1>
     
     <h5 style="color: var(--jka-color-text-inv-subtle); margin: 3rem auto 2rem; text-align: left;">
-      I was responsible for auditing and designing the content architecture, designing and obtaining stakeholder approval from both TNFC and ECE at U of T, 
-      and developing the website inside ECE's WP environment.
-      I submitted my research and design proposal in November 2024, got the green light to build in February 2025, and shipped in late March 2025.
+      I was responsible for auditing the existing site and building the front-end structure + layout of the TNFC section inside ECE's WP environment.
       This is the page I built:
       <a href="https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/" target="_blank" style="color: var(--jka-color-accent-dark);"
         rel="noopener noreferrer">
@@ -80,8 +80,7 @@
       </strong>
       As this public website continues to evolve, the page may differ from the versions shown.
       I have since left the organization, and any updates made thereafter are at their discretion.
-    </p>
-          
+    </p> 
 
     <div class="article-grid-13" style="background-color: var(--jka-color-accent-dark);">
 
@@ -120,38 +119,38 @@
 
 <section class="jka-research-section-1">
   <div class="jka-research-section-1__inner">
-  <h2 style="margin: 10px auto -1rem; width: 100%;">Content Audit & Restructuring</h2><br>
-  <h2 style="margin-top: 0;">&mdash;</h2>
-  <p style="margin-top: 0; margin-bottom: 12px;">
-    TNFC's website had four top-level navigation items - User Access being one of them - with auto-generated landing pages for each top-level item with hyperlinked text to subpages.
-    Only User Access needed a dedicated page. The other three could live on the home page or User Access page as concise grid- or card-based sections.
-  </p>
+    <h2 style="margin: 10px auto -1rem; width: 100%;">The Existing Website</h2><br>
+    <h2 style="margin-top: 0;">&mdash;</h2>
 
-  <div class="jka-image-row-with-caption" style="margin-top: 10px;">
+    <p style="width: 100%; margin: 0;">
+      This was the Home page for the TNFC website.
+    </p>
     <div class="phot-item" style="padding: 10px; display: flex; flex-direction: column; align-items: center;">
-      <img src="/assets/images/webp/tnfc-access-orig1.webp" style="width: 100%;" />
-      <p class="text-small" style="width: 100%; margin: 8px 0 12px; text-align: center;">
-        TNFC's User Access Page
-      </p>
-    </div>
-    <div class="phot-item" style="padding: 10px; display: flex; flex-direction: column; align-items: center;">
-      <img src="/assets/images/webp/tnfc-access-orig2.webp" style="width: 100%;" />
-      <p class="text-small" style="width: 100%; margin: 8px 0 12px; text-align: center;">
-        TNFC's Access Forms Page
-      </p>
-    </div>
-  </div>
- 
-  <p style="width: 100%; margin: 0;">
-    The original design used long paragraphs to explain access requirements, with easy-to-miss mandatory steps such as agreements, forms, training videos, etc, buried as hyperlinks in body text.
-  </p>
-  <div class="phot-item" style="padding: 10px; display: flex; flex-direction: column; align-items: center;">
       <img src="/assets/images/webp/tnfc-home-ori.webp" style="width: 100%;" />
       <p class="text-small" style="width: 100%; margin: 8px 0 12px; text-align: center;">
         TNFC's Home Page
       </p>
     </div>
 
+    <p style="margin-top: 0; margin-bottom: 12px;">
+      TNFC's website had auto-generated landing pages for each of their four top-level navigation items with hyperlinked text to their subpages.
+      Based on Content prominence & necessity, User Access needed a dedicated page. The other three did not.
+    </p>
+    <div class="jka-image-row-with-caption" style="margin-top: 10px;">
+      <div class="phot-item" style="padding: 10px; display: flex; flex-direction: column; align-items: center;">
+        <img src="/assets/images/webp/tnfc-access-orig1.webp" style="width: 100%;" />
+        <p class="text-small" style="width: 100%; margin: 8px 0 12px; text-align: center;">
+          TNFC's User Access Page
+        </p>
+      </div>
+      <div class="phot-item" style="padding: 10px; display: flex; flex-direction: column; align-items: center;">
+        <img src="/assets/images/webp/tnfc-access-orig2.webp" style="width: 100%;" />
+        <p class="text-small" style="width: 100%; margin: 8px 0 12px; text-align: center;">
+          TNFC's Access Forms Page
+        </p>
+      </div>
+    </div>
+ 
     </div>
 
 </section>
@@ -314,19 +313,15 @@
     <div class="mmc-content">
       <h1>What I Learned</h1>
       <h5>
-        This was not just a webpage for a research lab.
-        This project was about designing language and structure that made the process easier and reduced
-        administrative work.
-      </h5>
-      <h5>
-        TNFC had previously existed as a separate digital entity; Not anymore.
-        Its website reflected this with its own independent news and blog feed. The pages I built went live by the end
-        of March; User Access in early April.
+        This was not just a website design.
+        This was about designing content and unifying digital systems to reduce
+        administrative work and signal a cohesive brand identity.
       </h5>
       <h5>
         Every design decision was driven by compliance and regulation, including access, training, billing, and safety.
         At the same time, the pages were designed to feel native to ECE while clearly articulating TNFC’s value.
-        The result positions TNFC as a core, high-value research facility within the department.      </h5>
+        The result positions TNFC as a core, high-value research facility within the department.      
+      </h5>
     </div> 
   </div>
 </section>
