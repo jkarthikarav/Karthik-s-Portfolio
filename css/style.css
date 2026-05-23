@@ -1208,6 +1208,14 @@ a {
   padding: 0 1rem;
 }
 
+.jka-section-accent .jka-container h5 {
+  margin: 6px auto 24px; text-align: left; font-weight: 400;
+}
+
+.jka-section-accent .jka-container h1 {
+  margin: 3rem auto 0; text-align: left;
+}
+
 .jka-content-section {
   width: 100%;
   justify-content: center;
@@ -2560,7 +2568,7 @@ hr {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     height: auto;
-    min-height: 80vh;
+    min-height: 90vh;
   }
  
   .jka-intro__col1 {
@@ -2591,6 +2599,10 @@ hr {
     }
     .jka-intro {
       grid-template-columns: 1fr !important;
+    }
+    .jka-research-section-1__inner, .jka-container {
+      max-width: 750px !important;
+      width: fit-content !important;
     }
   }
 
