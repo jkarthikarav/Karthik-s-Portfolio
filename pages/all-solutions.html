@@ -23,33 +23,98 @@
 
 <body style="background-color: var(--jka-color-surface-default);">  
 
-<main>
-
 <div id="header-placeholder"></div>
 
+<main style="max-width: 1440px; margin: 0 auto; padding: 0 40px;" id="all">
+ 
+  <!-- Intro Section -->
+  <div class="header-max">
 
-
-<section class="jka-section-primary" id="all">
-
-  <div class="jka-container">
-
-    <h1 style="margin: 6px auto 12px; text-align: center;">
-      All Solutions
-    </h1>
-
-    <p class="desktop-only" style="margin: 0 0 2rem; text-align: center;">
-      Explore the full range of solutions I've delivered across design, 
-      consulting, and creative production.
+    <nav aria-label="Breadcrumb" style="margin-top: 0.25rem;">
+      <ol class="jka-breadcrumb-list">
+        <li class="jka-breadcrumb-item"><a href="/index.html">Home</a></li>
+        <li class="jka-breadcrumb-item active" aria-current="page">All Solutions</li>
+      </ol>
+    </nav>
+    <h1 class="jka-highlighter-large header-max-title">All Solutions</h1>
+    <p style="margin: 12px 0;">
+      Explore the full range of solutions I've delivered across design, consulting, and creative production.
     </p>
+    
 
-    <p class="mobile-only" style="margin: 0 0 2rem;">
-      Explore the full range of solutions I've delivered across design, 
-      consulting, and creative production.
-    </p>
+  </div>
 
-    <p style="font-size: var(--jka-font-size-sm); margin-bottom: 12px; width:100%;" id="allcases">
-    <strong>Disclaimer:</strong> 
-    The Copywriting Creatives projects are being developed and will be published on the Copywriting Creatives website. 
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;">
+    <h2 style="color: var(--jka-color-theme-mid); margin: 0; white-space: nowrap;">Featured Solutions</h2>
+    <div style="height: 1px; background-color: var(--jka-color-border-default); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+  </div>
+ 
+  <!-- Featured Section -->
+  <section class="grid-featured">
+ 
+    <!-- Project 1 -->
+    <div class="project1"
+      onmouseenter="this.querySelector('.proj-img-wrap').style.transform='scale(1.01)'" 
+      onmouseleave="this.querySelector('.proj-img-wrap').style.transform='scale(1)'">
+      <div class="proj-img-wrap" style="aspect-ratio: 3/2; overflow: hidden; background: #f3f4f6; margin-bottom: 24px; transition: transform 0.7s ease;">
+        <img
+          src="/assets/images/ece.webp"
+          style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.25); transition: filter 0.7s; cursor: pointer;"
+          onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
+          onmouseleave="this.style.filter='grayscale(1) contrast(1.25)'" 
+          onclick="window.open('/pages/casestudies/ece-web-production.html', '_blank')"
+        />
+      </div>
+      <div style="display: flex; flex-direction: column; padding-bottom: 6px; margin-bottom: 12px;">
+        <span class="jka-eyebrow" style="text-transform: uppercase; margin-bottom: 8px;">UX Research • WordPress Development • 2024-25</span>
+        <h2 style="margin-bottom: 0;">Driving Student Recruitment for one of the top Engineering departments in Canada and the world</h2>
+        <p class="text-small" style="margin-bottom: 6px;">
+          ECE at U of T's students were not navigating to core informational pages and stakeholder trust in the website had eroded.
+          I redesigned and rebuilt multiple core pages to address a missed recruitment opportunity by shifting to a student-focused hierarchy,
+          giving them a functional and aesthetic facelift.
+        </p>
+        <a class="text-small" href="/pages/casestudies/ece-web-production.html" target="_blank" style="margin: 0 0 6px;">Explore Solution</a>
+      </div>
+    </div>
+ 
+    <!-- Project 2 -->
+    <div class="project2-offset" 
+      onmouseenter="this.querySelector('.proj-img-wrap2').style.transform='scale(1.01)'" 
+      onmouseleave="this.querySelector('.proj-img-wrap2').style.transform='scale(1)'">
+      <div class="proj-img-wrap2" style="aspect-ratio: 4/5; overflow: hidden; background: #f3f4f6; margin-bottom: 24px; transition: transform 0.7s ease;">
+        <img
+          src="/assets/images/grid/FIIP.webp"
+          style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.1); transition: filter 0.7s; cursor: pointer;"
+          onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
+          onmouseleave="this.style.filter='grayscale(1) contrast(1.1)'"
+          onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank')"
+        />
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <span class="jka-eyebrow" style="text-transform: uppercase; margin-bottom: 8px;">Service Design • Digital Transformation • Creative Operations • 2022 - 2023</span>
+        <h2 style="margin-bottom: 0;">
+          How my client turned generative AI uncertainty into 
+          recurring revenue and eliminate AI-induced anxiety</h2>
+        <p class="text-small" style="margin-bottom: 6px;">
+          Generative AI left most studios reacting to its disruption, and FIIP Studios chose to build services around generative AI tools. 
+          I designed an adoption framework, implementing it during a pilot project with a real client that transformed an experimental workflow into a billable service.
+        </p>
+        <a class="text-small" href="/pages/casestudies/digital-transformation.html" target="_blank" style="margin: 0 0 6px;">Explore Solution</a>
+      </div>
+    </div>
+ 
+  </section>
+  
+  <section style="margin-bottom: 80px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;">
+      <h2 style="color: var(--jka-color-theme-mid); margin: 0; white-space: nowrap;">Projects</h2>
+      <div style="height: 1px; background-color: var(--jka-color-border-default); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+    </div>
+  
+    <p class="text-small" style="margin-bottom: 12px;" id="allcases">
+      <span style="font-weight: 800;">Note:</span>
+      The Copywriting Creatives projects are being developed and will be published on the Copywriting Creatives website. 
     </p>
 
     <div class="article-grid-13">
@@ -98,34 +163,11 @@
         </div>
       </a>
 
-    </div>
-    
-    <div class="jka-project-grid__col jka-project-grid__col--1" onclick="window.open('/pages/casestudies/ece-homepage-redesign.html', '_blank')"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-      url('/assets/images/grid/ECE.webp');">
-      <div class="jka-project-grid__info">
-        <p class="jka-project-grid__tags"><strong>UX Research to WordPress Development </strong>• Nov 2024 - Mar 2025</p>
-        <h3 class="jka-project-grid__title">
-          End-to-End Digital Production to Drive Student Recruitment for ECE at U of T
-        </h3>
-        <p class="jka-project-grid__dates">
-          Students were not navigating to core informational pages, and the Homepage lacked form AND function.
-          I redesigned and rebuilt multiple core pages to address a missed recruitment opportunity by shifting to a student-focused hierarchy,
-          giving them a functional and aesthetic facelift.
-        </p>
-        <button class="text-btn jka-project-card-btn">
-          View Case Study →
-        </button>
-      </div>
-    </div>
-
-    <div class="article-grid-13">
-
       <a class="article-entry-13" style="cursor: default; width: 100%;">
         <img src="/assets/logos/Uoft-music.png" alt="" class="article-thumb-13">
         <div class="article-content-13">
           <p class="text-mid-13">
-            Delivered a Business Proposal for a Music-focused AI Business as part of a cross-departmental Law/Music/Business/UX project course.
+            Delivered a Business Proposal for a Music-focused AI Business as part of a cross-departmental course.
           </p>
           <p class="article-date-13">At U of T</p>
           <p class="article-date-13">Sep 2024 - Dec 2024</p>
@@ -165,28 +207,6 @@
         </div>
       </a>
 
-    </div>
-    
-    <div class="jka-project-grid__col jka-project-grid__col--1" onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank')"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-      url('/assets/images/grid/FIIP.webp');">
-      <div class="jka-project-grid__info">
-        <p class="jka-project-grid__tags"><strong>Service Design • Digital Transformation • Creative Operations </strong>• 2022 - 2023</p>
-        <h3 class="jka-project-grid__title">
-          Digital Transformation: Building AI Into the Blueprint
-        </h3>
-        <p class="jka-project-grid__dates">
-          Generative AI left most studios reacting to its disruption, and FIIP Studios chose to build services around generative AI tools. 
-          I designed an adoption framework, implementing it through a live pilot that validated an experimental workflow into a billable service.
-        </p>
-        <button class="text-btn jka-project-card-btn">
-          View Case Study →
-        </button>
-      </div>
-    </div>
-
-    <div class="article-grid-13">
-
       <a href="/pages/casestudies/the-pitch-deck-website.html" class="article-entry-13" target="_blank" style="cursor: pointer; width: 100%;">
         <img src="/assets/logos/LOGO_9.jpg" alt="" class="article-thumb-13">
         <div class="article-content-13">
@@ -200,9 +220,9 @@
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+</main>
 
 <!-- Newsletter -->
 <section class="jka-popup-bar">
@@ -255,8 +275,6 @@
     <button class="tertiary-btn" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
   </div>
 </section>
-
-</main>
 
 <script>
   // Fetch and insert footer HTML
