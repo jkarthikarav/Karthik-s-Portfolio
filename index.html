@@ -26,9 +26,7 @@
 
 <body style="background-color: var(--jka-color-surface-default);">  
 
-<main>
-
-<!-- Header -->
+  <!-- Header -->
 <header class="header-hero-main">
   <div class="jka-header-menu">
     <div class="jka-logo">
@@ -65,41 +63,57 @@
   </div>
 </header>   
 
-<!-- Hero -->
-<section class="hero-main">
-  <div class="overlay-hero-main"></div>
+  <!-- Hero -->
+  <section style="min-height: 100vh; display: flex;">
 
-  <div class="content-hero-main">
-    <div class="status-hero-main">
-      <p class="status-dot"></p>
-      <p class="status-text">Open for Work</p>
-    </div>
+    <!-- Left Column -->
+    <section class="hero-jka">
 
-    <p class="eyebrow-hero-main"><span id="greeting"></span></p>
+      <div style="position: relative; z-index: 10; max-width: 36rem;">
 
-    <h1 class="title-hero-main">
-      Karthik Jambunathan<br>
-      <span class="date-hero-main text-mid">7+ Years Designing Experiences Across Industries</span><br>
-      <span class="date-hero-main text-small">I prefer Karthik, Jack, or JK</span>
-    </h1>
-    
-    <div class="meta-hero-main">
-      <button class="primary-btn"
-              onclick="document.getElementById('design').scrollIntoView({behavior: 'smooth'});">
-        Scroll Down
-      </button>
-      <button class="secondary-btn"
-              onclick="window.open('/pages/all-solutions.html', '_blank')">
-        All Solutions →
-      </button>
-      <button class="secondary-btn" 
-              onclick="window.open('/pages/about.html', '_blank')">
-        About Me →
-      </button>
-    </div>
-  </div>
+        <div style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(241,242,227,0.3); padding: 4px 12px; margin-bottom: 2rem; margin-top: 1rem;">
+          <p class="status-dot"></p>
+          <span style="font-size: 16px; color: var(--jka-color-accent-dark); 
+          text-transform: uppercase;">Open for Work</span>
+        </div>
 
-</section>
+        <p class="eyebrow-hero-main"><span id="greeting"></span></p>
+
+        <h1 class="jka-highlighter-large" style="color: var(--jka-color-text-inv-default); 
+        text-transform: uppercase; text-align: left; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 2rem; margin-top: 0;">
+          Karthik<br/>Jambunathan
+        </h1>
+
+        <p style="color: var(--jka-color-accent-dark); border-left: 2px solid var(--jka-color-theme-weak); padding-left: 24px; margin-bottom: 2rem;">
+          Solutions Designer and Consultant with 7+ Years Designing Experiences Across Industries
+        </p>
+
+        <div style="padding-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+          <button class="primary-btn"
+                  onclick="document.getElementById('design').scrollIntoView({behavior: 'smooth'});">
+            Explore Karthik
+          </button>
+          <button class="secondary-btn"
+                  onclick="window.open('/pages/all-solutions.html', '_blank')">
+            All Solutions →
+          </button>
+          <button class="secondary-btn" 
+                  onclick="window.open('/pages/about.html', '_blank')">
+            About Me →
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Right Column -->
+    <section class="desktop-only" style="width: 50%; background-color: #abd7a7; position: relative; overflow: hidden; border-left: 1px solid #72796f;">
+      <img src="/assets/images/about/Karthik-002.webp" alt="" 
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; "/>
+    </section>
+
+  </section>
+
 
 <section class="logo-section">
 
@@ -129,67 +143,81 @@
 
 </section>
 
-<section id="design" class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark);">
+<section id="design" style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
 
-  <div class="jka-container">
+  <div class="header-max" style="padding-bottom: 48px;">
 
-    <p class="eyebrow text-small label" style="font-weight: bold; margin-bottom: 24px;">
+    <p class="eyebrow text-small label" style="font-weight: bold; margin-bottom: 24px; background-color: var(--jka-color-accent-dark);">
       Meet a different kind of Design
     </p>
 
-    <h1 class="main-para" style="margin: 0 0 2rem; color: var(--jka-color-theme-weak);">
+    <h1 class="main-para" style="margin: 0 0 12px; color: var(--jka-color-theme-strong);">
       Most designers hand over aesthetic mockups.
-      I do UX, Content, and front-end.
+      I do UX, Copy, and front-end.
     </h1>
 
-    <p class="sub-para white" style="margin: 0 0 2rem;">
+    <p class="sub-para" style="margin: 0 0 12px;">
       The organizations I've worked with have all enabled me to design and implement digital solutions 
       for sectors including higher education, film & streaming, and nonprofits. 
       These experiences have enabled me to explore the massive plethora of skills I continue to explore.
     </p>
 
-    <p class="sub-para white" style="margin: 0 0 2rem;">
+    <p class="sub-para" style="margin: 0 0 12px;">
       Currently, I work at Toronto-based agency Copywriting Creatives, where I design and implement IT solutions for healthcare and nonprofits. 
     </p>
+    
+  </div>
 
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;">
-      <h2 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">My Work for the University of Toronto</h2>
+
+</section>
+
+<section class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark);">
+
+  <div class="jka-container" style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 40px; margin-bottom: 40px;">
+      <h2 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">Working at the University of Toronto</h2>
       <div style="height: 1px; background-color: var(--jka-color-theme-weak); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
     </div>
 
-    <p style="width: 100%; margin: 0 0 2rem;" class="white">
+    <p style="width: 100%; margin: 0 0 12px;" class="white">
       Between 2023-2025, 
       I was studying Information Sciences and UX Design at the University of Toronto.
-      Having originally applied for a student marketing role at the ECE department (ECE at U of T), 
-      I presented my experience and asked to be trusted with the website.
+      Having originally applied for a student marketing role at the ECE department, 
+      I presented my value and asked to be trusted with the website.
       From Jun 2024 - Mar 2025, 
-      I did manage the WordPress environments for both their public website and intranet, 
-      making content updates.
+      I managed the WordPress environments for both their public website and intranet, 
+      making routine content updates.
     </p>
 
     <p style="width: 100%; margin: 0 0 2rem;" class="white">
-      But the bigger questions they had were: How might we enable the Department Website to recruit Prospective Students? and 
-      How might we integrate the Toronto Nanofabrication Centre into the ECE digital environment?
-      and How could I help achieve this?
+      My work resulted in solutions for two of the department's high-priority areas: 
+      marketing for student recruitment and digital design standardisation.
     </p>
 
-    <div class="jka-project-grid__col jka-project-grid__col--1" onclick="window.open('/pages/casestudies/ece-web-production.html', '_blank')"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),  
-      url('/assets/images/grid/ECE.webp');">
-      <div class="jka-project-grid__info">
-        <p class="jka-project-grid__tags"><strong>UX Research to WordPress Development </strong>• Nov 2024 - Mar 2025</p>
-        <h3 class="jka-project-grid__title">
-          End-to-End Digital Production to Drive Student Recruitment for ECE at U of T
-        </h3>
-        <p class="jka-project-grid__dates">
-          Students were not navigating to core informational pages, and the Homepage lacked form and function.
-          I redesigned and rebuilt multiple core pages to address a missed recruitment opportunity by shifting to a student-focused hierarchy,
-          giving them a functional and aesthetic facelift.
-        </p>
-        <button class="text-btn jka-project-card-btn">
-          View Case Study →
-        </button>
-      </div>
+    <div class="article-grid-13">
+
+      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/casestudies/ece-web-production.html', '_blank')">
+        <img src="/assets/icons/admission.png" alt="" class="article-thumb-13">
+        <div class="article-content-13">
+          <p class="text-mid-13" style="color: var(--jka-color-theme-weak);">
+            Redesigned the public-facing website
+            to address a missed recruitment opportunity by shifting to a student-focused hierarchy.
+          </p>
+          <p class="article-date-13" style="color: var(--jka-color-text-inv-default);">Nov 2024 - Mar 2025</p>
+        </div>
+      </a>
+
+      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank')">
+        <img src="/assets/icons/migration.png" alt="" class="article-thumb-13">
+        <div class="article-content-13">
+          <p class="text-mid-13" style="color: var(--jka-color-theme-weak);">
+            Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's web environment.
+          </p>
+          <p class="article-date-13" style="color: var(--jka-color-text-inv-default);">Nov 2024 - Mar 2025</p>
+        </div>
+      </a>
+
     </div>
 
     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
@@ -204,9 +232,9 @@
             <path d="M20 6L9 17L4 12" stroke="none"/>
           </svg>
         </span>
-        <p class="theme-2">For the Business:<br>
+        <p class="accent">For the Website:<br>
           <span class="white">
-            Transformed for student recruitment by directing high-intent traffic to key pages.
+            Significant reduction in bounce rates with increased session times and stronger traffic flow.
           </span>
         </p>
       </li>
@@ -217,16 +245,30 @@
             <path d="M20 6L9 17L4 12" stroke="none"/>
           </svg>
         </span>
-        <p class="theme-2">For the User:<br>
+        <p class="accent">For the Staff:<br>
           <span class="white">
-            Reduced time-to-value through a clearer, student-focused content hierarchy.
+            Improved transparency, power, and control in website maintenance, marketing, and production.
+          </span>
+        </p>
+      </li>
+
+      <li class="jka-feature-list-item">
+        <span class="jka-feature-icon-box">
+          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L9 17L4 12" stroke="none"/>
+          </svg>
+        </span>
+        <p class="accent">For the Staff:<br>
+          <span class="white">
+            Significant reduction in technology debt and time saved on platform management and use.
           </span>
         </p>
       </li>
     </ul>
 
+
     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">Comments</h3>
+      <h3 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">Stakeholder Quotes</h3>
       <div style="height: 1px; background-color: var(--jka-color-theme-weak); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
     </div>
 
@@ -239,6 +281,135 @@
       </p>
     </blockquote>
 
+  </div>
+
+</section>
+
+<section id="consult" style="background-color: var(--jka-color-surface-subtle);">
+  
+<div style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
+ 
+  <!-- Intro Section -->
+  <div class="header-max" style="padding-bottom: 48px;">
+
+    <p class="eyebrow text-small label" style="font-weight: bold; margin-bottom: 24px; background-color: var(--jka-color-accent-dark);">
+      Meet a different kind of Consulting
+    </p>
+
+    <h1 class="main-para" style="margin: 0 0 12px; color: var(--jka-color-theme-strong);">
+      Most consultants make fancy presentations.
+      I give realistic solutions & practical implementations.
+    </h1>
+
+    <p class="sub-para" style="margin: 0 0 12px;">
+      I direct discovery workshops, map user journeys, audit accessibility and web content, as well as scope, design, and execute digital strategy.
+    </p>
+
+    <p class="sub-para" style="margin: 0 0 12px;">
+      In 2021, I founded JKR Business Consultancy, 
+      building 10+ end-to-end client relationships across sectors including healthcare, fintech, e-learning, and industrial manufacturing.
+    </p>
+    
+  </div>
+
+</div>
+
+</section>
+
+<section class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark);">
+
+  <div class="jka-container" style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
+      <h2 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Consulting for GenAI Adoption</h2>
+      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+    </div>
+    
+    <p style="width: 100%; margin: 0 0 2rem;" class="white">
+      In 2022, Fix It In Post Studios (FIIP Studios) asked me to support genAI adoption in their services.
+      This involved a live pilot (2023), where I developed and implemented a genAI-assisted service.
+      I've previously worked full-time for the studio (2020-21), where I solved project-specific technical gaps.
+    </p>
+
+    <div class="jka-project-grid__col jka-project-grid__col--1" onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank')"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
+      url('/assets/images/grid/FIIP.webp');">
+      <div class="jka-project-grid__info">
+        <p class="jka-project-grid__tags"><strong>Service Design • Digital Transformation • Creative Operations </strong>• 2022 - 2023</p>
+        <h2 class="jka-project-grid__title" style="margin: 0;">
+          Turning generative AI uncertainty into 
+          recurring revenue and eliminating AI-induced anxiety
+        </h2>
+        <p class="jka-project-grid__dates">
+          Generative AI left most studios reacting to its disruption, and FIIP Studios chose to build services around generative AI tools. 
+          I designed an adoption framework, implementing it during a pilot project with a real client that transformed an experimental workflow into a billable service.
+        </p>
+        <button class="text-btn jka-project-card-btn">
+          View Case Study →
+        </button>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
+      <h3 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Outcomes</h3>
+      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+    </div>
+
+    <ul class="jka-feature-list">
+      <li class="jka-feature-list-item">
+        <span class="jka-feature-icon-box">
+          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L9 17L4 12" stroke="none"/>
+          </svg>
+        </span>
+        <p class="accent">For the Bottomline:<br>
+          <span class="white">
+            30–40% revenue growth from a newly billable GenAI-assisted workflow.
+          </span>
+        </p>
+      </li>
+
+      <li class="jka-feature-list-item">
+        <span class="jka-feature-icon-box">
+          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L9 17L4 12" stroke="none"/>
+          </svg>
+        </span>
+        <p class="accent">For the Workflow:<br>
+          <span class="white">
+            ~2 weeks Reduction in time-span in production timelines.
+          </span>
+        </p>
+      </li>
+
+      <li class="jka-feature-list-item">
+        <span class="jka-feature-icon-box">
+          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L9 17L4 12" stroke="none"/>
+          </svg>
+        </span>
+        <p class="accent">For the Humans:<br>
+          <span class="white">
+            Reduced client revision loops and eliminated AI anxiety across the team.
+          </span>
+        </p>
+      </li>
+    </ul>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
+      <h3 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Stakeholder Quotes</h3>
+      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+    </div>
+    
+    <blockquote class="jka-block-quote" style="padding-top: 10px; padding-bottom: 10px;">
+      <h3 style="color: var(--jka-color-accent-dark);">
+        “I really hope we can use it [Adobe's newly introduced GenAI tool] efficiently and deliver [the PreViz to the Client].”
+      </h3>
+      <p style="color: white;">
+        -- Studio Owners, Fix It In Post Studios (before the live Pilot).
+      </p>
+    </blockquote>
+    
   </div>
 
 </section>
@@ -319,152 +490,9 @@
       </div>
     </div>
 
-  </div>
-</section>
-
-<section id="consult" class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark);">
-
-  <div class="jka-container">
-
-    <p class="eyebrow text-small label" style="font-weight: bold; margin-bottom: 24px;">
-      Meet a different kind of Consulting
-    </p>
-
-    <h1 class="main-para" style="margin: 0 0 2rem; color: var(--jka-color-theme-weaker);">
-      Most consultants hand over concepts.
-      I give realistic solutions & practical implementations.
-    </h1>
-
-    <p class="sub-para white" style="margin: 0 0 2rem;">
-      I direct discovery workshops, map user journeys, audit accessibility and web content, as well as scope, design, and execute digital strategy.
-    </p>
-
-    <p class="sub-para white" style="margin: 0 0 2rem;">
-      In 2021, I founded JKR Business Consultancy, 
-      building 10+ end-to-end client relationships across sectors including healthcare, fintech, e-learning, and industrial manufacturing.
-    </p>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;">
-      <h2 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Consulting for GenAI Adoption</h2>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-    
-    <p style="width: 100%; margin: 0 0 2rem;" class="white">
-      In 2022, Fix It In Post Studios (FIIP Studios) asked me to support genAI adoption in their services.
-      This involved a live pilot (2023), where I developed and implemented a genAI-assisted service.
-      I've previously worked full-time for the studio (2020-21), where I solved project-specific technical gaps.
-    </p>
-
-    <div class="jka-project-grid__col jka-project-grid__col--1" onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank')"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-      url('/assets/images/grid/FIIP.webp');">
-      <div class="jka-project-grid__info">
-        <p class="jka-project-grid__tags"><strong>Service Design • Digital Transformation • Creative Operations </strong>• 2022 - 2023</p>
-        <h3 class="jka-project-grid__title">
-          Digital Transformation: Building AI Into the Blueprint
-        </h3>
-        <p class="jka-project-grid__dates">
-          Generative AI left most studios reacting to its disruption, and FIIP Studios chose to build services around generative AI tools. 
-          I designed an adoption framework, implementing it during a pilot project with a real client that transformed an experimental workflow into a billable service.
-        </p>
-        <button class="text-btn jka-project-card-btn">
-          View Case Study →
-        </button>
-      </div>
-    </div>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Outcomes</h3>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-
-    <ul class="jka-feature-list">
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="theme-3">For the Business:<br>
-          <span class="white">
-            30–40% revenue growth from a newly billable GenAI-assisted workflow.
-          </span>
-        </p>
-      </li>
-
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="theme-3">For the Business:<br>
-          <span class="white">
-            ~2 weeks cut from production timelines.
-          </span>
-        </p>
-      </li>
-
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="theme-3">For the Business:<br>
-          <span class="white">
-            Reduced client revision loops and eliminated AI anxiety across the team.
-          </span>
-        </p>
-      </li>
-    </ul>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Comments</h3>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-    
-    <blockquote class="jka-block-quote" style="padding-top: 10px; padding-bottom: 10px;">
-      <h3 style="color: var(--jka-color-accent-dark);">
-        “I really hope we can use it [Adobe's newly introduced GenAI tool] efficiently and deliver [the PreViz to the Client].”
-      </h3>
-      <p style="color: white;">
-        -- Studio Owners, Fix It In Post Studios (before the live Pilot).
-      </p>
-    </blockquote>
-    
-  </div>
+  </div>    
 
 </section>
-
-<section style="background-color: var(--jka-color-theme-stronger);">
-
-<section class="jka-popup-bar" style="background-color: var(--jka-color-accent);">
-
-<div class="jka-popup-text-group">
-
-<div>
-  <h3 style="color: var(--jka-color-theme-strong);">
-    Explore the full range of solutions
-  </h3>
-  <p style="color: var(--jka-color-text-default);">
-    I've delivered throughout design 
-    and consulting.
-  </p>
-</div>
-
-<button class="tertiary-btn"
-  onclick="window.open('/pages/all-solutions.html', '_blank');">
-  All Solutions ⤴︎
-</button>
-
-</div>
-
-</section>
-
-</section>
-
-<section style="background-color: var(--jka-color-accent);">
 
 <section class="jka-popup-bar">
 
@@ -507,7 +535,7 @@
         </button>
 
         <button id="linkedin-cta-btn" onclick="window.open('https://www.linkedin.com/in/karthikjambunathan/', '_blank')"
-                class="secondary-btn" style="color: var(--jka-color-text-default);"
+                class="secondary-btn"
                 aria-label="Send a quick message on LinkedIn">
             Quick Message
         </button>
@@ -519,8 +547,6 @@
     <button class="tertiary-btn" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
   </div>
 </section>
-
-</main>
 
 <!-- JavaScripts -->
 
@@ -535,7 +561,7 @@
 </script>
 
 <script>
-    const greetings = ["Hello", "Ciao", "Hola", "привіт", "வணக்கம்", "नमस्ते", "Bonjour", "안녕", "你好"];
+    const greetings = ["Hello", "Ciao", "Hola", "привіт", "Bonjour", "你好"];
     let currentGreetingIndex = 0;
     const greetingElement = document.getElementById("greeting");
 
@@ -546,15 +572,6 @@
 
   // Cyrillic letters from "привіт" with visually similar characters
   'пнтряждииевфбіиїтпд' +
-
-  // Tamil letters from "வணக்கம்" with visually similar characters
-  'வபமணகசஸ்ஹளற' +
-
-  // Devanagari letters from "नमस्ते" with visually similar characters
-  'नपमतसशषअआइईउऊएऐओऔ' +
-
-  // Hangul letters from "안녕" with visually similar characters
-  '안앉안녕옹엉앙' +
 
   // Chinese letters from "你好" with visually similar characters
   '你他妳好妈她';
