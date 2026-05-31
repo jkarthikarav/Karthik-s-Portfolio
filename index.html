@@ -35,31 +35,6 @@
            alt=""
            class="jka-logo-img">
     </div>
-    <div class="jka-contact-row">
-      <div class="jka-contact-element jka-location">
-        <img src="/assets/icons/home/Map.svg"
-             alt="Icon; Location."
-             width="16"
-             height="16">
-        <p>Toronto</p>
-      </div>
-      <div class="jka-contact-element">
-        <img src="/assets/icons/home/LI.svg"
-             alt="Icon; LinkedIn."
-             width="16"
-             height="16">
-        <a href="https://www.linkedin.com/in/karthikjambunathan/"
-           target="_blank">Connect</a>
-      </div>
-      <div class="jka-contact-element">
-        <img src="/assets/icons/home/Email.svg"
-             alt="Icon; Email."
-             width="16"
-             height="16">
-        <a href="mailto:karthikaravindj@gmail.com"
-           target="_blank">Email</a>
-      </div>
-    </div>
   </div>
 </header>   
 
@@ -74,7 +49,7 @@
         <div style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(241,242,227,0.3); padding: 4px 12px; margin-bottom: 2rem; margin-top: 1rem;">
           <p class="status-dot"></p>
           <span style="font-size: 16px; color: var(--jka-color-accent-dark); 
-          text-transform: uppercase;">Open for Work</span>
+          text-transform: uppercase;">Open to new roles · Toronto, ON</span>
         </div>
 
         <p class="eyebrow-hero-main"><span id="greeting"></span></p>
@@ -87,21 +62,22 @@
         </h1>
 
         <p style="color: var(--jka-color-accent-dark); border-left: 2px solid var(--jka-color-theme-weak); padding-left: 24px; margin-bottom: 2rem;">
-          Solutions Designer and Consultant with 7+ Years Designing Experiences Across Industries
+          Designer turning messy research into products people actually use. 
+          I work across discovery, strategy, and front-end to solve problems end to end. Not just the pretty parts.
         </p>
 
         <div style="padding-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem;">
           <button class="primary-btn"
                   onclick="document.getElementById('design').scrollIntoView({behavior: 'smooth'});">
-            Explore Karthik
+            View My Work 
           </button>
-          <button class="secondary-btn"
-                  onclick="window.open('/pages/all-solutions.html', '_blank')">
-            All Solutions →
-          </button>
-          <button class="secondary-btn" 
+          <button class="tertiary-btn" 
                   onclick="window.open('/pages/about.html', '_blank')">
             About Me →
+          </button>
+          <button class="secondary-btn" 
+                  onclick="window.open('https://www.linkedin.com/in/karthikjambunathan/', '_blank')">
+            Connect on LinkedIn →
           </button>
         </div>
 
@@ -159,260 +135,245 @@
     </h1>
 
     <p class="sub-para" style="margin: 0 0 12px;">
-      The organizations I've worked with have all enabled me to design and implement digital solutions 
-      for sectors including higher education, film & streaming, and nonprofits. 
-      These experiences have enabled me to explore the massive plethora of skills I continue to explore.
+      I come from research, understanding people to mapping systems to finding the real problem underneath the stated one. 
+      But I also write the copy that goes in the interface and build the front-end that ships it. 
+      That end-to-end range means I spend less time in translation and more time solving.
     </p>
 
     <p class="sub-para" style="margin: 0 0 12px;">
-      Currently, I work at Toronto-based agency Copywriting Creatives, where I design and implement IT solutions for healthcare and nonprofits. 
+      I've worked across higher education, film and streaming, healthcare, and nonprofits. 
+      The problems are different. The approach is the same: find the real problem, build the right thing, make sure it lasts.
+    </p>
+
+    <p class="sub-para" style="margin: 0 0 12px;">
+      Currently based in Toronto. Open to full-time roles in UX research, mixed UX, or product design.
     </p>
     
   </div>
 
-
 </section>
 
-<section class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark);">
+<section>
+  
+<div style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
 
-  <div class="jka-container" style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 40px; margin-bottom: 40px;">
-      <h2 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">Working at the University of Toronto</h2>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weak); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; margin-top: 48px;">
+    <h2 style="color: var(--jka-color-theme-mid); margin: 0; white-space: nowrap;">Featured Solutions</h2>
+    <div style="height: 1px; background-color: var(--jka-color-border-default); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+  </div>
+ 
+  <!-- Featured Section -->
+  <section class="grid-featured">
+ 
+    <!-- Project 1 -->
+    <div class="project1"
+      onmouseenter="this.querySelector('.proj-img-wrap').style.transform='scale(1.01)'" 
+      onmouseleave="this.querySelector('.proj-img-wrap').style.transform='scale(1)'">
+      <div class="proj-img-wrap" style="aspect-ratio: 3/2; overflow: hidden; background: #f3f4f6; margin-bottom: 24px; transition: transform 0.7s ease;">
+        <img
+          src="/assets/images/ece.webp"
+          style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.25); transition: filter 0.7s; cursor: pointer;"
+          onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
+          onmouseleave="this.style.filter='grayscale(1) contrast(1.25)'" 
+          onclick="window.open('/pages/projects/ece.html', '_blank')"
+        />
+      </div>
+      <div style="display: flex; flex-direction: column; padding-bottom: 6px; margin-bottom: 12px;">
+        <span class="jka-eyebrow" style="text-transform: uppercase; margin-bottom: 8px;">UX Research · Content Strategy · Front-End Development · 2024–25</span>
+        <h2 style="margin-bottom: 0;">How I Rebuilt ECE's Student Recruitment Website Around One Clear Priority</h2>
+        <p class="text-small" style="margin-bottom: 0;">
+          ECE is one of Canada's top engineering departments. Their website wasn't showing it and prospective students were leaving before they had a reason to stay.
+          I led the research and redesign: competitor analysis across North America, stakeholder interviews, informal student and faculty conversations.
+          I also developed the pages inside ECE's WordPress environment.
+        </p>
+        <p class="text-small" style="margin-bottom: 6px;">
+          Metrics available on request.
+        </p>
+        <a class="text-small" href="/pages/projects/ece.html" target="_blank" style="margin: 6px 0;">Explore Solution</a>
+      </div>
     </div>
+ 
+    <!-- Project 2 -->
+    <div class="project2-offset" 
+      onmouseenter="this.querySelector('.proj-img-wrap2').style.transform='scale(1.01)'" 
+      onmouseleave="this.querySelector('.proj-img-wrap2').style.transform='scale(1)'">
+      <div class="proj-img-wrap2" style="aspect-ratio: 4/5; overflow: hidden; background: #f3f4f6; margin-bottom: 24px; transition: transform 0.7s ease;">
+        <img
+          src="/assets/images/grid/FIIP.webp"
+          style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.1); transition: filter 0.7s; cursor: pointer;"
+          onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
+          onmouseleave="this.style.filter='grayscale(1) contrast(1.1)'"
+          onclick="window.open('/pages/projects/service-design.html', '_blank')"
+        />
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <span class="jka-eyebrow" style="text-transform: uppercase; margin-bottom: 8px;">Service Design · Generative Research · AI Adoption · 2022–23</span>
+        <h2 style="margin-bottom: 0;">
+          How I Built an AI Adoption Framework for a VFX Studio They Now Ship as a Service</h2>
+        <p class="text-small" style="margin-bottom: 0;">
+          FIIP Studios was losing ground to competitors offering AI services but no studio had figured out how to do it properly. 
+          I ran generative research workshops, assessed the landscape of tools and studios, and built a four-guideline framework from scratch. 
+          Then I proved it on a live production project with a real client and a real deadline.
+        </p>
+        <p class="text-small" style="margin-bottom: 6px;">
+          30–40% revenue growth · 2 weeks reduction in production time.
+        </p>
+        <a class="text-small" href="/pages/projects/service-design.html" target="_blank" style="margin: 6px 0;">Explore Solution</a>
+      </div>
+    </div>
+ 
+  </section>
 
-    <p style="width: 100%; margin: 0 0 12px;" class="white">
-      Between 2023-2025, 
-      I was studying Information Sciences and UX Design at the University of Toronto.
-      Having originally applied for a student marketing role at the ECE department, 
-      I presented my value and asked to be trusted with the website.
-      From Jun 2024 - Mar 2025, 
-      I managed the WordPress environments for both their public website and intranet, 
-      making routine content updates.
+  <section style="position: relative; padding: 96px 24px; overflow: hidden;" id="testimonials">
+
+  <div style="max-width: 768px; margin: 0 auto; text-align: center; position: relative; z-index: 10;">
+
+    <p class="eyebrow text-small label">
+      What People Say
     </p>
 
-    <p style="width: 100%; margin: 0 0 2rem;" class="white">
-      My work resulted in solutions for two of the department's high-priority areas: 
-      marketing for student recruitment and digital design standardisation.
+    <div style="position: relative;">
+      <svg style="position: absolute; top: -48px; left: 50%; transform: translateX(-50%); opacity: 0.08;" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="var(--jka-color-theme-mid)"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+
+      <p style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-style: italic; margin: 0 0 48px 0;">
+        "Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare leader in design and implementation work! 
+        He came in as a knight in shining armor making the impossible, possible."
+      </p>
+
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <p class="text-mid" style="display: block; color: var(--jka-color-theme-mid); margin-bottom: 0;">Kyle Thomas</p>
+        <p class="text-small" style="display: block; color: var(--jka-color-text-weakest); margin-top: 0;">
+          on working together at Copywriting Creatives
+        </p>
+      </div>
+    </div>
+
+  </div>    
+
+</section>
+  
+  <section style="margin-bottom: 80px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; margin-top: 48px">
+      <h2 style="color: var(--jka-color-theme-mid); margin: 0; white-space: nowrap;">More Work</h2>
+      <div style="height: 1px; background-color: var(--jka-color-border-default); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
+    </div>
+
+    <p style="margin-bottom: 12px;">
+      Each project shows the solutions I created to different kinds of problems, involving research, strategy, and design across different contexts.
+    </p>
+  
+    <p class="text-small" style="margin-bottom: 12px;" id="allcases">
+      <span style="font-weight: 800;">Note:</span>
+      The Copywriting Creatives projects are being developed and will be published on the Copywriting Creatives website. 
     </p>
 
     <div class="article-grid-13">
 
-      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/casestudies/ece-web-production.html', '_blank')">
-        <img src="/assets/icons/admission.png" alt="" class="article-thumb-13">
+      <a class="article-entry-13" style="cursor: default; width: 100%;">
+        <img src="/assets/logos/sbc-logo.png" alt="" class="article-thumb-13">
         <div class="article-content-13">
-          <p class="text-mid-13" style="color: var(--jka-color-theme-weak);">
-            Redesigned the public-facing website
-            to address a missed recruitment opportunity by shifting to a student-focused hierarchy.
+          <p class="text-mid-13">
+            Improving the UX of Support Black Charities's Website & Directory Listing Tool.
           </p>
-          <p class="article-date-13" style="color: var(--jka-color-text-inv-default);">Nov 2024 - Mar 2025</p>
+          <p class="article-date-13">At Copywriting Creatives</p>
+          <p class="article-date-13">Ongoing</p>
         </div>
       </a>
 
-      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/casestudies/ece-tnfc.html', '_blank')">
-        <img src="/assets/icons/migration.png" alt="" class="article-thumb-13">
+      <a class="article-entry-13" style="cursor: default; width: 100%;">
+        <img src="/assets/logos/ssyo-logo.png" alt="" class="article-thumb-13">
         <div class="article-content-13">
-          <p class="text-mid-13" style="color: var(--jka-color-theme-weak);">
+          <p class="text-mid-13">
+            Maximizing visibility & reducing admin workload for South Shore Youth Organization's website.
+          </p>
+          <p class="article-date-13">At Copywriting Creatives</p>
+          <p class="article-date-13">Ongoing</p>
+        </div>
+      </a>
+
+      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/projects/ece-tnfc.html', '_blank')">
+        <img src="/assets/logos/uoft-ece-logo.jpg" alt="" class="article-thumb-13">
+        <div class="article-content-13">
+          <p class="text-mid-13">
             Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's web environment.
           </p>
-          <p class="article-date-13" style="color: var(--jka-color-text-inv-default);">Nov 2024 - Mar 2025</p>
+          <p class="article-date-13">At ECE at U of T</p>
+          <p class="article-date-13">Nov 2024 - Mar 2025</p>
+        </div>
+      </a>
+
+      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/projects/chlavm.html', '_blank')">
+        <img src="/assets/logos/CHLAVM.png" alt="" class="article-thumb-13" style="background-color: var(--jka-color-surface-default); padding: 4px;">
+        <div class="article-content-13">
+          <p class="text-mid-13">
+            Diagnosing systemic usability failures in a Virtual museum website (CHLAVM).
+          </p>
+          <p class="article-date-13">Pro Bono + Master's UX Capstone Submission</p>
+          <p class="article-date-13">Jan 2025 - Feb 2025</p>
+        </div>
+      </a>
+
+      <a class="article-entry-13" style="cursor: default; width: 100%;">
+        <img src="/assets/logos/Uoft-music.png" alt="" class="article-thumb-13">
+        <div class="article-content-13">
+          <p class="text-mid-13">
+            Delivered a Business Proposal for a Music-focused AI Business as part of a cross-departmental course.
+          </p>
+          <p class="article-date-13">At U of T</p>
+          <p class="article-date-13">Sep 2024 - Dec 2024</p>
+        </div>
+      </a>
+
+      <a class="article-entry-13 no-hover" style="cursor: default; width: 100%;">
+        <img src="/assets/logos/Karthik New Logo.png" alt="" class="article-thumb-13" style="background-color: var(--jka-color-surface-inv-default); padding: 4px; object-fit: contain;">
+        <div class="article-content-13">
+          <p class="text-mid-13">
+            Designing the knowledge architecture and visual identity for a Netflix IP adaptation's creative bible and pitch deck.
+          </p>
+          <p class="article-date-13">Freelance</p>
+          <p class="article-date-13">Sep 2023 - Jan 2024</p>
+        </div>
+      </a>
+
+<!--      <a href="/pages/projects/textile-museum-of-canada.html" class="article-entry-13 no-hover" target="_blank" style="cursor: pointer; width: 100%;">
+        <img src="/assets/logos/TMC-logo.png" alt="" class="article-thumb-13" style="background-color: var(--jka-color-surface-default); padding: 4px;">
+        <div class="article-content-13">
+          <p class="text-mid-13">
+            Redesigning Textile Museum of Canada Website's navigation menu and IA, Engaged through U of T's iSchool.
+          </p>
+          <p class="article-date-13">Pro Bono</p>
+          <p class="article-date-13">Oct – Dec 2023</p>
+        </div>
+      </a>-->
+
+      <a href="/pages/projects/experience-toronto.html" class="article-entry-13" target="_blank" style="cursor: pointer; width: 100%;">
+        <img src="/assets/logos/uoft-info-logo.png" alt="" class="article-thumb-13">
+        <div class="article-content-13">
+          <p class="text-mid-13">
+            Designed an App for discovering discounts to Toronto-based Galleries, Libraries, Archives, and Museums.
+          </p>
+          <p class="article-date-13">At U of T</p>
+          <p class="article-date-13">Oct – Dec 2023</p>
+        </div>
+      </a>
+
+      <a href="/pages/projects/the-pitch-deck-website.html" class="article-entry-13" target="_blank" style="cursor: pointer; width: 100%;">
+        <img src="/assets/logos/LOGO_9.jpg" alt="" class="article-thumb-13">
+        <div class="article-content-13">
+          <p class="text-mid-13">
+            Designed and Delivered a Web-based Pitchdeck for Pre-Production capital raising.
+          </p>
+          <p class="article-date-13">At Fix It In Post</p>
+          <p class="article-date-13">Jun 2021 - Aug 2021</p>
         </div>
       </a>
 
     </div>
 
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">Outcomes</h3>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weak); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-
-    <ul class="jka-feature-list">
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="accent">For the Website:<br>
-          <span class="white">
-            Significant reduction in bounce rates with increased session times and stronger traffic flow.
-          </span>
-        </p>
-      </li>
-
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="accent">For the Staff:<br>
-          <span class="white">
-            Improved transparency, power, and control in website maintenance, marketing, and production.
-          </span>
-        </p>
-      </li>
-
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="accent">For the Staff:<br>
-          <span class="white">
-            Significant reduction in technology debt and time saved on platform management and use.
-          </span>
-        </p>
-      </li>
-    </ul>
-
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weak); margin: 0; white-space: nowrap;">Stakeholder Quotes</h3>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weak); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-
-    <blockquote class="jka-block-quote" style="padding-top: 10px; padding-bottom: 10px;">
-      <h3 style="color: var(--jka-color-accent-dark);">
-        “[Department Chair] signed off on the [new] design [for the Homepage]. She's a fan!”
-      </h3>
-      <p style="color: white;">
-        -- Message sent by Admin (after Mockups were approved).
-      </p>
-    </blockquote>
-
-  </div>
-
-</section>
-
-<section id="consult" style="background-color: var(--jka-color-surface-subtle);">
-  
-<div style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
- 
-  <!-- Intro Section -->
-  <div class="header-max" style="padding-bottom: 48px;">
-
-    <p class="eyebrow text-small label" style="font-weight: bold; margin-bottom: 24px; background-color: var(--jka-color-accent-dark);">
-      Meet a different kind of Consulting
-    </p>
-
-    <h1 class="main-para" style="margin: 0 0 12px; color: var(--jka-color-theme-strong);">
-      Most consultants make fancy presentations.
-      I give realistic solutions & practical implementations.
-    </h1>
-
-    <p class="sub-para" style="margin: 0 0 12px;">
-      I direct discovery workshops, map user journeys, audit accessibility and web content, as well as scope, design, and execute digital strategy.
-    </p>
-
-    <p class="sub-para" style="margin: 0 0 12px;">
-      In 2021, I founded JKR Business Consultancy, 
-      building 10+ end-to-end client relationships across sectors including healthcare, fintech, e-learning, and industrial manufacturing.
-    </p>
-    
-  </div>
+  </section>
 
 </div>
-
-</section>
-
-<section class="jka-section-accent" style="border-top: 5px solid var(--jka-color-accent-dark);">
-
-  <div class="jka-container" style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h2 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Consulting for GenAI Adoption</h2>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-    
-    <p style="width: 100%; margin: 0 0 2rem;" class="white">
-      In 2022, Fix It In Post Studios (FIIP Studios) asked me to support genAI adoption in their services.
-      This involved a live pilot (2023), where I developed and implemented a genAI-assisted service.
-      I've previously worked full-time for the studio (2020-21), where I solved project-specific technical gaps.
-    </p>
-
-    <div class="jka-project-grid__col jka-project-grid__col--1" onclick="window.open('/pages/casestudies/digital-transformation.html', '_blank')"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),  
-      url('/assets/images/grid/FIIP.webp');">
-      <div class="jka-project-grid__info">
-        <p class="jka-project-grid__tags"><strong>Service Design • Digital Transformation • Creative Operations </strong>• 2022 - 2023</p>
-        <h2 class="jka-project-grid__title" style="margin: 0;">
-          Turning generative AI uncertainty into 
-          recurring revenue and eliminating AI-induced anxiety
-        </h2>
-        <p class="jka-project-grid__dates">
-          Generative AI left most studios reacting to its disruption, and FIIP Studios chose to build services around generative AI tools. 
-          I designed an adoption framework, implementing it during a pilot project with a real client that transformed an experimental workflow into a billable service.
-        </p>
-        <button class="text-btn jka-project-card-btn">
-          View Case Study →
-        </button>
-      </div>
-    </div>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Outcomes</h3>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-
-    <ul class="jka-feature-list">
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="accent">For the Bottomline:<br>
-          <span class="white">
-            30–40% revenue growth from a newly billable GenAI-assisted workflow.
-          </span>
-        </p>
-      </li>
-
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="accent">For the Workflow:<br>
-          <span class="white">
-            ~2 weeks Reduction in time-span in production timelines.
-          </span>
-        </p>
-      </li>
-
-      <li class="jka-feature-list-item">
-        <span class="jka-feature-icon-box">
-          <svg fill="var(--jka-color-theme-mid)" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 6L9 17L4 12" stroke="none"/>
-          </svg>
-        </span>
-        <p class="accent">For the Humans:<br>
-          <span class="white">
-            Reduced client revision loops and eliminated AI anxiety across the team.
-          </span>
-        </p>
-      </li>
-    </ul>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; margin-top: 48px;">
-      <h3 style="color: var(--jka-color-theme-weaker); margin: 0; white-space: nowrap;">Stakeholder Quotes</h3>
-      <div style="height: 1px; background-color: var(--jka-color-theme-weaker); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-    
-    <blockquote class="jka-block-quote" style="padding-top: 10px; padding-bottom: 10px;">
-      <h3 style="color: var(--jka-color-accent-dark);">
-        “I really hope we can use it [Adobe's newly introduced GenAI tool] efficiently and deliver [the PreViz to the Client].”
-      </h3>
-      <p style="color: white;">
-        -- Studio Owners, Fix It In Post Studios (before the live Pilot).
-      </p>
-    </blockquote>
-    
-  </div>
 
 </section>
 
@@ -460,41 +421,6 @@
   </div>
 </div>
 -->
-
-<section style="position: relative; padding: 96px 24px; overflow: hidden;" id="testimonials">
-
-  <div style="position: absolute; inset: 0; pointer-events: none; opacity: 0.15;">
-    <div style="position: absolute; top: -10%; left: -5%; width: 384px; height: 384px; background: var(--jka-color-theme-mid); filter: blur(120px); border-radius: 50%;"></div>
-    <div style="position: absolute; bottom: -10%; right: -5%; width: 384px; height: 384px; background: var(--jka-color-theme-weaker); filter: blur(120px); border-radius: 50%;"></div>
-  </div>
-
-  <div style="max-width: 768px; margin: 0 auto; text-align: center; position: relative; z-index: 10;">
-
-    <p class="eyebrow text-small label">
-      What People Say
-    </p>
-
-    <div style="position: relative;">
-      <svg style="position: absolute; top: -48px; left: 50%; transform: translateX(-50%); opacity: 0.08;" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="var(--jka-color-theme-mid)"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
-
-      <p style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-style: italic; margin: 0 0 48px 0;">
-        "Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare leader in design and implementation work! 
-        He came in as a knight in shining armor making the impossible, possible."
-      </p>
-
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <!--<div style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.12); 
-        border: 4px solid var(--jka-color-border-subtle);">
-          <img src="" alt="Kyle Thomas" style="width: 100%; height: 100%; object-fit: cover;"/>
-        </div>-->
-        <p class="text-mid" style="display: block; color: var(--jka-color-theme-mid); margin-bottom: 0;">Kyle Thomas</p>
-        <p class="text-small" style="display: block; color: var(--jka-color-text-weakest); margin-top: 0;">Creative Director, Copywriting Creatives</p>
-      </div>
-    </div>
-
-  </div>    
-
-</section>
 
 <section class="jka-popup-bar">
 

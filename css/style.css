@@ -341,7 +341,7 @@ a {
   min-width: 300px;
   padding: 2rem;
   background-color: transparent;
-  max-width: 1200px;
+  max-width: 960px;
 }
 
 .mmc-content h1 {
@@ -352,6 +352,12 @@ a {
 .mmc-content h5 {
   color: var(--jka-color-text-default);
   margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.mmc-content h5 span {
+  color: var(--jka-color-theme-mid);
+  font-weight: 600;
 }
 
 .mmc-row {
@@ -2495,6 +2501,117 @@ hr {
   }
 }
 
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .process-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .process-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .process-images {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hard-part-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 960px;
+    margin: 0 auto 48px;
+  }
+
+  @media (max-width: 768px) {
+    .hard-part-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hard-part-col-left {
+      border-right: none !important;
+      border-bottom: 1px solid #e4e4e4;
+      padding-right: 0 !important;
+      padding-bottom: 32px;
+    }
+
+    .hard-part-col-right {
+      padding-left: 0 !important;
+      padding-top: 32px;
+    }
+  }
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 48px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    .research-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .outcome-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .outcome-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .built-alternating {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .built-before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .built-minor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .built-alternating {
+      grid-template-columns: 1fr;
+    }
+
+    .built-before-after {
+      grid-template-columns: 1fr;
+    }
+
+    .built-minor {
+      grid-template-columns: 1fr;
+    }
+
+    .built-reverse {
+      order: 0 !important;
+    }
+  }
 
 /* ============================================================
    16. RESPONSIVE / MEDIA QUERIES
