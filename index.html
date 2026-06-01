@@ -1,103 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta property="og:title" content="Karthik Jambunathan Portfolio" />
-  <meta property="og:description" content="Personal design portfolio of Karthik Jambunathan, a Toronto-based designer focused on fintech, web, and digital strategy." />
-  <meta property="og:image" content="/assets/images/about/Karthik-002.webp" />
-  <meta property="og:url" content="https://karthikjambunathan.com/" />
-  <meta property="og:type" content="website" />
 
   <title>Karthik Jambunathan | Portfolio</title>
 
-  <!-- Fonts -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
-  </noscript>
 
-  <!-- Styles and Scripts -->
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/script.js"></script>
 
 </head>
 
-<body style="background-color: var(--jka-color-surface-default);">  
+<body style="background-color: var(--karthik-bg-page);">
 
-  <!-- Header -->
-<header class="header-hero-main">
-  <div class="jka-header-menu">
-    <div class="jka-logo">
-      <img src="/assets/logos/Karthik New Logo.png"
-           onclick="location.reload()"
-           alt=""
-           class="jka-logo-img">
+  <header class="karthik-header">
+ 
+    <a href="/" class="karthik-header__logo-link" aria-label="Karthik — home">
+      <img
+        src="/assets/logos/Karthik New Logo.png"
+        alt="Karthik"
+        class="karthik-header__logo"
+      />
+    </a>
+ 
+    <div class="karthik-header__intro">
+      <p class="karthik-header__eyebrow" id="greeting"></p>
+      <h4 class="karthik-header__name">I'm Karthik Jambunathan</h4>
+      <p class="karthik-header__tagline">
+        <span class="karthik-header__tagline-em" aria-hidden="true"></span>
+        <span class="karthik-header__tagline-text">I work across discovery, strategy, and front-end</span>
+      </p>
     </div>
-  </div>
-</header>   
+ 
+    <div class="karthik-header__status">
+      <span class="karthik-status-dot" aria-hidden="true"></span>
+      <span class="karthik-header__status-text">Open to new roles &middot; Toronto, ON</span>
+    </div>
+ 
+    <nav class="karthik-header__actions" aria-label="Primary actions">
+      <a href="#work" class="karthik-btn karthik-btn--primary" onclick="scrollToWork(event)">
+        View Work
+      </a>
+      <a href="/pages/about.html" class="karthik-btn karthik-btn--outline" target="_blank">
+        About Me
+      </a>
+      <a
+        href="https://linkedin.com/in/karthikjambunathan"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="karthik-btn karthik-btn--ghost"
+      >
+        LinkedIn
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
+          <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </nav>
+ 
+  </header>
 
-  <!-- Hero -->
-  <section style="min-height: 100vh; display: flex;">
+<!--<section class="logo-section">
 
-    <!-- Left Column -->
-    <section class="hero-jka">
-
-      <div style="position: relative; z-index: 10; max-width: 36rem;">
-
-        <div style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(241,242,227,0.3); padding: 4px 12px; margin-bottom: 2rem; margin-top: 1rem;">
-          <p class="status-dot"></p>
-          <span style="font-size: 16px; color: var(--jka-color-accent-dark); 
-          text-transform: uppercase;">Open to new roles · Toronto, ON</span>
-        </div>
-
-        <p class="eyebrow-hero-main"><span id="greeting"></span></p>
-
-        <p class="eyebrow-hero-main">I'm</p>
-
-        <h1 class="jka-highlighter-large" style="color: var(--jka-color-text-inv-default); 
-        text-transform: uppercase; text-align: left; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 2rem; margin-top: 0;">
-          Karthik<br/>Jambunathan
-        </h1>
-
-        <p style="color: var(--jka-color-accent-dark); border-left: 2px solid var(--jka-color-theme-weak); padding-left: 24px; margin-bottom: 2rem;">
-          Designer turning messy research into products people actually use. 
-          I work across discovery, strategy, and front-end to solve problems end to end. Not just the pretty parts.
-        </p>
-
-        <div style="padding-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem;">
-          <button class="primary-btn"
-                  onclick="document.getElementById('design').scrollIntoView({behavior: 'smooth'});">
-            View My Work 
-          </button>
-          <button class="tertiary-btn" 
-                  onclick="window.open('/pages/about.html', '_blank')">
-            About Me →
-          </button>
-          <button class="secondary-btn" 
-                  onclick="window.open('https://www.linkedin.com/in/karthikjambunathan/', '_blank')">
-            Connect on LinkedIn →
-          </button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Right Column -->
-    <section class="desktop-only" style="width: 50%; background-color: #abd7a7; position: relative; overflow: hidden; border-left: 1px solid #72796f;">
-      <img src="/assets/images/about/Karthik-002.webp" alt="" 
-        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; "/>
-    </section>
-
-  </section>
-
-
-<section class="logo-section">
-
-  <p class="text-large" style="margin: 2rem auto 0.25rem; color: var(--jka-color-theme-strong); text-align: center;">
+  <h5 style="margin: 2rem auto 24px; text-align: center; color: var(--karthik-text-brand-dark);">
     Trusted By
-  </p>
+  </h5>
+
   <div class="logo-container">
     <a href="https://www.linkedin.com/company/fiipstudios/" class="logo-link" target="_blank">
       <img src="/assets/logos/FIIP.jpg" class="logos-img" alt="Logo 1">
@@ -119,130 +88,139 @@
     </div>
   </div>
 
-</section>
+</section>-->
 
-<section id="design" style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
-
-  <div class="header-max" style="padding-bottom: 48px;">
-
-    <p class="eyebrow text-small label" style="font-weight: bold; margin-bottom: 24px; background-color: var(--jka-color-accent-dark);">
-      Meet a different kind of Design
-    </p>
-
-    <h1 class="main-para" style="margin: 0 0 12px; color: var(--jka-color-theme-strong);">
-      Most designers hand over aesthetic mockups.
-      I do UX, Copy, and front-end.
-    </h1>
-
-    <p class="sub-para" style="margin: 0 0 12px;">
-      I come from research, understanding people to mapping systems to finding the real problem underneath the stated one. 
-      But I also write the copy that goes in the interface and build the front-end that ships it. 
-      That end-to-end range means I spend less time in translation and more time solving.
-    </p>
-
-    <p class="sub-para" style="margin: 0 0 12px;">
-      I've worked across higher education, film and streaming, healthcare, and nonprofits. 
-      The problems are different. The approach is the same: find the real problem, build the right thing, make sure it lasts.
-    </p>
-
-    <p class="sub-para" style="margin: 0 0 12px;">
-      Currently based in Toronto. Open to full-time roles in UX research, mixed UX, or product design.
-    </p>
-    
-  </div>
-
-</section>
-
-<section>
-  
-<div style="max-width: 1440px; margin: 0 auto; padding: 0 40px;">
-
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; margin-top: 48px;">
-    <h2 style="color: var(--jka-color-theme-mid); margin: 0; white-space: nowrap;">Featured Solutions</h2>
-    <div style="height: 1px; background-color: var(--jka-color-border-default); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-  </div>
+<section class="karthik-text-section">
  
-  <!-- Featured Section -->
-  <section class="grid-featured">
+  <div class="karthik-text-section__inner" style="max-width: 1440px;">
  
-    <!-- Project 1 -->
-    <div class="project1"
-      onmouseenter="this.querySelector('.proj-img-wrap').style.transform='scale(1.01)'" 
-      onmouseleave="this.querySelector('.proj-img-wrap').style.transform='scale(1)'">
-      <div class="proj-img-wrap" style="aspect-ratio: 3/2; overflow: hidden; background: #f3f4f6; margin-bottom: 24px; transition: transform 0.7s ease;">
-        <img
-          src="/assets/images/ece.webp"
-          style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.25); transition: filter 0.7s; cursor: pointer;"
-          onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
-          onmouseleave="this.style.filter='grayscale(1) contrast(1.25)'" 
-          onclick="window.open('/pages/projects/ece.html', '_blank')"
-        />
-      </div>
-      <div style="display: flex; flex-direction: column; padding-bottom: 6px; margin-bottom: 12px;">
-        <span class="jka-eyebrow" style="text-transform: uppercase; margin-bottom: 8px;">UX Research · Content Strategy · Front-End Development · 2024–25</span>
-        <h2 style="margin-bottom: 0;">How I Rebuilt ECE's Student Recruitment Website Around One Clear Priority</h2>
-        <p class="text-small" style="margin-bottom: 0;">
-          ECE is one of Canada's top engineering departments. Their website wasn't showing it and prospective students were leaving before they had a reason to stay.
-          I led the research and redesign: competitor analysis across North America, stakeholder interviews, informal student and faculty conversations.
-          I also developed the pages inside ECE's WordPress environment.
-        </p>
-        <p class="text-small" style="margin-bottom: 6px;">
-          Metrics available on request.
-        </p>
-        <a class="text-small" href="/pages/projects/ece.html" target="_blank" style="margin: 6px 0;">Explore Solution</a>
-      </div>
+    <p class="karthik-eyebrow-onlight">
+      Meet a different kind of design
+    </p>
+ 
+    <h4 class="karthik-text-section__heading">
+      Turning messy research and messy process into products and workflows that people actually use. 
+    </h4>
+ 
+    <div class="karthik-text-section__body">
+      <p class="karthik-p" style="font-size: var(--karthik-text-p-lg); color: var(--karthik-text-primary);">
+        I understand people & map systems to find solutions to the real problem
+        beyond the stated one. But I also write the copy that goes in the interface and build
+        the front-end that ships it. That end-to-end range means I spend less time making things pretty
+        and more time solving.
+      </p>
+ 
+      <p class="karthik-p" style="font-size: var(--karthik-text-p-lg); color: var(--karthik-body-color-secondary);">
+        I've worked across higher education, film and streaming, healthcare, and nonprofits.
+        The problems are different. The approach is the same: find the real problem, build the
+        right thing, make sure it lasts.
+      </p>
+ 
+      <p class="karthik-p" style="color: var(--karthik-body-color-secondary);">
+        Currently based in Toronto. Open to full-time roles in UX research, UI/UX, or
+        product design.
+      </p>
     </div>
  
-    <!-- Project 2 -->
-    <div class="project2-offset" 
-      onmouseenter="this.querySelector('.proj-img-wrap2').style.transform='scale(1.01)'" 
-      onmouseleave="this.querySelector('.proj-img-wrap2').style.transform='scale(1)'">
-      <div class="proj-img-wrap2" style="aspect-ratio: 4/5; overflow: hidden; background: #f3f4f6; margin-bottom: 24px; transition: transform 0.7s ease;">
-        <img
-          src="/assets/images/grid/FIIP.webp"
-          style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.1); transition: filter 0.7s; cursor: pointer;"
-          onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
-          onmouseleave="this.style.filter='grayscale(1) contrast(1.1)'"
-          onclick="window.open('/pages/projects/service-design.html', '_blank')"
-        />
-      </div>
-      <div style="display: flex; flex-direction: column;">
-        <span class="jka-eyebrow" style="text-transform: uppercase; margin-bottom: 8px;">Service Design · Generative Research · AI Adoption · 2022–23</span>
-        <h2 style="margin-bottom: 0;">
-          How I Built an AI Adoption Framework for a VFX Studio They Now Ship as a Service</h2>
-        <p class="text-small" style="margin-bottom: 0;">
-          FIIP Studios was losing ground to competitors offering AI services but no studio had figured out how to do it properly. 
-          I ran generative research workshops, assessed the landscape of tools and studios, and built a four-guideline framework from scratch. 
-          Then I proved it on a live production project with a real client and a real deadline.
-        </p>
-        <p class="text-small" style="margin-bottom: 6px;">
-          30–40% revenue growth · 2 weeks reduction in production time.
-        </p>
-        <a class="text-small" href="/pages/projects/service-design.html" target="_blank" style="margin: 6px 0;">Explore Solution</a>
-      </div>
-    </div>
+  </div>
+ 
+</section>
+
+<section id="work" class="karthik-text-section-dark">
+
+    <div class="karthik-text-section__inner" style="max-width: 1440px;">
+
+        <div class="header-max">
+          <h4 class="header-max-title">Featured Solutions</h4>
+        </div>
+ 
+        <!-- Featured Section -->
+        <section class="grid-featured">
+        
+            <!-- Project 1 -->
+            <div class="project1"
+            onmouseenter="this.querySelector('.proj-img-wrap').style.transform='scale(1.01)'" 
+            onmouseleave="this.querySelector('.proj-img-wrap').style.transform='scale(1)'">
+                <div class="proj-img-wrap">
+                    <img
+                    src="/assets/images/ece.webp"
+                    style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.25); transition: filter 0.7s; cursor: pointer;"
+                    onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
+                    onmouseleave="this.style.filter='grayscale(1) contrast(1.25)'" 
+                    onclick="window.open('/pages/projects/ece.html', '_blank')"
+                    />
+                </div>
+                <div class="proj1-content">
+                    <span class="karthik-eyebrow-ondark">UX Research · Content Strategy · Front-End Development · 2024–25</span>
+                    <h5 class="karthik-featured-heading">How I Rebuilt ECE's Student Recruitment Website Around One Clear Priority</h5>
+                    <p class="karthik-p-ondark">
+                    ECE is one of Canada's top engineering departments. Their website wasn't showing it and prospective students were leaving before they had a reason to stay.
+                    I led the research and redesign: competitor analysis across North America, stakeholder interviews, informal student and faculty conversations.
+                    I also developed the pages inside ECE's WordPress environment.
+                    </p>
+                    <p class="karthik-p-ondark">
+                    Metrics available on request.
+                    </p>
+                    <a class="karthik-btn karthik-btn--ghost" href="/pages/projects/ece.html" target="_blank" style="max-width: fit-content;">Explore Solution</a>
+                </div>
+            </div>
+ 
+        <!-- Project 2 -->
+        <div class="project2-offset" 
+        onmouseenter="this.querySelector('.proj-img-wrap2').style.transform='scale(1.01)'" 
+        onmouseleave="this.querySelector('.proj-img-wrap2').style.transform='scale(1)'">
+            <div class="proj-img-wrap2">
+                <img
+                src="/assets/images/grid/FIIP.webp"
+                style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.1); transition: filter 0.7s; cursor: pointer;"
+                onmouseenter="this.style.filter='grayscale(0) contrast(1)'"
+                onmouseleave="this.style.filter='grayscale(1) contrast(1.1)'"
+                onclick="window.open('/pages/projects/service-design.html', '_blank')"
+                />
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <span class="karthik-eyebrow-ondark">Service Design · Generative Research · AI Adoption · 2022–23</span>
+                <h5 class="karthik-featured-heading">
+                    How I Built an AI Adoption Framework for a VFX Studio They Now Ship as a Service</h5>
+                <p class="karthik-p-ondark">
+                    FIIP Studios was losing ground to competitors offering AI services but no studio had figured out how to do it properly. 
+                    I ran generative research workshops, assessed the landscape of tools and studios, and built a four-guideline framework from scratch. 
+                    Then I proved it on a live production project with a real client and a real deadline.
+                </p>
+                <p class="karthik-p-ondark">
+                    30–40% revenue growth · 2 weeks reduction in production time.
+                </p>
+                <a class="karthik-btn karthik-btn--ghost" href="/pages/projects/service-design.html" target="_blank" style="max-width: fit-content;">Explore Solution</a>
+            </div>
+        </div>
  
   </section>
+    </div>
 
-  <section style="position: relative; padding: 96px 24px; overflow: hidden;" id="testimonials">
+</section>
 
-  <div style="max-width: 768px; margin: 0 auto; text-align: center; position: relative; z-index: 10;">
+<section class="testimonials" id="testimonials">
 
-    <p class="eyebrow text-small label">
+  <div class="testimonials-inner">
+
+    <p class="karthik-eyebrow-onlight">
       What People Say
     </p>
 
-    <div style="position: relative;">
-      <svg style="position: absolute; top: -48px; left: 50%; transform: translateX(-50%); opacity: 0.08;" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="var(--jka-color-theme-mid)"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+    <div>
+      <svg style="position: absolute; top: -48px; left: 50%; transform: translateX(-50%); opacity: 0.04;" xmlns="http://www.w3.org/2000/svg" 
+      width="100" height="100" viewBox="0 0 24 24" fill="var(--karthik-neutral-900)">
+      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+    </svg>
 
-      <p style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-style: italic; margin: 0 0 48px 0;">
+      <p class="karthik-p" style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-style: italic;">
         "Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare leader in design and implementation work! 
         He came in as a knight in shining armor making the impossible, possible."
       </p>
 
       <div style="display: flex; flex-direction: column; align-items: center;">
-        <p class="text-mid" style="display: block; color: var(--jka-color-theme-mid); margin-bottom: 0;">Kyle Thomas</p>
-        <p class="text-small" style="display: block; color: var(--jka-color-text-weakest); margin-top: 0;">
+        <p class="karthik-p">Kyle Thomas</p>
+        <p class="karthik-p">
           on working together at Copywriting Creatives
         </p>
       </div>
@@ -251,394 +229,203 @@
   </div>    
 
 </section>
-  
-  <section style="margin-bottom: 80px;">
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; margin-top: 48px">
-      <h2 style="color: var(--jka-color-theme-mid); margin: 0; white-space: nowrap;">More Work</h2>
-      <div style="height: 1px; background-color: var(--jka-color-border-default); flex-grow: 1; margin-left: 32px; opacity: 0.4;"></div>
-    </div>
-
-    <p style="margin-bottom: 12px;">
-      Each project shows the solutions I created to different kinds of problems, involving research, strategy, and design across different contexts.
-    </p>
-  
-    <p class="text-small" style="margin-bottom: 12px;" id="allcases">
-      <span style="font-weight: 800;">Note:</span>
-      The Copywriting Creatives projects are being developed and will be published on the Copywriting Creatives website. 
-    </p>
-
-    <div class="article-grid-13">
-
-      <a class="article-entry-13" style="cursor: default; width: 100%;">
-        <img src="/assets/logos/sbc-logo.png" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Improving the UX of Support Black Charities's Website & Directory Listing Tool.
-          </p>
-          <p class="article-date-13">At Copywriting Creatives</p>
-          <p class="article-date-13">Ongoing</p>
-        </div>
-      </a>
-
-      <a class="article-entry-13" style="cursor: default; width: 100%;">
-        <img src="/assets/logos/ssyo-logo.png" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Maximizing visibility & reducing admin workload for South Shore Youth Organization's website.
-          </p>
-          <p class="article-date-13">At Copywriting Creatives</p>
-          <p class="article-date-13">Ongoing</p>
-        </div>
-      </a>
-
-      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/projects/ece-tnfc.html', '_blank')">
-        <img src="/assets/logos/uoft-ece-logo.jpg" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's web environment.
-          </p>
-          <p class="article-date-13">At ECE at U of T</p>
-          <p class="article-date-13">Nov 2024 - Mar 2025</p>
-        </div>
-      </a>
-
-      <a class="article-entry-13 no-hover" style="cursor: pointer; width: 100%;" onclick="window.open('/pages/projects/chlavm.html', '_blank')">
-        <img src="/assets/logos/CHLAVM.png" alt="" class="article-thumb-13" style="background-color: var(--jka-color-surface-default); padding: 4px;">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Diagnosing systemic usability failures in a Virtual museum website (CHLAVM).
-          </p>
-          <p class="article-date-13">Pro Bono + Master's UX Capstone Submission</p>
-          <p class="article-date-13">Jan 2025 - Feb 2025</p>
-        </div>
-      </a>
-
-      <a class="article-entry-13" style="cursor: default; width: 100%;">
-        <img src="/assets/logos/Uoft-music.png" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Delivered a Business Proposal for a Music-focused AI Business as part of a cross-departmental course.
-          </p>
-          <p class="article-date-13">At U of T</p>
-          <p class="article-date-13">Sep 2024 - Dec 2024</p>
-        </div>
-      </a>
-
-      <a class="article-entry-13 no-hover" style="cursor: default; width: 100%;">
-        <img src="/assets/logos/Karthik New Logo.png" alt="" class="article-thumb-13" style="background-color: var(--jka-color-surface-inv-default); padding: 4px; object-fit: contain;">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Designing the knowledge architecture and visual identity for a Netflix IP adaptation's creative bible and pitch deck.
-          </p>
-          <p class="article-date-13">Freelance</p>
-          <p class="article-date-13">Sep 2023 - Jan 2024</p>
-        </div>
-      </a>
-
-<!--      <a href="/pages/projects/textile-museum-of-canada.html" class="article-entry-13 no-hover" target="_blank" style="cursor: pointer; width: 100%;">
-        <img src="/assets/logos/TMC-logo.png" alt="" class="article-thumb-13" style="background-color: var(--jka-color-surface-default); padding: 4px;">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Redesigning Textile Museum of Canada Website's navigation menu and IA, Engaged through U of T's iSchool.
-          </p>
-          <p class="article-date-13">Pro Bono</p>
-          <p class="article-date-13">Oct – Dec 2023</p>
-        </div>
-      </a>-->
-
-      <a href="/pages/projects/experience-toronto.html" class="article-entry-13" target="_blank" style="cursor: pointer; width: 100%;">
-        <img src="/assets/logos/uoft-info-logo.png" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Designed an App for discovering discounts to Toronto-based Galleries, Libraries, Archives, and Museums.
-          </p>
-          <p class="article-date-13">At U of T</p>
-          <p class="article-date-13">Oct – Dec 2023</p>
-        </div>
-      </a>
-
-      <a href="/pages/projects/the-pitch-deck-website.html" class="article-entry-13" target="_blank" style="cursor: pointer; width: 100%;">
-        <img src="/assets/logos/LOGO_9.jpg" alt="" class="article-thumb-13">
-        <div class="article-content-13">
-          <p class="text-mid-13">
-            Designed and Delivered a Web-based Pitchdeck for Pre-Production capital raising.
-          </p>
-          <p class="article-date-13">At Fix It In Post</p>
-          <p class="article-date-13">Jun 2021 - Aug 2021</p>
-        </div>
-      </a>
-
-    </div>
-
-  </section>
-
-</div>
-
-</section>
 
 <!--
-<div style="position: relative; padding: 96px 24px; overflow: hidden;" id="testimonials">
+<section class="karthik-text-section">
 
-  <div style="position: absolute; inset: 0; pointer-events: none; opacity: 0.15;">
-    <div style="position: absolute; top: -10%; left: -5%; width: 384px; height: 384px; background: var(--jka-color-theme-mid); filter: blur(120px); border-radius: 50%;"></div>
-    <div style="position: absolute; bottom: -10%; right: -5%; width: 384px; height: 384px; background: #7a9e8a; filter: blur(120px); border-radius: 50%;"></div>
-  </div>
-
-  <button onclick="changeSlide(-1)" aria-label="Previous testimonial" style="position: absolute; left: 32px; top: 50%; transform: translateY(-50%); padding: 16px; border-radius: 50%; background: rgba(255,255,255,0.8); color: var(--jka-color-theme-mid); border: none; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 10; display: flex; align-items: center; justify-content: center;"
-    onmouseenter="this.style.background='var(--jka-color-theme-mid)'; this.style.color='#fff';"
-    onmouseleave="this.style.background='rgba(255,255,255,0.8)'; this.style.color='var(--jka-color-theme-mid)';">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-  </button>
-
-  <button onclick="changeSlide(1)" aria-label="Next testimonial" style="position: absolute; right: 32px; top: 50%; transform: translateY(-50%); padding: 16px; border-radius: 50%; background: rgba(255,255,255,0.8); color: var(--jka-color-theme-mid); border: none; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.1); z-index: 10; display: flex; align-items: center; justify-content: center;"
-    onmouseenter="this.style.background='var(--jka-color-theme-mid)'; this.style.color='#fff';"
-    onmouseleave="this.style.background='rgba(255,255,255,0.8)'; this.style.color='var(--jka-color-theme-mid)';">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-  </button>
-
-  <div style="max-width: 768px; margin: 0 auto; text-align: center; position: relative; z-index: 10;">
-
-    <span style="display: inline-block; padding: 6px 16px; margin-bottom: 48px; border-radius: 999px; background-color: #e8ede9; color: var(--jka-color-theme-mid); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">What People Say</span>
-
-    <div style="position: relative; min-height: 320px;">
-
-      <svg style="position: absolute; top: -48px; left: 50%; transform: translateX(-50%); opacity: 0.08; color: var(--jka-color-theme-mid);" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="var(--jka-color-theme-mid)"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
-
-      <p id="testimonial-quote" style="font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.35; font-style: italic; margin: 0 0 48px 0; transition: opacity 0.4s ease;"></p>
-
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.12); border: 4px solid #f5f3ee; flex-shrink: 0;">
-          <img id="testimonial-avatar" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;"/>
+    <div class="karthik-text-section__inner">
+        <div class="karthik-section-header">
+            <h2 class="karthik-text-section__heading">More Work</h2>
+            <div class="divider"></div>
         </div>
-        <span id="testimonial-name" style="display: block; font-size: 1.25rem; font-weight: 700; color: var(--jka-color-theme-mid); margin-bottom: 4px; transition: opacity 0.4s ease;"></span>
-        <span id="testimonial-role" style="display: block; font-size: 1rem; color: var(--jka-color-text-weakest); transition: opacity 0.4s ease;"></span>
-      </div>
+
+        <p class="karthik-p" style="margin-bottom: 1rem;">
+            Each project shows the solutions I created to different kinds of problems, involving research, strategy, and design across different contexts.
+        </p>
+
+        <p class="karthik-p" style="margin-bottom: 1rem;">
+            <strong>Note: The Copywriting Creatives projects are being developed and will be published on the Copywriting Creatives website.</strong>
+        </p>
+
+        <div class="article-grid">
+
+            <a class="article-entry no-hover" style="width: 100%;">
+                <img src="/assets/logos/sbc-logo.png" alt="" class="article-thumb" style="background-color: var(--karthik-bg-elevated); padding: 4px;">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Improving the UX of Support Black Charities's Website & Directory Listing Tool.
+                    </h3>
+                    <p class="karthik-p">At Copywriting Creatives</p>
+                    <p class="karthik-p">Ongoing</p>
+                </div>
+            </a>
+
+            <a class="article-entry no-hover" style="width: 100%;">
+                <img src="/assets/logos/ssyo-logo.png" alt="" class="article-thumb" style="background-color: var(--karthik-bg-elevated); padding: 4px;">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Maximizing visibility & reducing admin workload for South Shore Youth Organization's website.
+                    </h3>
+                    <p class="karthik-p">At Copywriting Creatives</p>
+                    <p class="karthik-p">Ongoing</p>
+                </div>
+            </a>
+
+            <a class="article-entry" style="width: 100%;" onclick="window.open('/pages/projects/ece-tnfc.html', '_blank')">
+                <img src="/assets/logos/uoft-ece-logo.jpg" alt="" class="article-thumb">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's environment.
+                    </h3>
+                    <p class="karthik-p">At ECE at U of T</p>
+                    <p class="karthik-p">Nov 2024 - Mar 2025</p>
+                </div>
+            </a>
+
+            <a class="article-entry" style="width: 100%;" onclick="window.open('/pages/projects/chlavm.html', '_blank')">
+                <img src="/assets/logos/CHLAVM.png" alt="" class="article-thumb" style="background-color: var(--karthik-bg-elevated); padding: 4px;">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Diagnosing systemic usability failures in a Virtual Museum website (CHLAVM).
+                    </h3>
+                    <p class="karthik-p">Pro Bono + Master's UX Capstone Submission</p>
+                    <p class="karthik-p">Jan 2025 - Feb 2025</p>
+                </div>
+            </a>
+
+            <a class="article-entry no-hover" style="width: 100%;">
+                <img src="/assets/logos/Uoft-music.png" alt="" class="article-thumb">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Delivered a Business Proposal for a Music-focused AI Business as part of a cross-departmental course.
+                    </h3>
+                    <p class="karthik-p">At U of T</p>
+                    <p class="karthik-p">Sep 2024 - Dec 2024</p>
+                </div>
+            </a>
+
+            <a class="article-entry no-hover" style="width: 100%;">
+                <img src="/assets/logos/Karthik New Logo.png" alt="" class="article-thumb" style="background-color: var(--karthik-bg-elevated-dark); padding: 4px; object-fit: contain;">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Designing the architecture and visual identity for a Netflix IP adaptation's creative bible and pitch deck.
+                    </h3>
+                    <p class="karthik-p">Freelance</p>
+                    <p class="karthik-p">Sep 2023 - Jan 2024</p>
+                </div>
+            </a>
+
+            <a class="article-entry" style="width: 100%;" onclick="window.open('/pages/projects/experience-toronto.html', '_blank')">
+                <img src="/assets/logos/uoft-info-logo.png" alt="" class="article-thumb">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Designed an App for discovering discounts to Toronto-based Galleries, Libraries, Archives, and Museums.
+                    </h3>
+                    <p class="karthik-p">At U of T</p>
+                    <p class="karthik-p">Oct – Dec 2023</p>
+                </div>
+            </a>
+
+            <a class="article-entry" style="width: 100%;" onclick="window.open('/pages/projects/the-pitch-deck-website.html', '_blank')">
+                <img src="/assets/logos/LOGO_9.jpg" alt="" class="article-thumb">
+                <div>
+                    <h3 class="karthik-card-heading">
+                        Designed and Delivered a Web-based Pitchdeck for Pre-Production capital raising.
+                    </h3>
+                    <p class="karthik-p">At Fix It In Post</p>
+                    <p class="karthik-p">Jun 2021 - Aug 2021</p>
+                </div>
+            </a>    
+        </div>
+    
     </div>
 
-    <div id="testimonial-dots" style="margin-top: 48px; display: flex; justify-content: center; gap: 10px;"></div>
+</section>-->
 
-  </div>
-</div>
--->
-
-<section class="jka-popup-bar">
-
-<div class="jka-popup-text-group">
-
-<div>
-  <h3>
-    Design Thinking
-  </h3>
-  <p>
-    Explore my design thinking articles on LinkedIn.
-  </p>
-</div>
-
-<button class="tertiary-btn" aria-label="View Newsletter"
-  onclick="window.open('https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7393569508403294208', '_blank');">
-  View Newsletter
-</button>
-
-</div>
-
-</section>
-
-</section>
-
-
-<!-- CTA -->
-<section class="jka-cta">
-
-  <h2 class="jka-cta-headline" style="margin: 2rem auto 1rem;">Ready to listen, diagnose, and deliver.</h2>
-
-  <p class="jka-cta-callout" style="margin: 0 auto 1rem;">
-    Whether it is straightforward or complex; do not hesitate to reach out.
-  </p>
-
-  <div class="jka-cta-buttons" style="margin: 0 auto 1rem;">
-    <button id="email-cta-btn" class="primary-btn"  onclick="window.open('mailto:karthikaravindj@gmail.com', '_blank')"
-                aria-label="Send a formal inquiry email">
-            Inquire
-        </button>
-
-        <button id="linkedin-cta-btn" onclick="window.open('https://www.linkedin.com/in/karthikjambunathan/', '_blank')"
-                class="secondary-btn"
-                aria-label="Send a quick message on LinkedIn">
-            Quick Message
-        </button>
-    </div>
- 
-  <div class="jka-cta-footer" style="padding-right: 0; padding-left: 0; margin-top: 2rem;">
+<section class="karthik-footer">
     <p>&copy; 2026, Karthik Jambunathan </p>
     <p>Based in Ontario, Canada</p>
-    <button class="tertiary-btn" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
-  </div>
+    <button class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
 </section>
 
-<!-- JavaScripts -->
-
-<script>
-  // Fetch and insert footer HTML
-  fetch('addons/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error("Error loading footer:", error));
-</script>
-
-<script>
+  <script>
     const greetings = ["Hello", "Ciao", "Hola", "привіт", "Bonjour", "你好"];
     let currentGreetingIndex = 0;
     const greetingElement = document.getElementById("greeting");
 
     function scrambleText(targetElement, newText) {
     const characters =
-  // Latin letters (neighbors for H,e,l,o,C,i,a,B,j,n)
-  'FGHIJcdefgklmnopqrsab' +
+        // Latin letters (neighbors for H,e,l,o,C,i,a,B,j,n)
+        'FGHIJcdefgklmnopqrsab' +
 
-  // Cyrillic letters from "привіт" with visually similar characters
-  'пнтряждииевфбіиїтпд' +
+        // Cyrillic letters from "привіт" with visually similar characters
+        'пнтряждииевфбіиїтпд' +
 
-  // Chinese letters from "你好" with visually similar characters
-  '你他妳好妈她';
+        // Chinese letters from "你好" with visually similar characters
+        '你他妳好妈她';
 
-      let scrambleInterval = 50; // Speed of scrambling
-      let totalScrambleTime = 1000; // Total time for scrambling before settling
-      let currentText = targetElement.textContent;
-      let scramble = setInterval(() => {
-        let scrambledText = '';
-        for (let i = 0; i < newText.length; i++) {
-          if (Math.random() > 0.5) {
-            scrambledText += characters.charAt(Math.floor(Math.random() * characters.length));
-          } else {
-            scrambledText += currentText[i] || '';
-          }
+            let scrambleInterval = 50; // Speed of scrambling
+            let totalScrambleTime = 1000; // Total time for scrambling before settling
+            let currentText = targetElement.textContent;
+            let scramble = setInterval(() => {
+                let scrambledText = '';
+                for (let i = 0; i < newText.length; i++) {
+                if (Math.random() > 0.5) {
+                    scrambledText += characters.charAt(Math.floor(Math.random() * characters.length));
+                } else {
+                    scrambledText += currentText[i] || '';
+                }
+                }
+                targetElement.textContent = scrambledText;
+            }, scrambleInterval);
+
+            // After the scramble time, set the text to the final greeting
+            setTimeout(() => {
+                clearInterval(scramble);
+                targetElement.textContent = newText;
+            }, totalScrambleTime);
+            }
+
+        function changeGreeting() {
+            let newIndex;
+            do {
+                // Pick a random index
+                newIndex = Math.floor(Math.random() * greetings.length);
+            } while (newIndex === currentGreetingIndex); // ensure it's not the same as the current greeting
+
+            const newGreeting = greetings[newIndex];
+            scrambleText(greetingElement, newGreeting);
+
+            // Update the current greeting index
+            currentGreetingIndex = newIndex;
         }
-        targetElement.textContent = scrambledText;
-      }, scrambleInterval);
 
-      // After the scramble time, set the text to the final greeting
-      setTimeout(() => {
-        clearInterval(scramble);
-        targetElement.textContent = newText;
-      }, totalScrambleTime);
+        // Change the greeting every 4 seconds (time for scramble effect)
+        setInterval(changeGreeting, 4000);
+        
+        // Initial call to start the scrambling
+        changeGreeting();
+    </script>
+ 
+  <script>
+    function scrollToWork(e) {
+      e.preventDefault();
+      const target = document.getElementById('work');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
+  </script>
 
-function changeGreeting() {
-    let newIndex;
-    do {
-        // Pick a random index
-        newIndex = Math.floor(Math.random() * greetings.length);
-    } while (newIndex === currentGreetingIndex); // ensure it's not the same as the current greeting
-
-    const newGreeting = greetings[newIndex];
-    scrambleText(greetingElement, newGreeting);
-
-    // Update the current greeting index
-    currentGreetingIndex = newIndex;
-}
-
-    // Change the greeting every 4 seconds (time for scramble effect)
-    setInterval(changeGreeting, 4000);
-    
-    // Initial call to start the scrambling
-    changeGreeting();
-</script>
-
-<script>
-  const tabs = document.querySelectorAll('.jka-tab-button');
-const contents = document.querySelectorAll('.jka-tab-content');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    contents.forEach(c => c.classList.remove('active'));
-
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.tab).classList.add('active');
-  });
-});
-
-</script>
-
-<script>
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-</script>
-
-<!--<script>
-  const testimonials = [
-    {
-      quote: '"TerraConsult doesn\'t just provide advice; they ground your vision in reality. Their approach to sustainable architecture has transformed how we perceive ecological integration in urban environments."',
-      name: 'Julian Thorne',
-      role: 'Lead Architect, Verdant Structures',
-      avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAC3-IHtV8jS0IOShSA_KKykLCaVKCu9gZ2eYTzFw1vU0QdVm9d3-2D8_nIjVa1C3Z75q4-PW7im0k_fc9Q9Q5yz6baWwcEueb8xedDdgmieYtX0Odm5Suysjawf4eFgpzncfWf2NREh3ckiMm7RR6KHiHAL-s9ZNTWTZZ7bEjSX0Ke99ME2r1QUTZwBbCB4u9uQzZ0yNiXV9wsFiqsJqNY5o_S37R7mDeBtk3IcgVkDE2r1tLW8OwcbbfSe_10QKjEn65BhhsOEO4'
-    },
-    {
-      quote: '"Working with this team changed how we approach every project. The clarity they bring to complex problems is unmatched."',
-      name: 'Sarah Chen',
-      role: 'Director of Operations, Greenfield Co.',
-      avatar: ''
-    },
-    {
-      quote: '"From discovery to delivery, the process was seamless. Every decision was grounded in real insight and clear communication."',
-      name: 'Marcus Webb',
-      role: 'Founder, Latitude Studio',
-      avatar: ''
-    }
-  ];
-
-  let current = 0;
-  const quoteEl = document.getElementById('testimonial-quote');
-  const nameEl = document.getElementById('testimonial-name');
-  const roleEl = document.getElementById('testimonial-role');
-  const avatarEl = document.getElementById('testimonial-avatar');
-  const dotsEl = document.getElementById('testimonial-dots');
-
-  function buildDots() {
-    dotsEl.innerHTML = '';
-    testimonials.forEach((_, i) => {
-      const btn = document.createElement('button');
-      btn.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-      btn.style.cssText = i === current
-        ? 'width: 40px; height: 6px; border-radius: 999px; background: var(--jka-color-theme-mid); border: none; cursor: pointer; transition: all 0.3s;'
-        : 'width: 12px; height: 6px; border-radius: 999px; background: #c8c8c0; border: none; cursor: pointer; transition: all 0.3s;';
-      btn.onclick = () => goTo(i);
-      dotsEl.appendChild(btn);
-    });
-  }
-
-  function goTo(index) {
-    [quoteEl, nameEl, roleEl, avatarEl].forEach(el => el.style.opacity = '0');
-    setTimeout(() => {
-      current = (index + testimonials.length) % testimonials.length;
-      const t = testimonials[current];
-      quoteEl.textContent = t.quote;
-      nameEl.textContent = t.name;
-      roleEl.textContent = t.role;
-      avatarEl.src = t.avatar || '';
-      avatarEl.style.display = t.avatar ? 'block' : 'none';
-      buildDots();
-      [quoteEl, nameEl, roleEl, avatarEl].forEach(el => el.style.opacity = '1');
-    }, 300);
-  }
-
-  function changeSlide(dir) { goTo(current + dir); }
-
-  // Init
-  const t = testimonials[0];
-  quoteEl.textContent = t.quote;
-  nameEl.textContent = t.name;
-  roleEl.textContent = t.role;
-  avatarEl.src = t.avatar;
-  buildDots();
-</script>-->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+            });
+        }
+    </script>
 
 </body>
+
 </html>

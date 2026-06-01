@@ -2,33 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Error: 404</title>
-
-  <!-- Fonts -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap">
-  </noscript>
-
-  <!-- Styles and Scripts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found</title>
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/script.js"></script>
-
+  <style>
+    body {
+      background: var(--karthik-bg-page-dark);
+      color: var(--karthik-text-on-dark);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+  </style>
 </head>
-
-<body style="background-color: var(--jka-color-surface-default);"> 
-
-<main class="jka-main-404">
-  <div class="jka-text-center-404">
-    <h1 class="jka-text-base-404">Error 404</h1>
-    <h1 class="jka-heading-404">Page not found</h1>
-    <h4 class="jka-paragraph-404">Sorry there. I must have shared the wrong link or you must have mistyped it.</h4>
-    <div class="jka-actions-404">
-      <button onclick="window.open('/', '_blank');" class="primary-btn">Go back home</button>
-    </div>
+<body>
+  <div class="page-404">
+    <span class="page-404__code">404</span>
+    <p class="page-404__heading">Page not found</p>
+    <p class="page-404__message">This page doesn't exist or was moved.</p>
+    <a href="/index.html" class="karthik-btn karthik-btn--primary">Go to Home</a>
   </div>
-</main>
-
 </body>
 </html>
