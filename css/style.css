@@ -676,7 +676,8 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+    margin: 0 auto;
+    padding: 40px 40px 64px;
 }
 
 .karthik-learn-content h4 {
@@ -689,6 +690,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   color: var(--karthik-body-color-dark);
   margin: 12px 6px;
   font-weight: 500;
+  font-size: 21px;
   width: 100%;
 }
 
@@ -994,7 +996,9 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 
     .article-entry.no-hover:hover {
         background-color: transparent;
-    }                                                         
+    } 
+    
+    
 
     .logo-section {
         width: 100%;
@@ -1051,6 +1055,17 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     padding: 40px 40px 64px;
     }
 
+  .failure-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .failure-grid {
+      grid-template-columns: 1fr;
+    }
+  }
     
 .karthik-cs-hero-container {
   max-width: 1200px;
@@ -1108,12 +1123,27 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     margin-bottom: 36px;
     }
 
+    .karthik-text-section__heading-ondark {
+    font-weight: var(--karthik-weight-heading);
+    color: var(--karthik-heading-color-dark);
+    max-width: 48rem;
+    }
+
     .karthik-card-heading {
     font-size: var(--karthik-text-h6);
     font-weight: var(--karthik-weight-heading);
     line-height: var(--karthik-leading-h6);
     letter-spacing: var(--karthik-tracking-h6);
     color: var(--karthik-heading-color-brand);
+    max-width: 48rem;
+    margin-bottom: 0;
+    }
+
+    .karthik-card-heading-ondark {
+    font-weight: var(--karthik-weight-heading);
+    line-height: var(--karthik-leading-h6);
+    letter-spacing: var(--karthik-tracking-h6);
+    color: var(--karthik-green-100);
     max-width: 48rem;
     margin-bottom: 0;
     }
@@ -1152,7 +1182,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
 
     .divider {
-        height: 1px; background-color: var(--karthik-border-sienna); flex-grow: 1; margin-left: 32px;
+        height: 1px; background-color: var(--karthik-border-brand); flex-grow: 1; margin-left: 32px;
     }
 
     .karthik-section-header {

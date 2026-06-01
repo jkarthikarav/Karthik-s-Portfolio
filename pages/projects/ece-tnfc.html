@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta property="og:image" content="/assets/images/about/Karthik-002.webp" />
+  <meta property="og:type" content="website" />
+
+  <title>ECE TNFC Lab</title>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+
+
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js"></script>
+
+</head>
+
+  <body style="background-color: var(--karthik-bg-page);">
+    <div id="header-placeholder"></div>
+
+    <img
+      src="/assets/icons/back-to-top.png"
+      alt="floating image button"
+      id="backtotopbutton"
+      onclick="scrollToTops()"
+    />
+    
+<!-- 1. Hero Section -->
+<section class="karthik-cs-hero">
+  <div class="karthik-cs-hero-container">
+
+    <!-- Eyebrow label -->
+    <p class="karthik-cs-eyebrow">Minor Case Study · Part of ECE Web Production</p>
+
+    <!-- Title -->
+    <h4 class="karthik-cs-title">
+      Migrating Toronto Nanofabrication Centre (TNFC) into ECE's Digital Environment
+    </h4>
+
+    <!-- Subtitle -->
+    <p class="karthik-cs-subtitle">
+      TNFC had its own website with separate infrastructure, inconsistent branding, and no connection to ECE's digital environment. 
+      I consolidated a five-top-level-page site with sub-pages each into a two-page section that felt native to ECE without erasing TNFC's identity.
+    </p>
+
+    <!-- Metadata pills -->
+    <div class="karthik-cs-pill-group">
+
+      <span class="karthik-cs-pill">
+        Role: UX Research · Content Design · Front-End Development 
+      </span>
+
+      <span class="karthik-cs-pill">
+        Timeline: Nov 2024 – Mar 2025
+      </span>
+
+      <span class="karthik-cs-pill">
+        Tools: Figma · WordPress
+      </span>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- 2. The Problem -->
+<section class="karthik-cs-problem-section">
+  
+  <div class="karthik-cs-hero-container">
+
+    <!-- Eyebrow -->
+    <span class="karthik-cs-eyebrow-ondark">
+      The Problem
+    </span>
+
+    <!-- Heading -->
+    <h4 class="karthik-cs-problem-heading">
+      A research lab that looked like a separate organization.
+    </h4>
+
+    <!-- Body copy -->
+    <p class="karthik-cs-problem-body">
+      TNFC is one of U of T's research labs/facilities that is located inside the ECE department. 
+      But its website existed outside ECE's digital ecosystem entirely with different infrastructure, different visual language, no connection to ECE's brand or navigation. 
+    </p>
+
+    <p class="karthik-cs-problem-body">
+      It just hadn't been brought in yet.
+      Most of the top-level pages were auto-generated link aggregators, not real content pages. The actual information was buried in sub-pages that users had to navigate to independently.
+      There was also a separate news and blog channel.
+    </p>
+
+    <p class="karthik-cs-problem-body karthik-cs-problem-body-last">
+      The requirement was clear: bring TNFC into ECE's environment. How to do that without destroying the lab's identity or overwhelming ECE's information architecture was the design problem.
+    </p>
+
+  </div>
+
+  <div class="karthik-cs-problem-image-container">
+
+    <div>
+      <img onclick="window.open(this.src, '_blank')" 
+          src="/assets/images/webp/tnfc-home-ori.webp"
+            alt="The TNFC homepage before the rebuild"
+            class="karthik-cs-problem-image"
+      />
+    </div>
+
+    <!-- Caption -->
+    <p class="karthik-cs-problem-caption">
+      The TNFC homepage when the project was greenlit.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- 3. The Research -->
+<section class="karthik-cs-res-section">
+  <div class="karthik-cs-hero-container">
+
+        <p class="karthik-cs-eyebrow">
+          The Audit
+        </p>
+
+        <h4 class="karthik-cs-res-heading">
+          Before deciding what to build, I had to decide what to keep.
+        </h4>
+
+        <p class="karthik-cs-res-body">
+          I audited the full existing site, every top-level page, every sub-page, every content item, against two questions: does this need its own page, or can it exist somewhere else? 
+          And if it needs its own page, what does that page actually need to do?
+        </p>
+
+        <p class="karthik-cs-res-body karthik-cs-res-body-spacing">
+          Most of the site's complexity was structural. 
+          The pages did not exist because the information required that much space. Stripping away the auto-generated architecture revealed two genuine content needs:
+          a home page that explained what TNFC was and what it offered, and an access page that gave users everything they needed to book and use the facility.
+        </p>
+
+        <div class="built-before-after">
+          <div style="width: 100%; cursor: pointer;" onclick="window.open('/assets/images/blogs/Events.webp', '_blank');">
+            <img onclick="window.open(this.src, '_blank')" src="/assets/images/webp/tnfc-access-orig1.webp" style="width: 100%;" />
+            <p class="karthik-cs-problem-caption-ondark">
+              Pictured Above: TNFC's User Access Page
+            </p>
+          </div>
+
+          <div style="width: 100%; cursor: pointer;" onclick="window.open('/assets/images/blogs/Events2.webp', '_blank');">
+            <img onclick="window.open(this.src, '_blank')" src="/assets/images/webp/tnfc-access-orig2.webp" style="width: 100%;" />
+            <p class="karthik-cs-problem-caption-ondark">
+              Pictured Above: TNFC's Access Forms Page
+            </p>
+          </div>
+        </div>
+
+        <p class="karthik-cs-res-body">
+          Meanwhile, the news and blog channel was the easiest call: merge it into ECE Latest (a page I built for news and blogs) with a TNFC category tag.
+        </p>
+
+
+  </div>
+</section>
+
+<section class="karthik-cs-res-section" style="background-color: var(--karthik-bg-elevated);">
+  <div class="karthik-cs-hero-container">
+
+        <p class="karthik-cs-eyebrow">
+          The Recommendation
+        </p>
+
+        <h4 class="karthik-cs-res-heading">
+          I recommended two pages.
+        </h4>
+
+        <p class="karthik-cs-res-body">
+          The Facilities content, for example, was a subpage. 
+          I proposed integrating it as a structured grid section on the TNFC home page, reducing click depth for one of the lab's most-visited content types.
+        </p>
+
+        <div class="built-before-after">
+          <div style="width: 100%; cursor: pointer;" onclick="window.open('/assets/images/blogs/Events.webp', '_blank');">
+            <img onclick="window.open(this.src, '_blank')" src="/assets/images/webp/tnfc-facilities-orig.webp" style="width: 100%;" />
+            <p class="karthik-cs-problem-caption-ondark">
+              Pictured Above: TNFC's Facilities Page
+            </p>
+          </div>
+
+          <div style="width: 100%; cursor: pointer;" onclick="window.open('/assets/images/blogs/Events2.webp', '_blank');">
+            <img onclick="window.open(this.src, '_blank')" src="/assets/images/webp/tnfc-facilities-new.webp" style="width: 100%;" />
+            <p class="karthik-cs-problem-caption-ondark">
+              Pictured Above: What it looks like now on the TNFC Home
+            </p>
+          </div>
+        </div>
+
+        <p class="karthik-cs-res-body karthik-cs-res-body-spacing">
+          The Access page consolidated all forms, processes, policies, and related documents in one place. 
+          Every compliance and regulatory requirement (booking, training, billing, safety) had a home that was findable without knowing where to look.
+        </p>
+
+        <p class="karthik-cs-res-quote">
+          My original proposal included equipment capabilities as a section on the home page, rather than a full page. 
+          After I left, the organization extended the architecture to add a third standalone page for that content. My structure was extensible enough to absorb it.
+        </p>
+
+
+  </div>
+</section>
+
+<section class="karthik-cs-res-section">
+  <div class="karthik-cs-hero-container">
+
+        <p class="karthik-cs-eyebrow">
+          UX Writing
+        </p>
+
+        <h4 class="karthik-cs-res-heading">
+          On most projects I've worked on, content comes with a direction.
+        </h4>
+
+        <p class="karthik-cs-res-body">
+          On TNFC, the content had to be written from the audit findings up. 
+          I had to determine how TNFC should describe itself within ECE's ecosystem, what hierarchy the information should follow, and also write for two different audiences simultaneously.
+        </p>
+
+        <div class="hard-part-grid">
+
+        <div class="hard-part-col-left karthik-cs-res-audience-col-left">
+
+            <span class="karthik-cs-eyebrow">
+            Audience A
+            </span>
+
+            <p class="karthik-cs-res-audience-title">
+            Researchers who already knew TNFC
+            </p>
+
+        </div>
+
+        <div class="hard-part-col-right karthik-cs-res-audience-col-right">
+
+            <span class="karthik-cs-eyebrow">
+            Audience B
+            </span>
+
+            <p class="karthik-cs-res-audience-title">
+            Prospective users, encountering it for the first time
+            </p>
+
+        </div>
+
+        </div>
+
+        <p class="karthik-cs-res-body karthik-cs-res-body-spacing">
+          I wrote the initial content and handed it to marketing to refine. 
+        </p>
+
+        <p class="karthik-cs-res-quote">
+          That handoff itself was a design decision: making sure what I handed over was specific enough to improve.
+        </p>
+
+
+  </div>
+</section>
+    
+<!-- 6. What I Built -->
+<section class="karthik-cs-hero">
+  <div class="karthik-cs-hero-container">
+
+    <!-- Eyebrow + heading -->
+    <div class="gap2rem">
+      <span class="karthik-cs-eyebrow">What I Built</span>
+
+      <h4 class="karthik-cs-res-heading">Two pages inside ECE's WordPress environment, built to the same modular standards as the rest of the ECE site.</h4>
+    </div>
+
+    <!-- 01: Homepage Rebuild — image full width, copy below -->
+    <div class="gap2rem">
+      <img onclick="window.open(this.src, '_blank')" 
+        src="/assets/images/webp/TNFC-Main.webp"
+        alt="The rebuilt TNFC homepage"
+        class="karthik-cs-problem-image gap2rem"
+      />
+      <span class="karthik-cs-eyebrow">01</span>
+      <h5 class="karthik-cs-res-heading">TNFC Home</h5>
+      <p class="karthik-cs-res-body karthik-cs-res-body-spacing">
+        explained what the lab was, what it offered, and positioned it clearly as a research facility. 
+        All original top-level page content consolidated into scannable sections.
+      </p>
+    </div>
+
+    <!-- 02: Industry Opportunities — copy left, image right -->
+    <div class="built-alternating gap2rem">
+
+      <div style="order: 1;">
+        <span class="karthik-cs-eyebrow">02</span>
+        <h5 class="karthik-cs-res-heading">TNFC User Access</h5>
+        <p class="karthik-cs-res-body karthik-cs-res-body-spacing">
+            All forms, processes, policies, and compliance requirements in one place. Designed for users who needed to act, not browse.
+        </p>
+      </div>
+
+      <div class="built-reverse" style="order: 2;">
+        <img onclick="window.open(this.src, '_blank')" 
+          src="/assets/images/webp/TNFC-Access.webp"
+          alt="The Industry Opportunities page — two column card layout with departmental metrics for prospective students and industry partners"
+          style="
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            object-position: top;
+            border: 1px solid #e4e4e4;
+            display: block;
+          "
+        />
+      </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- 7. The Outcome -->
+<section class="karthik-cs-outcome-section">
+  <div class="karthik-cs-hero-container">
+
+    <div class="outcome-grid">
+
+      <!-- Left: narrative -->
+      <div>
+
+        <span class="karthik-cs-eyebrow-ondark">
+          The Outcome
+        </span>
+
+        <h4 class="karthik-cs-problem-heading">
+          An architecture extensible enough to outlast the project.
+        </h4>
+
+        <p class="karthik-cs-problem-body">
+          The pages shipped as part of the ECE rebuild in March 2025. 
+          After I left, development on other parts of the ECE site reused components and patterns that were originally designed for TNFC's section, 
+          including the Grid Modernization Centre's new page. 
+        </p>
+
+        <p class="karthik-cs-problem-body karthik-cs-outcome-body-spacing">
+          The architecture was picked up and extended without me. That's the proof that the structural decisions were right.
+        </p>
+
+      </div>
+
+      <!-- Right: outcome signals -->
+      <div class="karthik-cs-outcome-signals">
+
+        <div class="karthik-cs-outcome-card">
+          <p class="karthik-cs-outcome-metric">
+            Reduced technology debt
+          </p>
+
+          <p class="karthik-cs-outcome-metric-caption">
+            one environment instead of two, one content channel instead of two.
+          </p>
+        </div>
+
+        <div class="karthik-cs-outcome-card">
+          <p class="karthik-cs-outcome-metric">
+            Reusable components
+          </p>
+
+          <p class="karthik-cs-outcome-metric-caption">
+            patterns designed for TNFC were extended to new pages after the project closed.
+          </p>
+        </div>
+
+        <div class="karthik-cs-outcome-card">
+          <p class="karthik-cs-outcome-metric">
+            Content ownership established
+          </p>
+
+          <p class="karthik-cs-outcome-metric-caption">
+            content home inside ECE's ecosystem with a maintainable structure.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="karthik-learn">
+  <div class="karthik-learn-content">
+    <h4>What I Learned</h4>
+    <p>
+      Choosing to consolidate five pages into two was an IA decision. 
+      Deciding what each of those two pages needed to say, and in what order, couldn't be made independently.
+    </p>
+    <p>
+      This was not just a website design.
+      This was about designing content and unifying digital systems to reduce administrative work and signal a cohesive brand identity.
+    </p>
+    <p>
+      Every design decision was driven by compliance and regulation, including access, training, billing, and safety.
+      At the same time, the pages were designed to feel native to ECE while clearly articulating TNFC’s value.
+      The result positions TNFC as a core, high-value research facility within the department. 
+    </p>
+  </div> 
+</section>
+
+<section class="karthik-footer">
+    <p>&copy; 2026, Karthik Jambunathan </p>
+    <p>Based in Ontario, Canada</p>
+    <button class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
+</section>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+        });
+    }
+</script>
+
+<script>
+  fetch('/addons/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+<script>
+  fetch('../../addons/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const backtotopbutton = document.getElementById("backtotopbutton");
+    const learnSection = document.querySelector(".karthik-learn");
+
+    if (!backtotopbutton || !learnSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        backtotopbutton.style.display = entry.isIntersecting ? "none" : "block";
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px"
+      }
+    );
+
+    observer.observe(learnSection);
+  });
+</script>
+
+<script>
+  function scrollToTops() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  document
+    .getElementById("backtotopbutton")
+    .addEventListener("click", scrollToTops);
+</script>
+
+</body>
+
+</html>
