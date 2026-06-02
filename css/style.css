@@ -971,11 +971,11 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 
     .article-entry {
         display: flex;
-        gap: 1rem;
+        gap: 24px;
         text-decoration: none;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 24px;
         transition: background-color 0.2s;
     }
 
@@ -1144,7 +1144,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     line-height: var(--karthik-leading-h6);
     letter-spacing: var(--karthik-tracking-h6);
     color: var(--karthik-green-100);
-    max-width: 48rem;
     margin-bottom: 0;
     }
 
@@ -1179,6 +1178,15 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     letter-spacing: var(--karthik-tracking-p);
     color: var(--karthik-body-color-dark);
     margin-bottom: 12px;
+    }
+
+    .karthik-card-p-ondark {
+    font-size: var(--karthik-text-p);
+    font-weight: var(--karthik-weight-body);
+    line-height: var(--karthik-leading-p);
+    letter-spacing: var(--karthik-tracking-p);
+    color: var(--karthik-body-color-dark);
+    margin: 4px;
     }
 
     .divider {
