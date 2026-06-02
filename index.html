@@ -17,47 +17,49 @@
 
   <header class="karthik-header">
  
-    <a href="/" class="karthik-header__logo-link" aria-label="Karthik — home">
-      <img
-        src="/assets/logos/Karthik New Logo.png"
-        alt="Karthik"
-        class="karthik-header__logo"
-      />
-    </a>
- 
-    <div class="karthik-header__intro">
-      <p class="karthik-header__eyebrow" id="greeting"></p>
-      <h4 class="karthik-header__name">I'm Karthik Jambunathan</h4>
-      <p class="karthik-header__tagline">
-        <span class="karthik-header__tagline-em" aria-hidden="true"></span>
-        <span class="karthik-header__tagline-text">I work across discovery, strategy, and front-end</span>
-      </p>
+    <div class="karthik-text-section__inner" style="max-width: 1440px;">
+      <a href="/" class="karthik-header__logo-link" aria-label="Karthik — home">
+        <img
+          src="/assets/logos/Karthik New Logo.png"
+          alt="Karthik"
+          class="karthik-header__logo"
+        />
+      </a>
+  
+      <div class="karthik-header__intro">
+        <p class="karthik-header__eyebrow" id="greeting"></p>
+        <h4 class="karthik-header__name">I'm Karthik Jambunathan</h4>
+        <p class="karthik-header__tagline">
+          <span class="karthik-header__tagline-em" aria-hidden="true"></span>
+          <span class="karthik-header__tagline-text">I work across discovery, strategy, and front-end</span>
+        </p>
+      </div>
+  
+      <div class="karthik-header__status">
+        <span class="karthik-status-dot" aria-hidden="true"></span>
+        <span class="karthik-header__status-text">Open to new roles &middot; Toronto, ON</span>
+      </div>
+  
+      <nav class="karthik-header__actions" aria-label="Primary actions">
+        <a href="#work" class="karthik-btn karthik-btn--primary" onclick="scrollToWork(event)">
+          View Work
+        </a>
+        <a href="/pages/about.html" class="karthik-btn karthik-btn--outline" target="_blank">
+          About Me
+        </a>
+        <a
+          href="https://linkedin.com/in/karthikjambunathan"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="karthik-btn karthik-btn--ghost"
+        >
+          LinkedIn
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
+            <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
     </div>
- 
-    <div class="karthik-header__status">
-      <span class="karthik-status-dot" aria-hidden="true"></span>
-      <span class="karthik-header__status-text">Open to new roles &middot; Toronto, ON</span>
-    </div>
- 
-    <nav class="karthik-header__actions" aria-label="Primary actions">
-      <a href="#work" class="karthik-btn karthik-btn--primary" onclick="scrollToWork(event)">
-        View Work
-      </a>
-      <a href="/pages/about.html" class="karthik-btn karthik-btn--outline" target="_blank">
-        About Me
-      </a>
-      <a
-        href="https://linkedin.com/in/karthikjambunathan"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="karthik-btn karthik-btn--ghost"
-      >
-        LinkedIn
-        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
-          <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </nav>
  
   </header>
 
@@ -201,18 +203,16 @@
             <div class="divider"></div>
         </div>
 
-        <div class="article-grid">
-          <a class="article-entry no-hover" style="width: 100%; cursor: pointer;" onclick="window.open('/pages/projects/ece-tnfc.html', '_blank')">
-              <img src="/assets/logos/uoft-ece-logo.jpg" alt="" class="article-thumb">
-              <div>
-                  <h6 class="karthik-card-heading-ondark">
-                      Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's environment.
-                  </h6>
-                  <p class="karthik-p-ondark">At ECE at U of T</p>
-                  <p class="karthik-p-ondark">Nov 2024 - Mar 2025</p>
-              </div>
-          </a>
-        </div>
+        <a class="article-entry no-hover" style="width: 100%; cursor: pointer;" onclick="window.open('/pages/projects/ece-tnfc.html', '_blank')">
+          <img src="/assets/logos/uoft-ece-logo.jpg" alt="" class="article-thumb">
+          <div style="width: 100%;">
+            <h6 class="karthik-card-heading-ondark">
+                Migrated Toronto Nanofabrication Centre's (TNFC) standalone website with ECE at U of T's environment.
+            </h6>
+            <p class="karthik-card-p-ondark">At ECE at U of T</p>
+            <p class="karthik-card-p-ondark">Nov 2024 - Mar 2025</p>
+          </div>
+        </a>
     
 
 </div>
