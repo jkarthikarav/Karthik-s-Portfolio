@@ -699,7 +699,9 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
        ============================================ */
     .karthik-header {
       background: var(--karthik-bg-page-dark);
-      padding: 48px 56px 44px;
+      padding: 40px 0 64px;
+      min-height: 70vh;
+      width: 100%;
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
  
@@ -732,7 +734,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--karthik-body-color-dark);
-      margin-bottom: 10px;
     }
  
     .karthik-header__name {
@@ -740,13 +741,13 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
       font-weight: var(--karthik-weight-heading);
       letter-spacing: var(--karthik-tracking-h2);
       color: var(--karthik-text-on-dark);
-      margin-bottom: 10px;
     }
  
     .karthik-header__tagline {
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-top: 0;
       font-family: 'League Spartan', sans-serif;
       font-size: var(--karthik-text-p-lg);
       font-weight: var(--karthik-weight-body);
@@ -984,6 +985,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         height: 100px;
         object-fit: fit;
         flex-shrink: 0;
+        background-color: white;
     }
 
     .no-hover {
@@ -1003,7 +1005,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     .logo-section {
         width: 100%;
         display: flex;
-        background-color: var(--karthik-bg-surface);
+        background-color: var(--karthik-bg-elevated);
         justify-content: center;
         padding: 0.5rem 0 3rem;
         flex-direction: column;
@@ -1027,8 +1029,8 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
 
     .logos-img {
-        width: 60px;
-        height: 60px;
+        width: 72px;
+        height: 72px;
         object-fit: cover;
         opacity: 1;
         transition: opacity 0.3s;
@@ -1074,7 +1076,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 }
 
     .testimonials {
-        padding: 96px 24px; height: 75vh; position: relative; 
+        padding: 96px 24px; min-height: 75vh; position: relative; 
     }
 
     .testimonials-inner {
@@ -1090,11 +1092,34 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         align-items: center;
         border-top: 1px solid var(--karthik-saffron-400);
     }
+    
+    .karthik-footer-cta {
+        padding: 2rem 3rem;
+        background-color: var(--karthik-bg-sienna-tint);
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        border-top: 1px solid var(--karthik-saffron-400);
+    }
 
-    .karthik-footer > p {
-        flex: 1;
-        color: var(--karthik-saffron-100);
-    }   
+    .karthik-footer-cta > div {
+      flex: 1;
+      flex-direction: column;
+      justify-items: center;
+    }
+
+    .karthik-footer-cta > div > p {
+      color: var(--karthik-green-800);
+      font-weight: bold;
+    } 
+
+    .karthik-footer-cta > div > * {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    } 
 
     /* Eyebrow label */
     .karthik-eyebrow-onlight {
@@ -1121,6 +1146,13 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     color: var(--karthik-heading-color);
     max-width: 48rem;
     margin-bottom: 36px;
+    }
+
+    .karthik-text-section__heading-super {
+    font-weight: var(--karthik-weight-heading);
+    color: var(--karthik-heading-color);
+    margin-bottom: 36px;
+    line-height: var(--karthik-leading-p);
     }
 
     .karthik-text-section__heading-ondark {
@@ -1156,10 +1188,14 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 
     /* Body copy wrapper */
     .karthik-text-section__body {
-    max-width: 48rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    justify-content: space-between;
+    }
+
+    .karthik-text-section__body > div:first-of-type {
+      max-width: 48rem;
     }
 
     /* Paragraph */
@@ -1261,7 +1297,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     .karthik-text-section__inner {
         padding: 56px 24px 48px;
     }
-
+    
     .karthik-text-section__heading {
         font-size: var(--karthik-text-h5);
         line-height: var(--karthik-leading-h5);
@@ -1276,11 +1312,31 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         flex: none;
         width: auto;
     }
+    .karthik-header__name, .karthik-text-section__heading-super {
+      font-size: var(--karthik-text-h4);
+    }
+    .karthik-header {
+      padding: 56px 12px 48px;
+      min-height: fit-content;
+    }
     }
 
     @media (max-width: 1200px) {
-        .article-grid {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        } 
+      .article-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+      } 
+
+      .karthik-text-section__body > div:first-of-type {
+        max-width: max-content;
+        margin-top: 0;
+      }
+
+      .karthik-text-section__body > .image-block {
+        display: none;
+      }
+
+      .testimonials {
+        min-height: fit-content;
+      }
     }
