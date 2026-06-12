@@ -964,8 +964,9 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
  
     .article-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         width: 100%;
     }
@@ -976,7 +977,9 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         text-decoration: none;
         align-items: center;
         justify-content: center;
+        margin: 0;
         padding: 24px;
+        width: 100%;
         transition: background-color 0.2s;
     }
 
@@ -1196,6 +1199,10 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 
     .karthik-text-section__body > div:first-of-type {
       max-width: 48rem;
+    }
+
+    .karthik-text-section__body > div:first-of-type >* {
+      margin-bottom: 24px;
     }
 
     /* Paragraph */
