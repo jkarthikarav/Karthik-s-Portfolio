@@ -289,10 +289,35 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   max-width: 640px;
 }
 
+.karthik-cs-problem-heading-tnfc {
+  color: var(--karthik-green-100);
+  margin: 12px 0 24px 0;
+  max-width: 968px;
+}
+
+
+.karthik-cs-problem-heading-onlight {
+  color: var(--karthik-text-brand);
+  margin: 12px 0 24px 0;
+  max-width: 640px;
+}
+
 .karthik-cs-problem-body {
   color: var(--karthik-body-color-dark);
   margin: 0 0 16px 0;
-  max-width: 680px;
+  max-width: 968px;
+}
+
+.karthik-cs-problem-body-tnfc {
+  color: var(--karthik-body-color-dark);
+  margin: 0 0 16px 0;
+  max-width: 968px;
+}
+
+.karthik-cs-problem-body-onlight {
+  color: var(--karthik-body-color-secondary);
+  margin: 0 0 16px 0;
+  max-width: 640px;
 }
 
 .karthik-cs-problem-body-last {
@@ -677,7 +702,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   flex-wrap: wrap;
   max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 40px 64px;
+    padding: 40px 10px 64px;
 }
 
 .karthik-learn-content h4 {
@@ -1078,6 +1103,12 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   padding: 40px 40px 64px;
 }
 
+.karthik-cs-hero-container-tnfc {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 40px 40px 64px;
+}
+
     .testimonials {
         padding: 96px 24px; min-height: 75vh; position: relative; 
     }
@@ -1347,3 +1378,156 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         min-height: fit-content;
       }
     }
+
+
+  .stylized-hero-tnfc {
+    background: var(--karthik-bg-elevated);
+}
+
+.stylized-container-tnfc-big {
+  max-width: 1200px; display: flex; flex-direction: column; gap: 8px; justify-items: center; align-items: center; margin: 0 auto; padding: 48px 24px;
+}
+
+.stylized-container-tnfc-small {
+  max-width: 968px; display: flex; flex-direction: column; gap: 8px; justify-items: center; align-items: center; margin: 0 auto; padding: 48px 24px;
+}
+
+.stylized-hero-tnfc > div > .tnfc-title {
+  text-align: center; 
+  letter-spacing: -0.03px;
+  color: var(--karthik-heading-color-brand);
+  margin: 48px 0 16px 0;
+}
+
+
+.karthik-tnfc-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 968px;
+}
+
+.karthik-tnfc-pill {
+  font-family: 'League Spartan', sans-serif;  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--karthik-saffron-100);
+  color: var(--karthik-text-brand-dark);
+  padding: 12px 16px;
+  border-radius: 8px;
+  justify-content: center;
+  border: 1px solid var(--karthik-border-strong);
+}
+
+.karthik-tnfc-task {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--karthik-sienna-800);
+  margin: 0;
+  max-width: 968px;
+}
+
+.karthik-tnfc-body-onlight {
+  color: var(--karthik-body-color-secondary);
+  margin: 0 0 16px 0;
+  max-width: 968px;
+}
+
+.karthik-tnfc-subtitle {
+  font-size: 20px;
+  color: var(--karthik-body-color);
+  margin: 24px 0 0 0;
+  max-width: 968px;
+  padding: 4px;
+}
+
+.karthik-tnfc-body {
+  color: var(--karthik-body-color-dark);
+  margin: 0 0 16px 0;
+  max-width: 968px;
+}
+
+.karthik-tnfc-subtitle-ondark {
+  font-size: 20px;
+  color: var(--karthik-bg-elevated);
+  margin: 24px 0 0 0;
+  max-width: 968px;
+  padding: 4px;
+  font-weight: medium;
+}
+
+
+.karthik-tnfc-title-ondark {
+  color: var(--karthik-bg-elevated);
+  margin: 48px 0 0 0;
+  max-width: 968px;
+  padding: 4px;
+  font-weight: medium;
+}
+
+.karthik-tnfc-title {
+  color: var(--karthik-text-brand-dark);
+  margin: 48px 0 0 0;
+  max-width: 968px;
+  padding: 4px;
+  font-weight: medium;
+}
+
+/* HERO */
+.karthik-tnfc-hero {
+  min-height: 75vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  flex-direction: column;
+}
+
+.karthik-tnfc-hero h1 {
+  color: var(--karthik-bg-page-dark);
+  margin: 0;
+  text-align: center;
+}
+
+.karthik-tnfc-hero > *{
+max-width: 1200px;
+width: 100%;
+
+}
+
+.karthik-tnfc-banner {
+  position: relative;
+  min-height: 500px;
+  background-image: url(/assets/images/TNFC.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px; 
+  padding-bottom: 64px;
+}
+
+.karthik-ssyo-banner {
+  position: relative;
+  min-height: 500px;
+  background-image: url(/assets/images/ssyo-banner-bg.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px; 
+  padding-bottom: 64px;
+}
+
+.karthik-tnfc-banner-image {
+  display: block;
+  width: min(1200px, calc(100% - 80px));
+  margin: -360px auto 0;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+
+  .karthik-tnfc-banner-image {
+    display: none;
+  }
+}
