@@ -21,19 +21,14 @@
 
 </head>
 
-<body style="background-color: var(--karthik-bg-page-dark);">  
+<body class="karthik-ap-body" style="background-color: var(--karthik-bg-page);">  
 
   <div id="header-placeholder"></div>
 
-<section class="karthik-text-section">
-
-  <div class="karthik-text-section__inner">
-
-    <p class="karthik-eyebrow-ondark" style="color: var(--karthik-sienna-600)">
-      Active since June 2019
-    </p>
-    
-    <h4 class="karthik-text-section__heading">
+   
+<main class="karthik-ap-main">
+ 
+  <h4 class="karthik-text-section__heading">
       All Projects
     </h4>
 
@@ -42,83 +37,77 @@
       They also show how I collaborate as a UX/Product designer — with teams of varied sizes and functions — to deliver adoption, engagement, and business results through data-informed design.
     </p>
 
-    <div class="hard-part-grid" style="max-width: 1440px; gap: 20px;">
-      
-      <div>
-        <h6 class="karthik-card-heading" style="text-align: left; line-height: 1.6;">
-          Conducted UX Discovery Study for a Virtual-Only Cultural Nonprofit, performed pro-bono through University of Toronto.
-        </h6>
-        <p class="karthik-cs-res-audience-summary" style="margin-bottom: 10px;">Jan – Feb 2025</p>
-        <a class="karthik-btn karthik-btn--primary" onclick="window.open('/pages/projects/chlavm.html', '_blank')">
-          View Case Study
-        </a>
-      </div>
+    <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
 
-      <div>
-        <h6 class="karthik-card-heading" style="text-align: left; line-height: 1.6;">
-          Rebuilt the Student Recruitment Journey and Front End Architecture as the In-house website point of contact at the ECE Department, University of Toronto.
-        </h6>
-        <p class="karthik-cs-res-audience-summary" style="margin-bottom: 10px;">Nov 2024 – Mar 2025</p>
-        <a class="karthik-btn karthik-btn--primary" onclick="window.open('/pages/projects/ece.html', '_blank')">
-          View Case Study
-        </a>
-      </div>
+    <div class="karthik-ap-list" id="karthik-ap-magnetic-list">
+ 
+        <!-- 
+        <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/chlavm.html">
+            <div class="karthik-ap-item-content">
+                <div class="karthik-ap-item-left">
+                    <span>001</span>
+                    <h5>Brand Positioning strategy sprint to refresh the brand and realign the Canadian Hispanic-Latin American Virtual Museum, around its first-time visitors.</h5>
+                </div>
+                <div class="karthik-ap-item-right">
+                    <span class="karthik-ap-date-reveal">Jan–Feb 2025</span>
+                    <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                </div>
+            </div>
+        </div> -->
+ 
+        <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/ece.html">
+            <div class="karthik-ap-item-content">
+                <div class="karthik-ap-item-left">
+                    <span>001</span>
+                    <h5>Led a multi-page site sprint to rebuild the digital student journey and ship multiple key pages for the ECE Department, University of Toronto.</h5>
+                </div>
+                <div class="karthik-ap-item-right">
+                    <span class="karthik-ap-date-reveal">Nov 2024 – Mar 2025</span>
+                    <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/ece-tnfc.html">
+            <div class="karthik-ap-item-content">
+                <div class="karthik-ap-item-left">
+                    <span>002</span>
+                    <h5>Led and shipped a multi-page subsite for ECE's Toronto Nanofabrication Centre (TNFC), built for long-term ownership and evolution.</h5>
+                </div>
+                <div class="karthik-ap-item-right">
+                    <span class="karthik-ap-date-reveal">Nov 2024 – Mar 2025</span>
+                    <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/note4u.html">
+            <div class="karthik-ap-item-content">
+                <div class="karthik-ap-item-left">
+                    <span>003</span>
+                    <h5>Research-Led Product Strategy for an AI-powered Music Transcription tool through assessment of product risks & adoption barriers.</h5>
+                </div>
+                <div class="karthik-ap-item-right">
+                    <span class="karthik-ap-date-reveal">Sep–Dec 2024</span>
+                    <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                </div>
+            </div>
+        </div>
 
+        <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/caterpillar.html">
+            <div class="karthik-ap-item-content">
+                <div class="karthik-ap-item-left">
+                    <span>004</span>
+                    <h5>Generating actionable insights for Product Design: stakeholder-focused construction management tool enabling ease of progress visibility.</h5>
+                </div>
+                <div class="karthik-ap-item-right">
+                    <span class="karthik-ap-date-reveal">Dec 2019</span>
+                    <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                </div>
+            </div>
+        </div>
+ 
     </div>
-
-   <div class="hard-part-grid" style="max-width: 1440px; gap: 20px;">
-
-    <div>
-      <h6 class="karthik-card-heading" style="text-align: left; line-height: 1.6;">
-        Led the Website Modernization and Systems Migration of Toronto Nanofabrication Centre (TNFC), establishing content ownership & reducing design fragmentation.
-      </h6>
-      <p class="karthik-cs-res-audience-summary" style="margin-bottom: 10px;">Nov 2024 – Mar 2025</p>
-      <a class="karthik-btn karthik-btn--primary" onclick="window.open('/pages/projects/ece-tnfc.html', '_blank')">
-        View Case Study
-      </a>
-    </div>
-
-    <div>
-      <h6 class="karthik-card-heading" style="text-align: left; line-height: 1.6;">
-        Research-Led Product Strategy for an AI Music Transcription Tool, Assessing Product Risks & Adoption Barriers.
-      </h6>
-      <p class="karthik-cs-res-audience-summary" style="margin-bottom: 10px;">Sep – Dec 2024</p>
-      <a class="karthik-btn karthik-btn--primary" onclick="window.open('/pages/projects/note4u.html', '_blank')">
-        View Case Study
-      </a>
-    </div>
-
-  </div>
-
-  <div class="hard-part-grid" style="max-width: 1440px; gap: 20px;">
-
-    <div>
-      <h6 class="karthik-card-heading" style="text-align: left; line-height: 1.6;">
-        Developed a GenAI adoption framework for Fix it In Post Studios through Service Design & Generative Research, implementing a new service that led to revenue growth.
-      </h6>
-      <p class="karthik-cs-res-audience-summary" style="margin-bottom: 10px;">Sep 2022 – Aug 2023</p>
-      <a class="karthik-btn karthik-btn--primary" onclick="window.open('/pages/projects/service-design.html', '_blank')">
-        View Case Study
-      </a>
-    </div>
-
-    <div>
-      <h6 class="karthik-card-heading" style="text-align: left; line-height: 1.6;">
-        Conducted a UX Discovery Study, resulting in actionable insights for a stakeholder-focused construction management product enabling progress visibility.
-      </h6>
-      <p class="karthik-cs-res-audience-summary" style="margin-bottom: 10px;">Dec 2019</p>
-      <a class="karthik-btn karthik-btn--primary" onclick="window.open('/pages/projects/caterpillar.html', '_blank')">
-        View Case Study
-      </a>
-    </div>
-
-  </div>
-
-  </div>
-
-</section>
-
-
 </main>
 
 <section class="karthik-footer-cta">
@@ -174,36 +163,6 @@
 </script>
 
 <script>
-    (function () {
- 
-      const buttons = document.querySelectorAll('.jka-about-section-btn');
-      const sections = document.querySelectorAll('.jka-about-section-section');
-      const col2 = document.getElementById('jka-about-section-col2');
- 
-      function setActive(targetId) {
-        buttons.forEach(function (btn) {
-          const isActive = btn.dataset.target === targetId;
-          btn.classList.toggle('primary-btn', isActive);
-          btn.classList.toggle('tertiary-btn', !isActive);
-        });
- 
-        sections.forEach(function (section) {
-          section.classList.toggle('jka-about-section-section--active', section.id === targetId);
-        });
- 
-        col2.scrollTop = 0;
-      }
- 
-      buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          setActive(btn.dataset.target);
-        });
-      });
- 
-    })();
-  </script>
-
-<script>
   function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -212,6 +171,76 @@
   }
 </script>
 
+<script>
+    (function () {
+        const follower = document.getElementById('karthik-ap-follower');
+        const items = document.querySelectorAll('.karthik-ap-item');
+ 
+        // Mouse reactive background + magnetic hover
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+ 
+            follower.style.left = x + 'px';
+            follower.style.top = y + 'px';
+ 
+            items.forEach((item) => {
+                const rect = item.getBoundingClientRect();
+                const content = item.querySelector('.karthik-ap-item-content');
+ 
+                const isHovering = (
+                    x >= rect.left &&
+                    x <= rect.right &&
+                    y >= rect.top &&
+                    y <= rect.bottom
+                );
+ 
+                if (isHovering) {
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+ 
+                    const deltaX = (x - centerX) * 0.15;
+                    const deltaY = (y - centerY) * 0.3;
+ 
+                    content.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+                    item.style.borderColor = '#1A1A1A';
+                } else {
+                    content.style.transform = 'translate(0, 0)';
+                    item.style.borderColor = '';
+                }
+            });
+        });
+ 
+        // Entrance animation
+        window.addEventListener('DOMContentLoaded', () => {
+            items.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+ 
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+
+        items.forEach((item) => {
+    item.addEventListener('click', () => {
+        const url = item.getAttribute('data-url');
+        if (url) window.open(url, '_blank');
+    });
+});
+ 
+        // Reset transform on mouse leave per item
+        items.forEach((item) => {
+            item.addEventListener('mouseleave', () => {
+                const content = item.querySelector('.karthik-ap-item-content');
+                content.style.transform = 'translate(0, -10)';
+            });
+        });
+    })();
+</script>
 
 </body>
 </html>

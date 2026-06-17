@@ -857,11 +857,24 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   }
 
   .hard-part-grid {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
     max-width: 1200px;
     margin: 0 auto 48px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .center > div {
+    width: 100%;
   }
 
   @media (max-width: 768px) {
@@ -871,7 +884,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 
     .hard-part-col-left {
       border-right: none !important;
-      border-bottom: 1px solid #e4e4e4;
       padding-right: 0 !important;
       padding-bottom: 32px;
     }
@@ -1028,6 +1040,77 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         background-color: transparent;
     } 
     
+  .karthik-ap-marquee-section {
+    padding: 36px 64px 80px;
+    margin: 0;
+    border-top: 1px solid rgba(196, 199, 199, 0.3);
+    border-bottom: 1px solid rgba(196, 199, 199, 0.3);
+    overflow: hidden;
+    background-color: var(--karthik-bg-elevated);
+}
+
+.karthik-ap-marquee-title {
+    margin: 24px auto 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--karthik-text-brand-dark);
+    text-transform: uppercase;
+}
+
+.karthik-ap-marquee-container {
+    max-width: 968px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.karthik-ap-marquee-content {
+    display: flex;
+    width: max-content;
+    animation: karthik-ap-marquee-scroll 30s linear infinite;
+}
+
+.karthik-ap-marquee-item {
+    flex: 0 0 calc(968px / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.karthik-ap-marquee-img {
+    height: 72px;
+    width: auto;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.karthik-ap-marquee-container::before,
+.karthik-ap-marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.karthik-ap-marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--karthik-bg-elevated, transparent), transparent);
+}
+
+.karthik-ap-marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--karthik-bg-elevated, transparent), transparent);
+}
+
+@keyframes karthik-ap-marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
     
 
     .logo-section {
@@ -1220,6 +1303,12 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     margin-bottom: 12px;
     }
 
+    .karthik-featured-heading-alt {
+    font-weight: var(--karthik-weight-heading);
+    color: var(--karthik-green-100);
+    margin-bottom: 12px;
+    }
+
     /* Body copy wrapper */
     .karthik-text-section__body {
     display: flex;
@@ -1385,18 +1474,19 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 }
 
 .stylized-container-tnfc-big {
+  width: 100%;
   max-width: 1200px; display: flex; flex-direction: column; gap: 8px; justify-items: center; align-items: center; margin: 0 auto; padding: 48px 24px;
 }
 
-.stylized-container-tnfc-small {
-  max-width: 968px; display: flex; flex-direction: column; gap: 8px; justify-items: center; align-items: center; margin: 0 auto; padding: 48px 24px;
-}
-
-.stylized-hero-tnfc > div > .tnfc-title {
+.stylized-hero-tnfc > div > .karthik-tnfc-title, .karthik-tnfc-title-ondark {
   text-align: center; 
   letter-spacing: -0.03px;
   color: var(--karthik-heading-color-brand);
   margin: 48px 0 16px 0;
+}
+
+.stylized-container-tnfc-big > *:not(h4, h5, h6) {
+  width: 100%;
 }
 
 
@@ -1426,34 +1516,29 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   line-height: 1.5;
   color: var(--karthik-sienna-800);
   margin: 0;
-  max-width: 968px;
 }
 
 .karthik-tnfc-body-onlight {
   color: var(--karthik-body-color-secondary);
   margin: 0 0 16px 0;
-  max-width: 968px;
 }
 
 .karthik-tnfc-subtitle {
   font-size: 20px;
   color: var(--karthik-body-color);
   margin: 24px 0 0 0;
-  max-width: 968px;
   padding: 4px;
 }
 
 .karthik-tnfc-body {
   color: var(--karthik-body-color-dark);
   margin: 0 0 16px 0;
-  max-width: 968px;
 }
 
 .karthik-tnfc-subtitle-ondark {
   font-size: 20px;
   color: var(--karthik-bg-elevated);
   margin: 24px 0 0 0;
-  max-width: 968px;
   padding: 4px;
   font-weight: medium;
 }
@@ -1462,7 +1547,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 .karthik-tnfc-title-ondark {
   color: var(--karthik-bg-elevated);
   margin: 48px 0 0 0;
-  max-width: 968px;
   padding: 4px;
   font-weight: medium;
 }
@@ -1470,7 +1554,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 .karthik-tnfc-title {
   color: var(--karthik-text-brand-dark);
   margin: 48px 0 0 0;
-  max-width: 968px;
   padding: 4px;
   font-weight: medium;
 }
@@ -1531,3 +1614,180 @@ width: 100%;
     display: none;
   }
 }
+
+.karthik-mini-hero {
+  min-height: 45vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px 40px;
+  flex-direction: column;
+}
+
+.karthik-mini-hero h1 {
+  color: var(--karthik-bg-page-dark);
+  margin: 0;
+  text-align: center;
+}
+
+.karthik-mini-hero > *{
+max-width: 1200px;
+width: 100%;
+  padding: 0 24px;
+}
+
+
+.karthik-ap-body {
+        overflow-x: hidden;
+        min-height: 100vh;
+        position: relative;
+    }
+
+ 
+    .karthik-ap-grain-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.03;
+        pointer-events: none;
+    }
+ 
+    .karthik-ap-cursor-follower {
+        pointer-events: none;
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        background: none;
+        border-radius: 50%;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+        transition: transform 0.1s ease-out;
+        filter: blur(40px);
+    }
+ 
+    .karthik-ap-main {
+        max-width: 1440px;
+        margin: 80px auto 60px;
+        padding: 0 64px;
+        background-color: var(--karthik-bg-page);
+        position: relative;
+        z-index: 10;
+    }
+ 
+    .karthik-ap-index-header {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 1px solid var(--karthik-border-sienna);
+        padding-bottom: 16px;
+    }
+ 
+    .karthik-ap-index-header span {
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--karthik-text-primary);
+    }
+ 
+    /* List */
+    .karthik-ap-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+ 
+    .karthik-ap-item {
+        cursor: pointer;
+        transition: border-color 0.4s ease;
+        border-bottom: 1px solid var(--karthik-border-brand);
+        padding: 40px 0;
+    }
+ 
+    .karthik-ap-item-content {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        pointer-events: none;
+        transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+        gap: 24px;
+    }
+ 
+    .karthik-ap-item-left {
+        display: flex;
+        align-items: baseline;
+        gap: 24px;
+    }
+ 
+    .karthik-ap-item-left span {
+        opacity: 0.4;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        flex-shrink: 0;
+        font-weight: bold;
+        color: var(--karthik-text-brand)
+    }
+ 
+    .karthik-ap-item-left h5 {
+        max-width: 640px;
+        color: var(--karthik-text-primary);
+        margin: 0;
+    }
+ 
+    .karthik-ap-item-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+ 
+    .karthik-ap-date-reveal {
+        overflow: hidden;
+        width: 0;
+        white-space: nowrap;
+        transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+        opacity: 0;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--karthik-text-brand);
+    }
+ 
+    .karthik-ap-item:hover .karthik-ap-date-reveal {
+        width: fit-content;
+        opacity: 1;
+    }
+ 
+    .karthik-ap-item .karthik-ap-arrow {
+        transition: opacity 0.2s ease;
+        color: var(--karthik-text-brand);
+    }
+ 
+    /* Footer area of index */
+    .karthik-ap-end-block {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 80px;
+    }
+ 
+    .karthik-ap-load-more {
+        padding: 16px 48px;
+        border: 1px solid currentColor;
+        cursor: pointer;
+        background: none;
+        transition: all 0.3s ease;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+ 
+    .karthik-ap-load-more:active {
+        transform: scale(0.95);
+    }
+ 
+    .karthik-ap-end-label {
+        opacity: 0.5;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
