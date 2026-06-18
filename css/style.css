@@ -1202,23 +1202,22 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 
     .karthik-footer {
         padding: 2rem 3rem;
-        background-color: var(--karthik-bg-surface-dark);
+        background-color: var(--karthik-text-brand-dark);
         display: flex;
         justify-content: space-between;
         gap: 1rem;
         align-items: center;
-        border-top: 1px solid var(--karthik-saffron-400);
     }
     
     .karthik-footer-cta {
         padding: 2rem 3rem;
-        background-color: var(--karthik-bg-sienna-tint);
+        background-color: var(--karthik-text-brand-dark);
         display: flex;
         justify-content: space-between;
         gap: 1rem;
         flex-wrap: wrap;
         align-items: center;
-        border-top: 1px solid var(--karthik-saffron-400);
+        border-top: 10px solid var(--karthik-neutral-900);
     }
 
     .karthik-footer-cta > div {
@@ -1228,7 +1227,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
 
     .karthik-footer-cta > div > p {
-      color: var(--karthik-green-800);
+      color: var(--karthik-neutral-100);
       font-weight: bold;
     } 
 
@@ -1367,6 +1366,15 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     .grid-featured {
     display: grid;
     grid-template-columns: 7fr 5fr;
+    grid-template-rows: auto;
+    gap: 24px;
+    margin-bottom: 40px;  
+    align-items: start;
+    }
+
+    .grid-featured-equal {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
     grid-template-rows: auto;
     gap: 24px;
     margin-bottom: 40px;  
@@ -1526,9 +1534,22 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 .karthik-tnfc-subtitle {
   font-size: 20px;
   color: var(--karthik-body-color);
-  margin: 24px 0 0 0;
+  margin: 24px 0 12px 0;
   padding: 4px;
 }
+
+.pilot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .pilot-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
 
 .karthik-tnfc-body {
   color: var(--karthik-body-color-dark);
@@ -1585,6 +1606,26 @@ width: 100%;
   position: relative;
   min-height: 500px;
   background-image: url(/assets/images/TNFC.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px; 
+  padding-bottom: 64px;
+}
+
+.karthik-aiadopt-banner {
+  position: relative;
+  min-height: 500px;
+  background-image: url(/assets/images/hero-banners/dtsdpp.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px; 
+  padding-bottom: 64px;
+}
+
+.karthik-service-banner {
+  position: relative;
+  min-height: 500px;
+  background-image: url(/assets/images/hero-banners/dtsd.webp);
   background-size: cover;
   background-position: center;
   padding-top: 200px; 
