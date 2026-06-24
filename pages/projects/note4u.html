@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta property="og:image" content="/assets/images/about/Karthik-002.webp" />
-  <meta property="og:type" content="website" />
-
   <title>Music Technology Business Proposal</title>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 
 
-  <!-- Styles and Scripts -->
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/script.js"></script>
 
@@ -77,7 +72,7 @@
 
     <div style="width: 100%; cursor: pointer; border: 1px solid var(--karthik-border-subtle); margin-top: 48px;">
       <img onclick="window.open(this.src, '_blank')" class="karthik-cs-problem-image"
-    src="/assets/images/note/figma-make-preview.PNG"
+    src="/assets/images/figma-make-preview.PNG"
     alt="The TNFC homepage before the rebuild"
       />
     </div>
@@ -95,7 +90,7 @@
 
   <div class="stylized-container-tnfc-big">
 
-    <h4 class="karthik-tnfc-title">
+    <h4 class="karthik-tnfc-title" style="margin-bottom: 20px; margin-left: auto; margin-right: auto; width: fit-content;">
       UX Research
     </h4>
 
@@ -110,14 +105,14 @@
 
     <div class="built-before-after">
       <div style="width: 100%; cursor: pointer;">
-        <img onclick="window.open(this.src, '_blank')" src="/assets/images/note/As-Is.png" style="width: 100%;" />
+        <img onclick="window.open(this.src, '_blank')" src="/assets/images/NOTE4As-Is.png" style="width: 100%;" />
         <p class="karthik-cs-problem-caption-ondark">
           Current Journey Map (As-Is)
         </p>
       </div>
 
       <div style="width: 100%; cursor: pointer;">
-        <img onclick="window.open(this.src, '_blank')" src="/assets/images/note/Adoption.png" style="width: 100%;" />
+        <img onclick="window.open(this.src, '_blank')" src="/assets/images/NOTE4Adoption.png" style="width: 100%;" />
         <p class="karthik-cs-problem-caption-ondark">
           Note4U’s adoption strategy emphasizing educational value
         </p>
@@ -142,7 +137,7 @@
 
   <div class="stylized-container-tnfc-big">
 
-    <h4 class="karthik-tnfc-title">
+    <h4 class="karthik-tnfc-title" style="margin-bottom: 20px; margin-left: auto; margin-right: auto; width: fit-content;">
       Assessing Product Risks
     </h4>
 
@@ -278,7 +273,7 @@
 <section class="karthik-footer">
     <p>Developed by Karthik</p>
     <p>Based in Ontario, Canada</p>
-    <button class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
+    <a class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</a>
 </section>
 
 <script>
@@ -290,13 +285,7 @@
     }
 </script>
 
-<script>
-  fetch('/addons/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    });
-</script>
+
 
 <script>
   fetch('../../addons/header.html')

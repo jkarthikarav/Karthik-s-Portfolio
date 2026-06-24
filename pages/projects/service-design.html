@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta property="og:image" content="/assets/images/about/Karthik-002.webp" />
-  <meta property="og:type" content="website" />
-
   <title>Service Design</title>
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 
-  <!-- Styles and Scripts -->
-  <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   <script src="/js/script.js"></script>
 
 </head>
@@ -46,7 +41,7 @@
   </div>
     
   <h4 class="karthik-tnfc-title-ondark" style="margin-top: 12px; text-align: left;">
-    Designing and Implementing an AI-Assisted Service Offering for Fix It In Post Studios.
+    Implementing an AI-Assisted Service Offering for Fix It In Post Studios.
   </h4>
 
   <p class="karthik-tnfc-title-ondark" style="margin-top: 0; text-align: left;">
@@ -76,7 +71,7 @@
 
     <div style="width: 100%; cursor: pointer; border: 1px solid var(--karthik-border-subtle); margin-top: 48px;">
       <img onclick="window.open(this.src, '_blank')" class="karthik-cs-problem-image"
-        src="/assets/images/previz/F20 BG.png"
+        src="/assets/images/F20 BG.png"
         alt="The TNFC homepage before the rebuild"
       />
     </div>
@@ -113,7 +108,7 @@
     </p>
 
     <img onclick="window.open(this.src, '_blank')" 
-          src="/assets/images/previz/swimlane-b.png"
+          src="/assets/images/swimlane-b.png"
         alt="As-is workflow diagram"
         style="
           width: 100%;
@@ -131,7 +126,7 @@
 
   <div class="stylized-container-tnfc-big">
 
-    <h4 class="karthik-tnfc-title">
+    <h4 class="karthik-tnfc-title" style="margin-bottom: 20px; margin-left: auto; margin-right: auto; width: fit-content;">
       The Blueprint
     </h4>
 
@@ -206,7 +201,7 @@
       This is what made it viable to scope AI to specific assets without requiring constant director sign-off.
     </p>
 
-    <img onclick="window.open(this.src, '_blank')" src="/assets/images/previz/swimlane.png" style="width: 100%; cursor: pointer; margin-top: 0; border: 1px solid var(--karthik-bg-page-dark);"/>
+    <img onclick="window.open(this.src, '_blank')" src="/assets/images/swimlane.png" style="width: 100%; cursor: pointer; margin-top: 0; border: 1px solid var(--karthik-text-brand-dark);"/>
     
     <p class="karthik-cs-problem-caption-ondark">
       The to-be workflow.
@@ -293,12 +288,11 @@
 
         <p class="karthik-cs-problem-body">
           The pilot delivered 15 days ahead of schedule, despite the process being built in real time. The QA held. 
-          The compositing was easier but doing the work manually gave us more control.
+          The compositing was easier but doing the work without AI gave us more control.
         </p>
 
         <p class="karthik-cs-problem-body karthik-cs-outcome-body-spacing">
           FIIP adopted the previz workflow as a permanent service offering. 
-          What started as a framework became a billable, repeatable service.
         </p>
 
       </div>
@@ -345,7 +339,7 @@
 <section class="karthik-learn">
   <div class="karthik-learn-content">
 
-    <h4>What I Learned</h4>
+    <h4>Reflections</h4>
 
     <p>
       AI still needs human judgment to be production-ready. The outputs were usable but not without a considerable amount of compositing and minor image manipulation. 
@@ -362,7 +356,7 @@
 <section class="karthik-footer">
     <p>Developed by Karthik</p>
     <p>Based in Ontario, Canada</p>
-    <button class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
+    <a class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</a>
 </section>
 
 
@@ -375,13 +369,7 @@
     }
 </script>
 
-<script>
-  fetch('/addons/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    });
-</script>
+
 
 <script>
   fetch('../../addons/header.html')
