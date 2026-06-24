@@ -1231,11 +1231,11 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 }
 
     .testimonials {
-        padding: 96px 24px; min-height: 75vh; position: relative; background-color: var(--karthik-bg-elevated);
+        padding: 96px 24px; position: relative; background-color: var(--karthik-bg-elevated);
     }
 
     .testimonials-inner {
-        max-width: 768px; margin: auto; text-align: center; position: relative; z-index: 10;
+       margin: auto; text-align: center; position: relative; z-index: 10; max-width: 1440px;
     }
 
     .karthik-footer {
@@ -1512,9 +1512,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
         display: none;
       }
 
-      .testimonials {
-        min-height: fit-content;
-      }
     }
 
 
