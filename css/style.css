@@ -462,9 +462,47 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     gap: 24px;
   }
 
+  .sizer {
+    max-width: 60%;
+  }
+
+  
+    .karthik-two-column {
+      width: 100%;
+      display: flex; flex-direction: row;
+      gap: 40px;
+      max-width: 1200px; margin: 0 auto; padding: 48px 24px;
+    }
+
+    .karthik-two-column-home {
+      width: 100%;
+      display: flex;
+      flex-direction: row; gap: 20px;
+      max-width: 1440px; margin: 0 auto; padding: 48px 0;
+    }
+
+    .karthik-two-column-home > div:first-of-type {
+      max-width: 55%;
+    }
+
+    @media (max-width: 1024px) {
+      .karthik-two-column {
+      flex-direction: column;
+    }
+    .karthik-two-column-home {
+      flex-direction: column;
+    }
+    }
+
   @media (max-width: 768px) {
     .built-alternating {
       grid-template-columns: 1fr;
+    }
+    
+    
+
+    .sizer {
+      max-width: 100%;
     }
 
     .built-before-after {
@@ -710,7 +748,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1440px;
     margin: 0 auto;
     padding: 40px 10px 64px;
 }
@@ -1438,15 +1476,19 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
 
     .grid-featured-equal {
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
     gap: 24px;
     margin-bottom: 40px;  
     align-items: start;
     }
 
+    .grid-featured-equal > div {
+      width: 50%;
+    }
+
     .project2-offset {
+      margin-top: 12rem;
     }
 
     .project1 .proj-img-wrap {
@@ -1476,6 +1518,14 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     @media (max-width: 1023px) {
     .grid-featured {
         grid-template-columns: 1fr;
+    }
+
+    .grid-featured-equal {
+      flex-direction: column;
+    }
+
+    .grid-featured-equal > div {
+      width: 100%;
     }
 
     .project2-offset {
@@ -2026,11 +2076,4 @@ width: 100%;
       gap: 6px;
       font-weight: 600;
       color: var(--karthik-green-600);
-    }
-
-    .karthik-two-column {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 3fr 2fr; gap: 40px;
-      max-width: 1200px; margin: 0 auto; padding: 48px 24px;
     }
