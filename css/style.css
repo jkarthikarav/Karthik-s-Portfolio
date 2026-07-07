@@ -463,7 +463,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   }
 
   .sizer {
-    max-width: 60%;
+    max-width: 40%;
   }
 
   
@@ -478,7 +478,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
       width: 100%;
       display: flex;
       flex-direction: row; gap: 20px;
-      max-width: 1440px; margin: 0 auto; padding: 48px 0;
+      max-width: 1440px; margin: 0 auto; padding: 0 0 48px;
     }
 
     .karthik-two-column-home > div:first-of-type {
