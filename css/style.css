@@ -492,6 +492,10 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     .karthik-two-column-home {
       flex-direction: column;
     }
+    
+    .sizer {
+      max-width: 100%;
+    }
     }
 
   @media (max-width: 768px) {
@@ -499,11 +503,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
       grid-template-columns: 1fr;
     }
     
-    
-
-    .sizer {
-      max-width: 100%;
-    }
+  
 
     .built-before-after {
       grid-template-columns: 1fr;
@@ -1613,13 +1613,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 }
 
 
-.karthik-tnfc-pill-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  max-width: 968px;
-}
-
 .karthik-tnfc-pill {
   font-family: 'League Spartan', sans-serif;  font-size: 16px;
   font-weight: 600;
@@ -1786,16 +1779,26 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   min-height: 45vh;
   background: var(--karthik-bg-page-dark);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 80px 80px 40px;
   flex-direction: column;
 }
 
 .karthik-mini-hero > *{
-max-width: 1200px;
-width: 100%;
+  max-width: 1200px;
+  width: 100%;
   padding: 0 24px;
+  margin: 0 auto;
+}
+
+.karthik-tnfc-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 0 24px;
+  margin: 0 auto;
 }
 
 
@@ -2076,4 +2079,37 @@ width: 100%;
       gap: 6px;
       font-weight: 600;
       color: var(--karthik-green-600);
+    }
+
+    .slide > h5, h6, .karthik-tnfc-body-onlight, .karthik-tnfc-subtitle, .hard-part-grid {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .slide > .karthik-tnfc-pill-group, .karthik-tnfc-title-ondark {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+           
+    .karthik-tnfc-caption-ondark {
+      color: var(--karthik-bg-elevated);
+      margin: 0 auto;
+      padding: 4px;
+      font-weight: medium;
+    }
+
+
+    .slide {
+      display: none; 
+      flex-direction: column; 
+      justify-content: flex-start; 
+      justify-items: center;
+      padding: 40px; 
+      box-sizing: border-box; 
+      height: 100%; 
+      overflow-y: auto;
     }
