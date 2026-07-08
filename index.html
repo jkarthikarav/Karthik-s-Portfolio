@@ -15,7 +15,7 @@
 
 <body style="background-color: var(--karthik-bg-page);">
 
-  <section style="display: flex; flex-direction: column; min-height: 100vh;">
+  <section style="display: flex; flex-direction: column; min-height: 100vh; border-bottom: 1px solid var(--karthik-border-subtle);">
     <header class="karthik-header-menu">
     
         <div class="karthik-text-section__inner-menu">
@@ -34,11 +34,6 @@
               rel="noopener noreferrer" class="karthik-btn karthik-btn--ghost">
               About Me
             </a>
-            <a 
-              href="#work" onclick="scrollToWork(event)"
-              class="karthik-btn karthik-btn--ghost">
-              Selected Works
-            </a>
             <a
               href="https://jkarthikarav.github.io/ui/"
               target="_blank"
@@ -51,18 +46,7 @@
               </svg>
             </a>
             <a
-              href="https://jkarthikarav.github.io/ui/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="karthik-btn karthik-btn--ghost"
-            >
-              Blog
-              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
-                <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a
-              href="https://linkedin.com/build-relation/newsletter-follow?entityUrn=7393569508403294208"
+              href="https://www.linkedin.com/in/karthikjambunathan/"
               target="_blank"
               rel="noopener noreferrer"
               class="karthik-btn karthik-btn--ghost"
@@ -78,9 +62,9 @@
     
     </header>
 
-    <section class="karthik-header" style="background-color: var(--karthik-bg-page);">
+    <section class="karthik-header" style="background-color: var(--karthik-bg-elevated);">
     
-        <div class="karthik-text-section__inner" style="max-width: 1440px;">
+        <div class="karthik-text-section__inner" style="max-width: 1440px; display: flex; flex-direction: column;">
           
           <div class="karthik-header__intro">
             <h2 class="karthik-header__name" style="color: var(--karthik-text-primary);">
@@ -99,7 +83,7 @@
           <div class="karthik-header__intro">
 
             <p class="karthik-p sizer" style="color: var(--karthik-text-primary);">
-              <span style="color: var(--karthik-sienna-800);">Product, strategy, growth, UX, and brand work </span>
+              <span style="color: var(--karthik-green-800);">Product, strategy, growth, UX, and brand work </span>
               from shipped product pages to strategic case studies from streamlining operations & growth.
             </p>
 
@@ -110,32 +94,17 @@
             <span class="karthik-header__status-text" style="color: var(--karthik-neutral-800);">Open to Design/UX/Product roles &middot; Toronto, ON</span>
           </div>
       
-          <nav class="karthik-header__actions" aria-label="Primary actions">
+          <nav class="karthik-header__actions" aria-label="Primary actions" style="margin-bottom: 24px;">
             <a href="#work" class="karthik-btn karthik-btn--primary" onclick="scrollToWork(event)">
               Selected Works
-            </a> <!--
-            <a
-              href="https://linkedin.com/in/karthikjambunathan"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="karthik-btn karthik-btn--outline-dark"
-            >
-              
-              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
-                <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>  -->          
+            </a>       
           </nav>
-        </div>
-    
-    </section>
-      
-    
 
-  </section>
-  <section class="karthik-ap-marquee-section">
-        <h6 class="karthik-ap-marquee-title">Trusted By</h6>
-        <div class="karthik-ap-marquee-container">
+          <div class="karthik-header__status">
+            <span class="karthik-header__status-text" style="color: var(--karthik-neutral-800);">Trusted By</span>
+          </div>
+
+          <div class="karthik-ap-marquee-container">
             <div class="karthik-ap-marquee-content">
 
                 <!-- Set 1 -->
@@ -209,93 +178,54 @@
                 </div>
 
             </div>
+          </div>
+
         </div>
+        
     </section>
+          
+  </section>
+  
+
+
+<section class="karthik-two-column-home-intro">
+  <div class="karthik-text-section__inner">
+    <div class="karthik-two-column-home">
+
+      <div>
+        
+        <p class="karthik-p ktchitx-intro" style="color: var(--karthik-neutral-800);">
+          I design and develop experiences that function as systems — whether you're launching your products or reimagining your digital presence.
+        </p>
+
+        <p class="karthik-p" style="color: var(--karthik-neutral-600);">
+          An experience is more than polished screens, it is the backend systems, the front-end visuals, the architecture, and the product, on one shared digital environment.
+        </p>
+
+      </div>
+
+      <div class="karthik-two-column-home-intro-list-colm" style="display: flex; flex-direction: column;">
+        <p class="karthik-p" style="margin-top: 24px; margin-bottom: 0;">What's on this page</p>
+        <div class="karthik-two-column-home-intro-list-items">
+            <h5 class="karthik-tnfc-title">01&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">Selected Works</span></h5>
+            <h5 class="karthik-tnfc-title">02&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">All Projects</span></h5>
+            <h5 class="karthik-tnfc-title">03&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">What people say</span></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <section id="work" class="karthik-text-section">
 
   <div class="karthik-text-section__inner" style="max-width: 1440px;">
 
-    <h4 class="header-max-title-onlight">Selected Works</h4>
+    <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
+      Selected Works
+    </h5>
 
-    <div class="karthik-two-column-home">
-
-      <div>
-        
-        <p class="karthik-p" style="color: var(--karthik-neutral-800);">
-          Most designers show you every single UX research artifact their professor asked them to make. 
-          I'd prefer to show you how I solved different problems across a variety of contexts.
-        </p>
-
-        <p class="karthik-p" style="color: var(--karthik-neutral-600);">
-          Each project here shows how I collaborate across UX research, strategy, and design (and front end development/web production)
-          as a UX/Product designer to deliver adoption, engagement, and business results through data-informed design.
-        </p>
-
-      </div>
-
-      <div>
-
-        <p class="karthik-p" style="color: var(--karthik-green-800); font-weight: bold; letter-spacing: 0.03em; text-align: center;">
-          KEY PROJECT STATS
-        </p>
-
-        <div class="karthik-header__actions" style="gap: 12px;">
-          <div class="stat-box">
-              <h3 class="karthik-text-section__heading" style="margin-bottom: 0;">07</h3>
-              <p class="karthik-p" style="margin-top: 0;">Projects</p>
-          </div>
-          <div class="stat-box">
-              <h3 class="karthik-text-section__heading" style="margin-bottom: 0;">05</h3>
-              <p class="karthik-p" style="margin-top: 0;">Industries</p>
-          </div>
-          <div class="stat-box">
-              <h3 class="karthik-text-section__heading" style="margin-bottom: 0;">04</h3>
-              <p class="karthik-p" style="margin-top: 0;">Products</p>
-          </div>
-          <div class="stat-box">
-              <h3 class="karthik-text-section__heading" style="margin-bottom: 0;">01</h3>
-              <p class="karthik-p" style="margin-top: 0;">Services</p>
-          </div>
-        </div>
-
-        <div class="karthik-header__actions" style="gap: 12px;">
-          <div class="stat-box">
-              <div style="background-color: var(--karthik-neutral-800); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
-              <p class="karthik-p" style="margin-top: 0;">Paid Work</p>
-          </div>
-          <div class="stat-box">
-              <div style="background-color: var(--karthik-green-600); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
-              <p class="karthik-p" style="margin-top: 0;">Academic</p>
-          </div>
-          <div class="stat-box">
-              <div style="background-color: var(--karthik-sienna-800); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
-              <p class="karthik-p" style="margin-top: 0;">Pro Bono</p>
-          </div><!--
-          <div class="stat-box">
-              <div style="background-color: var(--karthik-green-800); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
-              <p class="karthik-p" style="margin-top: 0;">Articles</p>
-          </div>-->
-        </div>
-
-      </div>
-
-    </div>
-
-<style>
-  @media (max-width: 768px) {
-    .editorial-grid { grid-template-columns: 1fr !important; }
-  }
-  .editorial-grid { grid-template-columns: repeat(2, 1fr) !important; }
-  .editorial-card:hover .editorial-image { transform: scale(1.05); }
-  .editorial-card:hover .editorial-title { text-decoration: underline; }
-</style>
-
-    <div style="gap: 20px; max-width: 1440px; margin: 0 auto; padding: 48px 4px;" class="editorial-section">
-
-      <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
-        Featured Projects
-      </h5>
+    <div style="gap: 20px; max-width: 1440px; margin: 0 auto; padding: 0px 4px 48px;" class="editorial-section">
 
       <div style="display: grid; grid-template-columns: 1fr; gap: 24px;" class="editorial-grid">
 
@@ -346,9 +276,57 @@
 
     </div>
 
-    <p class="karthik-p" style="margin-top: 40px;">
-      Explore all of my projects and case studies below:
-    </p>
+  </div>
+
+  </section>
+
+    <section class="karthik-text-section" style="background-color: var(--karthik-bg-elevated);" id="all">
+
+  <div class="karthik-text-section__inner" style="max-width: 1440px;">
+
+    <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
+      All Projects
+    </h5>
+
+    <div class="karthik-two-column-home">
+
+      <div>
+        
+        <p class="karthik-p" style="color: var(--karthik-neutral-800);">
+          Each project here shows how I collaborate across UX research, strategy, and design (and front end development/web production)
+          as a UX/Product designer to deliver adoption, engagement, and business results through data-informed design.
+        </p>
+
+        <p class="karthik-p" style="color: var(--karthik-neutral-600);">
+          Explore all of my projects and case studies below.
+        </p>
+
+      </div>
+
+      <div>
+
+        <div class="karthik-header__actions" style="gap: 12px;">
+          <div class="stat-box">
+              <div style="background-color: var(--karthik-neutral-800); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
+              <p class="karthik-p" style="margin-top: 0;">Case Studies</p>
+          </div>
+          <div class="stat-box">
+              <div style="background-color: var(--karthik-green-600); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
+              <p class="karthik-p" style="margin-top: 0;">Slides</p>
+          </div>
+          <div class="stat-box">
+              <div style="background-color: var(--karthik-sienna-800); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
+              <p class="karthik-p" style="margin-top: 0;">Live Links</p>
+          </div><!--
+          <div class="stat-box">
+              <div style="background-color: var(--karthik-green-800); width: 80.8px; height: 70.8px; margin-bottom: 10px;"></div>
+              <p class="karthik-p" style="margin-top: 0;">Articles</p>
+          </div>-->
+        </div>
+
+      </div>
+
+    </div>
 
     <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
 
@@ -372,9 +350,9 @@
             <div class="karthik-ap-item-content">
                 <div class="karthik-ap-item-left">
                     <span style="color: var(--karthik-neutral-800);">
-                        VISIT
+                        AT COPYWRITING CREATIVES
                     </span>
-                    <h5 style="color: var(--karthik-neutral-800);">
+                    <h5 style="color: var(--karthik-sienna-800);">
                        Streamlined a bilingual nonprofit organization's digital management operations by implementing a UX-friendly website.
                     </h5>
                 </div>
@@ -389,7 +367,7 @@
             <div class="karthik-ap-item-content">
                 <div class="karthik-ap-item-left">
                     <span style="color: var(--karthik-neutral-800);">
-                        WORK
+                        FOR ECE AT U OF T
                     </span>
                     <h5 style="color: var(--karthik-neutral-800);">
                         Rebuilt the digital user journey and developed multiple key pages for the ECE Department, University of Toronto.
@@ -406,7 +384,7 @@
             <div class="karthik-ap-item-content">
                 <div class="karthik-ap-item-left">
                     <span style="color: var(--karthik-neutral-800);">
-                        SLIDES
+                        ACADEMIC COURSEWORK
                     </span>
                     <h5 style="color: var(--karthik-green-600);">
                         Research-Led Product Strategy for an AI-powered Music Transcription tool through assessment of product risks & adoption barriers.
@@ -423,9 +401,9 @@
             <div class="karthik-ap-item-content">
                 <div class="karthik-ap-item-left">
                     <span style="color: var(--karthik-neutral-800);">
-                        WORK
+                        ON CONTRACT
                     </span>
-                    <h5 style="color: var(--karthik-sienna-800);">
+                    <h5 style="color: var(--karthik-neutral-800);">
                         Accelerating Fix It In Post Studios' AI Adoption with a Research-Driven Framework.
                     </h5>
                 </div>
@@ -440,7 +418,7 @@
             <div class="karthik-ap-item-content">
                 <div class="karthik-ap-item-left">
                     <span style="color: var(--karthik-neutral-800);">
-                        SLIDES
+                        CO-OP @ CATERPILLAR
                     </span>
                     <h5 style="color: var(--karthik-green-600);">
                         Generating actionable insights for Product Design: Construction Management Tool.
@@ -456,35 +434,61 @@
     </div>
     
 
-    <div class="karthik-popout-card-outer" style="margin-top: 24px;">
-        <div class="karthik-popout-eyebrow">
-          <div class="karthik-popout-eyebrow-left">
-            <p style="text-transform: uppercase; font-size: var(--karthik-text-p-sm2); color: var(--karthik-neutral-600); letter-spacing: 0.06em;">View a Website, Not a Figma Prototype</p>
-          </div>
-          <p class="karthik-popout-eyebrow-right" style="font-size: var(--karthik-text-p-sm2); color: var(--karthik-neutral-600);">
-            UI Design Index
-          </p>
-        </div>
-        <div class="karthik-popout-message-bubble">
-          <p class="karthik-popout-message-body">
-            Designers share Figma Links, Karthik steps beyond and builds: 
-            I have an index of UI design and redesign concepts – not figma prototype links but real browser-based pages – created with tailwind and JS.
-          </p>
-          <div style="margin: 0 auto; gap: 20px; display: flex;">
-            <a href="https://jkarthikarav.github.io/ui/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              class="karthik-btn karthik-btn--primary"
-              style="width: fit-content; justify-content: center;"
-            >
-              Explore the UI Design Index
-            </a>
-          </div>
-        </div>
-    </div>
+    
     
   </div>
 
+</section>
+
+<section class="karthik-two-column-home-intro" style="background-color: var(--karthik-bg-page);">
+  <div class="karthik-text-section__inner">
+    <div class="karthik-two-column-home">
+
+      <div>
+        
+        <p class="karthik-p ktchitx-intro" style="color: var(--karthik-neutral-800);">
+          Designers often share Figma prototypes, and they're invaluable for exploring interactions, validating ideas, and refining specific parts of an experience. 
+          But when we shift to a website or a mobile-first product, stakeholders often want to experience it where their users will.
+        </p>
+
+        <p class="karthik-p" style="color: var(--karthik-neutral-600);">
+          Instead of viewing a desktop frame or phone mockup inside Figma's viewer, they prefer opening the experience in their own browser, 
+          resizing the window, switching between devices, clicking through pages, and interacting with it naturally. 
+          It feels less like reviewing a prototype and more like experiencing the product itself.
+        </p>
+
+      </div>
+
+      <div class="karthik-popout-card-outer" style="margin-top: 24px;">
+          <div class="karthik-popout-eyebrow">
+            <div class="karthik-popout-eyebrow-left">
+              <p style="text-transform: uppercase; font-size: var(--karthik-text-p-sm2); color: var(--karthik-neutral-600); letter-spacing: 0.06em;">View a Website, Not a Figma Prototype</p>
+            </div>
+            <p class="karthik-popout-eyebrow-right" style="font-size: var(--karthik-text-p-sm2); color: var(--karthik-neutral-600);">
+              UI Design Index
+            </p>
+          </div>
+          <div class="karthik-popout-message-bubble">
+            <p class="karthik-popout-message-body">
+              To complement my project work, I maintain a collection of UI design and redesign concepts presented as browser-based pages rather than Figma prototypes. 
+              My goal is simple: let people evaluate a website as a website; using their own browser on their own device, without the extra layer of a design tool.
+            </p>
+            <div style="margin: 0 auto; gap: 20px; display: flex;">
+              <a href="https://jkarthikarav.github.io/ui/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="karthik-btn karthik-btn--primary"
+                style="width: fit-content; justify-content: center;"
+              >
+                Explore the UI Design Index
+              </a>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <section class="testimonials" id="testimonials">

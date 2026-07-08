@@ -492,6 +492,10 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     .karthik-two-column-home {
       flex-direction: column;
     }
+
+    .karthik-two-column-home > div:first-of-type {
+      max-width: 100%;
+    }
     
     .sizer {
       max-width: 100%;
@@ -1148,9 +1152,9 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 }
 
 .karthik-ap-marquee-container {
-    max-width: 1440px;
+    max-width: 768px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
     position: relative;
 }
@@ -2112,4 +2116,58 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
       box-sizing: border-box; 
       height: 100%; 
       overflow-y: auto;
+    }
+
+    .karthik-two-column-home-intro {
+      background-color: var(--karthik-bg-elevated);
+    }
+
+    .karthik-two-column-home-intro-list-colm {
+      border-left: 1px solid var(--karthik-border-subtle);
+    }
+
+    .karthik-two-column-home-intro > .karthik-text-section__inner {
+      max-width: 1440px;
+      padding-top: 90px;
+    }
+
+    .karthik-two-column-home-intro-text-colm {
+      display: flex; flex-direction: column;
+    }
+
+    .karthik-two-column-home-intro-list-colm {
+      padding-left: 40px;
+            padding-bottom: 24px;
+
+    }
+
+    @media (max-width: 768px) {
+    .editorial-grid { grid-template-columns: 1fr !important; }
+  }
+  .editorial-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .editorial-card:hover .editorial-image { transform: scale(1.05); }
+  .editorial-card:hover .editorial-title { text-decoration: underline; }
+
+    .ktchitx-intro {
+    font-size: var(--karthik-text-p-lg); margin-top: 24px; margin-bottom: 24px; color: var(--karthik-text-primary);
+    }
+
+    .karthik-two-column-home-intro-list-items {
+      display: flex; flex-direction: column; gap: 0px; margin-top: 0; margin-bottom: 12px;
+    }
+
+    .karthik-two-column-home-intro-list-items > .karthik-tnfc-title {
+      font-size: small; color: var(--karthik-sienna-400);
+      margin-bottom: 0; margin-top: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .karthik-two-column-home-intro-wrapper {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .karthik-two-column-home-intro-list-colm {
+        border-left: none;
+        padding-left: 0;
+      }
     }
