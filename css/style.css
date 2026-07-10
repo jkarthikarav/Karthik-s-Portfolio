@@ -2,9 +2,9 @@
 
   /* --- Primitives: Green --- */
   --karthik-green-50:          #eaf4e8;
-  --karthik-green-100:         hsl(116, 29%, 80%);
-  --karthik-green-200:         hsl(115, 34%, 45%);
-  --karthik-green-400:         hsl(114, 39%, 35%); 
+  --karthik-green-100:         #bfdbbd;
+  --karthik-green-200:         #529a4c;
+  --karthik-green-400:         #3d7c36; 
   --karthik-green-600:         #2c5828;
   --karthik-green-800:         #1e3d1c;
 
@@ -31,21 +31,14 @@
   --karthik-neutral-900:       #1c1c19;
 
   /* --- Backgrounds --- */
-  --karthik-bg-page:           var(--karthik-neutral-50);
-  --karthik-bg-surface:        var(--karthik-neutral-100);
+  --karthik-bg-page:           #f7f4ee;
   --karthik-bg-elevated:       #ffffff;
-  --karthik-bg-page-dark:      rgb(5, 5, 5);
-  --karthik-bg-surface-dark:   var(--karthik-neutral-800);
+  --karthik-bg-page-dark:      #050505;
   --karthik-bg-elevated-dark:  #343430;
-  --karthik-bg-brand-tint:     var(--karthik-green-50);
-  --karthik-bg-sienna-tint:    var(--karthik-sienna-50);
-  --karthik-bg-saffron-tint:   var(--karthik-saffron-50);
 
   /* --- Text --- */
   --karthik-text-primary:      #0d0d0b;
-  --karthik-text-secondary:    var(--karthik-neutral-600);
-  --karthik-text-muted:        var(--karthik-neutral-400);
-  --karthik-text-on-dark:      var(--karthik-neutral-50);
+  --karthik-text-on-dark:      #f7f4ee;
   --karthik-text-brand:        var(--karthik-green-600);
   --karthik-text-brand-dark:   var(--karthik-green-800);
   --karthik-text-sienna:       var(--karthik-sienna-600);
@@ -63,9 +56,9 @@
   --karthik-heading-color-brand:  var(--karthik-text-brand);
   --karthik-heading-color-dark:   var(--karthik-text-on-dark);
   --karthik-body-color:           var(--karthik-text-primary);
-  --karthik-body-color-secondary: var(--karthik-text-secondary);
+  --karthik-body-color-secondary: var(--karthik-neutral-600);
   --karthik-body-color-dark:      var(--karthik-text-on-dark);
-  --karthik-caption-color:        var(--karthik-text-muted);
+  --karthik-caption-color:        var(--karthik-neutral-400);
 
   /* --- Links --- */
   --karthik-link:              var(--karthik-green-600);
@@ -138,8 +131,6 @@
       margin: 0;
       padding: 0;
     }
-
-
  
     body {
       font-family: 'League Spartan', sans-serif;
@@ -218,7 +209,7 @@
       font-weight: var(--karthik-weight-label);
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--karthik-text-muted);
+      color: var(--karthik-neutral-400);
       margin-bottom: 12px;
     }
 
@@ -226,7 +217,7 @@
       font-size: var(--karthik-text-p);
       font-weight: var(--karthik-weight-body);
       line-height: var(--karthik-leading-p);
-      color: var(--karthik-text-muted);
+      color: var(--karthik-neutral-400);
       margin-bottom: 36px;
     }
 
@@ -748,7 +739,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
 }
 
 .karthik-cs-process-card-body {
-  color: var(--karthik-text-secondary);
+  color: var(--karthik-neutral-600);
   margin: 0;
 }
 
@@ -1141,7 +1132,7 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
 
     .article-entry:hover {
-        background-color: var(--karthik-bg-surface);
+        background-color: var(--karthik-neutral-100);
     }
 
     .article-entry.no-hover:hover {
@@ -1297,12 +1288,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     
 .karthik-cs-hero-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 40px 64px;
-}
-
-.karthik-cs-hero-container-tnfc {
-  max-width: 968px;
   margin: 0 auto;
   padding: 40px 40px 64px;
 }
