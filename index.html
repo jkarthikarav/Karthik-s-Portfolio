@@ -1,488 +1,840 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Karthik Jambunathan | Portfolio</title>
+    <title>Karthik Jambunathan | Portfolio</title>
 
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
 
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
 
-</head>
-
-<body style="background-color: var(--karthik-bg-page);">
-
-<section style="display: flex; flex-direction: column; min-height: 100vh; border-bottom: 1px solid var(--karthik-border-subtle);">
-  
-  <header class="karthik-header-menu">
-  
-      <div class="karthik-text-section__inner-menu">
-
-        <div style="display: flex; gap: 40px; min-height: 42px; justify-content: center; align-items: center; margin-top: 20px;">
-          <a href="/" class="karthik-header__logo-link" aria-label="Karthik — home" style="margin-bottom: 0;">
-            <img src="/assets/logos/Karthik New Logo.png" alt="Karthik" class="karthik-header__logo"/>
-          </a>
-
-          <p style="font-size: var(--karthik-text-p-lg); margin-top: 12px;" id="greeting"></p>
-        </div>
-
-        <nav class="karthik-header__actions" aria-label="Primary actions" style="margin-top: 20px;">
-          <a href="/pages/about.html"
-            rel="noopener noreferrer" class="karthik-btn karthik-btn--ghost">
-            About Me
-          </a>
-          <a href="/pages/all-projects.html"
-            rel="noopener noreferrer" class="karthik-btn karthik-btn--ghost">
-            All Projects
-          </a>          
-          <a
-            href="https://jkarthikarav.github.io/ui/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="karthik-btn karthik-btn--ghost"
+  <body style="background-color: var(--karthik-bg-page)">
+    <section
+      style="
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        border-bottom: 1px solid var(--karthik-border-subtle);
+      "
+    >
+      <header class="karthik-header-menu">
+        <div class="karthik-text-section__inner-menu">
+          <div
+            style="
+              display: flex;
+              gap: 40px;
+              min-height: 42px;
+              justify-content: center;
+              align-items: center;
+              margin-top: 20px;
+            "
           >
-            UI Designs
-            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
-              <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/karthikjambunathan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="karthik-btn karthik-btn--ghost"
+            <a
+              href="/"
+              class="karthik-header__logo-link"
+              aria-label="Karthik — home"
+              style="margin-bottom: 0"
+            >
+              <img
+                src="/assets/logos/Karthik New Logo.png"
+                alt="Karthik"
+                class="karthik-header__logo"
+              />
+            </a>
+
+            <p
+              style="font-size: var(--karthik-text-p-lg); margin-top: 12px"
+              id="greeting"
+            ></p>
+          </div>
+
+          <nav
+            class="karthik-header__actions"
+            aria-label="Primary actions"
+            style="margin-top: 20px"
           >
-            LinkedIn
-            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
-              <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </nav>
-
-      </div>
-  
-  </header>
-
-  <section class="karthik-header" style="background-color: var(--karthik-bg-elevated);">
-  
-      <div class="karthik-text-section__inner" style="max-width: 1440px; display: flex; flex-direction: column;">
-        
-        <div class="karthik-header__intro">
-          <h2 class="karthik-header__name" style="color: var(--karthik-text-primary);">
-            I design what 
-            <span class="gradient-dark">moves business forward</span> 
-            and remains  
-            <span class="gradient-dark">reliable as you scale </span>
-          </h2>
-          <p class="karthik-header__tagline">
-            <span class="karthik-header__tagline-em" aria-hidden="true"></span>
-            <span class="karthik-header__tagline-text" style="color: var(--karthik-neutral-800);">The hard part is making it look simple.</span>
-          </p>
-
+            <a
+              href="/pages/about.html"
+              rel="noopener noreferrer"
+              class="karthik-btn karthik-btn--ghost"
+            >
+              About Me
+            </a>
+            <a
+              href="/pages/all-projects.html"
+              rel="noopener noreferrer"
+              class="karthik-btn karthik-btn--ghost"
+            >
+              All Projects
+            </a>
+            <a
+              href="https://jkarthikarav.github.io/ui/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="karthik-btn karthik-btn--ghost"
+            >
+              UI Designs
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+                style="opacity: 0.6"
+              >
+                <path
+                  d="M2 2h8v8M10 2 2 10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/karthikjambunathan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="karthik-btn karthik-btn--ghost"
+            >
+              LinkedIn
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+                style="opacity: 0.6"
+              >
+                <path
+                  d="M2 2h8v8M10 2 2 10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </nav>
         </div>
-        
-        <div class="karthik-header__intro">
+      </header>
 
-          <p class="karthik-p sizer" style="color: var(--karthik-text-primary);">
-            <span style="color: var(--karthik-green-800);">Product, strategy, growth, UX, and brand work </span>
-            from shipped product pages to strategic case studies from streamlining operations & growth.
-          </p>
+      <section
+        class="karthik-header"
+        style="background-color: var(--karthik-bg-elevated)"
+      >
+        <div
+          class="karthik-text-section__inner"
+          style="max-width: 1440px; display: flex; flex-direction: column"
+        >
+          <div class="karthik-header__intro">
+            <h2
+              class="karthik-header__name"
+              style="color: var(--karthik-text-primary)"
+            >
+              I design what
+              <span class="gradient-dark">moves business forward</span>
+              and remains
+              <span class="gradient-dark">reliable as you scale </span>
+            </h2>
+            <p class="karthik-header__tagline">
+              <span
+                class="karthik-header__tagline-em"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="karthik-header__tagline-text"
+                style="color: var(--karthik-neutral-800)"
+                >The hard part is making it look simple.</span
+              >
+            </p>
+          </div>
 
-        </div>
-    
-        <div class="karthik-header__status">
-          <span class="karthik-status-dot" aria-hidden="true"></span>
-          <span class="karthik-header__status-text" style="color: var(--karthik-neutral-800);">Open to Design/UX/Product roles &middot; Toronto, ON</span>
-        </div>
-    
-        <nav class="karthik-header__actions" aria-label="Primary actions" style="margin-bottom: 24px;">
-          <a href="#work" class="karthik-btn karthik-btn--primary" onclick="scrollToWork(event)">
-            Selected Works
-          </a>       
-        </nav>
+          <div class="karthik-header__intro">
+            <p
+              class="karthik-p sizer"
+              style="color: var(--karthik-text-primary)"
+            >
+              <span style="color: var(--karthik-green-800)"
+                >Product, strategy, growth, UX, and brand work
+              </span>
+              from shipped product pages to strategic case studies from
+              streamlining operations & growth.
+            </p>
+          </div>
 
-        <div class="karthik-header__status">
-          <span class="karthik-header__status-text" style="color: var(--karthik-neutral-800);">Trusted By</span>
-        </div>
+          <div class="karthik-header__status">
+            <span class="karthik-status-dot" aria-hidden="true"></span>
+            <span
+              class="karthik-header__status-text"
+              style="color: var(--karthik-neutral-800)"
+              >Open to Design/UX/Product roles &middot; Toronto, ON</span
+            >
+          </div>
 
-        <div class="karthik-ap-marquee-container">
-          <div class="karthik-ap-marquee-content">
+          <nav
+            class="karthik-header__actions"
+            aria-label="Primary actions"
+            style="margin-bottom: 24px"
+          >
+            <a
+              href="#work"
+              class="karthik-btn karthik-btn--primary"
+              onclick="scrollToWork(event)"
+            >
+              Selected Works
+            </a>
+          </nav>
 
+          <div class="karthik-header__status">
+            <span
+              class="karthik-header__status-text"
+              style="color: var(--karthik-neutral-800)"
+              >Trusted By</span
+            >
+          </div>
+
+          <div class="karthik-ap-marquee-container">
+            <div class="karthik-ap-marquee-content">
               <!-- Set 1 -->
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/FIIP.jpg" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/FIIP.jpg"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
-              <div class="karthik-ap-marquee-item" style="filter: saturate(1.5); filter: contrast(1.2);">
-                  <img src="/assets/logos/uoft-ece-logo.jpg" class="karthik-ap-marquee-img">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/sbc-logo.png" class="karthik-ap-marquee-img">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/ssyo-logo.png" class="karthik-ap-marquee-img">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/ccm.png" class="karthik-ap-marquee-img" style="width: 96px; height: 96px;">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/unicef-logo.jpg" class="karthik-ap-marquee-img" style="width: 84px; height: 84px;">
+              <div
+                class="karthik-ap-marquee-item"
+                style="filter: saturate(1.5); filter: contrast(1.2)"
+              >
+                <img
+                  src="/assets/logos/uoft-ece-logo.jpg"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/ventus.png" class="karthik-ap-marquee-img" style="width: fit-content;">
+                <img
+                  src="/assets/logos/sbc-logo.png"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/Sai Dham Logo.png" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/ssyo-logo.png"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/CAT.jpg" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/ccm.png"
+                  class="karthik-ap-marquee-img"
+                  style="width: 96px; height: 96px"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/IMG.jpg" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/unicef-logo.jpg"
+                  class="karthik-ap-marquee-img"
+                  style="width: 84px; height: 84px"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/HRFHT.png" class="karthik-ap-marquee-img" style="width: fit-content;">
+                <img
+                  src="/assets/logos/ventus.png"
+                  class="karthik-ap-marquee-img"
+                  style="width: fit-content"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/Sai Dham Logo.png"
+                  class="karthik-ap-marquee-img"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/CAT.jpg"
+                  class="karthik-ap-marquee-img"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/IMG.jpg"
+                  class="karthik-ap-marquee-img"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/HRFHT.png"
+                  class="karthik-ap-marquee-img"
+                  style="width: fit-content"
+                />
               </div>
 
               <!-- Set 2 (duplicate for seamless loop) -->
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/FIIP.jpg" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/FIIP.jpg"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
-              <div class="karthik-ap-marquee-item" style="filter: saturate(1.5); filter: contrast(1.2);">
-                  <img src="/assets/logos/uoft-ece-logo.jpg" class="karthik-ap-marquee-img">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/sbc-logo.png" class="karthik-ap-marquee-img">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/ssyo-logo.png" class="karthik-ap-marquee-img">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/ccm.png" class="karthik-ap-marquee-img" style="width: 96px; height: 96px;">
-              </div>
-              <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/unicef-logo.jpg" class="karthik-ap-marquee-img" style="width: 84px; height: 84px;">
+              <div
+                class="karthik-ap-marquee-item"
+                style="filter: saturate(1.5); filter: contrast(1.2)"
+              >
+                <img
+                  src="/assets/logos/uoft-ece-logo.jpg"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/ventus.png" class="karthik-ap-marquee-img" style="width: fit-content;">
+                <img
+                  src="/assets/logos/sbc-logo.png"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/Sai Dham Logo.png" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/ssyo-logo.png"
+                  class="karthik-ap-marquee-img"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/CAT.jpg" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/ccm.png"
+                  class="karthik-ap-marquee-img"
+                  style="width: 96px; height: 96px"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/IMG.jpg" class="karthik-ap-marquee-img">
+                <img
+                  src="/assets/logos/unicef-logo.jpg"
+                  class="karthik-ap-marquee-img"
+                  style="width: 84px; height: 84px"
+                />
               </div>
               <div class="karthik-ap-marquee-item">
-                  <img src="/assets/logos/HRFHT.png" class="karthik-ap-marquee-img" style="width: fit-content;">
+                <img
+                  src="/assets/logos/ventus.png"
+                  class="karthik-ap-marquee-img"
+                  style="width: fit-content"
+                />
               </div>
-
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/Sai Dham Logo.png"
+                  class="karthik-ap-marquee-img"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/CAT.jpg"
+                  class="karthik-ap-marquee-img"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/IMG.jpg"
+                  class="karthik-ap-marquee-img"
+                />
+              </div>
+              <div class="karthik-ap-marquee-item">
+                <img
+                  src="/assets/logos/HRFHT.png"
+                  class="karthik-ap-marquee-img"
+                  style="width: fit-content"
+                />
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </section>
 
-      </div>
-      
-  </section>
-        
-</section>
+    <section
+      class="karthik-two-column-home-intro"
+      style="border-top: 1px solid var(--karthik-border-subtle)"
+    >
+      <div class="karthik-text-section__inner">
+        <div class="karthik-two-column-home">
+          <div>
+            <p
+              class="karthik-p ktchitx-intro"
+              style="color: var(--karthik-neutral-800)"
+            >
+              I design and develop experiences that function as systems —
+              whether you're launching your products or reimagining your digital
+              presence.
+            </p>
 
-<section class="karthik-two-column-home-intro" style="border-top: 1px solid var(--karthik-border-subtle);">
-  <div class="karthik-text-section__inner">
-    <div class="karthik-two-column-home">
-
-      <div>
-        
-        <p class="karthik-p ktchitx-intro" style="color: var(--karthik-neutral-800);">
-          I design and develop experiences that function as systems — whether you're launching your products or reimagining your digital presence.
-        </p>
-
-        <p class="karthik-p" style="color: var(--karthik-neutral-600);">
-          An experience is more than polished screens, it is the backend systems, the front-end visuals, the architecture, and the product, on one shared digital environment.
-        </p>
-
-      </div>
-
-      <div class="karthik-two-column-home-intro-list-colm" style="display: flex; flex-direction: column;">
-        <p class="karthik-p" style="margin-top: 24px; margin-bottom: 0;">What's on this page</p>
-        <div class="karthik-two-column-home-intro-list-items">
-            <h5 class="karthik-tnfc-title">01&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">Selected Works</span></h5>
-            <h5 class="karthik-tnfc-title">02&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">All Projects</span></h5>
-            <h5 class="karthik-tnfc-title">03&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">What people say</span></h5>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="work" class="karthik-text-section">
-
-  <div class="karthik-text-section__inner" style="max-width: 1440px;">
-
-    <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
-      Selected Works
-    </h5>
-
-    <div style="gap: 20px; max-width: 1440px; margin: 0 auto; padding: 0px 4px 48px;" class="editorial-section">
-
-      <div style="display: grid; grid-template-columns: 1fr; gap: 24px;" class="editorial-grid">
-
-        <!-- Card 1 -->
-        <div style="cursor: pointer;" class="editorial-card">
-          <div style="position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; margin-bottom: 16px;">
-            <div class="editorial-image"
-                style="background-image: 
-                url('/assets/images/TNFC.webp'); 
-                background-size: cover; background-position: center; width: 100%; height: 100%; transition: transform 0.5s ease;"></div>
+            <p class="karthik-p" style="color: var(--karthik-neutral-600)">
+              An experience is more than polished screens, it is the backend
+              systems, the front-end visuals, the architecture, and the product,
+              on one shared digital environment.
+            </p>
           </div>
-            <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px;">UI/UX · Front-End Dev · 2024–25</p>
-            <h6 class="karthik-featured-heading-alt" style="margin-top: 8px;">
-              How I Rebuilt a Standalone Website into a Department-Hosted Content Hub: ECE at U of T's Toronto Nanofabrication Centre (TNFC).</h6>
-            <p class="karthik-p">
-              Despite being located inside the ECE department, TNFC, one of U of T's research labs, had its own infrastructure, 
-              and no connection to ECE's brand or navigation. 
-              I consolidated this multi-page site into a two-page section native to ECE's digital environment.
-            </p>
-            <p class="karthik-p" style="font-style: italic;">
-              Metrics available on request.
-            </p>
-            <a class="karthik-btn karthik-btn--primary" href="/pages/projects/ece-tnfc.html" style="max-width: fit-content;">Explore Solution</a>
-        </div>
 
-        <!-- Card 2 -->
-        <div style="cursor: pointer;" class="editorial-card">
-          <div style="position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; margin-bottom: 16px;">
-            <div class="editorial-image"
-                style="background-image: 
-                url('/assets/images/dtsd.webp'); 
-                background-size: cover; background-position: center; width: 100%; height: 100%; transition: transform 0.5s ease;"></div>
+          <div
+            class="karthik-two-column-home-intro-list-colm"
+            style="display: flex; flex-direction: column"
+          >
+            <p class="karthik-p" style="margin-top: 24px; margin-bottom: 0">
+              What's on this page
+            </p>
+            <div class="karthik-two-column-home-intro-list-items">
+              <h5 class="karthik-tnfc-title">
+                01&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight"
+                  >Selected Works</span
+                >
+              </h5>
+              <h5 class="karthik-tnfc-title">
+                02&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight"
+                  >All Projects</span
+                >
+              </h5>
+              <h5 class="karthik-tnfc-title">
+                03&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight"
+                  >What people say</span
+                >
+              </h5>
+            </div>
           </div>
-            <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px;">Service Design · 2023</p>
-            <h6 class="karthik-featured-heading-alt" style="margin-top: 8px;">
-              How I Implemented an AI-Assisted service offering for Fix It In Post Studios.</h6>
-            <p class="karthik-p">
-              While I worked on an AI Adoption framework for the studio, they were approached for a project that could benefit from AI tool usage. 
-              I designed and implemented the systems to enable the AI-assisted workflow I created.
-            </p>
-            <p class="karthik-p" style="font-style: italic;">
-              30–40% Revenue growth · 2 Weeks Reduction in production timelines.
-            </p>
-            <a class="karthik-btn karthik-btn--primary" href="/pages/projects/service-design.html" style="max-width: fit-content;">Explore Solution</a>
         </div>
-
       </div>
+    </section>
 
-    </div>
+    <section id="work" class="karthik-text-section">
+      <div class="karthik-text-section__inner" style="max-width: 1440px">
+        <h5
+          style="
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--karthik-green-600);
+            padding-bottom: 16px;
+            color: var(--karthik-green-600);
+          "
+        >
+          Selected Works
+        </h5>
 
-  </div>
-
-</section>
-
-<section class="karthik-two-column-home-intro" style="background-color: var(--karthik-bg-elevated);">
-  <div class="karthik-text-section__inner">
-        
-    <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
-      All Projects
-    </h5>
-
-    <p class="karthik-p ktchitx-intro" style="color: var(--karthik-neutral-800);">
-      Each project here shows how I collaborate across UX research, strategy, and design (and front end development/web production)
-      as a UX/Product designer to deliver adoption, engagement, and business results through data-informed design.
-    </p>
-
-    <div style="margin: 0 auto; gap: 20px; display: flex;">
-      <a href="/pages/all-projects.html" 
-        target="_blank"
-        rel="noopener noreferrer"
-        class="karthik-btn karthik-btn--primary"
-        style="justify-content: center;"
-      >
-        View All Projects
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="karthik-two-column-home-intro" style="background-color: var(--karthik-bg-page);">
-  <div class="karthik-text-section__inner">
-    <div class="karthik-two-column-home">
-
-      <div>
-
-        <p class="karthik-p" style="color: var(--karthik-neutral-600);">Latest UX/UI Work</p>
-
-        <h6 class="karthik-featured-heading-alt ktchitx-intro" style="color: var(--karthik-neutral-800);">
-          Website for a Bilingual Nonprofit based in Quebec, Canada.
-        </h6>
-
-        <p class="karthik-p" style="color: var(--karthik-neutral-600);">
-          Through Copywriting Creatives
-        </p>
-
-        <a class="karthik-btn karthik-btn--primary" href="https://southshoreyouth.org/" style="max-width: fit-content;" target="_blank">Visit Live Website</a>
-
-      </div>
-
-      <div class="karthik-two-column-home-intro-list-colm" style="display: flex; flex-direction: column; max-width: 50%; padding-top: 12px;">
-        
-        <img src="/assets/images/ssyo-banner-main.webp" style="background-size: cover; background-position: center; width: 100%; height: 100%;">
-
-      </div>
-      
-      
-    </div>
-
-  </div>
-</section>
-
-<section class="karthik-two-column-home-intro" style="background-color: var(--karthik-bg-elevated);">
-  <div class="karthik-text-section__inner">
-    <div class="karthik-two-column-home">
-
-      <div style="position: relative; min-width: 40%;">
-
-        <p class="karthik-p" style="color: var(--karthik-neutral-600);">Testimonials</p>
-
-        <h6 class="karthik-featured-heading-alt ktchitx-intro" style="color: var(--karthik-neutral-800);">
-          What People Say about Me
-        </h6>
-
-        <div>
-          <svg class="quote-svg" xmlns="http://www.w3.org/2000/svg" 
-          width="100" height="100" viewBox="0 0 24 24" fill="var(--karthik-neutral-900)">
-          <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
-          </svg>
-        </div>
-
-      </div>
-
-      <div class="karthik-two-column-home-intro-list-colm" style="display: flex; padding-top: 12px; border: none;">
-        
-        <div>
-
-            <div class="karthik-cs-process-card" style="margin: 20px auto 0;">
-                <span class="karthik-cs-process-card-number" style="font-size: smaller;">Hear From a Colleague</span>
-
-                <h5 class="karthik-cs-process-card-title">
-                "Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare leader in design and implementation work! 
-                He came in as a knight in shining armor making the impossible, possible."
-                </h5>
-
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                <p class="karthik-p" style="font-style: italic; margin-bottom: 0;">Kyle Thomas</p>
-                <p class="karthik-p" style="font-style: italic; margin-bottom: 0;">
-                    on working together at Copywriting Creatives
-                </p>
-                </div>
-
+        <div
+          style="
+            gap: 20px;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0px 4px 48px;
+          "
+          class="editorial-section"
+        >
+          <div
+            style="display: grid; grid-template-columns: 1fr; gap: 24px"
+            class="editorial-grid"
+          >
+            <!-- Card 1 -->
+            <div style="cursor: pointer" class="editorial-card">
+              <div
+                style="
+                  position: relative;
+                  aspect-ratio: 16 / 9;
+                  overflow: hidden;
+                  border-radius: 8px;
+                  margin-bottom: 16px;
+                "
+              >
+                <div
+                  class="editorial-image"
+                  style="
+                    background-image: url(&quot;/assets/images/TNFC.webp&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.5s ease;
+                  "
+                ></div>
+              </div>
+              <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px">
+                UI/UX · Front-End Dev · 2024–25
+              </p>
+              <h6 class="karthik-featured-heading-alt" style="margin-top: 8px">
+                How I Rebuilt a Standalone Website into a Department-Hosted
+                Content Hub: ECE at U of T's Toronto Nanofabrication Centre
+                (TNFC).
+              </h6>
+              <p class="karthik-p">
+                Despite being located inside the ECE department, TNFC, one of U
+                of T's research labs, had its own infrastructure, and no
+                connection to ECE's brand or navigation. I consolidated this
+                multi-page site into a two-page section native to ECE's digital
+                environment.
+              </p>
+              <p class="karthik-p" style="font-style: italic">
+                Metrics available on request.
+              </p>
+              <a
+                class="karthik-btn karthik-btn--primary"
+                href="/pages/projects/ece-tnfc.html"
+                style="max-width: fit-content"
+                >Explore Solution</a
+              >
             </div>
 
+            <!-- Card 2 -->
+            <div style="cursor: pointer" class="editorial-card">
+              <div
+                style="
+                  position: relative;
+                  aspect-ratio: 16 / 9;
+                  overflow: hidden;
+                  border-radius: 8px;
+                  margin-bottom: 16px;
+                "
+              >
+                <div
+                  class="editorial-image"
+                  style="
+                    background-image: url(&quot;/assets/images/dtsd.webp&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.5s ease;
+                  "
+                ></div>
+              </div>
+              <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px">
+                Service Design · 2023
+              </p>
+              <h6 class="karthik-featured-heading-alt" style="margin-top: 8px">
+                How I Implemented an AI-Assisted service offering for Fix It In
+                Post Studios.
+              </h6>
+              <p class="karthik-p">
+                While I worked on an AI Adoption framework for the studio, they
+                were approached for a project that could benefit from AI tool
+                usage. I designed and implemented the systems to enable the
+                AI-assisted workflow I created.
+              </p>
+              <p class="karthik-p" style="font-style: italic">
+                30–40% Revenue growth · 2 Weeks Reduction in production
+                timelines.
+              </p>
+              <a
+                class="karthik-btn karthik-btn--primary"
+                href="/pages/projects/service-design.html"
+                style="max-width: fit-content"
+                >Explore Solution</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="karthik-two-column-home-intro"
+      style="background-color: var(--karthik-bg-elevated)"
+    >
+      <div class="karthik-text-section__inner">
+        <h5
+          style="
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--karthik-green-600);
+            padding-bottom: 16px;
+            color: var(--karthik-green-600);
+          "
+        >
+          All Projects
+        </h5>
+
+        <p
+          class="karthik-p ktchitx-intro"
+          style="color: var(--karthik-neutral-800)"
+        >
+          Each project here shows how I collaborate across UX research,
+          strategy, and design (and front end development/web production) as a
+          UX/Product designer to deliver adoption, engagement, and business
+          results through data-informed design.
+        </p>
+
+        <div style="margin: 0 auto; gap: 20px; display: flex">
+          <a
+            href="/pages/all-projects.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="karthik-btn karthik-btn--primary"
+            style="justify-content: center"
+          >
+            View All Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="karthik-two-column-home-intro"
+      style="background-color: var(--karthik-bg-page)"
+    >
+      <div class="karthik-text-section__inner">
+        <div class="karthik-two-column-home">
+          <div>
+            <p class="karthik-p" style="color: var(--karthik-neutral-600)">
+              Latest UX/UI Work
+            </p>
+
+            <h6
+              class="karthik-featured-heading-alt ktchitx-intro"
+              style="color: var(--karthik-neutral-800)"
+            >
+              Website for a Bilingual Nonprofit based in Quebec, Canada.
+            </h6>
+
+            <p class="karthik-p" style="color: var(--karthik-neutral-600)">
+              Through Copywriting Creatives
+            </p>
+
+            <a
+              class="karthik-btn karthik-btn--primary"
+              href="https://southshoreyouth.org/"
+              style="max-width: fit-content"
+              target="_blank"
+              >Visit Live Website</a
+            >
+          </div>
+
+          <div
+            class="karthik-two-column-home-intro-list-colm"
+            style="
+              display: flex;
+              flex-direction: column;
+              max-width: 50%;
+              padding-top: 12px;
+            "
+          >
+            <img
+              src="/assets/images/ssyo-banner-main.webp"
+              style="
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="karthik-two-column-home-intro"
+      style="background-color: var(--karthik-bg-elevated)"
+    >
+      <div class="karthik-text-section__inner">
+        <div class="karthik-two-column-home">
+          <div style="position: relative; min-width: 40%">
+            <p class="karthik-p" style="color: var(--karthik-neutral-600)">
+              Testimonials
+            </p>
+
+            <h6
+              class="karthik-featured-heading-alt ktchitx-intro"
+              style="color: var(--karthik-neutral-800)"
+            >
+              What People Say about Me
+            </h6>
+
+            <div>
+              <svg
+                class="quote-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="var(--karthik-neutral-900)"
+              >
+                <path
+                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="karthik-two-column-home-intro-list-colm"
+            style="display: flex; padding-top: 12px; border: none"
+          >
+            <div>
+              <div class="karthik-cs-process-card" style="margin: 20px auto 0">
+                <span
+                  class="karthik-cs-process-card-number"
+                  style="font-size: smaller"
+                  >Hear From a Colleague</span
+                >
+
+                <h5 class="karthik-cs-process-card-title">
+                  "Karthik's ability to grasp and align client requirements with
+                  solutions are unmatched and makes him a rare leader in design
+                  and implementation work! He came in as a knight in shining
+                  armor making the impossible, possible."
+                </h5>
+
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <p
+                    class="karthik-p"
+                    style="font-style: italic; margin-bottom: 0"
+                  >
+                    Kyle Thomas
+                  </p>
+                  <p
+                    class="karthik-p"
+                    style="font-style: italic; margin-bottom: 0"
+                  >
+                    on working together at Copywriting Creatives
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="karthik-header">
+      <div class="karthik-text-section__inner" style="max-width: 1440px">
+        <div class="karthik-header__intro">
+          <h2 class="karthik-header__name">
+            I'm in the
+            <span class="gradient">people business</span><br />
+            so get in touch,
+            <span class="gradient">I'd love to talk</span>
+          </h2>
+          <p class="karthik-header__tagline">
+            <span class="karthik-header__tagline-em" aria-hidden="true"></span>
+            <span class="karthik-header__tagline-text"
+              >Karthik Jambunathan.</span
+            >
+          </p>
         </div>
 
+        <div class="karthik-header__status">
+          <span class="karthik-status-dot" aria-hidden="true"></span>
+          <span class="karthik-header__status-text"
+            >Open to Design/UX/Product roles &middot; Toronto, ON</span
+          >
+        </div>
+
+        <nav class="karthik-header__actions" aria-label="Primary actions">
+          <a
+            class="karthik-btn karthik-btn--primary"
+            href="mailto:karthikaravindj@gmail.com"
+          >
+            Email Me
+          </a>
+          <a
+            href="https://linkedin.com/build-relation/newsletter-follow?entityUrn=7393569508403294208"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="karthik-btn karthik-btn--ghost"
+          >
+            Subscribe to Newsletter
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 12 12"
+              fill="none"
+              aria-hidden="true"
+              style="opacity: 0.6"
+            >
+              <path
+                d="M2 2h8v8M10 2 2 10"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </nav>
       </div>
-      
-      
-    </div>
+    </section>
 
-  </div>
-</section>
-
-<section class="karthik-header">
-
-  <div class="karthik-text-section__inner" style="max-width: 1440px;">
-    
-    <div class="karthik-header__intro">
-      <h2 class="karthik-header__name">
-        I'm in the
-        <span class="gradient">people business</span><br> 
-        so get in touch, 
-        <span class="gradient">I'd love to talk</span>
-      </h2>
-      <p class="karthik-header__tagline">
-        <span class="karthik-header__tagline-em" aria-hidden="true"></span>
-        <span class="karthik-header__tagline-text">Karthik Jambunathan.</span>
-      </p>
-    </div>
-  
-    <div class="karthik-header__status">
-      <span class="karthik-status-dot" aria-hidden="true"></span>
-      <span class="karthik-header__status-text">Open to Design/UX/Product roles &middot; Toronto, ON</span>
-    </div>
-
-    <nav class="karthik-header__actions" aria-label="Primary actions">
-      <a class="karthik-btn karthik-btn--primary" href="mailto:karthikaravindj@gmail.com">
-        Email Me
-      </a>
-      <a
-        href="https://linkedin.com/build-relation/newsletter-follow?entityUrn=7393569508403294208"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="karthik-btn karthik-btn--ghost"
-      >
-        Subscribe to Newsletter
-        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity:0.6">
-          <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </nav>
-  </div>
-
-</section>
-
-<section class="karthik-footer">
-    <div class="karthik-footer-inner">
+    <section class="karthik-footer">
+      <div class="karthik-footer-inner">
         <p>Developed by Karthik</p>
         <p>Based in Ontario, Canada</p>
-        <a class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</a>
-    </div>
-</section>
+        <a
+          class="karthik-btn karthik-btn--outline"
+          onclick="scrollToTop()"
+          aria-label="Scroll to Top"
+          >Scroll to Top</a
+        >
+      </div>
+    </section>
 
-<script>
-const greetings = ["Hello, I'm Karthik", "Ciao, sono Karthi", "Hola, soy Kartik", "Привет я Картйк", "Bonjour, Appelez-moi Kartik"];
-let currentGreetingIndex = 0;
-const greetingElement = document.getElementById("greeting");
+    <script>
+      const greetings = [
+        "Hello, I'm Karthik",
+        "Ciao, sono Karthi",
+        "Hola, soy Kartik",
+        "Привет я Картйк",
+        "Bonjour, Appelez-moi Kartik",
+      ];
+      let currentGreetingIndex = 0;
+      const greetingElement = document.getElementById("greeting");
 
-function scrambleText(targetElement, newText) {
-const characters =
-    // Latin letters (neighbors for H,e,l,o,C,i,a,B,j,n)
-    'FGHIJcde=Afgckzlm"nop,qrsab' +
-
-    // Cyrillic letters from "привіт" with visually similar characters
-    'пнтЭряждииоевфбіиїтпд';
+      function scrambleText(targetElement, newText) {
+        const characters =
+          // Latin letters (neighbors for H,e,l,o,C,i,a,B,j,n)
+          'FGHIJcde=Afgckzlm"nop,qrsab' +
+          // Cyrillic letters from "привіт" with visually similar characters
+          "пнтЭряждииоевфбіиїтпд";
 
         let scrambleInterval = 50; // Speed of scrambling
         let totalScrambleTime = 1000; // Total time for scrambling before settling
         let currentText = targetElement.textContent;
         let scramble = setInterval(() => {
-            let scrambledText = '';
-            for (let i = 0; i < newText.length; i++) {
+          let scrambledText = "";
+          for (let i = 0; i < newText.length; i++) {
             if (Math.random() > 0.5) {
-                scrambledText += characters.charAt(Math.floor(Math.random() * characters.length));
+              scrambledText += characters.charAt(
+                Math.floor(Math.random() * characters.length),
+              );
             } else {
-                scrambledText += currentText[i] || '';
+              scrambledText += currentText[i] || "";
             }
-            }
-            targetElement.textContent = scrambledText;
+          }
+          targetElement.textContent = scrambledText;
         }, scrambleInterval);
 
         // After the scramble time, set the text to the final greeting
         setTimeout(() => {
-            clearInterval(scramble);
-            targetElement.textContent = newText;
+          clearInterval(scramble);
+          targetElement.textContent = newText;
         }, totalScrambleTime);
-        }
+      }
 
-    function changeGreeting() {
+      function changeGreeting() {
         let newIndex;
         do {
-            // Pick a random index
-            newIndex = Math.floor(Math.random() * greetings.length);
+          // Pick a random index
+          newIndex = Math.floor(Math.random() * greetings.length);
         } while (newIndex === currentGreetingIndex); // ensure it's not the same as the current greeting
 
         const newGreeting = greetings[newIndex];
@@ -490,116 +842,116 @@ const characters =
 
         // Update the current greeting index
         currentGreetingIndex = newIndex;
-    }
+      }
 
-    // Change the greeting every 4 seconds (time for scramble effect)
-    setInterval(changeGreeting, 4000);
-    
-    // Initial call to start the scrambling
-    changeGreeting();
-</script>
+      // Change the greeting every 4 seconds (time for scramble effect)
+      setInterval(changeGreeting, 4000);
 
-<script>
-function scrollToWork(e) {
-e.preventDefault();
-document.getElementById('work')?.scrollIntoView({
-behavior: 'smooth'
-});
-}
-</script>
+      // Initial call to start the scrambling
+      changeGreeting();
+    </script>
 
-<script>
-  function scrollToTop() {
-      window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-      });
-  }
-</script>
-
-<script>
-const karthikApMarquee = document.querySelector('.karthik-ap-marquee-content');
-if (karthikApMarquee) {
-karthikApMarquee.addEventListener('mouseenter', () => {
-    karthikApMarquee.style.animationPlayState = 'paused';
-});
-karthikApMarquee.addEventListener('mouseleave', () => {
-    karthikApMarquee.style.animationPlayState = 'running';
-});
-}
-</script>
-
-<script>
-    (function () {
-        const follower = document.getElementById('karthik-ap-follower');
-        const items = document.querySelectorAll('.karthik-ap-item');
- 
-        // Mouse reactive background + magnetic hover
-        document.addEventListener('mousemove', (e) => {
-            const x = e.clientX;
-            const y = e.clientY;
- 
-            follower.style.left = x + 'px';
-            follower.style.top = y + 'px';
- 
-            items.forEach((item) => {
-                const rect = item.getBoundingClientRect();
-                const content = item.querySelector('.karthik-ap-item-content');
- 
-                const isHovering = (
-                    x >= rect.left &&
-                    x <= rect.right &&
-                    y >= rect.top &&
-                    y <= rect.bottom
-                );
- 
-                if (isHovering) {
-                    const centerX = rect.left + rect.width / 2;
-                    const centerY = rect.top + rect.height / 2;
- 
-                    const deltaX = (x - centerX) * 0.15;
-                    const deltaY = (y - centerY) * 0.3;
- 
-                    content.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-                    item.style.borderColor = '#1A1A1A';
-                } else {
-                    content.style.transform = 'translate(0, 0)';
-                    item.style.borderColor = '';
-                }
-            });
+    <script>
+      function scrollToWork(e) {
+        e.preventDefault();
+        document.getElementById("work")?.scrollIntoView({
+          behavior: "smooth",
         });
- 
+      }
+    </script>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+
+    <script>
+      const karthikApMarquee = document.querySelector(
+        ".karthik-ap-marquee-content",
+      );
+      if (karthikApMarquee) {
+        karthikApMarquee.addEventListener("mouseenter", () => {
+          karthikApMarquee.style.animationPlayState = "paused";
+        });
+        karthikApMarquee.addEventListener("mouseleave", () => {
+          karthikApMarquee.style.animationPlayState = "running";
+        });
+      }
+    </script>
+
+    <script>
+      (function () {
+        const follower = document.getElementById("karthik-ap-follower");
+        const items = document.querySelectorAll(".karthik-ap-item");
+
+        // Mouse reactive background + magnetic hover
+        document.addEventListener("mousemove", (e) => {
+          const x = e.clientX;
+          const y = e.clientY;
+
+          follower.style.left = x + "px";
+          follower.style.top = y + "px";
+
+          items.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            const content = item.querySelector(".karthik-ap-item-content");
+
+            const isHovering =
+              x >= rect.left &&
+              x <= rect.right &&
+              y >= rect.top &&
+              y <= rect.bottom;
+
+            if (isHovering) {
+              const centerX = rect.left + rect.width / 2;
+              const centerY = rect.top + rect.height / 2;
+
+              const deltaX = (x - centerX) * 0.15;
+              const deltaY = (y - centerY) * 0.3;
+
+              content.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+              item.style.borderColor = "#1A1A1A";
+            } else {
+              content.style.transform = "translate(0, 0)";
+              item.style.borderColor = "";
+            }
+          });
+        });
+
         // Entrance animation
-        window.addEventListener('DOMContentLoaded', () => {
-            items.forEach((item, index) => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(20px)';
-                item.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
- 
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                }, 100 * index);
-            });
+        window.addEventListener("DOMContentLoaded", () => {
+          items.forEach((item, index) => {
+            item.style.opacity = "0";
+            item.style.transform = "translateY(20px)";
+            item.style.transition =
+              "opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+
+            setTimeout(() => {
+              item.style.opacity = "1";
+              item.style.transform = "translateY(0)";
+            }, 100 * index);
+          });
         });
 
         items.forEach((item) => {
-    item.addEventListener('click', () => {
-        const url = item.getAttribute('data-url');
-        if (url) window.open(url);
-    });
-});
- 
+          item.addEventListener("click", () => {
+            const url = item.getAttribute("data-url");
+            if (url) window.open(url);
+          });
+        });
+
         // Reset transform on mouse leave per item
         items.forEach((item) => {
-            item.addEventListener('mouseleave', () => {
-                const content = item.querySelector('.karthik-ap-item-content');
-                content.style.transform = 'translate(0, -10)';
-            });
+          item.addEventListener("mouseleave", () => {
+            const content = item.querySelector(".karthik-ap-item-content");
+            content.style.transform = "translate(0, -10)";
+          });
         });
-    })();
-</script>
-
-</body>
-
+      })();
+    </script>
+  </body>
 </html>

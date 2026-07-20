@@ -1,351 +1,492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>All Projects</title>
+    <title>All Projects</title>
 
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
 
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
 
-</head>
+  <body style="background-color: var(--karthik-bg-page)">
+    <div id="header-placeholder"></div>
 
-<body style="background-color: var(--karthik-bg-page);">
+    <section class="karthik-two-column-home-intro">
+      <div class="karthik-text-section__inner">
+        <div class="karthik-two-column-home">
+          <div>
+            <h4
+              class="karthik-header__name"
+              style="color: var(--karthik-text-primary)"
+            >
+              All Projects
+            </h4>
 
-<div id="header-placeholder"></div>
-
-<section class="karthik-two-column-home-intro">
-  <div class="karthik-text-section__inner">
-    <div class="karthik-two-column-home">
-
-      <div>
-
-        <h4 class="karthik-header__name" style="color: var(--karthik-text-primary);">
-          All Projects
-        </h4>
-        
-        <p class="karthik-p ktchitx-intro" style="color: var(--karthik-neutral-800);">
-          Each project here shows how I collaborate across UX research, strategy, and design (and front end development/web production)
-          as a UX/Product designer to deliver adoption, engagement, and business results through data-informed design.
-        </p>
-
-      </div>
-
-      <div class="karthik-two-column-home-intro-list-colm" style="display: flex; flex-direction: column;">
-        <p class="karthik-p" style="margin-top: 24px; margin-bottom: 0;">What's on this page</p>
-        <div class="karthik-two-column-home-intro-list-items">
-            <h5 class="karthik-tnfc-title">01&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">Featured Projects</span></h5>
-            <h5 class="karthik-tnfc-title">02&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight">Other Projects</span></h5>            
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="karthik-text-section" style="background-color: var(--karthik-bg-elevated);" id="all">
-
-  <div class="karthik-text-section__inner" style="max-width: 1440px;">
-
-    <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
-      Featured Projects
-    </h5>
-
-    <div style="gap: 20px; max-width: 1440px; margin: 0 auto; padding: 0px 4px 48px;" class="editorial-section">
-
-      <div style="display: grid; grid-template-columns: 1fr; gap: 24px;" class="editorial-grid">
-
-        <!-- Card 1 -->
-        <div style="cursor: pointer;" class="editorial-card">
-          <div style="position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; margin-bottom: 16px;">
-            <div class="editorial-image"
-                style="background-image: 
-                url('/assets/images/TNFC.webp'); 
-                background-size: cover; background-position: center; width: 100%; height: 100%; transition: transform 0.5s ease;"></div>
+            <p
+              class="karthik-p ktchitx-intro"
+              style="color: var(--karthik-neutral-800)"
+            >
+              Each project here shows how I collaborate across UX research,
+              strategy, and design (and front end development/web production) as
+              a UX/Product designer to deliver adoption, engagement, and
+              business results through data-informed design.
+            </p>
           </div>
-            <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px;">UI/UX · Front-End Dev · 2024–25</p>
-            <h6 class="karthik-featured-heading-alt" style="margin-top: 8px; color: var(--karthik-neutral-800);">
-              How I Rebuilt a Standalone Website into a Department-Hosted Content Hub: ECE at U of T's Toronto Nanofabrication Centre (TNFC).</h6>
-            <p class="karthik-p">
-              Despite being located inside the ECE department, TNFC, one of U of T's research labs, had its own infrastructure, 
-              and no connection to ECE's brand or navigation. 
-              I consolidated this multi-page site into a two-page section native to ECE's digital environment.
-            </p>
-            <p class="karthik-p" style="font-style: italic;">
-              Metrics available on request.
-            </p>
-            <a class="karthik-btn karthik-btn--primary" href="/pages/projects/ece-tnfc.html" style="max-width: fit-content;">Explore Solution</a>
-        </div>
 
-        <!-- Card 2 -->
-        <div style="cursor: pointer;" class="editorial-card">
-          <div style="position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; margin-bottom: 16px;">
-            <div class="editorial-image"
-                style="background-image: 
-                url('/assets/images/dtsd.webp'); 
-                background-size: cover; background-position: center; width: 100%; height: 100%; transition: transform 0.5s ease;"></div>
+          <div
+            class="karthik-two-column-home-intro-list-colm"
+            style="display: flex; flex-direction: column"
+          >
+            <p class="karthik-p" style="margin-top: 24px; margin-bottom: 0">
+              What's on this page
+            </p>
+            <div class="karthik-two-column-home-intro-list-items">
+              <h5 class="karthik-tnfc-title">
+                01&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight"
+                  >Featured Projects</span
+                >
+              </h5>
+              <h5 class="karthik-tnfc-title">
+                02&nbsp;&nbsp;&nbsp;&nbsp;<span class="karthik-eyebrow-onlight"
+                  >Other Projects</span
+                >
+              </h5>
+            </div>
           </div>
-            <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px;">Service Design · 2023</p>
-            <h6 class="karthik-featured-heading-alt" style="margin-top: 8px; color: var(--karthik-neutral-800);">
-              How I Implemented an AI-Assisted service offering for Fix It In Post Studios.</h6>
-            <p class="karthik-p">
-              While I worked on an AI Adoption framework for the studio, they were approached for a project that could benefit from AI tool usage. 
-              I designed and implemented the systems to enable the AI-assisted workflow I created.
-            </p>
-            <p class="karthik-p" style="font-style: italic;">
-              30–40% Revenue growth · 2 Weeks Reduction in production timelines.
-            </p>
-            <a class="karthik-btn karthik-btn--primary" href="/pages/projects/service-design.html" style="max-width: fit-content;">Explore Solution</a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="karthik-text-section"
+      style="background-color: var(--karthik-bg-elevated)"
+      id="all"
+    >
+      <div class="karthik-text-section__inner" style="max-width: 1440px">
+        <h5
+          style="
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--karthik-green-600);
+            padding-bottom: 16px;
+            color: var(--karthik-green-600);
+          "
+        >
+          Featured Projects
+        </h5>
+
+        <div
+          style="
+            gap: 20px;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0px 4px 48px;
+          "
+          class="editorial-section"
+        >
+          <div
+            style="display: grid; grid-template-columns: 1fr; gap: 24px"
+            class="editorial-grid"
+          >
+            <!-- Card 1 -->
+            <div style="cursor: pointer" class="editorial-card">
+              <div
+                style="
+                  position: relative;
+                  aspect-ratio: 16 / 9;
+                  overflow: hidden;
+                  border-radius: 8px;
+                  margin-bottom: 16px;
+                "
+              >
+                <div
+                  class="editorial-image"
+                  style="
+                    background-image: url(&quot;/assets/images/TNFC.webp&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.5s ease;
+                  "
+                ></div>
+              </div>
+              <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px">
+                UI/UX · Front-End Dev · 2024–25
+              </p>
+              <h6
+                class="karthik-featured-heading-alt"
+                style="margin-top: 8px; color: var(--karthik-neutral-800)"
+              >
+                How I Rebuilt a Standalone Website into a Department-Hosted
+                Content Hub: ECE at U of T's Toronto Nanofabrication Centre
+                (TNFC).
+              </h6>
+              <p class="karthik-p">
+                Despite being located inside the ECE department, TNFC, one of U
+                of T's research labs, had its own infrastructure, and no
+                connection to ECE's brand or navigation. I consolidated this
+                multi-page site into a two-page section native to ECE's digital
+                environment.
+              </p>
+              <p class="karthik-p" style="font-style: italic">
+                Metrics available on request.
+              </p>
+              <a
+                class="karthik-btn karthik-btn--primary"
+                href="/pages/projects/ece-tnfc.html"
+                style="max-width: fit-content"
+                >Explore Solution</a
+              >
+            </div>
+
+            <!-- Card 2 -->
+            <div style="cursor: pointer" class="editorial-card">
+              <div
+                style="
+                  position: relative;
+                  aspect-ratio: 16 / 9;
+                  overflow: hidden;
+                  border-radius: 8px;
+                  margin-bottom: 16px;
+                "
+              >
+                <div
+                  class="editorial-image"
+                  style="
+                    background-image: url(&quot;/assets/images/dtsd.webp&quot;);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.5s ease;
+                  "
+                ></div>
+              </div>
+              <p class="karthik-eyebrow-onlight" style="margin-bottom: 8px">
+                Service Design · 2023
+              </p>
+              <h6
+                class="karthik-featured-heading-alt"
+                style="margin-top: 8px; color: var(--karthik-neutral-800)"
+              >
+                How I Implemented an AI-Assisted service offering for Fix It In
+                Post Studios.
+              </h6>
+              <p class="karthik-p">
+                While I worked on an AI Adoption framework for the studio, they
+                were approached for a project that could benefit from AI tool
+                usage. I designed and implemented the systems to enable the
+                AI-assisted workflow I created.
+              </p>
+              <p class="karthik-p" style="font-style: italic">
+                30–40% Revenue growth · 2 Weeks Reduction in production
+                timelines.
+              </p>
+              <a
+                class="karthik-btn karthik-btn--primary"
+                href="/pages/projects/service-design.html"
+                style="max-width: fit-content"
+                >Explore Solution</a
+              >
+            </div>
+          </div>
         </div>
 
-      </div>
+        <h5
+          style="
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--karthik-green-600);
+            padding-bottom: 16px;
+            color: var(--karthik-green-600);
+          "
+        >
+          Other Projects
+        </h5>
 
-    </div>
+        <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
 
-    <h5 style="margin-bottom: 40px; border-bottom: 1px solid var(--karthik-green-600); padding-bottom: 16px; color: var(--karthik-green-600);">
-      Other Projects
-    </h5>
-
-    <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
-
-    <div class="karthik-header__actions boxer" style="gap: 12px;">
-
-      <div class="karthik-ap-item" data-magnetic="true" data-url="https://southshoreyouth.org/">
-          <div class="karthik-ap-item-content">
-              <div class="karthik-ap-item-left" style="flex-direction: column;">
-                  <span style="color: var(--karthik-neutral-800);">
-                      UI/UX · FRONT-END DEVELOPMENT
-                  </span>
-                  <h5 style="color: var(--karthik-sienna-800);">
-                      A Website for a Bilingual Nonprofit based in Quebec, Canada.
-                  </h5>
-                  <span style="color: var(--karthik-neutral-800);">
-                      Mar – Jun 2026
-                  </span>
+        <div class="karthik-header__actions boxer" style="gap: 12px">
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="https://southshoreyouth.org/"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--karthik-neutral-800)">
+                  UI/UX · FRONT-END DEVELOPMENT
+                </span>
+                <h5 style="color: var(--karthik-sienna-800)">
+                  A Website for a Bilingual Nonprofit based in Quebec, Canada.
+                </h5>
+                <span style="color: var(--karthik-neutral-800)">
+                  Mar – Jun 2026
+                </span>
               </div>
               <div class="karthik-ap-item-right">
-                  <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
               </div>
+            </div>
           </div>
-      </div>
 
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/ece.html">
-        <div class="karthik-ap-item-content">
-            <div class="karthik-ap-item-left" style="flex-direction: column;">
-                <span style="color: var(--karthik-neutral-800);">
-                    UI/UX · FRONT-END DEVELOPMENT
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="/pages/projects/ece.html"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--karthik-neutral-800)">
+                  UI/UX · FRONT-END DEVELOPMENT
                 </span>
-                <h5 style="color: var(--karthik-neutral-800);">
-                    How I Rebuilt Multiple Key Pages for the University of Toronto's ECE Department.
+                <h5 style="color: var(--karthik-neutral-800)">
+                  How I Rebuilt Multiple Key Pages for the University of
+                  Toronto's ECE Department.
                 </h5>
-                <span style="color: var(--karthik-neutral-800);">
-                    2024–2025
+                <span style="color: var(--karthik-neutral-800)">
+                  2024–2025
                 </span>
-            </div>
-            <div class="karthik-ap-item-right">
-                <span class="material-symbols-outlined karthik-ap-arrow">→</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/selenium.html">
-        <div class="karthik-ap-item-content">
-            <div class="karthik-ap-item-left" style="flex-direction: column;">
-                <span style="color: var(--karthik-neutral-800);">
-                    SELF-INITIATED · CREATIVE DIRECTION
-                </span>
-                <h5 style="color: var(--karthik-green-600);">
-                    How I design a Non-Commercial Organization's Product website
-                </h5>
-                <span style="color: var(--karthik-neutral-800);">Nov 2025</span>
-            </div>
-            <div class="karthik-ap-item-right">
-                <span class="material-symbols-outlined karthik-ap-arrow">→</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/note4u.html">
-        <div class="karthik-ap-item-content">
-            <div class="karthik-ap-item-left" style="flex-direction: column;">
-                <span style="color: var(--karthik-neutral-800);">
-                    ACADEMIC COURSEWORK · PRODUCT DESIGN
-                </span>
-                <h5 style="color: var(--karthik-green-600);">
-                    How I perform Research-Led Product Strategy for an AI-powered Music Transcription tool.
-                </h5>
-                <span style="color: var(--karthik-neutral-800);">Sep – Dec 2024</span>
-            </div>
-            <div class="karthik-ap-item-right">
-                <span class="material-symbols-outlined karthik-ap-arrow">→</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/ai-adoption.html">
-        <div class="karthik-ap-item-content">
-            <div class="karthik-ap-item-left" style="flex-direction: column;">
-                <span style="color: var(--karthik-neutral-800);">
-                    ON CONTRACT · RESEARCH
-                </span>
-                <h5 style="color: var(--karthik-neutral-800);">
-                    How I Accelerated AI Adoption with a Research-Driven Framework.
-                </h5>
-                <span style="color: var(--karthik-neutral-800);">
-                    Dec 2022 – Aug 2023
-                </span>
-            </div>
-            <div class="karthik-ap-item-right">
-                <span class="material-symbols-outlined karthik-ap-arrow">→</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/caterpillar.html">
-          <div class="karthik-ap-item-content">
-              <div class="karthik-ap-item-left" style="flex-direction: column;">
-                  <span style="color: var(--karthik-neutral-800);">
-                      CO-OP @ CATERPILLAR · PRODUCT RESEARCH
-                  </span>
-                  <h5 style="color: var(--karthik-green-600);">
-                      How I Generated actionable insights for Construction Management Product.
-                  </h5>
-                  <span style="color: var(--karthik-neutral-800);">
-                      Dec 2019
-                  </span>
               </div>
               <div class="karthik-ap-item-right">
-                  <span class="material-symbols-outlined karthik-ap-arrow">→</span>
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
               </div>
+            </div>
           </div>
+
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="/pages/projects/selenium.html"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--karthik-neutral-800)">
+                  SELF-INITIATED · CREATIVE DIRECTION
+                </span>
+                <h5 style="color: var(--karthik-green-600)">
+                  How I design a Non-Commercial Organization's Product website
+                </h5>
+                <span style="color: var(--karthik-neutral-800)">Nov 2025</span>
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="/pages/projects/note4u.html"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--karthik-neutral-800)">
+                  ACADEMIC COURSEWORK · PRODUCT DESIGN
+                </span>
+                <h5 style="color: var(--karthik-green-600)">
+                  How I perform Research-Led Product Strategy for an AI-powered
+                  Music Transcription tool.
+                </h5>
+                <span style="color: var(--karthik-neutral-800)"
+                  >Sep – Dec 2024</span
+                >
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="/pages/projects/ai-adoption.html"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--karthik-neutral-800)">
+                  ON CONTRACT · RESEARCH
+                </span>
+                <h5 style="color: var(--karthik-neutral-800)">
+                  How I Accelerated AI Adoption with a Research-Driven
+                  Framework.
+                </h5>
+                <span style="color: var(--karthik-neutral-800)">
+                  Dec 2022 – Aug 2023
+                </span>
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="/pages/projects/caterpillar.html"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--karthik-neutral-800)">
+                  CO-OP @ CATERPILLAR · PRODUCT RESEARCH
+                </span>
+                <h5 style="color: var(--karthik-green-600)">
+                  How I Generated actionable insights for Construction
+                  Management Product.
+                </h5>
+                <span style="color: var(--karthik-neutral-800)">
+                  Dec 2019
+                </span>
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-    
-
-    
-    
-  </div>
-
-</section>
-
-
-
-
-
-<section class="karthik-footer">
-    <div class="karthik-footer-inner">
+    <section class="karthik-footer">
+      <div class="karthik-footer-inner">
         <p>Developed by Karthik</p>
         <p>Based in Ontario, Canada</p>
-        <a class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</a>
-    </div>
-</section>
+        <a
+          class="karthik-btn karthik-btn--outline"
+          onclick="scrollToTop()"
+          aria-label="Scroll to Top"
+          >Scroll to Top</a
+        >
+      </div>
+    </section>
 
-<script>
-      fetch('../../addons/header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('header-placeholder').innerHTML = data;
+    <script>
+      fetch("../../addons/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
         })
-        .catch(error => console.error("Error loading header:", error));
-</script>
+        .catch((error) => console.error("Error loading header:", error));
+    </script>
 
-<script>
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-</script>
-
-
-<script>
-const karthikApMarquee = document.querySelector('.karthik-ap-marquee-content');
-if (karthikApMarquee) {
-karthikApMarquee.addEventListener('mouseenter', () => {
-    karthikApMarquee.style.animationPlayState = 'paused';
-});
-karthikApMarquee.addEventListener('mouseleave', () => {
-    karthikApMarquee.style.animationPlayState = 'running';
-});
-}
-</script>
-
-<script>
-    (function () {
-        const follower = document.getElementById('karthik-ap-follower');
-        const items = document.querySelectorAll('.karthik-ap-item');
- 
-        // Mouse reactive background + magnetic hover
-        document.addEventListener('mousemove', (e) => {
-            const x = e.clientX;
-            const y = e.clientY;
- 
-            follower.style.left = x + 'px';
-            follower.style.top = y + 'px';
- 
-            items.forEach((item) => {
-                const rect = item.getBoundingClientRect();
-                const content = item.querySelector('.karthik-ap-item-content');
- 
-                const isHovering = (
-                    x >= rect.left &&
-                    x <= rect.right &&
-                    y >= rect.top &&
-                    y <= rect.bottom
-                );
- 
-                if (isHovering) {
-                    const centerX = rect.left + rect.width / 2;
-                    const centerY = rect.top + rect.height / 2;
- 
-                    const deltaX = (x - centerX) * 0.15;
-                    const deltaY = (y - centerY) * 0.3;
- 
-                    content.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-                    item.style.borderColor = '#1A1A1A';
-                } else {
-                    content.style.transform = 'translate(0, 0)';
-                    item.style.borderColor = '';
-                }
-            });
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
- 
+      }
+    </script>
+
+    <script>
+      const karthikApMarquee = document.querySelector(
+        ".karthik-ap-marquee-content",
+      );
+      if (karthikApMarquee) {
+        karthikApMarquee.addEventListener("mouseenter", () => {
+          karthikApMarquee.style.animationPlayState = "paused";
+        });
+        karthikApMarquee.addEventListener("mouseleave", () => {
+          karthikApMarquee.style.animationPlayState = "running";
+        });
+      }
+    </script>
+
+    <script>
+      (function () {
+        const follower = document.getElementById("karthik-ap-follower");
+        const items = document.querySelectorAll(".karthik-ap-item");
+
+        // Mouse reactive background + magnetic hover
+        document.addEventListener("mousemove", (e) => {
+          const x = e.clientX;
+          const y = e.clientY;
+
+          follower.style.left = x + "px";
+          follower.style.top = y + "px";
+
+          items.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            const content = item.querySelector(".karthik-ap-item-content");
+
+            const isHovering =
+              x >= rect.left &&
+              x <= rect.right &&
+              y >= rect.top &&
+              y <= rect.bottom;
+
+            if (isHovering) {
+              const centerX = rect.left + rect.width / 2;
+              const centerY = rect.top + rect.height / 2;
+
+              const deltaX = (x - centerX) * 0.15;
+              const deltaY = (y - centerY) * 0.3;
+
+              content.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+              item.style.borderColor = "#1A1A1A";
+            } else {
+              content.style.transform = "translate(0, 0)";
+              item.style.borderColor = "";
+            }
+          });
+        });
+
         // Entrance animation
-        window.addEventListener('DOMContentLoaded', () => {
-            items.forEach((item, index) => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(20px)';
-                item.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
- 
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                }, 100 * index);
-            });
+        window.addEventListener("DOMContentLoaded", () => {
+          items.forEach((item, index) => {
+            item.style.opacity = "0";
+            item.style.transform = "translateY(20px)";
+            item.style.transition =
+              "opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+
+            setTimeout(() => {
+              item.style.opacity = "1";
+              item.style.transform = "translateY(0)";
+            }, 100 * index);
+          });
         });
 
         items.forEach((item) => {
-    item.addEventListener('click', () => {
-        const url = item.getAttribute('data-url');
-        if (url) window.open(url);
-    });
-});
- 
+          item.addEventListener("click", () => {
+            const url = item.getAttribute("data-url");
+            if (url) window.open(url);
+          });
+        });
+
         // Reset transform on mouse leave per item
         items.forEach((item) => {
-            item.addEventListener('mouseleave', () => {
-                const content = item.querySelector('.karthik-ap-item-content');
-                content.style.transform = 'translate(0, -10)';
-            });
+          item.addEventListener("mouseleave", () => {
+            const content = item.querySelector(".karthik-ap-item-content");
+            content.style.transform = "translate(0, -10)";
+          });
         });
-    })();
-</script>
-
-</body>
-
+      })();
+    </script>
+  </body>
 </html>

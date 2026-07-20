@@ -1,371 +1,621 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Website Concept Direction</title>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Concept Direction</title>
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
 
+    <!-- Styles and Scripts -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
 
-  <!-- Styles and Scripts -->
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/script.js"></script>
-
-</head>
-
-  <body style="background-color: var(--karthik-bg-page);">
-
-    <section style="height: 100vh; width: 100%; display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden;">
-
+  <body style="background-color: var(--karthik-bg-page)">
+    <section
+      style="
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: hidden;
+      "
+    >
       <div id="header-placeholder"></div>
- 
-      <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative;">
-    
-        <div class="slide" data-slide="1" style="background-color: var(--karthik-bg-page-dark); display: flex; justify-content: center;">
+
+      <div
+        style="
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          position: relative;
+        "
+      >
+        <div
+          class="slide"
+          data-slide="1"
+          style="
+            background-color: var(--karthik-bg-page-dark);
+            display: flex;
+            justify-content: center;
+          "
+        >
           <div class="karthik-tnfc-pill-group">
-            <span class="karthik-tnfc-pill">
-              Self-Intitiated
-            </span>
+            <span class="karthik-tnfc-pill"> Self-Intitiated </span>
             <span class="karthik-tnfc-pill">
               Creative Direction · UX/UI Design
             </span>
-            <span class="karthik-tnfc-pill">
-              Timeline: Nov 2025
-            </span>
+            <span class="karthik-tnfc-pill"> Timeline: Nov 2025 </span>
           </div>
-    
-          <h4 class="karthik-tnfc-title-ondark" style="margin-top: 12px; text-align: center;">
+
+          <h4
+            class="karthik-tnfc-title-ondark"
+            style="margin-top: 12px; text-align: center"
+          >
             A Concept Direction for Non-Commercial Product Sites: Selenium
           </h4>
-          <p class="karthik-tnfc-caption-ondark sizer" style="text-align: center;">
-            This is a self-initiated concept out of pure curiosity: a concept direction for a website that did not focus on making money through their open source products, 
-            needed to educate and support its users, and ALSO promote downloads for said open-source products.
+          <p
+            class="karthik-tnfc-caption-ondark sizer"
+            style="text-align: center"
+          >
+            This is a self-initiated concept out of pure curiosity: a concept
+            direction for a website that did not focus on making money through
+            their open source products, needed to educate and support its users,
+            and ALSO promote downloads for said open-source products.
           </p>
 
-          <p class="karthik-tnfc-caption-ondark sizer" style="text-align: center; color: var(--karthik-neutral-400)">
+          <p
+            class="karthik-tnfc-caption-ondark sizer"
+            style="text-align: center; color: var(--karthik-neutral-400)"
+          >
             USE ◀ ▶, OR CLICK ◀ ▶ BELOW TO NAVIGATE
           </p>
         </div>
-    
-        <div class="slide" data-slide="2" >
-          <h5 class="karthik-tnfc-title" style="width: 100%;">
-            <span style="font-size: small; color: var(--karthik-sienna-800);">01&nbsp;&nbsp;&nbsp;&nbsp;</span>Project Context
+
+        <div class="slide" data-slide="2">
+          <h5 class="karthik-tnfc-title" style="width: 100%">
+            <span style="font-size: small; color: var(--karthik-sienna-800)"
+              >01&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Project Context
           </h5>
           <h6 class="karthik-tnfc-subtitle">
             What does a homepage look like when it isn't selling anything?
           </h6>
           <p class="karthik-tnfc-body-onlight">
-            That is what I was curious about when looking at the Selenium website.
+            That is what I was curious about when looking at the Selenium
+            website.
           </p>
           <p class="karthik-tnfc-body-onlight">
-            Selenium doesn't need a checkout page. The journey is specific: get them to install one or all three of their OSS, learn how to use the tool, and support them if they're stuck. 
-            That's a different design problem than most SaaS sites solve — and it's the one I wanted to explore.
+            Selenium doesn't need a checkout page. The journey is specific: get
+            them to install one or all three of their OSS, learn how to use the
+            tool, and support them if they're stuck. That's a different design
+            problem than most SaaS sites solve — and it's the one I wanted to
+            explore.
           </p>
         </div>
 
-        <div class="slide" data-slide="3" >
-
-          <div style="width: 100%; cursor: pointer; border: 1px solid var(--karthik-border-subtle); margin: auto; max-width: 800px; max-height: 40vh; overflow: hidden;">
-            <img onclick="window.open(this.src, '_blank')" class="karthik-cs-problem-image"
+        <div class="slide" data-slide="3">
+          <div
+            style="
+              width: 100%;
+              cursor: pointer;
+              border: 1px solid var(--karthik-border-subtle);
+              margin: auto;
+              max-width: 800px;
+              max-height: 40vh;
+              overflow: hidden;
+            "
+          >
+            <img
+              onclick="window.open(this.src, '_blank')"
+              class="karthik-cs-problem-image"
               src="/assets/images/selenium website original.webp"
             />
           </div>
-          
-          <p class="karthik-cs-problem-caption-ondark" style="max-width: 1200px; margin: 0 auto;">
+
+          <p
+            class="karthik-cs-problem-caption-ondark"
+            style="max-width: 1200px; margin: 0 auto"
+          >
             Existing Selenium website homepage.
           </p>
-
         </div>
-    
-        <div class="slide" data-slide="4" >
-          <h5 class="karthik-tnfc-title" style="width: 100%;">
-            <span style="font-size: small; color: var(--karthik-sienna-800);">02&nbsp;&nbsp;&nbsp;&nbsp;</span>Approach
+
+        <div class="slide" data-slide="4">
+          <h5 class="karthik-tnfc-title" style="width: 100%">
+            <span style="font-size: small; color: var(--karthik-sienna-800)"
+              >02&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Approach
           </h5>
           <h6 class="karthik-tnfc-subtitle">
-            For most Product and B2B/B2C homepages, the design language — hero sections, pricing tiers, start free trial CTA — is built for products trying to convert a visitor into a paying customer.
+            For most Product and B2B/B2C homepages, the design language — hero
+            sections, pricing tiers, start free trial CTA — is built for
+            products trying to convert a visitor into a paying customer.
           </h6>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-            Before any field research could happen, I needed enough domain knowledge to ask credible questions and recognize meaningful answers.
-            I studied construction project structures such as initiation, planning, execution, closing; resource categories including workforce, equipment, raw materials; and scheduling, and the key metrics site supervisors were accountable for: duration, budget, safety, quality.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            Before any field research could happen, I needed enough domain
+            knowledge to ask credible questions and recognize meaningful
+            answers. I studied construction project structures such as
+            initiation, planning, execution, closing; resource categories
+            including workforce, equipment, raw materials; and scheduling, and
+            the key metrics site supervisors were accountable for: duration,
+            budget, safety, quality.
           </p>
 
-          <p class="karthik-tnfc-subtitle center" style="margin-bottom: 0;">
+          <p class="karthik-tnfc-subtitle center" style="margin-bottom: 0">
             Selenium isn't doing that. It's doing three other things at once:
           </p>
 
-          <div class="hard-part-grid" style="grid-template-columns: 1fr 1fr 1fr;">
-
-              <div class="hard-part-col-left center">
-
-                <div style="width:56px;height:56px;border-radius:50%;background:var(--karthik-green-400);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 6.5C4 5.67 4.67 5 5.5 5H10.5C11.61 5 12.5 5.89 12.5 7V19C12.1 18.37 11.39 18 10.5 18H5.5C4.67 18 4 18.67 4 19.5V6.5Z"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
-                    <path d="M20 6.5C20 5.67 19.33 5 18.5 5H13.5C12.39 5 11.5 5.89 11.5 7V19C11.9 18.37 12.61 18 13.5 18H18.5C19.33 18 20 18.67 20 19.5V6.5Z"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-
-                  <p class="karthik-cs-problem-body-onlight">
-                    Education — understand what browser automation even is
-                  </p>
-
+          <div
+            class="hard-part-grid"
+            style="grid-template-columns: 1fr 1fr 1fr"
+          >
+            <div class="hard-part-col-left center">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 50%;
+                  background: var(--karthik-green-400);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 16px;
+                "
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 6.5C4 5.67 4.67 5 5.5 5H10.5C11.61 5 12.5 5.89 12.5 7V19C12.1 18.37 11.39 18 10.5 18H5.5C4.67 18 4 18.67 4 19.5V6.5Z"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 6.5C20 5.67 19.33 5 18.5 5H13.5C12.39 5 11.5 5.89 11.5 7V19C11.9 18.37 12.61 18 13.5 18H18.5C19.33 18 20 18.67 20 19.5V6.5Z"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
 
-              <div class="hard-part-col-right center karthik-cs-res-audience-col-right">
+              <p class="karthik-cs-problem-body-onlight">
+                Education — understand what browser automation even is
+              </p>
+            </div>
 
-                <div style="width:56px;height:56px;border-radius:50%;background:var(--karthik-sienna-400);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M5 6H15C16.1 6 17 6.9 17 8V13C17 14.1 16.1 15 15 15H9L5 18V6Z"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
-                    <path d="M9 9H13M9 12H12"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M17 9H19C20.1 9 21 9.9 21 11V16L18 14"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
-                  </svg>
-                </div>
-
-                <p class="karthik-cs-problem-body-onlight">
-                  Support — pointing towards docs, forums, and help
-                </p>
-
+            <div
+              class="hard-part-col-right center karthik-cs-res-audience-col-right"
+            >
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 50%;
+                  background: var(--karthik-sienna-400);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 16px;
+                "
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 6H15C16.1 6 17 6.9 17 8V13C17 14.1 16.1 15 15 15H9L5 18V6Z"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 9H13M9 12H12"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M17 9H19C20.1 9 21 9.9 21 11V16L18 14"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    opacity="0.6"
+                  />
+                </svg>
               </div>
 
-              <div class="hard-part-col-left center">
+              <p class="karthik-cs-problem-body-onlight">
+                Support — pointing towards docs, forums, and help
+              </p>
+            </div>
 
-                <div style="width:56px;height:56px;border-radius:50%;background:var(--karthik-saffron-400);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4V15"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M8 11L12 15L16 11"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 19H19"
-                          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
-                </div>
-
-                  <p class="karthik-cs-problem-body-onlight">
-                    Driving adoption — actually download and use the tools
-                  </p>
-
+            <div class="hard-part-col-left center">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 50%;
+                  background: var(--karthik-saffron-400);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 16px;
+                "
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 4V15"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8 11L12 15L16 11"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 19H19"
+                    stroke="#FFFFFF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
               </div>
 
+              <p class="karthik-cs-problem-body-onlight">
+                Driving adoption — actually download and use the tools
+              </p>
+            </div>
           </div>
-
         </div>
 
         <div class="slide" data-slide="5">
-          <h5 class="karthik-tnfc-title" style="width: 100%;">
-            <span style="font-size: small; color: var(--karthik-sienna-800);">03&nbsp;&nbsp;&nbsp;&nbsp;</span>Core Structural Idea
+          <h5 class="karthik-tnfc-title" style="width: 100%">
+            <span style="font-size: small; color: var(--karthik-sienna-800)"
+              >03&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Core Structural Idea
           </h5>
           <h6 class="karthik-tnfc-subtitle">
-            Selenium's homepage is the front door to three products, each with their own history and specifications. 
-            So I designed it as a a landing page whose entire job is routing, not converting.
+            Selenium's homepage is the front door to three products, each with
+            their own history and specifications. So I designed it as a landing
+            page whose entire job is routing, not converting.
           </h6>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-            Under this direction, the three product cards are the primary navigation, each one linking out to its own dedicated homepage for WebDriver, IDE, and Grid. 
-            The homepage itself never needs to explain those products in depth, because it's supposed to be a well-organized table of contents.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            Under this direction, the three product cards are the primary
+            navigation, each one linking out to its own dedicated homepage for
+            WebDriver, IDE, and Grid. The homepage itself never needs to explain
+            those products in depth, because it's supposed to be a
+            well-organized table of contents.
           </p>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-            The homepage can spend its space building trust and credibility instead of cramming in feature detail.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            The homepage can spend its space building trust and credibility
+            instead of cramming in feature detail.
           </p>
-
         </div>
 
         <div class="slide" data-slide="6">
-          <h5 class="karthik-tnfc-title" style="width: 100%;">
-            <span style="font-size: small; color: var(--karthik-sienna-800);">04&nbsp;&nbsp;&nbsp;&nbsp;</span>Product Story Without Showing the Product
+          <h5 class="karthik-tnfc-title" style="width: 100%">
+            <span style="font-size: small; color: var(--karthik-sienna-800)"
+              >04&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Product Story Without Showing the Product
           </h5>
           <h6 class="karthik-tnfc-subtitle">
-            Selenium already has the credibility markers most positioning decks would beg for — they just weren't visible anywhere on the homepage:
+            Selenium already has the credibility markers most positioning decks
+            would beg for — they just weren't visible anywhere on the homepage:
           </h6>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-           Selenium already has more than 34.2k GitHub stars, 8.7k forks, and 20 official repositories (and rising). Information that is nowhere on the current homepage.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            Selenium already has more than 34.2k GitHub stars, 8.7k forks, and
+            20 official repositories (and rising). Information that is nowhere
+            on the current homepage.
           </p>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-            I added a single stat band directly in the hero, before the product cards — so the very first thing a visitor reads after the headline is "this is the industry standard," 
-            not "here are three tools." It's one section, entirely built from numbers Selenium's own GitHub makes public.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            I added a single stat band directly in the hero, before the product
+            cards — so the very first thing a visitor reads after the headline
+            is "this is the industry standard," not "here are three tools." It's
+            one section, entirely built from numbers Selenium's own GitHub makes
+            public.
           </p>
-
         </div>
 
         <div class="slide" data-slide="7">
-          <h5 class="karthik-tnfc-title" style="width: 100%;">
-            <span style="font-size: small; color: var(--karthik-sienna-800);">05&nbsp;&nbsp;&nbsp;&nbsp;</span>Branding and Hierarchies
+          <h5 class="karthik-tnfc-title" style="width: 100%">
+            <span style="font-size: small; color: var(--karthik-sienna-800)"
+              >05&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Branding and Hierarchies
           </h5>
           <h6 class="karthik-tnfc-subtitle">
-            Most SaaS and developer-focused product sites right now default to the same look — soft gradients, blurred mesh backgrounds, glassy cards. 
-            It's become the generic signal for "AI product," and it actively works against a project like Selenium, which is older, more established, and more concretely useful.
+            Most SaaS and developer-focused product sites right now default to
+            the same look — soft gradients, blurred mesh backgrounds, glassy
+            cards. It's become the generic signal for "AI product," and it
+            actively works against a project like Selenium, which is older, more
+            established, and more concretely useful.
           </h6>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-            The creative direction I explored instead: 
-            one saturated, confident accent per product — used identically in role and weight 
-            — so the differentiation reads as intentional categorization rather than three products built by three different people at three different times. 
-            I also paired with a dark, near-black hero and a warm, deliberate green as the single dominant brand color.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            The creative direction I explored instead: one saturated, confident
+            accent per product — used identically in role and weight — so the
+            differentiation reads as intentional categorization rather than
+            three products built by three different people at three different
+            times. I also paired with a dark, near-black hero and a warm,
+            deliberate green as the single dominant brand color.
           </p>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0;">
-            The current site also uses two different shades of blue to have two CTAs - to explore their partners and to donate. Meanwhile their key partner logos are displayed in huge sizes with a blog section in need of formatting.
+          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0">
+            The current site also uses two different shades of blue to have two
+            CTAs - to explore their partners and to donate. Meanwhile their key
+            partner logos are displayed in huge sizes with a blog section in
+            need of formatting.
           </p>
-
         </div>
 
-        <div class="slide" data-slide="8" >
-
-          <div style="width: 100%; cursor: pointer; border: 1px solid var(--karthik-border-subtle); margin: auto; max-width: 800px; max-height: 40vh; overflow: hidden;">
-            <img onclick="window.open(this.src, '_blank')" class="karthik-cs-problem-image"
+        <div class="slide" data-slide="8">
+          <div
+            style="
+              width: 100%;
+              cursor: pointer;
+              border: 1px solid var(--karthik-border-subtle);
+              margin: auto;
+              max-width: 800px;
+              max-height: 40vh;
+              overflow: hidden;
+            "
+          >
+            <img
+              onclick="window.open(this.src, '_blank')"
+              class="karthik-cs-problem-image"
               src="/assets/images/UI-1-thumb.webp"
             />
           </div>
-          
-          <p class="karthik-cs-problem-caption-ondark" style="max-width: 1200px; margin: 0 auto;">
-            Mockup of my design for the Homepage with my recommendations applied.
-          </p>
 
+          <p
+            class="karthik-cs-problem-caption-ondark"
+            style="max-width: 1200px; margin: 0 auto"
+          >
+            Mockup of my design for the Homepage with my recommendations
+            applied.
+          </p>
         </div>
 
-        <div class="slide" data-slide="9" style="background-color: var(--karthik-sienna-800);">
-          <h5 class="karthik-tnfc-title" style="width: 100%; color: var(--karthik-text-on-dark);">
-            <span style="font-size: small; color: var(--karthik-sienna-100);">06&nbsp;&nbsp;&nbsp;&nbsp;</span>Key Skills
+        <div
+          class="slide"
+          data-slide="9"
+          style="background-color: var(--karthik-sienna-800)"
+        >
+          <h5
+            class="karthik-tnfc-title"
+            style="width: 100%; color: var(--karthik-text-on-dark)"
+          >
+            <span style="font-size: small; color: var(--karthik-sienna-100)"
+              >06&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Key Skills
           </h5>
 
-          <div class="hard-part-grid" style="gap: 12px; display: flex; flex-wrap: wrap; margin-top: 12px;">
-  
-            <p class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+          <div
+            class="hard-part-grid"
+            style="gap: 12px; display: flex; flex-wrap: wrap; margin-top: 12px"
+          >
+            <p
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               UX/UI Design
             </p>
 
-            <p class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+            <p
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               Creative Direction
             </p>
 
-            <p class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+            <p
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               Design Systems
             </p>
 
-            <p class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+            <p
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               Brand Guidelines
             </p>
 
-            <p class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+            <p
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               Design Direction
             </p>
-
           </div>
-
         </div>
 
-        <div class="slide" data-slide="10" style="background-color: var(--karthik-sienna-800);">
-          <h5 class="karthik-tnfc-title" style="width: 100%; color: var(--karthik-text-on-dark);">
-            <span style="font-size: small; color: var(--karthik-sienna-100);">07&nbsp;&nbsp;&nbsp;&nbsp;</span>Conclusion & Next Steps
+        <div
+          class="slide"
+          data-slide="10"
+          style="background-color: var(--karthik-sienna-800)"
+        >
+          <h5
+            class="karthik-tnfc-title"
+            style="width: 100%; color: var(--karthik-text-on-dark)"
+          >
+            <span style="font-size: small; color: var(--karthik-sienna-100)"
+              >07&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >Conclusion & Next Steps
           </h5>
-          <h6 class="karthik-tnfc-subtitle" style="color: var(--karthik-text-on-dark);">
-            Same copy, structure, and products. What changed is the pacing, the hierarchy of what needs space on the page, 
-            and a color and type system built for what Selenium is: an established, widely-used piece of developer infrastructure that happens to be free.
+          <h6
+            class="karthik-tnfc-subtitle"
+            style="color: var(--karthik-text-on-dark)"
+          >
+            Same copy, structure, and products. What changed is the pacing, the
+            hierarchy of what needs space on the page, and a color and type
+            system built for what Selenium is: an established, widely-used piece
+            of developer infrastructure that happens to be free.
           </h6>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 12px; color: var(--karthik-body-color-dark);">
-            This was a case study on Creative direction for a product with no transaction to design toward, with no assumed stakeholder priorities
+          <p
+            class="karthik-tnfc-body-onlight"
+            style="margin-bottom: 12px; color: var(--karthik-body-color-dark)"
+          >
+            This was a case study on Creative direction for a product with no
+            transaction to design toward, with no assumed stakeholder priorities
           </p>
 
-          <p class="karthik-tnfc-body-onlight" style="margin-bottom: 0; color: var(--karthik-body-color-dark);">
+          <p
+            class="karthik-tnfc-body-onlight"
+            style="margin-bottom: 0; color: var(--karthik-body-color-dark)"
+          >
             See the original and the redesign:
           </p>
 
-          <div class="hard-part-grid" style="gap: 12px; display: flex; flex-wrap: wrap; margin-top: 12px;">
-      
-            <a href="https://www.selenium.dev/" target="_blank" class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+          <div
+            class="hard-part-grid"
+            style="gap: 12px; display: flex; flex-wrap: wrap; margin-top: 12px"
+          >
+            <a
+              href="https://www.selenium.dev/"
+              target="_blank"
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               View Existing Selenium website
             </a>
 
-            <a href="https://jkarthikarav.github.io/ui/selenium.html" target="_blank" class="karthik-btn karthik-btn--outline" style="width: fit-content;">
+            <a
+              href="https://jkarthikarav.github.io/ui/selenium.html"
+              target="_blank"
+              class="karthik-btn karthik-btn--outline"
+              style="width: fit-content"
+            >
               View My Selenium website redesign
             </a>
-
           </div>
-
         </div>
-    
       </div>
-    
+
       <!-- Navigation controls -->
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 40px; box-sizing: border-box;">
-        <button id="prevBtn" onclick="changeSlide(-1)" style="cursor: pointer; border: none; background: none; padding: 8px 16px;">&#8592;</button>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 16px 40px;
+          box-sizing: border-box;
+        "
+      >
+        <button
+          id="prevBtn"
+          onclick="changeSlide(-1)"
+          style="
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 8px 16px;
+          "
+        >
+          &#8592;
+        </button>
         <span id="slideCounter"></span>
-        <button id="nextBtn" onclick="changeSlide(1)" style="color: var(--karthik-neutral-100); cursor: pointer; border: none; background: var(--karthik-green-400); padding: 8px 16px;">&#8594;</button>
+        <button
+          id="nextBtn"
+          onclick="changeSlide(1)"
+          style="
+            color: var(--karthik-neutral-100);
+            cursor: pointer;
+            border: none;
+            background: var(--karthik-green-400);
+            padding: 8px 16px;
+          "
+        >
+          &#8594;
+        </button>
       </div>
 
       <section class="karthik-footer">
         <div class="karthik-footer-inner">
-            <p>Developed by Karthik</p>
-            <p>Based in Ontario, Canada</p>
-            <a class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</a>
+          <p>Developed by Karthik</p>
+          <p>Based in Ontario, Canada</p>
+          <a
+            class="karthik-btn karthik-btn--outline"
+            onclick="scrollToTop()"
+            aria-label="Scroll to Top"
+            >Scroll to Top</a
+          >
         </div>
       </section>
- 
-</section>
- 
+    </section>
 
+    <script>
+      let currentSlide = 1;
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
 
-
-<script>
-  let currentSlide = 1;
-  const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
- 
-  function showSlide(n) {
-    slides.forEach(function(slide) {
-      slide.style.display = 'none';
-    });
-    slides[n - 1].style.display = 'flex';
-    currentSlide = n;
-    document.getElementById('slideCounter').textContent = currentSlide + ' / ' + totalSlides;
-    document.getElementById('prevBtn').style.visibility = (currentSlide === 1) ? 'hidden' : 'visible';
-    document.getElementById('nextBtn').style.visibility = (currentSlide === totalSlides) ? 'hidden' : 'visible';
-  }
- 
-  function changeSlide(direction) {
-    const next = currentSlide + direction;
-    if (next >= 1 && next <= totalSlides) {
-      showSlide(next);
-    }
-  }
- 
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowRight') {
-      changeSlide(1);
-    } else if (e.key === 'ArrowLeft') {
-      changeSlide(-1);
-    }
-  });
- 
-  showSlide(currentSlide);
-</script>
-
-<script>
-    function scrollToTop() {
-        window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+      function showSlide(n) {
+        slides.forEach(function (slide) {
+          slide.style.display = "none";
         });
-    }
-</script>
+        slides[n - 1].style.display = "flex";
+        currentSlide = n;
+        document.getElementById("slideCounter").textContent =
+          currentSlide + " / " + totalSlides;
+        document.getElementById("prevBtn").style.visibility =
+          currentSlide === 1 ? "hidden" : "visible";
+        document.getElementById("nextBtn").style.visibility =
+          currentSlide === totalSlides ? "hidden" : "visible";
+      }
 
-<script>
-  fetch('../../addons/header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error("Error loading header:", error));
-</script>
+      function changeSlide(direction) {
+        const next = currentSlide + direction;
+        if (next >= 1 && next <= totalSlides) {
+          showSlide(next);
+        }
+      }
 
-</body>
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") {
+          changeSlide(1);
+        } else if (e.key === "ArrowLeft") {
+          changeSlide(-1);
+        }
+      });
 
+      showSlide(currentSlide);
+    </script>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+
+    <script>
+      fetch("../../addons/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+    </script>
+  </body>
 </html>

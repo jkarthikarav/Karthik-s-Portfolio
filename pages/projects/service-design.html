@@ -1,427 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Service Design</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Design</title>
 
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
 
-    <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
 
-</head>
+  <body style="background-color: var(--karthik-bg-page)">
+    <div id="header-placeholder"></div>
 
-<body style="background-color: var(--karthik-bg-page);">
-  
-  <div id="header-placeholder"></div>
-
-  <img
+    <img
       src="/assets/icons/back-to-top.png"
       alt="floating image button"
       id="backtotopbutton"
       onclick="scrollToTops()"
     />
 
-<section class="karthik-mini-hero">
-  <div class="karthik-tnfc-pill-group">
+    <section class="karthik-mini-hero">
+      <div class="karthik-tnfc-pill-group">
+        <span class="karthik-tnfc-pill"> Consulting Project </span>
 
-      <span class="karthik-tnfc-pill">
-        Consulting Project
-      </span>
+        <span class="karthik-tnfc-pill"> Service Design </span>
 
-      <span class="karthik-tnfc-pill">
-        Service Design 
-      </span>
-
-      <span class="karthik-tnfc-pill">
-        Timeline: May – Aug 2023
-      </span>
-
-  </div>
-
-  <div>
-    
-    <h4 class="karthik-tnfc-title-ondark" style="margin-top: 12px; text-align: left;">
-      Implementing an AI-Assisted Service Offering for Fix It In Post Studios.
-    </h4>
-
-    <p class="karthik-tnfc-title-ondark" style="margin-top: 0; text-align: left;">
-      While working on the AI Adoption framework, FIIP Studios were approached for a real client project in Mid-May. 
-      Seeing this as an opprtunity for a live pilot with a paying client, an NDA, and a hard deadline, I was tasked to design a workflow and support delivery.
-    </p>
-
-  </div>
-    
-  
-
-</section>
-
-<section class="karthik-service-banner">
-
-  
-</section>
-    
-<section style="background-color: var(--karthik-bg-elevated);">
-
-  <div class="stylized-container-tnfc-big">
-
-    <h6 class="karthik-tnfc-subtitle">
-      In late May 2023, a film director approached FIIP Studios to produce an animated pre-visualization video (called a previz) to align his producers and secure commitment to a full production. 
-    </h6>
-
-    <p class="karthik-tnfc-body-onlight">
-      I could test the framework I'd been building so far with the studio.<a href="/pages/projects/ai-adoption.html" target="_blank">[Refer to AI Adoption case study]</a> 
-      My framework applied to a live project with a paying client could both test it and act as proof.
-    </p> 
-
-    <div style="width: 100%; cursor: pointer; border: 1px solid var(--karthik-border-subtle); margin-top: 48px;">
-      <img onclick="window.open(this.src, '_blank')" class="karthik-cs-problem-image"
-        src="/assets/images/F20 BG.png"
-        alt="The TNFC homepage before the rebuild"
-      />
-    </div>
-    
-    <p class="karthik-cs-problem-caption-ondark">
-      Sample background generated for client. The scene depicted a couple at the beach.
-    </p>
-    
-  </div>
-
-</section>
-
-<section style="background-color: var(--karthik-bg-page-dark);">
-
-  <div class="stylized-container-tnfc-big">
-
-    <h4 class="karthik-tnfc-title-ondark">
-      The As-Is Problem
-    </h4>
-    
-    <h6 class="karthik-tnfc-subtitle-ondark">
-      The existing previz workflow had a structural flaw: every vague element in the director's brief compounded into last-minute revisions that destroyed timelines and trust. 
-      More importantly, Intake itself was the first risk.  
-    </h6>
-
-    <p class="karthik-tnfc-body">
-      Like most agency-style projects, the director doesn't arrive with a finished brief. 
-      Our Pre-Viz Production had to start against an incomplete brief, knowing new ideas from ongoing story workshopping would keep arriving and shifting the goalposts mid-project.
-    </p>
-
-    <p class="karthik-tnfc-body">
-      The studio also sat idle whenever the director couldn't articulate their vision clearly, and creative changes — especially the late ones — required a near-complete restart, 
-      because nothing prevented the goalposts from moving after work was already underway.
-    </p>
-
-    <img onclick="window.open(this.src, '_blank')" 
-          src="/assets/images/swimlane-b.png"
-        alt="As-is workflow diagram"
-        style="
-          width: 100%;
-          object-fit: contain;
-          display: block;
-          height: fit-content;
-        "/>
-      <p class="karthik-cs-problem-caption">The as-is workflow.</p>
-
-    </div>
-
-</section>
-
-<section>
-
-  <div class="stylized-container-tnfc-big">
-
-    <h4 class="karthik-tnfc-title" style="margin-bottom: 20px; margin-left: auto; margin-right: auto; width: fit-content;">
-      The Blueprint
-    </h4>
-
-    <p class="karthik-tnfc-body-onlight">
-      The new blueprint intentionally shifted the technical burden to the studio, and just as importantly, it fixed when the client was allowed to change their mind.
-    </p>
-
-    <p class="karthik-tnfc-body-onlight">
-      The toolset was deliberately simple. 
-      This was a pilot meant to validate the process before justifying investment in dedicated production-management or automation software, so the studio used tools already on hand:
-    </p>
-
-    <div class="hard-part-grid" style="margin-bottom: 12px;">
-
-        <div class="hard-part-col-left center">
-
-          <div style="width:56px;height:56px;border-radius:50%;background:var(--karthik-green-400);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M4 6H20V15H9L4 19V6Z" fill="#FFFFFF"/>
-            </svg>
-          </div>
-
-            <p class="karthik-cs-problem-body-onlight">
-              Briefing: Google Docs, for capturing and updating the director's brief
-            </p>
-
-        </div>
-
-        <div class="hard-part-col-right center karthik-cs-res-audience-col-right">
-
-          <div style="width:56px;height:56px;border-radius:50%;background:var(--karthik-sienna-400);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="7" stroke="#FFFFFF" stroke-width="2"/>
-              <path d="M12 12L16 9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-              <path d="M12 12V7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="12" cy="12" r="1.5" fill="#FFFFFF"/>
-            </svg>
-          </div>
-
-          <p class="karthik-cs-problem-body-onlight">
-            Shot tracking: Google Sheets, for tracking shot status across scenes
-          </p>
-
-        </div>
-
-        <div class="hard-part-col-left center">
-
-          <div style="width:56px;height:56px;border-radius:50%;background:var(--karthik-saffron-400);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect x="6" y="4" width="12" height="16" rx="2" fill="#FFFFFF"/>
-              <path d="M9 9H15" stroke="var(--karthik-sienna-400)" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M9 13H13" stroke="var(--karthik-sienna-400)" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M10 17L12 19L16 15" stroke="var(--karthik-sienna-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-
-          <p class="karthik-cs-problem-body-onlight">
-            Review: Frame.io, for client and director review and approval 
-          </p>
-
-        </div>
-
-    </div>
-
-    <p class="karthik-tnfc-body-onlight">
-      Through a tone alignment session, the studio internalized the director's vision upfront and reduced perpetual client involvement during production.
-      Critically, the blueprint introduced a scope lock at the scene level: shot design for a given scene only began once the concept for that entire scene was confirmed.
-      Once locked, the client could no longer shift the goalposts on that scene — only minor in-scene changes (props, small details) remained open for review. 
-    </p>
-
-    <p class="karthik-tnfc-body-onlight">
-      This is what made it viable to scope AI to specific assets without requiring constant director sign-off.
-    </p>
-
-    <img onclick="window.open(this.src, '_blank')" src="/assets/images/swimlane.png" style="width: 100%; cursor: pointer; margin-top: 0; border: 1px solid var(--karthik-text-brand-dark);"/>
-    
-    <p class="karthik-cs-problem-caption-ondark">
-      The to-be workflow.
-    </p>
-    
-    <h6 class="karthik-tnfc-subtitle" style="margin-bottom:16px;">
-      How the Blueprint Unfolded in Real Time
-    </h6>
-
-    <div class="pilot-grid">
-
-      <!-- Step 1 -->
-      <div class="karthik-cs-process-card">
-        <span class="karthik-cs-process-card-number">01</span>
-        <h6 class="karthik-cs-process-card-title">Tone Alignment</h6>
-        <p class="karthik-cs-process-card-body">
-          We opened with a facilitated session to internalize the director's vision before any production began. 
-          This was the highest-risk moment in the workflow as it required the director to trust the studio with something they hadn't fully thought of yet.
-        </p>
+        <span class="karthik-tnfc-pill"> Timeline: May – Aug 2023 </span>
       </div>
 
-      <!-- Step 2 -->
-      <div class="karthik-cs-process-card">
-        <span class="karthik-cs-process-card-number">02</span>
-        <h6 class="karthik-cs-process-card-title">Scene Breakdown</h6>
-        <p class="karthik-cs-process-card-body">
-          The project manager and design lead worked through each shot to determine what AI could reliably produce versus what required skilled labour. 
-          This decision was made per shot rather than applied globally.
-        </p>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="karthik-cs-process-card">
-        <span class="karthik-cs-process-card-number">03</span>
-        <h6 class="karthik-cs-process-card-title">Designing with AI</h6>
-        <p class="karthik-cs-process-card-body">
-          Adobe Photoshop's Generative Fill had launched in beta two weeks prior, so the design lead had to develop evaluation criteria in real time. 
-          Junior designers mass-produced screens using AI while sketch artists handled characters, so juniors would build design thinking skills rather than learn tools AI would eventually replace.
-        </p>
-      </div>
-
-      <!-- Step 4 -->
-      <div class="karthik-cs-process-card">
-        <span class="karthik-cs-process-card-number">04</span>
-        <h6 class="karthik-cs-process-card-title">QA and Compositing</h6>
-        <p class="karthik-cs-process-card-body">
-          If compositing the AI outputs took as long as doing the work manually, the framework failed as we would have been better off skipping AI entirely. 
-          Final assets were reviewed against the established creative direction and exported as layered passes for the edit team.
-        </p>
-      </div>
-
-      <div class="karthik-cs-process-card">
-        <span class="karthik-cs-process-card-number">05</span>
-        <h6 class="karthik-cs-process-card-title">Delivery</h6>
-        <p class="karthik-cs-process-card-body">
-          The Edit Team assembled the layered passes into a final cut. The client-facing deliverable was the edited previz video itself, reviewed and approved by the director as the final step.
-        </p>
-      </div>
-
-    </div>
-
-
-
-  </div>
-
-</section>
-
-<!-- 7. The Outcome -->
-<section class="karthik-cs-outcome-section">
-  <div class="karthik-cs-hero-container">
-
-    <div class="outcome-grid">
-
-      <!-- Left: narrative -->
       <div>
-
-        <span class="karthik-cs-eyebrow-ondark">
-          The Outcome
-        </span>
-
-        <h4 class="karthik-cs-problem-heading">
-          The Workflow survived and became part of the studio's offerings.
+        <h4
+          class="karthik-tnfc-title-ondark"
+          style="margin-top: 12px; text-align: left"
+        >
+          Implementing an AI-Assisted Service Offering for Fix It In Post
+          Studios.
         </h4>
 
-        <p class="karthik-cs-problem-body">
-          The pilot delivered 15 days ahead of schedule, despite the process being built in real time. The QA held. 
-          The compositing was easier but doing the work without AI gave us more control.
+        <p
+          class="karthik-tnfc-title-ondark"
+          style="margin-top: 0; text-align: left"
+        >
+          While working on the AI Adoption framework, FIIP Studios were
+          approached for a real client project in Mid-May. Seeing this as an
+          opprtunity for a live pilot with a paying client, an NDA, and a hard
+          deadline, I was tasked to design a workflow and support delivery.
+        </p>
+      </div>
+    </section>
+
+    <section class="karthik-service-banner"></section>
+
+    <section style="background-color: var(--karthik-bg-elevated)">
+      <div class="stylized-container-tnfc-big">
+        <h6 class="karthik-tnfc-subtitle">
+          In late May 2023, a film director approached FIIP Studios to produce
+          an animated pre-visualization video (called a previz) to align his
+          producers and secure commitment to a full production.
+        </h6>
+
+        <p class="karthik-tnfc-body-onlight">
+          I could test the framework I'd been building so far with the studio.<a
+            href="/pages/projects/ai-adoption.html"
+            target="_blank"
+            >[Refer to AI Adoption case study]</a
+          >
+          My framework applied to a live project with a paying client could both
+          test it and act as proof.
         </p>
 
-        <p class="karthik-cs-problem-body karthik-cs-outcome-body-spacing">
-          FIIP adopted the previz workflow as a permanent service offering. 
+        <div
+          style="
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid var(--karthik-border-subtle);
+            margin-top: 48px;
+          "
+        >
+          <img
+            onclick="window.open(this.src, '_blank')"
+            class="karthik-cs-problem-image"
+            src="/assets/images/F20 BG.png"
+            alt="The TNFC homepage before the rebuild"
+          />
+        </div>
+
+        <p class="karthik-cs-problem-caption-ondark">
+          Sample background generated for client. The scene depicted a couple at
+          the beach.
+        </p>
+      </div>
+    </section>
+
+    <section style="background-color: var(--karthik-bg-page-dark)">
+      <div class="stylized-container-tnfc-big">
+        <h4 class="karthik-tnfc-title-ondark">The As-Is Problem</h4>
+
+        <h6 class="karthik-tnfc-subtitle-ondark">
+          The existing previz workflow had a structural flaw: every vague
+          element in the director's brief compounded into last-minute revisions
+          that destroyed timelines and trust. More importantly, Intake itself
+          was the first risk.
+        </h6>
+
+        <p class="karthik-tnfc-body">
+          Like most agency-style projects, the director doesn't arrive with a
+          finished brief. Our Pre-Viz Production had to start against an
+          incomplete brief, knowing new ideas from ongoing story workshopping
+          would keep arriving and shifting the goalposts mid-project.
         </p>
 
+        <p class="karthik-tnfc-body">
+          The studio also sat idle whenever the director couldn't articulate
+          their vision clearly, and creative changes — especially the late ones
+          — required a near-complete restart, because nothing prevented the
+          goalposts from moving after work was already underway.
+        </p>
+
+        <img
+          onclick="window.open(this.src, '_blank')"
+          src="/assets/images/swimlane-b.png"
+          alt="As-is workflow diagram"
+          style="
+            width: 100%;
+            object-fit: contain;
+            display: block;
+            height: fit-content;
+          "
+        />
+        <p class="karthik-cs-problem-caption">The as-is workflow.</p>
       </div>
+    </section>
 
-      <!-- Right: outcome signals -->
-      <div class="karthik-cs-outcome-signals">
+    <section>
+      <div class="stylized-container-tnfc-big">
+        <h4
+          class="karthik-tnfc-title"
+          style="
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+          "
+        >
+          The Blueprint
+        </h4>
 
-        <div class="karthik-cs-outcome-card">
-          <p class="karthik-cs-outcome-metric">
-            ↑ 30–40%
-          </p>
+        <p class="karthik-tnfc-body-onlight">
+          The new blueprint intentionally shifted the technical burden to the
+          studio, and just as importantly, it fixed when the client was allowed
+          to change their mind.
+        </p>
 
-          <p class="karthik-cs-outcome-metric-caption">
-            Revenue growth from AI-assisted billable services
-          </p>
+        <p class="karthik-tnfc-body-onlight">
+          The toolset was deliberately simple. This was a pilot meant to
+          validate the process before justifying investment in dedicated
+          production-management or automation software, so the studio used tools
+          already on hand:
+        </p>
+
+        <div class="hard-part-grid" style="margin-bottom: 12px">
+          <div class="hard-part-col-left center">
+            <div
+              style="
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background: var(--karthik-green-400);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 16px;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 6H20V15H9L4 19V6Z" fill="#FFFFFF" />
+              </svg>
+            </div>
+
+            <p class="karthik-cs-problem-body-onlight">
+              Briefing: Google Docs, for capturing and updating the director's
+              brief
+            </p>
+          </div>
+
+          <div
+            class="hard-part-col-right center karthik-cs-res-audience-col-right"
+          >
+            <div
+              style="
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background: var(--karthik-sienna-400);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 16px;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="7"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 12L16 9"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12 12V7"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="12" r="1.5" fill="#FFFFFF" />
+              </svg>
+            </div>
+
+            <p class="karthik-cs-problem-body-onlight">
+              Shot tracking: Google Sheets, for tracking shot status across
+              scenes
+            </p>
+          </div>
+
+          <div class="hard-part-col-left center">
+            <div
+              style="
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background: var(--karthik-saffron-400);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 16px;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect
+                  x="6"
+                  y="4"
+                  width="12"
+                  height="16"
+                  rx="2"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M9 9H15"
+                  stroke="var(--karthik-sienna-400)"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M9 13H13"
+                  stroke="var(--karthik-sienna-400)"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 17L12 19L16 15"
+                  stroke="var(--karthik-sienna-400)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <p class="karthik-cs-problem-body-onlight">
+              Review: Frame.io, for client and director review and approval
+            </p>
+          </div>
         </div>
 
-        <div class="karthik-cs-outcome-card">
-          <p class="karthik-cs-outcome-metric">
-            ↓ 2 Weeks
-          </p>
+        <p class="karthik-tnfc-body-onlight">
+          Through a tone alignment session, the studio internalized the
+          director's vision upfront and reduced perpetual client involvement
+          during production. Critically, the blueprint introduced a scope lock
+          at the scene level: shot design for a given scene only began once the
+          concept for that entire scene was confirmed. Once locked, the client
+          could no longer shift the goalposts on that scene — only minor
+          in-scene changes (props, small details) remained open for review.
+        </p>
 
-          <p class="karthik-cs-outcome-metric-caption">
-            Reduction in production timelines
-          </p>
+        <p class="karthik-tnfc-body-onlight">
+          This is what made it viable to scope AI to specific assets without
+          requiring constant director sign-off.
+        </p>
+
+        <img
+          onclick="window.open(this.src, '_blank')"
+          src="/assets/images/swimlane.png"
+          style="
+            width: 100%;
+            cursor: pointer;
+            margin-top: 0;
+            border: 1px solid var(--karthik-text-brand-dark);
+          "
+        />
+
+        <p class="karthik-cs-problem-caption-ondark">The to-be workflow.</p>
+
+        <h6 class="karthik-tnfc-subtitle" style="margin-bottom: 16px">
+          How the Blueprint Unfolded in Real Time
+        </h6>
+
+        <div class="pilot-grid">
+          <!-- Step 1 -->
+          <div class="karthik-cs-process-card">
+            <span class="karthik-cs-process-card-number">01</span>
+            <h6 class="karthik-cs-process-card-title">Tone Alignment</h6>
+            <p class="karthik-cs-process-card-body">
+              We opened with a facilitated session to internalize the director's
+              vision before any production began. This was the highest-risk
+              moment in the workflow as it required the director to trust the
+              studio with something they hadn't fully thought of yet.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="karthik-cs-process-card">
+            <span class="karthik-cs-process-card-number">02</span>
+            <h6 class="karthik-cs-process-card-title">Scene Breakdown</h6>
+            <p class="karthik-cs-process-card-body">
+              The project manager and design lead worked through each shot to
+              determine what AI could reliably produce versus what required
+              skilled labour. This decision was made per shot rather than
+              applied globally.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="karthik-cs-process-card">
+            <span class="karthik-cs-process-card-number">03</span>
+            <h6 class="karthik-cs-process-card-title">Designing with AI</h6>
+            <p class="karthik-cs-process-card-body">
+              Adobe Photoshop's Generative Fill had launched in beta two weeks
+              prior, so the design lead had to develop evaluation criteria in
+              real time. Junior designers mass-produced screens using AI while
+              sketch artists handled characters, so juniors would build design
+              thinking skills rather than learn tools AI would eventually
+              replace.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="karthik-cs-process-card">
+            <span class="karthik-cs-process-card-number">04</span>
+            <h6 class="karthik-cs-process-card-title">QA and Compositing</h6>
+            <p class="karthik-cs-process-card-body">
+              If compositing the AI outputs took as long as doing the work
+              manually, the framework failed as we would have been better off
+              skipping AI entirely. Final assets were reviewed against the
+              established creative direction and exported as layered passes for
+              the edit team.
+            </p>
+          </div>
+
+          <div class="karthik-cs-process-card">
+            <span class="karthik-cs-process-card-number">05</span>
+            <h6 class="karthik-cs-process-card-title">Delivery</h6>
+            <p class="karthik-cs-process-card-body">
+              The Edit Team assembled the layered passes into a final cut. The
+              client-facing deliverable was the edited previz video itself,
+              reviewed and approved by the director as the final step.
+            </p>
+          </div>
         </div>
-
-        <div class="karthik-cs-outcome-card">
-          <p class="karthik-cs-outcome-metric">
-            Adopted
-          </p>
-
-          <p class="karthik-cs-outcome-metric-caption">
-            The Previz workflow became a permanent offering
-          </p>
-        </div>
-
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- 7. The Outcome -->
+    <section class="karthik-cs-outcome-section">
+      <div class="karthik-cs-hero-container">
+        <div class="outcome-grid">
+          <!-- Left: narrative -->
+          <div>
+            <span class="karthik-cs-eyebrow-ondark"> The Outcome </span>
 
-<section class="karthik-learn">
-  <div class="karthik-learn-content">
+            <h4 class="karthik-cs-problem-heading">
+              The Workflow survived and became part of the studio's offerings.
+            </h4>
 
-    <h4>Reflections</h4>
+            <p class="karthik-cs-problem-body">
+              The pilot delivered 15 days ahead of schedule, despite the process
+              being built in real time. The QA held. The compositing was easier
+              but doing the work without AI gave us more control.
+            </p>
 
-    <p>
-      AI still needs human judgment to be production-ready. The outputs were usable but not without a considerable amount of compositing and minor image manipulation. 
-      Our Designers had to assess every AI-generated asset before it moved forward, and that expectation had to be managed with the client early.
-    </p>
+            <p class="karthik-cs-problem-body karthik-cs-outcome-body-spacing">
+              FIIP adopted the previz workflow as a permanent service offering.
+            </p>
+          </div>
 
-    <p>
-      Also, the juniors and interns used AI as a deliberate choice to develop their judgment by evaluating outputs and learn why something wasn't working.
-    </p>
+          <!-- Right: outcome signals -->
+          <div class="karthik-cs-outcome-signals">
+            <div class="karthik-cs-outcome-card">
+              <p class="karthik-cs-outcome-metric">↑ 30–40%</p>
 
-  </div>
-</section>
+              <p class="karthik-cs-outcome-metric-caption">
+                Revenue growth from AI-assisted billable services
+              </p>
+            </div>
 
-<section class="karthik-footer">
-    <div class="karthik-footer-inner">
+            <div class="karthik-cs-outcome-card">
+              <p class="karthik-cs-outcome-metric">↓ 2 Weeks</p>
+
+              <p class="karthik-cs-outcome-metric-caption">
+                Reduction in production timelines
+              </p>
+            </div>
+
+            <div class="karthik-cs-outcome-card">
+              <p class="karthik-cs-outcome-metric">Adopted</p>
+
+              <p class="karthik-cs-outcome-metric-caption">
+                The Previz workflow became a permanent offering
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="karthik-learn">
+      <div class="karthik-learn-content">
+        <h4>Reflections</h4>
+
+        <p>
+          AI still needs human judgment to be production-ready. The outputs were
+          usable but not without a considerable amount of compositing and minor
+          image manipulation. Our Designers had to assess every AI-generated
+          asset before it moved forward, and that expectation had to be managed
+          with the client early.
+        </p>
+
+        <p>
+          Also, the juniors and interns used AI as a deliberate choice to
+          develop their judgment by evaluating outputs and learn why something
+          wasn't working.
+        </p>
+      </div>
+    </section>
+
+    <section class="karthik-footer">
+      <div class="karthik-footer-inner">
         <p>Developed by Karthik</p>
         <p>Based in Ontario, Canada</p>
-        <a class="karthik-btn karthik-btn--outline" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</a>
-    </div>
-</section>
+        <a
+          class="karthik-btn karthik-btn--outline"
+          onclick="scrollToTop()"
+          aria-label="Scroll to Top"
+          >Scroll to Top</a
+        >
+      </div>
+    </section>
 
-
-<script>
-    function scrollToTop() {
+    <script>
+      function scrollToTop() {
         window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+          top: 0,
+          behavior: "smooth",
         });
-    }
-</script>
-
-
-
-<script>
-  fetch('../../addons/header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error("Error loading header:", error));
-</script>
-
-<script>
-  window.addEventListener("load", () => {
-    const backtotopbutton = document.getElementById("backtotopbutton");
-    const learnSection = document.querySelector(".karthik-learn");
-
-    if (!backtotopbutton || !learnSection) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        backtotopbutton.style.display = entry.isIntersecting ? "none" : "block";
-      },
-      {
-        root: null,
-        threshold: 0,
-        rootMargin: "0px"
       }
-    );
+    </script>
 
-    observer.observe(learnSection);
-  });
-</script>
+    <script>
+      fetch("../../addons/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+    </script>
 
-<script>
-  function scrollToTops() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
+    <script>
+      window.addEventListener("load", () => {
+        const backtotopbutton = document.getElementById("backtotopbutton");
+        const learnSection = document.querySelector(".karthik-learn");
 
-  document
-    .getElementById("backtotopbutton")
-    .addEventListener("click", scrollToTops);
-</script>
+        if (!backtotopbutton || !learnSection) return;
 
-</body>
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            backtotopbutton.style.display = entry.isIntersecting
+              ? "none"
+              : "block";
+          },
+          {
+            root: null,
+            threshold: 0,
+            rootMargin: "0px",
+          },
+        );
+
+        observer.observe(learnSection);
+      });
+    </script>
+
+    <script>
+      function scrollToTops() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      document
+        .getElementById("backtotopbutton")
+        .addEventListener("click", scrollToTops);
+    </script>
+  </body>
 </html>
