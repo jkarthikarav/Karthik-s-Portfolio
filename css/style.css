@@ -1292,14 +1292,6 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
   padding: 40px 40px 64px;
 }
 
-    .testimonials {
-        padding: 96px 24px; position: relative; background-color: var(--karthik-bg-elevated);
-    }
-
-    .testimonials-inner {
-       margin: auto; text-align: center; position: relative; z-index: 10; max-width: 1440px;
-    }
-
     .karthik-footer {
     padding: 2rem 3rem;
     background-color: var(--karthik-text-brand-dark);
@@ -2159,6 +2151,10 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
       margin-bottom: 0; margin-top: 4px;
     }
 
+      .quote-svg {
+      position: absolute; top: -20px; left: 10%; transform: translateX(-50%); opacity: 0.04;
+    }
+
     @media (max-width: 1024px) {
       .karthik-two-column-home-intro-wrapper {
         grid-template-columns: 1fr 1fr;
@@ -2171,3 +2167,4 @@ font-family: 'League Spartan', sans-serif;  font-size: 16px;
     }
 
     
+  
