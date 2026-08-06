@@ -1,1003 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECE TNFC Lab</title>
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/script.js"></script>
-  </head>
+<title>ECE TNFC Lab</title>
 
-  <body style="background-color: var(--karthik-bg-page)">
-    <div id="header-placeholder"></div>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload = null; this.rel = 'stylesheet';"/>
 
+<link rel="stylesheet" href="/css/styles-new.css" />
+<script src="/js/script.js"></script>
+
+</head>
+
+<body>
+
+<header class="header-menu">
+    <div class="inner-menu">
+    <a
+    href="/"
+    class="header__logo-link"
+    style="margin-bottom: 0; margin-top: 24px;"
+    >
     <img
-      src="/assets/icons/back-to-top.png"
-      alt="floating image button"
-      id="backtotopbutton"
-      onclick="scrollToTops()"
+        src="/graphics/logos/Karthik.png"
+        alt="Karthik"
+        class="header__logo"
     />
+    </a>
 
-    <!-- HERO -->
-    <section class="karthik-mini-hero">
-      <div class="karthik-tnfc-pill-group">
-        <span class="karthik-tnfc-pill"> At ECE at U of T </span>
+    <nav class="header__actions" style="margin-top: 12px;">
+        <a
+        href="/pages/about.html"
+        rel="noopener noreferrer"
+        class="karthik-btn btn--ghost"
+        >
+        About Me
+        </a>
+        <a
+        href="/pages/all-projects.html"
+        rel="noopener noreferrer"
+        class="karthik-btn btn--ghost"
+        >
+        All Projects
+        </a>
+        <a
+        href="https://www.linkedin.com/in/karthikjambunathan/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="karthik-btn btn--ghost"
+        >
+        LinkedIn
+        <svg
+            width="11"
+            height="11"
+            viewBox="0 0 12 12"
+            fill="none"
+            aria-hidden="true"
+            style="opacity: 0.6"
+        >
+            <path
+            d="M2 2h8v8M10 2 2 10"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            />
+        </svg>
+        </a>
+    </nav>
+    </div>
+</header>
 
-        <span class="karthik-tnfc-pill">
-          UX/UI Design · Front-End Development
-        </span>
+<section class="hero-main-case">
 
-        <span class="karthik-tnfc-pill"> Timeline: Nov 2024 – Mar 2025 </span>
-      </div>
+  <div class="tags-grid">
+    <span style="display: inline-flex; align-items: center; padding: 12px 12px; border-radius: 999px; background-color:  var(--brand-100); color:  var(--black-800); width: fit-content;">
+      At ECE at U of T
+    </span>
+
+    <span style="display: inline-flex; align-items: center; padding: 12px 12px; border-radius: 999px; background-color:  var(--brand-100); color:  var(--black-800); width: fit-content;">
+      UX/UI Design · Front-End Development
+    </span>
+
+    <span style="display: inline-flex; align-items: center; padding: 12px 12px; border-radius: 999px; background-color:  var(--brand-100); color:  var(--black-800); width: fit-content;">
+      Timeline: Nov 2024 – Mar 2025
+    </span>
+
+  </div>
+    
+    <h1 style="margin: 20px auto 0;">
+      Integrating the <span class="gradient-dark">Discovery and Onboarding experience</span><br>
+      for a Research Facility within its Parent Product
+    </h1>
+
+    <p style="margin: 20px auto auto;">
+        I researched, designed, prototyped, and built ECE at U of T's Nanofabrication research lab website, 
+        converting it from a standalone website with inconsistent branding, to a responsive content hub integrated into ECE's public-facing website, 
+        working across phone, tablet, and desktop. 
+        To deliver it, I worked with the ECE comms and IT teams, additionally communicating with the Research Lab's admin for content design and decisions.
+    </p>
+
+</section>
+
+<section class="tnfc-banner"></section>
+
+<section class="body-section">
+      
+    <div class="karthik-text-section__body" style="width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
 
       <div>
-        <h4
-          class="karthik-tnfc-title-ondark"
-          style="margin-top: 12px; text-align: left"
-        >
-          Rebuilding a Standalone Website into a Department-Hosted Content Hub.
-        </h4>
-        <p
-          class="karthik-tnfc-title-ondark"
-          style="margin-top: 0; text-align: left"
-        >
-          I researched, designed, prototyped, and built end to end – reimagining
-          ECE at U of T's TNFC website for Nanofabrication-focused researchers,
-          delivered as a responsive content hub working across phone, tablet,
-          and desktop integrated into ECE's main public-facing website. I worked with the 
-          ECE comms team and IT, communicating with the TNFC team to align on content and design decisions.
-        </p>
-      </div>
-    </section>
-
-    <!-- BANNER -->
-    <section class="karthik-tnfc-banner"></section>
-
-    <section style="background-color: var(--karthik-bg-elevated)">
-      <div class="stylized-container-tnfc-big">
-        <h6 class="karthik-tnfc-subtitle">
-          Despite being located inside the ECE department, the Toronto
-          Nanofabrication centre (TNFC) – one of U of T's numerous research labs
-          – had its own CMS infrastructure, and no connection to ECE's brand or
-          navigation.
-        </h6>
-
-        <p class="karthik-tnfc-body-onlight">
-          In November 2025, I was tasked by the ECE comms team with auditing the standalone site and proposing a design-focused solution to integrate TNFC into ECE's digital environment. 
-          How far the redesign should go, what the final architecture should look like, and how the work should be sequenced were all left for me to figure out. 
-          I decided the right move was to consolidate TNFC's multi-page site into a two-page content hub inside ECE's environment, rather than porting the existing structure over as-is. 
-          I set out to build a digital experience, grounded in two principles:
-          <span style="color: var(--karthik-green-600); font-weight: bold"
-            >Clarity</span
-          >
-          — help people understand what TNFC is about.
-          <span style="color: var(--karthik-green-600); font-weight: bold"
-            >Simplicity</span
-          >
-          — remove unnecessary friction from key tasks such as downloading and
-          accessing forms.
-        </p>
-
-        <p class="karthik-tnfc-body-onlight">
-          I set and ran my own timeline: audit and research first, then design, then build. 
-          I got the CMS/web development phase for the TNFC homepage and its sub-page done in under two weeks — 
-          because I wanted working drafts in front of stakeholders early. 
-          In this project, the design approvals process took much longer, since it depended on sign-off from stakeholders. 
-          Luckily most conflicts were scheduling related and not design/development related. 
-          There were a couple of design decisions that non-design stakeholders couldn't envision at first. My working drafts and prototype were instrumental 
-          in ensuring they weren't approving something they misunderstood or required major rework late in the process.
-        </p>
-
-        <div
+        <h5
           style="
-            width: 100%;
-            cursor: pointer;
-            border: 1px solid var(--karthik-border-subtle);
-            margin-top: 48px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--brand-600);
+            padding-bottom: 16px;
+            color: var(--brand-600);
           "
         >
-          <img
-            onclick="window.open(this.src, '_blank')"
-            class="karthik-cs-problem-image"
-            src="/assets/images/tnfc-home-ori.webp"
-            alt="The TNFC homepage before the rebuild"
-          />
-        </div>
+          Project Context
+        </h5>
 
+        <p class="p-lg" style="color: var(--karthik-neutral-900); margin-top: 20px;">
+          Despite being physically and structurally located inside the Electrical and Computer Engineering department (ECE), 
+          the Toronto Nanofabrication centre (TNFC) had its own CMS infrastructure, and no connection to ECE's brand or navigation.
+        </p>
+  
+        <p style="color: var(--karthik-body-color-secondary);">
+          I was tasked with auditing the standalone site and proposing a design-focused solution to improve its user experience. 
+          Instead, I proposed that the right move was to consolidate TNFC's multi-page site into a two-page content hub inside ECE's environment, rather than migrating the existing structure over as-is.
+        </p>
+
+        <p style="color: var(--karthik-body-color-secondary);">
+          My approach centered around these two principles: Clarity — help people understand what TNFC is about. 
+          Simplicity — remove unnecessary friction from key tasks such as downloading and accessing forms. 
+        </p>
+  
+        <p style="color: var(--karthik-body-color-secondary);">
+          I was given freedom with regards to how far the redesign could go and what the final architecture would look like. 
+        </p>
+      </div>
+
+      <div class="image-block">
+        <img src="/assets/images/tnfc-home-ori.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
         <p class="karthik-cs-problem-caption-ondark">
           The TNFC homepage when the project was greenlit.
         </p>
       </div>
-    </section>
+    </div>
 
-    <section style="background-color: var(--karthik-bg-page)">
-      <div class="stylized-container-tnfc-big">
-        <!-- Eyebrow + heading -->
-        <div class="gap2rem">
-          <h4
-            class="karthik-tnfc-title"
-            style="
-              margin-bottom: 20px;
-              margin-left: auto;
-              margin-right: auto;
-              width: fit-content;
-            "
-          >
-            What I Did
-          </h4>
+</section>
 
-          <p class="karthik-tnfc-body-onlight">
-            Firstly, I had to determine how TNFC should describe itself within
-            ECE's ecosystem, what hierarchy the information should follow, and
-            also write for two different audiences simultaneously. 
-          </p>
+<section class="karthik-two-column-home-intro" id="work" style="background-color: var(--black-800);">
+    <div class="karthik-text-section__inner">
+        <h2 style="color: var(--white-50); margin: 2rem auto 20px; width: fit-content;">
+          Building an Integrated Experience
+        </h2>
 
-          <p class="karthik-tnfc-body-onlight">
-            This wasn't assumed but observed from the existing website content too. Nearly every page on the old site was written as if the reader already knew what TNFC was; 
-            the one exception was the User Access section, with subpages like User Training and Access Forms that walked newcomers through "onboarding" steps existing researchers had already completed.
-          </p> 
+      </div>
 
-          <div class="hard-part-grid" style="margin-bottom: 12px">
-            <div class="hard-part-col-left center">
-              <div
-                style="
-                  width: 56px;
-                  height: 56px;
-                  border-radius: 50%;
-                  background: var(--karthik-green-400);
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 16px;
-                "
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="8" r="3" fill="#FFFFFF" />
-                  <path
-                    d="M6 19C6 15.5 8.5 14 12 14C15.5 14 18 15.5 18 19"
-                    stroke="#FFFFFF"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
+      </section>
 
-              <p class="karthik-cs-problem-body-onlight">
-                Researchers who already knew TNFC
-              </p>
-            </div>
-
-            <div
-              class="hard-part-col-right center karthik-cs-res-audience-col-right"
-            >
-              <div
-                style="
-                  width: 56px;
-                  height: 56px;
-                  border-radius: 50%;
-                  background: var(--karthik-sienna-400);
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 16px;
-                "
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle
-                    cx="10"
-                    cy="10"
-                    r="6"
-                    stroke="#FFFFFF"
-                    stroke-width="2"
-                  />
-                  <line
-                    x1="15"
-                    y1="15"
-                    x2="21"
-                    y2="21"
-                    stroke="#FFFFFF"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-
-              <p class="karthik-cs-problem-body-onlight">
-                Prospective/First Time users
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <h5 class="karthik-tnfc-title" style="width: 100%; margin-top: 12px">
-          Pages Built
+<section class="body-section" style="background-color: var(--bg-page);">
+    <div style="padding: 48px 0;">
+        <h5 class="section-title" style="width: 100%;">
+          <span>01&nbsp;&nbsp;&nbsp;&nbsp;</span
+          >I Proposed a Solution that addressed Content Needs.
         </h5>
 
-        <p
-            class="karthik-tnfc-body-onlight"
-            style="margin-bottom: 20px;"
-          >
-        This two-audience approach led to two distinct pages.</p>
+        <p class="ktchitx-intro">
+          The obvious answer was to do a visual overhaul of the existing website using the university's branding and design guidelines. 
+          This wouldn't have helped as the site would still exist outside of ECE's ecosystem.
+        </p>
 
-        <section class="grid-featured-equal">
-          <div class="karthik-popout-card-outer" style="margin-top: 24px">
-            <div class="karthik-popout-eyebrow">
-              <div class="karthik-popout-eyebrow-left">
-                <p
-                  style="
-                    text-transform: uppercase;
-                    font-size: var(--karthik-text-p-sm2);
-                    color: var(--karthik-neutral-600);
-                    letter-spacing: 0.06em;
-                  "
+        <p class="ktchitx-para">
+          Stripping away the auto-generated architecture on the existing website revealed two genuine content needs: a home page that explained what TNFC was and what it offered, and a user access page that gave users everything they needed to book and use the facility.
+        </p>
+
+        <p class="ktchitx-para">
+          Nearly every page on the old site was written as if the reader already knew what TNFC was; the one exception was the User Access section, with subpages like User Training and Access Forms that walked through "onboarding" steps.
+        </p>
+
+        <p class="ktchitx-para">
+          TNFC also had its own standalone News and Blog feed. This was an easier answer: I had just helped build the blogs and news feed on the ECE website, which could easily takeover the TNFC content.
+        </p>
+
+        <div class="karthik-two-column-home-intro-list-colm-about">
+            <div>
+              <div class="karthik-cs-process-card">
+                <span
+                  class="karthik-cs-process-card-number"
+                  style="font-size: smaller"
+                  >The Main "Home Page"</span
                 >
+
+                <h6 class="karthik-cs-process-card-title">
                   TNFC Content Hub Home
+                </h6>
+
+                <p style="text-align: left; margin-bottom: 0">
+                  Explained what the lab was, what it
+                  offered, and positioned it clearly as a research facility. All
+                  original top-level page content consolidated into scannable
+                  sections.
                 </p>
-              </div>
-              <p
-                class="karthik-popout-eyebrow-right"
-                style="
-                  font-size: var(--karthik-text-p-sm2);
-                  color: var(--karthik-neutral-600);
-                "
-              >
-                The Main "Home Page"
-              </p>
-            </div>
-            <div class="karthik-popout-message-bubble">
-              <p class="karthik-popout-message-body">
-                TNFC Content Hub Home: Explained what the lab was, what it
-                offered, and positioned it clearly as a research facility. All
-                original top-level page content consolidated into scannable
-                sections.
-              </p>
-              <div style="margin: 0 auto; gap: 20px; display: flex">
+
                 <a
                   href="https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="karthik-btn karthik-btn--primary"
-                  style="width: fit-content; justify-content: center"
+                  class="karthik-btn outline-btn"
+                  style="width: fit-content; justify-content: center; margin-top: 24px;"
                 >
                   Live Link
                 </a>
-              </div>
-            </div>
-          </div>
 
-          <div class="karthik-popout-card-outer" style="margin-top: 24px">
-            <div class="karthik-popout-eyebrow">
-              <div class="karthik-popout-eyebrow-left">
-                <p
-                  style="
-                    text-transform: uppercase;
-                    font-size: var(--karthik-text-p-sm2);
-                    color: var(--karthik-neutral-600);
-                    letter-spacing: 0.06em;
-                  "
-                >
-                  TNFC User Access page
-                </p>
               </div>
-              <p
-                class="karthik-popout-eyebrow-right"
-                style="
-                  font-size: var(--karthik-text-p-sm2);
-                  color: var(--karthik-neutral-600);
-                "
-              >
-                The Page for Regular Users
-              </p>
             </div>
-            <div class="karthik-popout-message-bubble">
-              <p class="karthik-popout-message-body">
-                TNFC User Access page: All forms, processes, policies, and
-                compliance requirements in one place instead of five sub-pages.
-              </p>
-              <div style="margin: 0 auto; gap: 20px; display: flex">
+            <div>
+              <div class="karthik-cs-process-card">
+                <span
+                  class="karthik-cs-process-card-number"
+                  style="font-size: smaller"
+                  >The Page for Regular Users</span
+                >
+
+                <h6 class="karthik-cs-process-card-title">
+                  TNFC User Access page
+                </h6>
+
+                <p style="text-align: left; margin-bottom: 0">
+                  All forms, processes, policies, and
+                  compliance requirements in one place instead of five sub-pages.
+                </p>
+
                 <a
                   href="https://www.ece.utoronto.ca/tnfc-user-access/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="karthik-btn karthik-btn--primary"
-                  style="width: fit-content; justify-content: center"
+                  class="karthik-btn outline-btn"
+                  style="width: fit-content; justify-content: center; margin-top: 24px;"
                 >
                   Live Link
                 </a>
+
               </div>
             </div>
-          </div>
-        </section>
-
-        <h5 class="karthik-tnfc-title" style="width: 100%">
-          <span style="font-size: small; color: var(--karthik-sienna-400)"
-            >01&nbsp;&nbsp;&nbsp;&nbsp;</span
-          >I Proposed a Solution that addressed Content Needs.
-        </h5>
-
-        <p class="karthik-tnfc-body-onlight">
-          The obvious answer was to do a visual overhaul of the existing website using the university's branding and design guidelines.
-          But the website lived elsewhere, and there was no direct IA-level connection to the department it was a part of.
-        </p>
-
-        <p class="karthik-tnfc-body-onlight">
-          The original website's pages did not exist because the information
-          required that space. Therefore, stripping away the auto-generated
-          architecture revealed two genuine content needs: a home page that
-          explained what TNFC was and what it offered, and an access page that
-          gave users everything they needed to book and use the facility.
-        </p>
-        
-        <p class="karthik-tnfc-body-onlight">
-          I was also asked what the solution to the news feed might be: We have a blogs and news feed on the ECE website, which could easily take the TNFC load.
-        </p>
-
-        <h6 class="karthik-tnfc-subtitle" style="margin-bottom: 16px">
-          Therefore, I sought to address these points through my redesign:
-        </h6>
-
-        <div class="hard-part-grid">
-          <div class="hard-part-col-left center">
-            <div
-              style="
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: var(--karthik-green-400);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="6" r="2" fill="#FFFFFF" />
-                <circle cx="6" cy="18" r="2" fill="#FFFFFF" />
-                <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
-                <line
-                  x1="8"
-                  y1="18"
-                  x2="16"
-                  y2="18"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-
-            <p class="karthik-cs-problem-body-onlight">
-              Resolve standalone site identity
-            </p>
+            
           </div>
 
-          <div
-            class="hard-part-col-right center karthik-cs-res-audience-col-right"
-          >
-            <div
-              style="
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: var(--karthik-sienna-400);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="6"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                />
-                <line
-                  x1="15"
-                  y1="15"
-                  x2="21"
-                  y2="21"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
+    </div>
+</section>
 
-            <p class="karthik-cs-problem-body-onlight">
-              Increase content discoverability
-            </p>
-          </div>
-
-          <div class="hard-part-col-left center">
-            <div
-              style="
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: var(--karthik-saffron-400);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle
-                  cx="10"
-                  cy="14"
-                  r="4"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                />
-                <circle cx="10" cy="14" r="1.5" fill="#FFFFFF" />
-                <path
-                  d="M18 4C18 6 16.5 7.5 15 9C13.5 7.5 12 6 12 4C12 2.9 12.9 2 14 2H16C17.1 2 18 2.9 18 4Z"
-                  fill="#FFFFFF"
-                />
-                <line
-                  x1="15"
-                  y1="9"
-                  x2="13"
-                  y2="11"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-
-            <p class="karthik-cs-problem-body-onlight">
-              Reduce maintenance overhead
-            </p>
-          </div>
-
-          <div
-            class="hard-part-col-right center karthik-cs-res-audience-col-right"
-          >
-            <div
-              style="
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: var(--karthik-neutral-800);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <line
-                  x1="12"
-                  y1="3"
-                  x2="12"
-                  y2="21"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                />
-                <rect x="6" y="5" width="12" height="4" rx="1" fill="#FFFFFF" />
-                <rect x="8" y="11" width="8" height="4" rx="1" fill="#FFFFFF" />
-                <rect
-                  x="5"
-                  y="17"
-                  width="14"
-                  height="4"
-                  rx="1"
-                  fill="#FFFFFF"
-                />
-              </svg>
-            </div>
-
-            <p class="karthik-cs-problem-body-onlight">
-              Align with ECE branding
-            </p>
-          </div>
-
-          <div class="hard-part-col-left center">
-            <div
-              style="
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: var(--karthik-sienna-400);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 16px;
-              "
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="5" cy="12" r="2" fill="#FFFFFF" />
-                <circle cx="12" cy="12" r="2" fill="#FFFFFF" />
-                <circle cx="19" cy="12" r="2" fill="#FFFFFF" />
-                <line
-                  x1="7"
-                  y1="12"
-                  x2="10"
-                  y2="12"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                />
-                <line
-                  x1="14"
-                  y1="12"
-                  x2="17"
-                  y2="12"
-                  stroke="#FFFFFF"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-
-            <p class="karthik-cs-problem-body-onlight">
-              Simplify navigation structure
-            </p>
-          </div>
-        </div>
-
-        <h5 class="karthik-tnfc-title" style="width: 100%">
-          <span style="font-size: small; color: var(--karthik-sienna-400)"
-            >02&nbsp;&nbsp;&nbsp;&nbsp;</span
+<section class="body-section" style="background-color: var(--bg-page-alt);">
+    <div style="padding: 48px 0;">
+        <h5 class="section-title" style="width: 100%;">
+          <span>02&nbsp;&nbsp;&nbsp;&nbsp;</span
           >A new home experience.
         </h5>
 
-        <p class="karthik-tnfc-body-onlight">
-          TNFC's original home page reads like an institutional bulletin board.
-          The biggest disconnect was the visual consistency. U of T’s brand
-          materials emphasize a coherent visual identity and brand voice across
-          websites, while the original page uses a very plain layout, weak
-          hierarchy, and a dated left-content/right-sidebar blog structure that
-          doesn’t feel like a modern institutional service site. The page
-          hierarchy is also weak because the News & Events column competes with
-          the core explanation of what TNFC is and why a user should care.
+        <p class="ktchitx-intro">
+          TNFC's original home page read like an institutional bulletin board. 
+          But, the biggest disconnect was the visual inconsistency with U of T’s brand. 
         </p>
 
-        <p class="karthik-tnfc-body-onlight">
-          My design focused on making it be perceived as open, active, and easy
-          to engage with, instead of users having to hunt through disconnected
-          sections.
+        <p class="ktchitx-para">
+          The original page used a very plain layout, weak hierarchy, and a dated left-content/right-sidebar blog structure 
+          that doesn’t feel like a modern institutional service site.
         </p>
 
-        <div class="built-before-after">
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/tnfc-home-ori.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
-              TNFC's Original Home Page
+        <p class="ktchitx-para">
+          My design focused on making it be perceived as open, active, and easy to engage with, instead of users having to hunt through disconnected sections.
+        </p>
+
+        <div class="karthik-two-column-home-intro-list-colm-about">
+          <div class="image-block">
+            <img src="/assets/images/tnfc-home-ori.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
+              The TNFC homepage when the project was greenlit.
             </p>
           </div>
-
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="
-                window.open('/assets/images/TNFC - MOCKUP.pdf', '_blank')
-              "
-              src="/assets/images/TNFC-home.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+          <div class="image-block">
+            <img src="/assets/images/TNFC-home.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open('/assets/images/TNFC - MOCKUP.pdf', '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               My Content Hub Design - Desktop (Click to view Full Design)
             </p>
           </div>
         </div>
 
-        <h5 class="karthik-tnfc-title" style="width: 100%">
-          <span style="font-size: small; color: var(--karthik-sienna-400)"
-            >03&nbsp;&nbsp;&nbsp;&nbsp;</span
+    </div>
+</section>
+
+<section class="body-section" style="background-color: var(--bg-page);">
+    <div style="padding: 48px 0;">
+        <h5 class="section-title" style="width: 100%;">
+          <span>03&nbsp;&nbsp;&nbsp;&nbsp;</span
           >Using space, layout, and focus to guide the user.
         </h5>
 
-        <p class="karthik-tnfc-body-onlight">
-          TNFC had 2 lab facilities, information about which instead of being
-          easy to access, was originally hidden in a subpage under About Us. I
-          integrated it into a structured card-based grid on the TNFC home page,
-          reducing click depth.
+        <p class="ktchitx-intro">
+          TNFC had 2 lab facilities, instead of being easy to access, was hidden under About Us. 
+          I integrated it into on the TNFC home page as a structured card-based grid, reducing click depth.
         </p>
 
-        <div class="built-before-after">
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/tnfc-facilities-orig.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+        <div class="karthik-two-column-home-intro-list-colm-about">
+          <div class="image-block">
+            <img src="/assets/images/tnfc-facilities-orig.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               TNFC's Facilities Page (Original)
             </p>
           </div>
-
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/tnfc-facilities-new.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+          <div class="image-block">
+            <img src="/assets/images/tnfc-facilities-new.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               What it looks like now
             </p>
           </div>
         </div>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-para">
           A benefit of this approach is that the components could be extended by simply duplicating an existing block to add more facilities or services as and when required.
-          This "modularity" was planned from the start. ECE's website had no shared component library at the time, so every page was rebuilding similar UI patterns from scratch. 
-          Designing TNFC's components to be duplicated rather than rebuilt was a deliberate step toward fixing that gap, not just solving TNFC's own layout problem.
+          This was planned from the start. ECE's website had no shared component library at the time, so every page was rebuilding similar UI patterns from scratch. 
+          Designing TNFC's components to be duplicated rather than rebuilt was a deliberate step toward fixing that gap.
         </p>
 
-        <h5 class="karthik-tnfc-title" style="width: 100%">
-          <span style="font-size: small; color: var(--karthik-sienna-400)"
-            >04&nbsp;&nbsp;&nbsp;&nbsp;</span
+    </div>
+</section>
+
+<section class="body-section" style="background-color: var(--bg-page-alt);">
+    <div style="padding: 48px 0;">
+        <h5 class="section-title" style="width: 100%;">
+          <span>04&nbsp;&nbsp;&nbsp;&nbsp;</span
           >Reducing Click-through Depth by removing redundancy.
         </h5>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-intro">
           Most of the top-level pages were auto-generated link aggregators, not
           real content pages. The actual information was buried in sub-pages
           that users had to navigate to independently.
         </p>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-para">
           Take User Access, an important page on the site. The five subpages had
           content that could be consolidated into a single page without having
           to erase or deprioritize any critical information.
         </p>
 
-        <div class="built-before-after">
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/tnfc-access-orig1.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+        <div class="karthik-two-column-home-intro-list-colm-about">
+          <div class="image-block">
+            <img src="/assets/images/tnfc-access-orig1.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               TNFC's User Access Page
             </p>
           </div>
-
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/tnfc-access-orig2.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+          <div class="image-block">
+            <img src="/assets/images/tnfc-access-orig2.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open('/assets/images/TNFC - MOCKUP.pdf', '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               TNFC's Access Forms Page
             </p>
           </div>
         </div>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-para">
           One of its subpages, Access Fees, consisted primarily of long pricing tables. 
           I suggested converting it into a downloadable PDF, accessible via a single CTA 
           on the User Access page, rather than porting the tables into the new site's design system.
         </p>
 
-        <h5 class="karthik-tnfc-title" style="width: 100%">
-          <span style="font-size: small; color: var(--karthik-sienna-400)"
-            >05&nbsp;&nbsp;&nbsp;&nbsp;</span
+    </div>
+</section>
+
+<section class="body-section" style="background-color: var(--bg-page);">
+    <div style="padding: 48px 0;">
+        <h5 class="section-title" style="width: 100%;">
+          <span>05&nbsp;&nbsp;&nbsp;&nbsp;</span
           >Improving Recognition with Visual Displays.
         </h5>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-intro">
           TNFC had information about partner organizations, which instead of
           being easy to recall, was originally a text-based list of hyperlinks
           on a Partners subpage under About Us.
         </p>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-para">
           I integrated it as a three-column section with an auto-scrolling logo
           gallery on the TNFC home page, improving partner recognition.
         </p>
 
-        <div class="built-before-after">
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/TNFC-partners-orig.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+        <div class="karthik-two-column-home-intro-list-colm-about">
+          <div class="image-block">
+            <img src="/assets/images/TNFC-partners-orig.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               TNFC's Partners Page (Original)
             </p>
           </div>
-
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="window.open(this.src, '_blank')"
-              src="/assets/images/TNFC-partners-new.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+          <div class="image-block">
+            <img src="/assets/images/TNFC-partners-new.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open(this.src, '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               What it looks like now
             </p>
           </div>
         </div>
 
-        <p
-          class="karthik-tnfc-body-onlight"
-          style="margin-bottom: 20px;"
-        >
+        <p class="ktchitx-para">
           My original design included "Equipment Capabilities" (a subpage on the existing website) as a
-          similar section on the home page. The decision to add it as a second core sub-page was made after I left.
+          similar section on the home page. The decision to add it to the content hub as a second core sub-page was made after I left.
           Due to my planned modularity, the organization was able to reuse my existing structure and other
           reusable components from the website to add a second page for
           Equipment Capabilities.
         </p>
 
-        <h5 class="karthik-tnfc-title" style="width: 100%">
-          <span style="font-size: small; color: var(--karthik-sienna-400)"
-            >06&nbsp;&nbsp;&nbsp;&nbsp;</span
+    </div>
+</section>
+ 
+<section class="body-section" style="background-color: var(--bg-page-alt);">
+    <div style="padding: 48px 0;">
+        <h5 class="section-title" style="width: 100%;">
+          <span>06&nbsp;&nbsp;&nbsp;&nbsp;</span
           >Designed for every screen, built for every student.
         </h5>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-intro">
           No one interacts with a website from a single device. TNFC was
           designed responsively from the first frame, delivering a consistent
           experience across mobile, tablet, laptop, and desktop.
         </p>
 
-        <p class="karthik-tnfc-body-onlight">
+        <p class="ktchitx-para">
           Every layout, component, and content section was built to adapt
           fluidly across screen sizes, ensuring navigation remained intuitive
           and information remained readable regardless of how students accessed
           the site.
         </p>
 
-        <div class="built-before-after">
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="
-                window.open(
-                  '/assets/images/TNFC - MOCKUP - tablet.pdf',
-                  '_blank',
-                )
-              "
-              src="/assets/images/TNFC-tablet.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+        <div class="karthik-two-column-home-intro-list-colm-about">
+          <div class="image-block">
+            <img src="/assets/images/TNFC-tablet.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open('/assets/images/TNFC - MOCKUP - tablet.pdf', '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               My Content Hub Design - Tablet (Click to view Full Design)
             </p>
           </div>
-
-          <div style="width: 100%; cursor: pointer">
-            <img
-              onclick="
-                window.open(
-                  '/assets/images/TNFC - MOCKUP - phone.pdf',
-                  '_blank',
-                )
-              "
-              src="/assets/images/TNFC-phone.webp"
-              style="
-                width: 100%;
-                border: 1px solid var(--karthik-border-subtle);
-              "
-            />
-            <p
-              class="karthik-cs-problem-caption-ondark"
-              style="text-align: center"
-            >
+          <div class="image-block">
+            <img src="/assets/images/TNFC-phone.webp" style="object-position: left; object-fit: contain; height: fit-content;" class="karthik-cs-problem-image" onclick="window.open('/assets/images/TNFC - MOCKUP - phone.pdf', '_blank')" alt="The TNFC homepage before the rebuild"/>
+            <p class="karthik-cs-problem-caption-ondark">
               My Content Hub Design - Mobile (Click to view Full Design)
             </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="karthik-cs-outcome-section">
-      <div class="stylized-container-tnfc-big">
-        <div class="outcome-grid">
-          <!-- Left: narrative -->
-          <div>
-            <span class="karthik-cs-eyebrow-ondark"> The Outcome </span>
+    </div>
+</section>  
 
-            <h4 class="karthik-cs-problem-heading">
-              What Researchers needed from TNFC, Built into ECE.
-            </h4>
+              
 
-            <p class="karthik-cs-problem-body">
-              The TNFC home page and User Access pages shipped as the last batch
-              of pages I built for the ECE during my contract.
-            </p>
+<section class="karthik-cs-outcome-section">
+  <div>
 
-            <a
-              href="https://www.ece.utoronto.ca/toronto-nanofabrication-centre-tnfc/"
-              target="_blank"
-              class="karthik-btn karthik-btn--ghost"
-              style="margin-bottom: 20px"
-            >
-              View Live Site
-            </a>
-          </div>
+    <span class="karthik-cs-eyebrow-ondark"> The Outcome </span>
 
-          <!-- Right: outcome signals -->
-          <div class="karthik-cs-outcome-signals">
-            <div class="karthik-cs-outcome-card">
-              <p class="karthik-cs-outcome-metric">Stronger brand cohesion</p>
+    <h4>
+      What Researchers needed from TNFC, Built into ECE.
+    </h4>
 
-              <p class="karthik-cs-outcome-metric-caption">
-                TNFC looks and feels like ECE, not a separate org.
-              </p>
-            </div>
+    <div class="karthik-two-column-home-intro-list-colm-about">
+      <div>
+        <div class="karthik-cs-process-card">
+          <span
+            class="karthik-cs-process-card-number"
+            style="font-size: smaller"
+          >
+            01
+          </span>
 
-            <div class="karthik-cs-outcome-card">
-              <p class="karthik-cs-outcome-metric">Scalable structure</p>
+          <h6 class="karthik-cs-process-card-title">
+            STRONGER BRAND COHESION
+          </h6>
 
-              <p class="karthik-cs-outcome-metric-caption">
-                the pattern can be reused for the next facility that needs a
-                subsite.
-              </p>
-            </div>
-
-            <div class="karthik-cs-outcome-card">
-              <p class="karthik-cs-outcome-metric">Better user wayfinding</p>
-
-              <p class="karthik-cs-outcome-metric-caption">
-                users find TNFC content without leaving ECE.
-              </p>
-            </div>
-          </div>
+          <p style="text-align: left; margin-bottom: 0">
+            TNFC looks and feels like ECE, not a separate organization.
+          </p>
         </div>
       </div>
-    </section>
 
-    <section class="karthik-learn">
-      <div class="karthik-learn-content">
-        <h4>Reflections</h4>
-        <p>
-          Every design decision was driven by the need to ensure ease of access
-          to the regulations, including access, training, billing, and safety.
-          At the same time, the pages were designed to feel native to ECE while
-          also expressing TNFC’s identity and values. The result positions TNFC
-          as a core, high-value research facility within the department.
-        </p>
-        <p>
-          After I left, development on other parts of the site reused components
-          and patterns that were originally designed for TNFC's section,
-          including the Grid Modernization Centre's new page. The patterns were
-          picked up and used after I left — not only were my components and
-          patterns liked — the structural decisions made sense and they were
-          also repeatable.
-        </p>
+      <div>
+        <div class="karthik-cs-process-card">
+          <span
+            class="karthik-cs-process-card-number"
+            style="font-size: smaller"
+          >
+            02
+          </span>
+
+          <h6 class="karthik-cs-process-card-title">
+            SCALABLE STRUCTURE
+          </h6>
+
+          <p style="text-align: left; margin-bottom: 0">
+            The pattern can be reused for future facilities that need a subsite.
+          </p>
+        </div>
       </div>
-    </section>
 
-    <section class="karthik-footer">
-      <div class="karthik-footer-inner">
-        <p>Developed by Karthik</p>
-        <p>Based in Ontario, Canada</p>
+      <div>
+        <div class="karthik-cs-process-card">
+          <span
+            class="karthik-cs-process-card-number"
+            style="font-size: smaller"
+          >
+            03
+          </span>
+
+          <h6 class="karthik-cs-process-card-title">
+            BETTER USER WAYFINDING
+          </h6>
+
+          <p style="text-align: left; margin-bottom: 0">
+            Users can find TNFC without leaving ECE's primary website.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="body-section">
+    <div>
+
+      <h5
+        style="
+          margin-top: 24px;
+          margin-bottom: 40px;
+          border-bottom: 1px solid var(--brand-600);
+          padding-bottom: 16px;
+          color: var(--brand-600);
+        "
+      >
+        Reflections
+      </h5>
+
+      <p
+        class="ktchitx-intro"
+      >
+        Every design decision was driven by the need to ensure ease of access
+        to the regulations, including access, training, billing, and safety.
+        At the same time, the pages were designed to feel native to ECE while
+        also expressing TNFC’s identity and values. The result positions TNFC
+        as a core, high-value research facility within the department.
+      </p>
+
+      <p class="ktchitx-para">
+        The prototyping for the TNFC homepage and its intial sub-page was done in under two weeks — 
+        because I wanted working drafts in front of stakeholders early.
+      </p>
+
+      <p class="ktchitx-para">
+        Why? There were a couple of design decisions that non-design stakeholders couldn't envision at first. My working drafts and prototype were instrumental 
+        in ensuring they weren't approving something they misunderstood or required major rework late in the process. 
+      </p>
+
+      <p class="ktchitx-para">
+        The approvals process took much longer than anticipated which caused the project to be in the final phases of web development during the final week of my contract
+        — causing a rushed production of assets and finalization/visual polish.
+        Other delays were mostly scheduling related and not design/development related. 
+      </p>
+
+      <p class="ktchitx-para">
+        After I left, development on other parts of the site reused components
+        and patterns that were originally designed for TNFC's section,
+        including the Grid Modernization Centre's new page. The patterns were
+        picked up and used after I left — not only were my components and
+        patterns liked — the structural decisions made sense and they were
+        also repeatable.
+      </p>
+
+      <div style="margin: 24px auto 0; gap: 20px; display: flex">
         <a
-          class="karthik-btn karthik-btn--outline"
-          onclick="scrollToTop()"
-          aria-label="Scroll to Top"
-          >Scroll to Top</a
+          href="/pages/all-projects.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="karthik-btn outline-btn"
+          style="justify-content: center"
         >
+          View Other Projects
+        </a>
       </div>
-    </section>
 
-    <script>
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-    </script>
+    </div>
+</section>
 
-    <script>
-      fetch("../../addons/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading header:", error));
-    </script>
 
-    <script>
-      window.addEventListener("load", () => {
-        const backtotopbutton = document.getElementById("backtotopbutton");
-        const learnSection = document.querySelector(".karthik-learn");
+<section class="karthik-footer">
+  <div class="karthik-footer-inner">
+    <p>Developed by Karthik</p>
+    <p>Based in Ontario, Canada</p>
+    <a
+      class="karthik-btn btn--ghost"
+      onclick="scrollToTop()"
+      aria-label="Scroll to Top"
+      >Scroll to Top</a
+    >
+  </div>
+</section>
 
-        if (!backtotopbutton || !learnSection) return;
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+</script>
 
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            backtotopbutton.style.display = entry.isIntersecting
-              ? "none"
-              : "block";
-          },
-          {
-            root: null,
-            threshold: 0,
-            rootMargin: "0px",
-          },
-        );
-
-        observer.observe(learnSection);
-      });
-    </script>
-
-    <script>
-      function scrollToTops() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-
-      document
-        .getElementById("backtotopbutton")
-        .addEventListener("click", scrollToTops);
-    </script>
   </body>
 </html>

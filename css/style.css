@@ -1,5 +1,4 @@
 :root {
-  /* --- Primitives: Green --- */
   --karthik-green-50: #eaf4e8;
   --karthik-green-100: #bfdbbd;
   --karthik-green-200: #529a4c;
@@ -7,21 +6,18 @@
   --karthik-green-600: #2c5828;
   --karthik-green-800: #1e3d1c;
 
-  /* --- Primitives: Burnt Sienna --- */
   --karthik-sienna-50: #fdf0e8;
   --karthik-sienna-100: #f5c8a0;
   --karthik-sienna-400: #d4691a;
   --karthik-sienna-600: #b5520a;
   --karthik-sienna-800: #7a3208;
 
-  /* --- Primitives: Saffron --- */
   --karthik-saffron-50: #fdf7e2;
   --karthik-saffron-100: #f5d878;
   --karthik-saffron-400: #e8a800;
   --karthik-saffron-600: #c98e00;
   --karthik-saffron-800: #7a5400;
 
-  /* --- Primitives: Neutrals --- */
   --karthik-neutral-50: #f7f4ee;
   --karthik-neutral-100: #eeeae2;
   --karthik-neutral-400: #a8a49c;
@@ -29,88 +25,63 @@
   --karthik-neutral-800: #2a2a26;
   --karthik-neutral-900: #1c1c19;
 
-  /* --- Backgrounds --- */
   --karthik-bg-page: #f7f4ee;
   --karthik-bg-elevated: #ffffff;
   --karthik-bg-page-dark: #050505;
   --karthik-bg-elevated-dark: #343430;
 
-  /* --- Text --- */
-  --karthik-text-primary: #0d0d0b;
-  --karthik-text-on-dark: #f7f4ee;
-  --karthik-text-brand: var(--karthik-green-600);
-  --karthik-text-brand-dark: var(--karthik-green-800);
-  --karthik-text-sienna: var(--karthik-sienna-600);
-  --karthik-text-saffron: var(--karthik-saffron-800);
-
-  /* --- Borders --- */
-  --karthik-border-subtle: #e0d9cc;
-  --karthik-border-default: #c8c2b4;
+  --karthik-border-default: var(--karthik-neutral-100);
   --karthik-border-strong: var(--karthik-neutral-400);
   --karthik-border-brand: var(--karthik-green-600);
   --karthik-border-sienna: var(--karthik-sienna-600);
 
-  /* --- Typography --- */
-  --karthik-heading-color: var(--karthik-text-primary);
-  --karthik-heading-color-brand: var(--karthik-text-brand);
-  --karthik-heading-color-dark: var(--karthik-text-on-dark);
-  --karthik-body-color: var(--karthik-text-primary);
+  --karthik-heading-color: var(--karthik-neutral-900);
+  --karthik-heading-color-brand: var(--karthik-green-600);
+  --karthik-heading-color-dark: var(--karthik-neutral-50);
+  --karthik-body-color: var(--karthik-neutral-900);
   --karthik-body-color-secondary: var(--karthik-neutral-600);
-  --karthik-body-color-dark: var(--karthik-text-on-dark);
+  --karthik-body-color-dark: var(--karthik-neutral-50);
   --karthik-caption-color: var(--karthik-neutral-400);
 
-  /* --- Links --- */
-  --karthik-link: var(--karthik-green-600);
-  --karthik-link-hover: var(--karthik-green-800);
-  --karthik-link-accent: var(--karthik-sienna-600);
-  --karthik-link-dark: var(--karthik-green-400);
-
-  /* --- Buttons: Primary (Brand) --- */
   --karthik-btn-primary-bg: var(--karthik-green-600);
   --karthik-btn-primary-hover: var(--karthik-green-800);
   --karthik-btn-primary-text: var(--karthik-neutral-50);
 
-  /* --- Buttons: Accent (Sienna) --- */
   --karthik-btn-accent-bg: var(--karthik-sienna-600);
   --karthik-btn-accent-hover: var(--karthik-sienna-800);
   --karthik-btn-accent-text: var(--karthik-neutral-50);
 
-  /* --- Buttons: Outline --- */
   --karthik-btn-outline-bg: transparent;
   --karthik-btn-outline-hover: var(--karthik-green-50);
   --karthik-btn-outline-border: var(--karthik-green-600);
   --karthik-btn-outline-text: var(--karthik-green-600);
 
-  /* --- Focus & States --- */
   --karthik-focus-ring: var(--karthik-green-100);
   --karthik-state-selected: var(--karthik-green-50);
   --karthik-state-warning: var(--karthik-sienna-50);
 
   /* --- Type scale --- */
-  --karthik-text-h1: 89.7px; /* 16 × 1.333⁶ */
-  --karthik-text-h2: 67.3px; /* 16 × 1.333⁵ */
-  --karthik-text-h3: 50.5px; /* 16 × 1.333⁴ */
-  --karthik-text-h4: 37.9px; /* 16 × 1.333³ */
-  --karthik-text-h5: 28.4px; /* 16 × 1.333² */
-  --karthik-text-h6: 21.3px; /* 16 × 1.333¹ */
-  --karthik-text-p-lg: 21.3px; /* = h6 size   */
-  --karthik-text-p: 18px; /* base        */
-  --karthik-text-p-sm: 16px; /* 16 ÷ 1.333¹ */
-  --karthik-text-p-sm2: 12px; /* 16 ÷ 1.333¹ */
+  --karthik-text-h1: 89.7px; 
+  --karthik-text-h2: 67.3px; 
+  --karthik-text-h3: 50.5px; 
+  --karthik-text-h4: 37.9px; 
+  --karthik-text-h5: 28.4px; 
+  --karthik-text-h6: 21.3px; 
+  --karthik-text-p-lg: 21.3px; 
+  --karthik-text-p: 18px; 
+  --karthik-text-p-sm: 16px; 
+  --karthik-text-p-sm2: 12px; 
 
-  /* --- Font weights --- */
-  --karthik-weight-heading: 700; /* h1, h2      */
-  --karthik-weight-subheading: 600; /* h3, h4      */
-  --karthik-weight-label: 500; /* h5, h6      */
-  --karthik-weight-body: 400; /* p, p-lg, p-sm */
+  --karthik-weight-heading: 700; 
+  --karthik-weight-subheading: 600; 
+  --karthik-weight-label: 500; 
+  --karthik-weight-body: 400; 
 
-  /* --- Line heights --- */
   --karthik-leading-h: 1.6;
   --karthik-leading-p: 1.7;
   --karthik-leading-p-lg: 1.6;
   --karthik-leading-p-sm: 1.6;
 
-  /* --- Letter spacing --- */
   --karthik-tracking-h1: -0.03em;
   --karthik-tracking-h2: -0.025em;
   --karthik-tracking-h3: -0.02em;
@@ -135,7 +106,7 @@
 body {
   font-family: "League Spartan", sans-serif;
   background: var(--karthik-bg-page-dark);
-  color: var(--karthik-text-on-dark);
+  color: var(--karthik-neutral-50);
 }
 
 h1,
@@ -248,7 +219,7 @@ a {
 
 .karthik-cs-title {
   letter-spacing: -0.03px;
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   margin: 0 0 16px 0;
 }
 
@@ -296,7 +267,7 @@ a {
 }
 
 .karthik-cs-problem-heading-onlight {
-  color: var(--karthik-text-brand);
+  color: var(--karthik-green-600);
   margin: 12px 0 24px 0;
   max-width: 640px;
 }
@@ -549,7 +520,7 @@ a {
   font-family: "League Spartan", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   margin: 0 0 16px 0;
 }
 
@@ -595,7 +566,7 @@ a {
 }
 
 .karthik-cs-res-audience-col-left {
-  border-right: 1px solid var(--karthik-border-subtle);
+  border-right: 1px solid var(--karthik-border-default);
   padding-right: 48px;
 }
 
@@ -606,7 +577,7 @@ a {
 .karthik-cs-res-audience-title {
   font-size: 24px;
   line-height: 1.4;
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   margin: 12px 0 16px 0;
 }
 
@@ -741,7 +712,7 @@ a {
 }
 
 .karthik-cs-process-card-title {
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   margin: 0 0 12px 0;
 }
 
@@ -770,7 +741,7 @@ a {
 }
 
 .karthik-learn-content h4 {
-  color: var(--karthik-text-on-dark);
+  color: var(--karthik-neutral-50);
   margin: 12px 0;
   width: 100%;
 }
@@ -795,7 +766,7 @@ a {
 }
 
 .karthik-header-menu {
-  background: var(--karthik-text-brand-dark);
+  background: var(--karthik-green-800);
   padding: 20px 0;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -837,7 +808,7 @@ a {
   font-family: "League Spartan", sans-serif;
   font-weight: var(--karthik-weight-heading);
   letter-spacing: var(--karthik-tracking-h2);
-  color: var(--karthik-text-on-dark);
+  color: var(--karthik-neutral-50);
   max-width: 72rem;
 }
 
@@ -1100,7 +1071,7 @@ a {
 .karthik-btn--outline-dark {
   background: var(--karthik-btn-outline-bg);
   color: var(--karthik-neutral-800);
-  border-color: var(--karthik-border-subtle);
+  border-color: var(--karthik-border-default);
 }
 .karthik-btn--outline-dark:hover {
   background: rgba(255, 255, 255, 0.06);
@@ -1180,7 +1151,7 @@ a {
   margin: 24px auto 6px;
   text-align: center;
   letter-spacing: 0.1em;
-  color: var(--karthik-text-brand-dark);
+  color: var(--karthik-green-800);
   text-transform: uppercase;
 }
 
@@ -1335,7 +1306,7 @@ a {
 
 .karthik-footer {
   padding: 2rem 3rem;
-  background-color: var(--karthik-text-brand-dark);
+  background-color: var(--karthik-green-800);
 }
 
 .karthik-footer-inner {
@@ -1350,7 +1321,7 @@ a {
 
 .karthik-footer-cta {
   padding: 2rem 3rem;
-  background-color: var(--karthik-text-brand-dark);
+  background-color: var(--karthik-green-800);
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -1382,7 +1353,7 @@ a {
   font-weight: var(--karthik-weight-heading);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--karthik-text-brand);
+  color: var(--karthik-green-600);
   margin-bottom: 24px;
 }
 
@@ -1443,7 +1414,7 @@ a {
 
 .karthik-featured-heading-alt {
   font-weight: var(--karthik-weight-heading);
-  color: var(--karthik-text-brand-dark);
+  color: var(--karthik-green-800);
   margin-bottom: 12px;
 }
 
@@ -1685,7 +1656,7 @@ a {
   font-size: 16px;
   font-weight: 600;
   background-color: var(--karthik-saffron-100);
-  color: var(--karthik-text-brand-dark);
+  color: var(--karthik-green-800);
   padding: 12px 16px;
   border-radius: 8px;
   justify-content: center;
@@ -1747,7 +1718,7 @@ a {
 }
 
 .karthik-tnfc-title {
-  color: var(--karthik-text-brand-dark);
+  color: var(--karthik-green-800);
   margin: 48px 0 0 0;
   padding: 4px;
   font-weight: medium;
@@ -1914,7 +1885,7 @@ a {
 .karthik-ap-index-header span {
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
 }
 
 /* List */
@@ -1948,7 +1919,7 @@ a {
 
 .karthik-ap-item-left h5 {
   max-width: 640px;
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   margin: 0;
   font-weight: 400;
 }
@@ -1969,7 +1940,7 @@ a {
   opacity: 0;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--karthik-text-brand);
+  color: var(--karthik-green-600);
 }
 
 .karthik-ap-item:hover .karthik-ap-date-reveal {
@@ -1979,7 +1950,7 @@ a {
 
 .karthik-ap-item .karthik-ap-arrow {
   transition: opacity 0.2s ease;
-  color: var(--karthik-text-brand);
+  color: var(--karthik-green-600);
 }
 
 /* Footer area of index */
@@ -2024,7 +1995,7 @@ a {
 .karthik-popout-card-outer {
   width: 100%;
   background: var(--karthik-bg-elevated);
-  border: 1px solid var(--karthik-border-subtle);
+  border: 1px solid var(--karthik-border-default);
   border-radius: 12px;
   padding: 14px 16px;
 }
@@ -2050,13 +2021,13 @@ a {
 
 .karthik-popout-message-bubble {
   background: var(--karthik-bg-page);
-  border: 1px solid var(--karthik-border-subtle);
+  border: 1px solid var(--karthik-border-default);
   border-radius: 8px;
   padding: 12px 14px;
 }
 
 .karthik-popout-message-body {
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   line-height: 1.6;
 }
 
@@ -2064,7 +2035,7 @@ a {
   width: 100%;
   max-width: 768px;
   background: #ffffff;
-  border: 1px solid var(--karthik-border-subtle);
+  border: 1px solid var(--karthik-border-default);
   border-radius: 12px;
   overflow: hidden;
   margin: 24px auto;
@@ -2082,7 +2053,7 @@ a {
 }
 
 .karthik-data-card-title {
-  color: var(--karthik-text-brand);
+  color: var(--karthik-green-600);
 }
 
 .karthik-data-card-tags {
@@ -2090,7 +2061,7 @@ a {
   flex-wrap: wrap;
   gap: 8px;
   padding: 12px 16px;
-  border-bottom: 1px solid var(--karthik-border-subtle);
+  border-bottom: 1px solid var(--karthik-border-default);
 }
 
 .karthik-data-tag-label {
@@ -2098,7 +2069,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--karthik-text-brand-dark);
+  color: var(--karthik-green-800);
 }
 
 .karthik-data-card-rows {
@@ -2112,7 +2083,7 @@ a {
   justify-content: space-between;
   gap: 8px;
   padding: 13px 0;
-  border-bottom: 1px solid var(--karthik-border-subtle);
+  border-bottom: 1px solid var(--karthik-border-default);
 }
 
 .karthik-data-row p {
@@ -2124,11 +2095,11 @@ a {
 }
 
 .karthik-data-row-label {
-  color: var(--karthik-text-brand-dark);
+  color: var(--karthik-green-800);
 }
 
 .karthik-data-row-value {
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
   text-align: right;
 }
 
@@ -2189,7 +2160,7 @@ h6,
 }
 
 .karthik-two-column-home-intro-list-colm {
-  border-left: 1px solid var(--karthik-border-subtle);
+  border-left: 1px solid var(--karthik-border-default);
 }
 
 .karthik-two-column-home-intro > .karthik-text-section__inner {
@@ -2226,7 +2197,7 @@ h6,
   font-size: var(--karthik-text-p-lg);
   margin-top: 24px;
   margin-bottom: 24px;
-  color: var(--karthik-text-primary);
+  color: var(--karthik-neutral-900);
 }
 
 .karthik-two-column-home-intro-list-items {
@@ -2260,5 +2231,63 @@ h6,
   .karthik-two-column-home-intro-list-colm {
     border-left: none;
     padding-left: 0;
+  }
+}
+
+.world-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 99 / 50;
+}
+
+.world-map__dots {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wm-dot {
+  fill: var(--karthik-neutral-600);
+}
+
+.wm-pin {
+  fill: var(--karthik-sienna-400);
+}
+
+
+.world-map__label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  margin-left: 20px;
+}
+
+.world-map__label-text {
+  display: inline-block;
+  margin-left: 14px;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* nudge labels for the two closely-clustered pairs so they don't overlap */
+.world-map__label--toronto .world-map__label-text {
+  margin-top: 12px;
+}
+
+.world-map__label--montreal .world-map__label-text {
+  margin-top: -20px;
+}
+
+
+@media (max-width: 480px) {
+  .world-map__label-text {
+    font-size: 10px;
+    padding: 2px 7px;
   }
 }
