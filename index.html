@@ -8,7 +8,7 @@
 
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload = null; this.rel = 'stylesheet';"/>
 
-<link rel="stylesheet" href="/css/styles-new.css" />
+<link rel="stylesheet" href="/css/style.css" />
 <script src="/js/script.js"></script>
 
 </head>
@@ -100,9 +100,9 @@
 
     <section class="hero-main">
             
-        <p class="p-lg" style="margin: auto auto 20px; text-align: center;" id="greeting">
+        <p class="p-lg greeting" id="greeting">
         </p>
-        <h1 style="margin: 0 auto; text-align: center;">
+        <h1 class="title">
           Karthik is a <span class="gradient-dark">Designer</span> for<br>
           <span class="gradient-dark">Websites</span> and <span class="gradient-dark">Digital Products</span>.
         </h1>
@@ -118,7 +118,10 @@
 
     </section>
 
+
 </section>
+
+<section class="fancy-section-2"></section>
 
 <section class="karthik-two-column-home-intro" id="work" style="background-color: var(--black-800);">
     <div class="karthik-text-section__inner">
@@ -159,6 +162,8 @@
     </div>
     </div>
 </section>
+
+<section class="fancy-section-2"></section>
 
 <section class="body-section">
     <div>
@@ -223,13 +228,11 @@
     </div>
 
     <!-- Image -->
-    <div style="flex: 1; text-align: right;">
+    <div style="flex: 1; text-align: right;" class="desktop-only">
       <img
         src="/assets/images/TNFC.webp"
         alt="Offical TNFC lab Press Photo"
-        style="max-width: 100%; height: auto; display: inline-block; filter: grayscale(100%); transition: filter 0.4s ease;"
-        onmouseover="this.style.filter='grayscale(0%)'"
-        onmouseout="this.style.filter='grayscale(100%)'"
+        style="max-width: 100%; height: auto; display: inline-block;"
       >
     </div>
 
@@ -242,13 +245,11 @@
   <div style="width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
 
     <!-- Image -->
-    <div style="flex: 1; text-align: right;">
+    <div style="flex: 1; text-align: right;" class="desktop-only">
       <img
         src="/assets/images/ece.webp"
         alt="ECE Homepage mockup"
-        style="max-width: 100%; height: auto; display: inline-block; filter: grayscale(100%); transition: filter 0.4s ease;"
-        onmouseover="this.style.filter='grayscale(0%)'"
-        onmouseout="this.style.filter='grayscale(100%)'"
+        style="max-width: 100%; height: auto; display: inline-block;"
       >
     </div>
 
@@ -305,13 +306,11 @@
     </div>
 
     <!-- Image -->
-    <div style="flex: 1; text-align: right;">
+    <div style="flex: 1; text-align: right;" class="desktop-only">
       <img
         src="/assets/images/ssyo-banner-main.webp"
         alt="Offical TNFC lab Press Photo"
-        style="max-width: 100%; height: auto; display: inline-block; filter: grayscale(100%); transition: filter 0.4s ease;"
-        onmouseover="this.style.filter='grayscale(0%)'"
-        onmouseout="this.style.filter='grayscale(100%)'"
+        style="max-width: 100%; height: auto; display: inline-block;"
       >
     </div>
 
@@ -319,6 +318,7 @@
 
 </section>
 
+<section class="fancy-section-1"></section>
 
 <section class="body-section">
     <div>
@@ -389,124 +389,128 @@
     </div>
 </section>
 
-<section
-      class="karthik-two-column-home-intro"
-      style="background-color: var(--bg-page)"
-    >
-      <div class="karthik-text-section__inner">
-        <div class="karthik-two-column-home">
-          <div style="position: relative; min-width: 40%">
-            <p class="p-sm" style="margin-bottom: 0;">
-              Testimonials
-            </p>
+<section class="fancy-section-1"></section>
 
-            <h6
-              class="ktchitx-intro"
-              style="margin-top: 12px;"
+<section
+  class="karthik-two-column-home-intro"
+  style="background-color: var(--bg-page)"
+>
+  <div class="karthik-text-section__inner">
+    <div class="karthik-two-column-home">
+      <div style="position: relative; min-width: 40%">
+        <p class="p-sm" style="margin-bottom: 0;">
+          Testimonials
+        </p>
+
+        <h6
+          class="ktchitx-intro"
+          style="margin-top: 12px;"
+        >
+          What People Say
+        </h6>
+
+        <div>
+          <svg
+            class="quote-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 24 24"
+            fill="var(--accent-800)"
+          >
+            <path
+              d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        class="karthik-two-column-home-intro-list-colm"
+        style="display: flex; padding-top: 12px; border: none"
+      >
+        <div>
+          <div class="karthik-cs-process-card" style="margin: 20px auto 0">
+            <span
+              class="karthik-cs-process-card-number"
+              style="font-size: smaller"
+              >Hear From a Colleague</span
             >
-              What People Say
+
+            <h6 class="karthik-cs-process-card-title">
+              "Karthik's ability to grasp and align client requirements with
+              solutions are unmatched and makes him a rare leader in design
+              and implementation work! He came in as a knight in shining
+              armor making the impossible, possible."
             </h6>
 
-            <div>
-              <svg
-                class="quote-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
-                viewBox="0 0 24 24"
-                fill="var(--accent-800)"
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <p
+                style="font-style: italic; margin-bottom: 0"
               >
-                <path
-                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <div
-            class="karthik-two-column-home-intro-list-colm"
-            style="display: flex; padding-top: 12px; border: none"
-          >
-            <div>
-              <div class="karthik-cs-process-card" style="margin: 20px auto 0">
-                <span
-                  class="karthik-cs-process-card-number"
-                  style="font-size: smaller"
-                  >Hear From a Colleague</span
-                >
-
-                <h6 class="karthik-cs-process-card-title">
-                  "Karthik's ability to grasp and align client requirements with
-                  solutions are unmatched and makes him a rare leader in design
-                  and implementation work! He came in as a knight in shining
-                  armor making the impossible, possible."
-                </h6>
-
-                <div
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                  "
-                >
-                  <p
-                    style="font-style: italic; margin-bottom: 0"
-                  >
-                    Kyle Thomas
-                  </p>
-                  <p
-                    style="font-style: italic; margin-bottom: 0"
-                  >
-                    on working together at Copywriting Creatives
-                  </p>
-                </div>
-              </div>
+                Kyle Thomas
+              </p>
+              <p
+                style="font-style: italic; margin-bottom: 0"
+              >
+                on working together at Copywriting Creatives
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<section class="fancy-section-2"></section>
 
 <section
-      class="karthik-two-column-home-intro"
-      style="background-color: var(--black-800)"
-    >
-      <div class="karthik-text-section__inner">
-          <div style="position: relative; min-width: 40%">
-            <p class="p-sm" style="margin-bottom: 0; color: var(--white-50)">
-              Contact Me
-            </p>
+  class="karthik-two-column-home-intro"
+  style="background-color: var(--black-800)"
+>
+  <div class="karthik-text-section__inner">
+      <div style="position: relative; min-width: 40%">
+        <p class="p-sm" style="margin-bottom: 0; color: var(--white-50)">
+          Contact Me
+        </p>
 
-            <h3 style="margin-top: 12px; color: var(--accent-100)">
-              I'm in the people business
-              so get in touch!
-          </h3>
+        <h3 style="margin-top: 12px; color: var(--accent-100)">
+          I'm in the people business
+          so get in touch!
+      </h3>
 
-            <a class="karthik-btn btn--ghost" href="mailto:karthikaravindj@gmail.com">
-              Email Me
-            </a>
+        <a class="karthik-btn btn--ghost" href="mailto:karthikaravindj@gmail.com">
+          Email Me
+        </a>
 
-            <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank" rel="noopener noreferrer" class="karthik-btn btn--ghost">
-              LinkedIn
-              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity: 0.6">
-                <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </a>
+        <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank" rel="noopener noreferrer" class="karthik-btn btn--ghost">
+          LinkedIn
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity: 0.6">
+            <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
 
-            <div>
-              <img
-                  class="quote-svg-2"
-                  src="/assets/icons/contact.png"
-                  width="100"
-                  height="100"
-              >
-            </div>
-            
-          </div>
-
+        <div>
+          <img
+              class="quote-svg-2"
+              src="/assets/icons/contact.png"
+              width="100"
+              height="100"
+          >
+        </div>
         
       </div>
-    </section>
+
+    
+  </div>
+</section>
 
 <section class="karthik-footer">
   <div class="karthik-footer-inner">
