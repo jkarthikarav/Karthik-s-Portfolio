@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>ECE TNFC Lab</title>
+<title>Karthik Jambunathan | Portfolio</title>
 
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Barlow:wght@400;500;700&display=swap" onload="this.onload = null; this.rel = 'stylesheet';"/>
 
@@ -15,107 +15,162 @@
 
 <body>
 
+<section class="hero-section">
 
-<header class="header-menu">
-    <div class="inner-menu">
-    <a
-    href="/"
-    class="header__logo-link"
-    style="margin-bottom: 0; margin-top: 24px;"
-    >
-    <img
-        src="/graphics/logos/Karthik.png"
-        alt="Karthik"
-        class="header__logo"
-    />
-    </a>
-
-    <nav class="header__actions" style="margin-top: 12px;">
-        <a
-        href="/pages/about.html"
-        rel="noopener noreferrer"
-        class="karthik-btn btn--ghost"
-        >
-        About Me
-        </a>
-        <a
-        href="/pages/all-projects.html"
-        rel="noopener noreferrer"
-        class="karthik-btn btn--ghost"
-        >
-        All Projects
-        </a>
-        <a
-        href="https://www.linkedin.com/in/karthikjambunathan/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="karthik-btn btn--ghost"
-        >
-        LinkedIn
-        <svg
-            width="11"
-            height="11"
-            viewBox="0 0 12 12"
-            fill="none"
-            aria-hidden="true"
-            style="opacity: 0.6"
-        >
-            <path
-            d="M2 2h8v8M10 2 2 10"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            />
-        </svg>
-        </a>
-    </nav>
-    </div>
-</header>
-
-<section class="hero-main-case">
-
-  <div class="tags-grid">
-    <span style="display: inline-flex; align-items: center; padding: 12px 12px; border-radius: 999px; background-color:  var(--brand-100); color:  var(--black-800); width: fit-content;">
-      At ECE at U of T
-    </span>
-
-    <span style="display: inline-flex; align-items: center; padding: 12px 12px; border-radius: 999px; background-color:  var(--brand-100); color:  var(--black-800); width: fit-content;">
-      UX/UI Design · Front-End Development
-    </span>
-
-    <span style="display: inline-flex; align-items: center; padding: 12px 12px; border-radius: 999px; background-color:  var(--brand-100); color:  var(--black-800); width: fit-content;">
-      Timeline: Nov 2024 – Mar 2025
-    </span>
-
-  </div>
+  <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <filter id="smoke" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+            <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.009" numOctaves="4" seed="9" result="base" stitchTiles="stitch" />
     
-    <h1 style="margin: 20px auto 0;">
-      Rebuilding a Standalone Website into a<br>
-      <span class="gradient-dark">Department-Hosted Content Hub</span>
-    </h1>
+            <feTurbulence type="fractalNoise" baseFrequency="0.003 0.003" numOctaves="2" seed="3" result="warpFieldStatic" />
+            <feOffset in="warpFieldStatic" result="warpField">
+              <animate attributeName="dx" values="0;400;0;-400;0" dur="40s" repeatCount="indefinite" />
+              <animate attributeName="dy" values="0;-300;0;300;0" dur="55s" repeatCount="indefinite" />
+            </feOffset>
+    
+            <feDisplacementMap in="base" in2="warpField" scale="140" xChannelSelector="R" yChannelSelector="G" result="warped" />
+    
+            <feComponentTransfer in="warped" result="contrast">
+              <feFuncA type="gamma" amplitude="1" exponent="3.2" offset="0" />
+            </feComponentTransfer>
+    
+            <feColorMatrix in="contrast" type="matrix"
+              values="0 0 0 0 0.9098
+                  0 0 0 0 0.6588
+                  0 0 0 0 0.0
+                  0 0 0 1 0"
+              result="veins" />
+    
+            <feGaussianBlur in="veins" stdDeviation="1.1" result="blurred" />
+    
+            <feBlend in="blurred" in2="SourceGraphic" mode="multiply" />
+          </filter>
+        </defs>
+    
+        <rect width="1600" height="900" fill="#f6f5f2" />
+        <rect x="-400" y="-300" width="2400" height="1500" fill="#f6f5f2" filter="url(#smoke)" />
+      </svg>
 
-    <p style="margin: 20px auto auto;">
-        I researched, designed, prototyped, and built ECE at U of T's Nanofabrication research lab website, 
-        converting it from a standalone website with inconsistent branding, to a responsive content hub integrated into ECE's public-facing website, 
-        working across phone, tablet, and desktop. 
-        To deliver it, I worked with the ECE comms and IT teams, additionally communicating with the Research Lab's admin for content design and decisions.
-    </p>
+    <header class="header-menu">
+        <div class="inner-menu">
+        <a
+        href="/"
+        class="header__logo-link"
+        style="margin-bottom: 0; margin-top: 24px;"
+        >
+        <img
+            src="/graphics/logos/Karthik.png"
+            alt="Karthik"
+            class="header__logo"
+        />
+        </a>
+
+        <nav class="header__actions" style="margin-top: 12px;">
+            <a
+            href="/pages/about.html"
+            rel="noopener noreferrer"
+            class="karthik-btn btn--ghost"
+            >
+            About Me
+            </a>
+            <a
+            href="/pages/all-projects.html"
+            rel="noopener noreferrer"
+            class="karthik-btn btn--ghost"
+            >
+            All Projects
+            </a>
+            <a
+            href="https://jkarthikarav.github.io/ui/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="karthik-btn btn--ghost"
+            >
+            UI Designs
+            <svg
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+                style="opacity: 0.6"
+            >
+                <path
+                d="M2 2h8v8M10 2 2 10"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                />
+            </svg>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/karthikjambunathan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="karthik-btn btn--ghost"
+            >
+            LinkedIn
+            <svg
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+                style="opacity: 0.6"
+            >
+                <path
+                d="M2 2h8v8M10 2 2 10"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                />
+            </svg>
+            </a>
+        </nav>
+        </div>
+    </header>
+
+    <section class="hero-main">
+            
+        <p class="p-lg greeting" id="greeting">
+        </p>
+        <h1 class="title">
+          Karthik is a <span class="gradient-dark">Designer</span> for<br>
+          <span class="gradient-dark">Websites</span> and <span class="gradient-dark">Digital Products</span>.
+        </h1>
+        <p style="margin: 20px auto 0; text-align: center; max-width: 768px;">
+          Product, strategy, UX, and brand work from shipped product pages to strategic case studies from streamlining operations & growth.
+        </p>
+        <p style="margin: 20px auto 0; text-align: center;">
+          Open to UX/Product roles · Toronto, ON
+        </p>
+        <a class="karthik-btn primary-btn" href="#work" style="margin: 20px auto auto;">
+          Start Exploring
+        </a>
+
+    </section>
+
 
 </section>
 
-<section class="tnfc-banner"></section>
+<section class="fancy-section-2" id="work"></section>
 
-<section class="karthik-two-column-home-intro" id="work">
+<section class="karthik-two-column-home-intro" style="background-color: var(--black-800);">
     <div class="karthik-text-section__inner">
     <div class="karthik-two-column-home">
         <div>
-        <p class="ktchitx-intro">
-            I design what moves business forward and remains reliable as you scale.
+        <p class="ktchitx-intro" style="color: var(--white-50);">
+            I design and develop experiences that function as systems —
+            whether you're launching your products or reimagining your digital
+            presence.
         </p>
 
-        <p>
-          Across Education — Non-profit — Creative industries — Technology — Small Businesses.
+        <p style="color: var(--white-50);">
+            An experience is more than polished screens, it is the backend
+            systems, the front-end visuals, the architecture, and the product,
+            on one shared digital environment.
         </p>
         </div>
 
@@ -123,83 +178,28 @@
         class="karthik-two-column-home-intro-list-colm"
         style="display: flex; flex-direction: column"
         >
-        <p class="p-sm" style="margin-top: 24px; margin-bottom: 12px">
+        <p class="p-sm" style="margin-top: 24px; margin-bottom: 12px; color: var(--accent-100)">
             What's on this page
         </p>
         <div class="karthik-two-column-home-intro-list-items">
-            <h5 class="karthik-tnfc-title">
-                01&nbsp;&nbsp;&nbsp;&nbsp;Meet a different kind of Designer
+            <h5 class="karthik-tnfc-title" style="color: var(--white-50);">
+                01&nbsp;&nbsp;&nbsp;&nbsp; Select Projects
             </h5>
-            <h5 class="karthik-tnfc-title">
-                02&nbsp;&nbsp;&nbsp;&nbsp;Key Skills
+            <h5 class="karthik-tnfc-title" style="color: var(--white-50);">
+                02&nbsp;&nbsp;&nbsp;&nbsp;Capabilities
             </h5>
-            <h5 class="karthik-tnfc-title">
-                03&nbsp;&nbsp;&nbsp;&nbsp;Academic Foundations
-            </h5>
-            <h5 class="karthik-tnfc-title">
-                04&nbsp;&nbsp;&nbsp;&nbsp;Work Experience
+            <h5 class="karthik-tnfc-title" style="color: var(--white-50);">
+                03&nbsp;&nbsp;&nbsp;&nbsp;What People Say
             </h5>
         </div>
         </div>
     </div>
     </div>
 </section>
+
+<section class="fancy-section-2"></section>
 
 <section class="body-section">
-      
-    <div class="karthik-text-section__body" style="width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
-
-      <div>
-        <h5
-          style="
-            margin-top: 24px;
-            margin-bottom: 12px;
-            border-bottom: 1px solid var(--brand-600);
-            padding-bottom: 16px;
-            color: var(--brand-600);
-          "
-        >
-          Meet a different kind of Designer
-        </h5>
-        <p
-          style="
-            margin-top: 0;
-            margin-bottom: 40px;
-            color: var(--brand-600);
-            font-style: italic;
-          "
-        >
-          I take research all the way to the final build.
-      </p>
-
-        <p class="p-lg" style="color: var(--karthik-neutral-900); margin-top: 20px;">
-          Usually research, design, and development are three different people. Something gets misread or left out every time work passes between them. 
-          I do all three myself so the thing I learned in research is still the thing shaping the build at the end.
-        </p>
-  
-        <p style="color: var(--karthik-body-color-secondary);">
-          I've worked in industries I knew nothing about going in: nonprofits, university admissions, healthcare. 
-          Each time I had to learn enough to ask questions that made sense and recognize answers that mattered. I did it fast enough that the work was credible.
-        </p>
-
-        <p style="color: var(--karthik-body-color-secondary);">
-          I also build things that keep working after I leave. 
-          The people who took over my projects didn't have to call me to figure out how anything worked — my work is always scaleable and my documentation game's on point. 
-        </p>
-  
-        <p style="color: var(--karthik-body-color-secondary);">
-          Currently based in Toronto. Open to full-time roles.
-        </p>
-      </div>
-
-      <div class="image-block">
-        <img src="/assets/images/Karthik/Karthik-002.webp" class="karthik-cs-problem-image"/>
-      </div>
-    </div>
-
-</section>
-
-<section class="body-section" style="background-color: var(--bg-page);">
     <div>
 
         <h5
@@ -211,13 +211,168 @@
             color: var(--brand-600);
           "
         >
-          Key Skills
+          Select Projects
         </h5>
 
         <p
           class="ktchitx-intro"
         >
-          I use these skills on every project no matter what industry or who I'm working with.
+          Each project here shows how I collaborate across UX research,
+          strategy, and design (and front end development/web production) as a
+          UX/Product designer to deliver adoption, engagement, and business
+          results through data-informed design.
+        </p>
+
+        <div style="margin: 0 auto; gap: 20px; display: flex">
+          <a
+            href="/pages/all-projects.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="karthik-btn outline-btn"
+            style="justify-content: center"
+          >
+            View All Projects
+          </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="casestudy" style="background-color: var(--bg-page);">
+  
+  <div style="width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+
+    <!-- Content -->
+    <div style="flex: 1;">
+        <p class="p-sm">
+            UI/UX · Front-End Dev · 2024–25
+        </p>
+      <h6 style="margin: 0 0 16px; color: var(--brand-600);">
+        How I Integrated the Discovery and Onboarding Experience for a Research Facility within its Parent Product.
+      </h6>
+
+      <p style="margin: 0 0 24px; color: var(--black-600); max-width: 500px;">
+        TNFC, a research lab, had its own CMS infrastructure, and no connection to its parent faculty's brand or navigation. 
+        I consolidated this multi-page site into a two-page section native to its parent faculty's digital environment.
+      </p>
+
+      <a class="karthik-btn outline-btn" href="/pages/projects/ece-tnfc.html">
+        Explore Solution
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div style="flex: 1; text-align: right;" class="desktop-only">
+      <img
+        src="/assets/images/TNFC.webp"
+        alt="Offical TNFC lab Press Photo"
+        style="max-width: 100%; height: auto; display: inline-block;"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+<section class="casestudy">
+  
+  <div style="width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+
+    <!-- Image -->
+    <div style="flex: 1; text-align: right;" class="desktop-only">
+      <img
+        src="/assets/images/ece.webp"
+        alt="ECE Homepage mockup"
+        style="max-width: 100%; height: auto; display: inline-block;"
+      >
+    </div>
+
+    <!-- Content -->
+    <div style="flex: 1;">
+        <p class="p-sm">
+            UI/UX · Front-End Dev · 2024–25
+        </p>
+      <h6 style="margin: 0 0 16px; color: var(--brand-600);">
+        How I Rebuilt Key Website Pages for University of Toronto's Department of Electrical and Computer Engineering.
+      </h6>
+
+      <p style="margin: 0 0 24px; color: var(--black-600); max-width: 500px;">
+        I'd already been handling web production tickets for a while at University of Toronto's Department of Electrical and Computer Engineering (ECE at U of T), 
+        after which I led the design and front-end rebuild of core parts of their public-facing website — 
+        reimagining the digital student experience, delivered as a responsive website across phone, tablet, and desktop.
+      </p>
+
+      <a class="karthik-btn outline-btn" href="/pages/projects/ece.html">
+        Explore Solution
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="casestudy" style="background-color: var(--bg-page);">
+  
+  <div style="width: 100%; max-width: 1200px; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+
+    <!-- Content -->
+    <div style="flex: 1;">
+        <p class="p-sm">
+          Latest UX/UI Work 
+        </p>
+      <h6 style="margin: 0 0 16px; color: var(--brand-600);">
+        Simplifying tech choices to amplify the Montreal-based charity, South Shore Youth Organization's (SSYO) online footprint.
+      </h6>
+
+      <p style="margin: 0 0 24px; color: var(--black-600); max-width: 500px;">
+        As UX designer and front-end developer, 
+        I led the visual rebrand, information architecture consolidation, and donation flow simplification, 
+        translating client needs into a cohesive, high-trust design system. Full case study linked below.
+      </p>
+
+      <a class="karthik-btn outline-btn" href="https://southshoreyouth.org/" target="_blank">
+        Explore Live Website
+      </a>
+
+      <a class="karthik-btn btn--ghost-brand" href="https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a?r=444wy3" target="_blank">
+        Read Case Study
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div style="flex: 1; text-align: right;" class="desktop-only">
+      <img
+        src="/assets/images/ssyo-banner-main.webp"
+        alt="Offical TNFC lab Press Photo"
+        style="max-width: 100%; height: auto; display: inline-block;"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+<section class="fancy-section-1"></section>
+
+<section class="body-section">
+    <div>
+
+        <h5
+          style="
+            margin-top: 24px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--brand-600);
+            padding-bottom: 16px;
+            color: var(--brand-600);
+          "
+        >
+          Capabilities
+        </h5>
+
+        <p
+          class="ktchitx-intro"
+        >
+          IT solutions are essential, but they’re also just the beginning: I collaborate with you, to clean up your digital and data messes and get your game plan in motion.
         </p>
 
         <div class="karthik-two-column-home-intro-list-colm-about">
@@ -230,11 +385,14 @@
                 >
 
                 <h6 class="karthik-cs-process-card-title">
-                  Research & Strategy
+                  SOLUTION ENGINEERING
                 </h6>
 
                 <p style="text-align: left; margin-bottom: 0">
-                  I figure out what the real problem is before anything gets designed. I do that through interviews, competitor research, and watching how people actually work.
+                  Formulate a Plan that Compounds
+                </p>
+                <p style="font-style: italic; margin-bottom: 0">
+                  Digital product strategy; Product vision & conception
                 </p>
 
               </div>
@@ -248,37 +406,144 @@
                 >
 
                 <h6 class="karthik-cs-process-card-title">
-                  Design & Delivery
+                  DESIGN & FRONT-END DEVELOPMENT
                 </h6>
 
                 <p style="text-align: left; margin-bottom: 0">
-                  I take a project from the first conversation all the way, figuring out what goes where and making design calls that still make sense when the thing actually gets built.
+                  From a Vision to a Product
+                </p>
+                <p style="font-style: italic; margin-bottom: 0">
+                  UX & UI design; Rapid prototyping
                 </p>
 
               </div>
             </div>
-            <div>
-              <div class="karthik-cs-process-card">
-                <span
-                  class="karthik-cs-process-card-number"
-                  style="font-size: smaller"
-                  >03</span
-                >
-
-                <h6 class="karthik-cs-process-card-title">
-                  Production & Development
-                </h6>
-
-                <p style="text-align: left; margin-bottom: 0">
-                  Front-end code, CMS setup, and systems that the next person can actually use without calling me. If it breaks the moment I leave, I didn't finish the job.
-                </p>
-
-              </div>
-            </div>
-            
           </div>
 
     </div>
+</section>
+
+<section class="fancy-section-1"></section>
+
+<section
+  class="karthik-two-column-home-intro"
+  style="background-color: var(--bg-page)"
+>
+  <div class="karthik-text-section__inner">
+    <div class="karthik-two-column-home">
+      <div style="position: relative; min-width: 40%">
+        <p class="p-sm" style="margin-bottom: 0;">
+          Testimonials
+        </p>
+
+        <h6
+          class="ktchitx-intro"
+          style="margin-top: 12px;"
+        >
+          What People Say
+        </h6>
+
+        <div>
+          <svg
+            class="quote-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 24 24"
+            fill="var(--accent-800)"
+          >
+            <path
+              d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        class="karthik-two-column-home-intro-list-colm"
+        style="display: flex; padding-top: 12px; border: none"
+      >
+        <div>
+          <div class="karthik-cs-process-card" style="margin: 20px auto 0">
+            <span
+              class="karthik-cs-process-card-number"
+              style="font-size: smaller"
+              >Hear From a Colleague</span
+            >
+
+            <h6 class="karthik-cs-process-card-title">
+              "Karthik's ability to grasp and align client requirements with
+              solutions are unmatched and makes him a rare leader in design
+              and implementation work! He came in as a knight in shining
+              armor making the impossible, possible."
+            </h6>
+
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <p
+                style="font-style: italic; margin-bottom: 0"
+              >
+                Kyle Thomas
+              </p>
+              <p
+                style="font-style: italic; margin-bottom: 0"
+              >
+                on working together at Copywriting Creatives
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fancy-section-2"></section>
+
+<section
+  class="karthik-two-column-home-intro"
+  style="background-color: var(--black-800)"
+>
+  <div class="karthik-text-section__inner">
+      <div style="position: relative; min-width: 40%">
+        <p class="p-sm" style="margin-bottom: 0; color: var(--white-50)">
+          Contact Me
+        </p>
+
+        <h3 style="margin-top: 12px; color: var(--accent-100)">
+          I'm in the people business
+          so get in touch!
+      </h3>
+
+        <a class="karthik-btn btn--ghost" href="mailto:karthikaravindj@gmail.com">
+          Email Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/karthikjambunathan/" target="_blank" rel="noopener noreferrer" class="karthik-btn btn--ghost">
+          LinkedIn
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity: 0.6">
+            <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+
+        <div>
+          <img
+              class="quote-svg-2"
+              src="/assets/icons/contact.png"
+              width="100"
+              height="100"
+          >
+        </div>
+        
+      </div>
+
+    
+  </div>
 </section>
 
 <section class="karthik-footer">
