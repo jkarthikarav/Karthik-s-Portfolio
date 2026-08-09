@@ -143,52 +143,6 @@ a {
         transparent 4px
       );
 }
-    
-
-    
-    
-
-.fancy-section-1 {
-  max-height: 20vh;
-  min-height: 40px;
-  background-color: var(--brand-100);
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      var(--accent-100) 0,
-      var(--accent-100) 1px,
-      transparent 1px,
-      transparent 8px
-    ),
-    repeating-linear-gradient(
-      135deg,
-      var(--white-100) 0,
-      var(--white-100) 1px,
-      transparent 1px,
-      transparent 4px
-    );
-}
-
-.fancy-section-2 {
-  max-height: 20vh;
-  min-height: 40px;
-  background-color: var(--black-600);
-  background-image:
-    repeating-linear-gradient(
-      0deg,
-      var(--accent-50) 0,
-      var(--accent-50) 1px,
-      transparent 1px,
-      transparent 8px
-    ),
-    repeating-linear-gradient(
-      45deg,
-      var(--white-50) 0,
-      var(--white-50) 1px,
-      transparent 1px,
-      transparent 4px
-    );
-}
 
 
 .body-section {
