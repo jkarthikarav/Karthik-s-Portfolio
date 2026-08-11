@@ -11,7 +11,7 @@
 
     --white-50: #FDFCFA;
     --white-100: #F7F4EE;
-    --white-600: #030303;
+    --white-600: #B5AE9C;
     --white-800: #6E6858;
 
     --black-50: #E9E9E8;
@@ -629,16 +629,6 @@ max-width: 1200px;
   opacity: 0.1;
 }
 
-.btn--ghost {
-  background: transparent;
-  color: var(--black-100);
-  border-color: transparent;
-}
-.btn--ghost:hover {
-  color: var(--accent-600);
-  background: rgba(255, 255, 255, 0.05);
-}
-
 .btn--ghost-brand {
   background: transparent;
   color: var(--black-100);
@@ -749,7 +739,20 @@ max-width: 1200px;
   margin: 0 0 24px;
 }
 
+@media (max-width: 1500px) {
+
+  .header-menu {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+}
 @media (max-width: 1024px) {
+
   .karthik-two-column-home-intro-wrapper {
     grid-template-columns: 1fr 1fr;
   }
