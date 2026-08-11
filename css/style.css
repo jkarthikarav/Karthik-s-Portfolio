@@ -11,7 +11,7 @@
 
     --white-50: #FDFCFA;
     --white-100: #F7F4EE;
-    --white-600: #B5AE9C;
+    --white-600: #030303;
     --white-800: #6E6858;
 
     --black-50: #E9E9E8;
@@ -121,29 +121,35 @@ a {
   line-height: 1.4;
 }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 0;
-    border-bottom: 1px dashed var(--border-subtle);
-    background-image:
-      repeating-linear-gradient(
-        60deg,
-        rgba(0,0,0,0.05) 0,
-        rgba(0,0,0,0.05) 1px,
-        transparent 1px,
-        transparent 8px
-      ),
-      repeating-linear-gradient(
-        120deg,
-        rgba(0,0,0,0.05) 0,
-        rgba(0,0,0,0.05) 1px,
-        transparent 1px,
-        transparent 4px
-      );
-}
 
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+  border-bottom: 1px dashed var(--border-subtle);
+  background-color: var(--bg-page);
+  background-image:
+    radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      transparent 30%,
+      var(--bg-page) 80%
+    ),
+    radial-gradient(
+      circle,
+      rgba(44, 88, 40, 0.15) 1px,
+      transparent 1.5px
+    );
+
+  background-size:
+    100% 100%,
+    8px 8px;
+
+  background-position:
+    center,
+    center;
+}
 
 .body-section {
     width: 100%;
@@ -422,35 +428,35 @@ max-width: 1200px;
 }
 
 .header-menu {
-  background: var(--bg-brand);
-  background-image:
-      repeating-linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.04) 0,
-        rgba(255, 255, 255, 0.04) 1px,
-        transparent 1px,
-        transparent 10px
-      ),
-      repeating-linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0.04) 0,
-        rgba(255, 255, 255, 0.04) 1px,
-        transparent 1px,
-        transparent 10px
-      );
-  padding: 0;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: auto;
+  max-width: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 980px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 8px 20px;
   margin: 0;
+}
+
+.header-menu .inner-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   width: 100%;
 }
 
-.inner-menu {
-  max-width: 1440px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding: 20px 40px;
-  flex-wrap: wrap;
-}
 
 .header__logo-link {
   display: inline-block;
@@ -488,15 +494,14 @@ max-width: 1200px;
   font-family: "League Spartan", sans-serif;
   font-size: var(--text-p);
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 12px 24px 6px;
   max-width: fit-content;
   cursor: default;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  color: var(--brand-100); text-decoration-color: var(--brand-100);
-  text-underline-offset: 6px;
+  color: var(--brand-600);
 }
 
 .karthik-btn {
@@ -510,7 +515,7 @@ max-width: 1200px;
   text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 6px;
-  padding: 12px 24px;
+  padding: 12px 24px 6px;
   max-width: fit-content;
   cursor: pointer;
   transition:
@@ -535,14 +540,14 @@ max-width: 1200px;
 }
 
 .outline-btn {
-    background: none;
-    color: var(--brand-800);
-    border-color: var(--border-brand);
+    background: var(--white-50);
+    color: var(--black-600);
+  border: solid 1px var(--white-800);
 }
 
 .outline-btn:hover {
     color: var(--brand-600);
-  border-color: var(--border-subtle);
+  border: solid 1px var(--border-brand)
 }
 
 .header__actions {

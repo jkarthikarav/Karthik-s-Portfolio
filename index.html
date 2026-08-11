@@ -10,6 +10,9 @@
 
 <link rel="stylesheet" href="/css/style.css" />
 <script src="/js/script.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 </head>
 
@@ -22,7 +25,7 @@
         <a
         href="/"
         class="header__logo-link"
-        style="margin-bottom: 0; margin-top: 24px;"
+        style="margin-bottom: 0;"
         >
         <img
             src="/graphics/logos/Karthik.png"
@@ -31,7 +34,7 @@
         />
         </a>
 
-        <nav class="header__actions" style="margin-top: 12px;">
+        <nav class="header__actions">
             <a
             href="/pages/about.html"
             rel="noopener noreferrer"
@@ -112,7 +115,7 @@
         <p style="margin: 20px auto 0; text-align: center;">
           Open to UX/Product roles · Toronto, ON
         </p>
-        <a class="karthik-btn primary-btn" href="#work" style="margin: 20px auto auto;">
+        <a class="karthik-btn outline-btn" href="#work" style="margin: 20px auto auto;">
           Start Exploring
         </a>
 
@@ -616,7 +619,6 @@
   </div>
 </section>
 
-</body>
 
 <script>
 const greetings = [
@@ -689,5 +691,43 @@ changeGreeting();
     });
   }
 </script>
+
+<script type="text/babel">
+
+  function HeroBackground() {
+    return (
+      <WebThreads
+        color1="#5227FF"
+        color2="#FF9FFC"
+        color3="#FFFFFF"
+        speed={0.2}
+        threadCount={6}
+        frequency={5}
+        spread={0.18}
+        taper={1}
+        position={0.5}
+        fanMode="center"
+        glow={0.02}
+        falloff={0.6}
+        thickness={1.1}
+        brightness={0.6}
+        opacity={1}
+        mirror
+        shimmer={false}
+        grain
+        grainIntensity={0.05}
+        mouseInteraction
+        mouseStrength={0.3}
+      />
+    );
+  }
+
+  ReactDOM
+    .createRoot(document.getElementById("web-threads-background"))
+    .render(<HeroBackground />);
+
+</script>
+
+</body>
 
 </html>
