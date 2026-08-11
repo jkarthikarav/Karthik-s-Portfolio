@@ -10,9 +10,6 @@
 
 <link rel="stylesheet" href="/css/style.css" />
 <script src="/js/script.js"></script>
-<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 </head>
 
@@ -191,7 +188,6 @@
         <div style="margin: 0 auto; gap: 20px; display: flex">
           <a
             href="/pages/all-projects.html"
-            target="_blank"
             rel="noopener noreferrer"
             class="karthik-btn outline-btn"
             style="justify-content: center"
@@ -219,7 +215,7 @@
         </p>
 
         <h6 class="project-title-mobile__case">
-          How I Integrated the Discovery and Onboarding Experience for a Research Facility within its Parent Product.
+          How I Integrated the Discovery and Onboarding Experience for a Research Facility within its Parent Website.
         </h6>
 
         <p class="project-description-mobile__case p-lg">
@@ -439,46 +435,85 @@
           IT solutions are essential, but they’re also just the beginning: I collaborate with you, to clean up your digital and data messes and get your game plan in motion.
         </p>
 
-        <div class="karthik-two-column-home-intro-list-colm-about">
-            <div>
-              <div class="karthik-cs-process-card">
-                <span
-                  class="karthik-cs-process-card-number"
-                  style="font-size: smaller"
-                  >01</span
-                >
-
-                <h6 class="karthik-cs-process-card-title">
-                  SOLUTION ENGINEERING
-                </h6>
-
-                <p style="text-align: left; margin-bottom: 0">
+        <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
+          
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a?r=444wy3"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--black-800)">
                   Formulate a Plan that Compounds
-                </p>
-                <p style="font-style: italic; margin-bottom: 0">
+                </span>
+                <h5 style="color: var(--brand-800); margin-bottom: 0;">
+                  SOLUTION ENGINEERING<br>
+                  <span class="p-lg" style="font-style: italic; margin-top:0; margin-bottom: 0;">
                   Digital product strategy; Product vision & conception
-                </p>
-
+                  </span>
+                </h5>
+                <span style="color: var(--black-800)">The South Shore Youth Organization</span>
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
               </div>
             </div>
-            <div>
-              <div class="karthik-cs-process-card">
-                <span
-                  class="karthik-cs-process-card-number"
-                  style="font-size: smaller"
-                  >02</span
+          </div>
+
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="/pages/projects/ece-tnfc.html"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--black-800)">
+                  From a Vision to a Product
+                </span>
+                <h5 style="color: var(--brand-800)">
+                  DESIGN & FRONT-END DEVELOPMENT<br>
+                  <span class="p-lg" style="font-style: italic; margin-top:0; margin-bottom: 0;">
+                  UX & UI design; Rapid prototyping
+                  </span>
+                </h5>
+                <span style="color: var(--black-800)"
+                  >TNFC Lab at University of Toronto</span
                 >
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+
+              <div class="karthik-cs-process-card">
+                <span class="karthik-cs-process-card-number" style="font-size: smaller">CHECK OUT A PRODUCT by <img src="/graphics/logos/Karthik.png" style="width: auto; height: 20px"></span>
 
                 <h6 class="karthik-cs-process-card-title">
-                  DESIGN & FRONT-END DEVELOPMENT
+                  The UI Design Index: Designed By Karthik, Developed thru Stitch, Showcased using GitHub
                 </h6>
 
                 <p style="text-align: left; margin-bottom: 0">
-                  From a Vision to a Product
+                  This project started with a personal need: A lot of my UI work ends up sitting in Figma or scattered across old files, and my non-design peers did not want to view it on Figma's prototype viewer
+                  as they felt it was clunky and not intuitively responsive enough.
                 </p>
-                <p style="font-style: italic; margin-bottom: 0">
-                  UX & UI design; Rapid prototyping
+
+                <p style="font-style: italic; text-align: left; margin-top: 20px;">
+                  The above mentioned AI-assisted process is one of many ways in which I incorporate it into my design processes.
                 </p>
+
+                <a
+                  class="karthik-btn outline-btn"
+                  href="https://jkarthikarav.github.io/ui/about.html"
+                  target="_blank" style="margin-top: 20px;"
+                >
+                  Explore Live Website
+                </a>
 
               </div>
             </div>
@@ -692,40 +727,90 @@ changeGreeting();
   }
 </script>
 
-<script type="text/babel">
 
-  function HeroBackground() {
-    return (
-      <WebThreads
-        color1="#5227FF"
-        color2="#FF9FFC"
-        color3="#FFFFFF"
-        speed={0.2}
-        threadCount={6}
-        frequency={5}
-        spread={0.18}
-        taper={1}
-        position={0.5}
-        fanMode="center"
-        glow={0.02}
-        falloff={0.6}
-        thickness={1.1}
-        brightness={0.6}
-        opacity={1}
-        mirror
-        shimmer={false}
-        grain
-        grainIntensity={0.05}
-        mouseInteraction
-        mouseStrength={0.3}
-      />
-    );
-  }
+<script>
+const karthikApMarquee = document.querySelector(
+  ".karthik-ap-marquee-content",
+);
+if (karthikApMarquee) {
+  karthikApMarquee.addEventListener("mouseenter", () => {
+    karthikApMarquee.style.animationPlayState = "paused";
+  });
+  karthikApMarquee.addEventListener("mouseleave", () => {
+    karthikApMarquee.style.animationPlayState = "running";
+  });
+}
+</script>
 
-  ReactDOM
-    .createRoot(document.getElementById("web-threads-background"))
-    .render(<HeroBackground />);
+<script>
+(function () {
+  const follower = document.getElementById("karthik-ap-follower");
+  const items = document.querySelectorAll(".karthik-ap-item");
 
+  // Mouse reactive background + magnetic hover
+  document.addEventListener("mousemove", (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    follower.style.left = x + "px";
+    follower.style.top = y + "px";
+
+    items.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const content = item.querySelector(".karthik-ap-item-content");
+
+      const isHovering =
+        x >= rect.left &&
+        x <= rect.right &&
+        y >= rect.top &&
+        y <= rect.bottom;
+
+      if (isHovering) {
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const deltaX = (x - centerX) * 0.15;
+        const deltaY = (y - centerY) * 0.3;
+
+        content.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        item.style.borderColor = "#1A1A1A";
+      } else {
+        content.style.transform = "translate(0, 0)";
+        item.style.borderColor = "";
+      }
+    });
+  });
+
+  // Entrance animation
+  window.addEventListener("DOMContentLoaded", () => {
+    items.forEach((item, index) => {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(20px)";
+      item.style.transition =
+        "opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+
+      setTimeout(() => {
+        item.style.opacity = "1";
+        item.style.transform = "translateY(0)";
+      }, 100 * index);
+    });
+  });
+
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      const url = item.getAttribute("data-url");
+      if (url) window.open(url);
+    });
+  });
+
+  // Reset transform on mouse leave per item
+  items.forEach((item) => {
+    item.addEventListener("mouseleave", () => {
+      const content = item.querySelector(".karthik-ap-item-content");
+      content.style.transform = "translate(0, -10)";
+    });
+  });
+})();
 </script>
 
 </body>
