@@ -15,8 +15,7 @@
 
 <body>
 
-
-    <header class="header-menu">
+  <header class="header-menu desktop-only">
         <div class="inner-menu">
         <a
         href="/"
@@ -31,17 +30,17 @@
         </a>
 
         <nav class="header__actions">
-            <p
+            <a
             href="/pages/about.html"
             rel="noopener noreferrer"
-            class="karthik-btn--active"
+            class="karthik-btn btn--ghost-brand"
             >
             About Me
-          </p>
+            </a>
             <a
             href="/pages/all-projects.html"
             rel="noopener noreferrer"
-            class="karthik-btn btn--ghost-brand"
+            class="karthik-btn--active"
             >
             All Projects
             </a>
@@ -95,8 +94,36 @@
             </a>
         </nav>
         </div>
-    </header>
+  </header>
 
+  <header class="mobile-header mobile-only">
+      <div class="inner-menu">
+        <a href="/" class="header__logo-link" style="margin-bottom: 0;">
+          <img src="/graphics/logos/Karthik.png" alt="Karthik" class="header__logo"/>
+        </a>
+
+        <nav class="header__actions">
+          <p class="karthik-btn--active-light">
+            About Me
+          </p>
+          <a href="/pages/all-projects.html" rel="noopener noreferrer" class="karthik-btn btn--ghost-brand">
+            All Projects
+          </a>
+          <a href="https://jkarthikarav.github.io/ui/" rel="noopener noreferrer" class="karthik-btn btn--ghost-brand">
+            UI Designs
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity: 0.6">
+                <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/karthikjambunathan/" rel="noopener noreferrer" class="karthik-btn btn--ghost-brand">
+            LinkedIn
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="opacity: 0.6">
+                <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
 
 <section class="karthik-two-column-home-intro" id="about" style="padding-top: 4rem;">
     <div class="karthik-text-section__inner">
