@@ -297,7 +297,6 @@
 
 </section>
 
-<!--
 <section class="karthik-two-column-home-intro" style="background-color: var(--black-600);">
   <div class="karthik-text-section__inner">
       <h2 style="color: var(--white-50); margin: 2rem auto 20px; width: fit-content;">
@@ -309,7 +308,7 @@
 <section class="casestudy-grid" style="background-color: var(--bg-page)">
 
         <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
-
+<!--
           <div
             class="karthik-ap-item"
             data-magnetic="true"
@@ -333,7 +332,7 @@
                 >
               </div>
             </div>
-          </div>
+          </div>-->
 
           <div
             class="karthik-ap-item"
@@ -346,11 +345,10 @@
                   ON CONTRACT · RESEARCH
                 </span>
                 <h5 style="color: var(--brand-800)">
-                  How I Accelerated AI Adoption with a Research-Driven
-                  Framework.
+                  Finding where AI actually fits in a VFX and post-production pipeline
                 </h5>
                 <span style="color: var(--black-800)">
-                  Dec 2022 – Aug 2023
+                  2022 – 2023
                 </span>
               </div>
               <div class="karthik-ap-item-right">
@@ -362,7 +360,7 @@
           </div>
 
 </section>
--->
+
 <section class="karthik-two-column-home-intro" style="background-color: var(--black-600);">
   <div class="karthik-text-section__inner">
       <h2 style="color: var(--white-50); margin: 2rem auto 20px; width: fit-content;">
@@ -545,7 +543,7 @@ if (karthikApMarquee) {
   items.forEach((item) => {
     item.addEventListener("click", () => {
       const url = item.getAttribute("data-url");
-      if (url) window.open(url);
+      if (url) window.location.href = url;
     });
   });
 
