@@ -66,6 +66,26 @@
     grid-template-columns: 1fr 1fr; max-width: 1200px; margin: 0 auto; gap: 42px;
 }
 
+.mosaic-grid {
+    width: 100%;
+    padding: 48px 24px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto 24px;
+    columns: 3;
+    column-gap: 36px;
+}
+
+.mosaic-grid > * {
+    break-inside: avoid;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.mosaic-grid img {
+  width: 100%; object-fit: contain; display: block;height: fit-content; cursor: pointer;
+}
+
 
 body {
   font-family: "League Spartan", sans-serif;
@@ -446,7 +466,7 @@ max-width: 1200px;
   transform: translateX(-50%);
   z-index: 100;
   width: auto;
-  max-width: calc(100% - 40px);
+  width: 90%;
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.55);
@@ -822,6 +842,10 @@ max-width: 1200px;
   .casestudy-grid {
     grid-template-columns: 1fr;
   }
+  .mosaic-grid {
+        columns: 2;
+        padding: 40px 20px;
+    }
   .karthik-two-column-home {
     width: 100%;
     display: flex;
@@ -852,6 +876,14 @@ max-width: 1200px;
   }
   .greeting {
     margin: 2rem auto 20px;
+  }
+  .mosaic-grid {
+      columns: 1;
+      padding: 32px 16px;
+  }
+
+  .mosaic-grid > * {
+      margin-bottom: 24px;
   }
   .desktop-only {
     display: none;
