@@ -170,7 +170,7 @@
 
         <div style="margin: 0 auto; gap: 20px; display: flex">
           <a
-            href="/pages/all-projects.html"
+            href="/pages/all-projects.html#uxd"
             rel="noopener noreferrer"
             class="karthik-btn outline-btn"
             style="justify-content: center"
@@ -408,10 +408,9 @@
       IT solutions are essential, but they’re also just the beginning: I collaborate with you, to clean up your digital and data messes and get your game plan in motion.
     </p>
 
-    <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
     <div class="casestudy-grid">
     
-      <div class="karthik-ap-item" data-magnetic="true" data-url="https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a?r=444wy3">
+      <div class="karthik-ap-item bg-ap-item" data-magnetic="true" data-url="https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a?r=444wy3">
         <div class="karthik-ap-item-content">
           <div class="karthik-ap-item-left" style="flex-direction: column">
             <span style="color: var(--black-800)">
@@ -433,7 +432,7 @@
         </div>
       </div>
 
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/projects/ece-tnfc.html">
+      <div class="karthik-ap-item bg-ap-item" data-magnetic="true" data-url="/pages/projects/ece-tnfc.html">
         <div class="karthik-ap-item-content">
           <div class="karthik-ap-item-left" style="flex-direction: column">
             <span style="color: var(--black-800)">
@@ -457,7 +456,7 @@
         </div>
       </div>
 
-      <div class="karthik-ap-item" data-magnetic="true" data-url="/pages/visualdesign.html">
+      <div class="karthik-ap-item bg-ap-item" data-magnetic="true" data-url="/pages/visualdesign.html">
         <div class="karthik-ap-item-content">
           <div class="karthik-ap-item-left" style="flex-direction: column">
             <span style="color: var(--black-800)">
@@ -576,14 +575,12 @@
       href="https://jkarthikarav.github.io/ui/index.html"
       target="_blank" style="margin: 20px 0;"
     >
-      Explore Live Website
+      Explore the UI Design Index
     </a>
-
-    <span class="karthik-cs-process-card-number" style="font-size: smaller">By <img src="/graphics/logos/Karthik.png" style="width: auto; height: 24px;"></span>
 
   </div>
 </section>
-  
+
 
 <section
   class="karthik-two-column-home-intro"
@@ -782,11 +779,16 @@ if (karthikApMarquee) {
   });
 
   items.forEach((item) => {
-    item.addEventListener("click", () => {
-      const url = item.getAttribute("data-url");
-      if (url) window.open(url);
-    });
+  item.addEventListener("click", () => {
+    const url = item.getAttribute("data-url");
+    if (!url) return;
+    if (url.startsWith("/pages")) {
+      window.location.href = url;
+    } else {
+      window.open(url, "_blank");
+    }
   });
+});
 
   // Reset transform on mouse leave per item
   items.forEach((item) => {

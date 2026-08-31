@@ -126,19 +126,19 @@
 <section class="hero-main-case">
     
     <h1 style="margin: 4rem auto 0;">
-      <span class="gradient-dark">KARTHIK'S PUBLICLY AVAILABLE</span><br>
-      UX/PRODUCT DESIGN PROJECTS.
+      <span class="gradient-dark">KARTHIK'S PUBLICLY AVAILABLE</span>
+      PROJECTS.
     </h1>
 
     <p style="margin: 20px auto auto;">
       I look for companies in categories I understand deeply such as 
-      <span class="gradient-dark">Education — Non-profit — Creative industries — Technology — Small Businesses.</span>
+      <span class="gradient-dark">Education — Non-profit — Creative industries — Healthcare — Technology.</span>
       I'm stage agnostic, but I prefer journeying from start to finish.
     </p>
 
 </section>
 
-<section class="karthik-two-column-home-intro" style="background-color: var(--black-800);">
+<section class="karthik-two-column-home-intro" id="uxd" style="background-color: var(--black-800);">
     <div class="karthik-text-section__inner">
     <div class="karthik-two-column-home">
         <div>
@@ -152,22 +152,6 @@
         </p>
         </div>
 
-        <div
-        class="karthik-two-column-home-intro-list-colm"
-        style="display: flex; flex-direction: column"
-        >
-        <p class="p-sm" style="margin-top: 24px; margin-bottom: 12px; color: var(--accent-100)">
-            What's on this page
-        </p>
-        <div class="karthik-two-column-home-intro-list-items">
-            <h5 class="karthik-tnfc-title" style="color: var(--white-50);">
-                01&nbsp;&nbsp;&nbsp;&nbsp; Consulting & Paid Projects
-            </h5>
-            <h5 class="karthik-tnfc-title" style="color: var(--white-50);">
-                02&nbsp;&nbsp;&nbsp;&nbsp;Academic and Self-Initiated
-            </h5>
-        </div>
-        </div>
     </div>
     </div>
 </section>
@@ -332,22 +316,6 @@
 
         </div>
 
-        <div
-        class="karthik-two-column-home-intro-list-colm"
-        style="display: flex; flex-direction: column"
-        >
-        <p class="p-sm" style="margin-top: 24px; margin-bottom: 12px; color: var(--accent-100)">
-            What's on this page
-        </p>
-        <div class="karthik-two-column-home-intro-list-items">
-            <h5 class="karthik-tnfc-title" style="color: var(--white-50);">
-              01&nbsp;&nbsp;&nbsp;&nbsp; Presentations (Hosted Onsite)
-            </h5>
-            <!--<h5 class="karthik-tnfc-title" style="color: var(--white-50);">
-                02&nbsp;&nbsp;&nbsp;&nbsp; Reports and Documents (Hosted Offsite)
-            </h5>-->
-        </div>
-        </div>
     </div>
     </div>
 </section>
@@ -358,7 +326,7 @@
         <div class="karthik-ap-cursor-follower" id="karthik-ap-follower"></div>
 
           <h5 style="margin: 4rem auto 40px; border-bottom: 1px solid var(--brand-600); padding-bottom: 16px;color: var(--brand-600); max-width: 1200px;">
-            Presentations (Hosted on Site)
+            Academic & Self-Initiated Projects
           </h5>
 
           <div class="casestudy-grid" style="background: none;">
@@ -401,7 +369,7 @@
                   Music Transcription tool.
                 </h5>
                 <span style="color: var(--black-800)"
-                  >Sep – Dec 2024</span
+                  >Fall 2024</span
                 >
               </div>
               <div class="karthik-ap-item-right">
@@ -412,6 +380,57 @@
             </div>
           </div>
 
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="https://github.com/jkarthikarav/hcds-INF1340H"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--black-800)">
+                  ACADEMIC COURSEWORK · DATA SCIENCE
+                </span>
+                <h5 style="color: var(--brand-800)">
+                  My Study of the effect of Collaboration on Chart Rank on the Billboard Music Top 100 Charts
+                </h5>
+                <span style="color: var(--black-800)"
+                  >Aug 2024</span
+                >
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="karthik-ap-item"
+            data-magnetic="true"
+            data-url="https://docs.google.com/presentation/d/1BCiNCv1VYiqp4zUU1gO3Ho47gvxvy3OIzPgxQ1KKXHU/edit?usp=sharing"
+          >
+            <div class="karthik-ap-item-content">
+              <div class="karthik-ap-item-left" style="flex-direction: column">
+                <span style="color: var(--black-800)">
+                  ACADEMIC COURSEWORK · UX RESEARCH
+                </span>
+                <h5 style="color: var(--brand-800)">
+                  How to design a recycling ecosystem that educates 
+                  & empowers Toronto residents to make a positive environmental impact.
+                </h5>
+                <span style="color: var(--black-800)"
+                  >Winter 2024</span
+                >
+              </div>
+              <div class="karthik-ap-item-right">
+                <span class="material-symbols-outlined karthik-ap-arrow"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+          
           <!--<div
             class="karthik-ap-item"
             data-magnetic="true"
@@ -439,6 +458,7 @@
           </div>-->
   </div>  
 </section>
+
 
 <section class="karthik-footer">
   <div class="karthik-footer-inner">
@@ -531,11 +551,16 @@ if (karthikApMarquee) {
   });
 
   items.forEach((item) => {
-    item.addEventListener("click", () => {
-      const url = item.getAttribute("data-url");
-      if (url) window.location.href = url;
-    });
+  item.addEventListener("click", () => {
+    const url = item.getAttribute("data-url");
+    if (!url) return;
+    if (url.startsWith("/pages")) {
+      window.location.href = url;
+    } else {
+      window.open(url, "_blank");
+    }
   });
+});
 
   // Reset transform on mouse leave per item
   items.forEach((item) => {
