@@ -192,6 +192,7 @@ a {
   padding-bottom: 16px;
   text-align: center;
   max-width: 80%;
+  color: var(--brand-600);
 }
 
 .section-heading-alt {
@@ -199,6 +200,7 @@ a {
   padding-bottom: 16px;
   text-align: center;
   max-width: 50%;
+  color: var(--brand-600);
 }
 
 .reasons-grid {
@@ -209,11 +211,15 @@ a {
 
 .reason-card {
   margin: 0 0 48px;
-  padding: 12px 20px;
+  padding: 12px 4px 12px 20px;
+  border-radius: 0px;
+  border-left: 2px solid var(--border-brand);
 }
 
 .reason-card:hover {
   background-color: #fff9e602;
+  border-radius: 8px;
+  border: 2px solid var(--border-brand);
 }
 
 .reason-card__title {
@@ -274,7 +280,7 @@ a {
     gap: 0;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: var(--accent-100);
 }
 
 .work-card__title {
