@@ -1057,6 +1057,10 @@ max-width: 1200px;
 }
 
 .work-card__description {
+    margin: 12px 10px 8px;
+}
+
+.work-card__description-alt {
     margin: 0;
 }
 
