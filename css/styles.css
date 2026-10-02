@@ -125,9 +125,9 @@
   --color-viz-6: var(--green-300);
 
   /* Typography Primitives */
-  --font-display: 'League Spartan', 'Helvetica Neue', Arial, sans-serif;
-  --font-body: Lexend, system-ui, 'Segoe UI', sans-serif;
-  --font-label: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --font-display: 'League Spartan', sans-serif;
+  --font-body: 'Lexend', sans-serif;
+  --font-label: 'Atkinson Hyperlegible Next', sans-serif;
 
   --font-size-100: 0.75rem;
   --font-size-200: 0.875rem;
