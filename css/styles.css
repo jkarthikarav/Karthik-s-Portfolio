@@ -1187,9 +1187,11 @@ background-repeat:
 .highlight-work__tabs {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: var(--space-3);
   margin: var(--space-6) auto; 
   width: fit-content;
+  flex-wrap: wrap;
 }
 
 .selected-work__tab {
@@ -1198,6 +1200,7 @@ background-repeat:
   border-top-width: 0.25rem;
   border-top-style: solid;
   border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
 }
 
 

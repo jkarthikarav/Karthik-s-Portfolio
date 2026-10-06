@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Copywriting Creatives Work Highlights</title>
+
+<link rel="stylesheet" href="/css/styles.css" />
+
+</head>
+
+<body>
+
+<a class="btn p site-navigate" href="/">
+  Back Home
+</a>
+
+<section class="project-hero">
+
+  <div class="project-hero__content">
+
+    <p class="tag" style="width: fit-content;">Work Experience Highlights</p>
+
+    <h1 class="project-hero__title t-display">
+      Copywriting Creatives
+    </h1>
+
+    <p class="project-hero__description t-body">
+      Starting 2025, I functioned as the Lead Product Designer, working across
+      discovery, design, and delivery across website and product design projects for multiple nonprofit clients.
+    </p>
+
+    <div class="project-hero__divider"></div>
+
+    <div class="project-hero__meta row" style="margin-bottom: var(--space-5);">
+      <span class="tag">Apr 2025 — Present</span>
+      <span class="tag">UX Research</span>
+      <span class="tag">UI Design</span>
+      <span class="tag">Front End Development</span>
+    </div>
+
+<div class="project-grid">
+
+<div class="box">
+<div class="work-card-simple__text">
+
+<p class="tag">
+  Summer 2026 · PRODUCT DESIGN
+</p>
+
+<h4>
+  How My team and I amplify a Montreal-based charity's online footprint.
+</h4>
+
+<a class="btn a" href="https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a" target="_blank" style="margin-top: var(--space-3);">
+  Explore Solution
+</a>
+
+</div>
+</div>
+
+<div class="box more">
+<div class="work-card-simple__text">
+
+<h4>
+  More Projects Are Being Uploaded!!
+</h4>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="karthik-footer">
+  <div class="karthik-footer-inner">
+    <p>Developed by Karthik</p>
+    <p>Based in Ontario, Canada</p>
+  </div>
+</section>
+
+</body>
+
+<script>
+ 
+ /* =========================================================
+   PROJECT ANIMATIONS
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. PROJECT CONTEXT — Quote slides in from right
+   --------------------------------------------------------- */
+
+const forewordCard = document.querySelector('.foreword-card');
+
+if (forewordCard) {
+  const quoteCard = forewordCard.querySelector('.quote-card');
+
+  if (quoteCard) {
+    quoteCard.style.opacity = '0';
+    quoteCard.style.transform = 'translateX(60px)';
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+
+      quoteCard.style.transition =
+        'opacity .6s ease, transform .6s ease';
+
+      quoteCard.style.opacity = '1';
+      quoteCard.style.transform = 'translateX(0)';
+
+      observer.unobserve(forewordCard);
+    }, {
+      threshold: 0.25
+    });
+
+    observer.observe(forewordCard);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   2. BEFORE / AFTER COMPARISON
+   --------------------------------------------------------- */
+
+const comparisonGrid = document.querySelector('.comparison-grid');
+
+if (comparisonGrid) {
+  const beforeCard =
+    comparisonGrid.querySelector('.comparison-card--before');
+
+  const afterCard =
+    comparisonGrid.querySelector('.comparison-card--after');
+
+  if (beforeCard && afterCard) {
+
+    // Initial state
+    beforeCard.style.opacity = '0';
+    beforeCard.style.transform = 'translateY(20px)';
+
+    afterCard.style.opacity = '0';
+    afterCard.style.transform = 'translateY(20px)';
+
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+
+
+      // BEFORE
+      setTimeout(() => {
+        beforeCard.style.transition =
+          'opacity .5s ease, transform .5s ease';
+
+        beforeCard.style.opacity = '1';
+        beforeCard.style.transform = 'translateY(0)';
+      }, 100);
+
+
+      // AFTER
+      setTimeout(() => {
+        afterCard.style.transition =
+          'opacity .5s ease, transform .5s ease';
+
+        afterCard.style.opacity = '1';
+        afterCard.style.transform = 'translateY(0)';
+      }, 450);
+
+
+      observer.unobserve(comparisonGrid);
+
+    }, {
+      threshold: 0.2
+    });
+
+    observer.observe(comparisonGrid);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   3. TRANSFORMATION
+   Before → Strike → Arrow → After
+   --------------------------------------------------------- */
+
+const transformation = document.querySelector('.transformation');
+
+if (transformation) {
+  const cards =
+    transformation.querySelectorAll('.transformation-card');
+
+  cards.forEach(card => {
+
+    const legacy =
+      card.querySelector('.transformation-card__legacy');
+
+    const arrow =
+      card.querySelector('.transformation-card__arrow');
+
+    const result =
+      card.querySelector('.transformation-card__result');
+
+    if (!legacy || !arrow || !result) return;
+
+
+    /* -----------------------------------------
+       Initial states
+       ----------------------------------------- */
+
+    legacy.style.textDecoration = 'none';
+    legacy.style.position = 'relative';
+
+    arrow.style.opacity = '0';
+    arrow.style.transform = 'translateY(-8px)';
+
+    result.style.opacity = '0';
+    result.style.transform = 'translateY(8px)';
+
+
+    /* -----------------------------------------
+       Wrap the actual text
+       ----------------------------------------- */
+
+    const text = legacy.textContent.trim();
+
+    legacy.textContent = '';
+
+    const textSpan = document.createElement('span');
+    textSpan.textContent = text;
+
+    legacy.appendChild(textSpan);
+
+
+    /* -----------------------------------------
+       Create strike-through
+       ----------------------------------------- */
+
+    const strike = document.createElement('span');
+
+    strike.style.position = 'absolute';
+    strike.style.left = '50%';
+    strike.style.top = '50%';
+    strike.style.width = '0';
+    strike.style.height = '2px';
+    strike.style.background = 'var(--danger-500)';
+    strike.style.transform = 'translate(-50%, -50%)';
+    strike.style.pointerEvents = 'none';
+
+    legacy.appendChild(strike);
+
+    card._strike = strike;
+    card._textSpan = textSpan;
+  });
+
+
+  /* -----------------------------------------
+     Start animation
+     ----------------------------------------- */
+
+  const observer = new IntersectionObserver((entries) => {
+
+    if (!entries[0].isIntersecting) return;
+
+    cards.forEach((card, index) => {
+
+      const arrow =
+        card.querySelector('.transformation-card__arrow');
+
+      const result =
+        card.querySelector('.transformation-card__result');
+
+      const textSpan = card._textSpan;
+      const strike = card._strike;
+
+
+      setTimeout(() => {
+
+
+        /* -----------------------------------
+           1. Strike actual text width
+           ----------------------------------- */
+
+        const textWidth = textSpan.offsetWidth;
+
+        strike.style.transition =
+          'width .5s ease';
+
+        strike.style.width = `${textWidth}px`;
+
+
+        /* -----------------------------------
+           2. Arrow
+           ----------------------------------- */
+
+        setTimeout(() => {
+
+          arrow.style.transition =
+            'opacity .3s ease, transform .3s ease';
+
+          arrow.style.opacity = '1';
+          arrow.style.transform = 'translateY(0)';
+
+
+          /* ---------------------------------
+             3. Result
+             --------------------------------- */
+
+          setTimeout(() => {
+
+            result.style.transition =
+              'opacity .4s ease, transform .4s ease';
+
+            result.style.opacity = '1';
+            result.style.transform = 'translateY(0)';
+
+          }, 300);
+
+        }, 500);
+
+      }, index * 600);
+
+    });
+
+    observer.unobserve(transformation);
+
+  }, {
+    threshold: 0.25
+  });
+
+
+  observer.observe(transformation);
+}
+
+/* ---------------------------------------------------------
+   TNFC FIGURES
+   --------------------------------------------------------- */
+
+const tnfcFigures = document.querySelectorAll('.tnfc-figure');
+
+if (tnfcFigures.length) {
+
+  tnfcFigures.forEach(figure => {
+    figure.style.opacity = '0';
+    figure.style.transform = 'translateY(24px)';
+  });
+
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (!entry.isIntersecting) return;
+
+      const figure = entry.target;
+
+      figure.style.transition =
+        'opacity .6s ease, transform .6s ease';
+
+      figure.style.opacity = '1';
+      figure.style.transform = 'translateY(0)';
+
+      observer.unobserve(figure);
+
+    });
+
+  }, {
+    threshold: 0.2
+  });
+
+
+  tnfcFigures.forEach(figure => {
+    observer.observe(figure);
+  });
+
+}
+</script>
+
+</html>
