@@ -205,8 +205,8 @@
 
   --radius-none: 0;
   --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 8px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
   --radius-full: 9999px;
   --radius-control: var(--radius-none);
 
@@ -271,8 +271,9 @@ body {
 .wrap {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 var(--page-margin);
+  padding: var(--space-inset-md) var(--page-margin);
 }
+
 
 @media (min-width: 768px) {
   .wrap { padding: 0 1.5rem; }
@@ -487,6 +488,7 @@ input[type="checkbox"]:checked {
   background: var(--color-bg-raised);
   border: var(--border-width-thin) solid var(--color-border-subtle);
   padding: var(--space-inset-lg);
+  border-radius: var(--radius-md);
 }
 
 .inverse {
@@ -773,18 +775,22 @@ background-repeat:
   repeat;
 }
 
-.capabilities__inner {
-  width: min(
-    calc(100% - (var(--page-margin) * 2)),
-    var(--container-max)
-  );
-
-  margin-inline: auto;
-}
 
 .about {
   width: 100%;
   background-color: #FAFAF7;
+  padding: var(--space-stack-md) var(--space-4);
+}
+
+.contact {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact > * {
+  margin: auto;
 }
 
 /* =========================================================
@@ -1191,6 +1197,7 @@ background-repeat:
   flex: 1 1 0;
   border-top-width: 0.25rem;
   border-top-style: solid;
+  border-radius: var(--radius-md);
 }
 
 
@@ -1210,7 +1217,7 @@ background-repeat:
 }
 
 .special-text__2 {
-  color: var(--color-viz-2);
+  color: var(--color-viz-1);
   background-color: var(--amber-100);
   padding: var(--space-inset-sm);
 }
@@ -1234,7 +1241,7 @@ background-repeat:
 }
 
 .special-text__6 {
-  color: var(--color-viz-6);
+  color: var(--green-300);
   background-color: var(--green-800);
   padding: var(--space-inset-sm);
 }
@@ -1282,7 +1289,7 @@ background-repeat:
 }
 
 .contact-section__heading {
-  margin-top: 3rem;
+  margin-top: auto;
 }
 
 .contact-section__links {
@@ -1311,6 +1318,7 @@ background-repeat:
   background-color: var(--color-bg-raised);
   padding: var(--space-inset-md);
   box-shadow: var(--shadow-2);
+  border-radius: var(--radius-lg);
 }
 
 .highlight-work__viewer {
@@ -1385,7 +1393,7 @@ background-repeat:
 .selected-work__media {
   width: 100%;
   overflow: hidden;
-  border-radius: var(--radius-card);
+  border-radius: var(--radius-md);
 
   background: var(--surface-secondary);
 }
@@ -1406,7 +1414,7 @@ background-repeat:
   margin-right: 0;
   margin-top: var(--space-5);
   overflow: hidden;
-  border-radius: var(--radius-card);
+  border-radius: var(--radius-md);
   background: var(--surface-secondary);
 }
 
@@ -2028,13 +2036,8 @@ background-repeat:
   padding-block: var(--space-5);
 }
 
-.case-section-heading .case-section__inner {
-  width: min(
-    calc(100% - (var(--page-margin) * 2)),
-    var(--container-max)
-  );
-
-  margin-inline: auto;
+.case-section-heading > .wrap {
+  padding: var(--space-section) var(--space-4);
 }
 
 .case-section-heading h2 {
@@ -2056,24 +2059,8 @@ background-repeat:
   background: var(--color-bg-canvas);
 }
 
-.case-section__inner {
-  width: min(
-    calc(100% - (var(--page-margin) * 2)),
-    var(--container-max)
-  );
-
-  margin-inline: auto;
-
-  padding-block: var(--space-8);
-}
-
-.reflection__inner {
-    max-width: var(--container-max); 
-    margin-inline: auto;
-}
-
-.reflection__inner >* {
-    margin: var(--space-2) 0;
+.quote-card__inner {
+  padding: var(--space-stack-lg);
 }
 
 
@@ -2081,7 +2068,7 @@ background-repeat:
    CONTENT — TYPOGRAPHY
    ========================================================= */
 
-.case-section__inner h3 {
+.case-section h3 {
   max-width: var(--measure-body);
 
   margin: 0 0 var(--space-5);
@@ -2089,7 +2076,7 @@ background-repeat:
   color: var(--color-text-primary);
 }
 
-.case-section__inner p {
+.case-section p {
   max-width: var(--measure-body);
 
   margin: 0;
@@ -2097,7 +2084,7 @@ background-repeat:
   color: var(--color-text-secondary);
 }
 
-.case-section__inner p + p {
+.case-section p + p {
   margin-top: var(--space-5);
 }
 
@@ -2112,7 +2099,7 @@ background-repeat:
     padding-block: var(--space-4);
   }
 
-  .case-section__inner {
+  .wrap {
     padding-block: var(--space-7);
   }
 

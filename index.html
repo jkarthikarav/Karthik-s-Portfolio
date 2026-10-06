@@ -7,6 +7,7 @@
 <title>Karthik's Portfolio</title>
 
 <link rel="stylesheet" href="/css/styles.css" />
+<script src="/js/home.js" defer></script>
 
 </head>
 
@@ -22,7 +23,7 @@
       </p>
 
       <h1 class="hero__title">
-        Karthik Designs <span class="special-text__2">&nbsp;Websites&nbsp;</span> and <span class="special-text__6">&nbsp;Digital Products&nbsp;</span>&nbsp;
+        Karthik Designs <span class="special-text__2">Websites</span> and <span class="special-text__6">Digital Products</span>
       </h1>
 
       <p class="hero__description t-label-lg">
@@ -41,12 +42,12 @@
 </section>
 
 <section class="about">
-  <div class="capabilities__inner">
+  <div class="wrap">
 
     <div class="section-heading">
 
       <h2 class="section-heading__title t-headline-md">
-        Meet a different kind of <span class="special-text__6">&nbsp;Designer&nbsp;</span>.
+        Meet a different kind of <span class="special-text__6">Designer</span>
       </h2>
 
       
@@ -95,11 +96,11 @@
 </section>
 
 <section class="capabilities">
-  <div class="capabilities__inner">
+  <div class="wrap">
 
     <div class="section-heading">
       <h2 class="section-heading__title t-headline-md" style="line-height: 1.4;">
-        Why <span class="special-text__6">Choose Karthik</span>&nbsp;to
+        Why <span class="special-text__2">Choose Karthik</span> to
         Design Digital Products
         from Strategy to Launch
       </h2>
@@ -183,7 +184,7 @@
 
 <section class="quote-card inverse">
 
-  <div class="quote-card__inner case-section__inner">
+  <div class="quote-card__inner wrap">
 
     <p class="tag on">WHAT PEOPLE HAVE TO SAY</p>
 
@@ -207,10 +208,10 @@
 <div class="selected-work__inner">
 
 <header class="section-heading selected-work__heading">
-  <p class="tag" style="width: fit-content; margin: auto;">SELECTED WORK</p>
+  <p class="tag" style="width: fit-content; margin: auto;">SELECT WORK</p>
 
   <h2 class="t-display-md">
-    Work that moves organizations forward.
+    Select Website and Digital Product Work
   </h2>
   <!--
 
@@ -370,34 +371,12 @@
 
 </div>
 
-<header class="section-heading selected-work__heading" style="margin-top: var(--space-7);">
-
-  <h2 class="t-display-md">
-    Explore All Projects
-  </h2>
-
-  <div class="highlight-work__tabs">
-    <a class="btn s" href="/work/ece.html">
-      ECE at U of T
-    </a>
-
-    <a class="btn s" href="/work/academic.html">
-      Academic Projects
-    </a>
-
-    <a class="btn disabled">
-      More Categories Coming Soon
-    </a>
-  </div>
-
-</header>
-
 </div>
 </section>
 
 <section class="quote-card inverse">
 
-  <div class="quote-card__inner case-section__inner">
+  <div class="quote-card__inner wrap">
 
     <p class="tag on">Digital Experiments</p>
 
@@ -418,8 +397,48 @@
 
 </section>
 
-<section class="about" style="background-image: url('/assets/graphics/map.png');">
-<div class="capabilities__inner">
+<section class="selected-work">
+<div class="selected-work__inner">
+
+<header class="section-heading selected-work__heading">
+  <p class="tag" style="width: fit-content; margin: auto;">Project Archive</p>
+
+  <h2 class="t-display-md">
+    All Website and Digital Product Work
+  </h2>
+
+  <p class="section-heading__intro">
+    Explore all of my publicly accessible case studies and project pieces on various digital products, websites, and systems I've
+    researched, designed, and built.
+  </p>
+
+  <div class="highlight-work__tabs">
+    <a class="btn s" href="/work/ece.html">
+      ECE at U of T
+    </a>
+
+    <a class="btn s" href="/work/academic.html">
+      Academic Projects
+    </a>
+
+    <a class="btn disabled">
+      More Categories Coming Soon
+    </a>
+  </div>
+
+</header>
+
+<header class="section-heading selected-work__heading" style="margin-top: var(--space-7);">
+
+  
+
+</header>
+
+</div>
+</section>
+
+<section class="about contact" style="background-image: url('/assets/graphics/map.png');">
+<div class="wrap">
 
   <h2 class="contact-section__heading">
     Contact Me
@@ -465,234 +484,6 @@
     <p>Based in Ontario, Canada</p>
   </div>
 </section>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const tabs = Array.from(
-    document.querySelectorAll(".selected-work__tab")
-  );
-
-  const projects = Array.from(
-    document.querySelectorAll(".selected-work__project")
-  );
-
-  const viewer = document.querySelector(
-    ".selected-work__viewer"
-  );
-
-  if (!tabs.length || !projects.length || !viewer) {
-    return;
-  }
-
-
-  function activateProject(projectName, moveFocus = false) {
-    const selectedTab = tabs.find(
-      (tab) => tab.dataset.project === projectName
-    );
-
-    const selectedProject = projects.find(
-      (project) => project.dataset.projectPanel === projectName
-    );
-
-    if (!selectedTab || !selectedProject) {
-      return;
-    }
-
-
-    /* -------------------------------------------------------
-       TABS
-       ------------------------------------------------------- */
-
-    tabs.forEach((tab) => {
-      const isActive =
-        tab.dataset.project === projectName;
-
-      tab.classList.toggle(
-        "is-active",
-        isActive
-      );
-
-      tab.setAttribute(
-        "aria-selected",
-        String(isActive)
-      );
-
-      tab.tabIndex = isActive ? 0 : -1;
-    });
-
-
-    /* -------------------------------------------------------
-       PROJECT PANELS
-       ------------------------------------------------------- */
-
-    projects.forEach((project) => {
-      const isActive =
-        project.dataset.projectPanel === projectName;
-
-      project.classList.toggle(
-        "is-active",
-        isActive
-      );
-
-      project.setAttribute(
-        "aria-hidden",
-        String(!isActive)
-      );
-    });
-
-
-    /* -------------------------------------------------------
-       ACCESSIBILITY
-       ------------------------------------------------------- */
-
-    viewer.setAttribute(
-      "aria-labelledby",
-      selectedTab.id
-    );
-
-
-    /* -------------------------------------------------------
-       FOCUS
-       ------------------------------------------------------- */
-
-    if (moveFocus) {
-      selectedTab.focus();
-    }
-  }
-
-
-  /* ---------------------------------------------------------
-     CLICK
-     --------------------------------------------------------- */
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      activateProject(
-        tab.dataset.project
-      );
-    });
-  });
-
-
-  /* ---------------------------------------------------------
-     KEYBOARD NAVIGATION
-     --------------------------------------------------------- */
-
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("keydown", (event) => {
-      let nextIndex = index;
-
-      if (event.key === "ArrowRight") {
-        event.preventDefault();
-
-        nextIndex =
-          (index + 1) % tabs.length;
-      }
-
-      if (event.key === "ArrowLeft") {
-        event.preventDefault();
-
-        nextIndex =
-          (index - 1 + tabs.length) %
-          tabs.length;
-      }
-
-      if (event.key === "Home") {
-        event.preventDefault();
-
-        nextIndex = 0;
-      }
-
-      if (event.key === "End") {
-        event.preventDefault();
-
-        nextIndex = tabs.length - 1;
-      }
-
-      if (nextIndex !== index) {
-        activateProject(
-          tabs[nextIndex].dataset.project,
-          true
-        );
-      }
-    });
-  });
-
-
-  /* ---------------------------------------------------------
-     INITIAL STATE
-     --------------------------------------------------------- */
-
-  const initialProject =
-    tabs.find((tab) =>
-      tab.classList.contains("is-active")
-    )?.dataset.project ||
-    tabs[0].dataset.project;
-
-  activateProject(initialProject);
-});
-</script>
-
-<script>
-  const greetings = [
-  "Hello, I'm Karthik",
-  "Ciao, sono Karthi",
-  "Hola, soy Kartik",
-  "Привет я Картйк",
-  "Bonjour, Appelez-moi Kartik",
-];
-
-let currentGreetingIndex = 0;
-const greetingElement = document.getElementById("greeting");
-
-function scrambleText(targetElement, newText) {
-  const characters =
-    'FGHIJcde=Afgckzlm"nop,qrsab' +
-    "пнтЭряждииоевфбіиїтпд";
-
-  let scrambleInterval = 50;
-  let totalScrambleTime = 1000;
-  let currentText = targetElement.textContent;
-
-  let scramble = setInterval(() => {
-    let scrambledText = "";
-
-    for (let i = 0; i < newText.length; i++) {
-      if (Math.random() > 0.5) {
-        scrambledText += characters.charAt(
-          Math.floor(Math.random() * characters.length),
-        );
-      } else {
-        scrambledText += currentText[i] || "";
-      }
-    }
-
-    targetElement.textContent = scrambledText;
-  }, scrambleInterval);
-
-  setTimeout(() => {
-    clearInterval(scramble);
-    targetElement.textContent = newText;
-  }, totalScrambleTime);
-}
-
-function changeGreeting() {
-  let newIndex;
-
-  do {
-    newIndex = Math.floor(Math.random() * greetings.length);
-  } while (newIndex === currentGreetingIndex);
-
-  const newGreeting = greetings[newIndex];
-
-  scrambleText(greetingElement, newGreeting);
-  currentGreetingIndex = newIndex;
-}
-
-setInterval(changeGreeting, 4000);
-changeGreeting();
-</script>
 
 
 
