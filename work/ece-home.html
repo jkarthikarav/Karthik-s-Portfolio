@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ECE Home UI Case Study</title>
+
+<link rel="stylesheet" href="/css/styles.css" />
+
+</head>
+
+<body>
+
+<a class="btn p site-navigate" href="/">
+  Back Home
+</a>
+
+<section class="project-hero">
+
+  <div class="project-hero__content">
+
+    <p class="project-hero__eyebrow t-label-lg">
+      Designing the ECE homepage around prospective student discovery
+    </p>
+
+    <h1 class="project-hero__title t-display">
+      ECE at U of T's Home
+    </h1>
+
+    <p class="project-hero__description t-body">
+      I researched how prospective students and other first-time visitors might understand ECE, 
+      then translated those findings into the homepage's content, copy, information hierarchy, and interface. 
+      The sections below show the individual design decisions that shaped the final experience.
+    </p>
+
+    <div class="tnfc-figures" style="margin-bottom: var(--space-4);">
+      <a class="tnfc-link box" target="_blank" href="https://www.ece.utoronto.ca/">
+        <span class="tnfc-link__label t-label-lg">ECE Website Homepage</span>
+        <span class="tnfc-link__arrow" aria-hidden="true">→</span>
+      </a>
+    </div> 
+
+    <div class="project-hero__divider"></div>
+
+    <div class="project-hero__meta row">
+      <span class="tag">Nov 2024 — Mar 2025</span>
+      <span class="tag">UX Research</span>
+      <span class="tag">UX/UI Design</span>
+      <span class="tag">Front-End Development</span>
+      <span class="tag">WordPress</span>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="tnfc-banner"></section>
+
+<section class="case-section--canvas">
+  <div class="wrap">
+    
+    <p class="tag" style="margin-bottom: var(--space-2);">
+      Hero Section
+    </p>
+
+    <h3 class="t-headline-sm">
+      Establishing what ECE offers at a glance
+    </h3>
+
+    <p class="t-body">
+      The existing homepage opened with a static image and the slogan “Invent Tomorrow, Today at ECE,” 
+      followed by five large icon links to News, Research, Teaching Labs, TNFC, and Events. 
+      I redesigned the hero as a two-column banner pairing campaign messaging—a headline, short description, and CTA—with a video.
+    </p>
+
+    <div class="tnfc-figures">
+
+        <figure class="tnfc-figure">
+            <img src="/assets/ece/ece-old-hero.webp" alt="Hero">
+            <figcaption class="t-caption">ECE's Home Page Hero Section [Before]</figcaption>
+        </figure>
+
+        <figure class="tnfc-figure">
+            <img src="/assets/ece/Hero-Section - High-Fidelity.webp" alt="High Fidelity">
+            <figcaption class="t-caption">My High Fidelity Mockup</figcaption>
+        </figure>
+
+    </div>
+
+    <p class="t-body">
+      The new structure gave Marketing a flexible surface that could be adapted to different campaigns, 
+      whether the focus was student life, research, or an industry partnership, 
+      without requiring the overall hero layout to be redesigned.
+    </p>
+
+    <p class="t-body">
+      I also reworked the navigation beneath it. 
+      Rather than treating the links as a fixed set of icon destinations, 
+      I designed them as reusable link components that could accommodate the department's evolving content. 
+      In the final implementation, 
+      I built the version with icons and text labels for four destinations, 
+      including the News & Insights page and the TNFC content hub (pages I built).
+    </p>
+
+    <p class="t-body">
+      I also explored using the hero to surface three key department metrics, which were ultimately moved into the Programs section.
+    </p>
+
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap">
+    
+    <p class="tag" style="margin-bottom: var(--space-2);">
+      Programs Section
+    </p>
+
+    <h3 class="t-headline-sm">
+      Streamlining program information for faster decisions
+    </h3>
+
+    <p class="t-body">
+      The original Programs section was structured as two cards for Undergraduate and Graduate Studies, but each contained lengthy descriptions and bulleted statistics. 
+      While the information was comprehensive, it made the section harder to scan and delayed the path to the actual program pages.
+    </p>
+
+    <div class="tnfc-figures">
+
+        <figure class="tnfc-figure">
+            <img src="/assets/ece/ece-old-programs.webp" alt="Programs">
+            <figcaption class="t-caption">ECE's Home Page Programs Section [Before]</figcaption>
+        </figure>
+
+        <figure class="tnfc-figure">
+            <img src="/assets/ece/Programs-High-Fidelity.webp" alt="High Fidelity">
+            <figcaption class="t-caption">My High Fidelity Mockup</figcaption>
+        </figure>
+
+    </div>
+
+    <p class="t-body">
+      I reworked the section around the information prospective students needed to recognize quickly: 
+      what they could study, which degree paths were available, and where to learn more. 
+      I introduced stronger visual hierarchy through program imagery, concise descriptions, and prominent calls to action, 
+      removing lengthy supporting copy that could be explored on the dedicated program pages instead.
+    </p>
+
+    <p class="t-body">
+      The result was a section designed to funnel prospective students toward the information they were actually looking for, 
+      rather than attempting to contain the full program experience on the homepage.
+    </p>
+
+  </div>
+</section>
+
+<section class="case-section--canvas">
+  <div class="wrap">
+    
+    <p class="tag" style="margin-bottom: var(--space-2);">
+      Hear from the Chair + Upcoming Events
+    </p>
+
+    <h3 class="t-headline-sm">
+      Pairing institutional context with Events information
+    </h3>
+
+    <p class="t-body">
+      The original section was a simple welcome from the Chair, with her photograph, introductory message, and a “Learn More” link. 
+      I expanded it into a two-column section that preserved the Chair's introduction while using the adjacent space to surface upcoming events.
+    </p>
+
+    <div class="tnfc-figures">
+
+        <figure class="tnfc-figure">
+            <img src="/assets/ece/Events-img.webp" alt="Screen grab of the section from the website">
+            <figcaption class="t-caption">Screen grab from the website</figcaption>
+        </figure>
+
+    </div>
+
+    <p class="t-body">
+      The layout separates the two purposes without making either compete for attention: 
+      visitors can learn about the department through the Chair's introduction, 
+      or immediately see what's happening through the embedded Events Calendar.
+    </p>
+
+    <p class="t-body">
+      This also created another pathway into the Events experience directly from the homepage.
+    </p>
+
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap">
+    
+    <p class="tag" style="margin-bottom: var(--space-2);">
+      Research + Industry Opportunities
+    </p>
+
+    <h3 class="t-headline-sm">
+      Reducing repeated navigation, reframed around Research and Industry
+    </h3>
+
+    <p class="t-body">
+      The original section presented eight research groups as individual cards, each linking to the same Research page. While the cards communicated ECE's areas of research, the interaction duplicated the same destination eight times and left no equivalent pathway to the newly created Industry Opportunities page.
+    </p>
+
+    <div class="tnfc-figures">
+
+        <figure class="tnfc-figure">
+            <img src="/assets/ece/Research-Section-highfid.webp" alt="High Fidelity">
+            <figcaption class="t-caption">High Fidelity Mockup</figcaption>
+        </figure>
+
+    </div>
+
+    <p class="t-body">
+      I consolidated the section into two clear pathways: Research at ECE and Industry Opportunities. 
+      This reduced repetitive navigation while giving industry engagement the same visibility as research.
+    </p>
+
+    <p class="t-body">
+      The initial design (Left of High Fidelity Mockup) used immersive image treatments with overlaid text and calls to action. 
+      In the final implementation (Right of High Fidelity Mockup), I moved to structured cards with photography, clear typography, supporting descriptions, and dedicated actions. 
+      This made the two destinations easier to distinguish while keeping the section consistent with the rest of the homepage.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="case-section--canvas">
+  <div class="wrap">
+
+    <h3 class="t-headline-sm">
+      Designing a pattern that could scale beyond the homepage
+    </h3>
+
+    <p class="t-body">
+      The Research + Industry section was built as a reusable component rather than a one-off homepage element. 
+    </p>
+
+    <p class="t-body">
+      The same structure was later duplicated and adapted for TNFC and the Grid Modernization Centre, 
+      allowing the department to extend the pattern to other properties without creating a new layout from scratch.
+    </p>
+
+  </div>
+</section>
+
+<section class="karthik-footer">
+  <div class="karthik-footer-inner">
+    <p>Developed by Karthik</p>
+    <p>Based in Ontario, Canada</p>
+  </div>
+</section>
+
+<script>
+ 
+ /* =========================================================
+   PROJECT ANIMATIONS
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. PROJECT CONTEXT — Quote slides in from right
+   --------------------------------------------------------- */
+
+const forewordCard = document.querySelector('.foreword-card');
+
+if (forewordCard) {
+  const quoteCard = forewordCard.querySelector('.quote-card');
+
+  if (quoteCard) {
+    quoteCard.style.opacity = '0';
+    quoteCard.style.transform = 'translateX(60px)';
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+
+      quoteCard.style.transition =
+        'opacity .6s ease, transform .6s ease';
+
+      quoteCard.style.opacity = '1';
+      quoteCard.style.transform = 'translateX(0)';
+
+      observer.unobserve(forewordCard);
+    }, {
+      threshold: 0.25
+    });
+
+    observer.observe(forewordCard);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   2. BEFORE / AFTER COMPARISON
+   --------------------------------------------------------- */
+
+const comparisonGrid = document.querySelector('.comparison-grid');
+
+if (comparisonGrid) {
+  const beforeCard =
+    comparisonGrid.querySelector('.comparison-card--before');
+
+  const afterCard =
+    comparisonGrid.querySelector('.comparison-card--after');
+
+  if (beforeCard && afterCard) {
+
+    // Initial state
+    beforeCard.style.opacity = '0';
+    beforeCard.style.transform = 'translateY(20px)';
+
+    afterCard.style.opacity = '0';
+    afterCard.style.transform = 'translateY(20px)';
+
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+
+
+      // BEFORE
+      setTimeout(() => {
+        beforeCard.style.transition =
+          'opacity .5s ease, transform .5s ease';
+
+        beforeCard.style.opacity = '1';
+        beforeCard.style.transform = 'translateY(0)';
+      }, 100);
+
+
+      // AFTER
+      setTimeout(() => {
+        afterCard.style.transition =
+          'opacity .5s ease, transform .5s ease';
+
+        afterCard.style.opacity = '1';
+        afterCard.style.transform = 'translateY(0)';
+      }, 450);
+
+
+      observer.unobserve(comparisonGrid);
+
+    }, {
+      threshold: 0.2
+    });
+
+    observer.observe(comparisonGrid);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   3. TRANSFORMATION
+   Before → Strike → Arrow → After
+   --------------------------------------------------------- */
+
+const transformation = document.querySelector('.transformation');
+
+if (transformation) {
+  const cards =
+    transformation.querySelectorAll('.transformation-card');
+
+  cards.forEach(card => {
+
+    const legacy =
+      card.querySelector('.transformation-card__legacy');
+
+    const arrow =
+      card.querySelector('.transformation-card__arrow');
+
+    const result =
+      card.querySelector('.transformation-card__result');
+
+    if (!legacy || !arrow || !result) return;
+
+
+    /* -----------------------------------------
+       Initial states
+       ----------------------------------------- */
+
+    legacy.style.textDecoration = 'none';
+    legacy.style.position = 'relative';
+
+    arrow.style.opacity = '0';
+    arrow.style.transform = 'translateY(-8px)';
+
+    result.style.opacity = '0';
+    result.style.transform = 'translateY(8px)';
+
+
+    /* -----------------------------------------
+       Wrap the actual text
+       ----------------------------------------- */
+
+    const text = legacy.textContent.trim();
+
+    legacy.textContent = '';
+
+    const textSpan = document.createElement('span');
+    textSpan.textContent = text;
+
+    legacy.appendChild(textSpan);
+
+
+    /* -----------------------------------------
+       Create strike-through
+       ----------------------------------------- */
+
+    const strike = document.createElement('span');
+
+    strike.style.position = 'absolute';
+    strike.style.left = '50%';
+    strike.style.top = '50%';
+    strike.style.width = '0';
+    strike.style.height = '2px';
+    strike.style.background = 'var(--danger-500)';
+    strike.style.transform = 'translate(-50%, -50%)';
+    strike.style.pointerEvents = 'none';
+
+    legacy.appendChild(strike);
+
+    card._strike = strike;
+    card._textSpan = textSpan;
+  });
+
+
+  /* -----------------------------------------
+     Start animation
+     ----------------------------------------- */
+
+  const observer = new IntersectionObserver((entries) => {
+
+    if (!entries[0].isIntersecting) return;
+
+    cards.forEach((card, index) => {
+
+      const arrow =
+        card.querySelector('.transformation-card__arrow');
+
+      const result =
+        card.querySelector('.transformation-card__result');
+
+      const textSpan = card._textSpan;
+      const strike = card._strike;
+
+
+      setTimeout(() => {
+
+
+        /* -----------------------------------
+           1. Strike actual text width
+           ----------------------------------- */
+
+        const textWidth = textSpan.offsetWidth;
+
+        strike.style.transition =
+          'width .5s ease';
+
+        strike.style.width = `${textWidth}px`;
+
+
+        /* -----------------------------------
+           2. Arrow
+           ----------------------------------- */
+
+        setTimeout(() => {
+
+          arrow.style.transition =
+            'opacity .3s ease, transform .3s ease';
+
+          arrow.style.opacity = '1';
+          arrow.style.transform = 'translateY(0)';
+
+
+          /* ---------------------------------
+             3. Result
+             --------------------------------- */
+
+          setTimeout(() => {
+
+            result.style.transition =
+              'opacity .4s ease, transform .4s ease';
+
+            result.style.opacity = '1';
+            result.style.transform = 'translateY(0)';
+
+          }, 300);
+
+        }, 500);
+
+      }, index * 600);
+
+    });
+
+    observer.unobserve(transformation);
+
+  }, {
+    threshold: 0.25
+  });
+
+
+  observer.observe(transformation);
+}
+
+/* ---------------------------------------------------------
+   TNFC FIGURES
+   --------------------------------------------------------- */
+
+const tnfcFigures = document.querySelectorAll('.tnfc-figure');
+
+if (tnfcFigures.length) {
+
+  tnfcFigures.forEach(figure => {
+    figure.style.opacity = '0';
+    figure.style.transform = 'translateY(24px)';
+  });
+
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (!entry.isIntersecting) return;
+
+      const figure = entry.target;
+
+      figure.style.transition =
+        'opacity .6s ease, transform .6s ease';
+
+      figure.style.opacity = '1';
+      figure.style.transform = 'translateY(0)';
+
+      observer.unobserve(figure);
+
+    });
+
+  }, {
+    threshold: 0.2
+  });
+
+
+  tnfcFigures.forEach(figure => {
+    observer.observe(figure);
+  });
+
+}
+</script>
+
+</body>
+
+</html>
