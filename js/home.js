@@ -223,3 +223,17 @@ function changeGreeting() {
 
 setInterval(changeGreeting, 4000);
 changeGreeting();
+
+function updateProjectTabLabels() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  document.querySelector("#selected-work-tab-tnfc").textContent =
+    isMobile ? "TNFC" : "TORONTO NANOFAB CENTRE";
+
+  document.querySelector("#selected-work-tab-ssyo").textContent =
+    isMobile ? "SSYO" : "SOUTH SHORE YOUTH";
+}
+
+updateProjectTabLabels();
+
+window.addEventListener("resize", updateProjectTabLabels);
