@@ -304,6 +304,11 @@ p.note {
   margin-bottom: 1.5rem;
 }
 
+ul {
+  margin: var(--space-2) 0;
+  list-style-type: lower-greek;
+}
+
 h3.t-label-lg {
   margin: 2.5rem 0 1rem;
   color: var(--color-text-tertiary);
@@ -1822,22 +1827,6 @@ aside.quote-card {
 }
 
 .comparison-card--after .comparison-card__body > p:first-child {
-  color: var(--color-feedback-success-fg);
-}
-
-.comparison-card__tag {
-  padding-top: var(--space-3);
-
-  border-top:
-    var(--border-width-thin)
-    solid
-    var(--color-border-subtle);
-
-  color: var(--color-text-tertiary);
-}
-
-.comparison-card__tag--after {
-  border-top-color: var(--color-feedback-success-bg);
   color: var(--color-feedback-success-fg);
 }
 
