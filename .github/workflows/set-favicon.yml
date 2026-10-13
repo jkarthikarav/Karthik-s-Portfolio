@@ -1,0 +1,138 @@
+
+name: Set favicon on pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/set-favicon.yml"
+      - "assets/favicon/favicon.svg"
+      - "sitemap.xml"
+      - "**.html"
+  workflow_dispatch:
+    inputs:
+      force_all:
+        description: "Re-apply the favicon to ALL html pages"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  favicon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply favicon
+        env:
+          FORCE_ALL: ${{ inputs.force_all }}
+        run: |
+          python3 - <<'EOF'
+          import os, re, glob
+          import xml.etree.ElementTree as ET
+          from urllib.parse import urlparse, unquote
+
+          FAV = "assets/favicon/favicon.svg"
+          SITEMAP = "sitemap.xml"
+          STATE = ".github/favicon-applied.txt"   # list of pages already done
+          FORCE = os.environ.get("FORCE_ALL") == "true"
+
+          if not os.path.isfile(FAV):
+              raise SystemExit(f"{FAV} not found")
+
+          def all_html():
+              return sorted(
+                  p.replace(os.sep, "/")
+                  for p in glob.glob("**/*.html", recursive=True)
+                  if not p.startswith("node_modules/")
+              )
+
+          def url_to_file(url):
+              path = unquote(urlparse(url).path).lstrip("/")
+              if path == "" or path.endswith("/"):
+                  candidates = [path + "index.html"]
+              elif path.endswith(".html"):
+                  candidates = [path]
+              else:
+                  candidates = [path + ".html", path + "/index.html"]
+              for c in candidates:
+                  if os.path.isfile(c):
+                      return c
+              return None
+
+          def sitemap_pages(sitemap_file, seen=None):
+              seen = seen or set()
+              if sitemap_file in seen or not os.path.isfile(sitemap_file):
+                  return set()
+              seen.add(sitemap_file)
+              pages = set()
+              root = ET.parse(sitemap_file).getroot()
+              for el in root.iter():
+                  if not el.tag.endswith("loc") or not el.text:
+                      continue
+                  loc = el.text.strip()
+                  if urlparse(loc).path.endswith(".xml"):
+                      # nested sitemap (sitemap index), resolve locally
+                      pages |= sitemap_pages(urlparse(loc).path.lstrip("/"), seen)
+                  else:
+                      f = url_to_file(loc)
+                      if f:
+                          pages.add(f)
+                      else:
+                          print(f"No local file for sitemap URL: {loc}")
+              return pages
+
+          icon_re = re.compile(
+              r'[ \t]*<link[^>]+rel=["\'](?:shortcut )?icon["\'][^>]*>\s*\n?',
+              re.IGNORECASE,
+          )
+
+          def apply(path):
+              with open(path, encoding="utf-8") as f:
+                  html = f.read()
+              new = icon_re.sub("", html)
+              if not re.search(r"</head>", new, re.IGNORECASE):
+                  print(f"Skipping (no </head>): {path}")
+                  return False
+              rel = os.path.relpath(FAV, os.path.dirname(path) or ".").replace(os.sep, "/")
+              tag = f'    <link rel="icon" type="image/svg+xml" sizes="any" href="{rel}">\n'
+              new = re.sub(r"</head>", tag + "</head>", new, count=1, flags=re.IGNORECASE)
+              if new != html:
+                  with open(path, "w", encoding="utf-8") as f:
+                      f.write(new)
+                  print(f"Updated {path}")
+              return True
+
+          first_run = not os.path.isfile(STATE)
+          done = set()
+          if not first_run:
+              with open(STATE, encoding="utf-8") as f:
+                  done = {line.strip() for line in f if line.strip()}
+
+          if first_run or FORCE:
+              print("Applying favicon to ALL html pages")
+              targets = all_html()
+          else:
+              if not os.path.isfile(SITEMAP):
+                  raise SystemExit(f"{SITEMAP} not found, nothing to do")
+              targets = sorted(sitemap_pages(SITEMAP) - done)
+              print(f"{len(targets)} new page(s) found in sitemap")
+
+          for p in targets:
+              if apply(p):
+                  done.add(p)
+
+          os.makedirs(os.path.dirname(STATE), exist_ok=True)
+          with open(STATE, "w", encoding="utf-8") as f:
+              f.write("\n".join(sorted(done)) + "\n")
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: set favicon"
+          git push
