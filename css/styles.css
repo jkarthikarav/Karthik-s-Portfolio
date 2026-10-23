@@ -506,17 +506,6 @@ ul {
   align-items: center;
 }
 
-.special-hero__eyebrow {
-  margin-bottom: var(--space-4);
-}
-
-.special-hero__title {
-  max-width: 760px;
-  margin: 0;
-  font-size: clamp(2.5rem, 6.3vw, var(--font-size-900));
-  line-height: 1.4;
-}
-
 .special-hero__highlight {
   display: inline;
   padding: 0.02em 0.12em;

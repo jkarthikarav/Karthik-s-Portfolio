@@ -237,3 +237,19 @@ function updateProjectTabLabels() {
 updateProjectTabLabels();
 
 window.addEventListener("resize", updateProjectTabLabels);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentDomain = window.location.hostname;
+
+  document.querySelectorAll("a[href]").forEach(link => {
+    try {
+      const url = new URL(link.href, window.location.origin);
+      if (url.hostname !== currentDomain) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    } catch (e) {
+      // Invalid or relative URL, ignore
+    }
+  });
+});
