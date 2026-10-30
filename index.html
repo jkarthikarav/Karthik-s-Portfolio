@@ -7,7 +7,6 @@
 <title>Karthik's Portfolio</title>
 <link rel="stylesheet" href="https://jkarthikarav.github.io/design-system/builder/jakpot.css">
 <link rel="stylesheet" href="/css/extra.css" />
-<script src="/js/home.js" defer></script>
 <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon/favicon.svg">
 
 </head>
@@ -97,9 +96,9 @@
     </div>
   </div>
 </section>
-<section class="jakpot-section jakpot-section--beige jakpot-section--content-full">
+<section class="jakpot-section jakpot-section--beige jakpot-section--content-full" id="selected-work">
   <div class="jakpot-section__inner">
-    <div class="jakpot-section__content" id="selected-work">
+    <div class="jakpot-section__content">
       <header class="jakpot-section-header jakpot-section-header--title-only">
         <div class="jakpot-section-header__main">
           <h2
@@ -174,7 +173,7 @@
             </div>
 
             <a
-              class="jakpot-button jakpot-button--primary"
+              class="jakpot-button jakpot-button--primary" target="_blank"
               href="https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a"
             >
               Explore
@@ -262,7 +261,7 @@
               app I developed to explore my graphic design work across client campaigns, movies, and brands using
               CSS/JS.</p>
           </div>
-          <div class="jakpot-project-link-card__action"><a class="jakpot-button jakpot-button--primary"
+          <div class="jakpot-project-link-card__action"><a class="jakpot-button jakpot-button--primary" target="_blank"
               href="https://gd-index-eta.vercel.app/">Explore project</a></div>
         </article>
         <article class="jakpot-project-link-card jakpot-project-link-card--neutral">
@@ -274,7 +273,7 @@
               design system I use across all my personal websites and products - Built on Storybook using React, Vite,
               TypeScript.</p>
           </div>
-          <div class="jakpot-project-link-card__action"><a class="jakpot-button jakpot-button--primary"
+          <div class="jakpot-project-link-card__action"><a class="jakpot-button jakpot-button--primary" target="_blank"
               href="https://jkarthikarav.github.io/design-system/?path=/docs/components-button--docs">Explore
               project</a></div>
         </article>
@@ -287,7 +286,7 @@
               product I built that allows me (and you!) to compose reusable layouts and export semantic HTML constantly
               connected to the JAKpot Design system.</p>
           </div>
-          <div class="jakpot-project-link-card__action"><a class="jakpot-button jakpot-button--primary"
+          <div class="jakpot-project-link-card__action"><a class="jakpot-button jakpot-button--primary" target="_blank"
               href="https://jkarthikarav.github.io/design-system/builder/">Explore project</a></div>
         </article>
       </div>
@@ -312,7 +311,7 @@
         </div>
       </header>
       <ol class="jakpot-structured-list">
-        <li class="jakpot-structured-list__item">
+        <li class="jakpot-structured-list__item" style="border-top: none;">
           <div class="jakpot-structured-list__row" onclick="window.location.href='/work/ece.html';" style="cursor: pointer; text-decoration: none;">
             <span class="jakpot-structured-list__index">01</span>
             <span class="jakpot-structured-list__content">
@@ -356,7 +355,7 @@
       
       <div class="jakpot-grid jakpot-grid--columns-3 jakpot-grid--gap-3"><a class="jakpot-button jakpot-button--primary"
           href="mailto:karthikaravindj@gmail.com">Email Me</a>
-        <a class="jakpot-button jakpot-button--secondary"
+        <a class="jakpot-button jakpot-button--secondary" target="_blank"
           href="https://www.linkedin.com/in/karthikjambunathan/">LinkedIn</a>
       </div>
     </div>
@@ -384,77 +383,120 @@
       });
     });
 
+    const greetings = [
+        "Hello, I'm Karthik",
+        "Ciao, sono Karthi",
+        "Hola, soy Kartik",
+        "Привет я Картйк",
+        "Bonjour, Appelez-moi Kartik",
+      ];
+
+      let currentGreetingIndex = 0;
+      const greetingElement = document.getElementById("greeting");
+
+      function scrambleText(targetElement, newText) {
+        const characters =
+          'FGHIJcde=Afgckzlm"nop,qrsab' +
+          "пнтЭряждииоевфбіиїтпд";
+
+        let scrambleInterval = 50;
+        let totalScrambleTime = 1000;
+        let currentText = targetElement.textContent;
+
+        let scramble = setInterval(() => {
+          let scrambledText = "";
+
+          for (let i = 0; i < newText.length; i++) {
+            if (Math.random() > 0.5) {
+              scrambledText += characters.charAt(
+                Math.floor(Math.random() * characters.length),
+              );
+            } else {
+              scrambledText += currentText[i] || "";
+            }
+          }
+
+          targetElement.textContent = scrambledText;
+        }, scrambleInterval);
+
+        setTimeout(() => {
+          clearInterval(scramble);
+          targetElement.textContent = newText;
+        }, totalScrambleTime);
+      }
+
+      function changeGreeting() {
+        let newIndex;
+
+        do {
+          newIndex = Math.floor(Math.random() * greetings.length);
+        } while (newIndex === currentGreetingIndex);
+
+        const newGreeting = greetings[newIndex];
+
+        scrambleText(greetingElement, newGreeting);
+        currentGreetingIndex = newIndex;
+      }
+
+      setInterval(changeGreeting, 4000);
+      changeGreeting();
+
+      function updateProjectTabLabels() {
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+        document.querySelector("#selected-work-tab-tnfc").textContent =
+          isMobile ? "TNFC" : "TORONTO NANOFAB CENTRE";
+
+        document.querySelector("#selected-work-tab-ssyo").textContent =
+          isMobile ? "SSYO" : "SOUTH SHORE YOUTH";
+      }
+
 </script>
 
 <script>
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(
+      ".jakpot-button[onclick]"
+    );
 
+    if (!button) return;
 
-  (function () {
-    const tabs = Array.from(document.querySelectorAll('.tabs__tab'));
-    const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
-    const DURATION = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 250;
+    const handler = button.getAttribute("onclick");
+    const match = handler.match(/https?:\/\/[^'"]+/);
 
-    let current = 0;
-    let timer = null;
+    if (!match) return;
 
-    function show(next, focus = false) {
-      if (next === current) return;
+    const url = new URL(match[0]);
 
-      // If a transition is mid-flight, finish it instantly
-      if (timer) {
-        clearTimeout(timer);
-        panels.forEach((p, i) => {
-          p.classList.remove('is-leaving', 'is-entering');
-          p.hidden = i !== current;
-        });
-      }
-
-      // Update tab state
-      tabs.forEach((tab, i) => {
-        const active = i === next;
-        tab.classList.toggle('is-active', active);
-        tab.setAttribute('aria-selected', active);
-        tab.tabIndex = active ? 0 : -1;
-      });
-      if (focus) tabs[next].focus();
-
-      const outgoing = panels[current];
-      const incoming = panels[next];
-      current = next;
-
-      // 1. Fade the old panel out
-      outgoing.classList.add('is-leaving');
-
-      timer = setTimeout(() => {
-        // 2. Swap
-        outgoing.hidden = true;
-        outgoing.classList.remove('is-leaving');
-
-        incoming.classList.add('is-entering');
-        incoming.hidden = false;
-
-        // 3. Fade the new panel in (two frames so the start state paints first)
-        requestAnimationFrame(() =>
-          requestAnimationFrame(() => incoming.classList.remove('is-entering'))
-        );
-        timer = null;
-      }, DURATION);
+    if (url.origin !== window.location.origin) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      window.open(url.href, "_blank", "noopener,noreferrer");
     }
+  }, true);
+</script>
 
-    tabs.forEach((tab, i) => {
-      tab.addEventListener('click', () => show(i));
+<script>
+  document.addEventListener("click", (event) => {
+    const row = event.target.closest(
+      ".jakpot-structured-list__row[onclick]"
+    );
 
-      // Arrow-key navigation between tabs (accessibility)
-      tab.addEventListener('keydown', e => {
-        let next = null;
-        if (e.key === 'ArrowRight') next = (i + 1) % tabs.length;
-        if (e.key === 'ArrowLeft')  next = (i - 1 + tabs.length) % tabs.length;
-        if (e.key === 'Home') next = 0;
-        if (e.key === 'End')  next = tabs.length - 1;
-        if (next !== null) { e.preventDefault(); show(next, true); }
-      });
-    });
-  })();
+    if (!row) return;
+
+    const handler = row.getAttribute("onclick");
+    const match = handler.match(/https?:\/\/[^'"]+/);
+
+    if (!match) return;
+
+    const url = new URL(match[0]);
+
+    if (url.origin !== window.location.origin) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      window.open(url.href, "_blank", "noopener,noreferrer");
+    }
+  }, true);
 </script>
 
 </body>

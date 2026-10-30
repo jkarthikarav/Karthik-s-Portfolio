@@ -21,9 +21,35 @@
   --content-width: 1180px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 main, body {margin: 0; padding: 0;}
+
+.ece-banner {
+  position: relative;
+  min-height: 40vh;
+  background-image: url(/assets/tnfc/TNFC.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 64px;
+}
+
+.site-navigate {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+}
+
+.tag { 
+  display: inline-flex; align-items: center; min-height: 24px; padding: .2rem .55rem; border: 1px solid transparent; border-radius: 3px; 
+  font-family: var(--font-label); font-size: var(--font-size-100); font-weight: var(--font-weight-semibold); line-height: 1.2; white-space: nowrap;
+  margin-top: 1rem;}
 
 .hero {
   min-height: 520px;
