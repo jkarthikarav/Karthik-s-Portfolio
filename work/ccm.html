@@ -141,19 +141,22 @@
 
 <script>
   window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.site-navigate');
-      const footer = document.querySelector('.jakpot-footer');
-      if (!nav || !footer) return;
+    const nav = document.querySelector('.site-navigate');
+    const footer = document.querySelector('.jakpot-footer');
+    if (!nav || !footer) return;
 
-      const navRect = nav.getBoundingClientRect();
-      const footerRect = footer.getBoundingClientRect();
+    const navRect = nav.getBoundingClientRect();
+    const footerRect = footer.getBoundingClientRect();
 
-      if (navRect.bottom > footerRect.top && navRect.top < footerRect.bottom) {
-        nav.style.display = 'none';
-      } else {
-        nav.style.display = '';
-      }
-    });
+    if (navRect.bottom > footerRect.top && navRect.top < footerRect.bottom) {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = '';
+    }
+  });
+</script>
+
+<script>
   document.addEventListener("click", (event) => {
     const row = event.target.closest(
       ".jakpot-structured-list__row[onclick]"
