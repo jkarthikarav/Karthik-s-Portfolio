@@ -6,7 +6,7 @@
 
 <title>ECE Home UI Case Study</title>
 
-<link rel="stylesheet" href="/css/styles.css" />
+<link rel="stylesheet" href="/css/styles.css" /><script src="/js/home.js" defer></script>
 
     <link rel="icon" type="image/svg+xml" sizes="any" href="../assets/favicon/favicon.svg">
 </head>
@@ -287,50 +287,6 @@
 
   <p>Based in Ontario, Canada</p>
 </footer>
-
-<script>
-
-document.querySelectorAll('.hero__art').forEach(art => art.addEventListener('click', () => art.classList.toggle('is-revealed')));
-
-const Figures = document.querySelectorAll('.figure');
-
-if (Figures.length) {
-
-  Figures.forEach(figure => {
-    figure.style.opacity = '0';
-    figure.style.transform = 'translateY(24px)';
-  });
-
-
-  const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-      if (!entry.isIntersecting) return;
-
-      const figure = entry.target;
-
-      figure.style.transition =
-        'opacity .6s ease, transform .6s ease';
-
-      figure.style.opacity = '1';
-      figure.style.transform = 'translateY(0)';
-
-      observer.unobserve(figure);
-
-    });
-
-  }, {
-    threshold: 0.2
-  });
-
-
-  Figures.forEach(figure => {
-    observer.observe(figure);
-  });
-
-}
-</script>
 
 </body>
 

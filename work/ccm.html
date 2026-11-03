@@ -7,7 +7,7 @@
   <title>Copywriting Creatives Work Highlights</title>
 
   <link rel="stylesheet" href="https://jkarthikarav.github.io/design-system/builder/jakpot.css">
-  <link rel="stylesheet" href="/css/extra.css" />
+  <link rel="stylesheet" href="/css/extra.css" /><script src="/js/home.js" defer></script>
   
   <link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon/favicon.svg">
 </head>
@@ -79,105 +79,6 @@
     class="jakpot-button jakpot-button--tertiary jakpot-footer__button">Back to top ↑</button>
 </footer>
 </main>
-
-<script>
-
-  document.querySelectorAll(
-    '.footer__back-to-top, .jakpot-footer__button'
-  ).forEach((button) => {
-    button.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    });
-  });
-
-</script>
-
-
-<script>
-
-  const Figures = document.querySelectorAll('.jakpot-image-caption__image');
-
-  if (Figures.length) {
-
-    Figures.forEach(figure => {
-      figure.style.opacity = '0';
-      figure.style.transform = 'translateY(24px)';
-    });
-
-
-    const observer = new IntersectionObserver((entries) => {
-
-      entries.forEach(entry => {
-
-        if (!entry.isIntersecting) return;
-
-        const figure = entry.target;
-
-        figure.style.transition =
-          'opacity .6s ease, transform .6s ease';
-
-        figure.style.opacity = '1';
-        figure.style.transform = 'translateY(0)';
-
-        observer.unobserve(figure);
-
-      });
-
-    }, {
-      threshold: 0.2
-    });
-
-
-    Figures.forEach(figure => {
-      observer.observe(figure);
-    });
-
-  }
-
-</script>
-
-<script>
-  window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.site-navigate');
-    const footer = document.querySelector('.jakpot-footer');
-    if (!nav || !footer) return;
-
-    const navRect = nav.getBoundingClientRect();
-    const footerRect = footer.getBoundingClientRect();
-
-    if (navRect.bottom > footerRect.top && navRect.top < footerRect.bottom) {
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = '';
-    }
-  });
-</script>
-
-<script>
-  document.addEventListener("click", (event) => {
-    const row = event.target.closest(
-      ".jakpot-structured-list__row[onclick]"
-    );
-
-    if (!row) return;
-
-    const handler = row.getAttribute("onclick");
-    const match = handler.match(/https?:\/\/[^'"]+/);
-
-    if (!match) return;
-
-    const url = new URL(match[0]);
-
-    if (url.origin !== window.location.origin) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      window.open(url.href, "_blank", "noopener,noreferrer");
-    }
-  }, true);
-</script>
 
 </body>
 

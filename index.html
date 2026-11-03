@@ -7,6 +7,7 @@
 <title>Karthik's Portfolio</title>
 <link rel="stylesheet" href="https://jkarthikarav.github.io/design-system/builder/jakpot.css">
 <link rel="stylesheet" href="/css/extra.css" />
+<script src="/js/home.js" defer></script>
 <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon/favicon.svg">
 
 </head>
@@ -465,63 +466,8 @@
       setInterval(changeGreeting, 4000);
       changeGreeting();
 
-      function updateProjectTabLabels() {
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-        document.querySelector("#selected-work-tab-tnfc").textContent =
-          isMobile ? "TNFC" : "TORONTO NANOFAB CENTRE";
-
-        document.querySelector("#selected-work-tab-ssyo").textContent =
-          isMobile ? "SSYO" : "SOUTH SHORE YOUTH";
-      }
-
 </script>
 
-<script>
-  document.addEventListener("click", (event) => {
-    const button = event.target.closest(
-      ".jakpot-button[onclick]"
-    );
-
-    if (!button) return;
-
-    const handler = button.getAttribute("onclick");
-    const match = handler.match(/https?:\/\/[^'"]+/);
-
-    if (!match) return;
-
-    const url = new URL(match[0]);
-
-    if (url.origin !== window.location.origin) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      window.open(url.href, "_blank", "noopener,noreferrer");
-    }
-  }, true);
-</script>
-
-<script>
-  document.addEventListener("click", (event) => {
-    const row = event.target.closest(
-      ".jakpot-structured-list__row[onclick]"
-    );
-
-    if (!row) return;
-
-    const handler = row.getAttribute("onclick");
-    const match = handler.match(/https?:\/\/[^'"]+/);
-
-    if (!match) return;
-
-    const url = new URL(match[0]);
-
-    if (url.origin !== window.location.origin) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      window.open(url.href, "_blank", "noopener,noreferrer");
-    }
-  }, true);
-</script>
 
 </body>
 
