@@ -69,25 +69,25 @@
         </div>
       </header>
     <div class="jakpot-grid jakpot-grid--columns-2 jakpot-grid--gap-3">
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral">
+      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">Strategy &amp; Research</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I use research to uncover user needs, identify opportunities, and shape product vision and strategy.</p>
         </div>
       </article>
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral">
+      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">UX/UI Design</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I turn product strategy into usable digital experiences through information architecture, interaction design, and prototyping.</p>
         </div>
       </article>
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral">
+      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">Front-End Development</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I bring digital experiences to life through responsive front-end development, carrying design intent into accessible interfaces.</p>
         </div>
       </article>
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral">
+      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">Visual Design</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I create visual systems and communications that help organizations express their identity clearly across digital experiences and campaigns.</p>
@@ -223,7 +223,7 @@
         </div>
       </header>
       <div class="jakpot-grid jakpot-grid--columns-2 jakpot-grid--gap-3">
-        <article class="jakpot-project-link-card jakpot-project-link-card--inverse">
+        <article class="jakpot-project-link-card jakpot-project-link-card--inverse" tabindex="0">
           <div class="jakpot-project-link-card__top">
             <p class="jakpot-project-link-card__eyebrow">Kyle Thomas, Copywriting Creatives</p>
             <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">
@@ -337,7 +337,10 @@
       </header>
       <ol class="jakpot-structured-list">
         <li class="jakpot-structured-list__item" style="border-top: none;">
-          <div class="jakpot-structured-list__row" onclick="window.location.href='/work/ece.html';" style="cursor: pointer; text-decoration: none;">
+          <div class="jakpot-structured-list__row" onclick="window.location.href='/work/ece.html';" 
+            style="cursor: pointer; text-decoration: none;"
+            onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" 
+            tabindex="0" role="link">
             <span class="jakpot-structured-list__index">01</span>
             <span class="jakpot-structured-list__content">
               <span class="jakpot-structured-list__title">ECE at U ofT</span>
@@ -346,14 +349,20 @@
           </div>
         </li>
         <li class="jakpot-structured-list__item">
-          <div class="jakpot-structured-list__row" onclick="window.location.href='/work/ccm.html';" style="cursor: pointer; text-decoration: none;">
+          <div class="jakpot-structured-list__row" onclick="window.location.href='/work/ccm.html';" 
+          style="cursor: pointer; text-decoration: none;"
+          onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" 
+          tabindex="0" role="link">
             <span class="jakpot-structured-list__index">02</span><span
               class="jakpot-structured-list__content"><span class="jakpot-structured-list__title">Copywriting
                 Creatives</span><span class="jakpot-structured-list__description">Explore website and digital experience
                 projects.</span></span></div>
         </li>
         <li class="jakpot-structured-list__item">
-          <div class="jakpot-structured-list__row" onclick="window.location.href='/work/academic.html';" style="cursor: pointer; text-decoration: none;">
+          <div class="jakpot-structured-list__row" onclick="window.location.href='/work/academic.html';" 
+            style="cursor: pointer; text-decoration: none;"
+            onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" 
+            tabindex="0" role="link">
             <span class="jakpot-structured-list__index">03</span><span
               class="jakpot-structured-list__content"><span class="jakpot-structured-list__title">Academic
                 Projects</span><span class="jakpot-structured-list__description">Explore academic research, design, and
