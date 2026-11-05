@@ -46,11 +46,6 @@ main, body {margin: 0; padding: 0;}
   z-index: 1000;
 }
 
-.tag { 
-  display: inline-flex; align-items: center; min-height: 24px; padding: .2rem .55rem; border: 1px solid transparent; border-radius: 3px; 
-  font-family: var(--font-label); font-size: var(--font-size-100); font-weight: var(--font-weight-semibold); line-height: 1.2; white-space: nowrap;
-  margin-top: 1rem;}
-
 .hero {
   min-height: 520px;
   display: grid;
