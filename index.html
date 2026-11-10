@@ -17,6 +17,18 @@
 <main class="jakpot-root">
 
 <section class="hero special-hero" id="hero">
+
+  <canvas class="special-hero__canvas" id="hero-ripple-canvas" aria-hidden="true"></canvas>
+  
+  <button class="jakpot-button jakpot-button-primary special-hero__animation-toggle" id="hero-animation-toggle"
+    type="button" aria-label="Pause animation">
+    <svg class="special-hero__toggle-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="white"
+      stroke-width="2" stroke-linecap="round">
+      <path d="M8 5v14M16 5v14" />
+    </svg>
+    <span class="special-hero__toggle-label">Pause</span>
+  </button>
+  
   <div class="special-hero__inner">
     <div class="special-hero__content">
 
@@ -24,25 +36,24 @@
         <span id="greeting">Hello, I'm Karthik</span>
       </p>
 
-      <h1 class="jakpot-typography jakpot-typography--hero-heading jakpot-typography--center">
-        Karthik Designs
-        <span class="special-hero__highlight">Websites</span>
-        and
-        <span class="special-hero__highlight">
-          Digital Products
-        </span>
+      <h1 class="jakpot-typography jakpot-typography--hero-heading jakpot-typography--center" style="margin-top: var(--space-3);">
+        I
+        <span class="text-underline-brinjal">research</span>, 
+        <span class="text-underline-teal">design</span>, and
+        <span class="text-underline-burnt">build</span> 
+        <span class="text-underline-royal">websites</span>, 
+        <span class="text-underline-malyna">products</span>, and 
+        <span class="text-underline-china">workflows</span>.
       </h1>
 
       <p class="jakpot-typography jakpot-typography--hero-subheading jakpot-typography--center">
-        I design and develop digital experiences as systems: connecting
-        research and product strategy to make complex things easier to use
-        and easier to scale.
+        Helping businesses reduce product and service discovery friction, and making complex systems and workflows simpler.
       </p>
 
       <div class="button-row special-hero__actions">
         <a class="jakpot-button jakpot-button--primary" href="#selected-work">
           Start Exploring
-        </a>
+        </a>     
       </div>
 
     </div>
@@ -50,44 +61,45 @@
 </section>
 
 
-<section class="jakpot-section jakpot-section--white jakpot-section--content-full">
+<section class="jakpot-section jakpot-section--white jakpot-section--content-full" style="border-top: 10px solid var(--green-900);">
   <div class="jakpot-section__inner">
     <div class="jakpot-section__content">
       <header class="jakpot-section-header jakpot-section-header--with-description">
         <div class="jakpot-section-header__main">
           <p class="jakpot-typography jakpot-typography--eyebrow jakpot-typography--left jakpot-typography--width-full">
-            Why Choose Karthik to
+            Why Choose Karthik to be
           </p>
           <h2 class="jakpot-typography jakpot-typography--section-heading jakpot-typography--left jakpot-typography--width-full">
-            Design Digital Products
+            Your UX/Product Designer
           </h2>
         </div>
         <div class="jakpot-section-header__description">
           <p class="jakpot-typography jakpot-typography--description-medium jakpot-typography--left jakpot-typography--width-full">
-            I work across research, product design, development, and visual communication to turn complex requirements into digital experiences that are useful and built to last.
+            I work across research, product design, development, and visual communication to turn complex requirements into products
+            and websites that are useful and easy to use.
           </p>
         </div>
       </header>
     <div class="jakpot-grid jakpot-grid--columns-2 jakpot-grid--gap-3">
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
+      <article class="jakpot-project-link-card jakpot-bg-brinjal" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">Strategy &amp; Research</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I use research to uncover user needs, identify opportunities, and shape product vision and strategy.</p>
         </div>
       </article>
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
+      <article class="jakpot-project-link-card jakpot-bg-china" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">UX/UI Design</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I turn product strategy into usable digital experiences through information architecture, interaction design, and prototyping.</p>
         </div>
       </article>
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
+      <article class="jakpot-project-link-card jakpot-bg-malyna" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">Front-End Development</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I bring digital experiences to life through responsive front-end development, carrying design intent into accessible interfaces.</p>
         </div>
       </article>
-      <article class="jakpot-project-link-card jakpot-project-link-card--neutral" tabindex="0">
+      <article class="jakpot-project-link-card jakpot-bg-burnt" tabindex="0">
         <div class="jakpot-project-link-card__top">
           <h3 class="jakpot-typography jakpot-typography--card-heading jakpot-project-link-card__title">Visual Design</h3>
           <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">I create visual systems and communications that help organizations express their identity clearly across digital experiences and campaigns.</p>
@@ -223,9 +235,9 @@
         </div>
       </header>
       <div class="jakpot-grid jakpot-grid--columns-2 jakpot-grid--gap-3">
-        <article class="jakpot-project-link-card jakpot-project-link-card--inverse" tabindex="0">
+        <article class="jakpot-project-link-card jakpot-bg-brinjal" tabindex="0">
           <div class="jakpot-project-link-card__top">
-            <p class="jakpot-project-link-card__eyebrow">Kyle Thomas, Copywriting Creatives</p>
+            <p class="jakpot-project-link-card__eyebrow" style="color: white;">Kyle Thomas, Copywriting Creatives</p>
             <p class="jakpot-typography jakpot-typography--card-description jakpot-project-link-card__description">
               Karthik's ability to grasp and align client requirements with solutions are unmatched and makes him a rare
               leader in design and implementation work! He came in as a knight in shining armor making the impossible,
@@ -403,80 +415,6 @@
 </footer>
 
 </main>
-
-<script>
-  
-    document.querySelectorAll(
-      '.footer__back-to-top, .jakpot-footer__button'
-    ).forEach((button) => {
-      button.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
-        });
-      });
-    });
-
-    const greetings = [
-        "Hello, I'm Karthik",
-        "Ciao, sono Karthi",
-        "Hola, soy Kartik",
-        "Привет я Картйк",
-        "Bonjour, Appelez-moi Kartik",
-      ];
-
-      let currentGreetingIndex = 0;
-      const greetingElement = document.getElementById("greeting");
-
-      function scrambleText(targetElement, newText) {
-        const characters =
-          'FGHIJcde=Afgckzlm"nop,qrsab' +
-          "пнтЭряждииоевфбіиїтпд";
-
-        let scrambleInterval = 50;
-        let totalScrambleTime = 1000;
-        let currentText = targetElement.textContent;
-
-        let scramble = setInterval(() => {
-          let scrambledText = "";
-
-          for (let i = 0; i < newText.length; i++) {
-            if (Math.random() > 0.5) {
-              scrambledText += characters.charAt(
-                Math.floor(Math.random() * characters.length),
-              );
-            } else {
-              scrambledText += currentText[i] || "";
-            }
-          }
-
-          targetElement.textContent = scrambledText;
-        }, scrambleInterval);
-
-        setTimeout(() => {
-          clearInterval(scramble);
-          targetElement.textContent = newText;
-        }, totalScrambleTime);
-      }
-
-      function changeGreeting() {
-        let newIndex;
-
-        do {
-          newIndex = Math.floor(Math.random() * greetings.length);
-        } while (newIndex === currentGreetingIndex);
-
-        const newGreeting = greetings[newIndex];
-
-        scrambleText(greetingElement, newGreeting);
-        currentGreetingIndex = newIndex;
-      }
-
-      setInterval(changeGreeting, 4000);
-      changeGreeting();
-
-</script>
-
 
 </body>
 
