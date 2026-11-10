@@ -5,6 +5,38 @@
   --neutral-0: #FFFFFF;
   --neutral-50: #FAFAF7;
 
+  /* ========================================
+     COLORS — Primitive tokens
+     ======================================== */
+
+  --jakpot-green-900: #1B3618;
+  --jakpot-amber-500: #E8A800;
+
+  /* Alternate brand colours — dark backgrounds */
+  --jakpot-aubergine-700: #4A154B;
+  --jakpot-cobalt-800: #174B70;
+  --jakpot-raspberry-800: #85304C;
+  --jakpot-persimmon-800: #8A3D1D;
+  --jakpot-teal-800: #176064;
+  --jakpot-iris-800: #4C3470;
+
+  /* Current semantic names for Folder component colours */
+  --jakpot-brinjal-700: var(--jakpot-aubergine-700);
+  --jakpot-china-800: var(--jakpot-cobalt-800);
+  --jakpot-malyna-800: var(--jakpot-raspberry-800);
+  --jakpot-burnt-800: var(--jakpot-persimmon-800);
+  --jakpot-royal-800: var(--jakpot-iris-800);
+
+
+  /* Alternate brand colour tints for light backgrounds */
+  --jakpot-aubergine-100: #F2E8F2;
+  --jakpot-cobalt-100: #E8F0F6;
+  --jakpot-raspberry-100: #F7E9EE;
+  --jakpot-persimmon-100: #F8ECE5;
+  --jakpot-teal-100: #E6F1F0;
+  --jakpot-iris-100: #EEEAF5;
+
+
   /* Semantic */
   --color-bg-canvas: var(--neutral-50);
   --color-bg-raised: var(--neutral-0);
@@ -238,4 +270,194 @@ main, body {margin: 0; padding: 0;}
   text-decoration-line: underline;
   text-decoration-thickness: 6px;
   text-underline-offset: 4px;
+}
+
+.jakpot-folder,
+.jakpot-folder:link,
+.jakpot-folder:visited,
+.jakpot-folder:hover,
+.jakpot-folder:active {
+  text-decoration: none;
+}
+
+.jakpot-folder {
+  --folder-fill: var(--jakpot-aubergine-700);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  color: var(--jakpot-neutral-0);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.jakpot-folder,
+.jakpot-folder:link,
+.jakpot-folder:visited,
+.jakpot-folder:hover,
+.jakpot-folder:active {
+  color: var(--jakpot-neutral-0);
+  text-decoration: none;
+}
+
+.jakpot-folder__top,
+.jakpot-folder__bottom {
+  display: block;
+  width: 100%;
+  height: 48px;
+  flex: 0 0 48px;
+  overflow: visible;
+  fill: var(--folder-fill);
+}
+
+.jakpot-folder__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--jakpot-space-4);
+  min-width: 0;
+  padding: var(--jakpot-space-4) var(--jakpot-space-4) 0;
+  color: var(--jakpot-neutral-0);
+  background: var(--folder-fill);
+  max-height: fit-content;
+}
+
+.jakpot-folder__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  margin: auto 0;
+  max-width: fit-content;
+}
+
+.jakpot-folder__details {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  max-width: 75%;
+  max-height: fit-content;
+  margin-left: auto;
+  margin-top: auto;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--jakpot-space-3);
+  min-width: 0;
+}
+
+.jakpot-folder {
+  transition: transform 200ms ease;
+}
+
+.jakpot-folder:hover {
+  transform: translateY(-8px);
+}
+
+.jakpot-folder:focus-visible {
+  transform: translateY(-8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jakpot-folder {
+    transition: none;
+  }
+}
+
+.jakpot-folder__description {
+  max-width: 28ch;
+  color: inherit;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.jakpot-folder__logo {
+  display: block;
+  flex: 0 1 auto;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 128px;
+  margin-left: auto;
+}
+
+.jakpot-folder:focus-visible {
+  outline: 3px solid var(--jakpot-color-focus);
+  outline-offset: 4px;
+}
+
+/* Colour rotation — Builder grid */
+
+.jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n + 1 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-aubergine-700);
+}
+
+.jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n + 2 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-cobalt-800);
+}
+
+.jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n + 3 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-raspberry-800);
+}
+
+.jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n + 4 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-persimmon-800);
+}
+
+.jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n + 5 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-teal-800);
+}
+
+.jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n of .jakpot-folder) {
+  --folder-fill: var(--jakpot-iris-800);
+}
+
+/* Colour rotation — React Grid */
+
+.jakpot-root .grid > .jakpot-folder:nth-child(6n + 1 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-aubergine-700);
+}
+
+.jakpot-root .grid > .jakpot-folder:nth-child(6n + 2 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-cobalt-800);
+}
+
+.jakpot-root .grid > .jakpot-folder:nth-child(6n + 3 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-raspberry-800);
+}
+
+.jakpot-root .grid > .jakpot-folder:nth-child(6n + 4 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-persimmon-800);
+}
+
+.jakpot-root .grid > .jakpot-folder:nth-child(6n + 5 of .jakpot-folder) {
+  --folder-fill: var(--jakpot-teal-800);
+}
+
+.jakpot-root .grid > .jakpot-folder:nth-child(6n of .jakpot-folder) {
+  --folder-fill: var(--jakpot-iris-800);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .jakpot-folder__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--jakpot-space-3);
+    padding: var(--jakpot-space-3);
+  }
+
+  .jakpot-folder__details {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .jakpot-folder__description {
+    max-width: none;
+  }
+
+  .jakpot-folder__logo {
+    max-width: min(100%, 40vw);
+  }
 }
