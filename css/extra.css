@@ -25,6 +25,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.animate-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.animate-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 main, body {margin: 0; padding: 0;}

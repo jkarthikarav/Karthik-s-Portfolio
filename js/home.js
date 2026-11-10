@@ -20,6 +20,27 @@ if (nav && footer) {
   checkNavOverlap();
 }
 
+const elements = document.querySelectorAll(".animate-up");
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+elements.forEach((element, index) => {
+  element.style.transitionDelay = `${index * 0.10}s`;
+  observer.observe(element);
+});
+
 (() => {
   const hero = document.getElementById("hero");
   const canvas = document.getElementById("hero-ripple-canvas");
