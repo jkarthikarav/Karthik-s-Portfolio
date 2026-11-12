@@ -386,6 +386,28 @@ main, body {margin: 0; padding: 0;}
   outline-offset: 4px;
 }
 
+
+.image-crop {
+  width: 100%;
+  overflow: hidden;
+  clip-path: url(#jak-image-crop);
+  max-height: 350px;
+}
+
+.image-crop__shape {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.image-crop__img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-position: bottom;
+}
+
+
 /* Colour rotation — Builder grid */
 
 .jakpot-root .jakpot-grid > .jakpot-folder:nth-child(6n + 1 of .jakpot-folder) {
